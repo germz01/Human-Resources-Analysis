@@ -3,3 +3,4 @@ Progetto per il corso di Data Mining relativo all'anno accademico 2017/2018, svo
 
 # Tool utilizzati
 * Latex Tool Sublime
+* GitGutter Sublime
