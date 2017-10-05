@@ -1,0 +1,42 @@
+\documentclass[12pt, twoside]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{graphicx}
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
+\usepackage{fancyhdr}
+\usepackage[style=alphabetic]{biblatex}
+\usepackage[framemethod=default ]{mdframed}
+\usepackage{lipsum}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{minted}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage[scaled=0.90]{helvet}
+
+\graphicspath{{images/}}
+
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot[CO,CE]{\thepage}
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+
+\begin{document}
+    \tableofcontents
+    \listoffigures
+    \chapter{Data Understanding}
+    \input{chapters/1}
+    \chapter{Clustering analysis}
+    \input{chapters/2}
+    \chapter{Association Rules}
+    \chapter{Classification}
+\end{document}
