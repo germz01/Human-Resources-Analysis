@@ -2,7 +2,7 @@
 Progetto per il corso di Data Mining relativo all'anno accademico 2017/2018, svolto da Gianmarco Ricciarelli & Maria Cristina Uccheddu.
 
 # Tools utilizzati
-Questi sono i  tools utilizzati per lavorare progetto.
+Verranno utilizzati i seguenti tools per lavorare al progetto.
 * [Sublime Text 3](https://www.sublimetext.com/)
     * [LateXTools: A LaTeX Plugin for Sublime Text 2 and 3](https://github.com/SublimeText/LaTeXTools)
     * [Git Gutter](https://github.com/jisaacks/GitGutter)
@@ -11,8 +11,8 @@ Questi sono i  tools utilizzati per lavorare progetto.
     * [Matplotlib](https://matplotlib.org/index.html)
 
 # Ordine di lavoro con GitHub
-* Creare la cartella con git clone
-* Ogni volta che si accede alla cartella git pull per aggiornare i file
-* Per aggiungere file da trackare git add
-* Per committare git commit -m "messaggio commit"
-* Per uploadare git push origin master
+* `git clone https://github.com/germz01/Human-Resources-Analysis.git`
+* `git pull` ad ogni accesso alla cartella per essere sicuri di lavorare sulla versione più aggiornata del progetto
+* `git add <file-da-tracciare>` ogni volta che modifichiamo <file-da-tracciare>
+* `git commit -m "<messaggio-di-commit>"` per registrare i cambiamenti apportati
+* `git push origin master`
