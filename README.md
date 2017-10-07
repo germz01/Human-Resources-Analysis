@@ -18,3 +18,8 @@ Verranno utilizzati i seguenti tools per lavorare al progetto.
 * `git push origin master`
 
 # Dataset
+Per questo progetto verrà utilizzato il dataset [Human Resources Analysis](https://www.kaggle.com/quentinvincenot/human-resources-analysis).
+Lo studio di tale dataset è condotto al fine di rispondere alla seguente domanda:
+ "_Why are our best and most experienced employees leaving prematurely?_"
+ 
+ Il dataset ha la seguente struttura
