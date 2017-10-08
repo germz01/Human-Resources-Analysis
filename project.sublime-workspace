@@ -1,1 +1,940 @@
-{}
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"file",
+				"file_name\tparam"
+			],
+			[
+				"fil",
+				"file_name\tparam"
+			],
+			[
+				"GET",
+				"GET_URL"
+			],
+			[
+				"message",
+				"message_data\tstatement"
+			],
+			[
+				"re",
+				"request"
+			],
+			[
+				"BidderInterface",
+				"_BidderInterface__report_list"
+			],
+			[
+				"customerId",
+				"customer_id\tstatement"
+			],
+			[
+				"client",
+				"client_customer_name_id\tstatement"
+			],
+			[
+				"report",
+				"report_list\tparam"
+			],
+			[
+				"brands",
+				"brand_list\tstatement"
+			],
+			[
+				"date",
+				"datetime\tclass"
+			],
+			[
+				"tag_name",
+				"tag_name_products\tstatement"
+			],
+			[
+				"products",
+				"products_in_page"
+			],
+			[
+				"last_updated",
+				"last_updated_xml_datetime\tstatement"
+			],
+			[
+				"new_",
+				"new_hms"
+			],
+			[
+				"da",
+				"datetime\tclass"
+			],
+			[
+				"url",
+				"urlretrieve\tfunction"
+			],
+			[
+				"try",
+				"try\tTry/Except"
+			],
+			[
+				"product",
+				"product_id\tstatement"
+			],
+			[
+				"i",
+				"iter\tfunction"
+			],
+			[
+				"vie",
+				"views\tmodule"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/LaTeXTools/LaTeX.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Script Builder"
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				"PdfLaTeX"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "package",
+		"selected_items":
+		[
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"istall",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package",
+				"Preferences: Browse Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"listp",
+				"Package Control: List Packages"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"Sublime",
+				"SublimeLinter: Choose Gutter Theme"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"ana",
+				"Anaconda: Autoformat PEP8 Errors"
+			],
+			[
+				"li",
+				"Package Control: List Packages"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Matrix"
+			],
+			[
+				"instl",
+				"Package Control: Install Package"
+			],
+			[
+				"packageRi",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"lis",
+				"Package Control: List Packages"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"LiveReload: Enable/disable plugins",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"list pa",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: l",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: i",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: li",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 480.0
+	},
+	"console":
+	{
+		"height": 364.0,
+		"history":
+		[
+			"sublime.sublime-build",
+			"sublime.resources",
+			"sublime.resources()",
+			"sublime.version()",
+			"ls",
+			"echo PATH",
+			"echo PATh",
+			"echo $PATH",
+			"printenv",
+			"golint",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/gianmarco/Documents/Università/Magistrale/Data Mining/Human-Resources-Analysis"
+	],
+	"file_history":
+	[
+		"/Users/gianmarco/Documents/Dev/Python/data_science/text.py",
+		"/Users/gianmarco/Documents/Università/Magistrale/Data Mining/Human-Resources-Analysis/.gitignore",
+		"/Users/gianmarco/Documents/Università/Magistrale/Data Mining/Human-Resources-Analysis/README.md",
+		"/Users/gianmarco/Documents/Dev/Python/data_science/practice.py",
+		"/Users/gianmarco/Documents/Università/Magistrale/Data Mining/project/chapters/1.tex",
+		"/Users/gianmarco/Documents/Università/Triennale/Tirocinio/Tesi/main.tex",
+		"/Users/gianmarco/Documents/Università/Triennale/Tirocinio/Tesi/chapters/01/01.tex",
+		"/Users/gianmarco/Documents/Università/Tirocinio/Tesi/chapters/ringraziamenti/ringraziamenti.tex",
+		"/Users/gianmarco/Documents/Università/Tirocinio/Tesi/chapters/02/02.tex",
+		"/Users/gianmarco/Documents/Università/Tirocinio/Tesi/chapters/conclusione/conclusione.tex",
+		"/Users/gianmarco/Documents/Università/Tirocinio/Tesi/titlepage/titlepage.tex",
+		"/Users/gianmarco/Documents/Università/Tirocinio/Tesi/chapters/01/01.tex",
+		"/Users/gianmarco/Documents/Università/Tirocinio/Tesi/chapters/prefazione/prefazione.tex",
+		"/Users/gianmarco/Documents/Università/Tirocinio/Tesi/chapters/03/03.tex",
+		"/Users/gianmarco/Documents/Università/Tirocinio/Tesi/main.tex",
+		"/Users/gianmarco/Documents/Università/Tirocinio/Tesi/code/create_score_matrix.py",
+		"/Users/gianmarco/Documents/Università/Tirocinio/Tesi/code/winloss.py",
+		"/Users/gianmarco/Documents/Università/Tirocinio/Tesi/chapters/conclusione_fake/conclusione_fake.tex",
+		"/Users/gianmarco/Documents/Università/Tirocinio/Tesi/references.bib",
+		"/Users/gianmarco/Documents/Università/Tirocinio/Tesi/code/fetch_gotoshop.py",
+		"/Users/gianmarco/Documents/Università/Tirocinio/Tesi/code/dictionary_test.py",
+		"/Users/gianmarco/Documents/Università/Tirocinio/Tesi/chapters/conclusioni/conclusioni.tex",
+		"/Users/gianmarco/Documents/Università/Tirocinio/Tesi/code/add_score.py",
+		"/Users/gianmarco/Documents/Università/Tirocinio/Tesi/code/make_csv.py",
+		"/Users/gianmarco/Documents/Università/Tirocinio/Tesi/code/create_new_matrix.py",
+		"/Users/gianmarco/Documents/Università/Tirocinio/Tesi/code/clean_landing.py",
+		"/Users/gianmarco/Documents/Università/Tirocinio/Tesi/code/return_service.py",
+		"/Users/gianmarco/Documents/Università/Tirocinio/Tesi/code/themain.py",
+		"/Users/gianmarco/Documents/Università/Tirocinio/Tesi/code/importsession.py",
+		"/Users/gianmarco/Documents/listupp-bigquery/winloss/winloss.py",
+		"/Users/gianmarco/Documents/Università/Tirocinio/Tesi/tesi.sublime-project",
+		"/Users/gianmarco/Documents/Università/Tirocinio/Tesi/code/prova.py",
+		"/Users/gianmarco/Documents/Università/Tirocinio/Tesi/main.pdf",
+		"/Users/gianmarco/.bash_profile",
+		"/Users/gianmarco/Library/Application Support/Sublime Text 3/Packages/GoSublime/USAGE.md",
+		"/Users/gianmarco/Library/Application Support/Sublime Text 3/Packages/User/LaTeXTools.sublime-settings",
+		"/Users/gianmarco/Documents/Università/Tirocinio/Tesi/chapters/introduzione/introduzione.tex",
+		"/Users/gianmarco/Desktop/coffescript/test.coffee",
+		"/Users/gianmarco/Library/Application Support/Sublime Text 3/Packages/User/CoffeeScript.sublime-settings",
+		"/Users/gianmarco/Desktop/t.coffee",
+		"/Users/gianmarco/.bash_",
+		"/Users/gianmarco/Documents/Dev/Python/flaskr/flaskr.py",
+		"/Users/gianmarco/Documents/Dev/Python/flaskr/schema.sql",
+		"/Users/gianmarco/Documents/Dev/Python/flaskdev/schema.sql",
+		"/Users/gianmarco/Documents/Dev/Python/flaskdev/flaskr.py",
+		"/Users/gianmarco/Documents/Dev/Python/flaskdev/test.py",
+		"/Users/gianmarco/Documents/listupp/requirements.txt",
+		"/Users/gianmarco/Downloads/django-fb-iframe-master/setup.py",
+		"/Users/gianmarco/Downloads/THESIS/titlePage.tex",
+		"/Users/gianmarco/Downloads/THESIS/thesis.tex",
+		"/Users/gianmarco/Documents/Università/Tirocinio/Tesi/chapters/introduzione.tex",
+		"/Users/gianmarco/Documents/Università/Tirocinio/Tesi/main.text",
+		"/Users/gianmarco/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/gianmarco/Documents/Dev/Python/flaskdev/hello.py",
+		"/Users/gianmarco/Documents/Università/Tirocinio/Tesi/titlePage.tex",
+		"/Users/gianmarco/Documents/Università/Tirocinio/Tesi/tesi.tex",
+		"/Users/gianmarco/Desktop/learn.rb",
+		"/Users/gianmarco/Documents/Dev/Python/imageChecking/image_check.py",
+		"/Users/gianmarco/Desktop/test.ex",
+		"/Users/gianmarco/Documents/listupp-bigquery/bigquery/loader.py",
+		"/Users/gianmarco/Desktop/test.exs",
+		"/Users/gianmarco/Documents/Dev/Ruby/blog/app/views/welcome/index.html.erb",
+		"/Users/gianmarco/Documents/Dev/Ruby/blog/config/routes.rb",
+		"/Users/gianmarco/.pip/pip.log",
+		"/Users/gianmarco/Library/Application Support/Sublime Text 3/Packages/GoSublime/CHANGELOG.md",
+		"/Users/gianmarco/Desktop/artimetica_binaria/ab.tex",
+		"/Users/gianmarco/Documents/listupp/backend/feeds/zanox/nike_br.py",
+		"/Users/gianmarco/Documents/listupp/listupp/settings/locale/br/merchant.py",
+		"/Users/gianmarco/Documents/listupp/backend/feeds/cj/luisa_br.py",
+		"/Users/gianmarco/Documents/listupp/backend/feeds/zanox/answear_pl.py",
+		"/Users/gianmarco/Documents/listupp/backend/feeds/zanox/zanox.py",
+		"/Users/gianmarco/Documents/listupp/backend/feeds/zanox/asos.py",
+		"/Users/gianmarco/Documents/listupp/backend/chrome/chrome_api.py",
+		"/Users/gianmarco/Documents/listupp/facebook/messenger_bot/views.py",
+		"/Users/gianmarco/Documents/listupp/static/css/landing_facebook.css",
+		"/Users/gianmarco/Documents/listupp/listupp/templates/facebook_bot/bot_landing.html",
+		"/Users/gianmarco/Documents/listupp/backend/urls.py",
+		"/Users/gianmarco/Documents/listupp/backend/search_indexes.py",
+		"/Users/gianmarco/Documents/listupp/googleapi/adwords/adwordsapi.py",
+		"/Users/gianmarco/Documents/listupp/.git/refs/heads/chrome_extension",
+		"/Users/gianmarco/Documents/listupp/listupp/settings/__init__.py",
+		"/Users/gianmarco/Documents/listupp/listupp/urls.py",
+		"/Users/gianmarco/Documents/listupp/backend/chrome/urls.py",
+		"/Users/gianmarco/Documents/listupp/listupp/templates/adserver/dashboard/dash-info.html",
+		"/Users/gianmarco/Documents/listupp/listupp/templates/adserver/dashboard.html",
+		"/Users/gianmarco/Documents/listupp/dashboardapi/views.py",
+		"/Users/gianmarco/Documents/listupp/dashboardapi/urls.py",
+		"/Users/gianmarco/Desktop/chrome_extension/js/background.js",
+		"/Users/gianmarco/Desktop/chrome_extension/js/popup.js",
+		"/Users/gianmarco/Desktop/chrome_extension/html/popup.js",
+		"/Users/gianmarco/.config/beets/config.yaml",
+		"/Users/gianmarco/Desktop/chrome_extension/js/inject.js",
+		"/Users/gianmarco/Desktop/chrome_extension/css/inject.css",
+		"/Users/gianmarco/Documents/marchine_learning/test.py",
+		"/Users/gianmarco/Documents/beets/musiclibrary.blb",
+		"/Users/gianmarco/Documents/listupp/backend/feeds/webgains/nike.py",
+		"/Users/gianmarco/Documents/listupp/listupp/settings/locale/it/merchant.py",
+		"/Users/gianmarco/.vim/ftplugin/python.vim",
+		"/Users/gianmarco/.vimrc",
+		"/Users/gianmarco/Documents/listupp/backend/feeds/zanox/braccialini.py",
+		"/Users/gianmarco/Documents/listupp/backend/feeds/tradedoubler/tradedoubler.py",
+		"/Users/gianmarco/Documents/listupp/backend/feeds/tradedoubler/intimissimi.py",
+		"/Users/gianmarco/Documents/listupp/backend/feeds/tradedoubler/__init__.py",
+		"/Users/gianmarco/Desktop/feed.xml",
+		"/Users/gianmarco/Documents/listupp/backend/feeds/tradetracker/desigual.py",
+		"/Users/gianmarco/Documents/listupp/listupp/settings/locale/es/merchant.py",
+		"/Users/gianmarco/Documents/listupp/backend/feeds/zanox/vertbaudet_es.py",
+		"/Users/gianmarco/Documents/listupp/backend/feeds/zanox/sarenza_es.py",
+		"/Users/gianmarco/Documents/listupp/listupp/static/common/css/landing_facebook.css",
+		"/Users/gianmarco/Documents/listupp/listupp/templates/facebook_bot/bot_landing_eng.html",
+		"/Users/gianmarco/Documents/listupp/listupp/static/common/css/landing_facebook_eng.css",
+		"/Users/gianmarco/Documents/listupp/backend/feeds/zanox/__init__.py",
+		"/Users/gianmarco/Documents/listupp/backend/tasks/locale/es/feeds.py",
+		"/Users/gianmarco/Documents/listupp/listupp/settings/es_local.py",
+		"/Users/gianmarco/Documents/listupp/backend/feeds/zanox/asos_pl.py",
+		"/Users/gianmarco/Documents/listupp/backend/feeds/zanox/asos_fr.py",
+		"/Users/gianmarco/Documents/listupp/backend/feeds/zanox/farfetch_es.py",
+		"/Users/gianmarco/Documents/listupp/planet/templates/base.html",
+		"/Users/gianmarco/Documents/listupp/listupp/static/common/css/optimized.css",
+		"/Users/gianmarco/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/gianmarco/Desktop/<div class=\"container\">",
+		"/Users/gianmarco/Documents/listupp/scontodigitale/templates/frontend/home.html",
+		"/Users/gianmarco/Documents/listupp/facebook/views.py",
+		"/Users/gianmarco/Documents/listupp/backend/models.py",
+		"/Users/gianmarco/Documents/listupp/adserver/stats/stats.py",
+		"/Users/gianmarco/Documents/listupp/adserver/reporting/network/advertiser.py",
+		"/Users/gianmarco/Documents/listupp/backend/emailtools.py",
+		"/Users/gianmarco/Documents/listupp/backend/tasks/mail_report_cpc.py"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 67.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.latextools":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "project.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"merchant",
+				"listupp/settings/locale/br/merchant.py"
+			],
+			[
+				"chrome",
+				"backend/chrome/chrome_api.py"
+			],
+			[
+				"landing",
+				"static/css/landing_facebook.css"
+			],
+			[
+				"bot_l",
+				"listupp/templates/facebook_bot/bot_landing.html"
+			],
+			[
+				"search",
+				"backend/search_indexes.py"
+			],
+			[
+				"adw",
+				"googleapi/adwords/adwordsapi.py"
+			],
+			[
+				"adwo",
+				"googleapi/adwords/adwordsapi.py"
+			],
+			[
+				"settings",
+				"listupp/settings/__init__.py"
+			],
+			[
+				"listuppurl",
+				"listupp/urls.py"
+			],
+			[
+				"dashinfo",
+				"listupp/templates/adserver/dashboard/dash-info.html"
+			],
+			[
+				"dashboard",
+				"listupp/templates/adserver/dashboard.html"
+			],
+			[
+				"nike",
+				"backend/feeds/webgains/nike.py"
+			],
+			[
+				"intimissi",
+				"backend/feeds/tradedoubler/intimissimi.py"
+			],
+			[
+				"desigual",
+				"backend/feeds/tradetracker/desigual.py"
+			],
+			[
+				"braccialini",
+				"backend/feeds/zanox/braccialini.py"
+			],
+			[
+				"merchat",
+				"listupp/settings/locale/es/merchant.py"
+			],
+			[
+				"es",
+				"listupp/settings/es_local.py"
+			],
+			[
+				"feeds",
+				"backend/tasks/locale/es/feeds.py"
+			],
+			[
+				"optimizedbase",
+				"listupp/templates/frontend/optimized/base.html"
+			],
+			[
+				"base",
+				"planet/templates/base.html"
+			],
+			[
+				"home",
+				"scontodigitale/templates/frontend/home.html"
+			],
+			[
+				"bot_nading",
+				"listupp/templates/facebook_bot/bot_landing.html"
+			],
+			[
+				"email",
+				"backend/emailtools.py"
+			],
+			[
+				"maili",
+				"backend/tasks/mailing.py"
+			],
+			[
+				"dashboard.",
+				"listupp/templates/adserver/dashboard.html"
+			],
+			[
+				"ftp",
+				"listupp/templates/backoffice/ftp_dir.html"
+			],
+			[
+				"es_local",
+				"listupp/settings/es_local.py"
+			],
+			[
+				"task",
+				"backend/tasks/__init__.py"
+			],
+			[
+				"models",
+				"magazine/models.py"
+			],
+			[
+				"url",
+				"frontend/urls.py"
+			],
+			[
+				"urls",
+				"frontend/urls.py"
+			],
+			[
+				"feed",
+				"backend/feeds/feed.py"
+			],
+			[
+				"listin_elastic",
+				"frontend/controller/listing_elastic.py"
+			],
+			[
+				"optimized",
+				"listupp/static/common/js/listupp-optimized.js"
+			],
+			[
+				"elasti",
+				"frontend/elastic.py"
+			],
+			[
+				"items",
+				"listupp/templates/frontend/elastic/items.html"
+			],
+			[
+				"listing",
+				"listupp/templates/frontend/elastic/listing.html"
+			],
+			[
+				"feed_luisa",
+				"backend/management/commands/feed_luisa_us.py"
+			],
+			[
+				"mytheresa",
+				"backend/feeds/cj/mytheresa_us.py"
+			],
+			[
+				"mercha",
+				"listupp/settings/locale/en/merchant.py"
+			],
+			[
+				"merch",
+				"listupp/settings/locale/en/merchant.py"
+			],
+			[
+				"antonioli",
+				"backend/management/commands/feed_antonioli.py"
+			],
+			[
+				"feed_ln_",
+				"backend/management/commands/feed_ln_cc_it.py"
+			],
+			[
+				"us_lo",
+				"listupp/settings/us_local.py"
+			],
+			[
+				"asos",
+				"backend/feeds/zanox/asos.py"
+			],
+			[
+				"zanox/zano",
+				"backend/feeds/zanox/zanox.py"
+			],
+			[
+				"variables",
+				"listupp/settings/locale/es/variables.py"
+			],
+			[
+				"asos_fr",
+				"backend/feeds/zanox/asos_fr.py"
+			],
+			[
+				"smallab",
+				"backend/feeds/zanox/smallable.py"
+			],
+			[
+				"rebelle",
+				"backend/feeds/advertiser/rebelle.py"
+			],
+			[
+				"ray",
+				"backend/feeds/zanox/rayban.py"
+			],
+			[
+				"new_bala",
+				"backend/feeds/cj/new_balance_it.py"
+			],
+			[
+				"misssixty",
+				"backend/feeds/tradedoubler/misssixty.py"
+			],
+			[
+				"merchan",
+				"listupp/settings/locale/it/merchant.py"
+			],
+			[
+				"lovethesign",
+				"backend/feeds/tradedoubler/lovethesign.py"
+			],
+			[
+				"feed_geo",
+				"backend/management/commands/feed_geox_it.py"
+			],
+			[
+				"geox",
+				"backend/feeds/cj/geox_it.py"
+			],
+			[
+				"spartoo",
+				"backend/feeds/tradedoubler/spartoo.py"
+			],
+			[
+				"optimi",
+				"frontend/optimized_views.py"
+			],
+			[
+				"cache",
+				"frontend/cache.py"
+			],
+			[
+				"optimized.css",
+				"listupp/static/common/css/optimized.css"
+			],
+			[
+				"listupp-opti",
+				"listupp/static/common/js/listupp-optimized.js"
+			],
+			[
+				"listupp",
+				"static/js/listupp-optimized.js"
+			],
+			[
+				"",
+				"frontend/optimized_views.py"
+			],
+			[
+				"listupp-opt",
+				"listupp/static/common/js/listupp-optimized.js"
+			],
+			[
+				"cac",
+				"frontend/cache.py"
+			],
+			[
+				"listuppopt",
+				"static/js/listupp-optimized.js"
+			],
+			[
+				"optim",
+				"frontend/optimized_views.py"
+			],
+			[
+				"coupo",
+				"static/js/coupoun/coupoun.js"
+			],
+			[
+				"dash",
+				"listupp/templates/adserver/dashboard/dash-cpc.html"
+			],
+			[
+				"advertiser",
+				"adserver/reporting/network/advertiser.py"
+			],
+			[
+				"adserverurl",
+				"adserver/urls.py"
+			],
+			[
+				"dashcpc",
+				"listupp/templates/adserver/dashboard/dash-cpc.html"
+			],
+			[
+				"catego",
+				"listupp/templates/backoffice/category_mapping.html"
+			],
+			[
+				"backoffice",
+				"listupp/templates/backoffice/base.html"
+			],
+			[
+				"menu",
+				"listupp/templates/backoffice/menu.html"
+			],
+			[
+				"backoffice/men",
+				"listupp/templates/backoffice/menu.html"
+			],
+			[
+				"backoffice/dash",
+				"listupp/templates/backoffice/dashboard.html"
+			],
+			[
+				"backoffice/ranking",
+				"listupp/templates/backoffice/ranking/select.html"
+			],
+			[
+				"zanox__",
+				"backend/feeds/zanox/__init__.py"
+			],
+			[
+				"mer",
+				"listupp/settings/locale/es/merchant.py"
+			],
+			[
+				"loca",
+				"listupp/settings/es_local.py"
+			],
+			[
+				"vari",
+				"listupp/settings/locale/es/variables.py"
+			],
+			[
+				"utilit",
+				"frontend/utility.py"
+			],
+			[
+				"lmerchant",
+				"listupp/settings/locale/es/merchant.py"
+			],
+			[
+				"local",
+				"backend/tasks/locale/it/feeds.py"
+			],
+			[
+				"adwor",
+				"googleapi/adwords/adwordsapi.py"
+			],
+			[
+				"variabels",
+				"listupp/settings/locale/es/variables.py"
+			],
+			[
+				"search_index",
+				"backend/search_indexes.py"
+			],
+			[
+				"searchin",
+				"backend/search_indexes.py"
+			],
+			[
+				"feed_prm",
+				"backend/management/commands/feed_promod.py"
+			],
+			[
+				"google",
+				"googleapi/adwordsapi.py"
+			],
+			[
+				"develo",
+				"listupp/settings/development.py"
+			],
+			[
+				"settin",
+				"listupp/settings/__init__.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 246.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
