@@ -36,15 +36,3 @@ for c in DS.columns:
                          'Top': current['top'], 'Frequence': current['freq']})
 
 csvfile.close()
-
-# for c in DS.columns:
-#     csv_file = open(c.lower() + '.csv', 'wb')
-#     writer = csv.writer(csv_file, delimiter=',')
-#     current = descr_stat[c]
-
-#     writer.writerow(['Min', 'Max', 'Mean', 'Standard Deviation',
-#                     '25% Percentile', '50% Percentile', '75% Percentile'])
-#     writer.writerow([current['min'], current['max'], current['mean'],
-#                     current['std'], current['25%'], current['50%'],
-#                     current['75%']])
-#     csv_file.close()
