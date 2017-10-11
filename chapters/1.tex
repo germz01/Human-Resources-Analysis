@@ -4,7 +4,25 @@
 % section data_understanding (end)
 \section{Data semantics} % (fold)
 \label{sec:data_semantics}
-
+Il progetto viene svolto sul dataset (simulato) \textbf{
+\href{https://www.kaggle.com/quentinvincenot/human-resources-analysis/data}{Human Resources Analytics}}. Questo
+dataset contiene le informazioni sui dipendenti di un'azienda fittizia, suddivise in base ai seguenti campi:
+\begin{description}
+    \item[satisfaction\_level] - valutazione \textit{quantitativa} del livello di soddisfazione di ciascun
+    dipendente, ha un valore compreso tra $0$ (minimo) e $1$ (massimo);
+    \item[last\_evaluation] - tempo trascorso, in anni, dall'ultima valutazione delle performace del dipendente;
+    \item[number\_project] - numero di progetti completati durante il periodo di lavoro;
+    \item[average\_montly\_hours] - media delle ore di lavoro in un mese;
+    \item[time\_spend\_company] - numero di anni trascorsi nell'azienda;
+    \item[work\_accident] - esprime con un $1$ il coinvolgimento di un dipendente in un incidente sul lavoro,
+    altrimenti viene impostato come $0$;
+    \item[left] - se il dipendente ha lasciato l'azienda viene impostato come $1$, altrimenti come $0$;
+    \item[promotion\_last\_5years] - se il dipendente è stato promosso negli ultimi $5$ anni viene impostato come
+    $1$, altrimenti come $0$;
+    \item[sales] - definisce il dipartimento nel quale il dipendente lavora;
+    \item[salary] - esprime il livello (\textit{low}, \textit{medium}, \textit{high}), di salario nel quale
+    rientra il dipendente;
+\end{description}
 % section data_semantics (end)
 \section{Distribution of the variables and statistics} % (fold)
 \label{sec:distribution_of_the_variables_and_statistics}
