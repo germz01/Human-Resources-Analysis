@@ -17,9 +17,14 @@ Verranno utilizzati i seguenti tools per lavorare al progetto.
 * `git commit -m "<messaggio-di-commit>"` per registrare i cambiamenti apportati
 * `git push origin master`
 
-# Dataset
-Per questo progetto verrà utilizzato il dataset [Human Resources Analysis](https://www.kaggle.com/quentinvincenot/human-resources-analysis).
-Lo studio di tale dataset ha lo scopo di rispondere alla domanda:
- "_Why are our best and most experienced employees leaving prematurely?_"
- 
- Il dataset ha la seguente struttura
+# Data Understanding
+Il testo Guide to Intelligent Data Analysis stabilisce i seguenti passi per il completamento del processo di Data
+Understanding:
+* Determine the quality of the data. (e.g. syntactic accuracy)
+* Find outliers. (e.g. using visualization techniques)
+* Detect and examine missing values. Possible hidden by default values.
+* Discover new or confirm expected dependencies or correlations between attributes.
+* Check specific application dependent assumptions (e.g. the attribute follows a normal distribution)
+* Compare statistics with the expected behavior.
+* Check the distributions for each attribute (unexpected properties like outliers, correct domains, correct medians)
+* Check correlations or dependencies between pairs of attributes

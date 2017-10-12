@@ -3,22 +3,32 @@
 Il progetto viene svolto sul dataset (simulato) \textbf{
 \href{https://www.kaggle.com/quentinvincenot/human-resources-analysis/data}{Human Resources Analytics}}. Questo
 dataset contiene le informazioni sui dipendenti di un'azienda fittizia, suddivise in base ai seguenti campi:
-\begin{description}
-    \item[satisfaction\_level] - valutazione \textit{quantitativa} del livello di soddisfazione di ciascun
-    dipendente, ha un valore compreso tra $0$ (minimo) e $1$ (massimo);
-    \item[last\_evaluation] - tempo trascorso, in anni, dall'ultima valutazione delle performace del dipendente;
-    \item[number\_project] - numero di progetti completati durante il periodo di lavoro;
-    \item[average\_montly\_hours] - media delle ore di lavoro in un mese;
-    \item[time\_spend\_company] - numero di anni trascorsi nell'azienda;
-    \item[work\_accident] - esprime con un $1$ il coinvolgimento di un dipendente in un incidente sul lavoro,
-    altrimenti viene impostato come $0$;
-    \item[left] - se il dipendente ha lasciato l'azienda viene impostato come $1$, altrimenti come $0$;
-    \item[promotion\_last\_5years] - se il dipendente è stato promosso negli ultimi $5$ anni viene impostato come
-    $1$, altrimenti come $0$;
-    \item[sales] - definisce il dipartimento nel quale il dipendente lavora;
-    \item[salary] - esprime il livello (\textit{low}, \textit{medium}, \textit{high}), di salario nel quale
-    rientra il dipendente;
-\end{description}
+\begin{center}
+    \begin{tabular}{| c | c | m{7cm} |}
+    \hline
+    \textbf{Field} & \textbf{Type} & \textbf{Description} \\ \hline
+    satisfaction\_level & continuous &  valutazione \textit{quantitativa} del livello di soddisfazione di ciascun
+    dipendente, ha un valore compreso tra $0$ (minimo) e $1$ (massimo)\\ \hline
+    last\_evaluation & continuous & tempo trascorso, in anni, dall'ultima valutazione delle performace del
+    dipendente \\ \hline
+    number\_project & continuous & numero di progetti completati durante il periodo di lavoro \\ \hline
+    average\_montly\_hours & continuous & media delle ore di lavoro in un mese \\ \hline
+    time\_spend\_company & continuous & numero di anni trascorsi nell'azienda \\ \hline
+    work\_accident & discrete & esprime con un $1$ il coinvolgimento di un dipendente in un incidente sul lavoro,
+    altrimenti viene impostato come $0$ \\ \hline
+    left & discrete & se il dipendente ha lasciato l'azienda viene impostato come $1$, altrimenti come $0$ \\ \hline
+    promotion\_last\_5years & discrete & se il dipendente è stato promosso negli ultimi $5$ anni viene impostato
+    come $1$, altrimenti come $0$ \\ \hline
+    sales & categorical & definisce il dipartimento nel quale il dipendente lavora \\ \hline
+    salary & ordinal & esprime il livello (\textit{low}, \textit{medium}, \textit{high}), di salario nel quale
+    rientra il dipendente \\ \hline
+\end{tabular}
+\end{center}
+Per la tipizzazione dei campi presenti nel Dataset è stata seguita la classificazione fornita nel testo
+\textit{Guide to Intelligent Data Analysis}, mentre, per la descrizione a parole, sono state seguite le direttive
+fornite nella pagina di Kaggle
+\footnote{\href{https://www.kaggle.com/}{Kaggle}} nella quale è contenuto il Dataset
+\footnote{\href{https://www.kaggle.com/ludobenistant/hr-analytics/data}{Column Metadata}}.
 % section data_semantics (end)
 \section{Distribution of the variables and statistics} % (fold)
 \label{sec:distribution_of_the_variables_and_statistics}
