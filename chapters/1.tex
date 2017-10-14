@@ -11,9 +11,9 @@ dataset contiene le informazioni sui dipendenti di un'azienda fittizia, suddivis
     dipendente, ha un valore compreso tra $0$ (minimo) e $1$ (massimo)\\ \hline
     last\_evaluation & continuous & tempo trascorso, in anni, dall'ultima valutazione delle performace del
     dipendente \\ \hline
-    number\_project & continuous & numero di progetti completati durante il periodo di lavoro \\ \hline
-    average\_montly\_hours & continuous & media delle ore di lavoro in un mese \\ \hline
-    time\_spend\_company & continuous & numero di anni trascorsi nell'azienda \\ \hline
+    number\_project & discrete & numero di progetti completati durante il periodo di lavoro \\ \hline
+    average\_montly\_hours & discrete & media delle ore di lavoro in un mese \\ \hline
+    time\_spend\_company & discrete & numero di anni trascorsi nell'azienda \\ \hline
     work\_accident & discrete & esprime con un $1$ il coinvolgimento di un dipendente in un incidente sul lavoro,
     altrimenti viene impostato come $0$ \\ \hline
     left & discrete & se il dipendente ha lasciato l'azienda viene impostato come $1$, altrimenti come $0$ \\ \hline
@@ -42,7 +42,7 @@ fornite nella pagina di Kaggle
 \label{sec:variable_transformations}
 
 % section variable_transformations (end)
-\section{Pairwise correlations and eventual elimination od redundant variable} % (fold)
+\section{Pairwise correlations and eventual elimination of redundant variable} % (fold)
 \label{sec:pairwise_correlations_and_eventual_elimination_od_redundant_variable}
 
 % section pairwise_correlations_and_eventual_elimination_od_redundant_variable (end)
