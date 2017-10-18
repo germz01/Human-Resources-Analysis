@@ -2,8 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-DF = pd.read_csv('~/Documents/Università/Magistrale/Data Mining/' +
-                 'Human-Resources-Analysis/HR_comma_sep.csv',
+DF = pd.read_csv('../HR_comma_sep.csv',
                  names=['Satisfaction_Level', 'Last_Evaluation',
                         'Number_Project', 'Average_Montly_Hours',
                         'Time_Spend_Company', 'Work_Accident', 'Left',
@@ -30,7 +29,7 @@ def plot_cat_and_ord(col):
     plt.bar(x=lef, height=STAYED[col].value_counts().tolist(),
             width=0.35, label='Employees Who Stayed')
     plt.bar(x=lef+0.35, height=LEFT[col].value_counts().tolist(),
-            width=0.35, label='Employees who left')
+            width=0.35, label='Employees Who left')
     if col == 'Sales':
         plt.xticks(np.arange(len(DF[col].unique())) + (0.35/2),
                    DF[col].unique(), rotation='vertical', fontsize='3')
@@ -40,8 +39,6 @@ def plot_cat_and_ord(col):
     plt.ylabel('Employees')
     plt.legend()
     plt.title(col.replace('_', ' ') + ' per Employee')
-
-    plt.savefig(col.lower() + '.pdf')
 
 
 def plot_discrete(col):
@@ -70,3 +67,5 @@ if __name__ == '__main__':
             plot_discrete(COLUMNS[to_plot][0])
         else:
             plot_continous(COLUMNS[to_plot][0])
+
+        plt.savefig('../images/' + COLUMNS[to_plot][0].lower() + '.pdf')
