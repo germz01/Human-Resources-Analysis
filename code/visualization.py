@@ -42,7 +42,35 @@ def plot_cat_and_ord(col):
 
 
 def plot_discrete(col):
-    pass
+    min, max = DF[col].describe()['min'], DF[col].describe()['max']
+    lef = np.arange(min, max + 1)
+    value_dict = STAYED[col].value_counts().to_dict()
+    h = []
+
+    for i in xrange(int(min), int(max + 1)):
+        if value_dict.has_key(i):
+            h.append(value_dict[i])
+        else:
+            h.append(0)
+
+    plt.bar(x=lef, height=h, width=0.35, label='Employees Who Stayed')
+
+    value_dict = LEFT[col].value_counts().to_dict()
+    h = []
+
+    for i in xrange(int(min), int(max + 1)):
+        if value_dict.has_key(i):
+            h.append(value_dict[i])
+        else:
+            h.append(0)
+
+    plt.bar(x=lef + 0.35, height=h, width=0.35, label='Employees Who left')
+
+    plt.xticks(np.arange(min, max + 1) + (0.35/2),
+               np.arange(min, max + 1))
+    plt.ylabel('Employees')
+    plt.legend()
+    plt.title(col.replace('_', ' ') + ' per Employee')
 
 
 def plot_continous(col):
