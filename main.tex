@@ -1,26 +1,17 @@
 \documentclass[11pt, twoside]{report}
 
+\usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[italian]{babel}
+\usepackage[adobe-utopia]{mathdesign}
 \usepackage{graphicx}
 \usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
-\usepackage{fancyhdr}
-\usepackage[style=alphabetic]{biblatex}
-\usepackage[framemethod=default ]{mdframed}
-\usepackage{lipsum}
-\usepackage{titlesec}
-\usepackage{xcolor}
-\usepackage{minted}
-\usepackage{subcaption}
-\usepackage{hyperref}
-\usepackage[scaled=0.90]{helvet}
-\usepackage[defaultsans]{droidsans}
-\usepackage[T1]{fontenc}
-\usepackage{array}
-
-\renewcommand*\familydefault{\sfdefault}
+\usepackage[framemethod=default]{mdframed}
+\usepackage{lipsum,titlesec,xcolor,subcaption,hyperref,fancyhdr,array,multicol,float}
 
 \graphicspath{{images/}}
+\floatstyle{boxed}
+\restylefloat{figure}
 
 \pagestyle{fancy}
 \fancyhead{}
@@ -37,9 +28,11 @@
 
 \begin{document}
     \input{titlepage}
+    \pagenumbering{Roman}
     \tableofcontents
     \listoffigures
     \chapter{Data Understanding}
+    \pagenumbering{arabic}
     \input{chapters/1}
     \chapter{Clustering analysis}
     \input{chapters/2}
