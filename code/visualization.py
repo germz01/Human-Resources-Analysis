@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+import math
 
 DF = pd.read_csv('../HR_comma_sep.csv',
                  names=['Satisfaction_Level', 'Last_Evaluation',
@@ -74,7 +75,21 @@ def plot_discrete(col):
 
 
 def plot_continous(col):
-    pass
+    fig_dims = (1, 2)
+    ideal_bins = math.ceil(math.log(float(len(DF[col].tolist())), 2)) + 1
+
+    plt.subplot2grid(fig_dims, (0, 0))
+    plt.hist(STAYED[col].tolist(), bins=int(ideal_bins),
+             histtype='bar', rwidth=0.8)
+    plt.xlabel(col)
+    plt.ylabel('Employees Who Stayed')
+    plt.subplot2grid(fig_dims, (0, 1))
+    plt.hist(LEFT[col].tolist(), bins=int(ideal_bins),
+             histtype='bar', rwidth=0.8)
+    plt.xlabel(col)
+    plt.ylabel('Employees Who Left')
+    plt.subplots_adjust(left=0.2, wspace=0.4, top=0.8)
+    plt.suptitle(col.replace('_', ' ') + ' per Employee')
 
 if __name__ == '__main__':
     to_plot = int(raw_input('What column do you want to plot?\n1: ' +
@@ -92,7 +107,10 @@ if __name__ == '__main__':
         if type == 'ordinal' or type == 'categorical':
             plot_cat_and_ord(COLUMNS[to_plot][0])
         elif type == 'discrete':
-            plot_discrete(COLUMNS[to_plot][0])
+            if COLUMNS[to_plot][0] == 'Average_Montly_Hours':
+                plot_continous(COLUMNS[to_plot][0])
+            else:
+                plot_discrete(COLUMNS[to_plot][0])
         else:
             plot_continous(COLUMNS[to_plot][0])
 
