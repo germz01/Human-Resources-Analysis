@@ -3,15 +3,15 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[italian]{babel}
-\usepackage{libertine}
-\usepackage{libertinust1math}
-\usepackage{graphicx}
 \usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
 \usepackage[framemethod=default]{mdframed}
-\usepackage{lipsum,titlesec,xcolor,subcaption,hyperref,fancyhdr,array,multicol,float}
+\usepackage{lipsum,titlesec,xcolor,subcaption,hyperref,fancyhdr,array,multicol,float,graphicx}
+
+\renewcommand*\familydefault{\sfdefault}
 
 \graphicspath{{images/}}
-\floatstyle{boxed}
+
+\floatstyle{plain}
 \restylefloat{figure}
 
 \pagestyle{fancy}

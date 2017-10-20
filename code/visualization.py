@@ -22,7 +22,7 @@ COLUMNS = {1: ['Satisfaction_Level', 'continous'],
            9: ['Salary', 'ordinal']}
 
 plt.style.use('ggplot')
-FIG = plt.figure(figsize=(6, 5))
+FIG = plt.figure(figsize=(8, 5))
 
 
 def plot_cat_and_ord(col):
@@ -82,6 +82,7 @@ def plot_continous(col):
     plt.hist(STAYED[col].tolist(), bins=int(ideal_bins),
              histtype='bar', rwidth=0.8)
     plt.xlabel(col)
+    # ticks come il barplot
     plt.ylabel('Employees Who Stayed')
     plt.subplot2grid(fig_dims, (0, 1))
     plt.hist(LEFT[col].tolist(), bins=int(ideal_bins),
@@ -114,4 +115,5 @@ if __name__ == '__main__':
         else:
             plot_continous(COLUMNS[to_plot][0])
 
-        plt.savefig('../images/' + COLUMNS[to_plot][0].lower() + '.pdf')
+        plt.savefig('../images/' + COLUMNS[to_plot][0].lower() + '.pdf',
+                    bbox_inches='tight')
