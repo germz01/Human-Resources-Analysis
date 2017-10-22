@@ -5,7 +5,7 @@
 \usepackage[italian]{babel}
 \usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
 \usepackage[framemethod=default]{mdframed}
-\usepackage{lipsum,titlesec,xcolor,subcaption,hyperref,fancyhdr,array,multicol,float,graphicx}
+\usepackage{lipsum,titlesec,xcolor,subcaption,hyperref,fancyhdr,array,multicol,float,graphicx,wrapfig,lipsum}
 
 \renewcommand*\familydefault{\sfdefault}
 
@@ -15,8 +15,13 @@
 \restylefloat{figure}
 
 \pagestyle{fancy}
-\fancyhead{}
-\fancyfoot[CO,CE]{\thepage}
+\fancyhf{}
+\renewcommand{\chaptermark}[1]{ \markboth{#1}{} }
+\renewcommand{\sectionmark}[1]{ \markright{#1}{} }
+\fancyhead[LE]{\itshape{ \fontsize{10}{12} \selectfont \leftmark}}
+\fancyhead[RE, LO]{\thepage}
+\fancyhead[RO]{\itshape{\fontsize{10}{12} \selectfont \rightmark}}
+\renewcommand\headrulewidth{0pt}
 
 \hypersetup{
     colorlinks,
