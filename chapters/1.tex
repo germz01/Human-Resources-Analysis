@@ -2,35 +2,45 @@
 \label{sec:data_semantics}
 Il progetto viene svolto sul dataset (simulato) \textbf{
 \href{https://www.kaggle.com/quentinvincenot/human-resources-analysis/data}{Human Resources Analytics}}. Questo
-dataset contiene le informazioni sui dipendenti di un'azienda fittizia, suddivise in base ai seguenti campi:
-\begin{center}
-    \begin{tabular}{| c | c | m{7cm} |}
-    \hline
-    \textbf{Field} & \textbf{Type} & \textbf{Description} \\ \hline
-    satisfaction\_level & continuous &  valutazione \textit{quantitativa} del livello di soddisfazione di ciascun
-    dipendente, ha un valore compreso tra $0$ (minimo) e $1$ (massimo)\\ \hline
-    last\_evaluation & continuous & tempo trascorso, in anni, dall'ultima valutazione delle performace del
-    dipendente \\ \hline
-    number\_project & discrete & numero di progetti completati durante il periodo di lavoro \\ \hline
-    average\_montly\_hours & discrete & media delle ore di lavoro in un mese \\ \hline
-    time\_spend\_company & discrete & numero di anni trascorsi nell'azienda \\ \hline
-    work\_accident & discrete & esprime con un $1$ il coinvolgimento di un dipendente in un incidente sul lavoro,
-    altrimenti viene impostato come $0$ \\ \hline
-    left & discrete & se il dipendente ha lasciato l'azienda viene impostato come $1$, altrimenti come $0$ \\ \hline
-    promotion\_last\_5years & discrete & se il dipendente è stato promosso negli ultimi $5$ anni viene impostato
-    come $1$, altrimenti come $0$ \\ \hline
-    sales & categorical & definisce il dipartimento nel quale il dipendente lavora \\ \hline
-    salary & ordinal & esprime il livello (\textit{low}, \textit{medium}, \textit{high}), di salario nel quale
-    rientra il dipendente \\ \hline
-\end{tabular}
-\end{center}
-Per la tipizzazione dei campi presenti nel Dataset è stata seguita la classificazione fornita nel testo
-\textit{Guide to Intelligent Data Analysis}, mentre, per la descrizione a parole, sono state seguite le direttive
-fornite nella pagina di Kaggle
-\footnote{\href{https://www.kaggle.com/}{Kaggle}} nella quale è contenuto il Dataset
-\footnote{\href{https://www.kaggle.com/ludobenistant/hr-analytics/data}{Column Metadata}}.
+dataset contiene le informazioni sui dipendenti di un'azienda fittizia, suddivise in base alle colonne elencate
+\begin{wraptable}{r}{8cm}
+    \centering
+    \begin{tabular}{| c | c |}
+        \hline
+        \textbf{Field} & \textbf{Type} \\ \hline
+        satisfaction\_level & continuous \\ \hline
+        last\_evaluation & continuous \\ \hline
+        number\_project & discrete \\ \hline
+        average\_montly\_hours & discrete \\ \hline
+        time\_spend\_company & discrete \\ \hline
+        work\_accident & discrete \\ \hline
+        left & discrete \\ \hline
+        promotion\_last\_5years & discrete \\ \hline
+        sales & categorical \\ \hline
+        salary & ordinal \\
+        \hline
+    \end{tabular}
+    \caption{Colonne presenti nel Dataset e rispettivi tipi.}
+    \label{col_tab}
+\end{wraptable}
+nella Tabella \ref{col_tab}. In questa tabella, per ogni colonna, è stato riportanto il tipo di dato usato per
+classificarla, seguendo la nomenclatura fornita nel testo utilizzato durante il corso,
+\textit{Guide to Intelligent Data Analysis}. Con la prima colonna, \textit{Satisfaction Level}, viene
+fornita una valutazione quantitativa del livello di soddisfazione di ciascun dipendente, in un range che va da un
+valore minimo di $0$ ad un massimo di $1$. \textit{Last Evaluation} fornisce il tempo trascorso, in anni,
+dall'ultima valutazione delle performace del dipendente. \textit{Number Project} riporta il numero di progetti
+completati da ciascun dipendente durante il periodo di lavoro. \textit{Average Montly Hours} rappresenta la media
+delle ore di lavoro in un mese. \textit{Time Spend Company} corrisponde al numero di anni trascorsi
+dal dipendente all'interno dell'azienda. \textit{Work Accident} esprime con un $1$ il coinvolgimento di un
+dipendente in un incidente sul lavoro, altrimenti viene impostato come $0$. \textit{Left} è utilizzata per tener
+traccia dei dipendenti che hanno lasciato l'azienda, per i quali viene usato il valore $1$, e per quelli che sono
+rimasti, per i quali viene usato il valore $0$. \textit{Promotion last 5 year} esprime con un $1$ se il dipendente
+è stato promosso negli ultimi $5$ anni, altrimenti assume il valore $0$. \textit{Sales} definisce il dipartimento
+nel quale il dipendente lavora, e \textit{Salary} esprime il livello (\textit{low}, \textit{medium},
+\textit{high}) nel quale rientra il salario del dipendente. \\
+Le descrizioni delle colonne sono state estrapolate dai metadati forniti assieme al Dataset sulla pagina di Kaggle
+\footnote{\href{https://www.kaggle.com/}{https://www.kaggle.com/}} nella quale il Dataset è contenuto.
 % section data_semantics (end)
-\newpage
 \section{Distribution of the variables and statistics} % (fold)
 \label{sec:distribution_of_the_variables_and_statistics}
 \begin{figure}[t]
