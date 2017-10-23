@@ -9,6 +9,7 @@ Verranno utilizzati i seguenti tools per lavorare al progetto.
 * [Python version 2.7.X](https://www.python.org/)
     * [Python Data Analysis Library](http://pandas.pydata.org/)
     * [Matplotlib](https://matplotlib.org/index.html)
+    * [NumPy](http://www.numpy.org/)
 
 # Ordine di lavoro con GitHub
 * `git clone https://github.com/germz01/Human-Resources-Analysis.git`
