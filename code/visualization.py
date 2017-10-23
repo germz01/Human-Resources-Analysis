@@ -82,13 +82,24 @@ def plot_continous(col):
     plt.hist(STAYED[col].tolist(), bins=int(ideal_bins),
              histtype='bar', rwidth=0.8)
     plt.xlabel(col)
-    # ticks come il barplot
     plt.ylabel('Employees Who Stayed')
+
+    if col == 'Average_Montly_Hours':
+        plt.xticks(np.arange(50, 350, 50))
+    else:
+        plt.xticks(np.linspace(0.0, 1.0, 5))
+
     plt.subplot2grid(fig_dims, (0, 1))
     plt.hist(LEFT[col].tolist(), bins=int(ideal_bins),
              histtype='bar', rwidth=0.8)
     plt.xlabel(col)
     plt.ylabel('Employees Who Left')
+
+    if col == 'Average_Montly_Hours':
+        plt.xticks(np.arange(50, 350, 50))
+    else:
+        plt.xticks(np.linspace(0.0, 1.0, 5))
+
     plt.subplots_adjust(left=0.2, wspace=0.4, top=0.8)
     plt.suptitle(col.replace('_', ' ') + ' per Employee')
 
