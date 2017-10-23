@@ -1,9 +1,7 @@
 import pandas as pd
 import csv
 
-DS = pd.read_csv(filepath_or_buffer='/Users/gianmarco/Documents/Università/' +
-                 'Magistrale/Data Mining/Human-Resources-Analysis/' +
-                 'HR_comma_sep.csv',
+DS = pd.read_csv(filepath_or_buffer='../HR_comma_sep.csv',
                  sep=',',
                  header=0,
                  names=['Satisfaction Level', 'Last Evaluation',
