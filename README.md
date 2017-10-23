@@ -1,5 +1,5 @@
 # Human-Resources-Analysis
-Progetto per il corso di Data Mining relativo all'anno accademico 2017/2018, svolto da Gianmarco Ricciarelli & Maria Cristina Uccheddu.
+Progetto per il corso di Data Mining relativo all'anno accademico 2017/2018, svolto da Gianmarco Ricciarelli & Maria Cristina Uccheddu & Stefano Carpita.
 
 # Tools utilizzati
 Verranno utilizzati i seguenti tools per lavorare al progetto.
