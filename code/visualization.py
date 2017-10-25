@@ -26,6 +26,11 @@ FIG = plt.figure(figsize=(8, 5))
 
 
 def plot_cat_and_ord(col):
+    """
+        This function plots the categorical and ordinal columns of the data
+        set.
+    """
+
     lef = np.arange(len(DF[col].unique()))
     plt.bar(x=lef, height=STAYED[col].value_counts().tolist(),
             width=0.35, label='Employees Who Stayed')
