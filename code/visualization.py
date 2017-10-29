@@ -143,5 +143,5 @@ if __name__ == '__main__':
         else:
             plot_continous(COLUMNS[to_plot][0])
 
-        plt.savefig('../images/' + COLUMNS[to_plot][0].lower() + '.pdf',
-                    bbox_inches='tight')
+        plt.savefig(fname='../images/' + COLUMNS[to_plot][0].lower(),
+                    format='pdf', bbox_inches='tight')
