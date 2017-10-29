@@ -26,6 +26,12 @@ FIG = plt.figure(figsize=(8, 5))
 
 
 def plot_cat_and_ord(col):
+    """
+        This function plots the categorical and ordinal columns of the data
+        set. Each column is plotted drawing the datas for the employees who
+        left and the employees who stayed on the same graphic.
+    """
+
     lef = np.arange(len(DF[col].unique()))
     plt.bar(x=lef, height=STAYED[col].value_counts().tolist(),
             width=0.35, label='Employees Who Stayed')
@@ -43,6 +49,12 @@ def plot_cat_and_ord(col):
 
 
 def plot_discrete(col):
+    """
+        This function plots the discrete columns of the data set. Each column
+        is plotted drawing the datas for the employees who left and the
+        employees who stayed on the same graphic.
+    """
+
     min, max = DF[col].describe()['min'], DF[col].describe()['max']
     lef = np.arange(min, max + 1)
     value_dict = STAYED[col].value_counts().to_dict()
@@ -75,6 +87,11 @@ def plot_discrete(col):
 
 
 def plot_continous(col):
+    """
+        This column plots the continous columns of the data set. The columns'
+        datas for the employees who left and the employees who stayed are
+        plotted in two separate graphics.
+    """
     fig_dims = (1, 2)
     ideal_bins = math.ceil(math.log(float(len(DF[col].tolist())), 2)) + 1
 
@@ -126,5 +143,5 @@ if __name__ == '__main__':
         else:
             plot_continous(COLUMNS[to_plot][0])
 
-        plt.savefig('../images/' + COLUMNS[to_plot][0].lower() + '.pdf',
-                    bbox_inches='tight')
+        plt.savefig(fname='../images/' + COLUMNS[to_plot][0].lower(),
+                    format='pdf', bbox_inches='tight')
