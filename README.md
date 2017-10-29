@@ -11,6 +11,11 @@ Verranno utilizzati i seguenti tools per lavorare al progetto.
     * [Matplotlib](https://matplotlib.org/index.html)
     * [NumPy](http://www.numpy.org/)
 
+# Python Packages
+Per eseguire gli script sulla propria macchina è necessario avere tutti i pacchetti utilizzati
+installati nel proprio ambiente di sviluppo. Nella cartella code è presente il file ```requirements.txt```,
+eseguire il comando ```pip install -r requirements.txt``` permette di installare tutti i pacchetti utilizzati.
+
 # Ordine di lavoro con GitHub
 * `git clone https://github.com/germz01/Human-Resources-Analysis.git`
 * `git pull` ad ogni accesso alla cartella per essere sicuri di lavorare sulla versione più aggiornata del progetto
