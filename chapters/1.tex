@@ -43,17 +43,28 @@ Le descrizioni delle colonne sono state estrapolate dai metadati forniti assieme
 % section data_semantics (end)
 \section{Distribution of the variables and statistics} % (fold)
 \label{sec:distribution_of_the_variables_and_statistics}
-\begin{figure}[t]
+\begin{figure}
     \centering
-    \includegraphics[width=0.5\textwidth,height=0.5\textheight,keepaspectratio]{images/salary.pdf}
-    \caption{Distribuzione relativa alla colonna Salary.}
-    \label{salary}
-\end{figure}
-\begin{figure}[b]
-    \centering
-    \includegraphics[height=10cm,width=10cm,keepaspectratio]{images/sales.pdf}
-    \caption{Distribuzione relativa alla colonna Sales}
-    \label{sales}
+    \begin{subfigure}{.4\linewidth}
+        \includegraphics[scale=0.5]{images/salary.pdf}
+        \caption{Distribuzione relativa alla colonna Salary.}
+        \label{salary}
+    \end{subfigure}
+    \begin{subfigure}{.4\linewidth}
+        \includegraphics[scale=0.5]{images/sales.pdf}
+        \caption{Distribuzione relativa alla colonna Sales.}
+        \label{sales}
+    \end{subfigure}
+    \begin{subfigure}{.4\linewidth}
+        \includegraphics[scale=0.4]{images/satisfaction_level.pdf}
+        \caption{Distribuzione relativa alla colonna Satisfaction Level.}
+        \label{satisfaction_label}
+    \end{subfigure}
+    \begin{subfigure}{.4\linewidth}
+        \includegraphics[scale=0.5]{images/average_montly_hours.pdf}
+        \caption{Distribuzione relativa alla colonna Average Montly Hours.}
+        \label{average_montly_hours}
+    \end{subfigure}
 \end{figure}
 In questo paragrafo vengono presentati i grafici relativi alla distribuzione dei valori assunti dalle colonne
 descritte nella sezione precedente. Viene omesso il codice con i quali tali grafici sono stati co{}struiti.
