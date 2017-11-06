@@ -45,26 +45,16 @@ Le descrizioni delle colonne sono state estrapolate dai metadati forniti assieme
 \label{sec:distribution_of_the_variables_and_statistics}
 \begin{figure}
     \centering
-    \begin{subfigure}{.4\linewidth}
-        \includegraphics[scale=0.5]{images/salary.pdf}
-        \caption{Distribuzione relativa alla colonna Salary.}
-        \label{salary}
-    \end{subfigure}
-    \begin{subfigure}{.4\linewidth}
-        \includegraphics[scale=0.5]{images/sales.pdf}
-        \caption{Distribuzione relativa alla colonna Sales.}
-        \label{sales}
-    \end{subfigure}
-    \begin{subfigure}{.4\linewidth}
-        \includegraphics[scale=0.4]{images/satisfaction_level.pdf}
-        \caption{Distribuzione relativa alla colonna Satisfaction Level.}
-        \label{satisfaction_label}
-    \end{subfigure}
-    \begin{subfigure}{.4\linewidth}
-        \includegraphics[scale=0.5]{images/average_montly_hours.pdf}
-        \caption{Distribuzione relativa alla colonna Average Montly Hours.}
-        \label{average_montly_hours}
-    \end{subfigure}
+    \subcaptionbox{\label{salary}}{\includegraphics[scale=0.5]{images/salary.pdf}}
+    \subcaptionbox{\label{sales}}{\includegraphics[scale=0.5]{images/sales.pdf}}
+    \subcaptionbox{\label{satisfaction_level}}{\includegraphics[scale=0.5]{images/satisfaction_level.pdf}}
+    \subcaptionbox{\label{average_montly_hours}}{\includegraphics[scale=0.5]{images/average_montly_hours.pdf}}
+    \subcaptionbox{\label{promotion_last_5_years}}{\includegraphics[scale=0.5]{images/promotion_last_5_years.pdf}}
+    \subcaptionbox{\label{number_project}}{\includegraphics[scale=0.5]{images/number_project.pdf}}
+    \caption{Da sinistra verso destra, e dall'alto verso il basso, sono raffigurate le distribuzioni delle
+    colonne \textit{Salary}, \textit{Sales}, \textit{Satisfaction Level}, \textit{Average Montly Hours},
+    \textit{Promotion Last 5 Years} e \textit{Number Project}. In rosso vengono rappresentati gli impiegati che
+    sono rimasti nell'azienda, mentre in blu quelli che se ne sono andati.}
 \end{figure}
 In questo paragrafo vengono presentati i grafici relativi alla distribuzione dei valori assunti dalle colonne
 descritte nella sezione precedente. Viene omesso il codice con i quali tali grafici sono stati co{}struiti.
