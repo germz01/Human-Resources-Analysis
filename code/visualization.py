@@ -94,26 +94,31 @@ def plot_continous(col):
     """
     fig_dims = (1, 2)
     ideal_bins = math.ceil(math.log(float(len(DF[col].tolist())), 2)) + 1
+    name = col.replace('_', ' ')
 
     plt.subplot2grid(fig_dims, (0, 0))
     plt.hist(STAYED[col].tolist(), bins=int(ideal_bins),
              histtype='bar', rwidth=0.8)
-    plt.xlabel(col)
+    plt.xlabel(name)
     plt.ylabel('Employees Who Stayed')
 
     if col == 'Average_Montly_Hours':
         plt.xticks(np.arange(50, 350, 50))
+    elif col == 'Last_Evaluation':
+        plt.xticks(np.linspace(0.25, 1.0, 4))
     else:
         plt.xticks(np.linspace(0.0, 1.0, 5))
 
     plt.subplot2grid(fig_dims, (0, 1))
     plt.hist(LEFT[col].tolist(), bins=int(ideal_bins),
              histtype='bar', rwidth=0.8)
-    plt.xlabel(col)
+    plt.xlabel(name)
     plt.ylabel('Employees Who Left')
 
     if col == 'Average_Montly_Hours':
         plt.xticks(np.arange(50, 350, 50))
+    elif col == 'Last_Evaluation':
+        plt.xticks(np.linspace(0.25, 1.0, 4))
     else:
         plt.xticks(np.linspace(0.0, 1.0, 5))
 
@@ -143,5 +148,5 @@ if __name__ == '__main__':
         else:
             plot_continous(COLUMNS[to_plot][0])
 
-        plt.savefig(fname='../images/' + COLUMNS[to_plot][0].lower(),
+        plt.savefig(fname='../images/' + COLUMNS[to_plot][0].lower() + '.pdf',
                     format='pdf', bbox_inches='tight')
