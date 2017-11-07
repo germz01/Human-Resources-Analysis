@@ -66,14 +66,24 @@ Le descrizioni delle colonne sono state estrapolate dai metadati forniti assieme
     \caption{Da sinistra verso destra, e dall'alto verso il basso, sono raffigurate le distribuzioni delle
     colonne \textit{Salary}, \textit{Sales}, \textit{Satisfaction Level} e \textit{Average Montly Hours}.
     In rosso vengono rappresentati gli impiegati che sono rimasti nell'azienda, mentre in blu quelli che se ne
-    sono andati.}
+    sono andati. Per ogni colonna vengono fornite delle informazioni riguardo alla \textbf{media}, alla
+    \textbf{deviazione standard} e ai valori \textbf{massimi} e \textbf{minimi} dei parametri analizzati.}
 \end{figure}
 \begin{figure}
+    \captionsetup[subfigure]{font=scriptsize,labelfont=scriptsize}
     \centering
-    \subcaptionbox{\label{promotion_last_5_years}}{\includegraphics[scale=0.5]{images/promotion_last_5_years.pdf}}
-    \subcaptionbox{\label{number_project}}{\includegraphics[scale=0.5]{images/number_project.pdf}}
-    \subcaptionbox{\label{time_spend_company}}{\includegraphics[scale=0.5]{images/time_spend_company.pdf}}
-    \subcaptionbox{\label{work_accident}}{\includegraphics[scale=0.5]{images/work_accident.pdf}}
+    \subcaptionbox{Come possiamo osservare, la maggior parte degli impiegati che hanno lasciato l'azienda non ha
+    avuto una promozione negli ultimi $5$ anni. Soltato $19$ impiegati su $3571$ sono stati promossi. Lo stesso
+    vale per gli impiegati rimasti.\label{promotion_last_5_years}}
+    {\includegraphics[scale=0.4]{images/promotion_last_5_years.pdf}}
+    \subcaptionbox{La maggior parte degli impiegati che hanno lasciato l'azienda ha svolto soltato $2$ progetti,
+    mentre quelli che sono rimasti hanno svolto per la maggior parte $3$ progetti.\label{number_project}}
+    {\includegraphics[scale=0.4]{images/number_project.pdf}}
+    \subcaptionbox{Gli impiegati che se ne sono andati avevano trascorso per la maggior parte $3$ anni all'interno
+    dell'azienda, allo stesso modo gran parte degli impiegati al momento in azienda lavora al suo interno da $3$
+    anni.\label{time_spend_company}}
+    {\includegraphics[scale=0.4]{images/time_spend_company.pdf}}
+    \subcaptionbox{\label{work_accident}}{\includegraphics[scale=0.4]{images/work_accident.pdf}}
     \subcaptionbox{\label{last_evaluation}}{\includegraphics[scale=0.5]{images/last_evaluation.pdf}}
     \caption{Da sinistra verso destra, e dall'alto verso il basso, sono raffigurate le distribuzioni delle
     colonne \textit{Time Spend Company}, \textit{Work Accident}, \textit{Last Evaluation}.}

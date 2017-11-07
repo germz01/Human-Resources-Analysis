@@ -34,9 +34,9 @@ def plot_cat_and_ord(col):
 
     lef = np.arange(len(DF[col].unique()))
     plt.bar(x=lef, height=STAYED[col].value_counts().tolist(),
-            width=0.35, label='Employees Who Stayed')
+            width=0.35, label='Employees Who Stayed', color='tomato')
     plt.bar(x=lef+0.35, height=LEFT[col].value_counts().tolist(),
-            width=0.35, label='Employees Who left')
+            width=0.35, label='Employees Who left', color='steelblue')
     if col == 'Sales':
         plt.xticks(np.arange(len(DF[col].unique())) + (0.35/2),
                    DF[col].unique(), rotation='vertical', fontsize='3')
@@ -66,7 +66,8 @@ def plot_discrete(col):
         else:
             h.append(0)
 
-    plt.bar(x=lef, height=h, width=0.35, label='Employees Who Stayed')
+    plt.bar(x=lef, height=h, width=0.35, label='Employees Who Stayed',
+            color='tomato')
 
     value_dict = LEFT[col].value_counts().to_dict()
     h = []
@@ -77,7 +78,8 @@ def plot_discrete(col):
         else:
             h.append(0)
 
-    plt.bar(x=lef + 0.35, height=h, width=0.35, label='Employees Who left')
+    plt.bar(x=lef + 0.35, height=h, width=0.35, label='Employees Who left',
+            color='steelblue')
 
     plt.xticks(np.arange(min, max + 1) + (0.35/2),
                np.arange(min, max + 1))
@@ -98,7 +100,7 @@ def plot_continous(col):
 
     plt.subplot2grid(fig_dims, (0, 0))
     plt.hist(STAYED[col].tolist(), bins=int(ideal_bins),
-             histtype='bar', rwidth=0.8)
+             histtype='bar', rwidth=0.8, color='tomato')
     plt.xlabel(name)
     plt.ylabel('Employees Who Stayed')
 
@@ -111,7 +113,7 @@ def plot_continous(col):
 
     plt.subplot2grid(fig_dims, (0, 1))
     plt.hist(LEFT[col].tolist(), bins=int(ideal_bins),
-             histtype='bar', rwidth=0.8)
+             histtype='bar', rwidth=0.8, color='steelblue')
     plt.xlabel(name)
     plt.ylabel('Employees Who Left')
 
