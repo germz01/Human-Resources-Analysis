@@ -157,4 +157,7 @@ if __name__ == '__main__':
                         format='pdf', bbox_inches='tight')
 
         if raw_input('Print more?(Yes/No) ') == 'No':
+            plt.close()
             break
+
+        plt.clf()
