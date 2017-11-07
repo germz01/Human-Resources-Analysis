@@ -128,27 +128,33 @@ def plot_continous(col):
     plt.suptitle(col.replace('_', ' ') + ' per Employee')
 
 if __name__ == '__main__':
-    to_plot = int(raw_input('What column do you want to plot?\n1: ' +
-                            'Satisfaction_Level\n2: Last_Evaluation\n' +
-                            '3: Number_Project\n4: Average_Montly_Hours\n' +
-                            '5: Time_Spend_Company\n6: Work_Accident\n' +
-                            '7: Promotion_Last_5_Years\n8: Sales\n' +
-                            '9: Salary\n\n'))
+    while True:
+        to_plot = int(raw_input('What column do you want to plot?\n1: ' +
+                                'Satisfaction_Level\n2: Last_Evaluation\n' +
+                                '3: Number_Project\n' +
+                                '4: Average_Montly_Hours\n' +
+                                '5: Time_Spend_Company\n6: Work_Accident\n' +
+                                '7: Promotion_Last_5_Years\n8: Sales\n' +
+                                '9: Salary\n\n'))
 
-    if to_plot not in range(1, 10):
-        print 'ERROR'
-    else:
-        type = COLUMNS[to_plot][1]
-
-        if type == 'ordinal' or type == 'categorical':
-            plot_cat_and_ord(COLUMNS[to_plot][0])
-        elif type == 'discrete':
-            if COLUMNS[to_plot][0] == 'Average_Montly_Hours':
-                plot_continous(COLUMNS[to_plot][0])
-            else:
-                plot_discrete(COLUMNS[to_plot][0])
+        if to_plot not in range(1, 10):
+            print 'ERROR'
         else:
-            plot_continous(COLUMNS[to_plot][0])
+            type = COLUMNS[to_plot][1]
 
-        plt.savefig(fname='../images/' + COLUMNS[to_plot][0].lower() + '.pdf',
-                    format='pdf', bbox_inches='tight')
+            if type == 'ordinal' or type == 'categorical':
+                plot_cat_and_ord(COLUMNS[to_plot][0])
+            elif type == 'discrete':
+                if COLUMNS[to_plot][0] == 'Average_Montly_Hours':
+                    plot_continous(COLUMNS[to_plot][0])
+                else:
+                    plot_discrete(COLUMNS[to_plot][0])
+            else:
+                plot_continous(COLUMNS[to_plot][0])
+
+            plt.savefig(fname='../images/' + COLUMNS[to_plot][0].lower() +
+                        '.pdf',
+                        format='pdf', bbox_inches='tight')
+
+        if raw_input('Print more?(Yes/No) ') == 'No':
+            break
