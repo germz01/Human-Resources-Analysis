@@ -15,9 +15,9 @@ le informazioni sui dipendenti di un'azienda fittizia, suddivise in base alle va
         number\_project & discrete \\ \hline
         average\_montly\_hours & discrete \\ \hline
         time\_spend\_company & discrete \\ \hline
-        work\_accident & discrete \\ \hline
-        left & discrete \\ \hline
-        promotion\_last\_5years & discrete \\ \hline
+        work\_accident & categorical \\ \hline
+        left & categorical \\ \hline
+        promotion\_last\_5years & categorical \\ \hline
         sales & categorical \\ \hline
         salary & ordinal \\
         \hline
@@ -37,12 +37,14 @@ delle ore di lavoro in un mese. \textit{Time Spend Company} corrisponde al numer
 dal dipendente all'interno dell'azienda. \textit{Work Accident} esprime con un $1$ il coinvolgimento di un
 dipendente in un incidente sul lavoro, altrimenti viene impostato come $0$. \textit{Left} è utilizzata per tener
 traccia dei dipendenti che hanno lasciato l'azienda, per i quali viene usato il valore $1$, e per quelli che sono
-rimasti, per i quali viene usato il valore $0$. \textit{Promotion last 5 year} esprime con un $1$ se il dipendente
+rimasti, per i quali viene usato il valore $0$. \textit{Promotion last 5 Year} esprime con un $1$ se il dipendente
 è stato promosso negli ultimi $5$ anni, altrimenti assume il valore $0$. \textit{Sales} definisce il dipartimento
 nel quale il dipendente lavora, e \textit{Salary} esprime il livello (\textit{low}, \textit{medium},
 \textit{high}) nel quale rientra il salario del dipendente.
 Le descrizioni delle variabili sono state estrapolate dai metadati forniti assieme al Dataset sulla pagina di Kaggle
-\footnote{\href{https://www.kaggle.com/}{https://www.kaggle.com/}} nella quale il Dataset è contenuto.
+\footnote{\href{https://www.kaggle.com/}{https://www.kaggle.com/}} nella quale il Dataset è contenuto. La scelta
+di catalogare le colonne \textit{Work Accident}, \textit{Left} e \textit{Promotion Last 5 Years} come
+variabili di tipo categorico verrà opportunamente motivata nelle sezioni successive.
 
 %% section data_semantics (end)
 \section{Distribution of the variables and statistics} %% (fold)

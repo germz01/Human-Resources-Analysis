@@ -91,8 +91,34 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "chapters/1.tex",
+			"settings":
+			{
+				"buffer_size": 8405,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "main.tex",
+			"settings":
+			{
+				"buffer_size": 1271,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "code/visualization.py",
+			"settings":
+			{
+				"buffer_size": 5762,
+				"line_ending": "Unix"
+			}
+		}
 	],
-	"build_system": "Packages/LaTeXTools/LaTeX.sublime-build",
+	"build_system": "Packages/Python/Python.sublime-build",
 	"build_system_choices":
 	[
 		[
@@ -140,7 +166,23 @@
 			],
 			[
 				"Packages/LaTeXTools/LaTeX.sublime-build",
-				"PdfLaTeX"
+				"XeLaTeX"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
 			]
 		]
 	],
@@ -153,7 +195,7 @@
 		[
 			[
 				"package",
-				"Package Control: List Packages"
+				"Package Control: Remove Package"
 			],
 			[
 				"install",
@@ -272,7 +314,7 @@
 				"Package Control: List Packages"
 			]
 		],
-		"width": 480.0
+		"width": 464.0
 	},
 	"console":
 	{
@@ -304,13 +346,28 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/gianmarco/Documents/Università/Magistrale/Data Mining/Human-Resources-Analysis"
+		"/Users/gianmarco/Documents/Università/Magistrale/Data Mining/Human-Resources-Analysis",
+		"/Users/gianmarco/Documents/Università/Magistrale/Data Mining/Human-Resources-Analysis/code"
 	],
 	"file_history":
 	[
-		"/Users/gianmarco/Documents/Dev/Python/data_science/text.py",
-		"/Users/gianmarco/Documents/Università/Magistrale/Data Mining/Human-Resources-Analysis/.gitignore",
+		"/Users/gianmarco/Desktop/t.tex",
+		"/Users/gianmarco/Documents/Università/Magistrale/Data Mining/Human-Resources-Analysis/main.tex",
+		"/Users/gianmarco/Documents/Università/Magistrale/Data Mining/Human-Resources-Analysis/code/visualization.py",
+		"/Users/gianmarco/Documents/Università/Magistrale/Data Mining/Human-Resources-Analysis/chapters/1.tex",
+		"/Users/gianmarco/Documents/Università/Magistrale/Data Mining/Human-Resources-Analysis/chapters/2.tex",
+		"/Users/gianmarco/Documents/Università/Magistrale/Data Mining/Human-Resources-Analysis/main.pdf",
 		"/Users/gianmarco/Documents/Università/Magistrale/Data Mining/Human-Resources-Analysis/README.md",
+		"/Users/gianmarco/Desktop/update_all_virtualenvs.sh",
+		"/Users/gianmarco/Documents/Dev/Python/information_retrival/tutorial/tutorial/spiders/quotes_spider.py",
+		"/Users/gianmarco/Documents/Dev/Python/data_science/dist_matrix.py",
+		"/Users/gianmarco/Documents/Università/Magistrale/Data Mining/Human-Resources-Analysis/.gitignore",
+		"/Users/gianmarco/Documents/Università/Magistrale/Data Mining/Human-Resources-Analysis/project.sublime-project",
+		"/Users/gianmarco/Documents/Università/Magistrale/Data Mining/Human-Resources-Analysis/images/salary.pdf",
+		"/Users/gianmarco/Documents/Dev/Python/data_science/visualization.py",
+		"/Users/gianmarco/Documents/Università/Magistrale/Data Mining/Human-Resources-Analysis/titlepage.tex",
+		"/Users/gianmarco/Documents/Università/Magistrale/Data Mining/Human-Resources-Analysis/code/data_exploration.py",
+		"/Users/gianmarco/Documents/Dev/Python/data_science/text.py",
 		"/Users/gianmarco/Documents/Dev/Python/data_science/practice.py",
 		"/Users/gianmarco/Documents/Università/Magistrale/Data Mining/project/chapters/1.tex",
 		"/Users/gianmarco/Documents/Università/Triennale/Tirocinio/Tesi/main.tex",
@@ -421,25 +478,11 @@
 		"/Users/gianmarco/Documents/listupp/listupp/static/common/css/landing_facebook_eng.css",
 		"/Users/gianmarco/Documents/listupp/backend/feeds/zanox/__init__.py",
 		"/Users/gianmarco/Documents/listupp/backend/tasks/locale/es/feeds.py",
-		"/Users/gianmarco/Documents/listupp/listupp/settings/es_local.py",
-		"/Users/gianmarco/Documents/listupp/backend/feeds/zanox/asos_pl.py",
-		"/Users/gianmarco/Documents/listupp/backend/feeds/zanox/asos_fr.py",
-		"/Users/gianmarco/Documents/listupp/backend/feeds/zanox/farfetch_es.py",
-		"/Users/gianmarco/Documents/listupp/planet/templates/base.html",
-		"/Users/gianmarco/Documents/listupp/listupp/static/common/css/optimized.css",
-		"/Users/gianmarco/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/Users/gianmarco/Desktop/<div class=\"container\">",
-		"/Users/gianmarco/Documents/listupp/scontodigitale/templates/frontend/home.html",
-		"/Users/gianmarco/Documents/listupp/facebook/views.py",
-		"/Users/gianmarco/Documents/listupp/backend/models.py",
-		"/Users/gianmarco/Documents/listupp/adserver/stats/stats.py",
-		"/Users/gianmarco/Documents/listupp/adserver/reporting/network/advertiser.py",
-		"/Users/gianmarco/Documents/listupp/backend/emailtools.py",
-		"/Users/gianmarco/Documents/listupp/backend/tasks/mail_report_cpc.py"
+		"/Users/gianmarco/Documents/listupp/listupp/settings/es_local.py"
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 70.0
 	},
 	"find_in_files":
 	{
@@ -470,8 +513,102 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "chapters/1.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8405,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3007,
+								3007
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "main.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1271,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								39,
+								415
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "code/visualization.py",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 5762,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								676,
+								676
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -506,11 +643,19 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 132.0
+	},
 	"output.find_results":
 	{
 		"height": 0.0
 	},
 	"output.latextools":
+	{
+		"height": 132.0
+	},
+	"output.mdpopups":
 	{
 		"height": 0.0
 	},
@@ -527,6 +672,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"main.tex"
+			],
 			[
 				"merchant",
 				"listupp/settings/locale/br/merchant.py"
@@ -778,10 +927,6 @@
 			[
 				"listupp",
 				"static/js/listupp-optimized.js"
-			],
-			[
-				"",
-				"frontend/optimized_views.py"
 			],
 			[
 				"listupp-opt",
