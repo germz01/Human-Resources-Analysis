@@ -94,28 +94,20 @@ def plot_continous(col):
         datas for the employees who left and the employees who stayed are
         plotted in two separate graphics.
     """
-    fig_dims = (1, 2)
+    # fig_dims = (1, 2)
     ideal_bins = math.ceil(math.log(float(len(DF[col].tolist())), 2)) + 1
     name = col.replace('_', ' ')
 
-    plt.subplot2grid(fig_dims, (0, 0))
+    # plt.subplot2grid(fig_dims, (0, 0))
     plt.hist(STAYED[col].tolist(), bins=int(ideal_bins),
-             histtype='bar', rwidth=0.8, color='tomato')
-    plt.xlabel(name)
-    plt.ylabel('Employees Who Stayed')
-
-    if col == 'Average_Montly_Hours':
-        plt.xticks(np.arange(50, 350, 50))
-    elif col == 'Last_Evaluation':
-        plt.xticks(np.linspace(0.25, 1.0, 4))
-    else:
-        plt.xticks(np.linspace(0.0, 1.0, 5))
-
-    plt.subplot2grid(fig_dims, (0, 1))
+             histtype='bar', color='tomato', alpha=0.5,
+             edgecolor='crimson', linewidth=1.0)
     plt.hist(LEFT[col].tolist(), bins=int(ideal_bins),
-             histtype='bar', rwidth=0.8, color='steelblue')
+             histtype='bar', color='steelblue', alpha=0.5,
+             edgecolor='darkslateblue', linewidth=1.0)
     plt.xlabel(name)
-    plt.ylabel('Employees Who Left')
+    plt.ylabel('Employees')
+    # plt.ylabel('Employees Who Stayed')
 
     if col == 'Average_Montly_Hours':
         plt.xticks(np.arange(50, 350, 50))
@@ -124,8 +116,20 @@ def plot_continous(col):
     else:
         plt.xticks(np.linspace(0.0, 1.0, 5))
 
-    plt.subplots_adjust(left=0.2, wspace=0.4, top=0.8)
-    plt.suptitle(col.replace('_', ' ') + ' per Employee')
+    # plt.subplot2grid(fig_dims, (0, 1))
+
+    # plt.xlabel(name)
+    # plt.ylabel('Employees Who Left')
+
+    # if col == 'Average_Montly_Hours':
+    #     plt.xticks(np.arange(50, 350, 50))
+    # elif col == 'Last_Evaluation':
+    #     plt.xticks(np.linspace(0.25, 1.0, 4))
+    # else:
+    #     plt.xticks(np.linspace(0.0, 1.0, 5))
+
+    # plt.subplots_adjust(left=0.2, wspace=0.4, top=0.8)
+    plt.title(col.replace('_', ' ') + ' per Employee')
 
 if __name__ == '__main__':
     while True:
@@ -156,7 +160,7 @@ if __name__ == '__main__':
                         '.pdf',
                         format='pdf', bbox_inches='tight')
 
-        if raw_input('Print more?(Yes/No) ') == 'No':
+        if raw_input('Print more?(Yes/No) ') in ['No', 'N', 'no', 'n']:
             plt.close()
             break
 
