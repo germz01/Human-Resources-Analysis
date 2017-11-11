@@ -34,9 +34,9 @@ def plot_cat_and_ord(col):
 
     lef = np.arange(len(DF[col].unique()))
     plt.bar(x=lef, height=STAYED[col].value_counts().tolist(),
-            width=0.35, label='Employees Who Stayed', color='tomato')
+            width=0.35, label='Employees Who Stayed', color='steelblue')
     plt.bar(x=lef+0.35, height=LEFT[col].value_counts().tolist(),
-            width=0.35, label='Employees Who left', color='steelblue')
+            width=0.35, label='Employees Who left', color='tomato')
     if col == 'Sales':
         plt.xticks(np.arange(len(DF[col].unique())) + (0.35/2),
                    DF[col].unique(), rotation='vertical', fontsize='3')
@@ -67,7 +67,7 @@ def plot_discrete(col):
             h.append(0)
 
     plt.bar(x=lef, height=h, width=0.35, label='Employees Who Stayed',
-            color='tomato')
+            color='steelblue')
 
     value_dict = LEFT[col].value_counts().to_dict()
     h = []
@@ -79,7 +79,7 @@ def plot_discrete(col):
             h.append(0)
 
     plt.bar(x=lef + 0.35, height=h, width=0.35, label='Employees Who left',
-            color='steelblue')
+            color='tomato')
 
     plt.xticks(np.arange(min, max + 1) + (0.35/2),
                np.arange(min, max + 1))
