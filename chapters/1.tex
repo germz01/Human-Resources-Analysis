@@ -49,60 +49,61 @@ variabili di tipo categorico verrà opportunamente motivata nelle sezioni succes
 \label{sec:distribution_of_the_variables_and_statistics}
 
 In questo paragrafo vengono presentati i grafici relativi alla distribuzione dei valori assunti dalle variabili
-descritte nella sezione precedente. Ogni figura viene presentata accompagnata da una descrizione della distribuzione rappresentata.
-\todo[inline]{Nota sulle figure: i commenti vanno separati dalle captions facendoli a parte nel testo.
-Sistemare la grandezza delle annotazioni nei grafici}
+descritte nella sezione precedente. Per dare una migliore interpretazione a questi grafici abbiamo deciso di sostenere un'analisi accurata che contraddistingue i dipendenti che lavorano nell'azienda, rappresentati dal colore blu, e quelli che invece la hanno lasciata, rappresentati dal colore rosso.
+
+Prima di tutto vogliamo mostrare le caratteristiche fondamentali alla nostra ricerca:
+Barplot dipendenti totali (suddivisione left), barplot sales per employee
+
+Dati questi rapporti fondamentali abbiamo iniziato la nostra analisi:
 
 \begin{figure}[H]
     \captionsetup[subfigure]{font=scriptsize,labelfont=scriptsize}
     \centering
-    \subcaptionbox{Tra i $3571$ impiegati che hanno lasciato l'azienda, $2172$ rietrano nella categoria salariale
-    \textit{low}, mentre tra gli $11428$ impiegati rimasti nell'azienda, $5144$ rientrano nella categoria salariale
-    \textit{low}.\label{salary}}{\includegraphics[scale=0.4]{images/salary.pdf}}
-    \subcaptionbox{Come possiamo osservare, il reparto \textit{sales} è quello con il più alto numero di impiegati,
-    sia che essi abbiano lasciato l'azienda sia che siano rimasti.\label{sales}}
-    {\includegraphics[scale=0.4]{images/sales.pdf}}
-    \subcaptionbox{Per gli impiegati che hanno lasciato l'azienda, la \textbf{media} del livello di soddisfazione è
-    $0.44$, la \textbf{deviazione standard} è $0.26$, i valori \textbf{minimo} e \textbf{massimo} sono,
-    rispettivamente, $0.09$ e $0.92$. Per quanto riguarda gli impiegati rimasti abbiamo invece una \textbf{media}
-    pari a $0.67$, una \textbf{deviazione standard} pari a $0.22$ e un valore \textbf{minimo} e \textbf{massimo}
-    pari a $0.12$ e $1.0$.\label{satisfaction_level}}{\includegraphics[scale=0.5]{images/satisfaction_level.pdf}}
-    \subcaptionbox{Per gli impiegati che hanno lasciato l'azienda, la \textbf{media} delle ore di lavoro mensili è
+    \subcaptionbox{\includegraphics[scale=0.4]{images/salary.pdf}}
+ \end{figure}
+ Abbiamo iniziato a rapportare i dipendenti con il proprio salario, e si è evinto che       in un totale di 14999 dipendenti analizzati: 3571 di questi hanno lasciato l'azienda (quasi il 24\% del totale (23.82\%)), di cui il 60\% di questi aveva uno stipendio low, i restanti 11428 dipendenti (quasi il 76\%) sono rimasti nella azienda di cui 5144 (il 34.3\%) ha un salario low, (mancano dettagli per high e medium).
+     
+Proseguendo poi con il rapporto tra dipendenti ancora in azienda e non e il numero delle ore di lavoro in media: scopriamo che Per gli impiegati che hanno lasciato l'azienda, la \textbf{media} delle ore di lavoro mensili è
     $207.42$, la \textbf{deviazione standard} è $61.20$, i valori \textbf{minimo} e \textbf{massimo} sono,
     rispettivamente, $126$ e $310$. Per quanto riguarda gli impiegati rimasti abbiamo invece una \textbf{media}
     pari a $199.06$, una \textbf{deviazione standard} pari a $45.68$ e un valore \textbf{minimo} e
-    \textbf{massimo} pari a $96$ e $287$.\label{average_montly_hours}}
+    \textbf{massimo} pari a $96$ e $287$.\label{average_montly_hours}    
+ \begin{figure}[H]
+    \captionsetup[subfigure]{font=scriptsize,labelfont=scriptsize}
+    \centering    
+    \subcaptionbox{}
     {\includegraphics[scale=0.5]{images/average_montly_hours.pdf}}
-    \caption{Da sinistra verso destra, e dall'alto verso il basso, sono raffigurate le distribuzioni delle
-    variabili \textit{Salary}, \textit{Sales}, \textit{Satisfaction Level} e \textit{Average Montly Hours}.
-    In rosso vengono rappresentati gli impiegati che sono rimasti nell'azienda, mentre in blu quelli che se ne
-    sono andati. Per ogni variabile vengono fornite delle informazioni riguardo alla \textbf{media}, alla
-    \textbf{deviazione standard} e ai valori \textbf{massimi} e \textbf{minimi} dei parametri analizzati.}
 \end{figure}
+
+Se rapportiamo i dipendenti ai valori che indicano se il dipendente è stato promosso negli ultimi 5 anni o no, possiamo ricavare una informazione importante, la totalità degli impiegati che hanno lasciato l'azienda non ha
+    avuto una promozione negli ultimi $5$ anni. Soltato $19$ impiegati su $3571$ sono stati promossi.
 \begin{figure}[H]
     \captionsetup[subfigure]{font=scriptsize,labelfont=scriptsize}
     \centering
-    \subcaptionbox{Come possiamo osservare, la maggior parte degli impiegati che hanno lasciato l'azienda non ha
-    avuto una promozione negli ultimi $5$ anni. Soltato $19$ impiegati su $3571$ sono stati promossi. Lo stesso
-    vale per gli impiegati rimasti, ma ovviamente in proporzioni diverse.\label{promotion_last_5_years}}
+    \subcaptionbox{}
     {\includegraphics[scale=0.4]{images/promotion_last_5_years.pdf}}
-    \subcaptionbox{La maggior parte degli impiegati che hanno lasciato l'azienda ha svolto soltato $2$ progetti,
-    mentre quelli che sono rimasti hanno svolto per la maggior parte $3$ progetti, e in misura leggermente minore
-    $4$.\label{number_project}}
-    {\includegraphics[scale=0.4]{images/number_project.pdf}}
-    \subcaptionbox{Gli impiegati che se ne sono andati avevano trascorso per la maggior parte $3$ anni all'interno
-    dell'azienda, allo stesso modo gran parte degli impiegati al momento in azienda lavora al suo interno da $3$
-    anni.\label{time_spend_company}}
-    {\includegraphics[scale=0.4]{images/time_spend_company.pdf}}
-    \subcaptionbox{Soltanto $169$ impiegati tra i $3571$ che se ne sono andati ha avuto un incidente sul lavoro,
+\end{figure}
+Soltanto $169$ impiegati tra i $3571$ che se ne sono andati ha avuto un incidente sul lavoro,
     mentre gli impiegati ancora all'interno dell'azienda ad aver subito un incidente sono $2000$ su $11428$
-    \label{work_accident}}{\includegraphics[scale=0.4]{images/work_accident.pdf}}
+    \label{work_accident}
+\begin{figure}[H]
+    \captionsetup[subfigure]{font=scriptsize,labelfont=scriptsize}
+    \centering
+    \subcaptionbox{\includegraphics[scale=0.4]{images/work_accident.pdf}}
+ \end{figure}
+ 
+ A questo punto è giusto analizzare il livello di soddisfazione e possiamo constatare che per gli impiegati che hanno lasciato l'azienda, la \textbf{media} del livello di soddisfazione è $0.44$, la \textbf{deviazione standard} è $0.26$, i valori \textbf{minimo} e \textbf{massimo} sono, rispettivamente, $0.09$ e $0.92$. Per quanto riguarda gli impiegati rimasti abbiamo invece una \textbf{media} pari a $0.67$, una \textbf{deviazione standard} pari a $0.22$ e un valore \textbf{minimo} e \textbf{massimo}
+pari a $0.12$ e $1.0$.\label{satisfaction_level}
+  \begin{figure}[H]
+    \captionsetup[subfigure]{font=scriptsize,labelfont=scriptsize}
+    \centering
+    \subcaptionbox{\includegraphics[scale=0.5]{images/satisfaction_level.pdf}}
+     \end{figure}
+E la possiamo rapportare rispetto alla precedente valutazione del livello di soddisfazione
+ \begin{figure}[H]
+    \captionsetup[subfigure]{font=scriptsize,labelfont=scriptsize}
+    \centering 
     \subcaptionbox{\label{last_evaluation}}{\includegraphics[scale=0.5]{images/last_evaluation.pdf}}
-    \caption{Da sinistra verso destra, e dall'alto verso il basso, sono raffigurate le distribuzioni delle
-    variabili \textit{Promotion Last 5 Years}, \textit{Number Project}, \textit{Time Spend Company},
-    \textit{Work Accident} e \textit{Last Evaluation}. In rosso vengono rappresentati gli impiegati che sono
-    rimasti nell’azienda, mentre in blu quelli che se ne sono andati. Per le prime quattro visualizzazioni
-    sono fornite delle descrizioni sommarie, trattandosi di dati di tipo discreto.}
 \end{figure}
 % section distribution_of_the_variables_and_statistics (end)
 \section{Assessing data quality} % (fold)
