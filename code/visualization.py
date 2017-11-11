@@ -89,25 +89,14 @@ def plot_discrete(col):
 
 
 def plot_continous(col):
-    """
-        This column plots the continous columns of the data set. The columns'
-        datas for the employees who left and the employees who stayed are
-        plotted in two separate graphics.
-    """
-    # fig_dims = (1, 2)
-    ideal_bins = math.ceil(math.log(float(len(DF[col].tolist())), 2)) + 1
-    name = col.replace('_', ' ')
+    ideal_bins = int(math.ceil(math.log(float(len(DF[col].tolist())), 2)) + 1)
 
-    # plt.subplot2grid(fig_dims, (0, 0))
-    plt.hist(STAYED[col].tolist(), bins=int(ideal_bins),
-             histtype='bar', color='tomato', alpha=0.5,
-             edgecolor='crimson', linewidth=1.0)
-    plt.hist(LEFT[col].tolist(), bins=int(ideal_bins),
-             histtype='bar', color='steelblue', alpha=0.5,
-             edgecolor='darkslateblue', linewidth=1.0)
-    plt.xlabel(name)
+    plt.hist(x=[LEFT[col].tolist(), STAYED[col].tolist()], bins=ideal_bins,
+             stacked=True, color=['tomato', 'steelblue'],
+             label=['Left', 'Stayed'])
+    plt.xlabel(col.replace('_', ' '))
     plt.ylabel('Employees')
-    # plt.ylabel('Employees Who Stayed')
+    plt.legend()
 
     if col == 'Average_Montly_Hours':
         plt.xticks(np.arange(50, 350, 50))
@@ -116,19 +105,6 @@ def plot_continous(col):
     else:
         plt.xticks(np.linspace(0.0, 1.0, 5))
 
-    # plt.subplot2grid(fig_dims, (0, 1))
-
-    # plt.xlabel(name)
-    # plt.ylabel('Employees Who Left')
-
-    # if col == 'Average_Montly_Hours':
-    #     plt.xticks(np.arange(50, 350, 50))
-    # elif col == 'Last_Evaluation':
-    #     plt.xticks(np.linspace(0.25, 1.0, 4))
-    # else:
-    #     plt.xticks(np.linspace(0.0, 1.0, 5))
-
-    # plt.subplots_adjust(left=0.2, wspace=0.4, top=0.8)
     plt.title(col.replace('_', ' ') + ' per Employee')
 
 if __name__ == '__main__':
