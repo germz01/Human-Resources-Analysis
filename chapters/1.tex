@@ -73,8 +73,8 @@ Una volta studiate le distribuzioni categoriche continuiamo l'analisi con gli al
     \begin{tabular}{| c | c | c | c |}
         \hline
         \textbf{Dipendente} & \textbf{Low} & \textbf{Medium} & \textbf{High}  \\ \hline
-        InAzienda & 5144 (34.3\%) & & \\ \hline
-        OutAzienda & (60\%) & &  \\ \hline
+        InAzienda & 5144 (circa 45.02\%) & 5129 (circa il 44.88\%) & 1155 (circa il 10.1\%)\\ \hline
+        OutAzienda & 2172 (circa 60.8\%) & 1317 (circa il 36.9\%) & 82 (circa il 2.3\%) \\ \hline
         \hline
     \end{tabular}
     \caption{Distribuzione salario per dipendente.}
@@ -121,8 +121,8 @@ E la possiamo rapportare rispetto alla precedente valutazione del livello di sod
     \begin{tabular}{| c | c | c | c |}
         \hline
         \textbf{Dipendente} & \textbf{media} & \textbf{dev. std.} & \textbf{min,max}  \\ \hline
-        InAzienda & 0.67 & 0.22 & 0.12 , 1.0\\ \hline
-        OutAzienda & 0.44 & 0.26 & 0.09 , 0.92\\ \hline
+        InAzienda & 0.71 & 0.16 & 0.36 , 1.0\\ \hline
+        OutAzienda & 0.71 & 0.19 & 0.45 , 1.0\\ \hline
         \hline
     \end{tabular}
     \caption{Livello di soddisfazione per il dipendente} 
@@ -143,5 +143,16 @@ E la possiamo rapportare rispetto alla precedente valutazione del livello di sod
 In questa sezione studieremo la correlazione ovvero la relazione lineare tra i vari attributi continuous 
 o discreti.
 \includegraphics[scale=0.5]{images/correlation_matrix.pdf}
+Dalla matrice possiamo rilevare se ci sia una correlazione positiva, nulla o negativa. Sia per quanto
+riguarda la correlazione positiva sia per quella negativa si caratterizzano in settori:
+con valori da 0 a 0.3 correlato debolmente, da 0.3 a 0.7 moderatamente o maggiore di 0.7 fortemente
+(rispettivamente per la negativa i segni saranno negativi). 
+Da questo possiamo definire che ad avere una correlazione debole è la variabile time_spend_company con
+left, last_evaluation, number_project e average_monthly_hours. Queste ultime, ad eccezione di left, invece sono correlate fra loro
+in modo moderato con un valore massimo di $0.42$ tra average_monthly_hours e number_project. Il valore 
+$1$ indica la correlazione con se stesso che infatti è massima. 
+Dal punto di vista della correlazione negativa, abbiamo debolmente correlati left con work_accident e
+satisfaction_level con number_projecy e time_spend_company. Abbiamo invece una correlazione negativa
+moderata tra left e satisfaction_level di valore $-0.39$.
 
-% section pairwise_correlations_and_eventual_elimination_od_redundant_variable (end)
+\section pairwise_correlations_and_eventual_elimination_od_redundant_variable (end)
