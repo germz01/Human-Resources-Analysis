@@ -49,62 +49,86 @@ variabili di tipo categorico verrà opportunamente motivata nelle sezioni succes
 \label{sec:distribution_of_the_variables_and_statistics}
 
 In questo paragrafo vengono presentati i grafici relativi alla distribuzione dei valori assunti dalle variabili
-descritte nella sezione precedente. Per dare una migliore interpretazione a questi grafici abbiamo deciso di sostenere un'analisi accurata che contraddistingue i dipendenti che lavorano nell'azienda, rappresentati dal colore blu, e quelli che invece la hanno lasciata, rappresentati dal colore rosso.
+descritte nella sezione precedente. Per dare una migliore interpretazione a questi abbiamo deciso di sostenere un'analisi accurata che contraddistingue i dipendenti che lavorano nell'azienda, rappresentati dal colore blu, e quelli che invece la hanno lasciata, rappresentati dal colore rosso.
 
-Prima di tutto vogliamo mostrare le caratteristiche fondamentali alla nostra ricerca:
+Prima di tutto vogliamo studiare la distribuzione dei dipendenti rispetto alle variabili categoriche:
 Barplot dipendenti totali (suddivisione left), barplot sales per employee
 
-Dati questi rapporti fondamentali abbiamo iniziato la nostra analisi:
+Come si può constatare dal grafico sulla sinistra in un totale di $14999$ dipendenti analizzati: $3571$ di questi hanno lasciato l'azienda (quasi il $24\%$ del totale), mentre i restanti $11428$ dipendenti (quasi il $76\%$) sono rimasti nella azienda. La distribuzione mostrata sulla destra invece indica la distribuzione degli impiegati nei vari settori: (parte mancante) .
 
-\begin{figure}[H]
-    \captionsetup[subfigure]{font=scriptsize,labelfont=scriptsize}
-    \centering
-    \subcaptionbox{\includegraphics[scale=0.4]{images/salary.pdf}}
- \end{figure}
- Abbiamo iniziato a rapportare i dipendenti con il proprio salario, e si è evinto che       in un totale di 14999 dipendenti analizzati: 3571 di questi hanno lasciato l'azienda (quasi il 24\% del totale (23.82\%)), di cui il 60\% di questi aveva uno stipendio low, i restanti 11428 dipendenti (quasi il 76\%) sono rimasti nella azienda di cui 5144 (il 34.3\%) ha un salario low, (mancano dettagli per high e medium).
-     
-Proseguendo poi con il rapporto tra dipendenti ancora in azienda e non e il numero delle ore di lavoro in media: scopriamo che Per gli impiegati che hanno lasciato l'azienda, la \textbf{media} delle ore di lavoro mensili è
-    $207.42$, la \textbf{deviazione standard} è $61.20$, i valori \textbf{minimo} e \textbf{massimo} sono,
-    rispettivamente, $126$ e $310$. Per quanto riguarda gli impiegati rimasti abbiamo invece una \textbf{media}
-    pari a $199.06$, una \textbf{deviazione standard} pari a $45.68$ e un valore \textbf{minimo} e
-    \textbf{massimo} pari a $96$ e $287$.\label{average_montly_hours}    
- \begin{figure}[H]
-    \captionsetup[subfigure]{font=scriptsize,labelfont=scriptsize}
-    \centering    
-    \subcaptionbox{}
-    {\includegraphics[scale=0.5]{images/average_montly_hours.pdf}}
-\end{figure}
+\includegraphics[scale=0.4]{images/work_accident.pdf}  \includegraphics[scale=0.4]{images/promotion_last_5_years.pdf}
 
-Se rapportiamo i dipendenti ai valori che indicano se il dipendente è stato promosso negli ultimi 5 anni o no, possiamo ricavare una informazione importante, la totalità degli impiegati che hanno lasciato l'azienda non ha
-    avuto una promozione negli ultimi $5$ anni. Soltato $19$ impiegati su $3571$ sono stati promossi.
-\begin{figure}[H]
-    \captionsetup[subfigure]{font=scriptsize,labelfont=scriptsize}
+Nel grafico a sinistra si studia il rapporto tra i dipendenti e la presenza o meno di un infortunio durante il periodo di lavoro all'interno dell'azienda e si è riscontrato che soltanto $169$ impiegati tra i $3571$ che se ne sono andati hanno avuto un incidente sul lavoro, mentre gli impiegati ancora all'interno dell'azienda ad aver subito un incidente sono $2000$ su $11428$.
+    
+Nel grafico a destra invece rapportiamo ciascun dipendente al fatto che questo sia stato promosso negli ultimi 5 anni oppure no, possiamo ricavare una informazione importante, la totalità degli impiegati che hanno lasciato l'azienda non ha
+    avuto una promozione negli ultimi $5$ anni. Soltato $19$ impiegati su $11428$ di quelli rimasti sono stati promossi.
+    
+Una volta studiate le distribuzioni categoriche continuiamo l'analisi con gli altri attributi, per renderle più esplicative abbiamo affiancato a ciascun grafico la tabella che lo descrive in modo accurato e in modo che fosse autoesplicativo:
+
+ Abbiamo rapportato in primis i dipendenti con il proprio salario, le percentuali che vengono indicate sul grafico non sono in base alla totalità dei dipendenti ma riguardano solo il tipo di dipendente definito dalla riga di appartenenza.
+\includegraphics[scale=0.4]{images/salary.pdf} 
+
+\begin{wraptable}{r}{8cm}
     \centering
-    \subcaptionbox{}
-    {\includegraphics[scale=0.4]{images/promotion_last_5_years.pdf}}
-\end{figure}
-Soltanto $169$ impiegati tra i $3571$ che se ne sono andati ha avuto un incidente sul lavoro,
-    mentre gli impiegati ancora all'interno dell'azienda ad aver subito un incidente sono $2000$ su $11428$
-    \label{work_accident}
-\begin{figure}[H]
-    \captionsetup[subfigure]{font=scriptsize,labelfont=scriptsize}
-    \centering
-    \subcaptionbox{\includegraphics[scale=0.4]{images/work_accident.pdf}}
- \end{figure}
+    \begin{tabular}{| c | c |}
+        \hline
+        \textbf{Dipendente} & \textbf{Low} & \textbf{Medium} & \textbf{High}  \\ \hline
+        InAzienda & 5144 (34.3\%) & & \\ \hline
+        OutAzienda & (60\%) & &  \\ \hline
+        \hline
+    \end{tabular}
+    \caption{Distribuzione salario per dipendente.}
+    \label{col_tab}
+\end{wraptable}
  
- A questo punto è giusto analizzare il livello di soddisfazione e possiamo constatare che per gli impiegati che hanno lasciato l'azienda, la \textbf{media} del livello di soddisfazione è $0.44$, la \textbf{deviazione standard} è $0.26$, i valori \textbf{minimo} e \textbf{massimo} sono, rispettivamente, $0.09$ e $0.92$. Per quanto riguarda gli impiegati rimasti abbiamo invece una \textbf{media} pari a $0.67$, una \textbf{deviazione standard} pari a $0.22$ e un valore \textbf{minimo} e \textbf{massimo}
-pari a $0.12$ e $1.0$.\label{satisfaction_level}
-  \begin{figure}[H]
-    \captionsetup[subfigure]{font=scriptsize,labelfont=scriptsize}
+
+Proseguendo poi con il rapporto tra dipendenti ancora in azienda e non, e il numero delle ore di lavoro in media:
+\includegraphics[scale=0.5]{images/average_montly_hours.pdf}
+
+\begin{wraptable}{r}{8cm}
     \centering
-    \subcaptionbox{\includegraphics[scale=0.5]{images/satisfaction_level.pdf}}
-     \end{figure}
-E la possiamo rapportare rispetto alla precedente valutazione del livello di soddisfazione
- \begin{figure}[H]
-    \captionsetup[subfigure]{font=scriptsize,labelfont=scriptsize}
-    \centering 
-    \subcaptionbox{\label{last_evaluation}}{\includegraphics[scale=0.5]{images/last_evaluation.pdf}}
-\end{figure}
+    \begin{tabular}{| c | c |}
+        \hline
+        \textbf{Dipendente} & \textbf{media} & \textbf{dev. std.} & \textbf{min,max}  \\ \hline
+        InAzienda & 199.06 & 45.68 & 96 , 287\\ \hline
+        OutAzienda & 207.42 & 61.20 &  126 , 310\\ \hline
+        \hline
+    \end{tabular}
+    \caption{Il tempo medio di ore di lavoro al mese per dipendente}
+    \label{col_tab}
+\end{wraptable}
+      
+ 
+ A questo punto è giusto analizzare il livello di soddisfazione e possiamo constatare dalla tabella che:
+ \includegraphics[scale=0.5]{images/satisfaction_level.pdf}
+\begin{wraptable}{r}{8cm}
+    \centering
+    \begin{tabular}{| c | c |}
+        \hline
+        \textbf{Dipendente} & \textbf{media} & \textbf{dev. std.} & \textbf{min,max}  \\ \hline
+        InAzienda & 0.67 & 0.22 & 0.12 , 1.0\\ \hline
+        OutAzienda & 0.44 & 0.26 & 0.09 , 0.92\\ \hline
+        \hline
+    \end{tabular}
+    \caption{Livello di soddisfazione per il dipendente} 
+    \label{col_tab}
+\end{wraptable}
+
+E la possiamo rapportare rispetto alla precedente valutazione del livello di soddisfazione (cambiare valori della tabella)
+    \label{last_evaluation}}{\includegraphics[scale=0.5]{images/last_evaluation.pdf}
+\begin{wraptable}{r}{8cm}
+    \centering
+    \begin{tabular}{| c | c |}
+        \hline
+        \textbf{Dipendente} & \textbf{media} & \textbf{dev. std.} & \textbf{min,max}  \\ \hline
+        InAzienda & 0.67 & 0.22 & 0.12 , 1.0\\ \hline
+        OutAzienda & 0.44 & 0.26 & 0.09 , 0.92\\ \hline
+        \hline
+    \end{tabular}
+    \caption{Livello di soddisfazione per il dipendente} 
+    \label{col_tab}
+\end{wraptable}
+
 % section distribution_of_the_variables_and_statistics (end)
 \section{Assessing data quality} % (fold)
 \label{sec:assessing_data_quality}
