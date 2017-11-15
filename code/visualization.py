@@ -52,12 +52,6 @@ def plot_cat_and_ord(col):
 
 
 def plot_discrete(col):
-    """
-        This function plots the discrete columns of the data set. Each column
-        is plotted drawing the datas for the employees who left and the
-        employees who stayed on the same graphic.
-    """
-
     min, max = DF[col].describe()['min'], DF[col].describe()['max']
     lef = np.arange(min, max + 1)
     value_dict = STAYED[col].value_counts().to_dict()
