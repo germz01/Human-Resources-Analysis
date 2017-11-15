@@ -1,7 +1,10 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+import seaborn as sns
 import math
+
+sns.set()
 
 DF = pd.read_csv('../HR_comma_sep.csv',
                  names=['Satisfaction_Level', 'Last_Evaluation',
@@ -21,7 +24,7 @@ COLUMNS = {1: ['Satisfaction_Level', 'continous'],
            8: ['Sales', 'categorical'],
            9: ['Salary', 'ordinal']}
 
-plt.style.use('ggplot')
+# plt.style.use('ggplot')
 FIG = plt.figure(figsize=(8, 5))
 
 
@@ -115,10 +118,31 @@ if __name__ == '__main__':
                                 '4: Average_Montly_Hours\n' +
                                 '5: Time_Spend_Company\n6: Work_Accident\n' +
                                 '7: Promotion_Last_5_Years\n8: Sales\n' +
-                                '9: Salary\n\n'))
+                                '9: Salary\n10: All\n\n'))
 
-        if to_plot not in range(1, 10):
+        if to_plot not in range(1, 11):
             print 'ERROR'
+        elif to_plot == 10:
+            for i in xrange(1, 10):
+                type = COLUMNS[i][1]
+
+                if type == 'ordinal' or type == 'categorical':
+                    plot_cat_and_ord(COLUMNS[i][0])
+                elif type == 'discrete':
+                    if COLUMNS[i][0] == 'Average_Montly_Hours':
+                        plot_continous(COLUMNS[i][0])
+                    else:
+                        plot_discrete(COLUMNS[i][0])
+                else:
+                    plot_continous(COLUMNS[i][0])
+
+                plt.savefig(fname='../images/' + COLUMNS[i][0].lower() +
+                            '.pdf',
+                            format='pdf', bbox_inches='tight')
+
+                print 'Plotted ' + COLUMNS[i][0]
+
+                plt.clf()
         else:
             type = COLUMNS[to_plot][1]
 
