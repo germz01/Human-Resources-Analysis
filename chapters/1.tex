@@ -1,30 +1,28 @@
 \section{Obiettivi}
-In questo progetto viene analizzato il dataset (simulato) \textbf{
-  \href{https://www.kaggle.com/quentinvincenot/human-resources-analysis/data}{Human Resources Analytics}} che contiene
-le informazioni sui dipendenti di un'azienda fittizia. Una parte rilevante dei lavoratori, circa il $X\%$ ha lasciato l'azienda
 
-\todo[inline]{Il grafico è solo una prova, è da sistemare}
-
-\begin{figure}[h]
+\begin{wrapfigure}[10]{r}{0.3\textwidth}
   \centering
-  \includegraphics[width=\textwidth]{images/obiettivi.pdf}
-  \caption{Numero di lavoratori che hanno lasciato l'azienda o sono rimasti}
-\end{figure}
+  \includegraphics[height=4cm]{obiettivi.pdf}
+  \caption{Numero di lavoratori}
+\end{wrapfigure}
 
-I principali obiettivi di questo progetto sono:
-\begin{itemize}
+In questo progetto viene analizzato il dataset (simulato) \textbf{
+  \href{https://www.kaggle.com/quentinvincenot/human-resources-analysis/data}{Human Resources Analytics}} contenente le informazioni sui dipendenti di un'azienda fittizia. Una parte rilevante dei lavoratori, circa il $24\%$ su un totale di 14999 dipendenti ha lasciato l'azienda. Gli obiettivi generali dell'analisi sono i seguenti:
+\begin{itemize}[noitemsep]
 \item capire i motivi principali per cui un lavoratore ha lasciato l'azienda
 \item prevedere se un lavoratore lascerà l'azienda o meno
-\item indicare al management dell'azienda dei provvedimenti da prendere per ridurre il numero di impiegati che lasciano il lavoro  
+\item indicare al management dell'azienda dei provvedimenti da attuare per ridurre il numero di impiegati che lasciano il lavoro.
 \end{itemize}
 
 
 
 \section{Data semantics} % (fold)
 \label{sec:data_semantics}
-Il progetto viene svolto sul dataset (simulato) \textbf{
-\href{https://www.kaggle.com/quentinvincenot/human-resources-analysis/data}{Human Resources Analytics}}. Questo
-dataset contiene le informazioni sui dipendenti di un'azienda fittizia, suddivise in base alle colonne elencate
+
+In questo progetto viene analizzato il data set (simulato) \textbf{
+  \href{https://www.kaggle.com/quentinvincenot/human-resources-analysis/data}{Human Resources Analytics}} che contiene
+le informazioni sui dipendenti di un'azienda fittizia, suddivise in base alle variabili elencate nella Tabella \ref{col_tab}.
+
 \begin{wraptable}{r}{8cm}
     \centering
     \begin{tabular}{| c | c |}
@@ -35,19 +33,18 @@ dataset contiene le informazioni sui dipendenti di un'azienda fittizia, suddivis
         number\_project & discrete \\ \hline
         average\_montly\_hours & discrete \\ \hline
         time\_spend\_company & discrete \\ \hline
-        work\_accident & discrete \\ \hline
-        left & discrete \\ \hline
-        promotion\_last\_5years & discrete \\ \hline
+        work\_accident & categorical \\ \hline
+        left & categorical \\ \hline
+        promotion\_last\_5years & categorical \\ \hline
         sales & categorical \\ \hline
         salary & ordinal \\
         \hline
     \end{tabular}
-    \caption{Colonne presenti nel Dataset e rispettivi tipi.}
+    \caption{Variabili presenti nel Dataset e rispettivi tipi.}
     \label{col_tab}
 \end{wraptable}
-nella Tabella \ref{col_tab}. In questa tabella, per ogni colonna, è stato riportanto il tipo di dato usato per
-classificarla, seguendo la nomenclatura fornita nel testo utilizzato durante il corso,
-\textit{Guide to Intelligent Data Analysis}. Con la prima colonna, \textit{Satisfaction Level}, viene
+
+Con la prima variabile, \textit{Satisfaction Level}, viene
 fornita una valutazione quantitativa del livello di soddisfazione di ciascun dipendente, in un range che va da un
 valore minimo di $0$ ad un massimo di $1$. \textit{Last Evaluation} fornisce il tempo trascorso, in anni,
 dall'ultima valutazione delle performace del dipendente. \textit{Number Project} riporta il numero di progetti
@@ -55,19 +52,24 @@ completati da ciascun dipendente durante il periodo di lavoro. \textit{Average M
 delle ore di lavoro in un mese. \textit{Time Spend Company} corrisponde al numero di anni trascorsi
 dal dipendente all'interno dell'azienda. \textit{Work Accident} esprime con un $1$ il coinvolgimento di un
 dipendente in un incidente sul lavoro, altrimenti viene impostato come $0$. \textit{Left} è utilizzata per tener
-traccia dei dipendenti che hanno lasciato l'azienda, per i quali viene usato il valore $1$, e per quelli che sono
-rimasti, per i quali viene usato il valore $0$. \textit{Promotion last 5 year} esprime con un $1$ se il dipendente
+traccia dei dipendenti che hanno lasciato l'azienda, per i quali viene usato il valore $1$, mentre per quelli che sono
+rimasti viene usato il valore $0$. \textit{Promotion last 5 Year} esprime con un $1$ se il dipendente
 è stato promosso negli ultimi $5$ anni, altrimenti assume il valore $0$. \textit{Sales} definisce il dipartimento
 nel quale il dipendente lavora, e \textit{Salary} esprime il livello (\textit{low}, \textit{medium},
-\textit{high}) nel quale rientra il salario del dipendente. \\
-Le descrizioni delle colonne sono state estrapolate dai metadati forniti assieme al Dataset sulla pagina di Kaggle
-\footnote{\href{https://www.kaggle.com/}{https://www.kaggle.com/}} nella quale il Dataset è contenuto.
-% section data_semantics (end)
-\section{Distribution of the variables and statistics} % (fold)
+\textit{high}) nel quale rientra il salario del dipendente.
+Le descrizioni delle variabili sono state estrapolate dai metadati forniti assieme al Dataset sulla pagina di Kaggle
+\footnote{\href{https://www.kaggle.com/}{https://www.kaggle.com/}} nella quale il Dataset è contenuto. La scelta
+di catalogare le colonne \textit{Work Accident}, \textit{Left} e \textit{Promotion Last 5 Years} come
+variabili di tipo categorico verrà opportunamente motivata nelle sezioni successive.
+
+%% section data_semantics (end)
+\section{Distribution of the variables and statistics} %% (fold)
 \label{sec:distribution_of_the_variables_and_statistics}
-In questo paragrafo vengono presentati i grafici relativi alla distribuzione dei valori assunti dalle colonne
-descritte nella sezione precedente. Viene omesso il codice con i quali tali grafici sono stati costruiti. Ogni
-figura viene presentata accompagnata da una descrizione della distribuzione rappresentata. \newpage
+
+In questo paragrafo vengono presentati i grafici relativi alla distribuzione dei valori assunti dalle variabili
+descritte nella sezione precedente. Ogni figura viene presentata accompagnata da una descrizione della distribuzione rappresentata.
+
+
 \begin{figure}[H]
     \captionsetup[subfigure]{font=scriptsize,labelfont=scriptsize}
     \centering
@@ -89,9 +91,9 @@ figura viene presentata accompagnata da una descrizione della distribuzione rapp
     \textbf{massimo} pari a $96$ e $287$.\label{average_montly_hours}}
     {\includegraphics[scale=0.5]{images/average_montly_hours.pdf}}
     \caption{Da sinistra verso destra, e dall'alto verso il basso, sono raffigurate le distribuzioni delle
-    colonne \textit{Salary}, \textit{Sales}, \textit{Satisfaction Level} e \textit{Average Montly Hours}.
+    variabili \textit{Salary}, \textit{Sales}, \textit{Satisfaction Level} e \textit{Average Montly Hours}.
     In rosso vengono rappresentati gli impiegati che sono rimasti nell'azienda, mentre in blu quelli che se ne
-    sono andati. Per ogni colonna vengono fornite delle informazioni riguardo alla \textbf{media}, alla
+    sono andati. Per ogni variabile vengono fornite delle informazioni riguardo alla \textbf{media}, alla
     \textbf{deviazione standard} e ai valori \textbf{massimi} e \textbf{minimi} dei parametri analizzati.}
 \end{figure}
 \begin{figure}[H]
@@ -114,7 +116,7 @@ figura viene presentata accompagnata da una descrizione della distribuzione rapp
     \label{work_accident}}{\includegraphics[scale=0.4]{images/work_accident.pdf}}
     \subcaptionbox{\label{last_evaluation}}{\includegraphics[scale=0.5]{images/last_evaluation.pdf}}
     \caption{Da sinistra verso destra, e dall'alto verso il basso, sono raffigurate le distribuzioni delle
-    colonne \textit{Promotion Last 5 Years}, \textit{Number Project}, \textit{Time Spend Company},
+    variabili \textit{Promotion Last 5 Years}, \textit{Number Project}, \textit{Time Spend Company},
     \textit{Work Accident} e \textit{Last Evaluation}. In rosso vengono rappresentati gli impiegati che sono
     rimasti nell’azienda, mentre in blu quelli che se ne sono andati. Per le prime quattro visualizzazioni
     sono fornite delle descrizioni sommarie, trattandosi di dati di tipo discreto.}
@@ -126,7 +128,12 @@ figura viene presentata accompagnata da una descrizione della distribuzione rapp
 % section assessing_data_quality (end)
 \section{Variable transformations} % (fold)
 \label{sec:variable_transformations}
-\lipsum
+Analizzando il significato delle variabili presenti nel dataset, abbiamo deciso di rappresentare
+\textit{Work Accident} e \textit{Left} utilizzando il tipo categorico piuttosto che quello discreto. Questa
+scelta è stata motivata dall'analisi semantica delle due variabili, le quali forniscono una risposta del tipo
+"Sì o No" alle domande relative agli incidenti sul lavoro e all'abbandono o meno dell'azienda da parte dei
+dipendenti.
+
 % section variable_transformations (end)
 \section{Pairwise correlations and eventual elimination of redundant variable} % (fold)
 \label{sec:pairwise_correlations_and_eventual_elimination_od_redundant_variable}

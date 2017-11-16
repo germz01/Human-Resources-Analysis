@@ -34,9 +34,9 @@ def plot_cat_and_ord(col):
 
     lef = np.arange(len(DF[col].unique()))
     plt.bar(x=lef, height=STAYED[col].value_counts().tolist(),
-            width=0.35, label='Employees Who Stayed', color='tomato')
+            width=0.35, label='Employees Who Stayed', color='steelblue')
     plt.bar(x=lef+0.35, height=LEFT[col].value_counts().tolist(),
-            width=0.35, label='Employees Who left', color='steelblue')
+            width=0.35, label='Employees Who left', color='tomato')
     if col == 'Sales':
         plt.xticks(np.arange(len(DF[col].unique())) + (0.35/2),
                    DF[col].unique(), rotation='vertical', fontsize='3')
@@ -67,7 +67,7 @@ def plot_discrete(col):
             h.append(0)
 
     plt.bar(x=lef, height=h, width=0.35, label='Employees Who Stayed',
-            color='tomato')
+            color='steelblue')
 
     value_dict = LEFT[col].value_counts().to_dict()
     h = []
@@ -79,7 +79,7 @@ def plot_discrete(col):
             h.append(0)
 
     plt.bar(x=lef + 0.35, height=h, width=0.35, label='Employees Who left',
-            color='steelblue')
+            color='tomato')
 
     plt.xticks(np.arange(min, max + 1) + (0.35/2),
                np.arange(min, max + 1))
@@ -89,20 +89,14 @@ def plot_discrete(col):
 
 
 def plot_continous(col):
-    """
-        This column plots the continous columns of the data set. The columns'
-        datas for the employees who left and the employees who stayed are
-        plotted in two separate graphics.
-    """
-    fig_dims = (1, 2)
-    ideal_bins = math.ceil(math.log(float(len(DF[col].tolist())), 2)) + 1
-    name = col.replace('_', ' ')
+    ideal_bins = int(math.ceil(math.log(float(len(DF[col].tolist())), 2)) + 1)
 
-    plt.subplot2grid(fig_dims, (0, 0))
-    plt.hist(STAYED[col].tolist(), bins=int(ideal_bins),
-             histtype='bar', rwidth=0.8, color='tomato')
-    plt.xlabel(name)
-    plt.ylabel('Employees Who Stayed')
+    plt.hist(x=[LEFT[col].tolist(), STAYED[col].tolist()], bins=ideal_bins,
+             stacked=True, color=['tomato', 'steelblue'],
+             label=['Left', 'Stayed'])
+    plt.xlabel(col.replace('_', ' '))
+    plt.ylabel('Employees')
+    plt.legend()
 
     if col == 'Average_Montly_Hours':
         plt.xticks(np.arange(50, 350, 50))
@@ -111,21 +105,7 @@ def plot_continous(col):
     else:
         plt.xticks(np.linspace(0.0, 1.0, 5))
 
-    plt.subplot2grid(fig_dims, (0, 1))
-    plt.hist(LEFT[col].tolist(), bins=int(ideal_bins),
-             histtype='bar', rwidth=0.8, color='steelblue')
-    plt.xlabel(name)
-    plt.ylabel('Employees Who Left')
-
-    if col == 'Average_Montly_Hours':
-        plt.xticks(np.arange(50, 350, 50))
-    elif col == 'Last_Evaluation':
-        plt.xticks(np.linspace(0.25, 1.0, 4))
-    else:
-        plt.xticks(np.linspace(0.0, 1.0, 5))
-
-    plt.subplots_adjust(left=0.2, wspace=0.4, top=0.8)
-    plt.suptitle(col.replace('_', ' ') + ' per Employee')
+    plt.title(col.replace('_', ' ') + ' per Employee')
 
 if __name__ == '__main__':
     while True:
@@ -156,7 +136,7 @@ if __name__ == '__main__':
                         '.pdf',
                         format='pdf', bbox_inches='tight')
 
-        if raw_input('Print more?(Yes/No) ') == 'No':
+        if raw_input('Print more?(Yes/No) ') in ['No', 'N', 'no', 'n']:
             plt.close()
             break
 
