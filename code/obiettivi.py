@@ -9,6 +9,7 @@ import math
 df = pd.read_csv('../data/df_formatted.csv')
 
 left_counts = df.Left.value_counts()
+
 tot = df.shape[0]
 left_perc = round(left_counts/tot,2)*100
 
