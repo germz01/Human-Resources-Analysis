@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-#%matplotlib qt
+%matplotlib qt
 
 df = pd.read_csv('../data/df_formatted.csv')
 
