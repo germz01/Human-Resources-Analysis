@@ -5,11 +5,11 @@ import numpy as np
 import seaborn as sns
 import math
 
-#%matplotlib qt
+%matplotlib qt
 
 ###########################################################
 
-SMALL_SIZE = 20
+#SMALL_SIZE = 20
 MEDIUM_SIZE = 25
 BIGGER_SIZE = 30
 
@@ -24,6 +24,8 @@ plt.rc('figure', titlesize=BIGGER_SIZE)  # fontsize of the figure title
 
 
 df = pd.read_csv('../data/df_formatted.csv')
+
+df.head()
 
 left_counts = df.Left.value_counts()
 
@@ -75,7 +77,7 @@ ax1.set_yticks([0,left_counts[1],math.ceil(tot/2),
 #plt.title('Employees who left')
 
 ax2 = ax1.twinx()
-ax2.set_ylabel('Percentage')
+#ax2.set_ylabel('Percentage')
 #ax2.tick_params('y', colors='r')
 
 ax2.set_ylim([0,100])
