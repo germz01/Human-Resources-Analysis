@@ -26,5 +26,4 @@ plt.xlabel("Satisfaction Level")
 plt.ylabel("Last Evaluation")
 plt.scatter(x=kmeans.cluster_centers_[:, 0], y=kmeans.cluster_centers_[:, 1],
             color="black", marker="X", s=100)
-plt.title("Clusters of Employee Turnover")
 plt.show()
