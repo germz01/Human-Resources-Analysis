@@ -175,6 +175,7 @@ Un metodo robusto e di immediata applicazione è quello di osservare il boxplot 
 
 
 % section assessing_data_quality (end)
+\newpage
 \section{Variable transformations} % (fold)
 \label{sec:variable_transformations}
 Analizzando il significato delle variabili presenti nel dataset, abbiamo deciso di rappresentare
@@ -182,6 +183,25 @@ Analizzando il significato delle variabili presenti nel dataset, abbiamo deciso 
 scelta è stata motivata dall'analisi semantica delle due variabili, le quali forniscono una risposta del tipo
 "Sì o No" alle domande relative agli incidenti sul lavoro e all'abbandono o meno dell'azienda da parte dei
 dipendenti.
+
+Il dataset analizzato è composto da variabili di tipo misto, ovvero sia categoriche che numeriche.
+Trasformare le variabili in un'unica tipologia categorica/numerica consente di trattare uniformemente le variabili,
+soprattutto per la scelta della distanza da utilizzare nei metodi di clustering. 
+Per eseguire le analisi successive è possibile trasformare le variabili utilizzando differenti strategie, che 
+consentano di ottenere diverse tipologie di datasets:
+\begin{enumerate}
+\item dataset con tutte le variabili numeriche
+\item dataset con tutte le variabili categoriche
+\item data set con variabili miste  
+\end{enumerate}
+Nel primo caso è necessario trasformare le variabili categoriche in variabili numeriche. Per le variabili categoriche binarie è sufficiente
+assegnare valori 0 o 1 alle variabili. Nel caso di un numero maggiore di categorie, come per la variabile \textit{Department} è possibile
+operare una binarizzazione, considerando le categorie della variabile Department come nuovi attributi binari.
+Per ottenere un dataset di sole variabili categoriche è necessario definire degli intervalli per ciascuna variabile numerica.
+In questo caso non è necessario una binarizzazione.
+Infine si può trattare il dataset considerando variabili di tipo misto, utilizzando metodi ad-hoc.
+
+
 
 % section variable_transformations (end)
 \section{Pairwise correlations and eventual elimination of redundant variable} % (fold)
