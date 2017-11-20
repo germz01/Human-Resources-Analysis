@@ -1,3 +1,4 @@
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -8,7 +9,7 @@ from scipy.cluster.hierarchy import dendrogram, linkage
 %matplotlib qt
 ###########################################################
 
-#SMALL_SIZE = 20
+SMALL_SIZE = 20
 MEDIUM_SIZE = 25
 BIGGER_SIZE = 30
 
@@ -19,21 +20,35 @@ plt.rc('xtick', labelsize=SMALL_SIZE)    # fontsize of the tick labels
 plt.rc('ytick', labelsize=SMALL_SIZE)    # fontsize of the tick labels
 plt.rc('legend', fontsize=SMALL_SIZE)    # legend fontsize
 plt.rc('figure', titlesize=BIGGER_SIZE)  # fontsize of the figure title
+
 ###########################################################
+# variables transformation
 
 df = pd.read_csv('../data/df_formatted.csv')
 
 df_num = df.drop(['Left','Sales','Salary'],axis=1)
 
 from sklearn import preprocessing
-preprocessing.MinMaxScaler()
 
 min_max_scaler = preprocessing.MinMaxScaler()
 
+# binarization of the categorical variable Sales:
+Sales_binary = pd.get_dummies(df['Sales'])
+Salary_binary = pd.get_dummies(df['Salary'])
 
-df_num_norm = min_max_scaler.fit_transform(df_num.values.astype(float))
+#?preprocessing.OneHotEncoder(df['Sales'])
+
+df_binarized = df.drop(['Sales','Left','Salary'],axis=1)
+df_binarized = pd.concat([df_binarized,Sales_binary,Salary_binary],axis=1,join='outer')
+
+df_binarized_norm = pd.DataFrame(min_max_scaler.fit_transform(df_binarized.values.astype(float)))
+
+df_binarized_norm.columns = df_binarized.columns
+
+#df_num_norm = min_max_scaler.fit_transform(df_num.values.astype(float))
 
 ###########################################################
+# clustering
 
 methods=['ward',]
 
@@ -48,8 +63,17 @@ ward = AgglomerativeClustering(n_clusters=2, linkage='ward', affinity='euclidean
 
 average_linkage = AgglomerativeClustering(n_clusters=2, linkage='average', affinity='manhattan')
 
-ward.fit(df_num_norm)
-average_linkage.fit(df_num_norm)
+#ward.fit(df_num_norm)
+
+ward.fit(df_binarized_norm)
+ward_labels = pd.DataFrame(ward.labels_)
+
+ward_labels.hist()
+
+plt.close()
+
+average_linkage.fit(df_binarized_norm)
+
 
 ward_labels = pd.DataFrame(ward.labels_)
 ward_labels_inv = abs(ward_labels-1)
