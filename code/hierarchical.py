@@ -1,4 +1,3 @@
-
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -26,7 +25,7 @@ plt.rc('figure', titlesize=BIGGER_SIZE)  # fontsize of the figure title
 
 df = pd.read_csv('../data/df_formatted.csv')
 
-df_num = df.drop(['Left','Sales','Salary'],axis=1)
+#df_num = df.drop(['Left','Sales','Salary'],axis=1)
 
 from sklearn import preprocessing
 
@@ -45,43 +44,121 @@ df_binarized_norm = pd.DataFrame(min_max_scaler.fit_transform(df_binarized.value
 
 df_binarized_norm.columns = df_binarized.columns
 
+data = df_binarized_norm
+
 #df_num_norm = min_max_scaler.fit_transform(df_num.values.astype(float))
 
 ###########################################################
-# clustering
+#from sklearn.cluster import AgglomerativeClustering
+#from sklearn.neighbors import kneighbors_graph
+# clustering with scipy
+from scipy.spatial.distance import pdist, squareform
 
-methods=['ward',]
+from scipy.cluster.hierarchy import linkage, dendrogram, cophenet, fcluster
+from sklearn.metrics import silhouette_score, silhouette_samples
 
-from sklearn.cluster import AgglomerativeClustering
-from sklearn.neighbors import kneighbors_graph
+import gc
 
-connectivity = kneighbors_graph(df_num_norm, n_neighbors=100, include_self=False)
-connectivity = 0.5 * (connectivity + connectivity.T)
 
-# define the function for clustering:
-ward = AgglomerativeClustering(n_clusters=2, linkage='ward', affinity='euclidean')
+methods = ['single','average','weighted','centroid','median','ward']
+distances = ['euclidean','cityblock']
 
-average_linkage = AgglomerativeClustering(n_clusters=2, linkage='average', affinity='manhattan')
+# function beginning
+###########################################################
 
-#ward.fit(df_num_norm)
+method = methods[-1]
+distance = distances[0]
 
-ward.fit(df_binarized_norm)
-ward_labels = pd.DataFrame(ward.labels_)
+data_dist = pdist(data,metric = distance)
+data_link = linkage(data_dist,method=method,metric=distance)
 
-ward_labels.hist()
+coph = cophenet(Z = data_link, Y = data_dist)
+coph_corr=coph[0]
 
 plt.close()
 
-average_linkage.fit(df_binarized_norm)
+fig = plt.figure(figsize=(13, 5))
+dn = dendrogram(Z=data_link,p=10,truncate_mode='level',orientation='left')
+plt.title('Method: {} , Metric: {}, Coph Corr: {:.2f} '.format(method,distance,coph_corr))
+
+plt.savefig('../images/hierarchical/dendrogram_{}_{}.pdf'.format(method,distance))
+
+out = [method,distance,coph_corr]
+
+# implementation finished
+###########################################################
+
+# silhouette analysis
+
+labels = fcluster(data_link, 4, criterion="maxclust")
+silhouette_coefficient = silhouette_score(squareform(data_dist),labels,
+                                          metric='euclidean')
+
+silhouette_labels = silhouette_samples(squareform(data_dist),labels)
+
+df_silhouette = pd.DataFrame(np.array([labels,silhouette_labels]).T)
+df_silhouette.columns = ['cluster','silhouette']
+df_silhouette=df_silhouette.sort_values(['cluster','silhouette'],ascending=False)
+
+indici = np.arange(df_silhouette.shape[0],0,step=-1)
+df_silhouette = df_silhouette.assign(indici=indici)
 
 
-ward_labels = pd.DataFrame(ward.labels_)
-ward_labels_inv = abs(ward_labels-1)
+fig = plt.figure(figsize=(10,5))
 
-average_labels = pd.DataFrame(average_linkage.labels_)
+#plt.plot(x = df_silhouette['silhouette'],y=df_silhouette['indici'])
+plt.scatter(x=df_silhouette['silhouette'],y=df_silhouette['indici'],c=df_silhouette['cluster'])
 
-ward_labels.hist()
-average_labels.hist()
+plt.title('Silhouette, Method: {} , Metric: {}, Coph Corr= {:.2f}, Silh. Coeff={:.2f} '.format(method,distance,coph_corr,silhouette_coefficient))
+
+plt.axvline(x=silhouette_coefficient)
+
+plt.savefig('../images/hierarchical/silhouette_{}_{}.pdf'.format(method,distance))
+
+
+plt.close()
+
+del(coph)
+del(data_link)
+
+
+gc.collect()
+###########################################################
+# function for hierarchical clustering
+
+def analyze(method,distance):
+
+    print(method)
+    data_dist = pdist(data,metric = distance)
+    data_link = linkage(data_dist,method=method,metric=distance)
+    
+    coph = cophenet(Z = data_link, Y = data_dist)
+    coph_corr=coph[0]
+
+    plt.close()
+
+    fig = plt.figure(figsize=(13, 5))
+    dn = dendrogram(Z=data_link,p=10,truncate_mode='level',orientation='left')
+    plt.title('Method: {} , Metric: {}, Coph Corr: {:.2f} '.format(method,distance,coph_corr))
+
+    plt.savefig('../images/hierarchical/dendrogram_{}_{}.pdf'.format(method,distance))
+    del(coph)
+    del(data_link)
+    gc.collect()
+
+out = [method,distance,coph_corr]
+return out
+
+###########################################################
+
+## apply each method
+
+for method in methods:
+    analyze(method,distance='euclidean')
+
+
+###########################################################
+
 
 import sklearn.metrics
 
@@ -94,57 +171,4 @@ jaccard(ward_labels,df.Left)
 jaccard(ward_labels_inv,df.Left)
 
 jaccard(average_labels,df.Left)
-
-(np.array(ward_labels) & np.array(df.Left))
-
-prova = (np.array(ward_labels_inv) & np.array(df.Left))
-
-ward_labels_inv == df.Left
-
-
-
-plt.close()
-
-plt.figure(figsize=(10,4))
-plt.subplot(1,2,1)
-plt.hist(np.array(ward_labels))
-
-plt.subplot(1,2,1)
-plt.hist(average_labels)
-
-
-
-len(ward.labels_)
-
-plt.close()
-
-
-label = np.reshape(ward.labels_,face.shape)
-
-ward.labels_
-
-hist, bins = np.histogram(ward.labels_, bins=range(0, len(set(ward.labels_)) + 1))
-
-
-plt.hist(ward.labels_)
-plt.show()
-
-print 'labels', dict(zip(bins, hist))
-print 'silhouette', silhouette_score(train_data, ward.labels_)
-
-###########################################################
-# Compute clustering
-
-print("Compute structured hierarchical clustering...")
-st = time.time()
-n_clusters = 15  # number of regions
-ward = AgglomerativeClustering(n_clusters=n_clusters, linkage='ward',
-                               connectivity=connectivity)
-ward.fit(X)
-label = np.reshape(ward.labels_, face.shape)
-print("Elapsed time: ", time.time() - st)
-print("Number of pixels: ", label.size)
-print("Number of clusters: ", np.unique(label).size)
-
-###########################################################
 
