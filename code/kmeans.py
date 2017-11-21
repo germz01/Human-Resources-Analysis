@@ -51,16 +51,33 @@ plt.clf()
 
 print 'PLOTTING CLUSTERS FOR EMPLOYEE WHO LEFT'
 
-kmeans = KMeans(n_clusters=3)
-kmeans.fit(LEFT[['Satisfaction_Level', 'Last_Evaluation']])
-kmeans_colors = [
-    'green' if c == 0 else 'blue' if c == 2 else 'red' for c in kmeans.labels_
-    ]
+clusters = 3
 
+kmeans = KMeans(n_clusters=clusters)
+kmeans.fit(LEFT[['Satisfaction_Level', 'Last_Evaluation']])
 plt.scatter(x="Satisfaction_Level", y="Last_Evaluation", data=LEFT, alpha=0.25,
-            color=kmeans_colors)
+            color=[sns.color_palette("YlGnBu", clusters).as_hex()[c]
+                   for c in kmeans.labels_])
 plt.xlabel("Satisfaction Level")
 plt.ylabel("Last Evaluation")
 plt.scatter(x=kmeans.cluster_centers_[:, 0], y=kmeans.cluster_centers_[:, 1],
-            color="black", marker="X", s=100)
+            color="black", marker="+", s=100)
 plt.savefig(fname='../images/kmeans/cluster_left.pdf')
+
+plt.clf()
+
+print 'PLOTTING CLUSTERS FOR EMPLOYEE WHO STAYED'
+
+clusters = 5
+
+kmeans = KMeans(n_clusters=clusters)
+kmeans.fit(STAYED[['Satisfaction_Level', 'Last_Evaluation']])
+plt.scatter(x="Satisfaction_Level", y="Last_Evaluation", data=STAYED,
+            alpha=0.25,
+            color=[sns.color_palette("YlGnBu", clusters).as_hex()[c]
+                   for c in kmeans.labels_])
+plt.xlabel("Satisfaction Level")
+plt.ylabel("Last Evaluation")
+plt.scatter(x=kmeans.cluster_centers_[:, 0], y=kmeans.cluster_centers_[:, 1],
+            color="black", marker="+", s=100)
+plt.savefig(fname='../images/kmeans/cluster_stayed.pdf')
