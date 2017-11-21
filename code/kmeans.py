@@ -13,7 +13,7 @@ DS = pd.read_csv('../HR_comma_sep.csv',
                  header=0)
 LEFT = DS[DS.Left == 1]
 STAYED = DS[DS.Left == 0]
-MAX_K = 50
+MAX_K = 51
 
 print 'PLOTTING SSE FOR EMPLOYEE WHO LEFT'
 

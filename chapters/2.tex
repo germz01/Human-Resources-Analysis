@@ -2,6 +2,16 @@
 \label{sec:clustering_analysis_by_k_means}
 \subsection{Choice of attributes and distance function} % (fold)
 \label{sub:choice_of_attributes_and_distance_function}
+\begin{wrapfigure}{r}{7cm}
+    \begin{center}
+        \subcaptionbox{\label{fig:sse_left}}{\includegraphics[scale=0.45]{images/kmeans/SSE_left.pdf}}
+        \subcaptionbox{\label{fig:sse_stayed}}{\includegraphics[scale=0.45]{images/kmeans/SSE_stayed.pdf}}
+        \caption{Nella Figura \ref{fig:sse_left} troviamo la rappresentazione della curva con cui l'SSE dei
+        cluster relativi ai dipendenti che hanno lasciato l'azienda decresce con l'aumentare del numero di cluster
+        . Lo stesso vale per la Figura \ref{fig:sse_stayed}, ma per i dipendenti che sono ancora all'interno
+        dell'azienda.}
+    \end{center}
+\end{wrapfigure}
 Le variabili sulle quali abbiamo deciso di applicare la Cluster Analysis tramite K-means sono le due
 variabili di tipo continous presenti nel Dataset, ossia \textit{Satisfaction Level} e \textit{Latest Evaluation}. Le
 variabili di tipo categorico sono state scartate al momento della scelta dato che la natura stessa dell'algoritmo
@@ -11,12 +21,6 @@ function.
 % subsection choice_of_attributes_and_distance_function (end)
 \subsection{Identification of the best value of k} % (fold)
 \label{sub:identification_of_the_best_value_of_k}
-\begin{figure}[b]
-    \centering
-    \subcaptionbox{\label{fig:sse_left}}{\includegraphics[scale=0.5]{images/kmeans/SSE_left.pdf}}
-    \subcaptionbox{\label{fig:sse_stayed}}{\includegraphics[scale=0.5]{images/kmeans/SSE_stayed.pdf}}
-    \caption{Prova}
-\end{figure}
 Al fine di identificare il miglior numero $k$ di clusters da utilizzare, abbiamo tenuto conto dell'Error Sum of
 Squares (SSE) per ogni iterazione dell'algoritmo, svolta a partire da un valore iniziale di $k$ pari a $2$ fino
 ad un valore massimo di $50$. Rappresentato in Figura \ref{fig:sse_left} troviamo l'andamento dell'SSE per i
@@ -25,7 +29,28 @@ che è la posizione sull'asse dei cluster dove la curva inizia il suo percorso d
 \ref{fig:sse_stayed} possiamo vedere la stessa cosa, ma per i dipendenti che sono rimasti all'interno
 dell'azienda. In questo caso notiamo il valore ottimale di $k$ pari a $5$.
 % subsection identification_of_the_best_value_of_k (end)
-\subsection{Characterization of the obtained clusters by using both analysis of the k centroids and comparison of the distribution of variables within the clusters and that in the whole dataset} % (fold)
-\label{sub:characterization_of_the_obtained_clusters_by_using_both_analysis_of_the_k_centroids_and_comparison_of_the_distribution_of_variables_within_the_clusters_and_that_in_the_whole_dataset}
-% subsection characterization_of_the_obtained_clusters_by_using_both_analysis_of_the_k_centroids_and_comparison_of_the_distribution_of_variables_within_the_clusters_and_that_in_the_whole_dataset (end)
+\subsection{Characterization of the obtained clusters } % (fold)
+\label{sub:characterization_of_the_obtained_clusters}
+Andiamo adesso a dare una descrizione dei cluster emersi dall'applicazione dell'algoritmo K-means con i parametri
+che abbiamo deciso di utilizzare. Cominciando con l'osservare lo scatterplot relativo ai cluster degli impiegati
+che hanno lasciato l'azienda, Figura , notiamo che sono ben visibili $3$ categorie distinte di impiegati, che
+possiamo descrivere discorsivamente come
+\begin{itemize}
+    \item Impiegati con un livello di soddisfazione basso e un alto score nella valutazione. Questo cluster ci
+    suggerisce la motivazione per cui questi impiegati hanno lasciato l'azienda, ossia una quantità troppo elevata
+    di ore di lavoro, dalla quale deriva probabilmente l'alto score nella valutazione.
+    \item Impiegati con un basso livello di soddisfazione, compreso tra $0.3$ e $0.5$, e un altrettanto basso score
+    nella valutazione, compreso tra $0.2$ e $0.55$. La scarsa produttività e soddisfazione suggeriscono che questo
+    gruppo di impiegati ha deciso di lasciare l'azienda per insoddisfazione verso la posizione lavorativa offerta.
+    \item Impiegati con un alto livello di soddisfazione e un alto score nella valutazione, che probabilmente hanno
+    lasciato l'azienda dopo aver ricevuto un'offerta di lavoro più vantaggiosa.
+\end{itemize}
+\lipsum
+\begin{figure}[t]
+    \begin{center}
+        \subcaptionbox{\label{fig:cluster_left}}{\includegraphics[scale=0.45]{images/kmeans/cluster_left.pdf}}
+        \subcaptionbox{\label{fig:cluster_stayed}}{\includegraphics[scale=0.45]{images/kmeans/cluster_stayed.pdf}}
+    \end{center}
+\end{figure}
+% subsection characterization_of_the_obtained_clusters (end)
 % section clustering_analysis_by_k_means (end)
