@@ -77,17 +77,10 @@ un'analisi accurata che contraddistingue i dipendenti che lavorano nell'azienda,
 quelli che invece la hanno lasciata, rappresentati dal colore rosso. Come si può constatare dal grafico in Figura
 \ref{fig:obiettivi} in un totale di $14999$ dipendenti analizzati: $3571$ di questi hanno lasciato
 l'azienda (quasi il $24\%$ del totale), mentre i restanti $11428$ dipendenti (quasi il $76\%$) sono rimasti
-nella azienda. \newpage
-\begin{wrapfigure}{r}{8cm}
-    \begin{center}
-        \subcaptionbox{\label{fig:sales}}{\includegraphics[scale=0.45]{images/sales.pdf}}
-        \subcaptionbox{\label{fig:work_accident}}{\includegraphics[scale=0.45]{images/work_accident.pdf}}
-        \subcaptionbox{\label{fig:promotion}}{\includegraphics[scale=0.45]{images/promotion_last_5_years.pdf}}
-    \end{center}
-\end{wrapfigure}
-Prima di tutto vogliamo studiare la  distribuzione dei dipendenti rispetto alle variabili categoriche.
-La distribuzione mostrata in Figura \ref{fig:sales} indica la distribuzione degli impiegati nei vari settori:
-(parte mancante). \\
+nella azienda. \\
+Prima di tutto vogliamo studiare la  distribuzione dei dipendenti rispetto alle variabili
+categoriche. La distribuzione mostrata in Figura \ref{fig:sales} indica la distribuzione degli impiegati nei
+vari settori: (parte mancante). \\
 Nel grafico in Figura \ref{fig:work_accident} si studia il rapporto tra i dipendenti e la presenza o meno di un
 infortunio durante il periodo di lavoro all'interno dell'azienda e si è riscontrato che soltanto $169$ impiegati
 tra i $3571$ che se ne sono andati hanno avuto un incidente sul lavoro, mentre gli impiegati ancora all'interno
@@ -95,10 +88,32 @@ dell'azienda ad aver subito un incidente sono $2000$ su $11428$. \\
 Nel grafico in Figura \ref{fig:promotion} invece rapportiamo ciascun dipendente al fatto che questo sia stato
 promosso negli ultimi 5 anni oppure no, possiamo ricavare una informazione importante, la totalità degli
 impiegati che hanno lasciato l'azienda non ha avuto una promozione negli ultimi $5$ anni. Soltato $19$ impiegati
-su $11428$ di quelli rimasti sono stati promossi.
-Una volta studiate le distribuzioni categoriche continuiamo l'analisi con gli altri attributi, per renderle più esplicative abbiamo affiancato a ciascun grafico la tabella che lo descrive in modo accurato e in modo che fosse autoesplicativo:
-
- Abbiamo rapportato in primis i dipendenti con il proprio salario, le percentuali che vengono indicate sul grafico non sono in base alla totalità dei dipendenti ma riguardano solo il tipo di dipendente definito dalla riga di appartenenza.
+su $11428$ di quelli rimasti sono stati promossi. \\
+Una volta studiate le distribuzioni categoriche continuiamo l'analisi con gli altri attributi, per renderle più
+esplicative abbiamo affiancato a ciascun grafico la tabella che lo descrive in modo accurato e in modo che fosse
+autoesplicativo. \\
+\begin{figure}[t]
+    % \centering
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[scale=0.45]{images/sales.pdf}
+        \caption{Distribuzione relativa alla variabile \textit{Sales}}
+        \label{fig:sales}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[scale=0.45]{images/work_accident.pdf}
+        \caption{Distribuzione relativa alla variabile \textit{Work Accident}}
+        \label{fig:work_accident}
+    \end{subfigure}
+\end{figure}
+\begin{figure}[b]
+    \centering
+    \includegraphics[scale=0.45]{images/promotion_last_5_years.pdf}
+    \caption{Distribuzione relativa alla variabile \textit{Promotion Last 5 Years}}
+    \label{fig:promotion}
+\end{figure}
+Abbiamo rapportato in primis i dipendenti con il proprio salario, le percentuali che vengono indicate sul
+grafico non sono in base alla totalità dei dipendenti ma riguardano solo il tipo di dipendente definito dalla
+riga di appartenenza. \newpage
 \includegraphics[scale=0.4]{images/salary.pdf}
 
 \begin{wraptable}{r}{8cm}
