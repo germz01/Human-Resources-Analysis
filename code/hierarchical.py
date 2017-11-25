@@ -8,9 +8,9 @@ from scipy.cluster.hierarchy import dendrogram, linkage
 %matplotlib qt
 ###########################################################
 
-SMALL_SIZE = 20
-MEDIUM_SIZE = 25
-BIGGER_SIZE = 30
+SMALL_SIZE = 15
+MEDIUM_SIZE = 20
+BIGGER_SIZE = 20
 
 plt.rc('font', size=SMALL_SIZE)          # controls default text sizes
 plt.rc('axes', titlesize=SMALL_SIZE)     # fontsize of the axes title
@@ -25,26 +25,23 @@ plt.rc('figure', titlesize=BIGGER_SIZE)  # fontsize of the figure title
 
 df = pd.read_csv('../data/df_formatted.csv')
 
-#df_num = df.drop(['Left','Sales','Salary'],axis=1)
+df.dtypes
+
+df_num = df.drop(['Left','Sales','Salary','Work_Accident','Promotion_Last_5_Years'],axis=1)
+
+df_num.shape
 
 from sklearn import preprocessing
 
 min_max_scaler = preprocessing.MinMaxScaler()
 
-# binarization of the categorical variable Sales:
-Sales_binary = pd.get_dummies(df['Sales'])
-Salary_binary = pd.get_dummies(df['Salary'])
 
-#?preprocessing.OneHotEncoder(df['Sales'])
+df_norm = pd.DataFrame(min_max_scaler.fit_transform(df_num.values.astype(float)))
+df_norm.columns = df_num.columns
+df_norm.head()
 
-df_binarized = df.drop(['Sales','Left','Salary'],axis=1)
-df_binarized = pd.concat([df_binarized,Sales_binary,Salary_binary],axis=1,join='outer')
 
-df_binarized_norm = pd.DataFrame(min_max_scaler.fit_transform(df_binarized.values.astype(float)))
-
-df_binarized_norm.columns = df_binarized.columns
-
-data = df_binarized_norm
+data = df_norm
 
 #df_num_norm = min_max_scaler.fit_transform(df_num.values.astype(float))
 
@@ -54,19 +51,18 @@ data = df_binarized_norm
 # clustering with scipy
 from scipy.spatial.distance import pdist, squareform
 
-from scipy.cluster.hierarchy import linkage, dendrogram, cophenet, fcluster
+from scipy.cluster.hierarchy import linkage, dendrogram, cophenet, fcluster, cut_tree
 from sklearn.metrics import silhouette_score, silhouette_samples
 
 import gc
 
 
-methods = ['single','average','weighted','centroid','median','ward']
-distances = ['euclidean','cityblock']
+methods = ['single','complete','average','weighted','centroid','median','ward']
+distances = ['euclidean','cityblock','mahalanobis']
 
-# function beginning
+# testing function for analysis
 ###########################################################
-
-method = methods[-1]
+method = methods[2]
 distance = distances[0]
 
 data_dist = pdist(data,metric = distance)
@@ -77,22 +73,149 @@ coph_corr=coph[0]
 
 plt.close()
 
-fig = plt.figure(figsize=(13, 5))
-dn = dendrogram(Z=data_link,p=10,truncate_mode='level',orientation='left')
+fig = plt.figure(figsize=(10, 5))
+dn = dendrogram(Z=data_link,p=3,truncate_mode='level',
+                orientation='left',count_sort='ascendent',
+                no_labels=False,show_leaf_counts=True,
+)
+
 plt.title('Method: {} , Metric: {}, Coph Corr: {:.2f} '.format(method,distance,coph_corr))
 
 plt.savefig('../images/hierarchical/dendrogram_{}_{}.pdf'.format(method,distance))
 
-out = [method,distance,coph_corr]
+out = [data_link,[method,distance,coph_corr,]]
 
-# implementation finished
+# testing function finished
 ###########################################################
+
+prova = np.array(cut_tree(data_link,n_clusters=3))
+plt.hist(prova)
+
+plt.close()
+np.corrcoef(np.array(df.Left),prova)
+
+jaccard(df.Left,prova)
+
+
+###########################################################
+# function for hierarchical clustering
+
+def analyze(method,distance):
+
+    print('Running method {} with metric {}'.format(method,distance))
+
+    data_dist = pdist(data,metric = distance)
+    data_link = linkage(data_dist,method=method,metric=distance)
+
+    coph = cophenet(Z = data_link, Y = data_dist)
+    coph_corr=coph[0]
+
+    labels = fcluster(data_link, 3, criterion="maxclust")
+    silhouette_coefficient = silhouette_score(squareform(data_dist),labels, metric='euclidean')
+
+
+    
+    plt.close()
+
+    fig = plt.figure(figsize=(10, 5))
+    dn = dendrogram(Z=data_link,p=3,truncate_mode='level',
+                    orientation='left',count_sort='ascendent',
+                    no_labels=False,show_leaf_counts=True,
+    )
+
+    plt.title('Method: {} , Metric: {}, Coph Corr: {:.2f} '.format(method,distance,coph_corr))
+
+    plt.savefig('../images/hierarchical/dendrogram_{}_{}.pdf'.format(method,distance))
+     
+    return [method,distance,coph_corr,silhouette_coefficient]
+
+###########################################################
+
+## apply each method for each metric
+
+out = []        
+for method in methods:
+    for distance in distances:
+        out.append(analyze(method,distance=distance))
+
+
+methods = ['single','complete','average','weighted','centroid','median','ward']
+
+selected_methods = ['average','centroid']
+
+out = []        
+for method in selected_methods:
+    for distance in distances:
+        out.append(analyze(method,distance=distance))
+        
+        
+import gc
+gc.collect()
+
+    
+Dout =  pd.DataFrame(out)
+Dout.columns = ['method','distance','coph_corr','silhouette']
+
+Dout = Dout.sort_values(by=['coph_corr','method','distance'],ascending=False)
+
+import seaborn as sb
+plt.close()
+
+sb.set_style('whitegrid')
+plt.figure(figsize=(12,5))
+sb.barplot(data=Dout, x='method',y='coph_corr',
+           hue='distance')
+plt.title('Comparison of different methods')
+plt.tight_layout()
+
+plt.savefig('../images/hierarchical/methods_comparison.pdf')
+
+plt.close()
+
+###########################################################
+# silhouette comparison
+
+plt.figure(figsize=(7,5))
+sb.barplot(data=Dout, x='method',y='silhouette',
+           hue='distance')
+plt.title('Silhouette comparison for selected methods,two clusters')
+plt.tight_layout()
+
+plt.savefig('../images/hierarchical/silhouette_comparison.pdf')
+
+plt.close()
+
+
+
+
+
+
+###########################################################
+import sklearn.metrics
+
+jaccard = sklearn.metrics.jaccard_similarity_score
+
+jaccard(ward_labels,average_labels)
+jaccard(ward_labels_inv,average_labels)
+
+jaccard(ward_labels,df.Left)
+jaccard(ward_labels_inv,df.Left)
+
+jaccard(average_labels,df.Left)
 
 # silhouette analysis
 
-labels = fcluster(data_link, 4, criterion="maxclust")
+labels = fcluster(data_link, 3, criterion="maxclust")
 silhouette_coefficient = silhouette_score(squareform(data_dist),labels,
                                           metric='euclidean')
+
+
+plt.close()
+plt.hist(labels)
+plt.hist(labels2)
+
+#prova_cuttre = silhouette_coefficient
+
 
 silhouette_labels = silhouette_samples(squareform(data_dist),labels)
 
@@ -123,52 +246,3 @@ del(data_link)
 
 
 gc.collect()
-###########################################################
-# function for hierarchical clustering
-
-def analyze(method,distance):
-
-    print(method)
-    data_dist = pdist(data,metric = distance)
-    data_link = linkage(data_dist,method=method,metric=distance)
-    
-    coph = cophenet(Z = data_link, Y = data_dist)
-    coph_corr=coph[0]
-
-    plt.close()
-
-    fig = plt.figure(figsize=(13, 5))
-    dn = dendrogram(Z=data_link,p=10,truncate_mode='level',orientation='left')
-    plt.title('Method: {} , Metric: {}, Coph Corr: {:.2f} '.format(method,distance,coph_corr))
-
-    plt.savefig('../images/hierarchical/dendrogram_{}_{}.pdf'.format(method,distance))
-    del(coph)
-    del(data_link)
-    gc.collect()
-
-out = [method,distance,coph_corr]
-return out
-
-###########################################################
-
-## apply each method
-
-for method in methods:
-    analyze(method,distance='euclidean')
-
-
-###########################################################
-
-
-import sklearn.metrics
-
-jaccard = sklearn.metrics.jaccard_similarity_score
-
-jaccard(ward_labels,average_labels)
-jaccard(ward_labels_inv,average_labels)
-
-jaccard(ward_labels,df.Left)
-jaccard(ward_labels_inv,df.Left)
-
-jaccard(average_labels,df.Left)
-
