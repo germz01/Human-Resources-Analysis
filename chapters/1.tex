@@ -70,7 +70,6 @@ ezioni successive.
 %% section data_semantics (end)
 \section{Distribution of the variables and statistics} %% (fold)
 \label{sec:distribution_of_the_variables_and_statistics}
-
 In questo paragrafo vengono presentati i grafici relativi alla distribuzione dei valori assunti dalle variabili
 descritte nella sezione precedente. Per dare una migliore interpretazione a questi abbiamo deciso di sostenere
 un'analisi accurata che contraddistingue i dipendenti che lavorano nell'azienda, rappresentati dal colore blu, e
@@ -130,62 +129,62 @@ autoesplicativo. \\ \newpage
     \end{subfigure}
 \end{figure}
 \newpage
-% \begin{figure}[t]
-%     \begin{subfigure}[b]{0.5\textwidth}
-%         \centering
-%         \begin{tabular}{| c | c | c | c |} \hline
-%             \textbf{Dipendente} & \textbf{Low} & \textbf{Medium} & \textbf{High}  \\ \hline
-%             InAzienda & 5144 (circa 45.02\%) & 5129 (circa il 44.88\%) & 1155 (circa il 10.1\%)\\ \hline
-%             OutAzienda & 2172 (circa 60.8\%) & 1317 (circa il 36.9\%) & 82 (circa il 2.3\%) \\ \hline
-%         \end{tabular}
-%         \label{col_tab}
-%         \caption{Distribuzione salario per dipendente.}
-%     \end{subfigure}
-%     \captionlistentry[table]{Distribuzione salario per dipendente.}
-%     \captionsetup{labelformat=andtable}
-%     \caption[Distribuzione relativa alla variabile \textit{Salary}.]{typeset together}
-% \end{figure}
-% \begin{wraptable}{r}{8cm}
-%     \centering
-%     \begin{tabular}{| c | c | c | c |}
-%         \hline
-%         \textbf{Dipendente} & \textbf{media} & \textbf{dev. std.} & \textbf{min,max}  \\ \hline
-%         InAzienda & 199.06 & 45.68 & 96 , 287\\ \hline
-%         OutAzienda & 207.42 & 61.20 &  126 , 310\\ \hline
-%         \hline
-%     \end{tabular}
-%     \caption{Il tempo medio di ore di lavoro al mese per dipendente}
-%     \label{col_tab}
-% \end{wraptable}
-
-
- A questo punto è giusto analizzare il livello di soddisfazione e possiamo constatare dalla tabella che:
-\begin{wraptable}{r}{8cm}
-    \centering
-    \begin{tabular}{| c | c | c | c |}
-        \hline
-        \textbf{Dipendente} & \textbf{media} & \textbf{dev. std.} & \textbf{min,max}  \\ \hline
-        InAzienda & 0.67 & 0.22 & 0.12 , 1.0\\ \hline
-        OutAzienda & 0.44 & 0.26 & 0.09 , 0.92\\ \hline
-        \hline
-    \end{tabular}
-    \caption{Livello di soddisfazione per il dipendente}
-    \label{col_tab}
-\end{wraptable}
-
-E la possiamo rapportare rispetto alla precedente valutazione del livello di soddisfazione (cambiare valori della tabella)
-\begin{wraptable}{r}{8cm}
-    \centering
-    \begin{tabular}{| c | c | c | c |}
-        \hline
-        \textbf{Dipendente} & \textbf{media} & \textbf{dev. std.} & \textbf{min,max}  \\ \hline
-        InAzienda & 0.71 & 0.16 & 0.36 , 1.0\\ \hline
-        OutAzienda & 0.71 & 0.19 & 0.45 , 1.0\\ \hline
-        \hline
-    \end{tabular}
-    \caption{Livello di soddisfazione per il dipendente}
-    \label{col_tab}
-\end{wraptable}
+\begin{table}[H]
+    \begin{subtable}{\linewidth}
+        \centering
+        \begin{tabular}{| c | c | c | c |} \hline
+            \textbf{Dipendente} & \textbf{Low} & \textbf{Medium} & \textbf{High}  \\ \hline
+            InAzienda & 5144 (circa 45.02\%) & 5129 (circa il 44.88\%) & 1155 (circa il 10.1\%)\\ \hline
+            OutAzienda & 2172 (circa 60.8\%) & 1317 (circa il 36.9\%) & 82 (circa il 2.3\%) \\ \hline
+        \end{tabular}
+        \caption{Distribuzione salario per dipendente.}
+        \label{tab:salary}
+    \end{subtable}
+    \begin{subtable}{0.5\linewidth}
+        \centering
+        \begin{tabular}{| c | c | c | c |}
+            \hline
+            \textbf{Dipendente} & \textbf{media} & \textbf{dev. std.} & \textbf{min,max}  \\ \hline
+            InAzienda & 199.06 & 45.68 & 96 , 287\\ \hline
+            OutAzienda & 207.42 & 61.20 &  126 , 310\\ \hline
+        \end{tabular}
+        \caption{Il tempo medio di ore di lavoro al mese per dipendente}
+        \label{tab:avg_work}
+    \end{subtable}
+    \begin{subtable}{0.5\linewidth}
+        \centering
+        \begin{tabular}{| c | c | c | c |}
+            \hline
+            \textbf{Dipendente} & \textbf{media} & \textbf{dev. std.} & \textbf{min,max}  \\ \hline
+            InAzienda & 0.67 & 0.22 & 0.12 , 1.0\\ \hline
+            OutAzienda & 0.44 & 0.26 & 0.09 , 0.92\\ \hline
+        \end{tabular}
+        \caption{Livello di soddisfazione per il dipendente}
+        \label{tab:sat_lev}
+    \end{subtable}
+    \begin{subtable}{\linewidth}
+        \centering
+        \begin{tabular}{| c | c | c | c |}
+            \hline
+            \textbf{Dipendente} & \textbf{media} & \textbf{dev. std.} & \textbf{min,max}  \\ \hline
+            InAzienda & 0.71 & 0.16 & 0.36 , 1.0\\ \hline
+            OutAzienda & 0.71 & 0.19 & 0.45 , 1.0\\ \hline
+        \end{tabular}
+        \caption{Livello di soddisfazione per il dipendente}
+        \label{tab:}
+    \end{subtable}
+\end{table}
+Abbiamo rapportato in primis i dipendenti con il proprio salario: possiamo osservare la distribuzione della
+variabile in Figura \ref{fig:salary} e le relative percentuali in Tabella \ref{tab:salary}. Le percentuali che
+vengono indicate nella tabella  non sono in base alla totalità dei dipendenti ma riguardano solo il tipo di
+dipendente definito dalla riga di appartenenza. \\
+Proseguendo poi con il rapporto tra dipendenti ancora in azienda e non, e il numero delle ore di lavoro in media,
+possiamo osservare la distribuzione della variabile in Figura \ref{fig:average_montly_hours}, e le relative
+percentuali riportate in Tabella \ref{tab:avg_work}. \\
+A questo punto è giusto analizzare il livello di soddisfazione e possiamo constatare dalla Tabella
+\ref{tab:sat_lev} che:
+E la possiamo rapportare rispetto alla precedente valutazione del livello di soddisfazione (cambiare valori
+della tabella)
 In Figura \ref{fig:salary} abbiamo rapportato in primis i dipendenti con il proprio salario, le percentuali che
 vengono indicate sul grafico in Tabella \ref{col_tab} non sono in base alla totalità dei dipendenti ma riguardano
 solo il tipo di dipendente definito dalla Proseguendo poi con il rapporto tra dipendenti ancora in azienda e
