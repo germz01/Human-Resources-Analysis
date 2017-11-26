@@ -26,8 +26,8 @@ In questo progetto viene analizzato il dataset (simulato) \textit{\href{https://
 
 \section{Data semantics} % (fold)
 \label{sec:data_semantics}
-
-In tabella \ref{tab:variabili} sono riportate le variabili relative ai dipendenti dell'aziendae la corrispondente tipologia. 
+In tabella \ref{tab:variabili} sono riportate le variabili relative ai dipendenti dell'azienda e la
+corrispondente tipologia.
 
 \begin{wraptable}{r}{8cm}
     \centering
@@ -49,110 +49,142 @@ In tabella \ref{tab:variabili} sono riportate le variabili relative ai dipendent
     \caption{Variabili presenti nel Dataset e rispettivi tipi.}
     \label{tab:variabili}
 \end{wraptable}
-
-Con la prima variabile, \textit{Satisfaction Level}, viene
-fornita una valutazione quantitativa del livello di soddisfazione di ciascun dipendente, in un range che va da un
-valore minimo di $0$ ad un massimo di $1$. \textit{Last Evaluation} fornisce il tempo trascorso, in anni,
-dall'ultima valutazione delle performace del dipendente. \textit{Number Project} riporta il numero di progetti
-completati da ciascun dipendente durante il periodo di lavoro. \textit{Average Montly Hours} rappresenta la media
-delle ore di lavoro in un mese. \textit{Time Spend Company} corrisponde al numero di anni trascorsi
-dal dipendente all'interno dell'azienda. \textit{Work Accident} esprime con un $1$ il coinvolgimento di un
-dipendente in un incidente sul lavoro, altrimenti viene impostato come $0$. \textit{Left} è utilizzata per tener
-traccia dei dipendenti che hanno lasciato l'azienda, per i quali viene usato il valore $1$, mentre per quelli
-che sono rimasti viene usato il valore $0$. \textit{Promotion last 5 Year} esprime con un $1$ se il dipendente
-è stato promosso negli ultimi $5$ anni, altrimenti assume il valore $0$. \textit{Sales} definisce il dipartimento
-nel quale il dipendente lavora, e \textit{Salary} esprime il livello (\textit{low}, \textit{medium},
-\textit{high}) nel quale rientra il salario del dipendente.
-Le descrizioni delle variabili sono state estrapolate dai metadati forniti assieme al Dataset sulla pagina di
-Kaggle \footnote{\href{https://www.kaggle.com/}{https://www.kaggle.com/}} nella quale il Dataset è contenuto.
-La scelta di catalogare le colonne \textit{Work Accident}, \textit{Left} e \textit{Promotion Last 5 Years} come
-variabili di tipo categorico verrà opportunamente motivata nelle sezioni successive.
+Con la prima variabile, \textit{Satisfaction Level}, viene fornita una valutazione quantitativa del livello di
+soddisfazione di ciascun dipendente, in un range che va da un valore minimo di $0$ ad un massimo di $1$.
+\textit{Last Evaluation} fornisce il tempo trascorso, in anni, dall'ultima valutazione delle performace del
+dipendente. \textit{Number Project} riporta il numero di progetti completati da ciascun dipendente durante il
+periodo di lavoro. \textit{Average Montly Hours} rappresenta la media delle ore di lavoro in un mese.
+\textit{Time Spend Company} corrisponde al numero di anni trascorsi dal dipendente all'interno dell'azienda.
+\textit{Work Accident} esprime con un $1$ il coinvolgimento di un dipendente in un incidente sul lavoro,
+altrimenti viene impostato come $0$. \textit{Left} è utilizzata per tener traccia dei dipendenti che hanno
+lasciato l'azienda, per i quali viene usato il valore $1$, mentre per quelli che sono rimasti viene usato il
+valore $0$. \textit{Promotion last 5 Year} esprime con un $1$ se il dipendente è stato promosso negli ultimi $5$
+anni, altrimenti assume il valore $0$. \textit{Sales} definisce il dipartimento nel quale il dipendente lavora,
+e \textit{Salary} esprime il livello (\textit{low}, \textit{medium}, \textit{high}) nel quale rientra il salario
+del dipendente. Le descrizioni delle variabili sono state estrapolate dai metadati forniti assieme al Dataset
+sulla pagina di Kaggle \footnote{\href{https://www.kaggle.com/}{https://www.kaggle.com/}} nella quale il
+Dataset è contenuto. La scelta di catalogare le colonne \textit{Work Accident}, \textit{Left} e
+\textit{Promotion Last 5 Years} come variabili di tipo categorico verrà opportunamente motivata nelle s
+ezioni successive.
 
 %% section data_semantics (end)
 \section{Distribution of the variables and statistics} %% (fold)
 \label{sec:distribution_of_the_variables_and_statistics}
-
 In questo paragrafo vengono presentati i grafici relativi alla distribuzione dei valori assunti dalle variabili
 descritte nella sezione precedente. Per dare una migliore interpretazione a questi abbiamo deciso di sostenere
 un'analisi accurata che contraddistingue i dipendenti che lavorano nell'azienda, rappresentati dal colore blu, e
-quelli che invece la hanno lasciata, rappresentati dal colore rosso.
-Prima di tutto vogliamo studiare la distribuzione dei dipendenti rispetto alle variabili categoriche:
-Divisione dipendenti totali per left , \includegraphics[scale=0.4]{images/sales.pdf}
-Come si può constatare dal grafico sulla sinistra in un totale di $14999$ dipendenti analizzati: $3571$ di questi hanno lasciato l'azienda (quasi il $24\%$ del totale), mentre i restanti $11428$ dipendenti (quasi il $76\%$) sono rimasti nella azienda. La distribuzione mostrata sulla destra invece indica la distribuzione degli impiegati nei vari settori: (parte mancante) .
-
-\includegraphics[scale=0.4]{images/work_accident.pdf}  \includegraphics[scale=0.4]{images/promotion_last_5_years.pdf}
-
-Nel grafico a sinistra si studia il rapporto tra i dipendenti e la presenza o meno di un infortunio durante il periodo di lavoro all'interno dell'azienda e si è riscontrato che soltanto $169$ impiegati tra i $3571$ che se ne sono andati hanno avuto un incidente sul lavoro, mentre gli impiegati ancora all'interno dell'azienda ad aver subito un incidente sono $2000$ su $11428$.
-
-Nel grafico a destra invece rapportiamo ciascun dipendente al fatto che questo sia stato promosso negli ultimi 5 anni oppure no, possiamo ricavare una informazione importante, la totalità degli impiegati che hanno lasciato l'azienda non ha
-    avuto una promozione negli ultimi $5$ anni. Soltato $19$ impiegati su $11428$ di quelli rimasti sono stati promossi.
-
-Una volta studiate le distribuzioni categoriche continuiamo l'analisi con gli altri attributi, per renderle più esplicative abbiamo affiancato a ciascun grafico la tabella che lo descrive in modo accurato e in modo che fosse autoesplicativo:
-
- Abbiamo rapportato in primis i dipendenti con il proprio salario, le percentuali che vengono indicate sul grafico non sono in base alla totalità dei dipendenti ma riguardano solo il tipo di dipendente definito dalla riga di appartenenza.
-\includegraphics[scale=0.4]{images/salary.pdf}
-
-\begin{wraptable}{r}{8cm}
-    \centering
-    \begin{tabular}{| c | c | c | c |}
-        \hline
-        \textbf{Dipendente} & \textbf{Low} & \textbf{Medium} & \textbf{High}  \\ \hline
-        InAzienda & 5144 (circa 45.02\%) & 5129 (circa il 44.88\%) & 1155 (circa il 10.1\%)\\ \hline
-        OutAzienda & 2172 (circa 60.8\%) & 1317 (circa il 36.9\%) & 82 (circa il 2.3\%) \\ \hline
-        \hline
-    \end{tabular}
-    \caption{Distribuzione salario per dipendente.}
-    \label{col_tab}
-\end{wraptable}
-
-
-Proseguendo poi con il rapporto tra dipendenti ancora in azienda e non, e il numero delle ore di lavoro in media:
-\includegraphics[scale=0.5]{images/average_montly_hours.pdf}
-
-\begin{wraptable}{r}{8cm}
-    \centering
-    \begin{tabular}{| c | c | c | c |}
-        \hline
-        \textbf{Dipendente} & \textbf{media} & \textbf{dev. std.} & \textbf{min,max}  \\ \hline
-        InAzienda & 199.06 & 45.68 & 96 , 287\\ \hline
-        OutAzienda & 207.42 & 61.20 &  126 , 310\\ \hline
-        \hline
-    \end{tabular}
-    \caption{Il tempo medio di ore di lavoro al mese per dipendente}
-    \label{col_tab}
-\end{wraptable}
-
-
- A questo punto è giusto analizzare il livello di soddisfazione e possiamo constatare dalla tabella che:
- \includegraphics[scale=0.5]{images/satisfaction_level.pdf}
-\begin{wraptable}{r}{8cm}
-    \centering
-    \begin{tabular}{| c | c | c | c |}
-        \hline
-        \textbf{Dipendente} & \textbf{media} & \textbf{dev. std.} & \textbf{min,max}  \\ \hline
-        InAzienda & 0.67 & 0.22 & 0.12 , 1.0\\ \hline
-        OutAzienda & 0.44 & 0.26 & 0.09 , 0.92\\ \hline
-        \hline
-    \end{tabular}
-    \caption{Livello di soddisfazione per il dipendente}
-    \label{col_tab}
-\end{wraptable}
-
-E la possiamo rapportare rispetto alla precedente valutazione del livello di soddisfazione (cambiare valori della tabella)
-    \includegraphics[scale=0.5]{images/last_evaluation.pdf}
-\begin{wraptable}{r}{8cm}
-    \centering
-    \begin{tabular}{| c | c | c | c |}
-        \hline
-        \textbf{Dipendente} & \textbf{media} & \textbf{dev. std.} & \textbf{min,max}  \\ \hline
-        InAzienda & 0.71 & 0.16 & 0.36 , 1.0\\ \hline
-        OutAzienda & 0.71 & 0.19 & 0.45 , 1.0\\ \hline
-        \hline
-    \end{tabular}
-    \caption{Livello di soddisfazione per il dipendente}
-    \label{col_tab}
-\end{wraptable}
-
+quelli che invece la hanno lasciata, rappresentati dal colore rosso. Come si può constatare dal grafico in Figura
+\ref{fig:obiettivi} in un totale di $14999$ dipendenti analizzati: $3571$ di questi hanno lasciato
+l'azienda (quasi il $24\%$ del totale), mentre i restanti $11428$ dipendenti (quasi il $76\%$) sono rimasti
+nella azienda.
+Prima di tutto vogliamo studiare la  distribuzione dei dipendenti rispetto alle variabili
+categoriche. La distribuzione mostrata in Figura \ref{fig:sales} indica la distribuzione degli impiegati nei
+vari settori: (parte mancante). \\
+Nel grafico in Figura \ref{fig:work_accident} si studia il rapporto tra i dipendenti e la presenza o meno di un
+infortunio durante il periodo di lavoro all'interno dell'azienda e si è riscontrato che soltanto $169$ impiegati
+tra i $3571$ che se ne sono andati hanno avuto un incidente sul lavoro, mentre gli impiegati ancora all'interno
+dell'azienda ad aver subito un incidente sono $2000$ su $11428$. \\
+Nel grafico in Figura \ref{fig:promotion} invece rapportiamo ciascun dipendente al fatto che questo sia stato
+promosso negli ultimi 5 anni oppure no, possiamo ricavare una informazione importante, la totalità degli
+impiegati che hanno lasciato l'azienda non ha avuto una promozione negli ultimi $5$ anni. Soltato $19$ impiegati
+su $11428$ di quelli rimasti sono stati promossi.
+Una volta studiate le distribuzioni categoriche continuiamo l'analisi con gli altri attributi, per renderle più
+esplicative abbiamo affiancato a ciascun grafico la tabella che lo descrive in modo accurato e in modo che fosse
+autoesplicativo. \\ \newpage
+\begin{figure}[H]
+    \begin{subfigure}[b]{0.5\textwidth}
+        \includegraphics[width=\textwidth]{images/sales.pdf}
+        \caption{Distribuzione relativa alla variabile \textit{Sales}}
+        \label{fig:sales}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.5\textwidth}
+        \includegraphics[width=\textwidth]{images/work_accident.pdf}
+        \caption{Distribuzione relativa alla variabile \textit{Work Accident}}
+        \label{fig:work_accident}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.5\textwidth}
+        \includegraphics[width=\textwidth]{images/promotion_last_5_years.pdf}
+        \caption{Distribuzione relativa alla variabile \textit{Promotion Last 5 Years}}
+        \label{fig:promotion}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.5\textwidth}
+        \includegraphics[width=\textwidth]{images/salary.pdf}
+        \caption{Distribuzione relativa alla variabile \textit{Salary}.}
+        \label{fig:salary}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.5\textwidth}
+        \includegraphics[width=\textwidth]{images/average_montly_hours.pdf}
+        \caption{Distribuzione relativa alla variabile \textit{Average Montly Hours}}
+        \label{fig:average_montly_hours}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.5\textwidth}
+        \includegraphics[scale=0.5]{images/satisfaction_level.pdf}
+        \caption{Distribuzione relativa alla variabile \textit{Satisfaction Level}}
+        \label{fig:sat_lev}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.5\textwidth}
+        \includegraphics[width=\textwidth]{images/last_evaluation.pdf}
+        \caption{Distribuzione relativa alla variabile \textit{Last Evaluation}}
+        \label{fig:last_ev}
+    \end{subfigure}
+\end{figure}
+\newpage
+\begin{table}[H]
+    \begin{subtable}{\linewidth}
+        \centering
+        \begin{tabular}{| c | c | c | c |} \hline
+            \textbf{Dipendente} & \textbf{Low} & \textbf{Medium} & \textbf{High}  \\ \hline
+            InAzienda & 5144 (circa 45.02\%) & 5129 (circa il 44.88\%) & 1155 (circa il 10.1\%)\\ \hline
+            OutAzienda & 2172 (circa 60.8\%) & 1317 (circa il 36.9\%) & 82 (circa il 2.3\%) \\ \hline
+        \end{tabular}
+        \caption{Distribuzione salario per dipendente.}
+        \label{tab:salary}
+    \end{subtable}
+    \begin{subtable}{0.5\linewidth}
+        \centering
+        \begin{tabular}{| c | c | c | c |}
+            \hline
+            \textbf{Dipendente} & \textbf{media} & \textbf{dev. std.} & \textbf{min,max}  \\ \hline
+            InAzienda & 199.06 & 45.68 & 96 , 287\\ \hline
+            OutAzienda & 207.42 & 61.20 &  126 , 310\\ \hline
+        \end{tabular}
+        \caption{Il tempo medio di ore di lavoro al mese per dipendente.}
+        \label{tab:avg_work}
+    \end{subtable}
+    \begin{subtable}{0.5\linewidth}
+        \centering
+        \begin{tabular}{| c | c | c | c |}
+            \hline
+            \textbf{Dipendente} & \textbf{media} & \textbf{dev. std.} & \textbf{min,max}  \\ \hline
+            InAzienda & 0.67 & 0.22 & 0.12 , 1.0\\ \hline
+            OutAzienda & 0.44 & 0.26 & 0.09 , 0.92\\ \hline
+        \end{tabular}
+        \caption{Livello di soddisfazione per il dipendente.}
+        \label{tab:sat_lev}
+    \end{subtable}
+    \begin{subtable}{\linewidth}
+        \centering
+        \begin{tabular}{| c | c | c | c |}
+            \hline
+            \textbf{Dipendente} & \textbf{media} & \textbf{dev. std.} & \textbf{min,max}  \\ \hline
+            InAzienda & 0.71 & 0.16 & 0.36 , 1.0\\ \hline
+            OutAzienda & 0.71 & 0.19 & 0.45 , 1.0\\ \hline
+        \end{tabular}
+        \caption{Livello di soddisfazione per il dipendente relativo all'ultima valutazione.}
+        \label{tab:last_ev}
+    \end{subtable}
+\end{table}
+Abbiamo rapportato in primis i dipendenti con il proprio salario: possiamo osservare la distribuzione della
+variabile in Figura \ref{fig:salary} e le relative percentuali in Tabella \ref{tab:salary}. Le percentuali che
+vengono indicate nella tabella  non sono in base alla totalità dei dipendenti ma riguardano solo il tipo di
+dipendente definito dalla riga di appartenenza. \\
+Proseguendo poi con il rapporto tra dipendenti ancora in azienda e non, e il numero delle ore di lavoro in media,
+possiamo osservare la distribuzione della variabile in Figura \ref{fig:average_montly_hours}, e le relative
+percentuali riportate in Tabella \ref{tab:avg_work}. \\
+A questo punto è giusto analizzare il livello di soddisfazione dei dipendenti, del quale possiamo osservare la
+distribuzione in Figura \ref{fig:sat_lev} e le relative percentuali in Tabella \ref{tab:sat_lev}. \\
+Possiamo rapportare rispetto alla precedente valutazione del livello di soddisfazione (cambiare valori
+della tabella) osservan
 % section distribution_of_the_variables_and_statistics (end)
 \section{Data quality} % (fold)
 \label{sec:assessing_data_quality}
@@ -166,7 +198,7 @@ Un metodo robusto e di immediata applicazione è quello di osservare il boxplot 
 
 \begin{figure}[ht]
   \centering
-\includegraphics[width=\textwidth]{images/boxplots.pdf}  
+\includegraphics[width=\textwidth]{images/boxplots.pdf}
   \caption{Boxplots per le variabili numeriche}
   \label{fig:boxplots}
 \end{figure}
@@ -186,16 +218,18 @@ dipendenti.
 % section variable_transformations (end)
 \section{Pairwise correlations and eventual elimination of redundant variable} % (fold)
 \label{sec:pairwise_correlations_and_eventual_elimination_od_redundant_variable}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/correlation_matrix.pdf}
+    \caption{Correlation Matrix delle variabili presenti nel Dataset.}
+    \label{fig:pair_corr}
+\end{figure}
 In questa sezione abbiamo studiato la correlazione ovvero la relazione lineare tra i vari attributi continuous
 o discreti.
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=0.6]{images/correlation_matrix.pdf}
-\end{figure}
-Dalla matrice possiamo rilevare se ci sia una correlazione positiva, nulla o negativa. Sia per quanto
-riguarda la correlazione positiva sia per quella negativa si caratterizzano in settori:
-con valori da $0$ a $0.3$ correlato debolmente, da $0.3$ a $0.7$ moderatamente o maggiore di $0.7$ fortemente
-(rispettivamente per la negativa i segni saranno negativi).
+Dalla matrice riportata in Figura \ref{fig:pair_corr} possiamo rilevare se ci sia una correlazione positiva,
+nulla o negativa. Sia per quanto riguarda la correlazione positiva sia per quella negativa si caratterizzano in
+settori: con valori da $0$ a $0.3$ correlato debolmente, da $0.3$ a $0.7$ moderatamente o maggiore di $0.7$
+fortemente (rispettivamente per la negativa i segni saranno negativi).
 Da questo possiamo definire che ad avere una correlazione debole è la variabile time\_spend\_company con
 left, last\_evaluation, number\_project e average\_monthly\_hours. Queste ultime, ad eccezione di left,
 invece sono correlate fra loro in modo moderato con un valore massimo di $0.42$ tra average\_monthly\_hours
