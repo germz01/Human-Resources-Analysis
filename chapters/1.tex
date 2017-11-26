@@ -77,7 +77,7 @@ un'analisi accurata che contraddistingue i dipendenti che lavorano nell'azienda,
 quelli che invece la hanno lasciata, rappresentati dal colore rosso. Come si può constatare dal grafico in Figura
 \ref{fig:obiettivi} in un totale di $14999$ dipendenti analizzati: $3571$ di questi hanno lasciato
 l'azienda (quasi il $24\%$ del totale), mentre i restanti $11428$ dipendenti (quasi il $76\%$) sono rimasti
-nella azienda. \\
+nella azienda.
 Prima di tutto vogliamo studiare la  distribuzione dei dipendenti rispetto alle variabili
 categoriche. La distribuzione mostrata in Figura \ref{fig:sales} indica la distribuzione degli impiegati nei
 vari settori: (parte mancante). \\
@@ -88,67 +88,78 @@ dell'azienda ad aver subito un incidente sono $2000$ su $11428$. \\
 Nel grafico in Figura \ref{fig:promotion} invece rapportiamo ciascun dipendente al fatto che questo sia stato
 promosso negli ultimi 5 anni oppure no, possiamo ricavare una informazione importante, la totalità degli
 impiegati che hanno lasciato l'azienda non ha avuto una promozione negli ultimi $5$ anni. Soltato $19$ impiegati
-su $11428$ di quelli rimasti sono stati promossi. \\
+su $11428$ di quelli rimasti sono stati promossi.
 Una volta studiate le distribuzioni categoriche continuiamo l'analisi con gli altri attributi, per renderle più
 esplicative abbiamo affiancato a ciascun grafico la tabella che lo descrive in modo accurato e in modo che fosse
-autoesplicativo. \\
-\begin{figure}[t]
-    % \centering
-    \begin{subfigure}[b]{0.4\textwidth}
-        \includegraphics[scale=0.45]{images/sales.pdf}
+autoesplicativo. \\ \newpage
+\begin{figure}[H]
+    \begin{subfigure}[b]{0.5\textwidth}
+        \includegraphics[width=\textwidth]{images/sales.pdf}
         \caption{Distribuzione relativa alla variabile \textit{Sales}}
         \label{fig:sales}
     \end{subfigure}
-    \begin{subfigure}[b]{0.4\textwidth}
-        \includegraphics[scale=0.45]{images/work_accident.pdf}
+    \begin{subfigure}[b]{0.5\textwidth}
+        \includegraphics[width=\textwidth]{images/work_accident.pdf}
         \caption{Distribuzione relativa alla variabile \textit{Work Accident}}
         \label{fig:work_accident}
     \end{subfigure}
+    \begin{subfigure}[b]{0.5\textwidth}
+        \includegraphics[width=\textwidth]{images/promotion_last_5_years.pdf}
+        \caption{Distribuzione relativa alla variabile \textit{Promotion Last 5 Years}}
+        \label{fig:promotion}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.5\textwidth}
+        \includegraphics[width=\textwidth]{images/salary.pdf}
+        \caption{Distribuzione relativa alla variabile \textit{Salary}.}
+        \label{fig:salary}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.5\textwidth}
+        \includegraphics[width=\textwidth]{images/average_montly_hours.pdf}
+        \caption{Distribuzione relativa alla variabile \textit{Average Montly Hours}}
+        \label{fig:average_montly_hours}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.5\textwidth}
+        \includegraphics[scale=0.5]{images/satisfaction_level.pdf}
+        \caption{Distribuzione relativa alla variabile \textit{Satisfaction Level}}
+        \label{fig:sat_lev}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.5\textwidth}
+        \includegraphics[width=\textwidth]{images/last_evaluation.pdf}
+        \caption{Distribuzione relativa alla variabile \textit{Last Evaluation}}
+        \label{fig:last_ev}
+    \end{subfigure}
 \end{figure}
-\begin{figure}[b]
-    \centering
-    \includegraphics[scale=0.45]{images/promotion_last_5_years.pdf}
-    \caption{Distribuzione relativa alla variabile \textit{Promotion Last 5 Years}}
-    \label{fig:promotion}
-\end{figure}
-Abbiamo rapportato in primis i dipendenti con il proprio salario, le percentuali che vengono indicate sul
-grafico non sono in base alla totalità dei dipendenti ma riguardano solo il tipo di dipendente definito dalla
-riga di appartenenza. \newpage
-\includegraphics[scale=0.4]{images/salary.pdf}
-
-\begin{wraptable}{r}{8cm}
-    \centering
-    \begin{tabular}{| c | c | c | c |}
-        \hline
-        \textbf{Dipendente} & \textbf{Low} & \textbf{Medium} & \textbf{High}  \\ \hline
-        InAzienda & 5144 (circa 45.02\%) & 5129 (circa il 44.88\%) & 1155 (circa il 10.1\%)\\ \hline
-        OutAzienda & 2172 (circa 60.8\%) & 1317 (circa il 36.9\%) & 82 (circa il 2.3\%) \\ \hline
-        \hline
-    \end{tabular}
-    \caption{Distribuzione salario per dipendente.}
-    \label{col_tab}
-\end{wraptable}
-
-
-Proseguendo poi con il rapporto tra dipendenti ancora in azienda e non, e il numero delle ore di lavoro in media:
-\includegraphics[scale=0.5]{images/average_montly_hours.pdf}
-
-\begin{wraptable}{r}{8cm}
-    \centering
-    \begin{tabular}{| c | c | c | c |}
-        \hline
-        \textbf{Dipendente} & \textbf{media} & \textbf{dev. std.} & \textbf{min,max}  \\ \hline
-        InAzienda & 199.06 & 45.68 & 96 , 287\\ \hline
-        OutAzienda & 207.42 & 61.20 &  126 , 310\\ \hline
-        \hline
-    \end{tabular}
-    \caption{Il tempo medio di ore di lavoro al mese per dipendente}
-    \label{col_tab}
-\end{wraptable}
+\newpage
+% \begin{figure}[t]
+%     \begin{subfigure}[b]{0.5\textwidth}
+%         \centering
+%         \begin{tabular}{| c | c | c | c |} \hline
+%             \textbf{Dipendente} & \textbf{Low} & \textbf{Medium} & \textbf{High}  \\ \hline
+%             InAzienda & 5144 (circa 45.02\%) & 5129 (circa il 44.88\%) & 1155 (circa il 10.1\%)\\ \hline
+%             OutAzienda & 2172 (circa 60.8\%) & 1317 (circa il 36.9\%) & 82 (circa il 2.3\%) \\ \hline
+%         \end{tabular}
+%         \label{col_tab}
+%         \caption{Distribuzione salario per dipendente.}
+%     \end{subfigure}
+%     \captionlistentry[table]{Distribuzione salario per dipendente.}
+%     \captionsetup{labelformat=andtable}
+%     \caption[Distribuzione relativa alla variabile \textit{Salary}.]{typeset together}
+% \end{figure}
+% \begin{wraptable}{r}{8cm}
+%     \centering
+%     \begin{tabular}{| c | c | c | c |}
+%         \hline
+%         \textbf{Dipendente} & \textbf{media} & \textbf{dev. std.} & \textbf{min,max}  \\ \hline
+%         InAzienda & 199.06 & 45.68 & 96 , 287\\ \hline
+%         OutAzienda & 207.42 & 61.20 &  126 , 310\\ \hline
+%         \hline
+%     \end{tabular}
+%     \caption{Il tempo medio di ore di lavoro al mese per dipendente}
+%     \label{col_tab}
+% \end{wraptable}
 
 
  A questo punto è giusto analizzare il livello di soddisfazione e possiamo constatare dalla tabella che:
- \includegraphics[scale=0.5]{images/satisfaction_level.pdf}
 \begin{wraptable}{r}{8cm}
     \centering
     \begin{tabular}{| c | c | c | c |}
@@ -163,7 +174,6 @@ Proseguendo poi con il rapporto tra dipendenti ancora in azienda e non, e il num
 \end{wraptable}
 
 E la possiamo rapportare rispetto alla precedente valutazione del livello di soddisfazione (cambiare valori della tabella)
-    \includegraphics[scale=0.5]{images/last_evaluation.pdf}
 \begin{wraptable}{r}{8cm}
     \centering
     \begin{tabular}{| c | c | c | c |}
@@ -176,7 +186,10 @@ E la possiamo rapportare rispetto alla precedente valutazione del livello di sod
     \caption{Livello di soddisfazione per il dipendente}
     \label{col_tab}
 \end{wraptable}
-
+In Figura \ref{fig:salary} abbiamo rapportato in primis i dipendenti con il proprio salario, le percentuali che
+vengono indicate sul grafico in Tabella \ref{col_tab} non sono in base alla totalità dei dipendenti ma riguardano
+solo il tipo di dipendente definito dalla Proseguendo poi con il rapporto tra dipendenti ancora in azienda e
+non, e il numero delle ore di lavoro in media riga di appartenenza.
 % section distribution_of_the_variables_and_statistics (end)
 \section{Data quality} % (fold)
 \label{sec:assessing_data_quality}
