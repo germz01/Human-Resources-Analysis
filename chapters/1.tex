@@ -218,16 +218,18 @@ dipendenti.
 % section variable_transformations (end)
 \section{Pairwise correlations and eventual elimination of redundant variable} % (fold)
 \label{sec:pairwise_correlations_and_eventual_elimination_od_redundant_variable}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/correlation_matrix.pdf}
+    \caption{Correlation Matrix delle variabili presenti nel Dataset.}
+    \label{fig:pair_corr}
+\end{figure}
 In questa sezione abbiamo studiato la correlazione ovvero la relazione lineare tra i vari attributi continuous
 o discreti.
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=0.6]{images/correlation_matrix.pdf}
-\end{figure}
-Dalla matrice possiamo rilevare se ci sia una correlazione positiva, nulla o negativa. Sia per quanto
-riguarda la correlazione positiva sia per quella negativa si caratterizzano in settori:
-con valori da $0$ a $0.3$ correlato debolmente, da $0.3$ a $0.7$ moderatamente o maggiore di $0.7$ fortemente
-(rispettivamente per la negativa i segni saranno negativi).
+Dalla matrice riportata in Figura \ref{fig:pair_corr} possiamo rilevare se ci sia una correlazione positiva,
+nulla o negativa. Sia per quanto riguarda la correlazione positiva sia per quella negativa si caratterizzano in
+settori: con valori da $0$ a $0.3$ correlato debolmente, da $0.3$ a $0.7$ moderatamente o maggiore di $0.7$
+fortemente (rispettivamente per la negativa i segni saranno negativi).
 Da questo possiamo definire che ad avere una correlazione debole è la variabile time\_spend\_company con
 left, last\_evaluation, number\_project e average\_monthly\_hours. Queste ultime, ad eccezione di left,
 invece sono correlate fra loro in modo moderato con un valore massimo di $0.42$ tra average\_monthly\_hours
