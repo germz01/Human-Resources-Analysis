@@ -26,47 +26,54 @@ In questo progetto viene analizzato il dataset (simulato) \textit{\href{https://
 
 \section{Data semantics} % (fold)
 \label{sec:data_semantics}
-In tabella \ref{tab:variabili} sono riportate le variabili relative ai dipendenti dell'azienda e la
-corrispondente tipologia.
+
+Il dataset è composto da 10 variabili relative ai dipendenti dell'azienda, riportate in tabella \ref{tab:variabili}, delle quali 5 sono di tipologia categorica, di cui una ordinale, e 5 di tipologia numerica.
 
 \begin{wraptable}{r}{8cm}
     \centering
-    \begin{tabular}{| c | c |}
-        \hline
-        \textbf{Field} & \textbf{Type} \\ \hline
-        satisfaction\_level & continuous \\ \hline
-        last\_evaluation & continuous \\ \hline
-        number\_project & discrete \\ \hline
-        average\_montly\_hours & discrete \\ \hline
-        time\_spend\_company & discrete \\ \hline
-      salary & ordinal \\ \hline
-      work\_accident & categorical \\ \hline
-        promotion\_last\_5years & categorical \\ \hline
-        sales & categorical \\ \hline
-        left & categorical \\
-      \hline
+    \begin{tabular}{ c  c }
+\toprule
+        \textbf{Variable} & \textbf{Type} \\ 
+\midrule
+        Left & categorical \\
+        Department & categorical \\ 
+        Promotion\_last\_5years & categorical \\ 
+        Work\_accident & categorical \\ 
+        Salary & ordinal \\ 
+\midrule
+        Satisfaction\_level & continuous \\ 
+        Last\_evaluation & continuous \\ 
+        Average\_montly\_hours & discrete \\ 
+        Time\_spend\_company & discrete \\
+        Number\_projects & discrete \\ 
+\bottomrule
     \end{tabular}
     \caption{Variabili presenti nel Dataset e rispettivi tipi.}
     \label{tab:variabili}
 \end{wraptable}
-Con la prima variabile, \textit{Satisfaction Level}, viene fornita una valutazione quantitativa del livello di
-soddisfazione di ciascun dipendente, in un range che va da un valore minimo di $0$ ad un massimo di $1$.
-\textit{Last Evaluation} fornisce l'ultima valutazione delle performance del
-dipendente. \textit{Number Project} riporta il numero di progetti completati da ciascun dipendente durante il
-periodo di lavoro. \textit{Average Montly Hours} rappresenta la media delle ore di lavoro in un mese.
-\textit{Time Spend Company} corrisponde al numero di anni trascorsi dal dipendente all'interno dell'azienda.
-\textit{Work Accident} esprime con un $1$ il coinvolgimento di un dipendente in un incidente sul lavoro,
-altrimenti viene impostato come $0$. \textit{Left} è utilizzata per tener traccia dei dipendenti che hanno
-lasciato l'azienda, per i quali viene usato il valore $1$, mentre per quelli che sono rimasti viene usato il
-valore $0$. \textit{Promotion last 5 Year} esprime con un $1$ se il dipendente è stato promosso negli ultimi $5$
-anni, altrimenti assume il valore $0$. \textit{Sales} definisce il dipartimento nel quale il dipendente lavora,
-e \textit{Salary} esprime il livello (\textit{low}, \textit{medium}, \textit{high}) nel quale rientra il salario
-del dipendente. Le descrizioni delle variabili sono state estrapolate dai metadati forniti assieme al Dataset
-sulla pagina di Kaggle \footnote{\href{https://www.kaggle.com/}{https://www.kaggle.com/}} nella quale il
-Dataset è contenuto. La scelta di catalogare le colonne \textit{Work Accident}, \textit{Left} e
-\textit{Promotion Last 5 Years} come variabili di tipo categorico verrà opportunamente motivata nelle s
-ezioni successive.
 
+La variabile \textit{Left} suddivide il dataset tra i dipendenti che hanno lasciato l'azienda e quelli che ci lavorano attualmente, associando alle rispettive categorie i valori $1$ e $0$.
+I dipendenti lavorano in 10 diversi dipartimenti indicati nella variabile \textit{Department}, che è stata rinominata
+rispetto all'originale \textit{Sales} per chiarezza semantica.
+La promozione o meno di un dipendente durante gli ultimi $5$ anni è espressa dalla variabile 
+\textit{Promotion last 5 Year} con un $1$ in caso positivo e con $0$ altrimenti.
+\textit{Work Accident} indica con un $1$ il coinvolgimento di un dipendente in un incidente sul lavoro,
+e con $0$ il caso contrario. \textit{Salary} esprime il livello (\textit{low}, \textit{medium}, \textit{high}) nel quale rientra il salario
+del dipendente. Con la variabile \textit{Satisfaction Level} viene fornita una valutazione quantitativa del livello di
+soddisfazione di ciascun dipendente, in un range che va da un valore minimo di $0$ ad un massimo di $1$.
+\textit{Last Evaluation} fornisce l'ultima valutazione riguardo le performance del
+dipendente, compresa tra $0$ ed $1$. \textit{Average Montly Hours} rappresenta la media delle ore di lavoro in un mese mentre
+\textit{Time Spend Company} corrisponde al numero di anni trascorsi dal dipendente all'interno dell'azienda.
+\textit{Number Projects} riporta il numero di progetti completati da ciascun dipendente durante il
+periodo di lavoro. Le descrizioni delle variabili sono state estrapolate dai metadati forniti assieme al dataset
+sulla pagina di Kaggle \footnote{\href{https://www.kaggle.com/}{https://www.kaggle.com/}} nella quale il
+dataset è pubblicato.
+\begin{comment}
+La scelta di catalogare le colonne \textit{Work Accident}, \textit{Left} e
+\textit{Promotion Last 5 Years} come variabili di tipo categorico verrà opportunamente motivata nelle s
+ezioni successive. 
+Direi che non c'è da motivarlo ulteriormente
+\end{comment}
 %% section data_semantics (end)
 \section{Distribution of the variables and statistics} %% (fold)
 \label{sec:distribution_of_the_variables_and_statistics}
