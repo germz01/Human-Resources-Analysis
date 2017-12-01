@@ -2,7 +2,13 @@
 \label{sec:clustering_analysis_by_k_means}
 \subsection{Choice of attributes and distance function} % (fold)
 \label{sub:choice_of_attributes_and_distance_function}
-\begin{wrapfigure}{r}{7cm}
+Le variabili sulle quali abbiamo deciso di applicare la Cluster Analysis tramite K-means sono le due
+variabili di tipo continous presenti nel Dataset, ossia \textit{Satisfaction Level} e \textit{Latest Evaluation}. Le
+variabili di tipo categorico sono state scartate al momento della scelta dato che la natura stessa dell'algoritmo
+prevede il suo utilizzo su variabili di tipo numerico. \\ \\ Approfondire su variabili discrete \\ \\
+Nell'implementazione dell'algoritmo da noi utilizzata è stato deciso di applicare la distanza euclidea come distance
+function.
+\begin{figure}[htpb]
     \begin{center}
         \subcaptionbox{\label{fig:sse_left}}{\includegraphics[scale=0.45]{images/kmeans/SSE_left.pdf}}
         \subcaptionbox{\label{fig:sse_stayed}}{\includegraphics[scale=0.45]{images/kmeans/SSE_stayed.pdf}}
@@ -11,14 +17,9 @@
         . Lo stesso vale per la Figura \ref{fig:sse_stayed}, ma per i dipendenti che sono ancora all'interno
         dell'azienda.}
     \end{center}
-\end{wrapfigure}
-Le variabili sulle quali abbiamo deciso di applicare la Cluster Analysis tramite K-means sono le due
-variabili di tipo continous presenti nel Dataset, ossia \textit{Satisfaction Level} e \textit{Latest Evaluation}. Le
-variabili di tipo categorico sono state scartate al momento della scelta dato che la natura stessa dell'algoritmo
-prevede il suo utilizzo su variabili di tipo numerico. \\ \\ Approfondire su variabili discrete \\ \\
-Nell'implementazione dell'algoritmo da noi utilizzata è stato deciso di applicare la distanza euclidea come distance
-function.
-% subsection choice_of_attributes_and_distance_function (end)
+\end{figure}
+
+%subsection choice_of_attributes_and_distance_function (end)
 \subsection{Identification of the best value of k} % (fold)
 \label{sub:identification_of_the_best_value_of_k}
 Al fine di identificare il miglior numero $k$ di clusters da utilizzare, abbiamo tenuto conto dell'Error Sum of
@@ -59,32 +60,33 @@ possiamo descrivere discorsivamente come
 % section clustering_analysis_by_k_means (end)
 
 
-\newpage
+
 \section{Hierarchical clustering}
+
+\begin{figure*}[htbp]
+  \centering
+  \includegraphics[width=\linewidth]{../images/hierarchical/methods_comparison.pdf}
+  \caption{Confronto tra diversi metodi}
+\end{figure*}
 
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=\textwidth]{../images/hierarchical/dendrogram_average_euclidean.pdf}
+  \includegraphics[width=\linewidth]{../images/hierarchical/dendrogram_average_euclidean.pdf}
   \caption{Dendrogramma per method X e metrica Y}
 \end{figure}
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=\textwidth]{../images/hierarchical/methods_comparison.pdf}
-  \caption{Confronto tra diversi metodi}
-\end{figure}
 
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.9\textwidth]{../images/hierarchical/silhouette_average_euclidean_n2.pdf}
+  \includegraphics[width=0.9\linewidth]{../images/hierarchical/silhouette_average_euclidean_n2.pdf}
   \caption{Confronto tra silhouette medie, per due clusters}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.7\textwidth]{../images/hierarchical/silhouette_comparison.pdf}
+  \includegraphics[width=0.7\linewidth]{../images/hierarchical/silhouette_comparison.pdf}
   \caption{Confronto tra silhouette medie, per due clusters}
 \end{figure}
 
