@@ -61,6 +61,19 @@ possiamo descrivere discorsivamente come
 
 \newpage
 \section{Hierarchical clustering}
+Sulle variabili numeriche del dataset è stato eseguito un clustering gerarchico di tipo agglomerativo,
+utilizzando diverse metriche e metodi per il calcolo delle distanze tra clusters. Il confronto tra i diversi metodi è stato effettuato utilizzando come indice di validità interno (non supervisionato), la \textit{cophenetic correlation}. Ciascuna coppia di dati del dataset è unita nel dendrogramma ad una certa distanza, denominata \textit{cophenetic distance}. La cophenetic correlation è calcolata come coefficiente di correlazione di Pearson tra le usuali distanze e quelle di cophenet. Maggiore è tale correlazione, maggiore è il grado di attendibilità del dendrogramma.
+b
+
+
+ossia la correlazione tra la matrice delle distanze e la matrice della \textit{cophenetic distances}. 
+
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{../images/hierarchical/methods_comparison.pdf}
+  \caption{Confronto tra diversi metodi}
+\end{figure}
 
 
 \begin{figure}[htbp]
@@ -69,11 +82,6 @@ possiamo descrivere discorsivamente come
   \caption{Dendrogramma per method X e metrica Y}
 \end{figure}
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=\textwidth]{../images/hierarchical/methods_comparison.pdf}
-  \caption{Confronto tra diversi metodi}
-\end{figure}
 
 
 \begin{figure}[htbp]
