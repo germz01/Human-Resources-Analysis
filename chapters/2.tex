@@ -1,33 +1,36 @@
 \section{Clustering Analysis by K-means} % (fold)
 \label{sec:clustering_analysis_by_k_means}
+In questa prima sezione del capitolo relativo al Clustering, ci occupiamo di rilevare ,attraverso l'applicazione
+dell'algoritmo \textit{K-means}, i gruppi di dipendenti con caratteristiche comuni all'interno del data set.
+La nostra analisi è stata inizialmente svolta sul data set completo, utilizzando però solo alcune variabili tra
+quelle a disposizione, come verrà spiegato nelle sezioni successive. Per questa analisi globale vengono
+inoltre fornite alcune statistiche, per meglio integrare le informazioni ottenute dal clustering. Come ulteriori
+casi di studio, sono riportate anche le analisi relative alla sola porzione del data set contenente gli impiegati
+che hanno lasciato l'azienda e a quella invece contenente gli impiegati ancora al suo interno.
 \subsection{Choice of attributes and distance function} % (fold)
 \label{sub:choice_of_attributes_and_distance_function}
-\begin{wrapfigure}{r}{7cm}
-    \begin{center}
-        \subcaptionbox{\label{fig:sse_left}}{\includegraphics[scale=0.45]{images/kmeans/SSE_left.pdf}}
-        \subcaptionbox{\label{fig:sse_stayed}}{\includegraphics[scale=0.45]{images/kmeans/SSE_stayed.pdf}}
-        \caption{Nella Figura \ref{fig:sse_left} troviamo la rappresentazione della curva con cui l'SSE dei
-        cluster relativi ai dipendenti che hanno lasciato l'azienda decresce con l'aumentare del numero di cluster
-        . Lo stesso vale per la Figura \ref{fig:sse_stayed}, ma per i dipendenti che sono ancora all'interno
-        dell'azienda.}
-    \end{center}
-\end{wrapfigure}
+\begin{figure}[b!]
+  \centering
+  \includegraphics[width=\textwidth, height=10cm]{images/kmeans/SSE.pdf}
+  \caption{Prova}
+  \label{fig:sse}
+\end{figure}
 Le variabili sulle quali abbiamo deciso di applicare la Cluster Analysis tramite K-means sono le due
-variabili di tipo continous presenti nel Dataset, ossia \textit{Satisfaction Level} e \textit{Latest Evaluation}. Le
-variabili di tipo categorico sono state scartate al momento della scelta dato che la natura stessa dell'algoritmo
-prevede il suo utilizzo su variabili di tipo numerico. \\ \\ Approfondire su variabili discrete \\ \\
-Nell'implementazione dell'algoritmo da noi utilizzata è stato deciso di applicare la distanza euclidea come distance
-function.
+variabili di tipo continous presenti nel Dataset, ossia \textit{Satisfaction Level} e \textit{Latest Evaluation},
+e le variabili \textit{Number Project}, \textit{Average Montly Hours} e \textit{Time Spend Company}, di tipo
+discreto. Sono state escluse le variabili binarie. La distance function da noi utilizzata per rappresentare la
+distanza tra due data objects è la distanza Euclidea. Come già specificato nella Sezione
+\ref{sec:variable_transformations}, i valori delle variabili discrete sono stati normalizzati in un intervallo
+compreso tra $0$ e $1$, al fine di rendere più agevole il confronto in fase di clustering. Inoltre, per ottenere
+un risultato più pulito sono stati rimossi gli outliers ($1282$ records) presenti nella variabile
+\textit{Time Spend Company}, come evidenziato nella Sezione \ref{sec:assessing_data_quality}.
 % subsection choice_of_attributes_and_distance_function (end)
 \subsection{Identification of the best value of k} % (fold)
 \label{sub:identification_of_the_best_value_of_k}
 Al fine di identificare il miglior numero $k$ di clusters da utilizzare, abbiamo tenuto conto dell'Error Sum of
 Squares (SSE) per ogni iterazione dell'algoritmo, svolta a partire da un valore iniziale di $k$ pari a $2$ fino
-ad un valore massimo di $50$. Rappresentato in Figura \ref{fig:sse_left} troviamo l'andamento dell'SSE per i
-cluster relativi ai dipendenti che hanno lasciato l'azienda. Possiamo notare il valore ottimale di $k$ pari a $3$,
-che è la posizione sull'asse dei cluster dove la curva inizia il suo percorso discendente. In figura
-\ref{fig:sse_stayed} possiamo vedere la stessa cosa, ma per i dipendenti che sono rimasti all'interno
-dell'azienda. In questo caso notiamo il valore ottimale di $k$ pari a $5$.
+ad un valore massimo di $50$. Rappresentato in Figura \ref{fig:sse} troviamo l'andamento dell'SSE per i
+cluster relativi ai dipendenti che hanno lasciato l'azienda.
 % subsection identification_of_the_best_value_of_k (end)
 \subsection{Characterization of the obtained clusters } % (fold)
 \label{sub:characterization_of_the_obtained_clusters}
