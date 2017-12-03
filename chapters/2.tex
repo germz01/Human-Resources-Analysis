@@ -47,30 +47,44 @@ data set totale.
 % subsection identification_of_the_best_value_of_k (end)
 \subsection{Characterization of the obtained clusters } % (fold)
 \label{sub:characterization_of_the_obtained_clusters}
-Andiamo adesso a dare una descrizione dei cluster emersi dall'applicazione dell'algoritmo K-means con i parametri
-che abbiamo deciso di utilizzare. Cominciando con l'osservare lo scatterplot relativo ai cluster degli impiegati
-che hanno lasciato l'azienda, Figura , notiamo che sono ben visibili $3$ categorie distinte di impiegati, che
-possiamo descrivere discorsivamente come
-\begin{itemize}
-    \item Impiegati con un livello di soddisfazione basso e un alto score nella valutazione. Questo cluster ci
-    suggerisce la motivazione per cui questi impiegati hanno lasciato l'azienda, ossia una quantità troppo elevata
-    di ore di lavoro, dalla quale deriva probabilmente l'alto score nella valutazione.
-    \item Impiegati con un basso livello di soddisfazione, compreso tra $0.3$ e $0.5$, e un altrettanto basso score
-    nella valutazione, compreso tra $0.2$ e $0.55$. La scarsa produttività e soddisfazione suggeriscono che questo
-    gruppo di impiegati ha deciso di lasciare l'azienda per insoddisfazione verso la posizione lavorativa offerta.
-    \item Impiegati con un alto livello di soddisfazione e un alto score nella valutazione, che probabilmente hanno
-    lasciato l'azienda dopo aver ricevuto un'offerta di lavoro più vantaggiosa.
-\end{itemize}
-\lipsum
+In quest'ultima sezione relativa all'algoritmo K-means descriviamo i clusters emersi durante l'analisi.
+Utilizzando i parametri descritti nelle sezioni precedenti, abbiamo ottenuto i clusters raffigurati in Figura
+\ref{fig:clu_tot}. La densità di popolazione dei cluster ottenuti è osservabile in Figura \ref{fig:dist_clu}.
+Il primo cluster emerso, Cluster $0$, contraddistingue gli impiegati con un alto score nella
+variabile Last Evaluation
 \begin{figure}[t]
-    \begin{center}
-        \subcaptionbox{\label{fig:cluster_left}}{\includegraphics[scale=0.45]{images/kmeans/cluster_left.pdf}}
-        \subcaptionbox{\label{fig:cluster_stayed}}{\includegraphics[scale=0.45]{images/kmeans/cluster_stayed.pdf}}
-        \caption{Nella Figura \ref{fig:cluster_left} troviamo i cluster emersi dall'analisi dei dipendenti che
-        hanno lasciato l'azienda, nella Figura \ref{fig:cluster_stayed} troviamo invece quelli emersi dall'analisi
-        dei dipendenti rimasti nell'azienda.}
-    \end{center}
+  \centering
+  \subcaptionbox{Rappresentazione bidimensionale, svolta sulle variabili \textit{Satisfaction Level} e
+    \textit{Last Evaluation}, dell'algoritmo K-means applicato alle variabili descritte in Sezione
+    \ref{sub:choice_of_attributes_and_distance_function}. Ad ogni cluster è assegnato un colore distinto, mentre
+    i centroidi sono rappresentati dai simboli "\textbf{+}".\label{fig:clu_tot}}{\includegraphics[width=0.4\textwidth]{images/kmeans/cluster_total.pdf}}
+  \subcaptionbox{Distribuzione del numero di impiegati per ognuno dei cluster scoperti durante l'analisi, in ordine
+    decrescente per densità di popolazione.\label{fig:dist_clu}}{\includegraphics[width=0.4\textwidth]{images/kmeans/dist_cluster.pdf}}
+
 \end{figure}
+% Andiamo adesso a dare una descrizione dei cluster emersi dall'applicazione dell'algoritmo K-means con i parametri
+% che abbiamo deciso di utilizzare. Cominciando con l'osservare lo scatterplot relativo ai cluster degli impiegati
+% che hanno lasciato l'azienda, Figura , notiamo che sono ben visibili $3$ categorie distinte di impiegati, che
+% possiamo descrivere discorsivamente come
+% \begin{itemize}
+%     \item Impiegati con un livello di soddisfazione basso e un alto score nella valutazione. Questo cluster ci
+%     suggerisce la motivazione per cui questi impiegati hanno lasciato l'azienda, ossia una quantità troppo elevata
+%     di ore di lavoro, dalla quale deriva probabilmente l'alto score nella valutazione.
+%     \item Impiegati con un basso livello di soddisfazione, compreso tra $0.3$ e $0.5$, e un altrettanto basso score
+%     nella valutazione, compreso tra $0.2$ e $0.55$. La scarsa produttività e soddisfazione suggeriscono che questo
+%     gruppo di impiegati ha deciso di lasciare l'azienda per insoddisfazione verso la posizione lavorativa offerta.
+%     \item Impiegati con un alto livello di soddisfazione e un alto score nella valutazione, che probabilmente hanno
+%     lasciato l'azienda dopo aver ricevuto un'offerta di lavoro più vantaggiosa.
+% \end{itemize}
+% \begin{figure}[t]
+%     \begin{center}
+%         \subcaptionbox{\label{fig:cluster_left}}{\includegraphics[scale=0.45]{images/kmeans/cluster_left.pdf}}
+%         \subcaptionbox{\label{fig:cluster_stayed}}{\includegraphics[scale=0.45]{images/kmeans/cluster_stayed.pdf}}
+%         \caption{Nella Figura \ref{fig:cluster_left} troviamo i cluster emersi dall'analisi dei dipendenti che
+%         hanno lasciato l'azienda, nella Figura \ref{fig:cluster_stayed} troviamo invece quelli emersi dall'analisi
+%         dei dipendenti rimasti nell'azienda.}
+%     \end{center}
+% \end{figure}
 % subsection characterization_of_the_obtained_clusters (end)
 % section clustering_analysis_by_k_means (end)
 
