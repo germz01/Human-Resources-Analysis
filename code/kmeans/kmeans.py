@@ -92,3 +92,5 @@ plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
 plt.title("Employees per Cluster")
 # plt.show()
 plt.savefig('../../images/kmeans/dist_cluster.pdf')
+
+print DS.groupby('Cluster').describe().to_latex()

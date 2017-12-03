@@ -57,11 +57,99 @@ variabile Last Evaluation
   \subcaptionbox{Rappresentazione bidimensionale, svolta sulle variabili \textit{Satisfaction Level} e
     \textit{Last Evaluation}, dell'algoritmo K-means applicato alle variabili descritte in Sezione
     \ref{sub:choice_of_attributes_and_distance_function}. Ad ogni cluster è assegnato un colore distinto, mentre
-    i centroidi sono rappresentati dai simboli "\textbf{+}".\label{fig:clu_tot}}{\includegraphics[width=0.4\textwidth]{images/kmeans/cluster_total.pdf}}
-  \subcaptionbox{Distribuzione del numero di impiegati per ognuno dei cluster scoperti durante l'analisi, in ordine
-    decrescente per densità di popolazione.\label{fig:dist_clu}}{\includegraphics[width=0.4\textwidth]{images/kmeans/dist_cluster.pdf}}
-
+    i centroidi sono rappresentati dai simboli "\textbf{+}".\label{fig:clu_tot}}
+    {\includegraphics[width=0.4\textwidth]{images/kmeans/cluster_total.pdf}}
+  \subcaptionbox{Distribuzione del numero di impiegati per ognuno dei cluster scoperti durante l'analisi, in
+  ordine decrescente per densità di popolazione.\label{fig:dist_clu}}{\includegraphics[width=0.4\textwidth]
+  {images/kmeans/dist_cluster.pdf}}
 \end{figure}
+\begin{table}
+  \begin{subtable}{0.5\linewidth}
+    \centering
+    \begin{tabular}{| l | r | r | r | r | r |}
+      \toprule
+      {} & \multicolumn{5}{l}{Average\_Montly\_Hours} \\
+      {} & count & mean & std & min & max\\
+      Cluster & & & & &  \\
+      \midrule
+      0 & 1494.0 & 0.733762 & 0.204831 & 0.02 & 1.00 \\
+      1 & 2987.0 & 0.251463 & 0.116789 & 0.00 & 0.88 \\
+      2 & 6784.0 &  0.519805 &  0.194971 &  0.01 &  1.00 \\
+      3 & 2452.0 &  0.542761 &  0.215429 &  0.00 & 0.99 \\
+      \bottomrule
+    \end{tabular}
+    \caption{Uno}
+    \label{tab:uno}
+  \end{subtable}
+  \begin{subtable}{0.5\linewidth}
+    \centering
+    \begin{tabular}{| l | r | r | r | r | r |}
+      \toprule
+      {} & \multicolumn{5}{l}{Last\_Evaluation} \\
+      {} & count & mean & std & min & max\\
+      Cluster & & & & & \\
+      \midrule
+      0 & 1494.0 &  0.811693 &  0.138791 &  0.37 & 1.0  \\
+      1 &          2987.0 &  0.556739 &  0.114149 &  0.36 &  1.0  \\
+      2       &          6784.0 &  0.737535 &  0.152870 &  0.36 &  1.0  \\
+      3       &          2452.0 &  0.782822 &  0.168248 &  0.36 & 1.0 \\
+      \bottomrule
+    \end{tabular}
+    \caption{Due}
+    \label{tab:due}
+  \end{subtable}
+  \begin{subtable}{0.5\linewidth}
+    \centering
+    \begin{tabular}{| l | r | r | r | r | r |}
+      \toprule
+      {} & \multicolumn{5}{l}{Number\_Project} \\
+      {} & count & mean & std & min & max\\
+      Cluster & & & & & \\
+      \midrule
+      0 & 1494.0 &  0.811693 &  0.138791 &  0.37 & 1.0  \\
+      1 &          2987.0 &  0.556739 &  0.114149 &  0.36 & 1.0  \\
+      2       &          6784.0 &  0.737535 &  0.152870 &  0.36 & 1.0  \\
+      3       &          2452.0 &  0.782822 &  0.168248 &  0.36 & 1.0 \\
+      \bottomrule
+    \end{tabular}
+    \caption{Tre}
+    \label{tab:tre}
+  \end{subtable}
+  \begin{subtable}{0.5\linewidth}
+    \centering
+    \begin{tabular}{| l | r | r | r | r | r |}
+      \toprule
+      {} & \multicolumn{5}{l}{Satisfaction\_Level} \\
+      {} & count & mean & std & min & max\\
+      Cluster & & & & & \\
+      \midrule
+      0       &  1494.0 &  0.633199 &  0.482093 &  0.0 &  1.0  \\
+      1       &  2987.0 &  0.520589 &  0.499660 &  0.0 &  1.0   \\
+      2       &  6784.0 &  0.012529 &  0.111240 &  0.0 &  1.0 \\
+      3       &  2452.0 &  0.316476 &  0.465196 &  0.0 &  1.0  \\
+      \bottomrule
+    \end{tabular}
+    \caption{Quattro}
+    \label{tab:quattro}
+  \end{subtable}
+  \begin{subtable}{\linewidth}
+    \centering
+    \begin{tabular}{| l | r | r | r | r | r |}
+      \toprule
+      {} & \multicolumn{5}{l}{Time\_Spend\_Company} \\
+      {} & count & mean & std & min & max\\
+      Cluster & & & & & \\
+      \midrule
+      0 &         1494.0 &  0.753414 &  0.179673 &  0.0 &  1.0  \\
+      1 &         2987.0 &  0.091530 &  0.141061 &  0.0 &  0.8   \\
+      2  &         6784.0 &  0.364092 &  0.169420 &  0.0 &  1.0  \\
+      3   &        2452.0 &  0.417129 &  0.193405 &  0.0 &  0.8   \\
+      \bottomrule
+    \end{tabular}
+    \caption{Cinque}
+    \label{tab:cinque}
+  \end{subtable}
+\end{table}
 % Andiamo adesso a dare una descrizione dei cluster emersi dall'applicazione dell'algoritmo K-means con i parametri
 % che abbiamo deciso di utilizzare. Cominciando con l'osservare lo scatterplot relativo ai cluster degli impiegati
 % che hanno lasciato l'azienda, Figura , notiamo che sono ben visibili $3$ categorie distinte di impiegati, che
