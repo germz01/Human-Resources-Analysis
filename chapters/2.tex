@@ -50,8 +50,13 @@ data set totale.
 In quest'ultima sezione relativa all'algoritmo K-means descriviamo i clusters emersi durante l'analisi.
 Utilizzando i parametri descritti nelle sezioni precedenti, abbiamo ottenuto i clusters raffigurati in Figura
 \ref{fig:clu_tot}. La densità di popolazione dei cluster ottenuti è osservabile in Figura \ref{fig:dist_clu}.
-Il primo cluster emerso, Cluster $0$, contraddistingue gli impiegati con un alto score nella
-variabile Last Evaluation
+In Tabella \ref{tab:stat_descr} abbiamo riportato i dati caratteristici di ognuno dei cluster scoperti.
+Il primo cluster emerso, Cluster $0$, è quello con una densità di popolazione minore, e contraddistingue gli
+impiegati con un alto score nelle variabili Average Montly Hours, Last Evaluation, Number Project e Time Spend
+Company. Possiamo pensare a un tale cluster come a un gruppo di impiegati molto produttivi, ma con un livello di
+soddisfazione non troppo elevato. Il secondo Cluster, Cluster $1$, presenta un gruppo di impiegati con un valore
+molto basso sia in Time Spend Company che in Average Montly Hour, e valori poco sopra $0.55$ nelle altre variabili.
+
 \begin{figure}[t]
   \centering
   \subcaptionbox{Rappresentazione bidimensionale, svolta sulle variabili \textit{Satisfaction Level} e
@@ -66,89 +71,97 @@ variabile Last Evaluation
 \begin{table}
   \begin{subtable}{0.5\linewidth}
     \centering
-    \begin{tabular}{| l | r | r | r | r | r |}
-      \toprule
-      {} & \multicolumn{5}{l}{Average\_Montly\_Hours} \\
+    \begin{tabular}{| c | c | c | c | c | c |}
+      \hline
+      {} & \multicolumn{5}{c |}{Average\_Montly\_Hours} \\
+      \hline
       {} & count & mean & std & min & max\\
       Cluster & & & & &  \\
-      \midrule
+      \hline
       0 & 1494.0 & 0.733762 & 0.204831 & 0.02 & 1.00 \\
       1 & 2987.0 & 0.251463 & 0.116789 & 0.00 & 0.88 \\
       2 & 6784.0 &  0.519805 &  0.194971 &  0.01 &  1.00 \\
       3 & 2452.0 &  0.542761 &  0.215429 &  0.00 & 0.99 \\
-      \bottomrule
+      \hline
     \end{tabular}
-    \caption{Uno}
+    \caption{}
     \label{tab:uno}
   \end{subtable}
   \begin{subtable}{0.5\linewidth}
     \centering
-    \begin{tabular}{| l | r | r | r | r | r |}
-      \toprule
-      {} & \multicolumn{5}{l}{Last\_Evaluation} \\
+    \begin{tabular}{| c | c | c | c | c | c |}
+      \hline
+      {} & \multicolumn{5}{c |}{Last\_Evaluation} \\
+      \hline
       {} & count & mean & std & min & max\\
       Cluster & & & & & \\
-      \midrule
+      \hline
       0 & 1494.0 &  0.811693 &  0.138791 &  0.37 & 1.0  \\
-      1 &          2987.0 &  0.556739 &  0.114149 &  0.36 &  1.0  \\
-      2       &          6784.0 &  0.737535 &  0.152870 &  0.36 &  1.0  \\
-      3       &          2452.0 &  0.782822 &  0.168248 &  0.36 & 1.0 \\
-      \bottomrule
+      1 & 2987.0 &  0.556739 &  0.114149 &  0.36 &  1.0  \\
+      2 & 6784.0 &  0.737535 &  0.152870 &  0.36 &  1.0  \\
+      3 & 2452.0 &  0.782822 &  0.168248 &  0.36 & 1.0 \\
+      \hline
     \end{tabular}
-    \caption{Due}
+    \caption{}
     \label{tab:due}
   \end{subtable}
   \begin{subtable}{0.5\linewidth}
     \centering
-    \begin{tabular}{| l | r | r | r | r | r |}
-      \toprule
-      {} & \multicolumn{5}{l}{Number\_Project} \\
+    \begin{tabular}{| c | c | c | c | c | c |}
+      \hline
+      {} & \multicolumn{5}{c |}{Number\_Project} \\
+      \hline
       {} & count & mean & std & min & max\\
       Cluster & & & & & \\
-      \midrule
+      \hline
       0 & 1494.0 &  0.811693 &  0.138791 &  0.37 & 1.0  \\
-      1 &          2987.0 &  0.556739 &  0.114149 &  0.36 & 1.0  \\
-      2       &          6784.0 &  0.737535 &  0.152870 &  0.36 & 1.0  \\
-      3       &          2452.0 &  0.782822 &  0.168248 &  0.36 & 1.0 \\
-      \bottomrule
+      1 & 2987.0 &  0.556739 &  0.114149 &  0.36 & 1.0  \\
+      2 & 6784.0 &  0.737535 &  0.152870 &  0.36 & 1.0  \\
+      3 & 2452.0 &  0.782822 &  0.168248 &  0.36 & 1.0 \\
+      \hline
     \end{tabular}
-    \caption{Tre}
+    \caption{}
     \label{tab:tre}
   \end{subtable}
   \begin{subtable}{0.5\linewidth}
     \centering
-    \begin{tabular}{| l | r | r | r | r | r |}
-      \toprule
-      {} & \multicolumn{5}{l}{Satisfaction\_Level} \\
+    \begin{tabular}{| c | c | c | c | c | c |}
+      \hline
+      {} & \multicolumn{5}{c |}{Satisfaction\_Level} \\
+      \hline
       {} & count & mean & std & min & max\\
       Cluster & & & & & \\
-      \midrule
+      \hline
       0       &  1494.0 &  0.633199 &  0.482093 &  0.0 &  1.0  \\
       1       &  2987.0 &  0.520589 &  0.499660 &  0.0 &  1.0   \\
       2       &  6784.0 &  0.012529 &  0.111240 &  0.0 &  1.0 \\
       3       &  2452.0 &  0.316476 &  0.465196 &  0.0 &  1.0  \\
-      \bottomrule
+      \hline
     \end{tabular}
-    \caption{Quattro}
+    \caption{}
     \label{tab:quattro}
   \end{subtable}
   \begin{subtable}{\linewidth}
     \centering
-    \begin{tabular}{| l | r | r | r | r | r |}
-      \toprule
-      {} & \multicolumn{5}{l}{Time\_Spend\_Company} \\
+    \begin{tabular}{| c | c | c | c | c | c |}
+      \hline
+      {} & \multicolumn{5}{c |}{Time\_Spend\_Company} \\
+      \hline
       {} & count & mean & std & min & max\\
       Cluster & & & & & \\
-      \midrule
+      \hline
       0 &         1494.0 &  0.753414 &  0.179673 &  0.0 &  1.0  \\
       1 &         2987.0 &  0.091530 &  0.141061 &  0.0 &  0.8   \\
       2  &         6784.0 &  0.364092 &  0.169420 &  0.0 &  1.0  \\
       3   &        2452.0 &  0.417129 &  0.193405 &  0.0 &  0.8   \\
-      \bottomrule
+      \hline
     \end{tabular}
-    \caption{Cinque}
+    \caption{}
     \label{tab:cinque}
   \end{subtable}
+  \caption{Statistica descrittiva relativa alle variabili utilizzate nell'applicazione dell'algoritmo K-means
+  in fase di clustering.}
+  \label{tab:stat_descr}
 \end{table}
 % Andiamo adesso a dare una descrizione dei cluster emersi dall'applicazione dell'algoritmo K-means con i parametri
 % che abbiamo deciso di utilizzare. Cominciando con l'osservare lo scatterplot relativo ai cluster degli impiegati
