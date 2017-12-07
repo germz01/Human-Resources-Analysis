@@ -1,17 +1,15 @@
+In questa secondo capitolo del report, ci occupiamo di rilevare ,attraverso l'applicazione
+degli algoritmi \textit{K-means}, \textit{Hierarchical} e \textit{Dbscan}, i gruppi di dipendenti con
+caratteristiche comuni all'interno del data set. La nostra analisi è stata inizialmente svolta sul data set
+completo, utilizzando però solo alcune variabili tra quelle a disposizione, come verrà spiegato nella sezione
+\ref{sub:choice_of_attributes_and_distance_function}. Per questa analisi globale vengono inoltre fornite alcune
+statistiche, per meglio integrare le informazioni ottenute dal clustering. Come già specificato nella Sezione
+\ref{sec:variable_transformations}, i valori delle variabili discrete sono stati normalizzati in un intervallo
+compreso tra $0$ e $1$, al fine di rendere più agevole il confronto in fase di clustering. Infine, come ulteriori
+casi di studio, sono riportate anche le analisi relative alla sola porzione del data set contenente gli impiegati
+che hanno lasciato l'azienda e a quella invece contenente gli impiegati ancora al suo interno.
 \section{Clustering Analysis by K-means} % (fold)
 \label{sec:clustering_analysis_by_k_means}
-In questa prima sezione del capitolo relativo al Clustering, ci occupiamo di rilevare ,attraverso l'applicazione
-dell'algoritmo \textit{K-means}, i gruppi di dipendenti con caratteristiche comuni all'interno del data set.
-La nostra analisi è stata inizialmente svolta sul data set completo, utilizzando però solo alcune variabili tra
-quelle a disposizione, come verrà spiegato nelle sezioni successive. Per questa analisi globale vengono
-inoltre fornite alcune statistiche, per meglio integrare le informazioni ottenute dal clustering. Come già
-specificato nella Sezione \ref{sec:variable_transformations}, i valori delle variabili discrete sono stati
-normalizzati in un intervallo compreso tra $0$ e $1$, al fine di rendere più agevole il confronto in fase di
-clustering. Inoltre, per ottenere un risultato più pulito sono stati rimossi gli outliers ($1282$ records)
-presenti nella variabile \textit{Time Spend Company}, come evidenziato nella Sezione
-\ref{sec:assessing_data_quality}. Infine, come ulteriori casi di studio, sono riportate anche le analisi
-relative alla sola porzione del data set contenente gli impiegati che hanno lasciato l'azienda e a quella invece
-contenente gli impiegati ancora al suo interno.
 \subsection{Choice of attributes and distance function} % (fold)
 \label{sub:choice_of_attributes_and_distance_function}
 % \begin{figure}[b!]
@@ -43,13 +41,14 @@ dove \textit{dist} rappresenta la distanza Euclidea tra il centroide $c_i$ ed il
  A partire da un valore iniziale di $k$ pari a $2$ fino ad un valore
 massimo di $50$ abbiamo calcolato l'SSE risultante dall'applicazione dell'algoritmo come possiamo osservare in
 Figura \ref{fig:sse}, e abbiamo infine deciso per un valore di $k$ pari a $4$ per l'applicazione di K-means sul
-data set totale.
+data set totale. Tale valore è stato poi confermato come il più elevato tra quelli osservati tramite lo studio
+del \textit{Silhouette score}.
 % subsection identification_of_the_best_value_of_k (end)
 \subsection{Characterization of the obtained clusters } % (fold)
 \label{sub:characterization_of_the_obtained_clusters}
 In quest'ultima sezione relativa all'algoritmo K-means descriviamo i clusters emersi durante l'analisi.
 Utilizzando i parametri descritti nelle sezioni precedenti, abbiamo ottenuto i clusters raffigurati in Figura
-\ref{fig:clu_tot}. La densità di popolazione dei cluster ottenuti è osservabile in Figura \ref{fig:dist_clu}.
+\ref{fig:dist_clu}, dove possiamo osservare la densità di popolazione per ognuno dei cluster ottenuti.
 In Tabella \ref{tab:stat_descr} abbiamo riportato i dati caratteristici di ognuno dei cluster scoperti.
 Il primo cluster emerso, Cluster $0$, è quello con una densità di popolazione minore, e contraddistingue gli
 impiegati con un alto score nelle variabili Average Montly Hours, Last Evaluation, Number Project e Time Spend
@@ -66,105 +65,106 @@ vale il contrario per le variabili Last Evaluation e Number Project. Lo score di
 Time Spend Company fa pensare ad un gruppo di impiegati molto produttivi, i quali da non molto lavorano all'interno
 dell'azienda, e a rischio dal momento che questo alto tasso di produttività sta probabilmente compromettendo il
 loro livello di soddisfazione.
-\begin{figure}[t]
+\begin{figure}[t!]
   \centering
-  \subcaptionbox{Rappresentazione bidimensionale, svolta sulle variabili \textit{Satisfaction Level} e
-    \textit{Last Evaluation}, dell'algoritmo K-means applicato alle variabili descritte in Sezione
-    \ref{sub:choice_of_attributes_and_distance_function}. Ad ogni cluster è assegnato un colore distinto, mentre
-    i centroidi sono rappresentati dai simboli "\textbf{+}".\label{fig:clu_tot}}
-    {\includegraphics[width=0.4\textwidth]{images/kmeans/cluster_total.pdf}}
-  \subcaptionbox{Distribuzione del numero di impiegati per ognuno dei cluster scoperti durante l'analisi, in
-  ordine decrescente per densità di popolazione.\label{fig:dist_clu}}{\includegraphics[width=0.4\textwidth]
-  {images/kmeans/dist_cluster.pdf}}
+  \includegraphics[width=0.5\textwidth]{images/kmeans/dist_cluster.pdf}
+  \caption{Distribuzione del numero di impiegati per ognuno dei cluster scoperti durante l'analisi, in
+  ordine decrescente per densità di popolazione.\label{fig:dist_clu}}
 \end{figure}
-\begin{table}
-  \begin{subtable}{0.5\linewidth}
-    \centering
-    \begin{tabular}{| c | c | c | c | c | c |}
-      \hline
-      {} & \multicolumn{5}{c |}{Average\_Montly\_Hours} \\
-      \hline
-      {} & count & mean & std & min & max\\
-      Cluster & & & & &  \\
-      \hline
-      0 & 1494.0 & 0.733762 & 0.204831 & 0.02 & 1.00 \\
-      1 & 2987.0 & 0.251463 & 0.116789 & 0.00 & 0.88 \\
-      2 & 6784.0 &  0.519805 &  0.194971 &  0.01 &  1.00 \\
-      3 & 2452.0 &  0.542761 &  0.215429 &  0.00 & 0.99 \\
-      \hline
-    \end{tabular}
-    \caption{}
-    \label{tab:uno}
+\begin{table}[H]
+  \centering
+  \begin{subtable}{0.4\textwidth}
+    \resizebox{\textwidth}{!}{
+      \begin{tabular}{| c | c | c | c | c | c |}
+        \hline
+        {} & \multicolumn{5}{c |}{Average\_Montly\_Hours} \\
+        \hline
+        {} & count & mean & std & min & max\\
+        Cluster & & & & &  \\
+        \hline
+        0 & 1494.0 & 0.733762 & 0.204831 & 0.02 & 1.00 \\
+        1 & 2987.0 & 0.251463 & 0.116789 & 0.00 & 0.88 \\
+        2 & 6784.0 &  0.519805 &  0.194971 &  0.01 &  1.00 \\
+        3 & 2452.0 &  0.542761 &  0.215429 &  0.00 & 0.99 \\
+        \hline
+      \end{tabular}
+      }
+      \caption{}
+      \label{tab:uno}
   \end{subtable}
-  \begin{subtable}{0.5\linewidth}
-    \centering
-    \begin{tabular}{| c | c | c | c | c | c |}
-      \hline
-      {} & \multicolumn{5}{c |}{Last\_Evaluation} \\
-      \hline
-      {} & count & mean & std & min & max\\
-      Cluster & & & & & \\
-      \hline
-      0 & 1494.0 &  0.811693 &  0.138791 &  0.37 & 1.0  \\
-      1 & 2987.0 &  0.556739 &  0.114149 &  0.36 &  1.0  \\
-      2 & 6784.0 &  0.737535 &  0.152870 &  0.36 &  1.0  \\
-      3 & 2452.0 &  0.782822 &  0.168248 &  0.36 & 1.0 \\
-      \hline
-    \end{tabular}
-    \caption{}
-    \label{tab:due}
+  \begin{subtable}{0.4\textwidth}
+    \resizebox{\textwidth}{!}{
+      \begin{tabular}{| c | c | c | c | c | c |}
+        \hline
+        {} & \multicolumn{5}{c |}{Last\_Evaluation} \\
+        \hline
+        {} & count & mean & std & min & max\\
+        Cluster & & & & & \\
+        \hline
+        0 & 1494.0 &  0.811693 &  0.138791 &  0.37 & 1.0  \\
+        1 & 2987.0 &  0.556739 &  0.114149 &  0.36 &  1.0  \\
+        2 & 6784.0 &  0.737535 &  0.152870 &  0.36 &  1.0  \\
+        3 & 2452.0 &  0.782822 &  0.168248 &  0.36 & 1.0 \\
+        \hline
+      \end{tabular}
+      }
+      \caption{}
+      \label{tab:due}
   \end{subtable}
-  \begin{subtable}{0.5\linewidth}
-    \centering
-    \begin{tabular}{| c | c | c | c | c | c |}
-      \hline
-      {} & \multicolumn{5}{c |}{Number\_Project} \\
-      \hline
-      {} & count & mean & std & min & max\\
-      Cluster & & & & & \\
-      \hline
-      0 & 1494.0 &  0.811693 &  0.138791 &  0.37 & 1.0  \\
-      1 & 2987.0 &  0.556739 &  0.114149 &  0.36 & 1.0  \\
-      2 & 6784.0 &  0.737535 &  0.152870 &  0.36 & 1.0  \\
-      3 & 2452.0 &  0.782822 &  0.168248 &  0.36 & 1.0 \\
-      \hline
-    \end{tabular}
+  \begin{subtable}{0.4\linewidth}
+    \resizebox{\textwidth}{!}{
+      \begin{tabular}{| c | c | c | c | c | c |}
+        \hline
+        {} & \multicolumn{5}{c |}{Number\_Project} \\
+        \hline
+        {} & count & mean & std & min & max\\
+        Cluster & & & & & \\
+        \hline
+        0 & 1494.0 &  0.811693 &  0.138791 &  0.37 & 1.0  \\
+        1 & 2987.0 &  0.556739 &  0.114149 &  0.36 & 1.0  \\
+        2 & 6784.0 &  0.737535 &  0.152870 &  0.36 & 1.0  \\
+        3 & 2452.0 &  0.782822 &  0.168248 &  0.36 & 1.0 \\
+        \hline
+      \end{tabular}
+    }
     \caption{}
     \label{tab:tre}
   \end{subtable}
-  \begin{subtable}{0.5\linewidth}
-    \centering
-    \begin{tabular}{| c | c | c | c | c | c |}
-      \hline
-      {} & \multicolumn{5}{c |}{Satisfaction\_Level} \\
-      \hline
-      {} & count & mean & std & min & max\\
-      Cluster & & & & & \\
-      \hline
-      0       &  1494.0 &  0.633199 &  0.482093 &  0.0 &  1.0  \\
-      1       &  2987.0 &  0.520589 &  0.499660 &  0.0 &  1.0   \\
-      2       &  6784.0 &  0.012529 &  0.111240 &  0.0 &  1.0 \\
-      3       &  2452.0 &  0.316476 &  0.465196 &  0.0 &  1.0  \\
-      \hline
-    \end{tabular}
+  \begin{subtable}{0.4\textwidth}
+    \resizebox{\textwidth}{!}{
+      \begin{tabular}{| c | c | c | c | c | c |}
+        \hline
+        {} & \multicolumn{5}{c |}{Satisfaction\_Level} \\
+        \hline
+        {} & count & mean & std & min & max\\
+        Cluster & & & & & \\
+        \hline
+        0       &  1494.0 &  0.633199 &  0.482093 &  0.0 &  1.0  \\
+        1       &  2987.0 &  0.520589 &  0.499660 &  0.0 &  1.0   \\
+        2       &  6784.0 &  0.012529 &  0.111240 &  0.0 &  1.0 \\
+        3       &  2452.0 &  0.316476 &  0.465196 &  0.0 &  1.0  \\
+        \hline
+      \end{tabular}
+    }
     \caption{}
     \label{tab:quattro}
   \end{subtable}
-  \begin{subtable}{\linewidth}
-    \centering
-    \begin{tabular}{| c | c | c | c | c | c |}
-      \hline
-      {} & \multicolumn{5}{c |}{Time\_Spend\_Company} \\
-      \hline
-      {} & count & mean & std & min & max\\
-      Cluster & & & & & \\
-      \hline
-      0 &         1494.0 &  0.753414 &  0.179673 &  0.0 &  1.0  \\
-      1 &         2987.0 &  0.091530 &  0.141061 &  0.0 &  0.8   \\
-      2  &         6784.0 &  0.364092 &  0.169420 &  0.0 &  1.0  \\
-      3   &        2452.0 &  0.417129 &  0.193405 &  0.0 &  0.8   \\
-      \hline
-    \end{tabular}
+  \begin{subtable}{0.4\textwidth}
+    \resizebox{\textwidth}{!}{
+      \begin{tabular}{| c | c | c | c | c | c |}
+        \hline
+        {} & \multicolumn{5}{c |}{Time\_Spend\_Company} \\
+        \hline
+        {} & count & mean & std & min & max\\
+        Cluster & & & & & \\
+        \hline
+        0 &         1494.0 &  0.753414 &  0.179673 &  0.0 &  1.0  \\
+        1 &         2987.0 &  0.091530 &  0.141061 &  0.0 &  0.8   \\
+        2  &         6784.0 &  0.364092 &  0.169420 &  0.0 &  1.0  \\
+        3   &        2452.0 &  0.417129 &  0.193405 &  0.0 &  0.8   \\
+        \hline
+      \end{tabular}
+    }
     \caption{}
     \label{tab:cinque}
   \end{subtable}

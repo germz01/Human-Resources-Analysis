@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import seaborn as sns
+import warnings
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import silhouette_score
@@ -25,6 +26,8 @@ plt.rc('ytick', labelsize=SMALL_SIZE)    # fontsize of the tick labels
 plt.rc('legend', fontsize=SMALL_SIZE)    # legend fontsize
 plt.rc('figure', titlesize=BIGGER_SIZE)  # fontsize of the figure title
 
+print 'IMPORTING THE DATA SET'
+
 DS = pd.read_csv('../../HR_comma_sep.csv',
                  names=['Satisfaction_Level', 'Last_Evaluation',
                         'Number_Project', 'Average_Montly_Hours',
@@ -32,7 +35,10 @@ DS = pd.read_csv('../../HR_comma_sep.csv',
                         'Promotion_Last_5_Years', 'Sales', 'Salary'], header=0)
 DS = DS.drop(labels=['Work_Accident', 'Promotion_Last_5_Years', 'Sales',
              'Salary'], axis=1)
-DS = DS.drop(DS[DS.Time_Spend_Company >= 6].index.tolist(), axis=0)
+
+print 'SCALING THE DATA USING MIN MAX SCALER'
+
+warnings.simplefilter("ignore")
 
 scaler = MinMaxScaler(copy=True, feature_range=(0, 1))
 
@@ -55,6 +61,8 @@ DS.drop(labels=['Left'], axis=1)
 
 # print 'silhouette', silhouette_score(DS, kmeans.labels_)
 
+print 'CLUSTERING'
+
 DS['Cluster'] = kmeans.labels_
 
 fig = plt.figure(figsize=(10, 7), dpi=300)
@@ -73,6 +81,8 @@ plt.legend(handles=patches, bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
 plt.title('K-means applied on the whole data set')
 # plt.show()
 plt.savefig('../../images/kmeans/cluster_total.pdf')
+
+print 'PLOTTING THE POPULATION DENSITY OF THE OBTAINED CLUSTERS'
 
 fig.clf()
 fig.add_axes([0.1, 0.1, 0.6, 0.75])
@@ -93,4 +103,6 @@ plt.title("Employees per Cluster")
 # plt.show()
 plt.savefig('../../images/kmeans/dist_cluster.pdf')
 
-print DS.groupby('Cluster').describe().to_latex()
+print 'SAVING THE DISTRIBUTION OF THE OBTAINED CLUSTER IN DATA FOLDER'
+
+DS.groupby('Cluster').describe().to_csv('../../data/kmeans_distribution.csv')
