@@ -1,10 +1,8 @@
 import pandas as pd
 
 columns = ['Average_Montly_Hours', 'Last_Evaluation', 'Number_Project',
-           'Satisfaction_Level', 'Time_Spend_Company', 'Left']
+           'Satisfaction_Level', 'Time_Spend_Company']
 df = pd.read_csv('../../data/kmeans_distribution.csv')
-
-print df.columns
 
 for i in xrange(4, 7):
     for col in columns:
@@ -40,7 +38,8 @@ for col in columns:
                 file.write(line[x] + ' \\\\\n\t\t')
 
     file.write('\\hline\n\t\t'
-               '\end{tabular}\n\t}\n\t\\caption{}\n\t\\label{tab:}\n\t'
-               '\end{subtable}\n\t')
+               '\end{tabular}\n\t}\n\t\\caption{}\n\t\\label{tab:dist_' +
+               col + '}\n\t\end{subtable}\n\t')
+
 file.write('\end{table}')
 file.close()
