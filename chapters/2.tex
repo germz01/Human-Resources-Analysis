@@ -177,34 +177,39 @@ livello di soddisfazione, nonostante l'ultima valutazione fosse stata più che p
   massimi delle variabili utilizzate.}
   \label{tab:stat_descr}
   \end{table}
-% Andiamo adesso a dare una descrizione dei cluster emersi dall'applicazione dell'algoritmo K-means con i parametri
-% che abbiamo deciso di utilizzare. Cominciando con l'osservare lo scatterplot relativo ai cluster degli impiegati
-% che hanno lasciato l'azienda, Figura , notiamo che sono ben visibili $3$ categorie distinte di impiegati, che
-% possiamo descrivere discorsivamente come
-% \begin{itemize}
-%     \item Impiegati con un livello di soddisfazione basso e un alto score nella valutazione. Questo cluster ci
-%     suggerisce la motivazione per cui questi impiegati hanno lasciato l'azienda, ossia una quantità troppo elevata
-%     di ore di lavoro, dalla quale deriva probabilmente l'alto score nella valutazione.
-%     \item Impiegati con un basso livello di soddisfazione, compreso tra $0.3$ e $0.5$, e un altrettanto basso score
-%     nella valutazione, compreso tra $0.2$ e $0.55$. La scarsa produttività e soddisfazione suggeriscono che questo
-%     gruppo di impiegati ha deciso di lasciare l'azienda per insoddisfazione verso la posizione lavorativa offerta.
-%     \item Impiegati con un alto livello di soddisfazione e un alto score nella valutazione, che probabilmente hanno
-%     lasciato l'azienda dopo aver ricevuto un'offerta di lavoro più vantaggiosa.
-% \end{itemize}
-% \begin{figure}[t]
-%     \begin{center}
-%         \subcaptionbox{\label{fig:cluster_left}}{\includegraphics[scale=0.45]{images/kmeans/cluster_left.pdf}}
-%         \subcaptionbox{\label{fig:cluster_stayed}}{\includegraphics[scale=0.45]{images/kmeans/cluster_stayed.pdf}}
-%         \caption{Nella Figura \ref{fig:cluster_left} troviamo i cluster emersi dall'analisi dei dipendenti che
-%         hanno lasciato l'azienda, nella Figura \ref{fig:cluster_stayed} troviamo invece quelli emersi dall'analisi
-%         dei dipendenti rimasti nell'azienda.}
-%     \end{center}
-% \end{figure}
-% subsection characterization_of_the_obtained_clusters (end)
-% section clustering_analysis_by_k_means (end)
-
-
+\begin{figure}[h!]
+  \centering
+  \begin{subfigure}{0.45\textwidth}
+    \centering
+    \resizebox{\textwidth}{!}{
+      \includegraphics{images/kmeans/cluster_left.pdf}
+    }
+    \caption{}
+    \label{fig:cluster_left}
+  \end{subfigure}
+  \begin{subfigure}{0.45\textwidth}
+    \centering
+    \resizebox{\textwidth}{!}{
+      \includegraphics{images/kmeans/cluster_stayed.pdf}
+    }
+    \caption{}
+    \label{fig:cluster_stayed}
+  \end{subfigure}
+  \caption{Visualizzazione relativa all'applicazione dell'algoritmo K-means sul data set diviso in funzione della
+  variabile \textit{Left}. In Figura \ref{fig:cluster_left} è possibile osservare il clustering relativo agli
+  impiegati che hanno lasciato l'azienda, mentre in Figura \ref{fig:cluster_stayed} troviamo il clustering
+  relativo agli impiegati che sono rimasti.}
+  \label{fig:cluster_splitted}
+\end{figure}
 \newpage
+Come ulteriore esempio, in Figura \ref{fig:cluster_splitted} forniamo le visualizzazioni relative all'applicazione
+di K-means, utilizzando le variabili Satisfaction Level e Last Evaluation, al data set diviso in base alla
+variabile Left. Similmente a quanto fatto per l'algoritmo applicato all'intero data set, abbiamo prima studiato
+l'SSE, e confrontato le nostre ipotesi con lo score fornito dall'analisi della silhouette. Come possiamo vedere,
+i $3$ clusters emersi per gli impiegati che hanno lasciato l'azienda delineano un gruppo di impiegati con un basso
+score sia in Satisfaction Level che in Last Evaluation, un gruppo con un alto score in Last Evaluation e un basso
+score in Satisfaction Level e un gruppo con alto score in entrambe le variabili. Per gli impiegati ancora all'
+interno dell'azienda la situazione è decisamente più distribuita.
 \section{Hierarchical clustering}
 
 
