@@ -4,6 +4,8 @@ columns = ['Average_Montly_Hours', 'Last_Evaluation', 'Number_Project',
            'Satisfaction_Level', 'Time_Spend_Company', 'Left']
 df = pd.read_csv('../../data/kmeans_distribution.csv')
 
+print df.columns
+
 for i in xrange(4, 7):
     for col in columns:
         df.drop(labels=[col + '.' + str(i)], axis=1, inplace=True)
