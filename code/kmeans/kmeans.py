@@ -103,6 +103,27 @@ plt.title("Employees per Cluster")
 # plt.show()
 plt.savefig('../../images/kmeans/dist_cluster.pdf')
 
+print 'PLOTTING THE SSE GRAPH'
+
+plt.clf()
+fig, ax = plt.subplots(figsize=(15, 10), ncols=1)
+ax.tick_params(axis='x', which='major', pad=15)
+sse_list = list()
+max_k = 51
+
+for k in range(2, max_k):
+    kmeans = KMeans(init='k-means++', n_clusters=k, n_init=10, max_iter=100)
+    kmeans.fit(DS[['Satisfaction_Level', 'Last_Evaluation', 'Number_Project',
+               'Average_Montly_Hours', 'Time_Spend_Company']])
+    sse = kmeans.inertia_
+    sse_list.append(sse)
+
+plt.plot(range(2, max_k), sse_list)
+plt.xlabel("Clusters")
+plt.ylabel("SSE")
+plt.savefig('../../images/kmeans/SSE.pdf')
+# plt.show()
+
 print 'SAVING THE DISTRIBUTION OF THE OBTAINED CLUSTER IN DATA FOLDER'
 
 DS.groupby('Cluster').describe().to_csv('../../data/kmeans_distribution.csv')
