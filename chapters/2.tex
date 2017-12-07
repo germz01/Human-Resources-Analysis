@@ -198,7 +198,9 @@ livello di soddisfazione, nonostante l'ultima valutazione fosse stata più che p
   \caption{Visualizzazione relativa all'applicazione dell'algoritmo K-means sul data set diviso in funzione della
   variabile \textit{Left}. In Figura \ref{fig:cluster_left} è possibile osservare il clustering relativo agli
   impiegati che hanno lasciato l'azienda, mentre in Figura \ref{fig:cluster_stayed} troviamo il clustering
-  relativo agli impiegati che sono rimasti.}
+  relativo agli impiegati che sono rimasti. L'analisi dell'SSE e dello score della silhouette ha rivelato che,
+  applicando l'algoritmo soltanto sulle variabili Satisfaction Level e Last Evaluation, il numero ideale di
+  clusters è $3$ per gli impiegati che hanno lasciato l'azienda, e $5$ per gli altri.}
   \label{fig:cluster_splitted}
 \end{figure}
 \newpage
@@ -208,8 +210,8 @@ variabile Left. Similmente a quanto fatto per l'algoritmo applicato all'intero d
 l'SSE, e confrontato le nostre ipotesi con lo score fornito dall'analisi della silhouette. Come possiamo vedere,
 i $3$ clusters emersi per gli impiegati che hanno lasciato l'azienda delineano un gruppo di impiegati con un basso
 score sia in Satisfaction Level che in Last Evaluation, un gruppo con un alto score in Last Evaluation e un basso
-score in Satisfaction Level e un gruppo con alto score in entrambe le variabili. Per gli impiegati ancora all'
-interno dell'azienda la situazione è decisamente più distribuita.
+score in Satisfaction Level e un gruppo con alto score in entrambe le variabili. Per gli impiegati ancora
+all'interno dell'azienda la situazione è decisamente più distribuita.
 \section{Hierarchical clustering}
 
 
