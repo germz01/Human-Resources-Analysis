@@ -13,12 +13,13 @@ file.write('\\begin{table}[H]\n\t\centering\n\t')
 
 for col in columns:
     l = list()
+    col_name = col.replace('_', '\\_')
 
     file.write('\\begin{subtable}{0.4\\textwidth}\n\t\t'
                '\\resizebox{\\textwidth}{!}{\n\t\t'
                '\\begin{tabular}{| c | c | c | c | c | c |}\n\t\t'
                '\\hline\n\t\t'
-               '{} & \multicolumn{5}{c |}{' + col + '} \\\\\n\t\t'
+               '{} & \multicolumn{5}{c |}{' + col_name + '} \\\\\n\t\t'
                '\\hline\n\t\t'
                '{} & count & mean & std & min & max \\\\\n\t\t'
                'Cluster & & & & &  \\\\\n\t\t'

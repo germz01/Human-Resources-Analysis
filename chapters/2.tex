@@ -44,128 +44,139 @@ In quest'ultima sezione relativa all'algoritmo K-means descriviamo i clusters em
 Utilizzando i parametri descritti nelle sezioni precedenti, abbiamo ottenuto i clusters raffigurati in Figura
 \ref{fig:dist_clu}, dove possiamo osservare la densità di popolazione per ognuno dei cluster ottenuti.
 In Tabella \ref{tab:stat_descr} abbiamo riportato i dati caratteristici di ognuno dei cluster scoperti.
-Il primo cluster emerso, Cluster $0$, è quello con una densità di popolazione minore, e contraddistingue gli
-impiegati con un alto score nelle variabili Average Montly Hours, Last Evaluation, Number Project e Time Spend
-Company. Possiamo pensare a un tale cluster come a un gruppo di impiegati molto produttivi, ma con un livello di
-soddisfazione non troppo elevato. Il secondo Cluster, Cluster $1$, presenta un gruppo di impiegati con un valore
-molto basso sia in Time Spend Company che in Average Montly Hour, e valori poco sopra $0.55$ nelle altre variabili.
-Il Cluster $2$ è probabilmente quello più allarmante, dal momento che è composto da impiegati con un bassissimo
-score nella variabile Satisfaction Level, e uno score elevato sia in Last Evaluation che in Number Project.
-Possiamo pensare a un gruppo di impiegati che hanno mantenuto un livello di produttività alto dovuto ad elevati
-carichi di lavoro, fattore che ha comportato il calo vertiginoso del livello di soddisfazione. Il fatto che tale
-cluster sia anche quello più densamente popolato è un ulteriore motivo di interesse verso questo gruppo di
-impiegati. L'ultimo cluster, il $3$ presenta anch'esso un basso score nella variabile Satisfaction Level, mentre
-vale il contrario per le variabili Last Evaluation e Number Project. Lo score di circa $0.41$ nella variabile
-Time Spend Company fa pensare ad un gruppo di impiegati molto produttivi, i quali da non molto lavorano all'interno
-dell'azienda, e a rischio dal momento che questo alto tasso di produttività sta probabilmente compromettendo il
-loro livello di soddisfazione.
+Il primo cluster emerso, Cluster $0$ contraddistingue gli impiegati con un alto score nelle variabili
+Last Evaluation e Satisfaction Level. Possiamo pensare a un tale cluster come a un gruppo di impiegati molto
+soddisfatti e valutati positivamente, da poco assunti, visto lo score basso in Time Spend Company. Il secondo
+Cluster, Cluster $1$, presenta un gruppo di impiegati con valori bassi in tutte le variabili utilizzate tranne
+Last Evaluation, che registra uno scorre di circa $0.56$. Essendo il terzo cluster per densità di popolazione,
+denota un risultato interessante e sicuramente da tenere d'occhio per i futuri sviluppi dell'azienda.
+Il Cluster $2$ presenta un gruppo di impiegati soddisfatti e produttivi, da poco assunti all'interno dell'azienda
+e con carichi di lavoro abbastanza elevati. L'ultimo cluster, il $3$, presenta una situazione preoccupante, visto
+gli score molto elevati degli impiegati nelle variabili Average Montly Hours, Last Evaluation e Number Project, e
+il basso score nella variabile Satisfaction Level. Vedendo simili risultati è facile immaginarsi un gruppo di
+impiegati da poco assunti, caratterizzati da un alto tasso di ore di lavoro, il quale ha comportato il calo nel
+livello di soddisfazione, nonostante l'ultima valutazione fosse stata più che positiva.
 \begin{figure}[t!]
   \centering
-  \includegraphics[width=0.5\textwidth]{images/kmeans/dist_cluster.pdf}
-  \caption{Distribuzione del numero di impiegati per ognuno dei cluster scoperti durante l'analisi, in
-  ordine decrescente per densità di popolazione.\label{fig:dist_clu}}
+  \begin{subfigure}{0.5\textwidth}
+    \resizebox{\textwidth}{!}{
+      \includegraphics{images/kmeans/SSE.pdf}
+    }
+    \caption{Sviluppo dell'SSE in base all'aumentare del numero di clusters nell'applicazione dell'algoritmo
+    K-means.}
+    \label{fig:sse}
+  \end{subfigure}
+  \begin{subfigure}{0.5\textwidth}
+    \resizebox{\textwidth}{!}{
+      \includegraphics[width=0.5\textwidth]{images/kmeans/dist_cluster.pdf}
+    }
+    \caption{Distribuzione del numero di impiegati per ognuno dei cluster scoperti durante l'analisi, in ordine
+    decrescente per densità di popolazione.}
+    \label{fig:dist_clu}
+  \end{subfigure}
 \end{figure}
 \begin{table}[H]
   \centering
   \begin{subtable}{0.4\textwidth}
     \resizebox{\textwidth}{!}{
-      \begin{tabular}{| c | c | c | c | c | c |}
-        \hline
-        {} & \multicolumn{5}{c |}{Average\_Montly\_Hours} \\
-        \hline
-        {} & count & mean & std & min & max\\
-        Cluster & & & & &  \\
-        \hline
-        0 & 1494.0 & 0.733762 & 0.204831 & 0.02 & 1.00 \\
-        1 & 2987.0 & 0.251463 & 0.116789 & 0.00 & 0.88 \\
-        2 & 6784.0 &  0.519805 &  0.194971 &  0.01 &  1.00 \\
-        3 & 2452.0 &  0.542761 &  0.215429 &  0.00 & 0.99 \\
-        \hline
-      \end{tabular}
-      }
-      \caption{}
-      \label{tab:uno}
+    \begin{tabular}{| c | c | c | c | c | c |}
+    \hline
+    {} & \multicolumn{5}{c |}{Average\_Montly\_Hours} \\
+    \hline
+    {} & count & mean & std & min & max \\
+    Cluster & & & & &  \\
+    \hline
+    0 & 4718.0 & 0.335402713014 & 0.119339203198 & 0.0 & 0.57 \\
+    1 & 3112.0 & 0.266349614396 & 0.131965498666 & 0.0 & 0.88 \\
+    2 & 5343.0 & 0.687986150103 & 0.0978323000066 & 0.32 & 1.0 \\
+    3 & 1826.0 & 0.698707557503 & 0.218737034635 & 0.01 & 1.0 \\
+    \hline
+    \end{tabular}
+  }
+  \caption{}
+  \label{tab:dist_Average_Montly_Hours}
   \end{subtable}
   \begin{subtable}{0.4\textwidth}
     \resizebox{\textwidth}{!}{
-      \begin{tabular}{| c | c | c | c | c | c |}
-        \hline
-        {} & \multicolumn{5}{c |}{Last\_Evaluation} \\
-        \hline
-        {} & count & mean & std & min & max\\
-        Cluster & & & & & \\
-        \hline
-        0 & 1494.0 &  0.811693 &  0.138791 &  0.37 & 1.0  \\
-        1 & 2987.0 &  0.556739 &  0.114149 &  0.36 &  1.0  \\
-        2 & 6784.0 &  0.737535 &  0.152870 &  0.36 &  1.0  \\
-        3 & 2452.0 &  0.782822 &  0.168248 &  0.36 & 1.0 \\
-        \hline
-      \end{tabular}
-      }
-      \caption{}
-      \label{tab:due}
-  \end{subtable}
-  \begin{subtable}{0.4\linewidth}
-    \resizebox{\textwidth}{!}{
-      \begin{tabular}{| c | c | c | c | c | c |}
-        \hline
-        {} & \multicolumn{5}{c |}{Number\_Project} \\
-        \hline
-        {} & count & mean & std & min & max\\
-        Cluster & & & & & \\
-        \hline
-        0 & 1494.0 &  0.811693 &  0.138791 &  0.37 & 1.0  \\
-        1 & 2987.0 &  0.556739 &  0.114149 &  0.36 & 1.0  \\
-        2 & 6784.0 &  0.737535 &  0.152870 &  0.36 & 1.0  \\
-        3 & 2452.0 &  0.782822 &  0.168248 &  0.36 & 1.0 \\
-        \hline
-      \end{tabular}
-    }
-    \caption{}
-    \label{tab:tre}
+    \begin{tabular}{| c | c | c | c | c | c |}
+    \hline
+    {} & \multicolumn{5}{c |}{Last\_Evaluation} \\
+    \hline
+    {} & count & mean & std & min & max \\
+    Cluster & & & & &  \\
+    \hline
+    0 & 4718.0 & 0.72940652819 & 0.154968000745 & 0.36 & 1.0 \\
+    1 & 3112.0 & 0.556725578406 & 0.117328197911 & 0.36 & 1.0 \\
+    2 & 5343.0 & 0.769792251544 & 0.159907000653 & 0.36 & 1.0 \\
+    3 & 1826.0 & 0.796243154436 & 0.147510906101 & 0.36 & 1.0 \\
+    \hline
+    \end{tabular}
+  }
+  \caption{}
+  \label{tab:dist_Last_Evaluation}
   \end{subtable}
   \begin{subtable}{0.4\textwidth}
     \resizebox{\textwidth}{!}{
-      \begin{tabular}{| c | c | c | c | c | c |}
-        \hline
-        {} & \multicolumn{5}{c |}{Satisfaction\_Level} \\
-        \hline
-        {} & count & mean & std & min & max\\
-        Cluster & & & & & \\
-        \hline
-        0       &  1494.0 &  0.633199 &  0.482093 &  0.0 &  1.0  \\
-        1       &  2987.0 &  0.520589 &  0.499660 &  0.0 &  1.0   \\
-        2       &  6784.0 &  0.012529 &  0.111240 &  0.0 &  1.0 \\
-        3       &  2452.0 &  0.316476 &  0.465196 &  0.0 &  1.0  \\
-        \hline
-      \end{tabular}
-    }
-    \caption{}
-    \label{tab:quattro}
+    \begin{tabular}{| c | c | c | c | c | c |}
+    \hline
+    {} & \multicolumn{5}{c |}{Number\_Project} \\
+    \hline
+    {} & count & mean & std & min & max \\
+    Cluster & & & & &  \\
+    \hline
+    0 & 4718.0 & 0.373251377702 & 0.171899268358 & 0.0 & 1.0 \\
+    1 & 3112.0 & 0.087146529563 & 0.133356468399 & 0.0 & 0.8 \\
+    2 & 5343.0 & 0.382481751825 & 0.177865527878 & 0.0 & 0.8 \\
+    3 & 1826.0 & 0.730010952903 & 0.185110703318 & 0.0 & 1.0 \\
+    \hline
+    \end{tabular}
+  }
+  \caption{}
+  \label{tab:dist_Number_Project}
   \end{subtable}
   \begin{subtable}{0.4\textwidth}
     \resizebox{\textwidth}{!}{
-      \begin{tabular}{| c | c | c | c | c | c |}
-        \hline
-        {} & \multicolumn{5}{c |}{Time\_Spend\_Company} \\
-        \hline
-        {} & count & mean & std & min & max\\
-        Cluster & & & & & \\
-        \hline
-        0 &         1494.0 &  0.753414 &  0.179673 &  0.0 &  1.0  \\
-        1 &         2987.0 &  0.091530 &  0.141061 &  0.0 &  0.8   \\
-        2  &         6784.0 &  0.364092 &  0.169420 &  0.0 &  1.0  \\
-        3   &        2452.0 &  0.417129 &  0.193405 &  0.0 &  0.8   \\
-        \hline
-      \end{tabular}
-    }
-    \caption{}
-    \label{tab:cinque}
+    \begin{tabular}{| c | c | c | c | c | c |}
+    \hline
+    {} & \multicolumn{5}{c |}{Satisfaction\_Level} \\
+    \hline
+    {} & count & mean & std & min & max \\
+    Cluster & & & & &  \\
+    \hline
+    0 & 4718.0 & 0.753912674862 & 0.149069029588 & 0.29 & 1.0 \\
+    1 & 3112.0 & 0.426690231362 & 0.113426667634 & 0.09 & 0.96 \\
+    2 & 5343.0 & 0.746524424481 & 0.146280707568 & 0.25 & 1.0 \\
+    3 & 1826.0 & 0.174364731654 & 0.103883794638 & 0.09 & 0.63 \\
+    \hline
+    \end{tabular}
+  }
+  \caption{}
+  \label{tab:dist_Satisfaction_Level}
   \end{subtable}
-  \caption{Statistica descrittiva relativa alle variabili utilizzate nell'applicazione dell'algoritmo K-means
-  in fase di clustering.}
+  \begin{subtable}{0.4\textwidth}
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{| c | c | c | c | c | c |}
+    \hline
+    {} & \multicolumn{5}{c |}{Time\_Spend\_Company} \\
+    \hline
+    {} & count & mean & std & min & max \\
+    Cluster & & & & &  \\
+    \hline
+    0 & 4718.0 & 0.135247986435 & 0.151055406452 & 0.0 & 1.0 \\
+    1 & 3112.0 & 0.165690874036 & 0.152454170381 & 0.0 & 1.0 \\
+    2 & 5343.0 & 0.216769605091 & 0.212362864942 & 0.0 & 1.0 \\
+    3 & 1826.0 & 0.294408543264 & 0.14565978606 & 0.0 & 1.0 \\
+    \hline
+    \end{tabular}
+  }
+  \caption{}
+  \label{tab:dist_Time_Spend_Company}
+  \end{subtable}
+  \caption{Statistica descrittiva relativa ad ognuno dei cluster scoperti. Per ogni cluster vengono riportate le
+  informazioni relative alla densità di popolazione, alla media, alla deviazione standard e ai valori minimi e
+  massimi delle variabili utilizzate.}
   \label{tab:stat_descr}
-\end{table}
+  \end{table}
 % Andiamo adesso a dare una descrizione dei cluster emersi dall'applicazione dell'algoritmo K-means con i parametri
 % che abbiamo deciso di utilizzare. Cominciando con l'osservare lo scatterplot relativo ai cluster degli impiegati
 % che hanno lasciato l'azienda, Figura , notiamo che sono ben visibili $3$ categorie distinte di impiegati, che
