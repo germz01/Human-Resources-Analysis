@@ -244,13 +244,7 @@ Proseguendo poi con il rapporto tra dipendenti ancora in azienda e non, e il num
 % section distribution_of_the_variables_and_statistics (end)
 \section{Data quality} % (fold)
 \label{sec:assessing_data_quality}
-
-- Missing values
-
-- Outliers
-
-L'individuazione dei possibili outliers di una variabile numerica consiste nel verificare se siano presenti dei valori estremi rispetto alla distribuzione dei dati osservati. I test comunemente utilizzati, come il test di Grubb o il criterio di Chauvenet, sono basati sull'assunzione di una distribuzione di probabilità gaussiana, che non si osserva per le variabili numeriche del dataset analizzato (spiegare in distribution of the variables).
-Un metodo robusto e di immediata applicazione è quello di osservare il boxplot dei dati, identificando come candidati outliers i valori che si trovano al di fuori dei whiskers, ovvero valori $x$ della variabile osservata per cui $|x-\tilde{x}|>2\,IQR(x)$, dove $\tilde{x}$ è la mediana ed $IQR(x)$ lo scarto interquartile.
+Nel dataset non risultano presenti nè missing values nè errori sintattici. L'individuazione dei possibili outliers delle variabili numeriche consiste nel verificare se siano presenti dei valori estremi rispetto alle relative distribuzioni. Un metodo robusto e di immediata applicazione è quello di rappresentare i dati tramite boxplot, identificando come outliers i valori che si trovano al di fuori dei whiskers, di lunghezza massima $1.5\,IQR$. Per una distribuzione gaussiana il numero di outliers attesi al di fuori dei whiskers è circa il $7\%$. In Fig. \ref{fig:boxplots} si osserva che si hanno outliers solo per la variabile \textit{Time Spend Company}, la cui distribuzione risulta però essere asimmetrica e con una coda destra ampia come mostrato anche in Fig. REF. Gli outliers individuati non sono quindi considerati anomali, ma caratteristici della distribuzione, e non vengono eliminati dal dataset nelle successive analisi. (Altri test comunemente utilizzati, come il test di Grubb o il criterio di Chauvenet, sono basati sull'assunzione di una distribuzione di probabilità gaussiana, che non si osserva per le variabili numeriche del dataset analizzato (spiegare)).
 
 \begin{figure}[ht]
   \centering
@@ -259,6 +253,8 @@ Un metodo robusto e di immediata applicazione è quello di osservare il boxplot 
   \label{fig:boxplots}
 \end{figure}
 
+
+\todo[inline]{Tramite k-nearest-neighbours mi pare che ci siano parecchi dati ripetuti, approfondire}
 
 
 

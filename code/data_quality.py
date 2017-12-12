@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-## %matplotlib qt
+%matplotlib qt
 ##  %pylab
 
 df = pd.read_csv('../data/df_formatted.csv')
@@ -23,63 +23,79 @@ plt.hist(df['Last_Evaluation'])
 
 df.columns
 
-num_variables = ['Satisfaction_Level',
+variables = ['Satisfaction_Level',
                  'Average_Montly_Hours',
                  'Time_Spend_Company',
                  'Last_Evaluation',
-                 'Number_Project'
+                 'Number_Projects'
 ]
 
+variables_units = {'Satisfaction_Level':'0-1 interval',
+                   'Average_Montly_Hours':'',
+                   'Time_Spend_Company':'Years',
+                   'Last_Evaluation':'0-1 interval',
+                   'Number_Projects':''}
 
-plt.hist(np.array(df['Time_Spend_Company']))
-plt.boxplot(np.array(df['Time_Spend_Company']))
-plt.close()
 
-plt.hist(np.array(df['Average_Montly_Hours']))
-plt.boxplot(np.array(df['Average_Montly_Hours']))
-plt.close()
+fig,ax =plt.subplots()
+ax.plot([1, 2, 3])
+ax.legend(['A simple line'])
 
-plt.hist(np.array(df['Satisfaction_Level']))
-plt.boxplot(np.array(df['Satisfaction_Level']))
-plt.close()
+ax.show()
 
-plt.hist(np.array(df['Last_Evaluation']))
 
-plt.boxplot(np.array(df['Last_Evaluation']))
-plt.xlabel('prova')
+df_num = df[num_variables]
 
-plt.close()
-
-plt.hist(np.array(df['Number_Project']))
-
-plt.boxplot(np.array(df['Number_Project']))
+variable="Time_Spend_Company"
+###########################################################
 
 plt.close()
 
-df.query('Time_Spend_Company>6').shape[0]
+variable= variables[1]
 
-df.value_counts()
+fig = plt.figure(figsize=(15,4))
 
-plt.show()
+for variable in variables:
 
+    indice = (variables.index(variable)+1) # indice variabile
+    ax =plt.subplot(1,5,indice) 
 
-indici = np.arange(0,5)
+    # aggiunta dei dati ai boxplot
+    y = df[variable]
+    delta = 0.3
+    x = np.random.uniform(1-delta,1+delta , size=len(y))
+    #plt.plot(x, y, 'b.', alpha=0.005)
+   
+    # boxplots
+    linewidth=2 # 
+    bp = ax.boxplot(np.array(df[variable]),notch=False,
+                    vert=True,meanline=True,showmeans=True,
+                    widths=0.5,
+                    medianprops = dict(linestyle='--', linewidth=linewidth, color='firebrick'),
+                    meanprops = dict(linestyle=':', linewidth=linewidth, color='orange')                
+    )
 
-num_variables[indici[0]-1]
+    if (indice==5):
+        plt.ylim(df[variable].min()-df[variable].min()*0.2
+                 ,1.2*df[variable].max())
+        plt.legend([bp['means'][0],bp['medians'][0]],['media','mediana'],loc=1)
 
+    #plt.title("Boxplot of "+variable)
+    plt.title(variable)
 
+    
+    if variables_units[variable] == "":
+        plt.ylabel("{}".format(variable))
+    else:
+        plt.ylabel("{} [{}]".format(variable,variables_units[variable]))
 
-plt.figure(figsize=(10,2))
-for i in indici:
-    plt.subplot(1,5,i+1) 
-    plt.boxplot(np.array(df[num_variables[i]]))
-    plt.xlabel(num_variables[i])
+    plt.xticks([],[])
     plt.tight_layout()
 
 plt.savefig('../images/boxplots.pdf')
-    
-plt.close()
 
+
+###########################################################          
 ###########################################################
 
     ## grubbs test 
