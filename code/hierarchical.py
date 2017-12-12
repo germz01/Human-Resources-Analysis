@@ -19,10 +19,7 @@ plt.rc('xtick', labelsize=SMALL_SIZE)    # fontsize of the tick labels
 plt.rc('ytick', labelsize=SMALL_SIZE)    # fontsize of the tick labels
 plt.rc('legend', fontsize=SMALL_SIZE)    # legend fontsize
 plt.rc('figure', titlesize=BIGGER_SIZE)  # fontsize of the figure title
-plt.rc('titlesize', titlesize=BIGGER_SIZE)  # fontsize of the figure title
-
-
-
+plt.rc('titlesize', titlesize=BIGGER_SIZE)  #fontsize of the figure title
 ###########################################################
 # variables transformation
 
@@ -45,7 +42,17 @@ df_norm.columns = df_num.columns
 df_norm.head()
 
 
-data = df_norm
+from sklearn.preprocessing import StandardScaler
+
+df_z = StandardScaler().fit_transform(df_num.values)
+df_z = pd.DataFrame(df_z)
+df_z.columns = df_num.columns
+df_z.head()
+
+
+
+
+data = df_z
 
 #df_num_norm = min_max_scaler.fit_transform(df_num.values.astype(float))
 
@@ -90,9 +97,11 @@ plt.hist(prova)
 plt.close()
 
 fig = plt.figure(figsize=(10, 5))
-dn = dendrogram(Z=data_link,p=7,truncate_mode='level',
-                orientation='left',count_sort='ascendent',
-                no_labels=False,show_leaf_counts=True,
+dn = dendrogram(Z=data_link,truncate_mode='level', p=10,
+                orientation='top',
+                #count_sort='ascendent',
+                distance_sort=True,
+                no_labels=True,show_leaf_counts=True,
 )
 
 plt.title('Method: {} , Metric: {}, Coph Corr: {:.2f} '.format(method,distance,coph_corr))
@@ -128,7 +137,7 @@ def analyze(method,distance):
 
     plt.title('Method: {} , Metric: {}, Coph Corr: {:.2f} '.format(method,distance,coph_corr))
 
-    plt.savefig('../images/hierarchical/dendrogram_{}_{}.pdf'.format(method,distance))
+    plt.savefig('../images/hierarchical/standz_dendrogram_{}_{}.pdf'.format(method,distance))
      
     return [method,distance,coph_corr]
 
@@ -213,6 +222,7 @@ out = []
 for method in selected_methods:
     for distance in distances:
 
+        
 method = 'centroid'        
 distance = 'euclidean'        
 
@@ -222,7 +232,7 @@ data_link = linkage(data_dist,method=method,metric=distance)
 #coph = cophenet(Z = data_link, Y = data_dist)
 #coph_corr=coph[0]
 
-n_clusters = 3
+n_clusters = 4
 
 def calc_silhouette(n_clusters):
     
@@ -292,7 +302,7 @@ for n_clusters in range(2,5):
     calc_silhouette(n_clusters)
 
 
-calc_silhouette(2)
+calc_silhouette(4)
 
 
 
