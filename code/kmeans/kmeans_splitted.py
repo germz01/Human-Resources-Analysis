@@ -77,6 +77,6 @@ plt.scatter(x=kmeans.cluster_centers_[:, 0], y=kmeans.cluster_centers_[:, 1],
 plt.xlabel("Satisfaction Level")
 plt.ylabel("Last Evaluation")
 plt.legend(handles=patches, bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
-plt.title('K-means applied on the employees who left')
+plt.title('K-means applied on the employees who stayed')
 # plt.show()
 plt.savefig('../../images/kmeans/cluster_stayed.pdf')

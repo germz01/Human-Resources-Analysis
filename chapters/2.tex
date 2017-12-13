@@ -1,13 +1,11 @@
-In questa secondo capitolo del report, ci occupiamo di rilevare ,attraverso l'applicazione
+In questo secondo capitolo del report, ci occupiamo di rilevare ,attraverso l'applicazione
 degli algoritmi \textit{K-means}, \textit{Hierarchical} e \textit{Dbscan}, i gruppi di dipendenti con
-caratteristiche comuni all'interno del data set. La nostra analisi è stata inizialmente svolta sul data set
+caratteristiche affini all'interno del data set. La nostra analisi è stata inizialmente svolta sul data set
 completo, utilizzando però solo alcune variabili tra quelle a disposizione, come verrà spiegato nella sezione
 \ref{sub:choice_of_attributes_and_distance_function}. Per questa analisi globale vengono inoltre fornite alcune
 statistiche, per meglio integrare le informazioni ottenute dal clustering. Come già specificato nella Sezione
 \ref{sec:variable_transformations}, i valori delle variabili discrete sono stati normalizzati in un intervallo
-compreso tra $0$ e $1$, al fine di rendere più agevole il confronto in fase di clustering. Infine, come ulteriori
-casi di studio, sono riportate anche le analisi relative alla sola porzione del data set contenente gli impiegati
-che hanno lasciato l'azienda e a quella invece contenente gli impiegati ancora al suo interno.
+compreso tra $0$ e $1$, al fine di rendere più agevole il confronto in fase di clustering.
 \section{Clustering Analysis by K-means} % (fold)
 \label{sec:clustering_analysis_by_k_means}
 \subsection{Choice of attributes and distance function} % (fold)
@@ -22,7 +20,9 @@ rappresentata dalla nota formula
 \begin{equation*}
     dist(p,\ q) \ = \ \sqrt{\sum_{i = 0}^{k}(q_i - p_i)^2}\quad,
 \end{equation*}
-dove con $q_i$ e $p_i$ vengono rappresentati li i-esimi attributi dei data objects $p$ e $q$.
+dove con $q_i$ e $p_i$ vengono rappresentati li i-esimi attributi dei data objects $p$ e $q$. Infine, come
+ulteriori casi di studio, sono riportate anche le analisi relative alla sola porzione del data set contenente gli
+impiegati che hanno lasciato l'azienda e a quella invece contenente gli impiegati ancora al suo interno.
 % subsection choice_of_attributes_and_distance_function (end)
 \subsection{Identification of the best value of k} % (fold)
 \label{sub:identification_of_the_best_value_of_k}
@@ -35,8 +35,8 @@ dove \textit{dist} rappresenta la distanza Euclidea tra il centroide $c_i$ ed il
  A partire da un valore iniziale di $k$ pari a $2$ fino ad un valore
 massimo di $50$ abbiamo calcolato l'SSE risultante dall'applicazione dell'algoritmo come possiamo osservare in
 Figura \ref{fig:sse}, e abbiamo infine deciso per un valore di $k$ pari a $4$ per l'applicazione di K-means sul
-data set totale. Tale valore è stato poi confermato come il più elevato tra quelli osservati tramite lo studio
-del \textit{Silhouette score}.
+data set totale, in quanto ritenuto il valore più efficiente ai fini della nostra analisi. Tale valore è stato poi
+confermato come il più elevato tra quelli osservati tramite lo studio del \textit{Silhouette score}.
 % subsection identification_of_the_best_value_of_k (end)
 \subsection{Characterization of the obtained clusters } % (fold)
 \label{sub:characterization_of_the_obtained_clusters}
@@ -47,9 +47,10 @@ In Tabella \ref{tab:stat_descr} abbiamo riportato i dati caratteristici di ognun
 Il primo cluster emerso, Cluster $0$ contraddistingue gli impiegati con un alto score nelle variabili
 Last Evaluation e Satisfaction Level. Possiamo pensare a un tale cluster come a un gruppo di impiegati molto
 soddisfatti e valutati positivamente, da poco assunti, visto lo score basso in Time Spend Company. Il secondo
-Cluster, Cluster $1$, presenta un gruppo di impiegati con valori bassi in tutte le variabili utilizzate tranne
-Last Evaluation, che registra uno scorre di circa $0.56$. Essendo il terzo cluster per densità di popolazione,
-denota un risultato interessante e sicuramente da tenere d'occhio per i futuri sviluppi dell'azienda.
+Cluster, Cluster $1$, presenta un gruppo di impiegati da poco assunti, visto il basso score in Time Spend Company
+, e, di conseguenza, in Number Project. Sono degne di nota inoltre uno score basso nelle variabili Average Montly
+Hours e Satisfaction Level. Essendo il terzo cluster per densità di popolazione, denota un risultato interessante
+e sicuramente da tenere d'occhio per i futuri sviluppi dell'azienda.
 Il Cluster $2$ presenta un gruppo di impiegati soddisfatti e produttivi, da poco assunti all'interno dell'azienda
 e con carichi di lavoro abbastanza elevati. L'ultimo cluster, il $3$, presenta una situazione preoccupante, visto
 gli score molto elevati degli impiegati nelle variabili Average Montly Hours, Last Evaluation e Number Project, e
@@ -207,11 +208,13 @@ livello di soddisfazione, nonostante l'ultima valutazione fosse stata più che p
 Come ulteriore esempio, in Figura \ref{fig:cluster_splitted} forniamo le visualizzazioni relative all'applicazione
 di K-means, utilizzando le variabili Satisfaction Level e Last Evaluation, al data set diviso in base alla
 variabile Left. Similmente a quanto fatto per l'algoritmo applicato all'intero data set, abbiamo prima studiato
-l'SSE, e confrontato le nostre ipotesi con lo score fornito dall'analisi della silhouette. Come possiamo vedere,
+l'SSE, e confrontato le nostre ipotesi con lo score fornito dall'analisi della silhouette. Come possiamo vedere
+nella Figura \ref{fig:cluster_left},
 i $3$ clusters emersi per gli impiegati che hanno lasciato l'azienda delineano un gruppo di impiegati con un basso
 score sia in Satisfaction Level che in Last Evaluation, un gruppo con un alto score in Last Evaluation e un basso
 score in Satisfaction Level e un gruppo con alto score in entrambe le variabili. Per gli impiegati ancora
-all'interno dell'azienda la situazione è decisamente più distribuita.
+all'interno dell'azienda, possiamo notare nella Figura \ref{fig:cluster_stayed} che la situazione è decisamente
+più distribuita.
 \section{Hierarchical clustering}
 
 
