@@ -1,15 +1,18 @@
-In questo secondo capitolo del report, ci occupiamo di rilevare ,attraverso l'applicazione
-degli algoritmi \textit{K-means}, \textit{Hierarchical} e \textit{Dbscan}, i gruppi di dipendenti con
-caratteristiche affini all'interno del data set. La nostra analisi è stata inizialmente svolta sul data set
-completo, utilizzando però solo alcune variabili tra quelle a disposizione, come verrà spiegato nella sezione
-\ref{sub:choice_of_attributes_and_distance_function}. Per questa analisi globale vengono inoltre fornite alcune
-statistiche, per meglio integrare le informazioni ottenute dal clustering. Come già specificato nella Sezione
-\ref{sec:variable_transformations}, i valori delle variabili discrete sono stati normalizzati in un intervallo
+\todo[inline]{In generale adotterei un approccio DRY, ovvero eviterei ripetizioni, dicendo ad esempio in questo paragrafo facciamo questo.
+  (Modificare anche paragrafi precedenti, inoltre c'è il titolo che indica cosa si fa in ciascun punto). Eviterei di annunciare quello che verrà fatto per poi spiegarlo, spiegare direttamente nel punto giusto}
+La ricerca di gruppi di dipendenti con caratteristiche affini all'interno del dataset è stata eseguita utilizzando
+differenti tecniche di clustering. Per eseguire l'analisi sono state selezionate solamente le 5 variabili numeriche in Tab. \ref{tab:variabili},
+in modo da calcolare le distanze tra i dati in modo appropriato.
+Le variabili sono state standardizzate o normalizzate? Decidere spiegare confrontare.
+Come già specificato nella Sezione \ref{sec:variable_transformations}, i valori delle variabili discrete sono stati normalizzati in un intervallo
 compreso tra $0$ e $1$, al fine di rendere più agevole il confronto in fase di clustering.
+
 \section{Clustering Analysis by K-means} % (fold)
 \label{sec:clustering_analysis_by_k_means}
 \subsection{Choice of attributes and distance function} % (fold)
 \label{sub:choice_of_attributes_and_distance_function}
+
+\todo[inline]{Scelta delle variabili vale per tutte e tre le tecniche, rimuovere da qua.}
 Le \textit{variabili} sulle quali abbiamo deciso di applicare l'analisi tramite K-means sono un sottoinsieme di
 quelle a disposizione nel data set, in particolare, sono le variabili di tipo continuo
 \textit{Satisfaction Level} e \textit{Latest Evaluation}, e le variabili di tipo discreto
@@ -17,6 +20,9 @@ quelle a disposizione nel data set, in particolare, sono le variabili di tipo co
 variabili binarie. Vista la natura delle variabili utilizzate nell'applicazione dell'algoritmo, la distance
 function da noi utilizzata per quantificare la distanza tra due data objects è la \textit{distanza Euclidea},
 rappresentata dalla nota formula
+\todo[inline]{Per quanto riguarda le formule o le mettiamo tutte o non ne mettiamo nessuna. Poichè non è richiesta la spiegazione
+degli algoritmi e poichè le quantità sono note alle persone che leggono eliminerei TUTTE le formule, concentriamoci sui risultati}
+
 \begin{equation*}
     dist(p,\ q) \ = \ \sqrt{\sum_{i = 0}^{k}(q_i - p_i)^2}\quad,
 \end{equation*}
@@ -26,6 +32,7 @@ impiegati che hanno lasciato l'azienda e a quella invece contenente gli impiegat
 % subsection choice_of_attributes_and_distance_function (end)
 \subsection{Identification of the best value of k} % (fold)
 \label{sub:identification_of_the_best_value_of_k}
+\todo[inline]{eliminare formula SSE, semplicemente SSE, al max va bene lasciare la riga di spiegazione di cos'è}
 Al fine di identificare il miglior numero $k$ di clusters da utilizzare, abbiamo tenuto conto dell'
 \textit{Error Sum of Squares} (SSE), ossia della somma, elevata al quadrato, della distanza tra ogni singolo data object e il centroide più vicino, ottenuta mediante la formula
 \begin{equation*}
@@ -38,6 +45,10 @@ Figura \ref{fig:sse}, e abbiamo infine deciso per un valore di $k$ pari a $4$ pe
 data set totale, in quanto ritenuto il valore più efficiente ai fini della nostra analisi. Tale valore è stato poi
 confermato come il più elevato tra quelli osservati tramite lo studio del \textit{Silhouette score}.
 % subsection identification_of_the_best_value_of_k (end)
+\todo[inline]{Perchè abbiamo deciso 4 dal grafico? Commentare/spiegare. Quanto vale la silhouette score???
+  Le spiegazioni non devono andare a fiducia, dobbiamo mostrare i dati risultanti e commentarli oggettivamente.
+  Il grafico lo farei su una scala inferiore: visto che siamo interessati a un numero basso di cluster, metterei  ad esempio un numero max di cluster=20  o altro valore in modo da vedere bene le variazioni nella nostra zona di interesse. (Poi nella spiegazione puoi dire che abbiamo fatto fino a 50, insomma il grafico deve essere zoommato) Sennò puoi metterne due affiancati, uno con l'andamento generale ed uno zoommato.}
+
 \subsection{Characterization of the obtained clusters } % (fold)
 \label{sub:characterization_of_the_obtained_clusters}
 In quest'ultima sezione relativa all'algoritmo K-means descriviamo i clusters emersi durante l'analisi.
@@ -56,6 +67,15 @@ nelle variabili Average Montly Hours, Last Evaluation e Number Project, e il bas
 Satisfaction Level. Vedendo simili risultati è facile immaginarsi un gruppo di impiegati da poco assunti,
 caratterizzati da un alto tasso di ore di lavoro, il quale ha comportato il calo nel livello di soddisfazione,
 nonostante l'ultima valutazione fosse stata più che positiva.
+
+\todo[inline]{Per la caratterizzazione dei clusters serve un qualche grafico che esprima quello che hai detto a parole
+  nei commenti in modo immediato. Le tabelle sono utili come riferimento,
+  ma andarsi a leggere sulle tabelle cosa sta succedendo non è nè immediato nè piacevole. (i valori devono essere arrotondati). 
+  Una possibilità per fare una rappresentazione sintetica è quella di fare un grafico a coordinate parallele, con sulle x le labels dei cluster e sulle y i relativi valori delle variabili, una linea per ciascuna variabile. Non so se l'ho spiegato bene, se vuoi posso provare a farlo, dimmi te.
+Sennò altre idee?}
+
+
+
 \begin{figure}[t!]
   \centering
   \begin{subfigure}{0.5\textwidth}
