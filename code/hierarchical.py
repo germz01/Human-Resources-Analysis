@@ -8,9 +8,9 @@ from scipy.cluster.hierarchy import dendrogram, linkage
 %matplotlib qt
 ###########################################################
 
-SMALL_SIZE = 15
-MEDIUM_SIZE = 20
-BIGGER_SIZE = 20
+SMALL_SIZE = 10
+MEDIUM_SIZE = 13
+BIGGER_SIZE = 15
 
 plt.rc('font', size=SMALL_SIZE)          # controls default text sizes
 plt.rc('axes', titlesize=BIGGER_SIZE)     # fontsize of the axes title
@@ -19,7 +19,7 @@ plt.rc('xtick', labelsize=SMALL_SIZE)    # fontsize of the tick labels
 plt.rc('ytick', labelsize=SMALL_SIZE)    # fontsize of the tick labels
 plt.rc('legend', fontsize=SMALL_SIZE)    # legend fontsize
 plt.rc('figure', titlesize=BIGGER_SIZE)  # fontsize of the figure title
-plt.rc('titlesize', titlesize=BIGGER_SIZE)  #fontsize of the figure title
+#plt.rc('titlesize', titlesize=BIGGER_SIZE)  #fontsize of the figure title
 ###########################################################
 # variables transformation
 
@@ -160,7 +160,6 @@ Dout =  pd.DataFrame(out)
 Dout.columns = ['method','distance','coph_corr']
 
 Dout = Dout.sort_values(by=['coph_corr','method','distance'],ascending=False)
-
 
 
 import seaborn as sb
@@ -334,5 +333,54 @@ jaccard(ward_labels_inv,df.Left)
 
 jaccard(average_labels,df.Left)
 
+###########################################################
+## plot dendrogramma migliore
 
 
+
+
+
+
+
+# testing function for analysis
+###########################################################
+selected_methods = ['centroid','average']
+
+
+
+#method =selected_methods[0]
+#distance = 'cityblock'
+for method in selected_methods:
+    for distance in distances:
+
+        data_dist = pdist(data,metric = distance)
+        data_link = linkage(data_dist,method=method,metric=distance)
+
+        ##coph = cophenet(Z = data_link, Y = data_dist)
+        ##coph_corr=coph[0]
+        #coph_corr
+
+        ##inconsistency = inconsistent(data_link,d=2)
+        ##prova = h.maxinconsts(data_link,inconsistency)
+        #plt.hist(prova)
+
+        cut_level = max(data_link[:,2])*0.8
+
+        plt.close()
+        fig = plt.figure(figsize=(10, 5))
+        dn = dendrogram(Z=data_link,##truncate_mode='level', p=20,
+                        orientation='top',
+         ##               count_sort='descending',
+         ##              distance_sort='descending',
+                        no_labels=True,show_leaf_counts=True,
+                        color_threshold = cut_level
+        )
+        plt.axhline(y=cut_level,linestyle='--',
+                    color='black')
+
+        plt.title('Dendrogram for method "{}" and distance "{}"'.format(method,distance))
+        plt.ylabel("Distance")
+        #plt.xlabel("")
+        plt.savefig('../images/hierarchical/dendrogram_{}_{}.pdf'.format(method,distance))
+
+        
