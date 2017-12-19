@@ -1,0 +1,176 @@
+\section{Clustering Analysis by K-means} % (fold)
+\label{sec:clustering_analysis_by_k_means}
+\subsection{Choice of attributes and distance function} % (fold)
+\label{sub:choice_of_attributes_and_distance_function}
+\begin{wrapfigure}{r}{7cm}
+    \begin{center}
+        \subcaptionbox{\label{fig:sse_left}}{\includegraphics[scale=0.45]{images/kmeans/SSE_left.pdf}}
+        \subcaptionbox{\label{fig:sse_stayed}}{\includegraphics[scale=0.45]{images/kmeans/SSE_stayed.pdf}}
+        \caption{Nella Figura \ref{fig:sse_left} troviamo la rappresentazione della curva con cui l'SSE dei
+        cluster relativi ai dipendenti che hanno lasciato l'azienda decresce con l'aumentare del numero di cluster
+        . Lo stesso vale per la Figura \ref{fig:sse_stayed}, ma per i dipendenti che sono ancora all'interno
+        dell'azienda.}
+    \end{center}
+\end{wrapfigure}
+Le variabili sulle quali abbiamo deciso di applicare la Cluster Analysis tramite K-means sono le due
+variabili di tipo continous presenti nel Dataset, ossia \textit{Satisfaction Level} e \textit{Latest Evaluation}. Le
+variabili di tipo categorico sono state scartate al momento della scelta dato che la natura stessa dell'algoritmo
+prevede il suo utilizzo su variabili di tipo numerico. \\ \\ Approfondire su variabili discrete \\ \\
+Nell'implementazione dell'algoritmo da noi utilizzata è stato deciso di applicare la distanza euclidea come distance
+function.
+% subsection choice_of_attributes_and_distance_function (end)
+\subsection{Identification of the best value of k} % (fold)
+\label{sub:identification_of_the_best_value_of_k}
+Al fine di identificare il miglior numero $k$ di clusters da utilizzare, abbiamo tenuto conto dell'Error Sum of
+Squares (SSE) per ogni iterazione dell'algoritmo, svolta a partire da un valore iniziale di $k$ pari a $2$ fino
+ad un valore massimo di $50$. Rappresentato in Figura \ref{fig:sse_left} troviamo l'andamento dell'SSE per i
+cluster relativi ai dipendenti che hanno lasciato l'azienda. Possiamo notare il valore ottimale di $k$ pari a $3$,
+che è la posizione sull'asse dei cluster dove la curva inizia il suo percorso discendente. In figura
+\ref{fig:sse_stayed} possiamo vedere la stessa cosa, ma per i dipendenti che sono rimasti all'interno
+dell'azienda. In questo caso notiamo il valore ottimale di $k$ pari a $5$.
+% subsection identification_of_the_best_value_of_k (end)
+\subsection{Characterization of the obtained clusters } % (fold)
+\label{sub:characterization_of_the_obtained_clusters}
+Andiamo adesso a dare una descrizione dei cluster emersi dall'applicazione dell'algoritmo K-means con i parametri
+che abbiamo deciso di utilizzare. Cominciando con l'osservare lo scatterplot relativo ai cluster degli impiegati
+che hanno lasciato l'azienda, Figura , notiamo che sono ben visibili $3$ categorie distinte di impiegati, che
+possiamo descrivere discorsivamente come
+\begin{itemize}
+    \item Impiegati con un livello di soddisfazione basso e un alto score nella valutazione. Questo cluster ci
+    suggerisce la motivazione per cui questi impiegati hanno lasciato l'azienda, ossia una quantità troppo elevata
+    di ore di lavoro, dalla quale deriva probabilmente l'alto score nella valutazione.
+    \item Impiegati con un basso livello di soddisfazione, compreso tra $0.3$ e $0.5$, e un altrettanto basso score
+    nella valutazione, compreso tra $0.2$ e $0.55$. La scarsa produttività e soddisfazione suggeriscono che questo
+    gruppo di impiegati ha deciso di lasciare l'azienda per insoddisfazione verso la posizione lavorativa offerta.
+    \item Impiegati con un alto livello di soddisfazione e un alto score nella valutazione, che probabilmente hanno
+    lasciato l'azienda dopo aver ricevuto un'offerta di lavoro più vantaggiosa.
+\end{itemize}
+\lipsum
+\begin{figure}[t]
+    \begin{center}
+        \subcaptionbox{\label{fig:cluster_left}}{\includegraphics[scale=0.45]{images/kmeans/cluster_left.pdf}}
+        \subcaptionbox{\label{fig:cluster_stayed}}{\includegraphics[scale=0.45]{images/kmeans/cluster_stayed.pdf}}
+        \caption{Nella Figura \ref{fig:cluster_left} troviamo i cluster emersi dall'analisi dei dipendenti che
+        hanno lasciato l'azienda, nella Figura \ref{fig:cluster_stayed} troviamo invece quelli emersi dall'analisi
+        dei dipendenti rimasti nell'azienda.}
+    \end{center}
+\end{figure}
+% subsection characterization_of_the_obtained_clusters (end)
+% section clustering_analysis_by_k_means (end)
+
+\newpage
+
+\section{DBSCAN}
+\subsection{Choice of attributes and distance function}
+\label{sub:choice_of_attributes_and_distance_function}Il DBSCAN è un metodo di clustering basato sulla densità. Parlando di densità si intende il numero di punti in un specifico raggio chiamato $eps$. Per seguire la stessa analisi riportata dal Kmeans utilizziamo anche in questa metodologia tutti gli attributi eccetto quelli categorici e quello ordinale $salary$.
+\subsection{Study of the clustering parameters}
+\label{sub:study_of_the_clustering_parameters}Per la scelta dei parametri del DBSCAN ovvero : il raggio di distanza $eps$ dai punti centrali, chiamati centroidi, e il minimo numero di punti in questo raggio $minSamples$, si è definita la Tabella 2.1 in tal modo si può analizzare l'andamento della variazione dei numero di cluster presenti rispetto al cambiamento delle due variabili principali. Abbiamo tenuto conto inoltre del valore della silhouette nella nostra analisi, se questa è positiva significa che c'è un buon raggruppamento.
+Per determinare la scelta dei parametri è stato fondamentale confrontare i diversi risultati rispetto all'utilizzo di diverse funzioni di distanza, per rendere più immediato il confronto con le altre metodologie di clustering abbiamo deciso di utilizzare la distanza euclidea.\\
+\begin{table}[H]
+        \centering
+        \begin{tabular}{| c | c | c | c |} \hline
+            \textbf{eps} & \textbf{minSamples} & \textbf{Clusters} &  \textbf{Silhouette} \\ \hline
+	 		      0.3 & 100 & 3 & 0.316  \\ \hline
+	 		      0.4 & 120 & 3 & 0.218 \\ \hline
+	       		0.5 & 160 & 3 &  0.073  \\ \hline
+        \end{tabular}
+	 \caption{DBSCAN con distanza euclidea}
+\end{table}
+La Tabella 2.1 raffigura una situazione riassuntiva in cui abbiamo indicato i valori più validi per le varie combinazioni con $eps$ rispettivamente uguale a $0.3$ , $0.4$ e $0.5$ , escludendo i casi in cui ottenevamo solo un cluster, in quanto da questo non si possono ricavare informazioni, il range di cluster ricavato va da un minimo di 3 a un massimo di 5. Le combinazioni da cui risultavano più di 10 cluster sono stati anch'essi considerati poco importanti dal punto di vista informativo ai fini della ricerca. Infine abbiamo deciso anche in base alla silhouette, questa più si avvicina a uno più è valida. Facendo un analisi di tutte queste caratteristiche unite abbiamo quindi deciso di scegliere i parametri eps = $0.3$ e minSamples = $100$ con la funzione di distanza euclidea.\\
+\subsection{Characterization and interpretation of the obtained clusters}
+\label{sub:characterization_and_interpretation_of_the_obtained_clusters}
+\begin{table}[H]
+  \centering
+  \begin{subtable}{0.38\textwidth}
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{| c | c | c | c | c | c |}
+    \hline
+    {} & \multicolumn{5}{c |}{Average\_Montly\_Hours} \\
+    \hline
+    {} & count & mean & std & min & max \\
+    Cluster & & & & &  \\
+    \hline
+    0 & 1543.0 & 143.7109 & 10.3296 & 112.0 & 174.0 \\
+    1 & 110.0 & 293.5181 & 8.4514 & 279.0 & 309.0 \\
+    2 & 197.0 & 258.9238 & 10.6975 & 243.0 & 284.0 \\
+    \hline
+    \end{tabular}
+  }
+  \label{tab:dist_Average_Montly_Hours_db}
+  \end{subtable}
+  \begin{subtable}{0.35\textwidth}
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{| c | c | c | c | c | c |}
+    \hline
+    {} & \multicolumn{5}{c |}{Last\_Evaluation} \\
+    \hline
+    {} & count & mean & std & min & max \\
+    Cluster & & & & &  \\
+    \hline
+    0 & 1543.0 & 0.5106 & 0.03646 & 0.41 & 0.58 \\
+    1 & 110.0 & 0.8289 & 0.02549 & 0.79 & 0.88 \\
+    2 & 197.0 & 0.8360 & 0.0380 & 0.77 & 0.9 \\
+    \hline
+    \end{tabular}
+  }
+  \label{tab:dist_Last_Evaluation_db}
+  \end{subtable}
+  \begin{subtable}{0.33\textwidth}
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{| c | c | c | c | c | c |}
+    \hline
+    {} & \multicolumn{5}{c |}{Number\_Project} \\
+    \hline
+    {} & count & mean & std & min & max \\
+    Cluster & & & & &  \\
+    \hline
+    0 & 1543.0 & 2.0 & 0.0 & 2.0 & 2.0 \\
+    1 & 110.0 & 6.0 & 0.0 & 6.0 & 6.0 \\
+    2 & 197.0 & 6.0 & 0.0 & 6.0 & 6.0 \\
+    \hline
+    \end{tabular}
+  }
+  \label{tab:dist_Number_Project_db}
+  \end{subtable}
+  \begin{subtable}{0.35\textwidth}
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{| c | c | c | c | c | c |}
+    \hline
+    {} & \multicolumn{5}{c |}{Satisfaction\_Level} \\
+    \hline
+    {} & count & mean & std & min & max \\
+    Cluster & & & & &  \\
+    \hline
+    0 & 1543.0 & 0.4081 & 0.03115 & 0.3 & 0.52 \\
+    1 & 110.0 & 0.1029 & 0.0072 & 0.09 & 0.11 \\
+    2 & 197.0 & 0.1020 & 0.0089 & 0.09 & 0.17 \\
+    \hline
+    \end{tabular}
+  }
+  \label{tab:dist_Satisfaction_Level_db}
+  \end{subtable}
+  \begin{subtable}{0.3\textwidth}
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{| c | c | c | c | c | c |}
+    \hline
+    {} & \multicolumn{5}{c |}{Time\_Spend\_Company} \\
+    \hline
+    {} & count & mean & std & min & max \\
+    Cluster & & & & &  \\
+    \hline
+    0 & 1543.0 & 3.0 & 0.0 & 3.0 & 3.0 \\
+    1 & 110.0 & 4.0 & 0.0 & 4.0 & 4.0 \\
+    2 & 197.0 & 4.0 & 0.0 & 4.0 & 4.0 \\
+    \hline
+    \end{tabular}
+  }
+  \label{tab:dist_Time_Spend_Company_db}
+  \end{subtable}
+  \caption{Statistica descrittiva relativa ad ognuno dei cluster scoperti con la metodologia DBSCAN. Per ogni cluster vengono riportate le informazioni relative alla densità di popolazione, alla media, alla deviazione standard e ai valori minimi e
+  massimi delle variabili continue.}
+  \label{tab:stat_descr_db}
+\end{table}
+I cluster rilevati da questa metodologia sono 3:
+Il primo cluster, Cluster $0$ è caratterizzato da 1543 dipendenti al terzo anno di lavoro nell'azienda che compiono una vita lavorativa nella norma ma dalla statistica risulta che sono meno soddisfatti rispetto alla precedente valutazione, probabilmente per il poco lavoro di cui si occupano $due$ progetti e il lavoro tra le $112$ e le $174$ ore mensili. Questi dipendenti sarebbe meglio invogliarli nel lavoro assegnando loro più progetti di cui occuparsi, sempre in numero contenuto.
+Il secondo e il terzo cluster mostrano caratteristiche simili: Entrambi i tipi di dipendenti rispettivamente $110$ per il secondo cluster e $197$ per il terzo, sono al quarto anno di lavoro nell'azienda, il loro livello di soddisfazione è molto preoccupante, il terzo cluster è leggermente più soddisfatto. Entrambi nella scorsa valutazione hanno un livello di soddisfazione molto elevato. Il calo di soddisfazione potrebbe essere dato dagli orari estenuanti di lavoro e il carico di lavoro pesante: $6$ progetti. In questo caso invece si consiglia di diminuire il carico lavorativo di ore di lavoro in modo da avere un livello di soddisfazione più elevato.
+I restanti dipendenti sono stati considerati come punti di noise.
