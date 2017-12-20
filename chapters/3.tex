@@ -1,0 +1,55 @@
+Per definire le association rules prima si sono seguite le seguenti operazioni:
+\begin{enumerate}
+\item Abbiamo trasformato le variabili da stringhe a numeriche, per quanto riguarda gli attributi $salary$ e $department$.
+\item Successivamente abbiamo raggruppato le variabili $last_evaluation$ e $satisfaction_level$ e $average_monlty_hours$, con un intervallo di $0.10$ ciascuna. 
+\item Infine per rendere unici i risultati numerici, è stata aggiunta una stringa subito successiva al numero in modo tale che non fosse ambiguo ma immediato quel valore a che attributo si riferisca.
+\end{enumerate}
+
+
+\section{Frequent patterns extraction with different values of support and different types }
+Una volta eseguiti i passi detti in precedenza si è eseguita l'estrazione dei pattern frequenti tramite la metodologia Apriori. 
+
+
+\section{Discussion of the most interesting frequent patterns}
+I frequent pattern ritenuti più interessanti sono i seguenti:
+-
+-
+-
+
+Da questi scaturisce che ... 
+
+
+\section{Association rules extraction with different values of confidence }
+
+
+
+
+\section{Discussion of the most interesting rules }
+Abbiamo inoltre rilevato delle rules che nonostante non siano frequenti sono comunque interessanti per l'analisi che stiamo portando avanti. Queste sono:
+-
+-
+Da queste possiamo ricavare che...
+
+
+
+\section{Use the most meaningful rules to replace missing values and evaluate the accuracy}
+Nel nostro dataset non sono presenti missing values quindi non è stata necessaria la valutazione delle più significative rules e la valutazione dell'accuratezza per rimpiazzare questi.
+
+
+\section{Use the most meaningful rules to predict if an employee will leave prematurely or not and evaluate the accuracy }
+Date le varie association rules trovate dalle varie prove queste sono quelle più significative per predirre se un impiegato lascerà prematuramente l'azienda oppure no:
+
+- AR ... accuratezza trovata: 
+- AR1
+- AR2
+
+Da queste possiamo scaturire che un impiegato lasci il posto di lavoro prematuramente quando è nelle seguenti condizioni:
+
+Invece rimarrà quando avrà una condizione del tipo: 
+
+
+
+
+
+
+
