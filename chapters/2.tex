@@ -61,60 +61,71 @@ possiamo descrivere discorsivamente come
 
 \newpage
 \section{Hierarchical clustering}
-Dire all'inizio del clustering quali variabili si utilizzano e normalizzazione. Sulle variabili numeriche del dataset è stato eseguito un clustering gerarchico di tipo agglomerativo, con l'utilizzo di diverse metriche e differenti metodi per il calcolo della dissimilarità tra clusters. Il confronto tra i diversi metodi è stato effettuato utilizzando come indice di validità (non supervisionato), la \textit{cophenetic correlation} $\rho_{coph}$. Ciascuna coppia di dati del dataset è prima o poi unita nel dendrogramma in un nodo, ad una distanza denominata \textit{cophenetic distance}. La cophenetic correlation è calcolata come coefficiente di correlazione di Pearson tra gli $n(n-1)/2$ valori della matrice delle distanze e le corrispondenti cophenetic distances. Il valore di tale correlazione può essere interpretato come il grado di aderenza del dendrogramma alle distanze originali, ed è quindi una misura della sua validità.
-In figura \ref{fig:hierarchical-comparison} si osserva che tra i metodi utilizzati \textit{average} e \textit{centroid} risultano quelli con il valore massimo della cophenetic correlation ed equivalenti tra loro. DESCRIVERE METODI Per ciascun metodo sono state testate tre metriche, quella euclidea, Manhattan e di Mahalanobis. Quest'ultima è una distanza non isotropa che prende in considerazione la correlazione tra le variabili. Per i due metodi migliori la distanza euclidea risulta lievemente più efficace, anche se la differenza tra le metriche non è così rilevante. Questo confronto ha quindi permesso una prima scrematura dei vari metodi, da cui sono stati ottenuti 6 differenti dendrogrammi.
+Sulle variabili numeriche del dataset è stato eseguito un clustering gerarchico di tipo agglomerativo, con l'utilizzo di diverse metriche e differenti metodi per il calcolo della dissimilarità tra clusters. Il confronto tra i diversi metodi è stato effettuato utilizzando come indice di validità (non supervisionato), la \textit{cophenetic correlation} $\rho_{coph}$. Ciascuna coppia di dati del dataset è unita nel dendrogramma in un nodo ad una distanza denominata \textit{cophenetic distance}. La cophenetic correlation è calcolata come coefficiente di correlazione di Pearson tra gli $n(n-1)/2$ valori della matrice delle distanze e le corrispondenti cophenetic distances. Il valore di tale correlazione può essere interpretato come il grado di aderenza del dendrogramma alle distanze originali, ed è quindi una misura della sua validità.
+In figura \ref{fig:hierarchical-comparison} si osserva che tra i metodi utilizzati \textit{average} e \textit{centroid} risultano quelli con il valore massimo della cophenetic correlation ed equivalenti tra loro. La dissimilarità calcolata con il metodo \textit{average} consiste nella media di tutte le distanze tra coppie di dati appartenenti a due clusters diversi, mentre il metodo \textit{centroid} utilizza la distanza tra i centroidi. Per ciascun metodo sono state testate tre metriche, quella euclidea, Manhattan (o cityblock) e di Mahalanobis. Quest'ultima è una distanza non isotropa che prende in considerazione la correlazione tra le variabili. Per i due metodi migliori la distanza euclidea risulta lievemente più efficace, anche se la differenza tra le metriche non è così rilevante. Questo confronto ha quindi permesso una prima scrematura dei vari metodi, da cui sono stati ottenuti 6 differenti dendrogrammi.
 Osservando la figura REF si osserva che i dendrogrammi sono nettamente diversi tra loro anche a parità di $\rho_{coph}$, il clustering gerarchico risulta dunque molto sensibile al metodo e alla metrica utilizzata nell'algoritmo. E' necessario dunque utilizzare un ulteriore indice per confrontare i dendrogrammi.
-
-\todo[inline]{Figure da sistemare per dimensioni/quantità}
 
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.8\textwidth]{../images/hierarchical/methods_comparison.pdf}
+  \includegraphics[width=1.0\textwidth]{../images/hierarchical/methods_comparison.pdf}
   \caption{Confronto tra diversi metodi}
   \label{fig:hierarchical-comparison}
 \end{figure}
 
+\begin{figure}[htbp]
+\begin{subfigure}[b]{1\textwidth}
+  \centering
+  \includegraphics[width=1\textwidth]{../images/hierarchical/complete_dendrogram_average_euclidean.pdf}
+\end{subfigure}
+
+\begin{subfigure}[b]{1\textwidth}
+  \centering
+  \includegraphics[width=1\textwidth]{../images/hierarchical/complete_dendrogram_centroid_euclidean.pdf}
+\end{subfigure}
+  \caption{Dendrogramma con la migliore cophenetic correlation.}
+\end{figure}
 
 
+\begin{comment}
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.5\textwidth]{../images/hierarchical/silhouette_comparison.pdf}
   \caption{Confronto tra silhouette medie, per due clusters}
 \end{figure}
-
+\end{comment}
 
 
 \begin{figure}[htbp]
   \begin{subfigure}[b]{0.5\textwidth}
-  \includegraphics[width=\textwidth]{../images/hierarchical/dendrogram_average_euclidean.pdf}
+  \includegraphics[width=\textwidth]{../images/hierarchical/standz_dendrogram_average_euclidean.pdf}
         \caption{dendrogramma X}
 
     \end{subfigure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{subfigure}[b]{0.5\textwidth}
-  \includegraphics[width=\textwidth]{../images/hierarchical/dendrogram_centroid_euclidean.pdf}
+  \includegraphics[width=\textwidth]{../images/hierarchical/standz_dendrogram_centroid_euclidean.pdf}
 
       \end{subfigure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
     \begin{subfigure}[b]{0.5\textwidth}
-  \includegraphics[width=\textwidth]{../images/hierarchical/dendrogram_average_mahalanobis.pdf}
+  \includegraphics[width=\textwidth]{../images/hierarchical/standz_dendrogram_average_mahalanobis.pdf}
 
     \end{subfigure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
     \begin{subfigure}[b]{0.5\textwidth}
-  \includegraphics[width=\textwidth]{../images/hierarchical/dendrogram_centroid_mahalanobis.pdf}
+  \includegraphics[width=\textwidth]{../images/hierarchical/standz_dendrogram_centroid_mahalanobis.pdf}
 
     \end{subfigure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
     \begin{subfigure}[b]{0.5\textwidth}
-  \includegraphics[width=\textwidth]{../images/hierarchical/dendrogram_average_cityblock.pdf}
+  \includegraphics[width=\textwidth]{../images/hierarchical/standz_dendrogram_average_cityblock.pdf}
         \caption{Distribuzione relativa alla variabile \textit{Work Accident}}
 
     \end{subfigure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
     \begin{subfigure}[b]{0.5\textwidth}
-  \includegraphics[width=\textwidth]{../images/hierarchical/dendrogram_centroid_cityblock.pdf}
+  \includegraphics[width=\textwidth]{../images/hierarchical/standz_dendrogram_centroid_cityblock.pdf}
     \end{subfigure}
 \caption{Dendrogrammi con massima \textit{cophenetic correlation}}
   \end{figure}
@@ -122,17 +133,18 @@ Osservando la figura REF si osserva che i dendrogrammi sono nettamente diversi t
   \begin{comment}
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=\textwidth]{../images/hierarchical/dendrogram_average_euclidean.pdf}
+  \includegraphics[width=\textwidth]{../images/hierarchical/standz_dendrogram_average_euclidean.pdf}
   \caption{Dendrogramma per method X e metrica Y}
 \end{figure}
 \end{comment}
 
-
-\begin{figure}[htbp]
+\begin{comment}
+  \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.9\textwidth]{../images/hierarchical/silhouette_average_euclidean_n2.pdf}
   \caption{Confronto tra silhouette medie, per due clusters}
 \end{figure}
+\end{comment}
 
 
 
