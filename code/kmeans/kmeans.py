@@ -127,8 +127,10 @@ for k in range(2, max_k):
     sse = kmeans.inertia_
     sse_list.append(sse)
 
+    # print str(k) + ': ' + str(silhouette_score(DS, kmeans.labels_))
+
 plt.plot(range(2, max_k), sse_list)
-plt.xticks(range(2, max_k), range(2, max_k))
+plt.xticks([2, 5, 10, 15, 20], [2, 5, 10, 15, 20])
 plt.xlabel("Clusters")
 plt.ylabel("SSE")
 

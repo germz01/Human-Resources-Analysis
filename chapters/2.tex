@@ -1,42 +1,27 @@
-In questo secondo capitolo del report, ci occupiamo di rilevare ,attraverso l'applicazione
-degli algoritmi \textit{K-means}, \textit{Hierarchical} e \textit{Dbscan}, i gruppi di dipendenti con
-caratteristiche affini all'interno del data set. La nostra analisi è stata inizialmente svolta sul data set
-completo, utilizzando però solo alcune variabili tra quelle a disposizione, come verrà spiegato nella sezione
-\ref{sub:choice_of_attributes_and_distance_function}. Per questa analisi globale vengono inoltre fornite alcune
-statistiche, per meglio integrare le informazioni ottenute dal clustering. Come già specificato nella Sezione
-\ref{sec:variable_transformations}, i valori delle variabili discrete sono stati normalizzati in un intervallo
-compreso tra $0$ e $1$, al fine di rendere più agevole il confronto in fase di clustering.
+La ricerca di gruppi di dipendenti con caratteristiche affini all'interno del dataset è stata eseguita utilizzando
+differenti tecniche di clustering. Per eseguire l'analisi sono state selezionate solamente le $5$ variabili
+numeriche in Tab. \ref{tab:variabili}, in modo da calcolare le distanze tra i dati in modo appropriato.
+Come già specificato nella Sezione \ref{sec:variable_transformations}, i valori delle variabili discrete sono
+stati normalizzati in un intervallo compreso tra $0$ e $1$, al fine di rendere più agevole il confronto in fase di
+clustering.
 \section{Clustering Analysis by K-means} % (fold)
 \label{sec:clustering_analysis_by_k_means}
 \subsection{Choice of attributes and distance function} % (fold)
 \label{sub:choice_of_attributes_and_distance_function}
-Le \textit{variabili} sulle quali abbiamo deciso di applicare l'analisi tramite K-means sono un sottoinsieme di
-quelle a disposizione nel data set, in particolare, sono le variabili di tipo continuo
-\textit{Satisfaction Level} e \textit{Latest Evaluation}, e le variabili di tipo discreto
-\textit{Number Project}, \textit{Average Montly Hours} e \textit{Time Spend Company}. Sono state escluse le
-variabili binarie. Vista la natura delle variabili utilizzate nell'applicazione dell'algoritmo, la distance
-function da noi utilizzata per quantificare la distanza tra due data objects è la \textit{distanza Euclidea},
-rappresentata dalla nota formula
-\begin{equation*}
-    dist(p,\ q) \ = \ \sqrt{\sum_{i = 0}^{k}(q_i - p_i)^2}\quad,
-\end{equation*}
-dove con $q_i$ e $p_i$ vengono rappresentati li i-esimi attributi dei data objects $p$ e $q$. Infine, come
-ulteriori casi di studio, sono riportate anche le analisi relative alla sola porzione del data set contenente gli
-impiegati che hanno lasciato l'azienda e a quella invece contenente gli impiegati ancora al suo interno.
+Vista la natura delle variabili utilizzate nell'applicazione dell'algoritmo, la distance
+function da noi utilizzata per quantificare la distanza tra due data objects è la \textit{distanza Euclidea}.
 % subsection choice_of_attributes_and_distance_function (end)
 \subsection{Identification of the best value of k} % (fold)
 \label{sub:identification_of_the_best_value_of_k}
 Al fine di identificare il miglior numero $k$ di clusters da utilizzare, abbiamo tenuto conto dell'
-\textit{Error Sum of Squares} (SSE), ossia della somma, elevata al quadrato, della distanza tra ogni singolo data object e il centroide più vicino, ottenuta mediante la formula
-\begin{equation*}
-    SSE \ = \ \sum_{i = 1}^{K} \sum_{x \in C_i} dist(c_i,\ x)^2 \quad ,
-\end{equation*}
-dove \textit{dist} rappresenta la distanza Euclidea tra il centroide $c_i$ ed il data object $x$.
- A partire da un valore iniziale di $k$ pari a $2$ fino ad un valore
-massimo di $50$ abbiamo calcolato l'SSE risultante dall'applicazione dell'algoritmo come possiamo osservare in
-Figura \ref{fig:sse}, e abbiamo infine deciso per un valore di $k$ pari a $4$ per l'applicazione di K-means sul
+\textit{Error Sum of Squares} (SSE), ossia della somma, elevata al quadrato, della distanza tra ogni singolo data
+object e il centroide più vicino. A partire da un valore iniziale di $k$ pari a $2$ fino ad un valore
+massimo di $50$ abbiamo calcolato l'SSE risultante dall'applicazione dell'algoritmo, come possiamo osservare in
+Figura \ref{fig:sse}, dove troviamo la rappresentazione in scala ridotta a partire dal valore iniziale $2$ e
+finale $20$. Abbiamo infine deciso per un valore di $k$ pari a $4$ per l'applicazione di K-means sul
 data set totale, in quanto ritenuto il valore più efficiente ai fini della nostra analisi. Tale valore è stato poi
-confermato come il più elevato tra quelli osservati tramite lo studio del \textit{Silhouette score}.
+confermato come il più elevato tra quelli osservati tramite lo studio del \textit{Silhouette score},
+totalizzando un punteggio pari a $0.57$.
 % subsection identification_of_the_best_value_of_k (end)
 \subsection{Characterization of the obtained clusters } % (fold)
 \label{sub:characterization_of_the_obtained_clusters}
