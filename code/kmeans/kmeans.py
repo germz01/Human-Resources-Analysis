@@ -25,6 +25,8 @@ plt.rc('ytick', labelsize=SMALL_SIZE)    # fontsize of the tick labels
 plt.rc('legend', fontsize=SMALL_SIZE)    # legend fontsize
 plt.rc('figure', titlesize=BIGGER_SIZE)  # fontsize of the figure title
 
+ANS = 'N'
+
 print 'IMPORTING THE DATA SET'
 
 DS = pd.read_csv('../../HR_comma_sep.csv',
@@ -78,8 +80,12 @@ plt.xlabel("Satisfaction Level")
 plt.ylabel("Last Evaluation")
 plt.legend(handles=patches, bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
 plt.title('K-means applied on the whole data set')
-# plt.show()
-plt.savefig('../../images/kmeans/cluster_total.pdf')
+
+ANS = raw_input('Do you want to save the graph?(Y/N) ')
+if ANS not in ['Y', 'N']:
+    print 'ERROR!!!'
+elif ANS == 'Y':
+    plt.savefig('../../images/kmeans/cluster_total.pdf')
 
 print 'PLOTTING THE POPULATION DENSITY OF THE OBTAINED CLUSTERS'
 
@@ -99,8 +105,12 @@ plt.ylabel("Employees")
 plt.xticks([0], [''])
 plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
 plt.title("Employees per Cluster")
-# plt.show()
-plt.savefig('../../images/kmeans/dist_cluster.pdf')
+
+ANS = raw_input('Do you want to save the graph?(Y/N) ')
+if ANS not in ['Y', 'N']:
+    print 'ERROR!!!'
+elif ANS == 'Y':
+    plt.savefig('../../images/kmeans/dist_cluster.pdf')
 
 print 'PLOTTING THE SSE GRAPH'
 
@@ -108,7 +118,7 @@ plt.clf()
 fig, ax = plt.subplots(figsize=(15, 10), ncols=1)
 ax.tick_params(axis='x', which='major', pad=15)
 sse_list = list()
-max_k = 51
+max_k = 21
 
 for k in range(2, max_k):
     kmeans = KMeans(init='k-means++', n_clusters=k, n_init=10, max_iter=100)
@@ -118,11 +128,22 @@ for k in range(2, max_k):
     sse_list.append(sse)
 
 plt.plot(range(2, max_k), sse_list)
+plt.xticks(range(2, max_k), range(2, max_k))
 plt.xlabel("Clusters")
 plt.ylabel("SSE")
-plt.savefig('../../images/kmeans/SSE.pdf')
-# plt.show()
 
-print 'SAVING THE DISTRIBUTION OF THE OBTAINED CLUSTER IN DATA FOLDER'
+ANS = raw_input('Do you want to save the graph?(Y/N) ')
+if ANS not in ['Y', 'N']:
+    print 'ERROR!!!'
+elif ANS == 'Y':
+    plt.savefig('../../images/kmeans/SSE.pdf')
 
-DS.groupby('Cluster').describe().to_csv('../../data/kmeans_distribution.csv')
+
+ANS = raw_input('Do you want to save the distribution?(Y/N) ')
+if ANS not in ['Y', 'N']:
+    print 'ERROR!!!'
+elif ANS == 'Y':
+        print 'SAVING THE DISTRIBUTION OF THE OBTAINED CLUSTER IN DATA FOLDER'
+        DS.groupby('Cluster').describe().to_csv(
+                                                '../../data/'
+                                                'kmeans_distribution.csv')
