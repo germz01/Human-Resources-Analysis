@@ -1,6 +1,6 @@
 La ricerca di gruppi di dipendenti con caratteristiche affini all'interno del dataset è stata eseguita utilizzando
 differenti tecniche di clustering. Per eseguire l'analisi sono state selezionate solamente le $5$ variabili
-numeriche in Tab. \ref{tab:variabili}, in modo da calcolare le distanze tra i dati in modo appropriato.
+numeriche in Tabella \ref{tab:variabili}, in modo da calcolare le distanze tra i dati in modo appropriato.
 Come già specificato nella Sezione \ref{sec:variable_transformations}, i valori delle variabili discrete sono
 stati normalizzati in un intervallo compreso tra $0$ e $1$, al fine di rendere più agevole il confronto in fase di
 clustering.
@@ -8,8 +8,9 @@ clustering.
 \label{sec:clustering_analysis_by_k_means}
 \subsection{Choice of attributes and distance function} % (fold)
 \label{sub:choice_of_attributes_and_distance_function}
-Vista la natura delle variabili utilizzate nell'applicazione dell'algoritmo, la distance
-function da noi utilizzata per quantificare la distanza tra due data objects è la \textit{distanza Euclidea}.
+Come già specificato nell'introduzione a questo capitolo, abbiamo utilizzato le $5$ variabili numeriche
+in Tabella \ref{tab:variabili} per il clustering. Vista la natura di tali variabili, la distance function da noi
+utilizzata per quantificare la distanza tra due data objects è la \textit{distanza Euclidea}.
 % subsection choice_of_attributes_and_distance_function (end)
 \subsection{Identification of the best value of k} % (fold)
 \label{sub:identification_of_the_best_value_of_k}
@@ -19,9 +20,9 @@ object e il centroide più vicino. A partire da un valore iniziale di $k$ pari a
 massimo di $50$ abbiamo calcolato l'SSE risultante dall'applicazione dell'algoritmo, come possiamo osservare in
 Figura \ref{fig:sse}, dove troviamo la rappresentazione in scala ridotta a partire dal valore iniziale $2$ e
 finale $20$. Abbiamo infine deciso per un valore di $k$ pari a $4$ per l'applicazione di K-means sul
-data set totale, in quanto ritenuto il valore più efficiente ai fini della nostra analisi. Tale valore è stato poi
-confermato come il più elevato tra quelli osservati tramite lo studio del \textit{Silhouette score},
-totalizzando un punteggio pari a $0.57$.
+data set totale, in quanto ritenuto il valore più efficiente ai fini della nostra analisi. Il punteggio ottenuto
+da tale valore nello studio del \textit{Silhouette score} è stato confrontato con gli score per gli altri valori
+di $k$, e si è rivelato essere il più alto, con un punteggio pari a $0.57$.
 % subsection identification_of_the_best_value_of_k (end)
 \subsection{Characterization of the obtained clusters } % (fold)
 \label{sub:characterization_of_the_obtained_clusters}
