@@ -58,7 +58,7 @@ DS['Time_Spend_Company'] = [round(i, 2) for i in DS['Time_Spend_Company']]
 kmeans = KMeans(n_clusters=4).fit(DS[['Satisfaction_Level', 'Last_Evaluation',
                                       'Number_Project', 'Average_Montly_Hours',
                                       'Time_Spend_Company']])
-DS.drop(labels=['Left'], axis=1)
+# DS.drop(labels=['Left'], axis=1)
 
 # print 'silhouette', silhouette_score(DS, kmeans.labels_)
 
@@ -149,3 +149,11 @@ elif ANS == 'Y':
         DS.groupby('Cluster').describe().to_csv(
                                                 '../../data/'
                                                 'kmeans_distribution.csv')
+        DS[DS.Left == 0].groupby('Cluster').describe().to_csv('../../data/'
+                                                              'kmeans_distribu'
+                                                              'tion_stayed.csv'
+                                                              )
+        DS[DS.Left == 1].groupby('Cluster').describe().to_csv('../../data/'
+                                                              'kmeans_distribu'
+                                                              'tion_left.csv'
+                                                              )
