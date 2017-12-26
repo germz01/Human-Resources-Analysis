@@ -48,7 +48,7 @@ DS.drop(['Satisfaction_Level', 'Last_Evaluation', 'Average_Montly_Hours',
 print 'APPLYING APRIORI ALGORITHM'
 
 records = DS.to_records(index=False)
-itemsets = apriori(records, supp=20, zmin=2, target='a', report='s')
+itemsets = apriori(records, supp=20, zmin=2, target='s', report='s')
 
 print 'SAVING FREQUENT ITEMSETS IN CSV FILE "../../data/frequent_itemsets.csv"'
 
