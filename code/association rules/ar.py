@@ -1,6 +1,6 @@
-import pandas as pd
+import csv
 import math
-import pprint
+import pandas as pd
 from fim import apriori
 
 
@@ -44,5 +44,9 @@ DS.drop(['Satisfaction_Level', 'Last_Evaluation', 'Average_Montly_Hours',
 records = DS.to_records(index=False)
 itemsets = apriori(records, supp=20, zmin=2, target='a', report='s')
 
-pprint.PrettyPrinter(indent=4).pprint(itemsets)
-print len(itemsets)
+with open('../../data/frequent_itemsets.csv', 'wb') as f:
+    fieldnames = ['ITEMSET', 'SUPPORT']
+    csv_writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter=',')
+    csv_writer.writeheader()
+    for record in itemsets:
+        csv_writer.writerow({'ITEMSET': record[0], 'SUPPORT': record[1]})
