@@ -10,7 +10,11 @@ def sturges(n=14999):
     return int(k)
 
 
+print 'IMPORTING THE DATA SET'
+
 DS = pd.read_csv(filepath_or_buffer='../../data/df_formatted.csv')
+
+print 'FORMATTING THE DATA SET'
 
 DS['Salary'].replace(['low', 'medium', 'high'], [0, 1, 2], inplace=True)
 DS['Department'].replace(['sales', 'technical', 'support', 'IT',
@@ -41,8 +45,12 @@ DS['Salary'] = DS['Salary'].astype(str) + '_S'
 DS.drop(['Satisfaction_Level', 'Last_Evaluation', 'Average_Montly_Hours',
         'SL_100', 'LE_100'], axis=1, inplace=True)
 
+print 'APPLYING APRIORI ALGORITHM'
+
 records = DS.to_records(index=False)
 itemsets = apriori(records, supp=20, zmin=2, target='a', report='s')
+
+print 'SAVING FREQUENT ITEMSETS IN CSV FILE "../../data/frequent_itemsets.csv"'
 
 with open('../../data/frequent_itemsets.csv', 'wb') as f:
     fieldnames = ['ITEMSET', 'SUPPORT']
@@ -50,3 +58,17 @@ with open('../../data/frequent_itemsets.csv', 'wb') as f:
     csv_writer.writeheader()
     for record in itemsets:
         csv_writer.writerow({'ITEMSET': record[0], 'SUPPORT': record[1]})
+
+print 'MINING ASSOCIATION RULES'
+
+rules = apriori(records, supp=20, zmin=2, target='r', conf=80, report='cl')
+
+print 'SAVING ASSOCIATION RULES IN CSV FILE "../../data/association_rules.csv"'
+
+with open('../../data/association_rules.csv', 'wb') as f:
+    fieldnames = ['RULE', 'CONFIDENCE', 'LIFT']
+    csv_writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter=',')
+    csv_writer.writeheader()
+    for record in rules:
+        csv_writer.writerow({'RULE': record[0] + ' -> ' + str(record[1]),
+                            'CONFIDENCE': record[2], 'LIFT': record[3]})
