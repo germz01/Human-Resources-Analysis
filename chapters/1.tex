@@ -1,4 +1,5 @@
 \section{Obiettivi}
+\label{sec:obiettivi}
 %%\begin{comment}
 \begin{wrapfigure}[10]{r}{0.3\textwidth}
   \centering
@@ -23,7 +24,6 @@ In questo progetto viene analizzato il dataset (simulato) \textit{\href{https://
 \item predire probabilisticamente se un lavoratore lascerà in futuro l'azienda;
 \item indicare al management dell'azienda dei provvedimenti da attuare per ridurre il numero di impiegati che la abbandonano.
 \end{itemize}
-
 \section{Data semantics} % (fold)
 \label{sec:data_semantics}
 
@@ -77,10 +77,9 @@ Direi che non c'è da motivarlo ulteriormente
 In questo paragrafo vengono presentati i grafici relativi alla distribuzione dei valori assunti dalle variabili
 descritte nella sezione precedente. Per dare una migliore interpretazione a questi abbiamo deciso di sostenere
 un'analisi accurata che contraddistingue i dipendenti che lavorano nell'azienda, rappresentati dal colore blu, e
-quelli che invece la hanno lasciata, rappresentati dal colore rosso.\\
-Prima di tutto vogliamo studiare la  distribuzione dei dipendenti rispetto alle variabili
-categoriche escludendo la distribuzione dei dipendenti rispetto a left in quanto già esplicata in precedenza nella sezione Obiettivi.
-
+quelli che invece la hanno lasciata, rappresentati dal colore rosso. Prima di tutto abbiamo studiato la
+distribuzione dei dipendenti rispetto alle variabili categoriche escludendo la distribuzione dei dipendenti
+rispetto a left in quanto già esplicata in precedenza nella Sezione \ref{sec:obiettivi}.
 \begin{minipage}{7.8cm}
    \centering
     \begin{figure}[H]
@@ -126,10 +125,19 @@ categoriche escludendo la distribuzione dei dipendenti rispetto a left in quanto
 \label{fig:promotion}
 \end{figure}
 \end{minipage}
-\\
-Nel grafico a sinistra si studia il rapporto tra i dipendenti e la presenza o meno di un infortunio durante il periodo di lavoro all'interno dell'azienda e si è riscontrato che di quelli che l'hanno lasciata soltanto $169$ impiegati hanno avuto un incidente sul lavoro (circa il 4,75\% su $3571$ e circa il 1,13\% dei dipendenti totali), mentre gli impiegati ancora all'interno dell'azienda ad aver subito un incidente sono $2000$ (circa il 17,5\% su $11428$ e circa il 13,35\% dei dipendenti totali )
-\\Nel grafico a destra invece rapportiamo ciascun dipendente al fatto che questo sia stato promosso negli ultimi 5 anni oppure no, possiamo ricavare una informazione importante, la gran parte degli impiegati che hanno lasciato l'azienda non ha avuto una promozione negli ultimi $5$ anni a parte $19$ impiegati che è stata promossa (circa il 0.5\%, invece circa il 0,13\% dei dipendenti totali) , praticamente impercettibili alla vista del grafico. Degli impiegati rimasti in $300$ hanno ottenuto una promozione su $11428$ di quelli rimasti sono stati promossi (circa il 2,62\% di quelli rimasti e circa il 2\% dei dipendenti totali).
-Una volta studiate le distribuzioni categoriche continuiamo l'analisi con gli altri attributi.\\Partiamo dalla distribuzione del salario:\\
+\\ \\
+In Figura \ref{fig:work_accident} si studia il rapporto tra i dipendenti e la presenza o meno di un infortunio
+durante il periodo di lavoro all'interno dell'azienda e si è riscontrato che di quelli che l'hanno lasciata
+soltanto $169$ impiegati hanno avuto un incidente sul lavoro (circa il 4,75\% su $3571$ e circa il 1,13\% dei
+dipendenti totali), mentre gli impiegati ancora all'interno dell'azienda ad aver subito un incidente sono $2000$
+(circa il 17,5\% su $11428$ e circa il 13,35\% dei dipendenti totali). In Figura \ref{fig:promotion} invece
+rapportiamo ciascun dipendente al fatto che questo sia stato promosso negli ultimi $5$ anni oppure no. Possiamo
+ricavare un'informazione importante: la gran parte degli impiegati che hanno lasciato l'azienda non ha avuto una
+promozione negli ultimi $5$ anni, a parte $19$ impiegati che è stata promossa (circa il 0.5\%, invece circa il
+0,13\% dei dipendenti totali) , praticamente impercettibili alla vista del grafico. Degli impiegati rimasti, in
+$300$ hanno ottenuto una promozione su $11428$ di quelli rimasti (circa il 2,62\% di quelli rimasti e circa il
+2\% dei dipendenti totali). Una volta studiate le distribuzioni categoriche continuiamo l'analisi con gli altri
+attributi. Cominciamo dalla distribuzione del salario, rappresentata in Figura \ref{fig:salary}.\\
 \begin{minipage}{7.8cm}
    \centering
     \begin{figure}[H]
@@ -151,9 +159,9 @@ Una volta studiate le distribuzioni categoriche continuiamo l'analisi con gli al
         \label{tab:salary}
 \end{table}
 \end{minipage}
-\\Le percentuali che vengono indicate nella tabella  non sono in base alla totalità dei dipendenti ma riguardano solo il tipo di
-dipendente definito dalla colonna di appartenenza.\\\\
-Proseguendo poi con il rapporto tra dipendenti ancora in azienda e non, e il numero delle ore di lavoro in media:
+\\ \\Le percentuali che vengono indicate in Tabella \ref{tab:salary} non sono in base alla totalità dei
+dipendenti ma riguardano solo il tipo di dipendente definito dalla colonna di appartenenza.\\\\
+Proseguiamo poi con il rapporto tra dipendenti ancora in azienda e non, e il numero delle ore di lavoro in media.
 \begin{minipage}{8.3cm}
    \centering
     \begin{figure}[H]
