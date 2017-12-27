@@ -30,128 +30,121 @@ In quest'ultima sezione relativa all'algoritmo K-means descriviamo i clusters em
 Utilizzando i parametri descritti nelle sezioni precedenti, abbiamo ottenuto i clusters raffigurati in Figura
 \ref{fig:dist_clu}, dove possiamo osservare la densità di popolazione per ognuno dei cluster ottenuti.
 In Tabella \ref{tab:stat_descr} abbiamo riportato i dati caratteristici di ognuno dei cluster scoperti.
-Il primo cluster emerso, Cluster $0$ contraddistingue gli impiegati con un alto score nelle variabili
-Last Evaluation e Satisfaction Level. Possiamo pensare a un tale cluster come a un gruppo di impiegati molto
-soddisfatti e valutati positivamente, da poco assunti, visto lo score basso in Time Spend Company. Il secondo
-Cluster, Cluster $1$, presenta un gruppo di impiegati con uno score basso nelle variabili Average Montly
-Hours e Satisfaction Level. Tale cluster, essendo il terzo cluster per densità di popolazione, denota un risultato
-interessante e sicuramente da tenere d'occhio per i futuri sviluppi dell'azienda.
-Il Cluster $2$ presenta un gruppo di impiegati soddisfatti e produttivi, con carichi di lavoro abbastanza elevati.
-L'ultimo cluster, il $3$, presenta una situazione preoccupante, visto gli score molto elevati degli impiegati
-nelle variabili Average Montly Hours, Last Evaluation e Number Project, e il basso score nella variabile
-Satisfaction Level. Vedendo simili risultati è facile immaginarsi un gruppo di impiegati da poco assunti,
-caratterizzati da un alto tasso di ore di lavoro, il quale ha comportato il calo nel livello di soddisfazione,
-nonostante l'ultima valutazione fosse stata più che positiva.
-\begin{figure}[t!]
-  \centering
-  \begin{subfigure}{0.5\textwidth}
-    \resizebox{\textwidth}{!}{
-      \includegraphics{images/kmeans/SSE.pdf}
-    }
-    \caption{Sviluppo dell'SSE in base all'aumentare del numero di clusters nell'applicazione dell'algoritmo
-    K-means.}
-    \label{fig:sse}
-  \end{subfigure}
-  \begin{subfigure}{0.5\textwidth}
-    \resizebox{\textwidth}{!}{
-      \includegraphics[width=0.5\textwidth]{images/kmeans/dist_cluster.pdf}
-    }
-    \caption{Distribuzione del numero di impiegati per ognuno dei cluster scoperti durante l'analisi, in ordine
-    decrescente per densità di popolazione.}
-    \label{fig:dist_clu}
-  \end{subfigure}
+\\Il primo cluster emerso, Cluster $0$ è formato per più di metà circa da dipendenti che hanno lasciato l'azienda e quasi metà che continuano a lavorare in questa, con un tempo di lavoro in media fra questi di poco più di tre anni. La totalità dei dipendenti che ha lasciato l'azienda (eccetto due) hanno fatto durante il periodo lavorativo esattamente due progetti. Mentre quelli rimasti hanno svolto più progetti in media e sono comunque all'interno dell'azienda da tempo ridotto, meno di tre anni. Entrambi hanno una valutazione non sufficiente.
+\\Il secondo cluster, Cluster $1$ si evince che solo $66$ dipendenti su $4720$ che caratterizzano questo cluster hanno lasciato l'azienda, dopo che sono rimasti a lavorare all'interno per un tempo discreto (circa $3$ anni e mezzo). Il loro livello di soddisfazione è sufficiente ma nonostante abbiano un livello di valutazione elevato hanno comunque deciso di lasciare l'azienda. Mentre il livello di soddisfazione di quelli rimasti è salito. In media i dipendenti di questo cluster hanno lavorato in azienda per $3$ anni.
+\\Il terzo cluster, Cluster $2$ hanno un valore bassissimo per quanto riguarda il livello di soddisfazione, si differenziano quelli che hanno lasciato l'azienda da quelli che sono rimasti per il tempo inferiore speso in azienda e il carico di lavoro più elevato, in media hanno svolto $6$ progetti, in precedenza nella sezione della distribuzione abbiamo ricavato una importante informazione, che la totalità dei dipendenti che hanno svolto $7$ progetti.
+\\L'ultimo cluster, Cluster $3$ è caratterizzato da un alto valore di soddisfazione, ma nonostante ciò e la valutazione sia quasi ottima, in $975$ dipendenti su $5349$ e che hanno speso un tempo elevato in azienda, rispetto alla media totale, decidono di lasciare l'azienda.
+\\\\ Da questa analisi si può evincere che: \\
+Prima di tutto i cluster trovati fanno emergere subito che in questa azienda c'è un continuo flusso di dipendenti che entrano ed escono dalla azienda in quanto non si distinguono cluster con dipendenti che lavorano in azienda da tempo elevato.
+Inoltre si possono fare le seguenti supposizioni: i dipendenti che se ne sono andati nel primo cluster è perché probabilmente l'azienda non ha posto fiducia o ha dato stimoli al dipendente in modo tale che questo crescesse nell'azienda dato dal livello basso di soddisfazione. \\Il dipendente lascia quasi sicuramente l'azienda quando il carico di lavoro che compie all'interno dell'azienda è elevato e questo ha un livello di soddisfazione basso, che potrebbe essere causato da una mancata promozione.\\
+\begin{minipage}[b]{9cm}
+   \centering
+    \begin{figure}[H]
+       \includegraphics[width=\textwidth]{images/kmeans/SSE.pdf}
+          \caption{}
+        \label{fig:sse}
 \end{figure}
+\end{minipage}             
+\begin{minipage}[b]{9cm}
+  \begin{figure}[H]
+  \centering
+        \includegraphics[width=\textwidth]{images/kmeans/dist_cluster.pdf}
+        \caption{}
+\label{fig:dist_clu}
+\end{figure}
+\end{minipage}
+\\Nella Figura 2.1 viene descritto lo sviluppo dell'SSE in base all'aumentare del numero di clusters nell'applicazione dell'algoritmo K-means. Nella figura 2.2 invece la distribuzione del numero di impiegati per ognuno dei cluster scoperti durante l'analisi, in ordine decrescente per densità di popolazione.\\
 \begin{table}[H]
   \centering
-  \begin{subtable}{0.4\textwidth}
+  \begin{subtable}{0.55\textwidth}
     \resizebox{\textwidth}{!}{
-    \begin{tabular}{| c | c | c | c | c | c |}
+    \begin{tabular}{| c | c | c | c | c | c | c |}
     \hline
-    {} & \multicolumn{5}{c |}{Average\_Montly\_Hours} \\
+    {} & \multicolumn{6}{c |}{Average\_Montly\_Hours} \\
     \hline
-    {} & count & mean & std & min & max \\
-    Cluster & & & & &  \\
+    {} & countTot & meanTot & countLeft & meanLeft & countStayed & meanStayed \\
+    Cluster & & & & & & \\
     \hline
-    0 & 4718.0 & 0.34 & 0.12 & 0.0 & 0.57 \\
-    1 & 3112.0 & 0.27 & 0.13 & 0.0 & 0.88 \\
-    2 & 5343.0 & 0.69 & 0.10 & 0.32 & 1.0 \\
-    3 & 1826.0 & 0.70 & 0.22 & 0.01 & 1.0 \\
+    0 & 3103.0 & 0.26 & 1569.0 & 0.22 & 1534.0 & 0.30 \\
+    1 & 4720.0 & 0.33 & 66.0 & 0.30 & 4654 & 0.33 \\
+    2 & 1827.0 & 0.69 & 961.0 & 0.82 & 866 & 0.56 \\
+    3 & 5349.0 & 0.68 & 975.0 & 0.70 & 4374 & 0.68 \\
     \hline
     \end{tabular}
   }
   \caption{}
   \label{tab:dist_Average_Montly_Hours}
   \end{subtable}
-  \begin{subtable}{0.4\textwidth}
+  \begin{subtable}{0.55\textwidth}
     \resizebox{\textwidth}{!}{
-    \begin{tabular}{| c | c | c | c | c | c |}
+    \begin{tabular}{| c | c | c | c | c | c | c |}
     \hline
-    {} & \multicolumn{5}{c |}{Last\_Evaluation} \\
+    {} & \multicolumn{6}{c |}{Last\_Evaluation} \\
     \hline
-    {} & count & mean & std & min & max \\
-    Cluster & & & & &  \\
+     {} & countTot & meanTot & countLeft & meanLeft & countStayed & meanStayed \\
+    Cluster & & & & & & \\
     \hline
-    0 & 4718.0 & 0.73 & 0.16 & 0.36 & 1.0 \\
-    1 & 3112.0 & 0.56 & 0.12 & 0.36 & 1.0 \\
-    2 & 5343.0 & 0.77 & 0.16 & 0.36 & 1.0 \\
-    3 & 1826.0 & 0.80 & 0.15 & 0.36 & 1.0 \\
+    0 & 3103.0 & 0.55 & 1569.0 & 0.51 & 1534.0 & 0.59 \\
+    1 & 4720.0 & 0.72 & 66.0 & 0.78 & 4654 & 0.72 \\
+    2 & 1827.0 & 0.79 & 961.0 & 0.85 & 866 & 0.72\\
+    3 & 5349.0 & 0.76 & 975.0 & 0.89 & 4374 & 0.74 \\    			    
     \hline
     \end{tabular}
   }
   \caption{}
   \label{tab:dist_Last_Evaluation}
   \end{subtable}
-  \begin{subtable}{0.4\textwidth}
+  \begin{subtable}{0.55\textwidth}
     \resizebox{\textwidth}{!}{
-    \begin{tabular}{| c | c | c | c | c | c |}
+    \begin{tabular}{| c | c | c | c | c | c | c |}
     \hline
-    {} & \multicolumn{5}{c |}{Number\_Project} \\
+    {} & \multicolumn{6}{c |}{Number\_Project} \\
     \hline
-    {} & count & mean & std & min & max \\
-    Cluster & & & & &  \\
+     {} & countTot & meanTot & countLeft & meanLeft & countStayed & meanStayed \\
+    Cluster & & & & & & \\
     \hline
-    0 & 4718.0 & 0.37 & 0.17 & 0.0 & 1.0 \\
-    1 & 3112.0 & 0.087 & 0.13 & 0.0 & 0.8 \\
-    2 & 5343.0 & 0.38 & 0.18 & 0.0 & 0.8 \\
-    3 & 1826.0 & 0.73 & 0.19 & 0.0 & 1.0 \\
+    0 & 3103.0 & 0.086 & 1569.0 & 0.0063 & 1534.0 & 0.16 \\
+    1 & 4720.0 & 0.37 & 66.0 & 0.41 & 4654 & 0.37 \\
+    2 & 1827.0 & 0.72 & 961.0 & 0.83 & 866 & 0.61\\
+    3 & 5349.0 & 0.38 & 975.0 & 0.49 & 4374 & 0.35 \\
     \hline
     \end{tabular}
   }
   \caption{}
   \label{tab:dist_Number_Project}
   \end{subtable}
-  \begin{subtable}{0.4\textwidth}
+  \begin{subtable}{0.55\textwidth}
     \resizebox{\textwidth}{!}{
-    \begin{tabular}{| c | c | c | c | c | c |}
+    \begin{tabular}{| c | c | c | c | c | c | c |}
     \hline
-    {} & \multicolumn{5}{c |}{Satisfaction\_Level} \\
+    {} & \multicolumn{6}{c |}{Satisfaction\_Level} \\
     \hline
-    {} & count & mean & std & min & max \\
-    Cluster & & & & &  \\
+     {} & countTot & meanTot & countLeft & meanLeft & countStayed & meanStayed \\
+    Cluster & & & & & & \\
     \hline
-    0 & 4718.0 & 0.75 & 0.15 & 0.29 & 1.0 \\
-    1 & 3112.0 & 0.43 & 0.11 & 0.09 & 0.96 \\
-    2 & 5343.0 & 0.75 & 0.15 & 0.25 & 1.0 \\
-    3 & 1826.0 & 0.17 & 0.10 & 0.09 & 0.63 \\
+    0 & 3103.0 & 0.42 & 1569.0 & 0.40 & 1534.0 & 0.44 \\
+    1 & 4720.0 & 0.75 & 66.0 & 0.69 & 4654 & 0.75 \\
+    2 & 1827.0 & 0.17 & 961.0 & 0.11 & 866 & 0.23 \\
+    3 & 5349.0 & 0.74 & 975.0 & 0.79 & 4374 & 0.73 \\
     \hline
     \end{tabular}
   }
   \caption{}
   \label{tab:dist_Satisfaction_Level}
   \end{subtable}
-  \begin{subtable}{0.4\textwidth}
+  \begin{subtable}{0.55\textwidth}
     \resizebox{\textwidth}{!}{
-    \begin{tabular}{| c | c | c | c | c | c |}
+    \begin{tabular}{| c | c | c | c | c | c | c |}
     \hline
-    {} & \multicolumn{5}{c |}{Time\_Spend\_Company} \\
+    {} & \multicolumn{6}{c |}{Time\_Spend\_Company} \\
     \hline
-    {} & count & mean & std & min & max \\
-    Cluster & & & & &  \\
+    {} & countTot & meanTot & countLeft & meanLeft & countStayed & meanStayed \\
+    Cluster & & & & & & \\
     \hline
-    0 & 4718.0 & 0.14 & 0.15 & 0.0 & 1.0 \\
-    1 & 3112.0 & 0.17 & 0.15 & 0.0 & 1.0 \\
-    2 & 5343.0 & 0.22 & 0.21 & 0.0 & 1.0 \\
-    3 & 1826.0 & 0.29 & 0.15 & 0.0 & 1.0 \\
+    0 & 3103.0 & 0.16 & 1569.0 & 0.13 & 1534.0 & 0.19 \\
+    1 & 4720.0 & 0.13 & 66.0 & 0.21 & 4654 & 0.13 \\
+    2 & 1827.0 & 0.29 & 961.0 & 0.26 & 866 & 0.33 \\
+    3 & 5349.0 & 0.21 & 975.0 & 0.38 & 4374 & 0.17 \\
     \hline
     \end{tabular}
   }
@@ -162,7 +155,7 @@ nonostante l'ultima valutazione fosse stata più che positiva.
   informazioni relative alla densità di popolazione, alla media, alla deviazione standard e ai valori minimi e
   massimi delle variabili utilizzate.}
   \label{tab:stat_descr}
-  \end{table}
+\end{table}
 \begin{figure}[h!]
   \centering
   \begin{subfigure}{0.45\textwidth}
