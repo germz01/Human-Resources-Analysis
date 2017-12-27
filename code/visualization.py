@@ -74,12 +74,21 @@ def plot(col, type):
                 color='steelblue', label='Stayed')
         plt.bar(np.arange(len(d.keys())), height=fill_values(LEFT, col, type),
                 label='Left', color='tomato')
-        plt.xticks(np.arange(len(d.keys())), d.keys())
+        if col == 'Sales':
+            plt.xticks(np.arange(len(d.keys())), d.keys(), rotation='vertical')
+        else:
+            plt.xticks(np.arange(len(d.keys())), d.keys())
 
-    plt.xlabel(col.replace('_', ' '))
+    if col == 'Sales':
+        plt.xlabel('Departments')
+        plt.title('Department variable distribution')
+    else:
+        plt.xlabel(col.replace('_', ' '))
+        plt.title(col.replace('_', ' ') + ' variable distribution')
+
     plt.ylabel('Employees')
     plt.legend()
-    plt.title(col.replace('_', ' ') + ' variable distribution')
+
 
 if __name__ == '__main__':
     while True:
@@ -95,14 +104,14 @@ if __name__ == '__main__':
             print 'ERROR'
         elif to_plot != 10:
             plot(COLUMNS[to_plot][0], COLUMNS[to_plot][1])
-            plt.savefig(fname='../images/new plotted variables' +
+            plt.savefig(fname='../images/newplottedvariables/' +
                         COLUMNS[to_plot][0].lower() + '.pdf',
                         format='pdf', bbox_inches='tight')
         else:
             for i in xrange(1, 10):
                 print 'PLOTTING ' + COLUMNS[i][0]
                 plot(COLUMNS[i][0], COLUMNS[i][1])
-                plt.savefig(fname='../images/new plotted variables/' +
+                plt.savefig(fname='../images/newplottedvariables/' +
                             COLUMNS[i][0].lower() + '.pdf',
                             format='pdf', bbox_inches='tight')
                 plt.clf()
