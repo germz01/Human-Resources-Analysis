@@ -58,16 +58,22 @@ supporto pari a $20$ scoperti durante l'analisi.
             \hline
             (N\_L, \ N\_WA, \ N\_P) & $0.61$ & (N\_L, \ N\_WA, \ N\_P) & $0.61$ & (0\_D, \ N\_WA, \ N\_P) &
             $0.23$ \\ \hline
-            (0\_S, \ N\_P) & $0.48$ & (0\_S, \ N\_P) & $0.48$ & (Y\_L, \ N\_WA, \ N\_P) & $0.23$ \\
-            \hline
         \end{tabular}
     }
     \caption{Frequent itemsets con supporto maggiore scoperti durante l'analisi utilizzando un supporto pari a
-    $20$.}
+    $20$. Con N\_WA intendiamo l'item relativo all'assenza di incidenti sul lavoro, con N\_P l'item relativo alla
+    mancanza di promozioni, con N\_L l'item relativo ai dipendenti ancora in azienda, con 0\_S l'item relativo ai
+    dipendenti con salario minimo, con 1\_S l'item relativo ai dipendenti con salario medio, con 3\_T l'item
+    relativo ai dipendenti da $3$ anni all'interno dell'azienda e con 0\_D intendiao gli impiegati che lavorano
+    nel dipartimento \textit{sales}.}
     \label{tab:interesting:freq_items}
 \end{table}
-Possiamo vedere che i frequent itemsets e i closed frequent itemsets sono gli stessi, quindi verranno descritti
-una volta per entrambi. Possiamo notare come il $2$-itemset
+Descriviamo per primi i frequent itemsets e i closed frequent itemsets, visto che sono identici. Possiamo notare
+come la situazione presentata proponga in maggioranza impiegati i quali non hanno subito incidenti sul lavoro,
+che non sono stati promossi e che non hanno lasciato l'azienda. Per quanto riguarda i maximal frequent itemsets
+troviamo che gli impiegati di salario minimo e medio, non promossi e i quali non hanno avuto incidenti sul lavoro
+sono i più diffusi, seguiti dagli impiegati da $3$ anni nell'azienda, e che lavorano nel dipartimento
+\textit{sales}.
 % section discussion_of_the_most_interesting_frequent_patterns (end)
 \section{Association rules extraction with different values of confidence }
 
