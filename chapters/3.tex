@@ -3,7 +3,8 @@ Per definire le association rules prima si sono seguite le seguenti operazioni:
 \item Abbiamo trasformato le variabili da stringhe a numeriche, per quanto riguarda gli attributi \textit{Salary}
 e \textit{Department}.
 \item Abbiamo raggruppato le variabili \textit{Last Evaluation}, \textit{Satisfaction Level} e
-\textit{Average Montly Hours}, con un intervallo di $0.10$ ciascuna.
+\textit{Average Montly Hours}, utilizzando il numero di bins ricavato dall'applicazione della formula di Sturges
+$\lceil \log{n}_2 \rceil + 1$, dove $n$ in questo caso è $14999$, il numero di data objects.
 \item Per rendere unici i risultati numerici, è stata aggiunta una stringa subito successiva al valore numerico
 in modo da non renderlo ambiguo e sopratutto in modo da poter capire univocamente a che attributo si riferisca.
 \end{itemize}
@@ -17,6 +18,19 @@ loro interno. Inoltre, al fine di avere una panoramica più completa, abbiamo sv
 Abbiamo quindi cominciato l'analisi con un support pari a $20$, ossia prendendo in considerazione soltanto gli
 itemsets presenti in almeno il $20\%$ della transazioni. Successivamente abbiamo utilizzato un support pari a
 $30$.
+\begin{table}[H]
+    \centering
+    \resizebox{\textwidth}{!}{
+        \begin{tabular}{| c | c | c | c |}
+            \hline
+            \textbf{Support Threshold} & \textbf{Frequent Itemsets} & \textbf{Closed Frequent Itemsets} &
+            \textbf{Maximal Frequent Itemsets} \\ \hline
+            $20$ & $52$ & $52$ & $10$ \\ \hline
+            $30$ \\
+            \hline
+        \end{tabular}
+    }
+\end{table}
 % section frequent_patterns_extraction_with_different_values_of_support_and_different_types (end)
 \section{Discussion of the most interesting frequent patterns}
 I frequent pattern ritenuti più interessanti sono i seguenti:

@@ -48,14 +48,19 @@ DS.drop(['Satisfaction_Level', 'Last_Evaluation', 'Average_Montly_Hours',
 print 'APPLYING APRIORI ALGORITHM'
 
 records = DS.to_records(index=False)
+supp = int(raw_input('SUPPORT: '))
 
 for target in ['s', 'c', 'm']:
-    itemsets = apriori(records, supp=20, zmin=2, target=target, report='s')
+    itemsets = apriori(records, supp=supp, zmin=2, target=target, report='s')
 
-    print 'SAVING FREQUENT ITEMSETS FOR TARGET ' + target + ' IN CSV FILE ' \
-          '"../../data/frequent_itemsets_' + target + '.csv"'
+    print 'EXTRACTED ' + str(len(itemsets)) + ' FREQUENT ITEMSETS'
+    print 'SAVING FREQUENT ITEMSETS WITH SUPPORT ' + str(supp) + ' AND ' \
+          'TARGET ' + target + ' IN CSV FILE "../../data/frequent_itemsets_' \
+          + str(supp) + '_' + target + '.csv"'
 
-    with open('../../data/frequent_itemsets_' + target + '.csv', 'wb') as f:
+    fname = '../../data/frequent_itemsets_' + str(supp) + '_' + target + '.csv'
+
+    with open(fname, 'wb') as f:
         fieldnames = ['ITEMSET', 'SUPPORT']
         csv_writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter=',')
         csv_writer.writeheader()
