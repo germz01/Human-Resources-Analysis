@@ -31,22 +31,19 @@ Il dataset è composto da 10 variabili relative ai dipendenti dell'azienda, ripo
 
 \begin{wraptable}{r}{8cm}
     \centering
-    \begin{tabular}{ c  c }
-\toprule
-        \textbf{Variable} & \textbf{Type} \\ 
-\midrule
-        Left & categorical \\
-        Department & categorical \\ 
-        Promotion\_last\_5years & categorical \\ 
-        Work\_accident & categorical \\ 
-        Salary & ordinal \\ 
-\midrule
-        Satisfaction\_level & continuous \\ 
-        Last\_evaluation & continuous \\ 
-        Average\_montly\_hours & discrete \\ 
-        Time\_spend\_company & discrete \\
-        Number\_projects & discrete \\ 
-\bottomrule
+    \begin{tabular}{| c | c |}
+        \hline
+        \textbf{Variable} & \textbf{Type} \\ \hline
+        Left & categorical \\ \hline
+        Department & categorical \\ \hline
+        Promotion\_last\_5years & categorical \\ \hline
+        Work\_accident & categorical \\ \hline
+        Salary & ordinal \\ \hline
+        Satisfaction\_level & continuous \\ \hline
+        Last\_evaluation & continuous \\ \hline
+        Average\_montly\_hours & discrete \\ \hline
+        Time\_spend\_company & discrete \\ \hline
+        Number\_projects & discrete \\ \hline
     \end{tabular}
     \caption{Variabili presenti nel Dataset e rispettivi tipi.}
     \label{tab:variabili}
@@ -55,7 +52,7 @@ Il dataset è composto da 10 variabili relative ai dipendenti dell'azienda, ripo
 La variabile \textit{Left} suddivide il dataset tra i dipendenti che hanno lasciato l'azienda e quelli che ci lavorano attualmente, associando alle rispettive categorie i valori $1$ e $0$.
 I dipendenti lavorano in 10 diversi dipartimenti indicati nella variabile \textit{Department}, che è stata rinominata
 rispetto all'originale \textit{Sales} per chiarezza semantica.
-La promozione o meno di un dipendente durante gli ultimi $5$ anni è espressa dalla variabile 
+La promozione o meno di un dipendente durante gli ultimi $5$ anni è espressa dalla variabile
 \textit{Promotion last 5 Year} con un $1$ in caso positivo e con $0$ altrimenti.
 \textit{Work Accident} indica con un $1$ il coinvolgimento di un dipendente in un incidente sul lavoro,
 e con $0$ il caso contrario. \textit{Salary} esprime il livello (\textit{low}, \textit{medium}, \textit{high}) nel quale rientra il salario
@@ -71,7 +68,7 @@ dataset è pubblicato.
 \begin{comment}
 La scelta di catalogare le colonne \textit{Work Accident}, \textit{Left} e
 \textit{Promotion Last 5 Years} come variabili di tipo categorico verrà opportunamente motivata nelle s
-ezioni successive. 
+ezioni successive.
 Direi che non c'è da motivarlo ulteriormente
 \end{comment}
 %% section data_semantics (end)
@@ -82,7 +79,7 @@ descritte nella sezione precedente. Per dare una migliore interpretazione a ques
 un'analisi accurata che contraddistingue i dipendenti che lavorano nell'azienda, rappresentati dal colore blu, e
 quelli che invece la hanno lasciata, rappresentati dal colore rosso.\\
 Prima di tutto vogliamo studiare la  distribuzione dei dipendenti rispetto alle variabili
-categoriche escludendo la distribuzione dei dipendenti rispetto a left in quanto già esplicata in precedenza nella sezione Obiettivi. 
+categoriche escludendo la distribuzione dei dipendenti rispetto a left in quanto già esplicata in precedenza nella sezione Obiettivi.
 
 \begin{minipage}{7.8cm}
    \centering
@@ -121,7 +118,7 @@ categoriche escludendo la distribuzione dei dipendenti rispetto a left in quanto
         \caption{Distribuzione relativa alla variabile \textit{Work Accident}}
         \label{fig:work_accident}
 \end{figure}
-\end{minipage} 
+\end{minipage}
 \begin{minipage}{7.8cm}
   \begin{figure}[H]
         \includegraphics[width=\textwidth]{images/newplottedvariables/promotion_last_5_years.pdf}
