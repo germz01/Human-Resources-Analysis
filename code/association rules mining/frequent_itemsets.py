@@ -67,17 +67,3 @@ for target in ['s', 'c', 'm']:
         for record in itemsets:
             support = str(round(float(record[1]), 2))
             csv_writer.writerow({'ITEMSET': record[0], 'SUPPORT': support})
-
-print 'MINING ASSOCIATION RULES'
-
-rules = apriori(records, supp=20, zmin=2, target='r', conf=80, report='cl')
-
-print 'SAVING ASSOCIATION RULES IN CSV FILE "../../data/association_rules.csv"'
-
-with open('../../data/association_rules.csv', 'wb') as f:
-    fieldnames = ['RULE', 'CONFIDENCE', 'LIFT']
-    csv_writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter=',')
-    csv_writer.writeheader()
-    for record in rules:
-        csv_writer.writerow({'RULE': record[0] + ' -> ' + str(record[1]),
-                            'CONFIDENCE': record[2], 'LIFT': record[3]})
