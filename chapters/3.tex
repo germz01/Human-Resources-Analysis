@@ -17,30 +17,58 @@ loro interno. Inoltre, al fine di avere una panoramica più completa, abbiamo sv
 \textit{frequent itemsets}, per i \textit{closed frequent itemsets} e per i \textit{maximal frequent itemsets}.
 Abbiamo quindi cominciato l'analisi con un support pari a $20$, ossia prendendo in considerazione soltanto gli
 itemsets presenti in almeno il $20\%$ della transazioni. Successivamente abbiamo utilizzato un support pari a
-$30$.
+$30$. Le quantità di frequent itemsets scoperte al variare dei paramentri sono riportate in Tabella
+\ref{tab:freq_items}.
 \begin{table}[H]
     \centering
-    \resizebox{\textwidth}{!}{
+    \resizebox{0.8\textwidth}{!}{
         \begin{tabular}{| c | c | c | c |}
             \hline
             \textbf{Support Threshold} & \textbf{Frequent Itemsets} & \textbf{Closed Frequent Itemsets} &
             \textbf{Maximal Frequent Itemsets} \\ \hline
             $20$ & $52$ & $52$ & $10$ \\ \hline
-            $30$ \\
+            $30$ & $19$ & $19$ & $7$ \\ \hline
+        \end{tabular}
+    }
+    \caption{Quantità di frequent itemsets trovati per ogni tipologia e support utilizzati durante l'analisi.}
+    \label{tab:freq_items}
+\end{table}
+Come era lecito aspettarsi, esiste un rapporto di proporzionalità inversa tra la soglia di support e il numero di
+frequent itemsets scoperti.
+% section frequent_patterns_extraction_with_different_values_of_support_and_different_types (end)
+\section{Discussion of the most interesting frequent patterns} % (fold)
+\label{sec:discussion_of_the_most_interesting_frequent_patterns}
+Passiamo adesso alla descrizione dei frequent items più interessanti che sono stati scoperti durante l'analisi. In
+Tabella \ref{tab:interesting:freq_items} vengono riportati gli itemsets più interessanti dal punto di vista del
+supporto pari a $20$ scoperti durante l'analisi.
+\begin{table}[H]
+    \centering
+    \resizebox{\textwidth}{!}{
+        \begin{tabular}{| c | c | c | c | c | c |}
+            \hline
+            \textbf{Frequent Itemsets ($ST = 20$)} & \textbf{Support} &
+            \textbf{Closed Frequent Itemsets ($ST = 20$)} & \textbf{Support} &
+            \textbf{Maximal Frequent Itemsets ($ST = 20$)} & \textbf{Support}\\
+            \hline
+            (N\_WA, \ N\_P)  & $0.84$ & (N\_WA, \ N\_P)  & $0.84$ & (0\_S, \ N\_L, \ N\_WA, \ N\_P) & $0.28$\\
+            \hline
+            (N\_L, \ N\_P) & $0.74$ & (N\_L, \ N\_P) & $0.74$ & (1\_S, \ N\_L, \ N\_WA, \ N\_P) & $0.28$ \\
+            \hline
+            (N\_L, \ N\_WA) & $0.63$ & (N\_L, \ N\_WA) & $0.63$ & (3\_T, N\_L, N\_WA, N\_P) & $0.26$ \\
+            \hline
+            (N\_L, \ N\_WA, \ N\_P) & $0.61$ & (N\_L, \ N\_WA, \ N\_P) & $0.61$ & (0\_D, \ N\_WA, \ N\_P) &
+            $0.23$ \\ \hline
+            (0\_S, \ N\_P) & $0.48$ & (0\_S, \ N\_P) & $0.48$ & (Y\_L, \ N\_WA, \ N\_P) & $0.23$ \\
             \hline
         \end{tabular}
     }
+    \caption{Frequent itemsets con supporto maggiore scoperti durante l'analisi utilizzando un supporto pari a
+    $20$.}
+    \label{tab:interesting:freq_items}
 \end{table}
-% section frequent_patterns_extraction_with_different_values_of_support_and_different_types (end)
-\section{Discussion of the most interesting frequent patterns}
-I frequent pattern ritenuti più interessanti sono i seguenti:
--
--
--
-
-Da questi scaturisce che ...
-
-
+Possiamo vedere che i frequent itemsets e i closed frequent itemsets sono gli stessi, quindi verranno descritti
+una volta per entrambi. Possiamo notare come il $2$-itemset
+% section discussion_of_the_most_interesting_frequent_patterns (end)
 \section{Association rules extraction with different values of confidence }
 
 
