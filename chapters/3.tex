@@ -1,22 +1,30 @@
 Per definire le association rules prima si sono seguite le seguenti operazioni:
-\begin{enumerate}
-\item Abbiamo trasformato le variabili da stringhe a numeriche, per quanto riguarda gli attributi $salary$ e $department$.
-\item Successivamente abbiamo raggruppato le variabili $last_evaluation$ e $satisfaction_level$ e $average_monlty_hours$, con un intervallo di $0.10$ ciascuna. 
-\item Infine per rendere unici i risultati numerici, è stata aggiunta una stringa subito successiva al numero in modo tale che non fosse ambiguo ma immediato quel valore a che attributo si riferisca.
-\end{enumerate}
-
-
-\section{Frequent patterns extraction with different values of support and different types }
-Una volta eseguiti i passi detti in precedenza si è eseguita l'estrazione dei pattern frequenti tramite la metodologia Apriori. 
-
-
+\begin{itemize}
+\item Abbiamo trasformato le variabili da stringhe a numeriche, per quanto riguarda gli attributi \textit{Salary}
+e \textit{Department}.
+\item Abbiamo raggruppato le variabili \textit{Last Evaluation}, \textit{Satisfaction Level} e
+\textit{Average Montly Hours}, con un intervallo di $0.10$ ciascuna.
+\item Per rendere unici i risultati numerici, è stata aggiunta una stringa subito successiva al valore numerico
+in modo da non renderlo ambiguo e sopratutto in modo da poter capire univocamente a che attributo si riferisca.
+\end{itemize}
+\section{Frequent patterns extraction with different values of support and different types} % (fold)
+\label{sec:frequent_patterns_extraction_with_different_values_of_support_and_different_types}
+Dopo aver eseguito i passi preliminari descritti precedentemente abbiamo svolto l'analisi inerente ai
+\textit{frequent patterns} attraverso l'applicazione dell'algoritmo \textit{Apriori}. Per ogni iterazione
+dell'algoritmo, abbiamo considerato, indipendentemente dal \textit{support}, gli itemsets con $2$ o più items al
+loro interno. Inoltre, al fine di avere una panoramica più completa, abbiamo svolto l'analisi per i
+\textit{frequent itemsets}, per i \textit{closed frequent itemsets} e per i \textit{maximal frequent itemsets}.
+Abbiamo quindi cominciato l'analisi con un support pari a $20$, ossia prendendo in considerazione soltanto gli
+itemsets presenti in almeno il $20\%$ della transazioni. Successivamente abbiamo utilizzato un support pari a
+$30$.
+% section frequent_patterns_extraction_with_different_values_of_support_and_different_types (end)
 \section{Discussion of the most interesting frequent patterns}
 I frequent pattern ritenuti più interessanti sono i seguenti:
 -
 -
 -
 
-Da questi scaturisce che ... 
+Da questi scaturisce che ...
 
 
 \section{Association rules extraction with different values of confidence }
@@ -39,13 +47,13 @@ Nel nostro dataset non sono presenti missing values quindi non è stata necessar
 \section{Use the most meaningful rules to predict if an employee will leave prematurely or not and evaluate the accuracy }
 Date le varie association rules trovate dalle varie prove queste sono quelle più significative per predirre se un impiegato lascerà prematuramente l'azienda oppure no:
 
-- AR ... accuratezza trovata: 
+- AR ... accuratezza trovata:
 - AR1
 - AR2
 
 Da queste possiamo scaturire che un impiegato lasci il posto di lavoro prematuramente quando è nelle seguenti condizioni:
 
-Invece rimarrà quando avrà una condizione del tipo: 
+Invece rimarrà quando avrà una condizione del tipo:
 
 
 

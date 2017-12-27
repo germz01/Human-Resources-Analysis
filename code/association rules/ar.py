@@ -48,16 +48,20 @@ DS.drop(['Satisfaction_Level', 'Last_Evaluation', 'Average_Montly_Hours',
 print 'APPLYING APRIORI ALGORITHM'
 
 records = DS.to_records(index=False)
-itemsets = apriori(records, supp=20, zmin=2, target='s', report='s')
 
-print 'SAVING FREQUENT ITEMSETS IN CSV FILE "../../data/frequent_itemsets.csv"'
+for target in ['s', 'c', 'm']:
+    itemsets = apriori(records, supp=20, zmin=2, target=target, report='s')
 
-with open('../../data/frequent_itemsets.csv', 'wb') as f:
-    fieldnames = ['ITEMSET', 'SUPPORT']
-    csv_writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter=',')
-    csv_writer.writeheader()
-    for record in itemsets:
-        csv_writer.writerow({'ITEMSET': record[0], 'SUPPORT': record[1]})
+    print 'SAVING FREQUENT ITEMSETS FOR TARGET ' + target + ' IN CSV FILE ' \
+          '"../../data/frequent_itemsets_' + target + '.csv"'
+
+    with open('../../data/frequent_itemsets_' + target + '.csv', 'wb') as f:
+        fieldnames = ['ITEMSET', 'SUPPORT']
+        csv_writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter=',')
+        csv_writer.writeheader()
+        for record in itemsets:
+            support = str(round(float(record[1]), 2))
+            csv_writer.writerow({'ITEMSET': record[0], 'SUPPORT': support})
 
 print 'MINING ASSOCIATION RULES'
 
