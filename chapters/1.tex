@@ -80,7 +80,7 @@ un'analisi accurata che contraddistingue i dipendenti che lavorano nell'azienda,
 quelli che invece la hanno lasciata, rappresentati dal colore rosso. Prima di tutto abbiamo studiato la
 distribuzione dei dipendenti rispetto alle variabili categoriche escludendo la distribuzione dei dipendenti
 rispetto a left in quanto già esplicata in precedenza nella Sezione \ref{sec:obiettivi}.
-\begin{figure}[H]
+\begin{figure}[t!]
   \centering
   \begin{subfigure}{0.45\textwidth}
     \resizebox{\textwidth}{!}{
@@ -113,22 +113,26 @@ rispetto a left in quanto già esplicata in precedenza nella Sezione \ref{sec:ob
   distribuzione dei dipendenti per ogni dipartimento (\ref{tab:sales}).}
   \label{fig:dist_sales}
 \end{figure}
-\begin{minipage}{7.8cm}
-   \centering
-    \begin{figure}[H]
-       \includegraphics[width=\textwidth]{images/newplottedvariables/work_accident.pdf}
-        \caption{Distribuzione relativa alla variabile \textit{Work Accident}}
-        \label{fig:work_accident}
+\begin{figure}[b!]
+  \centering
+  \begin{subfigure}{0.4\textwidth}
+    \resizebox{\textwidth}{!}{
+      \includegraphics{images/newplottedvariables/work_accident.pdf}
+    }
+    \caption{}
+    \label{fig:work_accident}
+  \end{subfigure}
+  \begin{subfigure}{0.4\textwidth}
+    \resizebox{\textwidth}{!}{
+      \includegraphics{images/newplottedvariables/promotion_last_5_years.pdf}
+    }
+    \caption{}
+    \label{fig:promotion}
+  \end{subfigure}
+  \caption{Distribuzioni relative alla variabile \textit{Work Accident} (\ref{fig:work_accident}) e alla
+  variabile \textit{Promotion Last 5 Years} (\ref{fig:promotion}).}
+  \label{fig:dist_work_promotion}
 \end{figure}
-\end{minipage}
-\begin{minipage}{7.8cm}
-  \begin{figure}[H]
-        \includegraphics[width=\textwidth]{images/newplottedvariables/promotion_last_5_years.pdf}
-        \caption{Distribuzione relativa alla variabile \textit{Promotion Last 5 Years}}
-\label{fig:promotion}
-\end{figure}
-\end{minipage}
-\\ \\
 In Figura \ref{fig:work_accident} si studia il rapporto tra i dipendenti e la presenza o meno di un infortunio
 durante il periodo di lavoro all'interno dell'azienda e si è riscontrato che di quelli che l'hanno lasciata
 soltanto $169$ impiegati hanno avuto un incidente sul lavoro (circa il 4,75\% su $3571$ e circa il 1,13\% dei
