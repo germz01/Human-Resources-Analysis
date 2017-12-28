@@ -93,16 +93,16 @@ rispetto a left in quanto già esplicata in precedenza nella Sezione \ref{sec:ob
     \resizebox{\textwidth}{!}{
       \begin{tabular}{| c | c | c | c |} \hline
         \textbf{Department} & \textbf{Stayed} & \textbf{Left} &  \textbf{TotDep} \\ \hline
-        1 Sales  & 3126 & 1014 &  4140 \\ \hline
-        2 technical  & 2023 & 697 &  2720 \\ \hline
-        3 support  & 1674 & 555 & 2229  \\ \hline
-        4 IT  & 954 & 273 & 1227  \\ \hline
-        5 productMng  & 704 & 198 & 902  \\ \hline
-        6 marketing  & 655 & 203 & 858 \\ \hline
-        7 RandD  & 666 & 121 & 787 \\ \hline
-        8 accounting  & 563 & 204 & 767 \\ \hline
-        9 hr  & 524 & 215 & 739  \\ \hline
-        10 management & 539 & 91 &  630\\ \hline
+        sales  & 3126 & 1014 &  4140 \\ \hline
+        technical  & 2023 & 697 &  2720 \\ \hline
+        support  & 1674 & 555 & 2229  \\ \hline
+        IT  & 954 & 273 & 1227  \\ \hline
+        product\_mng  & 704 & 198 & 902  \\ \hline
+        marketing  & 655 & 203 & 858 \\ \hline
+        RandD  & 666 & 121 & 787 \\ \hline
+        accounting  & 563 & 204 & 767 \\ \hline
+        hr  & 524 & 215 & 739  \\ \hline
+        management & 539 & 91 &  630\\ \hline
         Totale & 11428 & 3571 &  14999\\ \hline
       \end{tabular}
     }
@@ -251,50 +251,51 @@ In Figura \ref{fig:dist_num_proj} troviamo le informazioni relative alla distrib
     \caption{}
     \label{tab:t_spend_comp}
   \end{subtable}
+  \begin{subfigure}{0.4\textwidth}
+    \resizebox{\textwidth}{!}{
+      \includegraphics{images/newplottedvariables/satisfaction_level.pdf}
+    }
+    \caption{}
+    \label{fig:sat_lev}
+  \end{subfigure}
+  \begin{subfigure}{0.4\textwidth}
+    \resizebox{\textwidth}{!}{
+      \includegraphics{images/newplottedvariables/last_evaluation.pdf}
+    }
+    \caption{}
+    \label{fig:last_ev}
+  \end{subfigure}
+  \begin{subtable}{0.4\textwidth}
+    \resizebox{\textwidth}{!}{
+      \begin{tabular}{| c | c | c |} \hline
+        \textbf{Satisfaction} & \textbf{Stayed} & \textbf{Left}  \\ \hline
+        Media & 0.67 & 0.44 \\ \hline
+        Dev.std. & 0.22 & 0.26\\ \hline
+        min,max & 0.12 , 1.0  &  0.09 , 0.92 \\ \hline
+      \end{tabular}
+    }
+    \caption{}
+    \label{tab:sat_lev}
+  \end{subtable}
+  \begin{subtable}{0.4\textwidth}
+    \resizebox{\textwidth}{!}{
+      \begin{tabular}{| c | c | c |} \hline
+        \textbf{LastEval} & \textbf{Stayed} & \textbf{Left}  \\ \hline
+        Media & 0.71 & 0.71 \\ \hline
+        Dev.std. & 0.16 & 0.19\\ \hline
+        min,max & 0.36 , 1.0  &  0.45 , 1.0 \\ \hline
+      \end{tabular}
+    }
+    \caption{}
+    \label{tab:last_ev}
+  \end{subtable}
   \caption{Distribuzione relativa alla variabile \textit{Time Spend Company} (\ref{fig:t_spend_comp}), e relative
-  informazioni sui dipendenti (\ref{tab:t_spend_comp}).}
+  informazioni sui dipendenti (\ref{tab:t_spend_comp}), distribuzioni relative alle variabili
+  \textit{Satisfaction Level} (\ref{fig:sat_lev}) e \textit{Last Evaluation} (\ref{fig:last_ev}), e relative
+  tabelle (\ref{tab:sat_lev} e \ref{tab:last_ev}).}
   \label{fig:dist}
 \end{figure}
-Si può rilevare un fattore importante, dal settimo anno in azienda non abbiamo dipendenti che hanno lasciato l'azienda. Inoltre la maggior parte del numero di dipendenti che hanno lasciato l'azienda lo abbiamo in un range dai $3$ ai $5$ anni come fattore critico, con un massimo di $1587$ dipendenti, ovvero quasi il $44.4\%$ di quelli che lasciano l'azienda, nel terzo anno di lavoro.\\A questo punto è giusto analizzare il livello di soddisfazione dei dipendenti presente e quello della ultima valutazione:\\
-
-\begin{minipage}{8.3cm}
-   \centering
-    \begin{figure}[H]
-        \includegraphics[width=\textwidth]{images/newplottedvariables/satisfaction_level.pdf}
-        \caption{Distribuzione relativa alla variabile \textit{Satisfaction Level}}
-        \label{fig:sat_lev}
-\end{figure}
-\begin{table}[H]
-        \centering
-        \begin{tabular}{| c | c | c |} \hline
-                   \textbf{Satisfaction} & \textbf{Stayed} & \textbf{Left}  \\ \hline
-            Media & 0.67 & 0.44 \\ \hline
-            Dev.std. & 0.22 & 0.26\\ \hline
-            min,max & 0.12 , 1.0  &  0.09 , 0.92 \\ \hline
-        \end{tabular}
-        \label{tab:sat_lev}
-\end{table}
-\end{minipage}
-\begin{minipage}{8.3cm}
- \centering
-    \begin{figure}[H]
-        \includegraphics[width=\textwidth]{images/newplottedvariables/last_evaluation.pdf}
-        \caption{Distribuzione relativa alla variabile \textit{Last Evaluation}}
-        \label{fig:last_ev}
-\end{figure}
-\begin{table}[H]
-        \centering
-        \begin{tabular}{| c | c | c |} \hline
-                   \textbf{LastEval} & \textbf{Stayed} & \textbf{Left}  \\ \hline
-            Media & 0.71 & 0.71 \\ \hline
-            Dev.std. & 0.16 & 0.19\\ \hline
-            min,max & 0.36 , 1.0  &  0.45 , 1.0 \\ \hline
-        \end{tabular}
-        \label{tab:last_ev}
-\end{table}
-\end{minipage}
-\\
-
+Si può rilevare un fattore importante, dal settimo anno in azienda non abbiamo dipendenti che hanno lasciato l'azienda. Inoltre la maggior parte del numero di dipendenti che hanno lasciato l'azienda lo abbiamo in un range dai $3$ ai $5$ anni come fattore critico, con un massimo di $1587$ dipendenti, ovvero quasi il $44.4\%$ di quelli che lasciano l'azienda, nel terzo anno di lavoro. A questo punto è giusto analizzare il livello di soddisfazione dei dipendenti presente e quello della ultima valutazione:
 % section distribution_of_the_variables_and_statistics (end)
 \section{Data quality} % (fold)
 \label{sec:assessing_data_quality}
