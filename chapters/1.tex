@@ -80,7 +80,7 @@ un'analisi accurata che contraddistingue i dipendenti che lavorano nell'azienda,
 quelli che invece la hanno lasciata, rappresentati dal colore rosso. Prima di tutto abbiamo studiato la
 distribuzione dei dipendenti rispetto alle variabili categoriche escludendo la distribuzione dei dipendenti
 rispetto a left in quanto già esplicata in precedenza nella Sezione \ref{sec:obiettivi}.
-\begin{figure}[t!]
+\begin{figure}[ht!]
   \centering
   \begin{subfigure}{0.3\textwidth}
     \resizebox{\textwidth}{!}{
@@ -133,7 +133,7 @@ rispetto a left in quanto già esplicata in precedenza nella Sezione \ref{sec:ob
   \textit{Average Montly Hours} (\ref{fig:average_montly_hours}) e relativa tabella (\ref{tab:avg_work}).}
   \label{fig:dist_sales}
 \end{figure}
-\begin{figure}[b!]
+\begin{figure}[hb!]
   \centering
   \begin{subfigure}{0.4\textwidth}
     \resizebox{\textwidth}{!}{
@@ -169,38 +169,33 @@ rispetto a left in quanto già esplicata in precedenza nella Sezione \ref{sec:ob
     \caption{}
     \label{tab:salary}
   \end{subtable}
-% \begin{minipage}{8.5cm}
-% \begin{table}[H]
-%         \centering
-%
-% \end{table}
-% \end{minipage}
   \caption{Distribuzioni relative alla variabile \textit{Work Accident} (\ref{fig:work_accident}), alla
   variabile \textit{Promotion Last 5 Years} (\ref{fig:promotion}), alla variabile \textit{Salary}
   (\ref{fig:salary}) e alla relativa distribuzione del salario per dipendente (\ref{tab:salary}).}
   \label{fig:dist_work_promotion}
 \end{figure}
 In Figura \ref{fig:work_accident} si studia il rapporto tra i dipendenti e la presenza o meno di un infortunio
-durante il periodo di lavoro all'interno dell'azienda e si è riscontrato che di quelli che l'hanno lasciata
+durante il periodo di lavoro all'interno dell'azienda, e si è riscontrato che di quelli che l'hanno lasciata
 soltanto $169$ impiegati hanno avuto un incidente sul lavoro (circa il 4,75\% su $3571$ e circa il 1,13\% dei
 dipendenti totali), mentre gli impiegati ancora all'interno dell'azienda ad aver subito un incidente sono $2000$
-(circa il 17,5\% su $11428$ e circa il 13,35\% dei dipendenti totali). In Figura \ref{fig:promotion} invece
+(circa il 17,5\% su $11428$ e circa il 13,35\% dei dipendenti totali). In Figura \ref{fig:promotion}, invece,
 rapportiamo ciascun dipendente al fatto che questo sia stato promosso negli ultimi $5$ anni oppure no. Possiamo
 ricavare un'informazione importante: la gran parte degli impiegati che hanno lasciato l'azienda non ha avuto una
-promozione negli ultimi $5$ anni, a parte $19$ impiegati che è stata promossa (circa il 0.5\%, invece circa il
-0,13\% dei dipendenti totali) , praticamente impercettibili alla vista del grafico. Degli impiegati rimasti, in
-$300$ hanno ottenuto una promozione su $11428$ di quelli rimasti (circa il 2,62\% di quelli rimasti e circa il
+promozione negli ultimi $5$ anni, a parte $19$ impiegati che è stata promossa (circa il 0.5\% ossia circa il
+0,13\% dei dipendenti totali), praticamente impercettibili alla vista nel grafico. Degli impiegati rimasti, in
+$300$ hanno ottenuto una promozione su $11428$ (circa il 2,62\% di quelli rimasti e circa il
 2\% dei dipendenti totali). Una volta studiate le distribuzioni categoriche continuiamo l'analisi con gli altri
 attributi. Cominciamo dalla distribuzione del salario, rappresentata in Figura \ref{fig:salary}.
 Le percentuali che vengono indicate in Tabella \ref{tab:salary} non sono in base alla totalità dei dipendenti ma
-riguardano solo il tipo di dipendente definito dalla colonna di appartenenza. Proseguiamo poi con il rapporto
-tra dipendenti ancora in azienda e non, e il numero delle ore di lavoro in media. L'informazione chiave che
+riguardano solo il tipo di dipendente definito dalla colonna di appartenenza. In Figura
+\ref{fig:average_montly_hours} troviamo il rapporto tra dipendenti ancora in azienda e non, e il numero delle
+ore di lavoro in media. Analizzando Figura \ref{fig:num_proj}, l'informazione chiave che
 risulta da questa distribuzione è che la totalità dei dipendenti che hanno fatto $7$ progetti hanno lasciato
 l'azienda, questo è quindi sicuramente uno dei fattori per cui i dipendenti potrebbero lasciare l'azienda.
 L'altro valore che risalta è i dipendenti che hanno fatto solo $2$ progetti, in numero di $1567$, ovvero quasi
 il $44\%$ di quelli che hanno lasciato l'azienda. Di questi dovremo capire quali motivazioni li hanno portati a
 lasciare l'azienda, se il poco carico di lavoro o altre circostanze lavorative.
-\begin{figure}[t!]
+\begin{figure}[ht!]
   \centering
   \begin{subfigure}{0.4\textwidth}
     \resizebox{\textwidth}{!}{
@@ -228,10 +223,9 @@ lasciare l'azienda, se il poco carico di lavoro o altre circostanze lavorative.
   informazioni riguardo al numero di dipendenti per numero di progetti (\ref{tab:num_proj}).}
   \label{fig:dist_num_proj}
 \end{figure}
-In Figura \ref{fig:dist_num_proj} troviamo le informazioni relative alla distribuzione della variabile
-\textit{Number Project}. Proseguiamo poi mostrando il tempo di impiego di lavoro nell'azienda, in Figura
-\ref{fig:dist}.
-\begin{figure}[b!]
+Proseguiamo poi mostrando il tempo di impiego di lavoro nell'azienda, in Figura
+\ref{fig:t_spend_comp}.
+\begin{figure}[hb!]
   \centering
   \begin{subfigure}{0.4\textwidth}
     \resizebox{\textwidth}{!}{
@@ -301,7 +295,12 @@ In Figura \ref{fig:dist_num_proj} troviamo le informazioni relative alla distrib
   tabelle (\ref{tab:sat_lev} e \ref{tab:last_ev}).}
   \label{fig:dist}
 \end{figure}
-Si può rilevare un fattore importante, dal settimo anno in azienda non abbiamo dipendenti che hanno lasciato l'azienda. Inoltre la maggior parte del numero di dipendenti che hanno lasciato l'azienda lo abbiamo in un range dai $3$ ai $5$ anni come fattore critico, con un massimo di $1587$ dipendenti, ovvero quasi il $44.4\%$ di quelli che lasciano l'azienda, nel terzo anno di lavoro. A questo punto è giusto analizzare il livello di soddisfazione dei dipendenti presente e quello della ultima valutazione:
+Si può rilevare un fattore importante, dal settimo anno in azienda non abbiamo dipendenti che hanno lasciato
+l'azienda. Inoltre la maggior parte del numero di dipendenti che hanno lasciato l'azienda lo abbiamo in un range
+dai $3$ ai $5$ anni come fattore critico, con un massimo di $1587$ dipendenti, ovvero quasi il $44.4\%$ di
+quelli che lasciano l'azienda, nel terzo anno di lavoro. A questo punto è giusto analizzare il livello di
+soddisfazione dei dipendenti presente e quello della ultima valutazione, rappresentati in Figura
+\ref{fig:sat_lev} e Figura \ref{fig:last_ev}.
 % section distribution_of_the_variables_and_statistics (end)
 \section{Data quality} % (fold)
 \label{sec:assessing_data_quality}
