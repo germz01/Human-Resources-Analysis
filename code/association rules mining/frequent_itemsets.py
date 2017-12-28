@@ -27,8 +27,8 @@ DS['AMHGroup'] = pd.cut(DS['Average_Montly_Hours'], bins=sturges(),
                         right=False, labels=range(0, 15))
 DS['LEGroup'] = pd.cut(DS['LE_100'], bins=sturges(), right=False,
                        labels=range(0, 15))
-DS['SLGroup'] = pd.cut(DS['SL_100'], bins=sturges(), right=False,
-                       labels=range(0, 15))
+DS['SLGroup'] = pd.cut(DS['SL_100'], bins=[0, 33, 66, 100], right=True,
+                       include_lowest=True, labels=['low', 'medium', 'high'])
 DS['Work_Accident'] = DS['Work_Accident'].map({1: 'Y',
                                               0: 'N'}).astype(str) + '_WA'
 DS['Left'] = DS['Left'].map({1: 'Y', 0: 'N'}).astype(str) + '_L'
