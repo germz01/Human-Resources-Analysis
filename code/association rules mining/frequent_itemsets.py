@@ -25,8 +25,10 @@ DS['SL_100'] = DS['Satisfaction_Level']*100
 DS['LE_100'] = DS['Last_Evaluation']*100
 DS['AMHGroup'] = pd.cut(DS['Average_Montly_Hours'], bins=sturges(),
                         right=False, labels=range(0, 15))
-DS['LEGroup'] = pd.cut(DS['LE_100'], bins=[0, 33, 66, 100], right=True,
-                       include_lowest=True, labels=['low', 'medium', 'high'])
+DS['LEGroup'] = pd.cut(DS['SL_100'], bins=[0, 45, 57, 77, 100], right=True,
+                       include_lowest=True,
+                       labels=['insufficient', 'sufficient', 'good',
+                       'very good'])
 DS['SLGroup'] = pd.cut(DS['SL_100'], bins=[0, 33, 66, 100], right=True,
                        include_lowest=True, labels=['low', 'medium', 'high'])
 DS['Work_Accident'] = DS['Work_Accident'].map({1: 'Y',
