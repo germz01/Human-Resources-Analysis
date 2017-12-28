@@ -82,14 +82,14 @@ distribuzione dei dipendenti rispetto alle variabili categoriche escludendo la d
 rispetto a left in quanto già esplicata in precedenza nella Sezione \ref{sec:obiettivi}.
 \begin{figure}[t!]
   \centering
-  \begin{subfigure}{0.45\textwidth}
+  \begin{subfigure}{0.3\textwidth}
     \resizebox{\textwidth}{!}{
       \includegraphics{images/newplottedvariables/sales.pdf}
     }
     \caption{}
     \label{fig:sales}
   \end{subfigure}
-  \begin{subtable}{0.45\textwidth}
+  \begin{subtable}{0.3\textwidth}
     \resizebox{\textwidth}{!}{
       \begin{tabular}{| c | c | c | c |} \hline
         \textbf{Department} & \textbf{Stayed} & \textbf{Left} &  \textbf{TotDep} \\ \hline
@@ -109,8 +109,28 @@ rispetto a left in quanto già esplicata in precedenza nella Sezione \ref{sec:ob
     \caption{}
     \label{tab:sales}
   \end{subtable}
+  \begin{subfigure}{0.4\textwidth}
+    \resizebox{\textwidth}{!}{
+      \includegraphics{images/newplottedvariables/average_montly_hours.pdf}
+    }
+    \caption{}
+    \label{fig:average_montly_hours}
+  \end{subfigure}
+  \begin{subtable}{0.4\textwidth}
+    \resizebox{\textwidth}{!}{
+      \begin{tabular}{| c | c | c |} \hline
+        \textbf{AverageMH} & \textbf{Stayed} & \textbf{Left} \\ \hline
+        Media & 199.06 & 207.42 \\ \hline
+        Dev.std. & 45.68  & 61.20 \\ \hline
+        min,max & 96 , 287  &  126 , 310  \\ \hline
+      \end{tabular}
+    }
+    \caption{}
+    \label{tab:avg_work}
+  \end{subtable}
   \caption{Distribuzione relativa alla variabile \textit{Departments} (\ref{fig:sales}), e relativa
-  distribuzione dei dipendenti per ogni dipartimento (\ref{tab:sales}).}
+  distribuzione dei dipendenti per ogni dipartimento (\ref{tab:sales}), distribuzione relativa alla variabile
+  \textit{Average Montly Hours} (\ref{fig:average_montly_hours}) e relativa tabella (\ref{tab:avg_work}).}
   \label{fig:dist_sales}
 \end{figure}
 \begin{figure}[b!]
@@ -149,6 +169,12 @@ rispetto a left in quanto già esplicata in precedenza nella Sezione \ref{sec:ob
     \caption{}
     \label{tab:salary}
   \end{subtable}
+% \begin{minipage}{8.5cm}
+% \begin{table}[H]
+%         \centering
+%
+% \end{table}
+% \end{minipage}
   \caption{Distribuzioni relative alla variabile \textit{Work Accident} (\ref{fig:work_accident}), alla
   variabile \textit{Promotion Last 5 Years} (\ref{fig:promotion}), alla variabile \textit{Salary}
   (\ref{fig:salary}) e alla relativa distribuzione del salario per dipendente (\ref{tab:salary}).}
@@ -202,26 +228,6 @@ lasciare l'azienda, se il poco carico di lavoro o altre circostanze lavorative.
   informazioni riguardo al numero di dipendenti per numero di progetti (\ref{tab:num_proj}).}
   \label{fig:dist_num_proj}
 \end{figure}
-% \begin{minipage}{8.3cm}
-%    \centering
-%     \begin{figure}[H]
-%         \includegraphics[width=\textwidth]{images/newplottedvariables/average_montly_hours.pdf}
-%         \caption{Distribuzione relativa alla variabile \textit{Average Montly Hours}}
-%         \label{fig:average_montly_hours}
-% \end{figure}
-% \end{minipage}
-% \begin{minipage}{8.5cm}
-% \begin{table}[H]
-%         \centering
-%         \begin{tabular}{| c | c | c |} \hline
-%                    \textbf{AverageMH} & \textbf{Stayed} & \textbf{Left} \\ \hline
-%             Media & 199.06 & 207.42 \\ \hline
-%             Dev.std. & 45.68	& 61.20 \\ \hline
-%             min,max & 96 , 287  &  126 , 310	\\ \hline
-%         \end{tabular}
-%         \label{tab:avg_work}
-% \end{table}
-% \end{minipage}
 In Figura \ref{fig:dist_num_proj} troviamo le informazioni relative alla distribuzione della variabile
 \textit{Number Project}. Proseguiamo poi mostrando il tempo di impiego di lavoro nell'azienda, in Figura
 \ref{fig:dist}.
