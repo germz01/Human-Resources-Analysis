@@ -223,33 +223,39 @@ lasciare l'azienda, se il poco carico di lavoro o altre circostanze lavorative.
 % \end{table}
 % \end{minipage}
 In Figura \ref{fig:dist_num_proj} troviamo le informazioni relative alla distribuzione della variabile
-\textit{Number Project}. Per proseguire con il tempo di impiego di lavoro nell'azienda:\\
-\begin{minipage}{8.3cm}
-   \centering
-    \begin{figure}[H]
-        \includegraphics[width=\textwidth]{images/newplottedvariables/time_spend_company.pdf}
-        \caption{Distribuzione relativa alla variabile \textit{Time Spend Company}}
-        \label{fig:t_spend_comp}
+\textit{Number Project}. Proseguiamo poi mostrando il tempo di impiego di lavoro nell'azienda, in Figura
+\ref{fig:dist}.
+\begin{figure}[b!]
+  \centering
+  \begin{subfigure}{0.4\textwidth}
+    \resizebox{\textwidth}{!}{
+      \includegraphics{images/newplottedvariables/time_spend_company.pdf}
+    }
+    \caption{}
+    \label{fig:t_spend_comp}
+  \end{subfigure}
+  \begin{subtable}{0.4\textwidth}
+    \resizebox{\textwidth}{!}{
+      \begin{tabular}{| c | c | c |} \hline
+        \textbf{TimeSpendCompany} & \textbf{Stayed} & \textbf{Left}  \\ \hline
+        2 & 3191 & 53 \\ \hline
+        3 & 4857 & 1587\\ \hline
+        4 & 1667 & 890 \\ \hline
+        5 & 640 & 833 \\ \hline
+        6 & 509 & 209 \\ \hline
+        7 & 188 & 0   \\ \hline
+        8 & 162 & 0   \\ \hline
+        10 & 214 & 0   \\ \hline
+      \end{tabular}
+    }
+    \caption{}
+    \label{tab:t_spend_comp}
+  \end{subtable}
+  \caption{Distribuzione relativa alla variabile \textit{Time Spend Company} (\ref{fig:t_spend_comp}), e relative
+  informazioni sui dipendenti (\ref{tab:t_spend_comp}).}
+  \label{fig:dist}
 \end{figure}
-\end{minipage}
-\begin{minipage}{8.5cm}
-\begin{table}[H]
-        \centering
-        \begin{tabular}{| c | c | c |} \hline
-                   \textbf{TimeSpendCompany} & \textbf{Stayed} & \textbf{Left}  \\ \hline
-            2 & 3191 & 53 \\ \hline
-            3 & 4857 & 1587\\ \hline
-            4 & 1667 & 890 \\ \hline
-	    5 & 640 & 833 \\ \hline
-	    6 & 509 & 209 \\ \hline
-	    7 & 188 & 0   \\ \hline
-	    8 & 162 & 0   \\ \hline
-	    10 & 214 & 0   \\ \hline
-        \end{tabular}
-        \label{tab:t_spend_comp}
-\end{table}
-\end{minipage}
-\\Si può rilevare un fattore importante, dal settimo anno in azienda non abbiamo dipendenti che hanno lasciato l'azienda. Inoltre la maggior parte del numero di dipendenti che hanno lasciato l'azienda lo abbiamo in un range dai $3$ ai $5$ anni come fattore critico, con un massimo di $1587$ dipendenti, ovvero quasi il $44.4\%$ di quelli che lasciano l'azienda, nel terzo anno di lavoro.\\A questo punto è giusto analizzare il livello di soddisfazione dei dipendenti presente e quello della ultima valutazione:\\
+Si può rilevare un fattore importante, dal settimo anno in azienda non abbiamo dipendenti che hanno lasciato l'azienda. Inoltre la maggior parte del numero di dipendenti che hanno lasciato l'azienda lo abbiamo in un range dai $3$ ai $5$ anni come fattore critico, con un massimo di $1587$ dipendenti, ovvero quasi il $44.4\%$ di quelli che lasciano l'azienda, nel terzo anno di lavoro.\\A questo punto è giusto analizzare il livello di soddisfazione dei dipendenti presente e quello della ultima valutazione:\\
 
 \begin{minipage}{8.3cm}
    \centering
