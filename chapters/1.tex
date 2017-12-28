@@ -80,36 +80,39 @@ un'analisi accurata che contraddistingue i dipendenti che lavorano nell'azienda,
 quelli che invece la hanno lasciata, rappresentati dal colore rosso. Prima di tutto abbiamo studiato la
 distribuzione dei dipendenti rispetto alle variabili categoriche escludendo la distribuzione dei dipendenti
 rispetto a left in quanto già esplicata in precedenza nella Sezione \ref{sec:obiettivi}.
-\begin{minipage}{7.8cm}
-   \centering
-    \begin{figure}[H]
-        \includegraphics[width=\textwidth]{images/newplottedvariables/sales.pdf}
-        \caption{Distribuzione relativa alla variabile \textit{Departments}}
-        \label{fig:sales}
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}{0.45\textwidth}
+    \resizebox{\textwidth}{!}{
+      \includegraphics{images/newplottedvariables/sales.pdf}
+    }
+    \caption{}
+    \label{fig:sales}
+  \end{subfigure}
+  \begin{subtable}{0.45\textwidth}
+    \resizebox{\textwidth}{!}{
+      \begin{tabular}{| c | c | c | c |} \hline
+        \textbf{Department} & \textbf{Stayed} & \textbf{Left} &  \textbf{TotDep} \\ \hline
+        1 Sales  & 3126 & 1014 &  4140 \\ \hline
+        2 technical  & 2023 & 697 &  2720 \\ \hline
+        3 support  & 1674 & 555 & 2229  \\ \hline
+        4 IT  & 954 & 273 & 1227  \\ \hline
+        5 productMng  & 704 & 198 & 902  \\ \hline
+        6 marketing  & 655 & 203 & 858 \\ \hline
+        7 RandD  & 666 & 121 & 787 \\ \hline
+        8 accounting  & 563 & 204 & 767 \\ \hline
+        9 hr  & 524 & 215 & 739  \\ \hline
+        10 management & 539 & 91 &  630\\ \hline
+        Totale & 11428 & 3571 &  14999\\ \hline
+      \end{tabular}
+    }
+    \caption{}
+    \label{tab:sales}
+  \end{subtable}
+  \caption{Distribuzione relativa alla variabile \textit{Departments} (\ref{fig:sales}), e relativa
+  distribuzione dei dipendenti per ogni dipartimento (\ref{tab:sales}).}
+  \label{fig:dist_sales}
 \end{figure}
-\end{minipage}
-\begin{minipage}{8.5cm}
-\begin{table}[H]
-        \centering
-        \begin{tabular}{| c | c | c | c |} \hline
-            \textbf{Department} & \textbf{Stayed} & \textbf{Left} &  \textbf{TotDep} \\ \hline
-            1 Sales  & 3126 & 1014 &  4140 \\ \hline
-            2 technical  & 2023 & 697 &  2720 \\ \hline
-            3 support  & 1674 & 555 & 2229  \\ \hline
-            4 IT  & 954 & 273 & 1227  \\ \hline
-            5 productMng  & 704 & 198 & 902  \\ \hline
-            6 marketing  & 655 & 203 & 858 \\ \hline
-            7 RandD  & 666 & 121 & 787 \\ \hline
-	  8 accounting  & 563 & 204 & 767 \\ \hline
-           9 hr  & 524 & 215 & 739  \\ \hline
-	 10 management & 539 & 91 &  630\\ \hline
-	 Totale & 11428 & 3571 &  14999\\ \hline
-        \end{tabular}
-        \label{tab:sales}
-	 \caption{Distribuzione dipendenti per dipartimento.}
-\end{table}
-\end{minipage}
-\\
 \begin{minipage}{7.8cm}
    \centering
     \begin{figure}[H]
