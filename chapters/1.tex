@@ -129,8 +129,29 @@ rispetto a left in quanto già esplicata in precedenza nella Sezione \ref{sec:ob
     \caption{}
     \label{fig:promotion}
   \end{subfigure}
-  \caption{Distribuzioni relative alla variabile \textit{Work Accident} (\ref{fig:work_accident}) e alla
-  variabile \textit{Promotion Last 5 Years} (\ref{fig:promotion}).}
+  \begin{subfigure}{0.4\textwidth}
+    \resizebox{\textwidth}{!}{
+      \includegraphics{images/newplottedvariables/salary.pdf}
+    }
+    \caption{}
+    \label{fig:salary}
+  \end{subfigure}
+  \begin{subtable}{0.4\textwidth}
+    \resizebox{\textwidth}{!}{
+      \begin{tabular}{| c | c | c |} \hline
+        \textbf{Salary} & \textbf{Stayed} & \textbf{Left}  \\ \hline
+        Low & 5144 ($\sim$45.02\%) & 2172 ($\sim$60.8\%) \\ \hline
+        Medium & 5129 ($\sim$44.88\%)  & 1317 ($\sim$36.9\%) \\ \hline
+        High & 1155 ($\sim$10.1\%)  & 82 ($\sim$ 2.3\%) \\ \hline
+      \end{tabular}
+
+    }
+    \caption{}
+    \label{tab:salary}
+  \end{subtable}
+  \caption{Distribuzioni relative alla variabile \textit{Work Accident} (\ref{fig:work_accident}), alla
+  variabile \textit{Promotion Last 5 Years} (\ref{fig:promotion}), alla variabile \textit{Salary}
+  (\ref{fig:salary}) e alla relativa distribuzione del salario per dipendente (\ref{tab:salary}).}
   \label{fig:dist_work_promotion}
 \end{figure}
 In Figura \ref{fig:work_accident} si studia il rapporto tra i dipendenti e la presenza o meno di un infortunio
@@ -144,31 +165,10 @@ promozione negli ultimi $5$ anni, a parte $19$ impiegati che è stata promossa (
 0,13\% dei dipendenti totali) , praticamente impercettibili alla vista del grafico. Degli impiegati rimasti, in
 $300$ hanno ottenuto una promozione su $11428$ di quelli rimasti (circa il 2,62\% di quelli rimasti e circa il
 2\% dei dipendenti totali). Una volta studiate le distribuzioni categoriche continuiamo l'analisi con gli altri
-attributi. Cominciamo dalla distribuzione del salario, rappresentata in Figura \ref{fig:salary}.\\
-\begin{minipage}{7.8cm}
-   \centering
-    \begin{figure}[H]
-        \includegraphics[width=\textwidth]{images/newplottedvariables/salary.pdf}
-        \caption{Distribuzione relativa alla variabile \textit{Salary}}
-        \label{fig:salary}
-\end{figure}
-\end{minipage}
-\begin{minipage}{8.5cm}
-\begin{table}[H]
-        \centering
-        \begin{tabular}{| c | c | c |} \hline
-                   \textbf{Salary} & \textbf{Stayed} & \textbf{Left}  \\ \hline
-            Low & 5144 ($\sim$45.02\%) & 2172 ($\sim$60.8\%) \\ \hline
-            Medium & 5129 ($\sim$44.88\%)  & 1317 ($\sim$36.9\%) \\ \hline
-           High & 1155 ($\sim$10.1\%)  & 82 ($\sim$ 2.3\%) \\ \hline
-        \end{tabular}
-        \caption{Distribuzione salario per dipendente.}
-        \label{tab:salary}
-\end{table}
-\end{minipage}
-\\ \\Le percentuali che vengono indicate in Tabella \ref{tab:salary} non sono in base alla totalità dei
-dipendenti ma riguardano solo il tipo di dipendente definito dalla colonna di appartenenza.\\\\
-Proseguiamo poi con il rapporto tra dipendenti ancora in azienda e non, e il numero delle ore di lavoro in media.
+attributi. Cominciamo dalla distribuzione del salario, rappresentata in Figura \ref{fig:salary}.
+Le percentuali che vengono indicate in Tabella \ref{tab:salary} non sono in base alla totalità dei dipendenti ma
+riguardano solo il tipo di dipendente definito dalla colonna di appartenenza. Proseguiamo poi con il rapporto
+tra dipendenti ancora in azienda e non, e il numero delle ore di lavoro in media.
 \begin{minipage}{8.3cm}
    \centering
     \begin{figure}[H]
