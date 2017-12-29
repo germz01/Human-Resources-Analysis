@@ -79,7 +79,38 @@ soglia pari a $20$, evitiamo quindi di descriverli.
 % section discussion_of_the_most_interesting_frequent_patterns (end)
 \section{Association rules extraction with different values of confidence }
 
+Inizialmente la ricerca delle associazioni è stato eseguita tramite l'algoritmo a priori utilizzando un un supporto minimo pari al $20\%$.
 
+\begin{comment}
+Uno degli obiettivi principali delle analisi contenute in questo report è capire il perchè una parte consistente dei dipendenti
+ha lasciato l'azienda. Nel cercare le possibili associazioni significative si tiene conto di questo obiettivo:
+la percentuale di dipendenti che hanno lasciato l'azienda corrisponde al $24\%$ del totale.
+Può essere considerato significativa come minimo una regola che riguardi il $10\%$ dei dipendenti che hanno lasciato l'azienda
+\end{comment}
+
+
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{../images/rules/rules_supp20.pdf}
+  \caption{Grafico,mettere LEGENDA PER COLORE E SIZE (Support)}
+  \label{fig:rules_supp20}
+\end{figure}
+
+\begin{table}[h!]
+  \centering
+  \scalebox{0.7}{
+\input{data/rules_supp20.txt}  
+}
+\caption{Association rules per}
+\end{table}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\textwidth]{../images/rules/rules_supp5.pdf}
+  \caption{Grafico,mettere LEGENDA PER COLORE E SIZE (Support)}
+  \label{fig:rules_supp5}
+\end{figure}
 
 
 \section{Discussion of the most interesting rules }
@@ -87,6 +118,9 @@ Abbiamo inoltre rilevato delle rules che nonostante non siano frequenti sono com
 -
 -
 Da queste possiamo ricavare che...
+
+
+
 
 
 
