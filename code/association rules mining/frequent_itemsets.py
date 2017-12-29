@@ -1,16 +1,9 @@
 import csv
-import math
 import pandas as pd
 from fim import apriori
 
 n=14999
 k = math.ceil(math.log(n, 2)) + 1
-
-def sturges(n=14999):
-    k = math.ceil(math.log(n, 2)) + 1
-
-    return int(k)
-
 
 print 'IMPORTING THE DATA SET'
 
@@ -26,12 +19,13 @@ DS['Department'].replace(['sales', 'technical', 'support', 'IT',
 
 DS['SL_100'] = DS['Satisfaction_Level']*100
 DS['LE_100'] = DS['Last_Evaluation']*100
-DS['AMHGroup'] = pd.cut(DS['Average_Montly_Hours'], bins=sturges(),
-                        right=False, labels=range(0, 15))
-DS['LEGroup'] = pd.cut(DS['LE_100'], bins=sturges(), right=False,
-                       labels=range(0, 15))
-DS['SLGroup'] = pd.cut(DS['SL_100'], bins=sturges(), right=False,
-                       labels=range(0, 15))
+DS['AMHGroup'] = pd.cut(DS['Average_Montly_Hours'], bins=[0, 200, 300],
+                        right=False, labels=['standard', 'intensive'])
+DS['LEGroup'] = pd.cut(DS['SL_100'], bins=[0, 45, 57, 77, 100], right=False,
+                       labels=['insufficient', 'sufficient', 'good',
+                       'very good'])
+DS['SLGroup'] = pd.cut(DS['SL_100'], bins=[0, 33, 66, 100], right=False,
+                       labels=['low', 'medium', 'high'])
 DS['Work_Accident'] = DS['Work_Accident'].map({1: 'Y',
                                               0: 'N'}).astype(str) + '_WA'
 DS['Left'] = DS['Left'].map({1: 'Y', 0: 'N'}).astype(str) + '_L'
