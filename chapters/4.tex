@@ -5,7 +5,13 @@ algoritmo sui records, inoltre, per fornire un \textit{target} durante la costru
 \textit{Left} è stata separata dal data set fornito. Tutte le altre variabili sono state lasciate inalterate.
 \section{Learning of different decision trees} % (fold)
 \label{sec:learning_of_different_decision_trees}
-
+Durante la fase di costruzione vera e propia, abbiamo deciso di implementare due alberi distinti, differenziandoli
+nel modo in cui essi avrebbero dovuto scegliere lo \textit{split} migliore. Abbiamo perciò costruito un albero
+basato sull'indice \textit{Gini} come misura di impurità di un nodo, e un albero basato sull'uso
+dell'\textit{Entropia}. Inizialmente abbiamo costruito entrambi gli alberi senza imporre un limite sul numero di
+samples che un nodo avrebbe dovuto contenere, successivamente però, per evitare di incorrere nel noto fenomeno
+dell'\textit{overfitting}, abbiamo voluto esplorare le possibilità date dal consentire uno split solo se almeno il
+$10\%$ o il $20\%$ rispetto al numero totale di data objects
 % section learning_of_different_decision_trees (end)
 \section{Decision trees interpretation} % (fold)
 \label{sec:decision_trees_interpretation}

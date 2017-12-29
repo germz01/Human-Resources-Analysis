@@ -18,7 +18,8 @@ DS.drop(['Left'], axis=1, inplace=True)
 
 data = DS.as_matrix()
 
-clf = tree.DecisionTreeClassifier()
+clf = tree.DecisionTreeClassifier(criterion='gini', splitter='best',
+                                  min_samples_split=0.10)
 clf = clf.fit(data, target)
 
 dot_data = tree.export_graphviz(clf, out_file=None,
@@ -27,4 +28,16 @@ dot_data = tree.export_graphviz(clf, out_file=None,
                                 filled=True, rounded=True,
                                 special_characters=True)
 graph = graphviz.Source(dot_data)
-graph.render("../../images/classification/decision tree")
+graph.render("../../images/classification/decision_tree_gini")
+
+clf = tree.DecisionTreeClassifier(criterion='entropy', splitter='best')
+
+clf = clf.fit(data, target)
+
+dot_data = tree.export_graphviz(clf, out_file=None,
+                                feature_names=feature_names,
+                                class_names=True,
+                                filled=True, rounded=True,
+                                special_characters=True)
+graph = graphviz.Source(dot_data)
+graph.render("../../images/classification/decision_tree_entropy")
