@@ -19,7 +19,16 @@ dividento i data objects forniti tra test set e training set in percentuali ben 
 % section learning_of_different_decision_trees (end)
 \section{Decision trees interpretation} % (fold)
 \label{sec:decision_trees_interpretation}
-
+Tenendo i dettagli tecnici per le sezioni successive possiamo fare alcune considerazioni sugli alberi ottenuti
+applicando i parametri descritti in Sezione \ref{sec:learning_of_different_decision_trees}. Sia per l'albero
+basato sull'indice Gini che per quello basato sull'Entropia, la radice è rappresentata dalla variabile
+\textit{Satisfaction Level}, che divide i data objects tra coloro che hanno uno score $\le 0.465$ e coloro che
+hanno uno score $> 0.465$. Questa decisione è indicativa del fatto che l'utilizzo di tale variabile consente un
+primo split più redditizio rispetto alle altre variabili a disposizione. Come era lecito aspettarsi, gli alberi
+ottenuti, non imponendo un vincolo sul numero di samples in ogni nodo prima dello split, hanno un'altezza
+considerevole, tale altezza decresce in modo significativo applicando i vincoli esposti in Sezione
+\ref{sec:learning_of_different_decision_trees}, arrivando ad ottenere un albero di altezza $13$ per l'indice Gini
+e uno di altezza $11$ per l'Entropia.
 % section decision_trees_interpretation (end)
 \section{Decision trees validation with test and training set} % (fold)
 \label{sec:decision_trees_validation_with_test_and_training_set}
