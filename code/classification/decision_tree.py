@@ -1,7 +1,10 @@
 import pandas as pd
+import graphviz
 from sklearn import tree
 
-DS = pd.read_csv(filepath_or_buffer='../../data/df_formatted.csv')
+DS = pd.read_csv(filepath_or_buffer='../../data/df_formatted_ordered.csv')
+feature_names = DS.columns.tolist()
+feature_names.pop()
 
 DS['Salary'].replace(['low', 'medium', 'high'], [0, 1, 2], inplace=True)
 DS['Department'].replace(['sales', 'technical', 'support', 'IT',
@@ -17,3 +20,11 @@ data = DS.as_matrix()
 
 clf = tree.DecisionTreeClassifier()
 clf = clf.fit(data, target)
+
+dot_data = tree.export_graphviz(clf, out_file=None,
+                                feature_names=feature_names,
+                                class_names=True,
+                                filled=True, rounded=True,
+                                special_characters=True)
+graph = graphviz.Source(dot_data)
+graph.render("../../images/classification/decision tree")
