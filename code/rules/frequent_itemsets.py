@@ -1,4 +1,5 @@
 import csv
+import numpy as np
 import pandas as pd
 from fim import apriori
 
@@ -77,14 +78,15 @@ def extract_rules(supp,conf):
     #report_list = report.split()
     for target in ['r']:
         out = apriori(records, supp=supp, conf=conf,
-                      zmin=2,target=target, report=report)
+                      zmin=2,target=target, report=report,
+                      mode='o')
 
     ###########################################################
     ## scrittura su file        
     fieldnames = ['Consequent', 'Antecedent',
                   'Supp','Conf','Lift']
 
-    fname = '../../data/rules_supp{}_conf{}.csv'.format(supp,conf)
+    fname = '../../data/rules/rules_supp{}_conf{}.csv'.format(supp,conf)
 
     with open(fname, 'wb') as f:
         csv_writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter=',')
@@ -106,7 +108,29 @@ def extract_rules(supp,conf):
 supp = 20
 conf= 60
 
-extract_rules(5,60)
-extract_rules(5,80)
-extract_rules(20,60)
+par = [20,]
+
+
+
+supp=20
+conf_range=np.arange(50,105,5)
+
+for conf in conf_range:
+    extract_rules(supp,conf)
+
+
+supp=10
+conf_range=np.arange(50,105,5)
+
+for conf in conf_range:
+    extract_rules(supp,conf)
+    
+
+supp = 5
+conf_range=np.arange(50,105,5)
+for conf in conf_range:
+    extract_rules(supp,conf)
+
+
+
 

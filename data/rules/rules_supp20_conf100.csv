@@ -1,0 +1,9 @@
+Consequent,Antecedent,Supp,Conf,Lift
+high_SL,"('very good_LE', 'N_L', 'N_WA', 'N_P')",0.22,1.0,2.09
+high_SL,"('very good_LE', 'N_L', 'N_WA')",0.23,1.0,2.09
+high_SL,"('very good_LE', 'N_L', 'N_P')",0.27,1.0,2.09
+high_SL,"('very good_LE', 'N_L')",0.27,1.0,2.09
+high_SL,"('very good_LE', 'N_WA', 'N_P')",0.27,1.0,2.09
+high_SL,"('very good_LE', 'N_WA')",0.27,1.0,2.09
+high_SL,"('very good_LE', 'N_P')",0.31,1.0,2.09
+high_SL,"('very good_LE',)",0.32,1.0,2.09

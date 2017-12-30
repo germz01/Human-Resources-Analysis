@@ -1,0 +1,64 @@
+Consequent,Antecedent,Supp,Conf,Lift
+insufficient_LE,"('low_SL', 'N_WA', 'N_P')",0.12,1.0,3.86
+insufficient_LE,"('low_SL', 'N_WA')",0.12,1.0,3.86
+insufficient_LE,"('low_SL', 'N_P')",0.14,1.0,3.86
+insufficient_LE,"('low_SL',)",0.14,1.0,3.86
+medium_SL,"('sufficient_LE', 'N_L', 'N_WA', 'N_P')",0.11,1.0,2.65
+medium_SL,"('sufficient_LE', 'N_L', 'N_WA')",0.11,1.0,2.65
+medium_SL,"('sufficient_LE', 'N_L', 'N_P')",0.13,1.0,2.65
+medium_SL,"('sufficient_LE', 'N_L')",0.13,1.0,2.65
+medium_SL,"('sufficient_LE', 'N_WA', 'N_P')",0.12,1.0,2.65
+medium_SL,"('sufficient_LE', 'N_WA')",0.13,1.0,2.65
+medium_SL,"('sufficient_LE', 'N_P')",0.15,1.0,2.65
+medium_SL,"('sufficient_LE',)",0.15,1.0,2.65
+high_SL,"('4_NP', 'very good_LE', 'N_L')",0.1,1.0,2.09
+high_SL,"('4_NP', 'very good_LE', 'N_WA')",0.1,1.0,2.09
+high_SL,"('4_NP', 'very good_LE', 'N_P')",0.12,1.0,2.09
+high_SL,"('4_NP', 'very good_LE')",0.12,1.0,2.09
+high_SL,"('very good_LE', '3_T', 'N_L', 'N_WA', 'N_P')",0.1,1.0,2.09
+high_SL,"('very good_LE', '3_T', 'N_L', 'N_WA')",0.11,1.0,2.09
+high_SL,"('very good_LE', '3_T', 'N_L', 'N_P')",0.12,1.0,2.09
+high_SL,"('very good_LE', '3_T', 'N_L')",0.13,1.0,2.09
+high_SL,"('very good_LE', '3_T', 'N_WA', 'N_P')",0.1,1.0,2.09
+high_SL,"('very good_LE', '3_T', 'N_WA')",0.11,1.0,2.09
+high_SL,"('very good_LE', '3_T', 'N_P')",0.12,1.0,2.09
+high_SL,"('very good_LE', '3_T')",0.13,1.0,2.09
+high_SL,"('very good_LE', '1_S', 'N_L', 'N_WA')",0.1,1.0,2.09
+high_SL,"('very good_LE', '1_S', 'N_L', 'N_P')",0.12,1.0,2.09
+high_SL,"('very good_LE', '1_S', 'N_L')",0.12,1.0,2.09
+high_SL,"('very good_LE', '1_S', 'N_WA', 'N_P')",0.12,1.0,2.09
+high_SL,"('very good_LE', '1_S', 'N_WA')",0.12,1.0,2.09
+high_SL,"('very good_LE', '1_S', 'N_P')",0.14,1.0,2.09
+high_SL,"('very good_LE', '1_S')",0.14,1.0,2.09
+high_SL,"('very good_LE', '0_S', 'N_L', 'N_WA', 'N_P')",0.1,1.0,2.09
+high_SL,"('very good_LE', '0_S', 'N_L', 'N_WA')",0.1,1.0,2.09
+high_SL,"('very good_LE', '0_S', 'N_L', 'N_P')",0.12,1.0,2.09
+high_SL,"('very good_LE', '0_S', 'N_L')",0.12,1.0,2.09
+high_SL,"('very good_LE', '0_S', 'N_WA', 'N_P')",0.13,1.0,2.09
+high_SL,"('very good_LE', '0_S', 'N_WA')",0.13,1.0,2.09
+high_SL,"('very good_LE', '0_S', 'N_P')",0.15,1.0,2.09
+high_SL,"('very good_LE', '0_S')",0.15,1.0,2.09
+high_SL,"('very good_LE', 'intensive_H', 'N_L', 'N_WA', 'N_P')",0.11,1.0,2.09
+high_SL,"('very good_LE', 'intensive_H', 'N_L', 'N_WA')",0.12,1.0,2.09
+high_SL,"('very good_LE', 'intensive_H', 'N_L', 'N_P')",0.14,1.0,2.09
+high_SL,"('very good_LE', 'intensive_H', 'N_L')",0.14,1.0,2.09
+high_SL,"('very good_LE', 'intensive_H', 'N_WA', 'N_P')",0.16,1.0,2.09
+high_SL,"('very good_LE', 'intensive_H', 'N_WA')",0.16,1.0,2.09
+high_SL,"('very good_LE', 'intensive_H', 'N_P')",0.18,1.0,2.09
+high_SL,"('very good_LE', 'intensive_H')",0.19,1.0,2.09
+high_SL,"('very good_LE', 'standard_H', 'N_L', 'N_WA', 'N_P')",0.11,1.0,2.09
+high_SL,"('very good_LE', 'standard_H', 'N_L', 'N_WA')",0.11,1.0,2.09
+high_SL,"('very good_LE', 'standard_H', 'N_L', 'N_P')",0.13,1.0,2.09
+high_SL,"('very good_LE', 'standard_H', 'N_L')",0.13,1.0,2.09
+high_SL,"('very good_LE', 'standard_H', 'N_WA', 'N_P')",0.11,1.0,2.09
+high_SL,"('very good_LE', 'standard_H', 'N_WA')",0.11,1.0,2.09
+high_SL,"('very good_LE', 'standard_H', 'N_P')",0.13,1.0,2.09
+high_SL,"('very good_LE', 'standard_H')",0.13,1.0,2.09
+high_SL,"('very good_LE', 'N_L', 'N_WA', 'N_P')",0.22,1.0,2.09
+high_SL,"('very good_LE', 'N_L', 'N_WA')",0.23,1.0,2.09
+high_SL,"('very good_LE', 'N_L', 'N_P')",0.27,1.0,2.09
+high_SL,"('very good_LE', 'N_L')",0.27,1.0,2.09
+high_SL,"('very good_LE', 'N_WA', 'N_P')",0.27,1.0,2.09
+high_SL,"('very good_LE', 'N_WA')",0.27,1.0,2.09
+high_SL,"('very good_LE', 'N_P')",0.31,1.0,2.09
+high_SL,"('very good_LE',)",0.32,1.0,2.09
