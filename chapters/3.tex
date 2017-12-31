@@ -89,7 +89,7 @@ Le regole cercate con l'algoritmo utilizzato hanno un solo item come parte conse
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=\textwidth]{../images/rules/andamentonumero.pdf}  \caption{Grafico,mettere LEGENDA PER COLORE E SIZE (Support)}
+  \includegraphics[width=0.7\textwidth]{../images/rules/andamentonumero.pdf}  \caption{Grafico,mettere LEGENDA PER COLORE E SIZE (Support)}
   \label{fig:rules-number}
 \end{figure}
 
@@ -129,6 +129,33 @@ Usando $MinSupp=5\%$ naturalmente il numero di associazioni trovate è notevolme
 \caption{Association rules per}
 \end{table}
 
+
+\subsection{Regole per impiegati che hanno lasciato (sistemare titolo)}
+
+\todo[inline]{SCRIVERE LA SPIEGAZIONE, tabelle successive sono poi da togliere}
+Tra le regole venute fuori con $MinSupp=5$ ho estratto quelle che hanno come parte conseguente
+gli impiegati che hanno lasciato, le ho poi filtrate per alta confidence, $Conf>0.90$,
+ottenendo circa 80 regole, per rappresentarle e non elencarle tutte ho fatto il seguente grafico,
+in cui è rappresentato il numero di regole in cui compare ciascun item nella parte antecedente.
+SPIEGARE MEGLIO, DA FINIRE
+
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.7\textwidth]{../images/rules/rules_left.pdf}
+  \caption{Grafico,mettere LEGENDA PER COLORE E SIZE (Support)}
+  \label{fig:rules_left}
+\end{figure}
+
+\begin{table}[h!]
+  \centering
+  \scalebox{0.7}{
+\input{data/rules/rules_left.txt}  
+}
+\caption{Association rules per}
+\end{table}
+
+
 \begin{table}[h!]
   \centering
   \scalebox{0.7}{
@@ -138,8 +165,8 @@ Usando $MinSupp=5\%$ naturalmente il numero di associazioni trovate è notevolme
 \end{table}
 
 
-
-
+\clearpage
+\newpage
 \section{Discussion of the most interesting rules }
 Abbiamo inoltre rilevato delle rules che nonostante non siano frequenti sono comunque interessanti per l'analisi che stiamo portando avanti. Queste sono:
 -
