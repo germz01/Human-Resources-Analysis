@@ -80,9 +80,14 @@ soglia pari a $20$, evitiamo quindi di descriverli.
 % section discussion_of_the_most_interesting_frequent_patterns (end)
 \section{Association rules extraction with different values of confidence }
 
-Inizialmente sono state cercate associazioni interessanti valide per un numero ampio di impiegati, fissando un alto supporto minimo, pari a $MinSupp = 20\%$, nella ricerca degli itemset frequenti con l'algoritmo \textit{apriori}.
-Oltre alla ricerca di regole abbastanza generali (con ampio supporto) si è considerato che uno degli obiettivi principali delle analisi contenute in questo report è capire il perchè una parte consistente dei dipendenti ha lasciato l'azienda. 
+\begin{itemize}
+\item Regole "generali'':
+inizialmente sono state cercate associazioni interessanti valide per un numero ampio di impiegati, fissando un alto supporto minimo, pari a $MinSupp = 20\%$, nella ricerca degli itemset frequenti con l'algoritmo \textit{apriori}.
+\item Regole "specifiche'':
+oltre alla ricerca di regole abbastanza generali (con ampio supporto) si è considerato che uno degli obiettivi principali delle analisi contenute in questo report è capire il perchè una parte consistente dei dipendenti ha lasciato l'azienda. 
 La percentuale di dipendenti che hanno lasciato l'azienda corrisponde al $24\%$ del totale, considerando come significativa una regola che riguardi almeno il $20\%$ dei dipendenti che hanno lasciato l'azienda, risulta un supporto minimo pari a circa $MinSupp=5\%$.
+\end{itemize}
+
 L'algoritmo a priori è stato eseguito dunque per entrambi i valori di $MinSupp$ indicati, variando la confidenza minima \textit{MinConf} per valori compresi tra $50-100\%$. In Fig. sono riportate il numero di regole ottenute, filtrate per valori di $Lift>1$, in funzione della confidenza.
 Le regole cercate con l'algoritmo utilizzato hanno un solo item come parte conseguente, per facilitare l'analisi e perchè...
 
@@ -118,7 +123,7 @@ analisi statistiche eseguite, inoltre il valore di $Lift$ non è così ampio. (�
 
 Usando $MinSupp=5\%$ naturalmente il numero di associazioni trovate è notevolmente superiore, e si possono osservare in Fig. REF regole con indice di $Lift$ che arriva a valori massimi di 6-7. Per valori del supporto superiori al $15\%$ il Lift è prossimo ad 1, tranne che per le regole discusse precedentemente.
 
-\todo[inline]{Manca da filtrare le regole con MinSupp=5 e commentare queste, ce ne sono alcune interessanti}
+\todo[inline]{Il problema che rimane da affrontare è il seguente: Per ottenere delle regole per le persone he hanno lasciato serve un supporto basso, (che ho fissato al 5$\%$), ma questo comporta un numero elevato di regole. Come filtrarle? Sto pensando a questo, ho provato in diversi modi, ma non sono ancora giunto ad una conclusione. Al momento ci sono molti grafici, ma alcuni andranno tolti, sono ancora qua per supporto all'analisi.}
 
 
 \begin{table}[h!]
@@ -128,6 +133,14 @@ Usando $MinSupp=5\%$ naturalmente il numero di associazioni trovate è notevolme
 }
 \caption{Association rules per}
 \end{table}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=1\textwidth]{../images/rules/left_scatter.pdf}
+  \caption{Grafico,mettere LEGENDA PER COLORE E SIZE (Support)}
+  \label{fig:left_scatter_}
+\end{figure}
+
 
 
 \subsection{Regole per impiegati che hanno lasciato (sistemare titolo)}
@@ -147,13 +160,6 @@ SPIEGARE MEGLIO, DA FINIRE
   \label{fig:rules_left}
 \end{figure}
 
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=1\textwidth]{../images/rules/left_scatter.pdf}
-  \caption{Grafico,mettere LEGENDA PER COLORE E SIZE (Support)}
-  \label{fig:left_scatter_}
-\end{figure}
 
 
 \begin{table}[h!]
