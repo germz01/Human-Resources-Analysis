@@ -6,20 +6,20 @@ from sklearn.cross_validation import train_test_split
 from sklearn import cross_validation
 from sklearn.cross_validation import cross_val_score
 
-DS = pd.read_csv(filepath_or_buffer='../../data/df_formatted_ordered.csv')
+DS = pd.read_csv(filepath_or_buffer='../../data/HR_comma_sep.csv')
 
 feature_names = DS.columns.tolist()
 feature_names.pop()
 
-DS['Salary'].replace(['low', 'medium', 'high'], [0, 1, 2], inplace=True)
-DS['Department'].replace(['sales', 'technical', 'support', 'IT',
-                          'product_mng', 'marketing', 'RandD', 'accounting',
-                          'hr', 'management'], [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
-                         inplace=True)
+DS['salary'].replace(['low', 'medium', 'high'], [0, 1, 2], inplace=True)
+DS['sales'].replace(['sales', 'technical', 'support', 'IT',
+                     'product_mng', 'marketing', 'RandD', 'accounting',
+                     'hr', 'management'], [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+                    inplace=True)
 
-target = DS['Left'].tolist()
+target = DS['left'].tolist()
 
-DS.drop(['Left'], axis=1, inplace=True)
+DS.drop(['left'], axis=1, inplace=True)
 
 train = DS.as_matrix()
 
