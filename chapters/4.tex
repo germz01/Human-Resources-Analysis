@@ -7,7 +7,7 @@ algoritmo sui records, inoltre, per fornire un \textit{target} durante la costru
 \label{sec:learning_of_different_decision_trees}
 Durante la fase di costruzione vera e propia, abbiamo deciso di implementare due alberi distinti, differenziandoli
 nel modo in cui essi avrebbero dovuto scegliere lo \textit{split} migliore. Abbiamo perciò costruito un albero
-basato sull'indice \textit{Gini} come misura di impurità di un nodo, e un albero basato invece sull'uso
+basato sull'indice \textit{{}} come misura di impurità di un nodo, e un albero basato invece sull'uso
 dell'\textit{Entropia}. Utilizzando questi due indici di impurità, al momento di decidere quale split
 imporre, viene selezionato quello con il \textit{gain} maggiore. Inizialmente abbiamo costruito entrambi gli
 alberi senza dare un limite sul numero di samples che un nodo avrebbe dovuto contenere per poter essere
@@ -21,18 +21,56 @@ dividento i data objects forniti tra test set e training set in percentuali ben 
 \label{sec:decision_trees_interpretation}
 Tenendo i dettagli tecnici per le sezioni successive possiamo fare alcune considerazioni sugli alberi ottenuti
 applicando i parametri descritti in Sezione \ref{sec:learning_of_different_decision_trees}. Sia per l'albero
-basato sull'indice Gini che per quello basato sull'Entropia, la radice è rappresentata dalla variabile
+basato sull'indice {} che per quello basato sull'Entropia, la radice è rappresentata dalla variabile
 \textit{Satisfaction Level}, che divide i data objects tra coloro che hanno uno score $\le 0.465$ e coloro che
 hanno uno score $> 0.465$. Questa decisione è indicativa del fatto che l'utilizzo di tale variabile consente un
 primo split più redditizio rispetto alle altre variabili a disposizione. Come era lecito aspettarsi, gli alberi
 ottenuti, non imponendo un vincolo sul numero di samples in ogni nodo prima dello split, hanno un'altezza
 considerevole, tale altezza decresce in modo significativo applicando i vincoli esposti in Sezione
-\ref{sec:learning_of_different_decision_trees}, arrivando ad ottenere un albero di altezza $13$ per l'indice Gini
+\ref{sec:learning_of_different_decision_trees}, arrivando ad ottenere un albero di altezza $13$ per l'indice {}
 e uno di altezza $11$ per l'Entropia.
 % section decision_trees_interpretation (end)
 \section{Decision trees validation with test and training set} % (fold)
 \label{sec:decision_trees_validation_with_test_and_training_set}
-
+Prendiamo quanto trattato nelle sezioni precedenti e passiamo adesso a descrivere l'applicazione dei
+classificatori da noi costruiti.
+\begin{table}
+    \centering
+    \resizebox{0.8\textwidth}{!}{
+        \begin{tabular}{| c | c | c | c | c | c | c |}
+            \hline
+            \textbf{Criterion} & \textbf{Min Sample Split} & \textbf{Train Records} & \textbf{Test Records} &
+            \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} \\ \hline
+            \textbf{Gini} & 2.0 & 14999 & 14999 & 0.99 & 0.99 & 0.98 \\ \hline
+            {} & {} & 11999 & 3000 & 0.98 & 0.95 & 0.95 \\ \hline
+            {} & {} & 10499 & 4500 & 0.98 & 0.95 & 0.95 \\ \hline
+            {} & {} &  8999 & 6000 &  0.98 & 0.95 & 0.94 \\ \hline
+            {} &  0.1 & 14999 & 14999 & 0.96 & 0.90 & 0.93 \\ \hline
+      {} &               {} &      11999 &      3000 &      0.96 &       0.90 &    0.94 \\ \hline
+      {} &               {} &      10499 &      4500 &      0.96 &       0.90 &    0.93 \\ \hline
+      {} &               {} &       8999 &      6000 &      0.95 &       0.89 &    0.88 \\ \hline
+      {} &               0.2 &      14999 &     14999 &      0.85 &       0.88 &    0.43 \\ \hline
+      {} &               {} &      11999 &      3000 &      0.86 &       0.91 &    0.44 \\ \hline
+      {} &               {} &      10499 &      4500 &      0.86 &       0.89 &    0.44 \\ \hline
+      {} &               {} &       8999 &      6000 &      0.87 &       0.74 &    0.65 \\ \hline
+   \textbf{Entropy} &               2.0 &      14999 &     14999 &      1.00 &       0.99 &    0.99 \\ \hline
+   {} &               {} &      11999 &      3000 &      0.98 &       0.95 &    0.95 \\ \hline
+   {} &               {} &      10499 &      4500 &      0.98 &       0.95 &    0.95 \\ \hline
+   {} &               {} &       8999 &      6000 &      0.98 &       0.96 &    0.94 \\ \hline
+   {} &               0.1 &      14999 &     14999 &      0.96 &       0.90 &    0.93 \\ \hline
+   {} &               {} &      11999 &      3000 &      0.96 &       0.90 &    0.94 \\ \hline
+   {} &               {} &      10499 &      4500 &      0.96 &       0.90 &    0.93 \\ \hline
+   {} &               {} &       8999 &      6000 &      0.96 &       0.90 &    0.92 \\ \hline
+   {} &               0.2 &      14999 &     14999 &      0.91 &       0.92 &    0.68 \\ \hline
+   {} &               {} &      11999 &      3000 &      0.92 &       0.94 &    0.69 \\ \hline
+   {} &               {} &      10499 &      4500 &      0.91 &       0.92 &    0.68 \\ \hline
+{} &               {} &       8999 &      6000 &      0.91 &       0.92 &    0.67 \\ \hline
+        \end{tabular}
+    }
+    \caption{Tabella contentente le performance relative alle metriche di valutazione utilizzate per la
+    classificazione tramite indice Gini ed Entropia.}
+    \label{tab:classification_performance}
+\end{table}
 % section decision_trees_validation_with_test_and_training_set (end)
 \section{Discussion of the best prediction model} % (fold)
 \label{sec:discussion_of_the_best_prediction_model}

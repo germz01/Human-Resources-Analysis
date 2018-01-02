@@ -106,3 +106,6 @@ for criterion in ['gini', 'entropy']:
                             fieldnames[6]: round(rec, 2)})
 
 csvfile.close()
+
+cfile = pd.read_csv(filepath_or_buffer='../../data/classification.csv')
+print cfile.to_latex()
