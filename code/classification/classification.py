@@ -1,5 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import csv
 from sklearn import tree
 from sklearn import metrics
 from sklearn.metrics import confusion_matrix
@@ -24,6 +25,12 @@ DS.drop(['left'], axis=1, inplace=True)
 
 train = DS.as_matrix()
 
+csvfile = open('../../data/classification.csv', 'wb')
+fieldnames = ['Criterion', 'Min Sample Split', 'Len Train', 'Len Test',
+              'Accuracy', 'Precision', 'Recall']
+writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+writer.writeheader()
+
 for criterion in ['gini', 'entropy']:
     for min_sample_split in [2, 0.1, 0.2]:
         print '\nTRAINING DECISION TREE WITH CRITERION ' + criterion + \
@@ -43,10 +50,6 @@ for criterion in ['gini', 'entropy']:
         rec = metrics.recall_score(target, pred_target)
         acc = metrics.accuracy_score(target, pred_target)
 
-        print '\tACCURACY: ' + str(acc)
-        print '\tPRECISION: ' + str(pre)
-        print '\tRECALL: ' + str(rec)
-
         cm = confusion_matrix(target, pred_target)
 
         plt.matshow(cm)
@@ -58,6 +61,14 @@ for criterion in ['gini', 'entropy']:
                     criterion + '_confusion_matrix_' + 'all_test.pdf',
                     format='pdf', bbox_inches='tight')
         plt.clf()
+
+        writer.writerow({fieldnames[0]: criterion,
+                        fieldnames[1]: min_sample_split,
+                        fieldnames[2]: len(train),
+                        fieldnames[3]: len(train),
+                        fieldnames[4]: round(acc, 2),
+                        fieldnames[5]: round(pre, 2),
+                        fieldnames[6]: round(rec, 2)})
 
         for test_size in [0.20, 0.30, 0.40]:
             print 'PREDICTION USING ' + str(1 - test_size) + '% RECORDS AS ' \
@@ -74,10 +85,6 @@ for criterion in ['gini', 'entropy']:
             rec = metrics.recall_score(test_y, test_pred)
             acc = metrics.accuracy_score(test_y, test_pred)
 
-            print '\tACCURACY: ' + str(acc)
-            print '\tPRECISION: ' + str(pre)
-            print '\tRECALL: ' + str(rec)
-
             cm = confusion_matrix(test_y, test_pred)
 
             plt.matshow(cm)
@@ -89,3 +96,13 @@ for criterion in ['gini', 'entropy']:
                         + criterion + '_confusion_matrix_' + str(test_size) +
                         '_test.pdf', format='pdf', bbox_inches='tight')
             plt.clf()
+
+            writer.writerow({fieldnames[0]: criterion,
+                            fieldnames[1]: min_sample_split,
+                            fieldnames[2]: len(train_x),
+                            fieldnames[3]: len(test_x),
+                            fieldnames[4]: round(acc, 2),
+                            fieldnames[5]: round(pre, 2),
+                            fieldnames[6]: round(rec, 2)})
+
+csvfile.close()
