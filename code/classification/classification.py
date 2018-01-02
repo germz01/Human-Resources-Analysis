@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 from sklearn import tree
 from sklearn import metrics
 from sklearn.metrics import confusion_matrix
@@ -46,6 +47,18 @@ for criterion in ['gini', 'entropy']:
         print '\tPRECISION: ' + str(pre)
         print '\tRECALL: ' + str(rec)
 
+        cm = confusion_matrix(target, pred_target)
+
+        plt.matshow(cm)
+        plt.colorbar()
+        plt.ylabel('True label')
+        plt.xlabel('Predicted label')
+
+        plt.savefig(fname='../../images/classification/confusion_matrices/' +
+                    criterion + '_confusion_matrix_' + 'all_test.pdf',
+                    format='pdf', bbox_inches='tight')
+        plt.clf()
+
         for test_size in [0.20, 0.30, 0.40]:
             print 'PREDICTION USING ' + str(1 - test_size) + '% RECORDS AS ' \
                   'TRAINING AND ' + str(test_size) + '% AS TESTING'
@@ -64,3 +77,15 @@ for criterion in ['gini', 'entropy']:
             print '\tACCURACY: ' + str(acc)
             print '\tPRECISION: ' + str(pre)
             print '\tRECALL: ' + str(rec)
+
+            cm = confusion_matrix(test_y, test_pred)
+
+            plt.matshow(cm)
+            plt.colorbar()
+            plt.ylabel('True label')
+            plt.xlabel('Predicted label')
+
+            plt.savefig(fname='../../images/classification/confusion_matrices/'
+                        + criterion + '_confusion_matrix_' + str(test_size) +
+                        '_test.pdf', format='pdf', bbox_inches='tight')
+            plt.clf()
