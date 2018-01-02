@@ -1,5 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
 import csv
 from sklearn import tree
 from sklearn import metrics
@@ -7,6 +8,10 @@ from sklearn.metrics import confusion_matrix
 from sklearn.cross_validation import train_test_split
 from sklearn import cross_validation
 from sklearn.cross_validation import cross_val_score
+
+sns.set()
+sns.set_style("whitegrid")
+FIG = plt.figure(figsize=(8, 5))
 
 DS = pd.read_csv(filepath_or_buffer='../../data/HR_comma_sep.csv')
 
@@ -93,7 +98,7 @@ for criterion in ['gini', 'entropy']:
             plt.xlabel('Predicted label')
 
             plt.savefig(fname='../../images/classification/confusion_matrices/'
-                        + criterion + '_confusion_matrix_' + str(test_size) +
+                        + criterion + '_confusion_matrix_' + str(test_size).replace('.', '_') +
                         '_test.pdf', format='pdf', bbox_inches='tight')
             plt.clf()
 
