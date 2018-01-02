@@ -35,9 +35,17 @@ numero di records minimo contenuto all'interno di un nodo al $20\%$ del totale a
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.5\textwidth]{images/classification/decision_tree_gini_0_2_cutted.pdf}
-    \caption{Dettaglio iniziale dell'albero di altezza $11$ utilizzante Gini.}
+    \caption{Dettaglio iniziale dell'albero di altezza $11$ utilizzante Gini. La classe \textit{y$0$}
+    corrisponde a una risposta negativa alla domanda: "L'impiegato lascerà l'azienda?", vale il contrario per la
+    classe y$1$. Essendo l'intero albero di dimensioni proibitive, abbiamo deciso di rappresentare questo
+    dettaglio.}
     \label{fig:cutted_tree}
 \end{figure}
+\\
+Come possiamo osservare, la colorazione dei vari nodi fornisce un indice visivo del grado di purezza dello split
+ottenuto, cominciando da uno split iniziale su tutto il dataset con un grado di purezza non molto alto, si
+raggiunge successivamene negli split secondari, su porzioni ridotte del dataset, gradi di purezza più
+consistenti.
 % section decision_trees_interpretation (end)
 \section{Decision trees validation with test and training set} % (fold)
 \label{sec:decision_trees_validation_with_test_and_training_set}
@@ -88,7 +96,7 @@ condotta analizzando lo score ottenuto utilizzando le metriche \textit{Accuracy}
         \end{tabular}
     }
     \caption{Tabella contentente le performance relative alle metriche di valutazione utilizzate per la
-    classificazione tramite indice Gini ed Entropia. Min Samle Split rappresenta la minima percentuale di record
+    classificazione tramite indice Gini ed Entropia. Min Sample Split rappresenta la minima percentuale di record
     rispetto al dataset totale che deve essere contenuta in ogni nodo (il valore $2$ rappresenta il fatto che
     almeno $2$ nodi devono essere presenti all'interno del nodo).}
     \label{tab:classification_performance}
