@@ -1,0 +1,113 @@
+Per definire le association rules prima si sono seguite le seguenti operazioni:
+\begin{itemize}
+\item Abbiamo trasformato le variabili da stringhe a numeriche, per quanto riguarda gli attributi \textit{Salary}
+e \textit{Department}.
+\item Abbiamo raggruppato le variabili \textit{Last Evaluation}, \textit{Satisfaction Level} e
+\textit{Average Montly Hours}, usando $3$ bins sia per la prima che per la seconda variabile, usando intervalli
+specifici, e $2$ bins per la terza variabile, applicando anche in questo caso una suddivisione ad hoc.
+\item Per rendere unici i risultati numerici, è stata aggiunta una stringa subito successiva al valore numerico
+in modo da non renderlo ambiguo e sopratutto in modo da poter capire univocamente a che attributo si riferisca.
+\end{itemize}
+\section{Frequent patterns extraction with different values of support and different types} % (fold)
+\label{sec:frequent_patterns_extraction_with_different_values_of_support_and_different_types}
+Dopo aver eseguito i passi preliminari descritti precedentemente abbiamo svolto l'analisi inerente ai
+\textit{frequent patterns} attraverso l'applicazione dell'algoritmo \textit{Apriori}. Per ogni iterazione
+dell'algoritmo, abbiamo considerato, indipendentemente dal \textit{support}, gli itemsets con $2$ o più items al
+loro interno. Inoltre, al fine di avere una panoramica più completa, abbiamo svolto l'analisi per i
+\textit{frequent itemsets}, per i \textit{closed frequent itemsets} e per i \textit{maximal frequent itemsets}.
+Abbiamo quindi cominciato l'analisi con un support pari a $20$, ossia prendendo in considerazione soltanto gli
+itemsets presenti in almeno il $20\%$ della transazioni. Successivamente abbiamo utilizzato un support pari a
+$30$. Le quantità di frequent itemsets scoperte al variare dei paramentri sono riportate in Tabella
+\ref{tab:freq_items}.
+\begin{table}[H]
+    \centering
+    \resizebox{0.8\textwidth}{!}{
+        \begin{tabular}{| c | c | c | c |}
+            \hline
+            \textbf{Support Threshold} & \textbf{Frequent Itemsets} & \textbf{Closed Frequent Itemsets} &
+            \textbf{Maximal Frequent Itemsets} \\ \hline
+            $20$ & $137$ & $130$ & $30$ \\ \hline
+            $30$ & $46$ & $45$ & $11$ \\ \hline
+        \end{tabular}
+    }
+    \caption{Quantità di frequent itemsets trovati per ogni tipologia e support utilizzati durante l'analisi.}
+    \label{tab:freq_items}
+\end{table}
+Come era lecito aspettarsi, esiste un rapporto di proporzionalità inversa tra la soglia di support e il numero di
+frequent itemsets scoperti.
+% section frequent_patterns_extraction_with_different_values_of_support_and_different_types (end)
+\section{Discussion of the most interesting frequent patterns} % (fold)
+\label{sec:discussion_of_the_most_interesting_frequent_patterns}
+Passiamo adesso alla descrizione dei frequent items più interessanti che sono stati scoperti durante l'analisi. In
+Tabella \ref{tab:interesting:freq_items} vengono riportati gli itemsets più interessanti dal punto di vista del
+supporto pari a $20$ scoperti durante l'analisi.
+\begin{table}[H]
+    \centering
+    \resizebox{\textwidth}{!}{
+        \begin{tabular}{| c | c | c | c | c | c |}
+            \hline
+            \textbf{Frequent Itemsets ($ST = 20$)} & \textbf{Support} &
+            \textbf{Closed Frequent Itemsets ($ST = 20$)} & \textbf{Support} &
+            \textbf{Maximal Frequent Itemsets ($ST = 20$)} & \textbf{Support}\\
+            \hline
+            (N\_WA, \ N\_P)  & $0.84$ & (N\_WA, \ N\_P)  & $0.84$ & (standard\_H, N\_L, N\_WA, N\_P) & $0.31$ \\
+            \hline
+            (N\_L, \ N\_P) & $0.74$ & (N\_L, \ N\_P) & $0.74$ & (intensive\_H, N\_L, N\_WA, N\_P) & $0.30$ \\
+            \hline
+            (N\_L, \ N\_WA) & $0.63$ & (N\_L, \ N\_WA) & $0.63$ & (0\_S, \ N\_L, \ N\_WA, \ N\_P) & $0.28$ \\
+            \hline
+            (N\_L, \ N\_WA, \ N\_P) & $0.61$ & (N\_L, \ N\_WA, \ N\_P) & $0.61$ & (1\_S, N\_L, N\_WA, N\_P) &
+            $0.28$ \\ \hline
+        \end{tabular}
+    }
+    \caption{Frequent itemsets con supporto maggiore scoperti durante l'analisi utilizzando un supporto pari a
+    $20$. Con N\_WA intendiamo l'item relativo all'assenza di incidenti sul lavoro, con N\_P l'item relativo alla
+    mancanza di promozioni, con N\_L l'item relativo ai dipendenti ancora in azienda, con 0\_S l'item relativo ai
+    dipendenti con salario minimo, con 1\_S l'item relativo ai dipendenti con salario medio, con intensive\_H
+    intendiamo i dipendenti con un quantitativo di ore mensili compreso tra $200$ e $300$ e con standard\_H
+    intendiamo i dipendenti con un quantitativo di ore mensili inferiore a $200$.}
+    \label{tab:interesting:freq_items}
+\end{table}
+Descriviamo per primi i frequent itemsets e i closed frequent itemsets, visto che sono identici. Possiamo notare
+come la situazione presentata proponga in maggioranza impiegati i quali non hanno subito incidenti sul lavoro,
+che non sono stati promossi e che non hanno lasciato l'azienda. Per quanto riguarda i maximal frequent itemsets
+troviamo che gli impiegati con carichi di lavoro sia standard che elevati, che non hanno lasciato l'azienda, non
+hanno avuto incidenti sul lavoro e che non sono stati promossi negli ultimi $5$ anni sono i più diffusi, seguiti
+dagli impiegati di salario minimo e medio, non promossi e i quali non hanno avuto incidenti sul lavoro.
+Portando la soglia del support a $30$, gli itemsets più diffusi sono gli stessi che sono  stati descritti per la
+soglia pari a $20$, evitiamo quindi di descriverli.
+% section discussion_of_the_most_interesting_frequent_patterns (end)
+\section{Association rules extraction with different values of confidence }
+
+
+
+
+\section{Discussion of the most interesting rules }
+Abbiamo inoltre rilevato delle rules che nonostante non siano frequenti sono comunque interessanti per l'analisi che stiamo portando avanti. Queste sono:
+-
+-
+Da queste possiamo ricavare che...
+
+
+
+\section{Use the most meaningful rules to replace missing values and evaluate the accuracy}
+Nel nostro dataset non sono presenti missing values quindi non è stata necessaria la valutazione delle più significative rules e la valutazione dell'accuratezza per rimpiazzare questi.
+
+
+\section{Use the most meaningful rules to predict if an employee will leave prematurely or not and evaluate the accuracy }
+Date le varie association rules trovate dalle varie prove queste sono quelle più significative per predirre se un impiegato lascerà prematuramente l'azienda oppure no:
+
+- AR ... accuratezza trovata:
+- AR1
+- AR2
+
+Da queste possiamo scaturire che un impiegato lasci il posto di lavoro prematuramente quando è nelle seguenti condizioni:
+
+Invece rimarrà quando avrà una condizione del tipo:
+
+
+
+
+
+
+

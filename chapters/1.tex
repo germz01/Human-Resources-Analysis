@@ -1,4 +1,5 @@
 \section{Obiettivi}
+\label{sec:obiettivi}
 %%\begin{comment}
 \begin{wrapfigure}[10]{r}{0.3\textwidth}
   \centering
@@ -23,7 +24,6 @@ In questo progetto viene analizzato il dataset (simulato) \textit{\href{https://
 \item predire probabilisticamente se un lavoratore lascerà in futuro l'azienda;
 \item indicare al management dell'azienda dei provvedimenti da attuare per ridurre il numero di impiegati che la abbandonano.
 \end{itemize}
-
 \section{Data semantics} % (fold)
 \label{sec:data_semantics}
 
@@ -31,22 +31,19 @@ Il dataset è composto da 10 variabili relative ai dipendenti dell'azienda, ripo
 
 \begin{wraptable}{r}{8cm}
     \centering
-    \begin{tabular}{ c  c }
-\toprule
-        \textbf{Variable} & \textbf{Type} \\ 
-\midrule
-        Left & categorical \\
-        Department & categorical \\ 
-        Promotion\_last\_5years & categorical \\ 
-        Work\_accident & categorical \\ 
-        Salary & ordinal \\ 
-\midrule
-        Satisfaction\_level & continuous \\ 
-        Last\_evaluation & continuous \\ 
-        Average\_montly\_hours & discrete \\ 
-        Time\_spend\_company & discrete \\
-        Number\_projects & discrete \\ 
-\bottomrule
+    \begin{tabular}{| c | c |}
+        \hline
+        \textbf{Variable} & \textbf{Type} \\ \hline
+        Left & categorical \\ \hline
+        Department & categorical \\ \hline
+        Promotion\_last\_5years & categorical \\ \hline
+        Work\_accident & categorical \\ \hline
+        Salary & ordinal \\ \hline
+        Satisfaction\_level & continuous \\ \hline
+        Last\_evaluation & continuous \\ \hline
+        Average\_montly\_hours & discrete \\ \hline
+        Time\_spend\_company & discrete \\ \hline
+        Number\_projects & discrete \\ \hline
     \end{tabular}
     \caption{Variabili presenti nel Dataset e rispettivi tipi.}
     \label{tab:variabili}
@@ -55,7 +52,7 @@ Il dataset è composto da 10 variabili relative ai dipendenti dell'azienda, ripo
 La variabile \textit{Left} suddivide il dataset tra i dipendenti che hanno lasciato l'azienda e quelli che ci lavorano attualmente, associando alle rispettive categorie i valori $1$ e $0$.
 I dipendenti lavorano in 10 diversi dipartimenti indicati nella variabile \textit{Department}, che è stata rinominata
 rispetto all'originale \textit{Sales} per chiarezza semantica.
-La promozione o meno di un dipendente durante gli ultimi $5$ anni è espressa dalla variabile 
+La promozione o meno di un dipendente durante gli ultimi $5$ anni è espressa dalla variabile
 \textit{Promotion last 5 Year} con un $1$ in caso positivo e con $0$ altrimenti.
 \textit{Work Accident} indica con un $1$ il coinvolgimento di un dipendente in un incidente sul lavoro,
 e con $0$ il caso contrario. \textit{Salary} esprime il livello (\textit{low}, \textit{medium}, \textit{high}) nel quale rientra il salario
@@ -71,7 +68,7 @@ dataset è pubblicato.
 \begin{comment}
 La scelta di catalogare le colonne \textit{Work Accident}, \textit{Left} e
 \textit{Promotion Last 5 Years} come variabili di tipo categorico verrà opportunamente motivata nelle s
-ezioni successive. 
+ezioni successive.
 Direi che non c'è da motivarlo ulteriormente
 \end{comment}
 %% section data_semantics (end)
@@ -80,123 +77,192 @@ Direi che non c'è da motivarlo ulteriormente
 In questo paragrafo vengono presentati i grafici relativi alla distribuzione dei valori assunti dalle variabili
 descritte nella sezione precedente. Per dare una migliore interpretazione a questi abbiamo deciso di sostenere
 un'analisi accurata che contraddistingue i dipendenti che lavorano nell'azienda, rappresentati dal colore blu, e
-quelli che invece la hanno lasciata, rappresentati dal colore rosso. Come si può constatare dal grafico in Figura
-\ref{fig:obiettivi} in un totale di $14999$ dipendenti analizzati: $3571$ di questi hanno lasciato
-l'azienda (quasi il $24\%$ del totale), mentre i restanti $11428$ dipendenti (quasi il $76\%$) sono rimasti
-nella azienda.
+quelli che invece la hanno lasciata, rappresentati dal colore rosso.\\
 Prima di tutto vogliamo studiare la  distribuzione dei dipendenti rispetto alle variabili
-categoriche. La distribuzione mostrata in Figura \ref{fig:sales} indica la distribuzione degli impiegati nei
-vari settori: (parte mancante). \\
-Nel grafico in Figura \ref{fig:work_accident} si studia il rapporto tra i dipendenti e la presenza o meno di un
-infortunio durante il periodo di lavoro all'interno dell'azienda e si è riscontrato che soltanto $169$ impiegati
-tra i $3571$ che se ne sono andati hanno avuto un incidente sul lavoro, mentre gli impiegati ancora all'interno
-dell'azienda ad aver subito un incidente sono $2000$ su $11428$. \\
-Nel grafico in Figura \ref{fig:promotion} invece rapportiamo ciascun dipendente al fatto che questo sia stato
-promosso negli ultimi 5 anni oppure no, possiamo ricavare una informazione importante, la totalità degli
-impiegati che hanno lasciato l'azienda non ha avuto una promozione negli ultimi $5$ anni. Soltato $19$ impiegati
-su $11428$ di quelli rimasti sono stati promossi.
-Una volta studiate le distribuzioni categoriche continuiamo l'analisi con gli altri attributi, per renderle più
-esplicative abbiamo affiancato a ciascun grafico la tabella che lo descrive in modo accurato e in modo che fosse
-autoesplicativo. \\ \newpage
-\begin{figure}[H]
-    \begin{subfigure}[b]{0.5\textwidth}
+categoriche escludendo la distribuzione dei dipendenti rispetto a left in quanto già esplicata in precedenza nella sezione \ref{sec:obiettivi}. 
+
+\begin{minipage}{7.8cm}
+   \centering
+    \begin{figure}[H]
         \includegraphics[width=\textwidth]{images/newplottedvariables/sales.pdf}
-        \caption{Distribuzione relativa alla variabile \textit{Sales}}
+        \caption{Distribuzione relativa alla variabile \textit{Department}}
         \label{fig:sales}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.5\textwidth}
-        \includegraphics[width=\textwidth]{images/newplottedvariables/work_accident.pdf}
-        \caption{Distribuzione relativa alla variabile \textit{Work Accident}}
-        \label{fig:work_accident}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.5\textwidth}
-        \includegraphics[width=\textwidth]{images/newplottedvariables/promotion_last_5_years.pdf}
-        \caption{Distribuzione relativa alla variabile \textit{Promotion Last 5 Years}}
-        \label{fig:promotion}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.5\textwidth}
-        \includegraphics[width=\textwidth]{images/newplottedvariables/salary.pdf}
-        \caption{Distribuzione relativa alla variabile \textit{Salary}.}
-        \label{fig:salary}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.5\textwidth}
-        \includegraphics[width=\textwidth]{images/newplottedvariables/average_montly_hours.pdf}
-        \caption{Distribuzione relativa alla variabile \textit{Average Montly Hours}}
-        \label{fig:average_montly_hours}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.5\textwidth}
-        \includegraphics[scale=0.5]{images/newplottedvariables/satisfaction_level.pdf}
-        \caption{Distribuzione relativa alla variabile \textit{Satisfaction Level}}
-        \label{fig:sat_lev}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.5\textwidth}
-        \includegraphics[width=\textwidth]{images/newplottedvariables/last_evaluation.pdf}
-        \caption{Distribuzione relativa alla variabile \textit{Last Evaluation}}
-        \label{fig:last_ev}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.5\textwidth}
-        \includegraphics[width=\textwidth]{images/newplottedvariables/number_project.pdf}
-        \caption{Distribuzione relativa alla variabile \textit{Number Project}}
-        \label{fig:num_proj}
-    \end{subfigure}
 \end{figure}
-\newpage
+\end{minipage}
+\begin{minipage}{8.5cm}
 \begin{table}[H]
-    \begin{subtable}{\linewidth}
         \centering
         \begin{tabular}{| c | c | c | c |} \hline
-            \textbf{Dipendente} & \textbf{Low} & \textbf{Medium} & \textbf{High}  \\ \hline
-            InAzienda & 5144 (circa 45.02\%) & 5129 (circa il 44.88\%) & 1155 (circa il 10.1\%)\\ \hline
-            OutAzienda & 2172 (circa 60.8\%) & 1317 (circa il 36.9\%) & 82 (circa il 2.3\%) \\ \hline
+            \textbf{Department} & \textbf{Stayed} & \textbf{Left} &  \textbf{TotDep} \\ \hline
+            1 Sales  & 3126 & 1014 &  4140 \\ \hline
+            2 technical  & 2023 & 697 &  2720 \\ \hline
+            3 support  & 1674 & 555 & 2229  \\ \hline
+            4 IT  & 954 & 273 & 1227  \\ \hline
+            5 productMng  & 704 & 198 & 902  \\ \hline
+            6 marketing  & 655 & 203 & 858 \\ \hline
+            7 RandD  & 666 & 121 & 787 \\ \hline
+	  8 accounting  & 563 & 204 & 767 \\ \hline
+           9 hr  & 524 & 215 & 739  \\ \hline
+	 10 management & 539 & 91 &  630\\ \hline
+	 Totale & 11428 & 3571 &  14999\\ \hline
+        \end{tabular}
+        \label{tab:sales}
+	 \caption{Distribuzione dipendenti per \textit{Department}.}
+\end{table}
+\end{minipage}
+\\
+\begin{minipage}{7.8cm}
+   \centering
+    \begin{figure}[H]
+       \includegraphics[width=\textwidth]{images/newplottedvariables/work_accident.pdf}
+        \caption{Distribuzione relativa alla variabile \textit{Work Accident}}
+        \label{fig:work_accident}
+\end{figure}
+\end{minipage} 
+\begin{minipage}{7.8cm}
+  \begin{figure}[H]
+        \includegraphics[width=\textwidth]{images/newplottedvariables/promotion_last_5_years.pdf}
+        \caption{Distribuzione relativa alla variabile \textit{Promotion Last 5 Years}}
+\label{fig:promotion}
+\end{figure}
+\end{minipage}
+\\\\
+In Figura \ref{fig:work_accident} si studia il rapporto tra i dipendenti e la presenza o meno di un infortunio durante il periodo di lavoro all'interno dell'azienda e si è riscontrato che di quelli che l'hanno lasciata soltanto $169$ impiegati hanno avuto un incidente sul lavoro (circa il 4,75\% su $3571$ e circa il 1,13\% dei dipendenti totali), mentre gli impiegati ancora all'interno dell'azienda ad aver subito un incidente sono $2000$ (circa il 17,5\% su $11428$ e circa il 13,35\% dei dipendenti totali )
+\\In Figura \ref{fig:promotion} invece rapportiamo ciascun dipendente al fatto che questo sia stato promosso negli ultimi 5 anni oppure no, possiamo ricavare una informazione importante, la gran parte degli impiegati che hanno lasciato l'azienda non ha avuto una promozione negli ultimi $5$ anni a parte $19$ impiegati che è stata promossa (circa il 0.5\%, invece circa il 0,13\% dei dipendenti totali) , praticamente impercettibili alla vista del grafico. Degli impiegati rimasti in $300$ hanno ottenuto una promozione su $11428$ di quelli rimasti sono stati promossi (circa il 2,62\% di quelli rimasti e circa il 2\% dei dipendenti totali).
+Una volta studiate le distribuzioni categoriche continuiamo l'analisi con gli altri attributi.\\Partiamo dalla distribuzione del salario:\\
+\begin{minipage}{7.8cm}
+   \centering
+    \begin{figure}[H]
+        \includegraphics[width=\textwidth]{images/newplottedvariables/salary.pdf}
+        \caption{Distribuzione relativa alla variabile \textit{Salary}}
+        \label{fig:salary}
+\end{figure}
+\end{minipage}
+\begin{minipage}{8.5cm}
+\begin{table}[H]
+        \centering
+        \begin{tabular}{| c | c | c |} \hline
+                   \textbf{Salary} & \textbf{Stayed} & \textbf{Left}  \\ \hline
+            Low & 5144 ($\sim$45.02\%) & 2172 ($\sim$60.8\%) \\ \hline
+            Medium & 5129 ($\sim$44.88\%)  & 1317 ($\sim$36.9\%) \\ \hline
+           High & 1155 ($\sim$10.1\%)  & 82 ($\sim$ 2.3\%) \\ \hline
         \end{tabular}
         \caption{Distribuzione salario per dipendente.}
         \label{tab:salary}
-    \end{subtable}
-    \begin{subtable}{0.5\linewidth}
-        \centering
-        \begin{tabular}{| c | c | c | c |}
-            \hline
-            \textbf{Dipendente} & \textbf{media} & \textbf{dev. std.} & \textbf{min,max}  \\ \hline
-            InAzienda & 199.06 & 45.68 & 96 , 287\\ \hline
-            OutAzienda & 207.42 & 61.20 &  126 , 310\\ \hline
-        \end{tabular}
-        \caption{Il tempo medio di ore di lavoro al mese per dipendente.}
-        \label{tab:avg_work}
-    \end{subtable}
-    \begin{subtable}{0.5\linewidth}
-        \centering
-        \begin{tabular}{| c | c | c | c |}
-            \hline
-            \textbf{Dipendente} & \textbf{media} & \textbf{dev. std.} & \textbf{min,max}  \\ \hline
-            InAzienda & 0.67 & 0.22 & 0.12 , 1.0\\ \hline
-            OutAzienda & 0.44 & 0.26 & 0.09 , 0.92\\ \hline
-        \end{tabular}
-        \caption{Livello di soddisfazione per il dipendente.}
-        \label{tab:sat_lev}
-    \end{subtable}
-    \begin{subtable}{\linewidth}
-        \centering
-        \begin{tabular}{| c | c | c | c |}
-            \hline
-            \textbf{Dipendente} & \textbf{media} & \textbf{dev. std.} & \textbf{min,max}  \\ \hline
-            InAzienda & 0.71 & 0.16 & 0.36 , 1.0\\ \hline
-            OutAzienda & 0.71 & 0.19 & 0.45 , 1.0\\ \hline
-        \end{tabular}
-        \caption{Livello di soddisfazione per il dipendente relativo all'ultima valutazione.}
-        \label{tab:last_ev}
-    \end{subtable}
 \end{table}
-Abbiamo rapportato in primis i dipendenti con il proprio salario: possiamo osservare la distribuzione della
-variabile in Figura \ref{fig:salary} e le relative percentuali in Tabella \ref{tab:salary}. Le percentuali che
-vengono indicate nella tabella  non sono in base alla totalità dei dipendenti ma riguardano solo il tipo di
-dipendente definito dalla riga di appartenenza. \\
-Proseguendo poi con il rapporto tra dipendenti ancora in azienda e non, e il numero delle ore di lavoro in media,
-possiamo osservare la distribuzione della variabile in Figura \ref{fig:average_montly_hours}, e le relative
-percentuali riportate in Tabella \ref{tab:avg_work}. \\
-A questo punto è giusto analizzare il livello di soddisfazione dei dipendenti, del quale possiamo osservare la
-distribuzione in Figura \ref{fig:sat_lev} e le relative percentuali in Tabella \ref{tab:sat_lev}. \\
-Possiamo rapportare rispetto alla precedente valutazione del livello di soddisfazione (cambiare valori
-della tabella) osservan
+\end{minipage}
+\\Le percentuali che vengono indicate nella Tabella \ref{tab:salary} non sono in base alla totalità dei dipendenti ma riguardano solo il tipo di
+dipendente definito dalla colonna di appartenenza.\\\\
+Proseguendo poi con il rapporto tra dipendenti ancora in azienda e non, e il numero delle ore di lavoro in media:
+\begin{minipage}{8.3cm}
+   \centering
+    \begin{figure}[H]
+        \includegraphics[width=\textwidth]{images/newplottedvariables/average_montly_hours.pdf}
+        \caption{Distribuzione relativa alla variabile \textit{Average Montly Hours}}
+        \label{fig:average_montly_hours}
+\end{figure}
+\end{minipage}
+\begin{minipage}{8.5cm}
+\begin{table}[H]
+        \centering
+        \begin{tabular}{| c | c | c |} \hline
+                   \textbf{AverageMH} & \textbf{Stayed} & \textbf{Left} \\ \hline
+            Media & 199.06 & 207.42 \\ \hline
+            Dev.std. & 45.68	& 61.20 \\ \hline
+            min,max & 96 , 287  &  126 , 310	\\ \hline
+        \end{tabular}
+        \label{tab:avg_work}
+\end{table}
+\end{minipage}
+\\\\Dipendenti rimasti e non rispetto al numero di progetti:\\
+\begin{minipage}{8.3cm}
+   \centering
+    \begin{figure}[H]
+         \includegraphics[width=\textwidth]{images/newplottedvariables/number_project.pdf}
+        \caption{Distribuzione relativa alla variabile \textit{Number Project}}
+        \label{fig:num_proj}
+\end{figure}
+\end{minipage}
+\begin{minipage}{8.5cm}
+\begin{table}[H]
+        \centering
+        \begin{tabular}{| c | c | c |} \hline
+                 \textbf{NumProject} & \textbf{Stayed} & \textbf{Left} \\ \hline
+            2  & 821 & 1567 \\ \hline
+            3  & 3983 &  72\\ \hline
+            4  & 3956 & 409 \\ \hline
+            5  & 2149 & 612\\ \hline
+            6  & 519 & 655 \\ \hline
+            7  & 0 & 256 \\ \hline
+        \end{tabular}
+        \label{tab:num_proj}
+\end{table}
+\end{minipage}
+\\\\L'informazione chiave che risulta da questa distribuzione è che la totalità dei dipendenti che hanno fatto $7$ progetti hanno lasciato l'azienda, questo è quindi sicuramente uno dei fattori per cui i dipendenti potrebbero lasciare l'azienda. L'altro valore che risalta è i dipendenti che hanno fatto solo $2$ progetti, in numero di $1567$, ovvero quasi il $44\%$ di quelli che hanno lasciato l'azienda. Di questi dovremo capire quali motivazioni li hanno portati a lasciare l'azienda, se il poco carico di lavoro o altre circostanze lavorative.
+\\Per proseguire con il tempo di impiego di lavoro nell'azienda:\\
+\begin{minipage}{8.3cm}
+   \centering
+    \begin{figure}[H]
+        \includegraphics[width=\textwidth]{images/newplottedvariables/time_spend_company.pdf}
+        \caption{Distribuzione relativa alla variabile \textit{Time Spend Company}}
+        \label{fig:t_spend_comp}
+\end{figure}
+\end{minipage}
+\begin{minipage}{8.5cm}
+\begin{table}[H]
+        \centering
+        \begin{tabular}{| c | c | c |} \hline
+                   \textbf{TimeSpendCompany} & \textbf{Stayed} & \textbf{Left}  \\ \hline
+            2 & 3191 & 53 \\ \hline
+            3 & 4857 & 1587\\ \hline
+            4 & 1667 & 890 \\ \hline
+	    5 & 640 & 833 \\ \hline
+	    6 & 509 & 209 \\ \hline
+	    7 & 188 & 0   \\ \hline
+	    8 & 162 & 0   \\ \hline
+	    10 & 214 & 0   \\ \hline
+        \end{tabular}
+        \label{tab:t_spend_comp}
+\end{table}
+\end{minipage}
+\\Si può rilevare un fattore importante, dal settimo anno in azienda non abbiamo dipendenti che hanno lasciato l'azienda. Inoltre la maggior parte del numero di dipendenti che hanno lasciato l'azienda lo abbiamo in un range dai $3$ ai $5$ anni come fattore critico, con un massimo di $1587$ dipendenti, ovvero quasi il $44.4\%$ di quelli che lasciano l'azienda, nel terzo anno di lavoro.\\A questo punto è giusto analizzare il livello di soddisfazione dei dipendenti presente e quello della ultima valutazione:\\
+\begin{minipage}{8.3cm}
+   \centering
+    \begin{figure}[H]
+        \includegraphics[width=\textwidth]{images/newplottedvariables/satisfaction_level.pdf}
+        \caption{Distribuzione relativa alla variabile \textit{Satisfaction Level}}
+        \label{fig:sat_lev}
+\end{figure}
+\begin{table}[H]
+        \centering
+        \begin{tabular}{| c | c | c |} \hline
+                   \textbf{Satisfaction} & \textbf{Stayed} & \textbf{Left}  \\ \hline
+            Media & 0.67 & 0.44 \\ \hline
+            Dev.std. & 0.22 & 0.26\\ \hline
+            min,max & 0.12 , 1.0  &  0.09 , 0.92 \\ \hline
+        \end{tabular}
+        \label{tab:sat_lev}
+\end{table}
+\end{minipage}
+\begin{minipage}{8.3cm}
+ \centering
+    \begin{figure}[H]
+        \includegraphics[width=\textwidth]{images/newplottedvariables/last_evaluation.pdf}
+        \caption{Distribuzione relativa alla variabile \textit{Last Evaluation}}
+        \label{fig:last_ev}
+\end{figure}
+\begin{table}[H]
+        \centering
+        \begin{tabular}{| c | c | c |} \hline
+                   \textbf{LastEval} & \textbf{Stayed} & \textbf{Left}  \\ \hline
+            Media & 0.71 & 0.71 \\ \hline
+            Dev.std. & 0.16 & 0.19\\ \hline
+            min,max & 0.36 , 1.0  &  0.45 , 1.0 \\ \hline
+        \end{tabular}
+        \label{tab:last_ev}
+\end{table}
+\end{minipage}
+\\
 % section distribution_of_the_variables_and_statistics (end)
 \section{Data quality} % (fold)
 \label{sec:assessing_data_quality}
@@ -215,9 +281,6 @@ Un metodo robusto e di immediata applicazione è quello di osservare il boxplot 
   \label{fig:boxplots}
 \end{figure}
 
-
-
-
 % section assessing_data_quality (end)
 \section{Variable transformations} % (fold)
 \label{sec:variable_transformations}
@@ -230,7 +293,7 @@ dipendenti.
 % section variable_transformations (end)
 \section{Pairwise correlations and eventual elimination of redundant variable} % (fold)
 \label{sec:pairwise_correlations_and_eventual_elimination_od_redundant_variable}
-\begin{figure}[b!]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{images/correlation_matrix.pdf}
     \caption{Correlation Matrix delle variabili presenti nel Dataset.}
@@ -242,11 +305,6 @@ Dalla matrice riportata in Figura \ref{fig:pair_corr} possiamo rilevare se ci si
 nulla o negativa. Sia per quanto riguarda la correlazione positiva sia per quella negativa si caratterizzano in
 settori: con valori da $0$ a $0.3$ correlato debolmente, da $0.3$ a $0.7$ moderatamente o maggiore di $0.7$
 fortemente (rispettivamente per la negativa i segni saranno negativi).
-Da questo possiamo definire che ad avere una correlazione debole è la variabile time\_spend\_company con
-left, last\_evaluation, number\_project e average\_monthly\_hours. Queste ultime, ad eccezione di left,
-invece sono correlate fra loro in modo moderato con un valore massimo di $0.42$ tra average\_monthly\_hours
-e number\_project. Il valore $1$ indica la correlazione con se stesso che infatti è massima.
-Dal punto di vista della correlazione negativa, abbiamo debolmente correlati left con work\_accident e
-satisfaction\_level con number\_projecy e time\_spend\_company. Abbiamo invece una correlazione negativa
-moderata tra left e satisfaction\_level di valore $-0.39$.
+Da questo possiamo definire che ad avere una correlazione debole è la variabile time\_spend\_company con last\_evaluation, number\_project e average\_monthly\_hours. Queste sono correlate fra loro in modo moderato con un valore massimo di $0.42$ tra average\_monthly\_hours e number\_project. Il valore $1$ indica la correlazione con se stesso che infatti è massima.
+Dal punto di vista della correlazione negativa, abbiamo debolmente correlati satisfaction\_level con number\_project e time\_spend\_company.
 % \section pairwise_correlations_and_eventual_elimination_od_redundant_variable (end)

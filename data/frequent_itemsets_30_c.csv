@@ -1,0 +1,46 @@
+ITEMSET,SUPPORT
+"('very good_LE', 'high_SL')",0.32
+"('very good_LE', 'high_SL', 'N_P')",0.31
+"('medium_SL', 'N_WA')",0.33
+"('medium_SL', 'N_WA', 'N_P')",0.32
+"('medium_SL', 'N_P')",0.37
+"('3_T', 'N_L')",0.32
+"('3_T', 'N_L', 'N_P')",0.32
+"('3_T', 'N_WA')",0.37
+"('3_T', 'N_WA', 'N_P')",0.36
+"('3_T', 'N_P')",0.42
+"('1_S', 'N_L')",0.34
+"('1_S', 'N_L', 'N_P')",0.33
+"('1_S', 'N_WA')",0.37
+"('1_S', 'N_WA', 'N_P')",0.36
+"('1_S', 'N_P')",0.42
+"('high_SL', 'N_L')",0.41
+"('high_SL', 'N_L', 'N_WA')",0.34
+"('high_SL', 'N_L', 'N_WA', 'N_P')",0.33
+"('high_SL', 'N_L', 'N_P')",0.4
+"('high_SL', 'N_WA')",0.4
+"('high_SL', 'N_WA', 'N_P')",0.39
+"('high_SL', 'N_P')",0.47
+"('0_S', 'N_L')",0.34
+"('0_S', 'N_L', 'N_P')",0.34
+"('0_S', 'N_WA')",0.42
+"('0_S', 'N_WA', 'N_P')",0.42
+"('0_S', 'N_P')",0.48
+"('intensive_H', 'N_L')",0.37
+"('intensive_H', 'N_L', 'N_WA')",0.31
+"('intensive_H', 'N_L', 'N_WA', 'N_P')",0.3
+"('intensive_H', 'N_L', 'N_P')",0.36
+"('intensive_H', 'N_WA')",0.42
+"('intensive_H', 'N_WA', 'N_P')",0.41
+"('intensive_H', 'N_P')",0.48
+"('standard_H', 'N_L')",0.39
+"('standard_H', 'N_L', 'N_WA')",0.32
+"('standard_H', 'N_L', 'N_WA', 'N_P')",0.31
+"('standard_H', 'N_L', 'N_P')",0.38
+"('standard_H', 'N_WA')",0.43
+"('standard_H', 'N_WA', 'N_P')",0.42
+"('standard_H', 'N_P')",0.49
+"('N_L', 'N_WA')",0.63
+"('N_L', 'N_WA', 'N_P')",0.61
+"('N_L', 'N_P')",0.74
+"('N_WA', 'N_P')",0.84
