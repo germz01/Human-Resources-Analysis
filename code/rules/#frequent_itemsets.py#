@@ -43,7 +43,7 @@ DS.drop(['Satisfaction_Level', 'Last_Evaluation', 'Average_Montly_Hours',
 
 print 'APPLYING APRIORI ALGORITHM'
 
-DS.to_csv('../../data/dataset_rules.csv')
+DS.to_csv('../../data/rules/dataset_rules.csv')
 
 records = DS.to_records(index=False)
 
