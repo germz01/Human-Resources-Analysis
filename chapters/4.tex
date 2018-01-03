@@ -30,13 +30,28 @@ primo split più redditizio rispetto alle altre variabili a disposizione. Come e
 ottenuti, non imponendo un vincolo sul numero di samples in ogni nodo prima dello split, hanno un'altezza
 considerevole, tale altezza decresce in modo significativo applicando i vincoli esposti in Sezione
 \ref{sec:learning_of_different_decision_trees}, arrivando ad ottenere un albero di altezza $13$ per l'indice Gini
-e uno di altezza $11$ per l'Entropia. In Figura \ref{fig:cutted_tree} possiamo osservare il dettaglio riguardante
-la radice dell'albero di altezza $11$ utilizzante Gini, al fine di ottenere questo albero è stato limitato il
-numero di records minimo contenuto all'interno di un nodo al $20\%$ del totale a disposizone nel dataset.
+e uno di altezza $11$ per l'Entropia. In Figura \ref{fig:cutted_tree} possiamo osservare i dettagli riguardanti
+le radici degli alberi di altezza $11$, a destra, e $13$, a sinistra. Al fine di ottenere questi alberi è stato
+limitato il numero di records minimo contenuto all'interno di un nodo al $20\%$ del totale a disposizone nel
+dataset.
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.5\textwidth]{images/classification/decision_tree_gini_0_2_cutted.pdf}
-    \caption{Dettaglio iniziale dell'albero di altezza $11$ utilizzante Gini. La classe \textit{y$0$}
+    \begin{subfigure}{0.4\textwidth}
+        \resizebox{\textwidth}{!}{
+        \includegraphics{images/classification/decision_tree_gini_0_2_cutted_2.pdf}
+        }
+        \caption{}
+        \label{fig:cutted_tree_1}
+    \end{subfigure}
+    \begin{subfigure}{0.4\textwidth}
+        \resizebox{\textwidth}{!}{
+            \includegraphics{images/classification/decision_tree_entropy_0_2_cutted_2.pdf}
+        }
+        \caption{}
+        \label{fig:cutted_tree_2}
+    \end{subfigure}
+    \caption{Dettaglio iniziale dell'albero di altezza $13$ utilizzante Gini, in Figura \ref{fig:cutted_tree_1}
+    , e quello di altezza $11$ utilizzante l'Entropia, in Figura \ref{fig:cutted_tree_2}. La classe \textit{y$0$}
     corrisponde a una risposta negativa alla domanda: "L'impiegato lascerà l'azienda?", vale il contrario per la
     classe y$1$. Essendo l'intero albero di dimensioni proibitive, abbiamo deciso di rappresentare questo
     dettaglio.}
@@ -44,9 +59,9 @@ numero di records minimo contenuto all'interno di un nodo al $20\%$ del totale a
 \end{figure}
 \\
 Come possiamo osservare, la colorazione dei vari nodi fornisce un indice visivo del grado di purezza dello split
-ottenuto, cominciando da uno split iniziale su tutto il dataset con un grado di purezza non molto alto, si
-raggiunge successivamene negli split secondari, su porzioni ridotte del dataset, gradi di purezza più
-consistenti.
+ottenuto, cominciando da uno split iniziale su tutto il dataset con un grado di purezza non molto alto
+(nel caso dell'indice Gini), si raggiunge successivamene negli split secondari, su porzioni ridotte del dataset,
+gradi di purezza più consistenti.
 % section decision_trees_interpretation (end)
 \section{Decision trees validation with test and training set} % (fold)
 \label{sec:decision_trees_validation_with_test_and_training_set}
