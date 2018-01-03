@@ -18,12 +18,12 @@ DS['Department'].replace(['sales', 'technical', 'support', 'IT',
 
 DS['SL_100'] = DS['Satisfaction_Level']*100
 DS['LE_100'] = DS['Last_Evaluation']*100
-DS['AMHGroup'] = pd.cut(DS['Average_Montly_Hours'], bins=[0, 200, 300],
+DS['AMHGroup'] = pd.cut(DS['Average_Montly_Hours'], bins=[0, 200, 320],
                         right=False, labels=['standard', 'intensive'])
-DS['LEGroup'] = pd.cut(DS['SL_100'], bins=[0, 45, 57, 77, 100], right=False,
-                       labels=['insufficient', 'sufficient', 'good',
+
+DS['LEGroup'] = pd.cut(DS['SL_100'], bins=[0, 45, 57, 77, 110], right=False,                       labels=['insufficient', 'sufficient', 'good',
                        'very good'])
-DS['SLGroup'] = pd.cut(DS['SL_100'], bins=[0, 33, 66, 100], right=False,
+DS['SLGroup'] = pd.cut(DS['SL_100'], bins=[0, 33, 66, 110], right=False,
                        labels=['low', 'medium', 'high'])
 DS['Work_Accident'] = DS['Work_Accident'].map({1: 'Y',
                                               0: 'N'}).astype(str) + '_WA'

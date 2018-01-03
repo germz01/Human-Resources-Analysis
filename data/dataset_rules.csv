@@ -10,7 +10,7 @@
 8,5_T,5_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 9,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 10,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,sufficient_LE,medium_SL
-11,4_T,6_NP,N_WA,N_P,0_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+11,4_T,6_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12,5_T,4_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 13,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 14,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -21,7 +21,7 @@
 19,5_T,5_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,good_LE,high_SL
 20,4_T,6_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 21,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-22,4_T,6_NP,N_WA,N_P,0_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+22,4_T,6_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 23,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,sufficient_LE,medium_SL
 24,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 25,5_T,5_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,very good_LE,high_SL
@@ -37,7 +37,7 @@
 35,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 36,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 37,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,sufficient_LE,medium_SL
-38,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+38,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 39,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 40,5_T,5_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 41,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,sufficient_LE,medium_SL
@@ -53,14 +53,14 @@
 51,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 52,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 53,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-54,4_T,7_NP,N_WA,N_P,2_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+54,4_T,7_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 55,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 56,4_T,7_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
-57,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+57,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 58,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 59,5_T,4_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 60,5_T,5_NP,N_WA,N_P,9_D,1_S,Y_L,intensive_H,very good_LE,high_SL
-61,4_T,7_NP,N_WA,N_P,3_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+61,4_T,7_NP,N_WA,N_P,3_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 62,5_T,6_NP,N_WA,N_P,3_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 63,3_T,2_NP,N_WA,N_P,3_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 64,4_T,6_NP,N_WA,N_P,3_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
@@ -74,7 +74,7 @@
 72,3_T,2_NP,N_WA,N_P,4_D,2_S,Y_L,standard_H,sufficient_LE,medium_SL
 73,4_T,7_NP,N_WA,N_P,4_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 74,4_T,6_NP,N_WA,N_P,4_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
-75,4_T,7_NP,N_WA,N_P,4_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+75,4_T,7_NP,N_WA,N_P,4_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 76,4_T,6_NP,N_WA,N_P,4_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 77,3_T,2_NP,N_WA,N_P,5_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 78,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -84,7 +84,7 @@
 82,3_T,4_NP,N_WA,Y_P,9_D,0_S,Y_L,standard_H,very good_LE,high_SL
 83,6_T,4_NP,N_WA,N_P,5_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 84,4_T,6_NP,N_WA,N_P,5_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
-85,4_T,6_NP,N_WA,N_P,5_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+85,4_T,6_NP,N_WA,N_P,5_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 86,3_T,5_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 87,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 88,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -122,7 +122,7 @@
 120,4_T,4_NP,Y_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,low_SL
 121,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 122,6_T,4_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,good_LE,high_SL
-123,5_T,6_NP,Y_WA,N_P,2_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+123,5_T,6_NP,Y_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 124,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,sufficient_LE,medium_SL
 125,4_T,6_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 126,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -146,7 +146,7 @@
 144,5_T,4_NP,N_WA,N_P,4_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 145,3_T,2_NP,N_WA,N_P,4_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 146,5_T,4_NP,N_WA,N_P,4_D,0_S,Y_L,intensive_H,good_LE,high_SL
-147,4_T,6_NP,N_WA,N_P,3_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+147,4_T,6_NP,N_WA,N_P,3_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 148,5_T,4_NP,Y_WA,N_P,5_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 149,3_T,2_NP,N_WA,N_P,5_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 150,4_T,6_NP,N_WA,N_P,5_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
@@ -154,12 +154,12 @@
 152,3_T,2_NP,N_WA,N_P,5_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 153,3_T,2_NP,N_WA,N_P,5_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 154,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-155,4_T,6_NP,N_WA,N_P,7_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+155,4_T,6_NP,N_WA,N_P,7_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 156,5_T,5_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,very good_LE,high_SL
-157,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+157,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 158,3_T,2_NP,N_WA,N_P,9_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 159,3_T,2_NP,N_WA,N_P,5_D,0_S,Y_L,standard_H,sufficient_LE,medium_SL
-160,4_T,7_NP,N_WA,N_P,5_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+160,4_T,7_NP,N_WA,N_P,5_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 161,6_T,5_NP,N_WA,N_P,5_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 162,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,sufficient_LE,medium_SL
 163,5_T,5_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,very good_LE,high_SL
@@ -178,7 +178,7 @@
 176,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 177,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 178,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
-179,5_T,6_NP,N_WA,N_P,0_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+179,5_T,6_NP,N_WA,N_P,0_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 180,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 181,4_T,6_NP,N_WA,N_P,7_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 182,5_T,5_NP,N_WA,N_P,7_D,1_S,Y_L,intensive_H,very good_LE,high_SL
@@ -194,7 +194,7 @@
 192,5_T,4_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,good_LE,high_SL
 193,4_T,6_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 194,5_T,4_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,very good_LE,high_SL
-195,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+195,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 196,3_T,7_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 197,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 198,4_T,7_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
@@ -280,19 +280,19 @@
 278,4_T,6_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 279,4_T,4_NP,Y_WA,N_P,2_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 280,4_T,6_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
-281,3_T,3_NP,N_WA,N_P,2_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+281,3_T,3_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 282,6_T,5_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 283,4_T,6_NP,Y_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 284,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 285,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-286,4_T,6_NP,N_WA,N_P,2_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+286,4_T,6_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 287,4_T,6_NP,N_WA,Y_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 288,5_T,5_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 289,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 290,3_T,2_NP,N_WA,N_P,9_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 291,5_T,5_NP,N_WA,N_P,3_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 292,3_T,2_NP,N_WA,N_P,3_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-293,4_T,6_NP,Y_WA,N_P,3_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+293,4_T,6_NP,Y_WA,N_P,3_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 294,4_T,6_NP,N_WA,N_P,3_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 295,3_T,2_NP,N_WA,N_P,3_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 296,3_T,2_NP,N_WA,N_P,4_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -309,8 +309,8 @@
 307,4_T,5_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 308,3_T,2_NP,N_WA,N_P,7_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 309,4_T,6_NP,N_WA,N_P,2_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
-310,4_T,7_NP,N_WA,N_P,1_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
-311,4_T,7_NP,N_WA,N_P,9_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+310,4_T,7_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
+311,4_T,7_NP,N_WA,N_P,9_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 312,3_T,2_NP,N_WA,N_P,5_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 313,3_T,2_NP,N_WA,N_P,5_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 314,4_T,6_NP,N_WA,N_P,5_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
@@ -330,7 +330,7 @@
 328,4_T,6_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 329,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 330,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-331,4_T,7_NP,N_WA,N_P,0_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+331,4_T,7_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 332,4_T,6_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 333,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,sufficient_LE,medium_SL
 334,4_T,6_NP,N_WA,N_P,7_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
@@ -339,7 +339,7 @@
 337,3_T,2_NP,N_WA,N_P,8_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 338,3_T,2_NP,N_WA,N_P,8_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 339,4_T,6_NP,N_WA,N_P,8_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
-340,5_T,7_NP,N_WA,N_P,8_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+340,5_T,7_NP,N_WA,N_P,8_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 341,3_T,2_NP,N_WA,N_P,1_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 342,5_T,5_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 343,3_T,2_NP,N_WA,N_P,1_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -349,7 +349,7 @@
 347,4_T,6_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 348,4_T,7_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 349,3_T,2_NP,N_WA,N_P,1_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
-350,5_T,6_NP,N_WA,N_P,1_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+350,5_T,6_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 351,6_T,3_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,sufficient_LE,medium_SL
 352,6_T,4_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 353,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -433,7 +433,7 @@
 431,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 432,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 433,6_T,4_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,very good_LE,high_SL
-434,4_T,6_NP,N_WA,N_P,2_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+434,4_T,6_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 435,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 436,4_T,6_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 437,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -492,7 +492,7 @@
 490,6_T,4_NP,N_WA,N_P,8_D,1_S,Y_L,intensive_H,sufficient_LE,medium_SL
 491,3_T,2_NP,N_WA,N_P,8_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 492,4_T,6_NP,N_WA,N_P,8_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
-493,4_T,6_NP,N_WA,N_P,1_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+493,4_T,6_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 494,5_T,5_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 495,6_T,4_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 496,4_T,6_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
@@ -516,7 +516,7 @@
 514,5_T,5_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 515,6_T,5_NP,Y_WA,N_P,1_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 516,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
-517,4_T,7_NP,N_WA,N_P,1_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+517,4_T,7_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 518,3_T,2_NP,N_WA,N_P,9_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 519,3_T,2_NP,N_WA,N_P,3_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 520,5_T,4_NP,N_WA,N_P,3_D,0_S,Y_L,intensive_H,very good_LE,high_SL
@@ -527,7 +527,7 @@
 525,3_T,2_NP,N_WA,N_P,4_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 526,3_T,2_NP,Y_WA,N_P,4_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 527,4_T,7_NP,N_WA,N_P,4_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
-528,5_T,6_NP,N_WA,N_P,3_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+528,5_T,6_NP,N_WA,N_P,3_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 529,3_T,2_NP,N_WA,N_P,7_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 530,3_T,2_NP,N_WA,N_P,7_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 531,3_T,2_NP,Y_WA,N_P,8_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -535,7 +535,7 @@
 533,3_T,2_NP,N_WA,N_P,8_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 534,6_T,5_NP,Y_WA,N_P,5_D,1_S,Y_L,intensive_H,good_LE,high_SL
 535,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
-536,4_T,6_NP,N_WA,N_P,7_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+536,4_T,6_NP,N_WA,N_P,7_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 537,3_T,2_NP,Y_WA,N_P,2_D,1_S,Y_L,standard_H,sufficient_LE,medium_SL
 538,5_T,5_NP,Y_WA,N_P,1_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 539,4_T,7_NP,N_WA,N_P,9_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
@@ -565,7 +565,7 @@
 563,4_T,7_NP,N_WA,N_P,7_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 564,3_T,2_NP,N_WA,N_P,7_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 565,4_T,3_NP,N_WA,N_P,8_D,0_S,Y_L,intensive_H,very good_LE,high_SL
-566,4_T,7_NP,N_WA,N_P,8_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+566,4_T,7_NP,N_WA,N_P,8_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 567,4_T,6_NP,N_WA,N_P,8_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 568,3_T,2_NP,N_WA,N_P,8_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 569,4_T,4_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
@@ -598,7 +598,7 @@
 596,5_T,5_NP,N_WA,N_P,3_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 597,4_T,6_NP,N_WA,N_P,3_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 598,3_T,2_NP,N_WA,N_P,3_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-599,4_T,7_NP,N_WA,N_P,3_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+599,4_T,7_NP,N_WA,N_P,3_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 600,6_T,5_NP,N_WA,N_P,4_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 601,6_T,5_NP,N_WA,N_P,4_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 602,4_T,7_NP,N_WA,N_P,4_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
@@ -653,7 +653,7 @@
 651,4_T,6_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 652,4_T,6_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 653,3_T,2_NP,N_WA,N_P,1_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
-654,4_T,7_NP,N_WA,N_P,1_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+654,4_T,7_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 655,5_T,4_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 656,5_T,5_NP,N_WA,N_P,2_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 657,3_T,2_NP,N_WA,N_P,2_D,2_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -696,7 +696,7 @@
 694,5_T,3_NP,N_WA,N_P,5_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 695,4_T,3_NP,N_WA,N_P,0_D,1_S,Y_L,intensive_H,insufficient_LE,medium_SL
 696,4_T,7_NP,N_WA,N_P,0_D,2_S,Y_L,intensive_H,insufficient_LE,low_SL
-697,4_T,6_NP,N_WA,N_P,0_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+697,4_T,6_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 698,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 699,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 700,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,sufficient_LE,medium_SL
@@ -742,7 +742,7 @@
 740,4_T,7_NP,N_WA,N_P,2_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 741,4_T,5_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,sufficient_LE,medium_SL
 742,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-743,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+743,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 744,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 745,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 746,3_T,2_NP,N_WA,N_P,9_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -769,8 +769,8 @@
 767,3_T,2_NP,N_WA,N_P,9_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 768,5_T,6_NP,N_WA,N_P,5_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 769,3_T,2_NP,N_WA,N_P,5_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
-770,4_T,6_NP,N_WA,N_P,5_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
-771,4_T,6_NP,N_WA,N_P,0_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+770,4_T,6_NP,N_WA,N_P,5_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
+771,4_T,6_NP,N_WA,N_P,0_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 772,3_T,4_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,low_SL
 773,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 774,3_T,2_NP,N_WA,N_P,0_D,2_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -790,7 +790,7 @@
 788,2_T,3_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 789,4_T,6_NP,Y_WA,N_P,0_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 790,4_T,4_NP,Y_WA,N_P,7_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
-791,4_T,6_NP,N_WA,N_P,7_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+791,4_T,6_NP,N_WA,N_P,7_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 792,5_T,5_NP,N_WA,N_P,7_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 793,5_T,4_NP,N_WA,N_P,8_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 794,4_T,7_NP,N_WA,N_P,8_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
@@ -802,13 +802,13 @@
 800,6_T,4_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 801,3_T,2_NP,N_WA,N_P,1_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 802,6_T,5_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,very good_LE,high_SL
-803,4_T,6_NP,N_WA,N_P,1_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+803,4_T,6_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 804,5_T,5_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 805,2_T,4_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,medium_SL
 806,3_T,2_NP,N_WA,N_P,1_D,1_S,Y_L,standard_H,sufficient_LE,medium_SL
 807,5_T,5_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,very good_LE,high_SL
-808,5_T,4_NP,N_WA,N_P,2_D,1_S,Y_L,nan_H,good_LE,high_SL
-809,4_T,7_NP,N_WA,N_P,2_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+808,5_T,4_NP,N_WA,N_P,2_D,1_S,Y_L,intensive_H,good_LE,high_SL
+809,4_T,7_NP,N_WA,N_P,2_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 810,5_T,5_NP,N_WA,N_P,2_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 811,4_T,7_NP,N_WA,N_P,2_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 812,3_T,2_NP,N_WA,N_P,2_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -824,7 +824,7 @@
 822,3_T,2_NP,N_WA,N_P,9_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 823,3_T,2_NP,N_WA,N_P,3_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 824,3_T,2_NP,N_WA,N_P,3_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-825,4_T,6_NP,N_WA,N_P,3_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+825,4_T,6_NP,N_WA,N_P,3_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 826,4_T,6_NP,N_WA,N_P,3_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 827,3_T,6_NP,N_WA,N_P,3_D,0_S,Y_L,standard_H,good_LE,high_SL
 828,5_T,2_NP,N_WA,N_P,4_D,0_S,Y_L,standard_H,good_LE,medium_SL
@@ -834,9 +834,9 @@
 832,3_T,2_NP,N_WA,N_P,3_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 833,6_T,5_NP,N_WA,N_P,6_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 834,5_T,4_NP,N_WA,N_P,6_D,0_S,Y_L,intensive_H,very good_LE,high_SL
-835,4_T,6_NP,Y_WA,N_P,6_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+835,4_T,6_NP,Y_WA,N_P,6_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 836,3_T,2_NP,N_WA,N_P,6_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-837,4_T,6_NP,N_WA,N_P,6_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+837,4_T,6_NP,N_WA,N_P,6_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 838,6_T,5_NP,N_WA,N_P,5_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 839,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 840,3_T,2_NP,N_WA,N_P,7_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -847,7 +847,7 @@
 845,3_T,2_NP,N_WA,N_P,5_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 846,4_T,6_NP,N_WA,N_P,5_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 847,6_T,5_NP,N_WA,N_P,0_D,1_S,Y_L,intensive_H,very good_LE,high_SL
-848,4_T,6_NP,Y_WA,N_P,0_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+848,4_T,6_NP,Y_WA,N_P,0_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 849,3_T,6_NP,N_WA,N_P,0_D,1_S,Y_L,intensive_H,sufficient_LE,medium_SL
 850,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 851,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -856,7 +856,7 @@
 854,5_T,5_NP,N_WA,N_P,0_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 855,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 856,4_T,6_NP,N_WA,N_P,0_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
-857,4_T,6_NP,N_WA,N_P,0_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+857,4_T,6_NP,N_WA,N_P,0_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 858,5_T,4_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,good_LE,high_SL
 859,4_T,6_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 860,5_T,4_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,very good_LE,high_SL
@@ -896,7 +896,7 @@
 894,5_T,5_NP,N_WA,N_P,2_D,1_S,Y_L,intensive_H,good_LE,high_SL
 895,4_T,6_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 896,3_T,2_NP,N_WA,N_P,1_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
-897,4_T,3_NP,Y_WA,N_P,1_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+897,4_T,3_NP,Y_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 898,4_T,7_NP,N_WA,N_P,9_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 899,5_T,5_NP,N_WA,N_P,3_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 900,6_T,5_NP,N_WA,N_P,3_D,0_S,Y_L,intensive_H,very good_LE,high_SL
@@ -915,7 +915,7 @@
 913,3_T,2_NP,Y_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 914,6_T,5_NP,N_WA,N_P,5_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 915,3_T,3_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,sufficient_LE,medium_SL
-916,4_T,6_NP,Y_WA,N_P,7_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+916,4_T,6_NP,Y_WA,N_P,7_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 917,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 918,4_T,6_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 919,5_T,4_NP,N_WA,N_P,9_D,1_S,Y_L,intensive_H,very good_LE,high_SL
@@ -935,13 +935,13 @@
 933,4_T,6_NP,Y_WA,N_P,0_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 934,4_T,6_NP,N_WA,N_P,0_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 935,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
-936,4_T,7_NP,N_WA,N_P,0_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+936,4_T,7_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 937,4_T,6_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 938,4_T,6_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 939,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 940,5_T,4_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 941,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-942,4_T,6_NP,N_WA,N_P,7_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+942,4_T,6_NP,N_WA,N_P,7_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 943,5_T,5_NP,N_WA,N_P,7_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 944,4_T,7_NP,N_WA,N_P,7_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 945,5_T,5_NP,N_WA,N_P,8_D,0_S,Y_L,intensive_H,very good_LE,high_SL
@@ -951,8 +951,8 @@
 949,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 950,5_T,7_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 951,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-952,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
-953,5_T,4_NP,N_WA,N_P,1_D,0_S,Y_L,nan_H,insufficient_LE,medium_SL
+952,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
+953,5_T,4_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,medium_SL
 954,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 955,5_T,6_NP,Y_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 956,3_T,2_NP,Y_WA,N_P,1_D,0_S,Y_L,standard_H,sufficient_LE,medium_SL
@@ -973,10 +973,10 @@
 971,5_T,5_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,good_LE,high_SL
 972,5_T,6_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 973,3_T,2_NP,N_WA,N_P,1_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
-974,4_T,6_NP,N_WA,N_P,9_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+974,4_T,6_NP,N_WA,N_P,9_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 975,3_T,2_NP,N_WA,N_P,3_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-976,5_T,5_NP,N_WA,N_P,3_D,0_S,Y_L,nan_H,very good_LE,high_SL
-977,4_T,5_NP,N_WA,N_P,3_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+976,5_T,5_NP,N_WA,N_P,3_D,0_S,Y_L,intensive_H,very good_LE,high_SL
+977,4_T,5_NP,N_WA,N_P,3_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 978,3_T,2_NP,N_WA,N_P,3_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 979,4_T,6_NP,N_WA,N_P,3_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 980,3_T,2_NP,N_WA,N_P,4_D,0_S,Y_L,standard_H,sufficient_LE,medium_SL
@@ -1029,7 +1029,7 @@
 1027,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1028,5_T,4_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 1029,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
-1030,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+1030,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1031,3_T,4_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1032,5_T,5_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 1033,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -1039,7 +1039,7 @@
 1037,4_T,7_NP,N_WA,N_P,2_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 1038,5_T,4_NP,N_WA,N_P,2_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 1039,6_T,4_NP,N_WA,N_P,2_D,1_S,Y_L,intensive_H,very good_LE,high_SL
-1040,4_T,6_NP,N_WA,N_P,2_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+1040,4_T,6_NP,N_WA,N_P,2_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 1041,5_T,5_NP,N_WA,N_P,2_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 1042,6_T,5_NP,N_WA,N_P,2_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 1043,6_T,4_NP,N_WA,N_P,2_D,1_S,Y_L,intensive_H,very good_LE,high_SL
@@ -1058,11 +1058,11 @@
 1056,3_T,2_NP,N_WA,N_P,4_D,0_S,Y_L,standard_H,sufficient_LE,medium_SL
 1057,3_T,2_NP,N_WA,N_P,4_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 1058,5_T,6_NP,N_WA,N_P,4_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
-1059,3_T,2_NP,N_WA,N_P,4_D,0_S,Y_L,nan_H,good_LE,high_SL
+1059,3_T,2_NP,N_WA,N_P,4_D,0_S,Y_L,intensive_H,good_LE,high_SL
 1060,3_T,2_NP,N_WA,N_P,3_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 1061,5_T,6_NP,Y_WA,N_P,6_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 1062,5_T,5_NP,N_WA,N_P,6_D,0_S,Y_L,intensive_H,very good_LE,high_SL
-1063,4_T,6_NP,N_WA,N_P,6_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+1063,4_T,6_NP,N_WA,N_P,6_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1064,3_T,4_NP,N_WA,N_P,6_D,0_S,Y_L,standard_H,sufficient_LE,medium_SL
 1065,3_T,2_NP,N_WA,N_P,6_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 1066,3_T,2_NP,N_WA,N_P,5_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -1094,7 +1094,7 @@
 1092,5_T,5_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,good_LE,high_SL
 1093,5_T,5_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 1094,4_T,6_NP,N_WA,N_P,7_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
-1095,4_T,7_NP,N_WA,N_P,7_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+1095,4_T,7_NP,N_WA,N_P,7_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1096,3_T,2_NP,N_WA,N_P,7_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 1097,3_T,2_NP,N_WA,N_P,8_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 1098,3_T,2_NP,N_WA,N_P,8_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -1112,7 +1112,7 @@
 1110,4_T,7_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1111,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 1112,4_T,6_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
-1113,4_T,6_NP,N_WA,N_P,2_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+1113,4_T,6_NP,N_WA,N_P,2_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 1114,4_T,6_NP,N_WA,N_P,2_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 1115,3_T,2_NP,N_WA,N_P,2_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 1116,4_T,6_NP,N_WA,N_P,2_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
@@ -1122,7 +1122,7 @@
 1120,4_T,6_NP,N_WA,N_P,2_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 1121,3_T,2_NP,N_WA,N_P,2_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 1122,3_T,2_NP,N_WA,N_P,2_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
-1123,4_T,7_NP,N_WA,N_P,1_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+1123,4_T,7_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 1124,3_T,2_NP,N_WA,N_P,1_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 1125,3_T,2_NP,N_WA,N_P,1_D,2_S,Y_L,standard_H,insufficient_LE,medium_SL
 1126,6_T,4_NP,N_WA,N_P,9_D,0_S,Y_L,intensive_H,very good_LE,high_SL
@@ -1137,7 +1137,7 @@
 1135,4_T,6_NP,N_WA,N_P,4_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1136,5_T,5_NP,N_WA,N_P,3_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 1137,6_T,5_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,very good_LE,high_SL
-1138,5_T,6_NP,N_WA,N_P,0_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+1138,5_T,6_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1139,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 1140,5_T,4_NP,Y_WA,N_P,0_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 1141,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,sufficient_LE,medium_SL
@@ -1152,25 +1152,25 @@
 1150,3_T,2_NP,N_WA,N_P,5_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 1151,5_T,4_NP,N_WA,N_P,5_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 1152,3_T,2_NP,Y_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
-1153,4_T,7_NP,N_WA,N_P,0_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+1153,4_T,7_NP,N_WA,N_P,0_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 1154,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
-1155,4_T,6_NP,N_WA,N_P,0_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+1155,4_T,6_NP,N_WA,N_P,0_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 1156,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 1157,3_T,2_NP,Y_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 1158,2_T,4_NP,Y_WA,N_P,0_D,1_S,Y_L,intensive_H,sufficient_LE,medium_SL
 1159,5_T,7_NP,N_WA,N_P,0_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 1160,2_T,4_NP,N_WA,N_P,0_D,1_S,Y_L,intensive_H,insufficient_LE,medium_SL
-1161,4_T,7_NP,N_WA,N_P,0_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+1161,4_T,7_NP,N_WA,N_P,0_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 1162,2_T,6_NP,N_WA,N_P,0_D,1_S,Y_L,intensive_H,insufficient_LE,medium_SL
 1163,5_T,5_NP,N_WA,N_P,0_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 1164,4_T,7_NP,N_WA,N_P,0_D,2_S,Y_L,intensive_H,insufficient_LE,low_SL
-1165,4_T,6_NP,N_WA,N_P,0_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+1165,4_T,6_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1166,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 1167,3_T,2_NP,Y_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 1168,5_T,5_NP,N_WA,N_P,0_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 1169,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,sufficient_LE,medium_SL
 1170,4_T,6_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
-1171,4_T,6_NP,N_WA,N_P,7_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+1171,4_T,6_NP,N_WA,N_P,7_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1172,3_T,2_NP,N_WA,N_P,7_D,0_S,Y_L,standard_H,sufficient_LE,medium_SL
 1173,4_T,6_NP,N_WA,N_P,7_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1174,4_T,6_NP,N_WA,N_P,8_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
@@ -1204,7 +1204,7 @@
 1202,3_T,2_NP,N_WA,N_P,1_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 1203,4_T,6_NP,N_WA,N_P,9_D,2_S,Y_L,intensive_H,insufficient_LE,medium_SL
 1204,3_T,2_NP,N_WA,N_P,3_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-1205,4_T,7_NP,N_WA,N_P,3_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+1205,4_T,7_NP,N_WA,N_P,3_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 1206,3_T,2_NP,N_WA,N_P,3_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 1207,5_T,5_NP,N_WA,N_P,3_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 1208,4_T,7_NP,N_WA,N_P,3_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
@@ -1223,11 +1223,11 @@
 1221,5_T,5_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,good_LE,high_SL
 1222,3_T,2_NP,N_WA,N_P,7_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 1223,5_T,4_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,good_LE,high_SL
-1224,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+1224,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1225,3_T,2_NP,N_WA,N_P,9_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 1226,3_T,2_NP,N_WA,N_P,5_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 1227,3_T,2_NP,N_WA,N_P,5_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-1228,5_T,7_NP,N_WA,N_P,5_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+1228,5_T,7_NP,N_WA,N_P,5_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1229,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 1230,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 1231,4_T,6_NP,N_WA,N_P,0_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
@@ -1287,7 +1287,7 @@
 1285,3_T,2_NP,N_WA,N_P,3_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 1286,3_T,2_NP,N_WA,N_P,4_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 1287,4_T,7_NP,N_WA,N_P,4_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
-1288,5_T,5_NP,N_WA,N_P,4_D,0_S,Y_L,nan_H,very good_LE,high_SL
+1288,5_T,5_NP,N_WA,N_P,4_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 1289,4_T,6_NP,N_WA,N_P,4_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 1290,3_T,2_NP,N_WA,N_P,3_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 1291,5_T,6_NP,N_WA,N_P,6_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
@@ -1319,7 +1319,7 @@
 1317,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 1318,4_T,6_NP,N_WA,N_P,0_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 1319,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
-1320,4_T,6_NP,N_WA,N_P,0_D,2_S,Y_L,nan_H,insufficient_LE,low_SL
+1320,4_T,6_NP,N_WA,N_P,0_D,2_S,Y_L,intensive_H,insufficient_LE,low_SL
 1321,4_T,3_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,good_LE,medium_SL
 1322,5_T,4_NP,N_WA,N_P,0_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 1323,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -1327,14 +1327,14 @@
 1325,3_T,2_NP,N_WA,N_P,7_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 1326,4_T,6_NP,N_WA,N_P,7_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1327,3_T,2_NP,N_WA,N_P,7_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-1328,4_T,7_NP,N_WA,N_P,8_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+1328,4_T,7_NP,N_WA,N_P,8_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1329,4_T,6_NP,N_WA,N_P,8_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1330,3_T,2_NP,N_WA,N_P,8_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 1331,4_T,6_NP,N_WA,N_P,8_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1332,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1333,4_T,7_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1334,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-1335,5_T,3_NP,N_WA,N_P,1_D,0_S,Y_L,nan_H,very good_LE,high_SL
+1335,5_T,3_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 1336,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 1337,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 1338,3_T,4_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,sufficient_LE,medium_SL
@@ -1416,7 +1416,7 @@
 1414,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 1415,3_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,low_SL
 1416,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
-1417,5_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+1417,5_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1418,4_T,7_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1419,5_T,5_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,good_LE,high_SL
 1420,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -1442,7 +1442,7 @@
 1440,5_T,4_NP,N_WA,N_P,4_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 1441,5_T,7_NP,N_WA,N_P,4_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 1442,3_T,2_NP,Y_WA,N_P,4_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
-1443,4_T,7_NP,N_WA,N_P,4_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+1443,4_T,7_NP,N_WA,N_P,4_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1444,3_T,2_NP,N_WA,N_P,3_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 1445,5_T,5_NP,N_WA,N_P,6_D,0_S,Y_L,intensive_H,good_LE,high_SL
 1446,3_T,2_NP,N_WA,N_P,6_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -1481,7 +1481,7 @@
 1479,3_T,2_NP,N_WA,N_P,7_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 1480,4_T,6_NP,N_WA,N_P,7_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 1481,5_T,4_NP,N_WA,N_P,7_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
-1482,4_T,6_NP,N_WA,N_P,8_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+1482,4_T,6_NP,N_WA,N_P,8_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1483,4_T,6_NP,N_WA,N_P,8_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1484,3_T,2_NP,N_WA,N_P,8_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 1485,4_T,7_NP,N_WA,N_P,8_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
@@ -1544,12 +1544,12 @@
 1542,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 1543,5_T,5_NP,N_WA,N_P,0_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 1544,5_T,4_NP,N_WA,N_P,0_D,1_S,Y_L,intensive_H,very good_LE,high_SL
-1545,4_T,6_NP,N_WA,N_P,0_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+1545,4_T,6_NP,N_WA,N_P,0_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 1546,6_T,5_NP,N_WA,N_P,0_D,1_S,Y_L,intensive_H,good_LE,high_SL
 1547,4_T,6_NP,N_WA,N_P,0_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 1548,6_T,4_NP,N_WA,N_P,0_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 1549,5_T,4_NP,N_WA,N_P,0_D,1_S,Y_L,intensive_H,very good_LE,high_SL
-1550,4_T,7_NP,N_WA,N_P,0_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+1550,4_T,7_NP,N_WA,N_P,0_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 1551,3_T,2_NP,Y_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 1552,5_T,6_NP,N_WA,N_P,0_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 1553,6_T,5_NP,N_WA,N_P,0_D,1_S,Y_L,intensive_H,very good_LE,high_SL
@@ -1572,12 +1572,12 @@
 1570,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 1571,5_T,4_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,good_LE,high_SL
 1572,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-1573,4_T,5_NP,N_WA,N_P,2_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+1573,4_T,5_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1574,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 1575,5_T,5_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 1576,2_T,3_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,good_LE,medium_SL
 1577,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-1578,5_T,6_NP,N_WA,N_P,2_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+1578,5_T,6_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1579,2_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,good_LE,medium_SL
 1580,3_T,4_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,sufficient_LE,medium_SL
 1581,6_T,5_NP,Y_WA,N_P,2_D,1_S,Y_L,intensive_H,good_LE,high_SL
@@ -1588,14 +1588,14 @@
 1586,6_T,5_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,good_LE,high_SL
 1587,4_T,6_NP,N_WA,N_P,9_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 1588,5_T,5_NP,N_WA,N_P,3_D,1_S,Y_L,intensive_H,very good_LE,high_SL
-1589,4_T,6_NP,N_WA,N_P,3_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+1589,4_T,6_NP,N_WA,N_P,3_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 1590,3_T,2_NP,N_WA,N_P,3_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 1591,3_T,2_NP,N_WA,N_P,3_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 1592,3_T,2_NP,N_WA,N_P,3_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
-1593,4_T,6_NP,N_WA,N_P,4_D,2_S,Y_L,nan_H,insufficient_LE,low_SL
+1593,4_T,6_NP,N_WA,N_P,4_D,2_S,Y_L,intensive_H,insufficient_LE,low_SL
 1594,3_T,2_NP,N_WA,N_P,4_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 1595,3_T,2_NP,N_WA,N_P,4_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
-1596,3_T,5_NP,N_WA,N_P,4_D,1_S,Y_L,nan_H,insufficient_LE,medium_SL
+1596,3_T,5_NP,N_WA,N_P,4_D,1_S,Y_L,intensive_H,insufficient_LE,medium_SL
 1597,5_T,5_NP,N_WA,N_P,3_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 1598,5_T,5_NP,N_WA,N_P,6_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 1599,3_T,2_NP,N_WA,N_P,6_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -1610,11 +1610,11 @@
 1608,5_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1609,3_T,6_NP,Y_WA,N_P,9_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 1610,5_T,4_NP,N_WA,N_P,5_D,0_S,Y_L,intensive_H,very good_LE,high_SL
-1611,4_T,7_NP,N_WA,N_P,5_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+1611,4_T,7_NP,N_WA,N_P,5_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1612,3_T,4_NP,N_WA,N_P,5_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 1613,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 1614,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-1615,4_T,6_NP,N_WA,N_P,0_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+1615,4_T,6_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1616,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 1617,5_T,4_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,good_LE,high_SL
 1618,5_T,4_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,very good_LE,high_SL
@@ -1715,8 +1715,8 @@
 1713,3_T,5_NP,N_WA,N_P,8_D,1_S,Y_L,standard_H,good_LE,medium_SL
 1714,3_T,2_NP,N_WA,N_P,8_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 1715,3_T,2_NP,N_WA,N_P,1_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
-1716,5_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
-1717,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+1716,5_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
+1717,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1718,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 1719,6_T,5_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 1720,6_T,4_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,very good_LE,high_SL
@@ -1760,7 +1760,7 @@
 1758,3_T,2_NP,N_WA,N_P,7_D,0_S,Y_L,standard_H,sufficient_LE,medium_SL
 1759,6_T,5_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,good_LE,high_SL
 1760,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-1761,4_T,7_NP,N_WA,N_P,9_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+1761,4_T,7_NP,N_WA,N_P,9_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1762,4_T,3_NP,N_WA,N_P,5_D,0_S,Y_L,intensive_H,insufficient_LE,medium_SL
 1763,5_T,5_NP,N_WA,N_P,5_D,0_S,Y_L,intensive_H,good_LE,high_SL
 1764,3_T,2_NP,N_WA,N_P,5_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -1814,7 +1814,7 @@
 1812,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 1813,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1814,5_T,5_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,very good_LE,high_SL
-1815,4_T,7_NP,N_WA,N_P,1_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+1815,4_T,7_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 1816,3_T,2_NP,N_WA,N_P,9_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 1817,3_T,2_NP,N_WA,N_P,3_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 1818,5_T,5_NP,N_WA,N_P,3_D,1_S,Y_L,intensive_H,very good_LE,high_SL
@@ -1839,7 +1839,7 @@
 1837,4_T,6_NP,N_WA,N_P,9_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1838,4_T,6_NP,N_WA,N_P,5_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1839,3_T,2_NP,N_WA,N_P,5_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-1840,4_T,7_NP,N_WA,N_P,5_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+1840,4_T,7_NP,N_WA,N_P,5_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1841,5_T,5_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 1842,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 1843,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -1875,7 +1875,7 @@
 1873,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1874,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,good_LE,high_SL
 1875,5_T,4_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,good_LE,high_SL
-1876,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+1876,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1877,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 1878,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 1879,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -1892,7 +1892,7 @@
 1890,5_T,5_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 1891,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 1892,3_T,2_NP,N_WA,N_P,9_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-1893,5_T,7_NP,N_WA,N_P,3_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+1893,5_T,7_NP,N_WA,N_P,3_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 1894,4_T,6_NP,N_WA,N_P,3_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 1895,5_T,5_NP,N_WA,N_P,3_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 1896,3_T,2_NP,N_WA,N_P,3_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -1909,7 +1909,7 @@
 1907,5_T,5_NP,N_WA,N_P,6_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 1908,5_T,5_NP,N_WA,N_P,5_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 1909,5_T,4_NP,Y_WA,N_P,0_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
-1910,5_T,5_NP,N_WA,N_P,7_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+1910,5_T,5_NP,N_WA,N_P,7_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 1911,6_T,4_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 1912,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 1913,3_T,2_NP,Y_WA,N_P,9_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -1935,10 +1935,10 @@
 1933,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 1934,5_T,4_NP,N_WA,N_P,0_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 1935,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
-1936,4_T,6_NP,N_WA,N_P,7_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+1936,4_T,6_NP,N_WA,N_P,7_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 1937,3_T,2_NP,N_WA,N_P,7_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 1938,3_T,2_NP,N_WA,N_P,7_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
-1939,4_T,7_NP,N_WA,N_P,8_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+1939,4_T,7_NP,N_WA,N_P,8_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 1940,3_T,2_NP,N_WA,N_P,8_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 1941,6_T,4_NP,N_WA,N_P,8_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 1942,3_T,2_NP,N_WA,N_P,8_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -1962,7 +1962,7 @@
 1960,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 1961,4_T,6_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1962,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-1963,4_T,7_NP,N_WA,N_P,2_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+1963,4_T,7_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 1964,5_T,5_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 1965,5_T,5_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 1966,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
@@ -1979,12 +1979,12 @@
 1977,3_T,2_NP,N_WA,N_P,4_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 1978,3_T,2_NP,N_WA,N_P,3_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 1979,5_T,5_NP,N_WA,N_P,6_D,1_S,Y_L,intensive_H,very good_LE,high_SL
-1980,5_T,6_NP,N_WA,N_P,6_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+1980,5_T,6_NP,N_WA,N_P,6_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 1981,6_T,4_NP,N_WA,N_P,6_D,1_S,Y_L,intensive_H,good_LE,high_SL
 1982,4_T,6_NP,N_WA,N_P,6_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 1983,3_T,2_NP,N_WA,N_P,6_D,2_S,Y_L,standard_H,insufficient_LE,medium_SL
 1984,3_T,2_NP,N_WA,N_P,5_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-1985,4_T,7_NP,N_WA,N_P,0_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+1985,4_T,7_NP,N_WA,N_P,0_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 1986,5_T,5_NP,N_WA,N_P,7_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 1987,5_T,5_NP,N_WA,N_P,2_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 1988,5_T,7_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,sufficient_LE,medium_SL
@@ -2022,7 +2022,7 @@
 2020,2_T,5_NP,N_WA,N_P,1_D,1_S,N_L,intensive_H,very good_LE,high_SL
 2021,3_T,5_NP,N_WA,N_P,1_D,1_S,N_L,intensive_H,very good_LE,high_SL
 2022,4_T,4_NP,N_WA,N_P,1_D,2_S,N_L,standard_H,good_LE,high_SL
-2023,3_T,4_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,nan_LE,nan_SL
+2023,3_T,4_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,very good_LE,high_SL
 2024,6_T,5_NP,N_WA,N_P,1_D,1_S,N_L,standard_H,insufficient_LE,low_SL
 2025,4_T,6_NP,N_WA,N_P,1_D,1_S,N_L,intensive_H,very good_LE,high_SL
 2026,3_T,4_NP,Y_WA,N_P,1_D,1_S,N_L,intensive_H,sufficient_LE,medium_SL
@@ -2100,7 +2100,7 @@
 2098,3_T,5_NP,N_WA,N_P,1_D,1_S,N_L,standard_H,good_LE,high_SL
 2099,3_T,5_NP,N_WA,N_P,1_D,1_S,N_L,intensive_H,good_LE,medium_SL
 2100,2_T,4_NP,N_WA,N_P,1_D,2_S,N_L,intensive_H,sufficient_LE,medium_SL
-2101,4_T,3_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,nan_LE,nan_SL
+2101,4_T,3_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,very good_LE,high_SL
 2102,3_T,6_NP,N_WA,N_P,1_D,1_S,N_L,intensive_H,insufficient_LE,low_SL
 2103,2_T,5_NP,N_WA,N_P,1_D,1_S,N_L,standard_H,insufficient_LE,low_SL
 2104,4_T,5_NP,N_WA,N_P,1_D,1_S,N_L,intensive_H,insufficient_LE,low_SL
@@ -2110,7 +2110,7 @@
 2108,4_T,5_NP,N_WA,N_P,2_D,0_S,N_L,standard_H,good_LE,high_SL
 2109,3_T,4_NP,Y_WA,N_P,2_D,0_S,N_L,intensive_H,very good_LE,high_SL
 2110,3_T,5_NP,N_WA,N_P,2_D,0_S,N_L,standard_H,very good_LE,high_SL
-2111,3_T,5_NP,Y_WA,N_P,2_D,0_S,N_L,standard_H,nan_LE,nan_SL
+2111,3_T,5_NP,Y_WA,N_P,2_D,0_S,N_L,standard_H,very good_LE,high_SL
 2112,2_T,4_NP,N_WA,N_P,2_D,0_S,N_L,intensive_H,good_LE,medium_SL
 2113,2_T,4_NP,N_WA,N_P,2_D,0_S,N_L,intensive_H,very good_LE,high_SL
 2114,2_T,5_NP,N_WA,N_P,2_D,0_S,N_L,intensive_H,insufficient_LE,medium_SL
@@ -2162,7 +2162,7 @@
 2160,2_T,2_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,sufficient_LE,medium_SL
 2161,3_T,4_NP,Y_WA,N_P,0_D,0_S,N_L,standard_H,good_LE,medium_SL
 2162,3_T,4_NP,N_WA,N_P,0_D,0_S,N_L,intensive_H,sufficient_LE,medium_SL
-2163,2_T,3_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,nan_LE,nan_SL
+2163,2_T,3_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,very good_LE,high_SL
 2164,2_T,4_NP,N_WA,N_P,7_D,0_S,N_L,standard_H,very good_LE,high_SL
 2165,3_T,3_NP,N_WA,N_P,7_D,0_S,N_L,standard_H,very good_LE,high_SL
 2166,3_T,3_NP,N_WA,N_P,7_D,1_S,N_L,standard_H,good_LE,high_SL
@@ -2192,7 +2192,7 @@
 2190,3_T,3_NP,N_WA,N_P,2_D,0_S,N_L,intensive_H,very good_LE,high_SL
 2191,3_T,4_NP,N_WA,N_P,2_D,0_S,N_L,intensive_H,good_LE,high_SL
 2192,5_T,5_NP,N_WA,N_P,2_D,0_S,N_L,standard_H,good_LE,medium_SL
-2193,3_T,4_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,nan_LE,nan_SL
+2193,3_T,4_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,very good_LE,high_SL
 2194,3_T,4_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,very good_LE,high_SL
 2195,3_T,4_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,very good_LE,high_SL
 2196,2_T,3_NP,N_WA,N_P,9_D,0_S,N_L,intensive_H,good_LE,high_SL
@@ -2294,7 +2294,7 @@
 2292,5_T,6_NP,Y_WA,N_P,1_D,1_S,N_L,standard_H,very good_LE,high_SL
 2293,3_T,4_NP,N_WA,N_P,9_D,1_S,N_L,standard_H,good_LE,high_SL
 2294,2_T,4_NP,N_WA,N_P,5_D,1_S,N_L,standard_H,good_LE,high_SL
-2295,2_T,4_NP,N_WA,N_P,5_D,2_S,N_L,standard_H,nan_LE,nan_SL
+2295,2_T,4_NP,N_WA,N_P,5_D,2_S,N_L,standard_H,very good_LE,high_SL
 2296,2_T,2_NP,N_WA,N_P,5_D,0_S,N_L,standard_H,sufficient_LE,medium_SL
 2297,3_T,3_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,very good_LE,high_SL
 2298,5_T,2_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,good_LE,medium_SL
@@ -2320,7 +2320,7 @@
 2318,3_T,3_NP,N_WA,N_P,7_D,0_S,N_L,intensive_H,sufficient_LE,medium_SL
 2319,3_T,4_NP,N_WA,N_P,8_D,0_S,N_L,standard_H,very good_LE,high_SL
 2320,2_T,5_NP,N_WA,N_P,8_D,0_S,N_L,intensive_H,very good_LE,high_SL
-2321,4_T,4_NP,Y_WA,N_P,8_D,0_S,N_L,intensive_H,nan_LE,nan_SL
+2321,4_T,4_NP,Y_WA,N_P,8_D,0_S,N_L,intensive_H,very good_LE,high_SL
 2322,2_T,4_NP,N_WA,N_P,8_D,1_S,N_L,standard_H,very good_LE,high_SL
 2323,3_T,5_NP,N_WA,N_P,1_D,1_S,N_L,standard_H,very good_LE,high_SL
 2324,3_T,2_NP,N_WA,N_P,1_D,1_S,N_L,intensive_H,very good_LE,high_SL
@@ -2490,7 +2490,7 @@
 2488,3_T,3_NP,N_WA,N_P,2_D,1_S,N_L,intensive_H,good_LE,medium_SL
 2489,3_T,3_NP,Y_WA,N_P,2_D,1_S,N_L,standard_H,good_LE,high_SL
 2490,2_T,5_NP,Y_WA,N_P,2_D,2_S,N_L,intensive_H,good_LE,high_SL
-2491,3_T,4_NP,N_WA,N_P,2_D,0_S,N_L,standard_H,nan_LE,nan_SL
+2491,3_T,4_NP,N_WA,N_P,2_D,0_S,N_L,standard_H,very good_LE,high_SL
 2492,3_T,4_NP,N_WA,N_P,2_D,1_S,N_L,standard_H,good_LE,medium_SL
 2493,6_T,4_NP,Y_WA,N_P,2_D,1_S,N_L,intensive_H,insufficient_LE,medium_SL
 2494,3_T,3_NP,N_WA,N_P,2_D,1_S,N_L,standard_H,very good_LE,high_SL
@@ -3015,7 +3015,7 @@
 3013,2_T,3_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,very good_LE,high_SL
 3014,2_T,3_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,good_LE,high_SL
 3015,5_T,3_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,very good_LE,high_SL
-3016,2_T,5_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,nan_LE,nan_SL
+3016,2_T,5_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,very good_LE,high_SL
 3017,3_T,4_NP,Y_WA,N_P,1_D,0_S,N_L,standard_H,very good_LE,high_SL
 3018,2_T,3_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,good_LE,medium_SL
 3019,2_T,4_NP,Y_WA,N_P,1_D,0_S,N_L,intensive_H,good_LE,medium_SL
@@ -3154,13 +3154,13 @@
 3152,2_T,3_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,very good_LE,high_SL
 3153,6_T,4_NP,N_WA,N_P,0_D,2_S,N_L,standard_H,insufficient_LE,low_SL
 3154,2_T,3_NP,Y_WA,N_P,0_D,0_S,N_L,standard_H,very good_LE,high_SL
-3155,3_T,3_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,nan_LE,nan_SL
+3155,3_T,3_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,very good_LE,high_SL
 3156,3_T,3_NP,Y_WA,N_P,0_D,1_S,N_L,intensive_H,sufficient_LE,medium_SL
 3157,2_T,3_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,sufficient_LE,medium_SL
 3158,2_T,3_NP,N_WA,N_P,7_D,1_S,N_L,standard_H,good_LE,medium_SL
 3159,3_T,4_NP,N_WA,N_P,7_D,0_S,N_L,intensive_H,very good_LE,high_SL
 3160,4_T,2_NP,Y_WA,N_P,7_D,0_S,N_L,standard_H,sufficient_LE,medium_SL
-3161,3_T,4_NP,N_WA,N_P,8_D,0_S,N_L,standard_H,nan_LE,nan_SL
+3161,3_T,4_NP,N_WA,N_P,8_D,0_S,N_L,standard_H,very good_LE,high_SL
 3162,3_T,5_NP,N_WA,N_P,8_D,0_S,N_L,intensive_H,good_LE,medium_SL
 3163,2_T,5_NP,N_WA,N_P,8_D,0_S,N_L,standard_H,good_LE,medium_SL
 3164,5_T,4_NP,N_WA,N_P,8_D,0_S,N_L,standard_H,insufficient_LE,low_SL
@@ -3260,7 +3260,7 @@
 3258,3_T,3_NP,Y_WA,N_P,2_D,1_S,N_L,intensive_H,sufficient_LE,medium_SL
 3259,2_T,3_NP,N_WA,N_P,2_D,1_S,N_L,intensive_H,good_LE,medium_SL
 3260,3_T,3_NP,N_WA,N_P,2_D,1_S,N_L,intensive_H,good_LE,medium_SL
-3261,5_T,4_NP,N_WA,N_P,2_D,1_S,N_L,standard_H,nan_LE,nan_SL
+3261,5_T,4_NP,N_WA,N_P,2_D,1_S,N_L,standard_H,very good_LE,high_SL
 3262,5_T,2_NP,N_WA,N_P,2_D,1_S,N_L,standard_H,very good_LE,high_SL
 3263,2_T,3_NP,N_WA,N_P,1_D,1_S,N_L,standard_H,good_LE,medium_SL
 3264,2_T,4_NP,N_WA,N_P,1_D,1_S,N_L,intensive_H,good_LE,medium_SL
@@ -3321,7 +3321,7 @@
 3319,3_T,3_NP,Y_WA,N_P,1_D,0_S,N_L,standard_H,good_LE,medium_SL
 3320,2_T,3_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,insufficient_LE,low_SL
 3321,4_T,5_NP,Y_WA,N_P,1_D,0_S,N_L,standard_H,very good_LE,high_SL
-3322,4_T,4_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,nan_LE,nan_SL
+3322,4_T,4_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,very good_LE,high_SL
 3323,2_T,4_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,very good_LE,high_SL
 3324,4_T,2_NP,Y_WA,N_P,1_D,0_S,N_L,intensive_H,very good_LE,high_SL
 3325,4_T,5_NP,N_WA,N_P,1_D,2_S,N_L,intensive_H,sufficient_LE,medium_SL
@@ -3387,7 +3387,7 @@
 3385,3_T,3_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,very good_LE,high_SL
 3386,3_T,4_NP,N_WA,N_P,7_D,1_S,N_L,standard_H,sufficient_LE,medium_SL
 3387,2_T,4_NP,Y_WA,N_P,7_D,2_S,N_L,intensive_H,very good_LE,high_SL
-3388,4_T,4_NP,N_WA,N_P,7_D,0_S,N_L,intensive_H,nan_LE,nan_SL
+3388,4_T,4_NP,N_WA,N_P,7_D,0_S,N_L,intensive_H,very good_LE,high_SL
 3389,4_T,3_NP,N_WA,N_P,8_D,1_S,N_L,intensive_H,insufficient_LE,medium_SL
 3390,3_T,5_NP,N_WA,N_P,8_D,1_S,N_L,intensive_H,good_LE,high_SL
 3391,2_T,4_NP,N_WA,N_P,8_D,1_S,N_L,standard_H,very good_LE,high_SL
@@ -3467,7 +3467,7 @@
 3465,4_T,4_NP,N_WA,N_P,8_D,2_S,N_L,intensive_H,good_LE,medium_SL
 3466,4_T,3_NP,N_WA,N_P,8_D,0_S,N_L,intensive_H,very good_LE,high_SL
 3467,3_T,3_NP,N_WA,N_P,8_D,1_S,N_L,intensive_H,very good_LE,high_SL
-3468,4_T,5_NP,N_WA,N_P,8_D,1_S,N_L,standard_H,nan_LE,nan_SL
+3468,4_T,5_NP,N_WA,N_P,8_D,1_S,N_L,standard_H,very good_LE,high_SL
 3469,3_T,4_NP,Y_WA,N_P,1_D,1_S,N_L,intensive_H,very good_LE,high_SL
 3470,3_T,4_NP,N_WA,N_P,1_D,1_S,N_L,standard_H,insufficient_LE,medium_SL
 3471,2_T,3_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,very good_LE,high_SL
@@ -3586,11 +3586,11 @@
 3584,2_T,5_NP,Y_WA,N_P,6_D,1_S,N_L,standard_H,good_LE,high_SL
 3585,4_T,2_NP,N_WA,N_P,6_D,0_S,N_L,intensive_H,very good_LE,high_SL
 3586,2_T,4_NP,N_WA,N_P,5_D,0_S,N_L,intensive_H,very good_LE,high_SL
-3587,3_T,3_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,nan_LE,nan_SL
+3587,3_T,3_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,very good_LE,high_SL
 3588,3_T,4_NP,Y_WA,N_P,7_D,0_S,N_L,standard_H,good_LE,high_SL
 3589,4_T,6_NP,Y_WA,N_P,2_D,0_S,N_L,standard_H,good_LE,high_SL
 3590,2_T,5_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,good_LE,medium_SL
-3591,3_T,5_NP,N_WA,N_P,9_D,0_S,N_L,intensive_H,nan_LE,nan_SL
+3591,3_T,5_NP,N_WA,N_P,9_D,0_S,N_L,intensive_H,very good_LE,high_SL
 3592,2_T,5_NP,N_WA,N_P,5_D,0_S,N_L,intensive_H,good_LE,high_SL
 3593,3_T,4_NP,N_WA,N_P,5_D,0_S,N_L,standard_H,very good_LE,high_SL
 3594,5_T,5_NP,N_WA,N_P,5_D,0_S,N_L,intensive_H,insufficient_LE,low_SL
@@ -3642,7 +3642,7 @@
 3640,2_T,5_NP,N_WA,N_P,2_D,1_S,N_L,intensive_H,good_LE,medium_SL
 3641,4_T,5_NP,N_WA,N_P,2_D,1_S,N_L,intensive_H,insufficient_LE,low_SL
 3642,4_T,4_NP,N_WA,N_P,2_D,1_S,N_L,intensive_H,very good_LE,high_SL
-3643,2_T,3_NP,N_WA,N_P,1_D,1_S,N_L,intensive_H,nan_LE,nan_SL
+3643,2_T,3_NP,N_WA,N_P,1_D,1_S,N_L,intensive_H,very good_LE,high_SL
 3644,3_T,2_NP,N_WA,N_P,1_D,1_S,N_L,standard_H,good_LE,high_SL
 3645,3_T,4_NP,Y_WA,N_P,1_D,1_S,N_L,intensive_H,very good_LE,high_SL
 3646,4_T,4_NP,N_WA,N_P,9_D,1_S,N_L,intensive_H,good_LE,medium_SL
@@ -3906,7 +3906,7 @@
 3904,3_T,3_NP,N_WA,N_P,0_D,0_S,N_L,intensive_H,very good_LE,high_SL
 3905,3_T,2_NP,Y_WA,N_P,0_D,0_S,N_L,intensive_H,very good_LE,high_SL
 3906,3_T,5_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,very good_LE,high_SL
-3907,3_T,5_NP,N_WA,N_P,0_D,0_S,N_L,intensive_H,nan_LE,nan_SL
+3907,3_T,5_NP,N_WA,N_P,0_D,0_S,N_L,intensive_H,very good_LE,high_SL
 3908,3_T,4_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,good_LE,high_SL
 3909,3_T,5_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,good_LE,medium_SL
 3910,2_T,4_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,good_LE,high_SL
@@ -4020,7 +4020,7 @@
 4018,2_T,4_NP,N_WA,N_P,2_D,0_S,N_L,intensive_H,good_LE,high_SL
 4019,4_T,4_NP,N_WA,N_P,2_D,0_S,N_L,intensive_H,very good_LE,high_SL
 4020,2_T,4_NP,N_WA,N_P,2_D,0_S,N_L,standard_H,very good_LE,high_SL
-4021,4_T,3_NP,N_WA,N_P,2_D,0_S,N_L,standard_H,nan_LE,nan_SL
+4021,4_T,3_NP,N_WA,N_P,2_D,0_S,N_L,standard_H,very good_LE,high_SL
 4022,4_T,3_NP,N_WA,N_P,2_D,0_S,N_L,standard_H,good_LE,high_SL
 4023,2_T,3_NP,N_WA,N_P,2_D,0_S,N_L,standard_H,insufficient_LE,low_SL
 4024,2_T,3_NP,N_WA,N_P,2_D,0_S,N_L,standard_H,insufficient_LE,medium_SL
@@ -4077,7 +4077,7 @@
 4075,4_T,4_NP,Y_WA,N_P,7_D,1_S,N_L,intensive_H,insufficient_LE,low_SL
 4076,6_T,4_NP,N_WA,N_P,8_D,1_S,N_L,intensive_H,very good_LE,high_SL
 4077,3_T,4_NP,N_WA,N_P,8_D,1_S,N_L,standard_H,good_LE,medium_SL
-4078,2_T,3_NP,N_WA,N_P,8_D,1_S,N_L,intensive_H,nan_LE,nan_SL
+4078,2_T,3_NP,N_WA,N_P,8_D,1_S,N_L,intensive_H,very good_LE,high_SL
 4079,3_T,3_NP,N_WA,N_P,8_D,1_S,N_L,intensive_H,good_LE,medium_SL
 4080,3_T,4_NP,N_WA,N_P,1_D,1_S,N_L,intensive_H,sufficient_LE,medium_SL
 4081,3_T,4_NP,N_WA,N_P,1_D,1_S,N_L,intensive_H,good_LE,high_SL
@@ -4100,7 +4100,7 @@
 4098,4_T,4_NP,N_WA,N_P,2_D,1_S,N_L,intensive_H,good_LE,high_SL
 4099,2_T,4_NP,N_WA,N_P,2_D,1_S,N_L,intensive_H,sufficient_LE,medium_SL
 4100,3_T,3_NP,N_WA,N_P,2_D,1_S,N_L,intensive_H,good_LE,high_SL
-4101,3_T,5_NP,Y_WA,N_P,2_D,1_S,N_L,standard_H,nan_LE,nan_SL
+4101,3_T,5_NP,Y_WA,N_P,2_D,1_S,N_L,standard_H,very good_LE,high_SL
 4102,6_T,3_NP,Y_WA,N_P,1_D,1_S,N_L,standard_H,insufficient_LE,low_SL
 4103,5_T,5_NP,Y_WA,N_P,1_D,1_S,N_L,intensive_H,insufficient_LE,low_SL
 4104,4_T,4_NP,N_WA,N_P,1_D,1_S,N_L,standard_H,good_LE,medium_SL
@@ -4133,7 +4133,7 @@
 4131,4_T,2_NP,N_WA,N_P,0_D,2_S,N_L,standard_H,very good_LE,high_SL
 4132,2_T,2_NP,N_WA,N_P,0_D,2_S,N_L,intensive_H,very good_LE,high_SL
 4133,3_T,5_NP,N_WA,N_P,0_D,2_S,N_L,intensive_H,sufficient_LE,medium_SL
-4134,3_T,3_NP,Y_WA,N_P,0_D,0_S,N_L,intensive_H,nan_LE,nan_SL
+4134,3_T,3_NP,Y_WA,N_P,0_D,0_S,N_L,intensive_H,very good_LE,high_SL
 4135,4_T,5_NP,Y_WA,N_P,0_D,0_S,N_L,intensive_H,insufficient_LE,low_SL
 4136,4_T,3_NP,N_WA,N_P,0_D,0_S,N_L,intensive_H,insufficient_LE,low_SL
 4137,3_T,3_NP,N_WA,N_P,0_D,0_S,N_L,intensive_H,very good_LE,high_SL
@@ -4142,7 +4142,7 @@
 4140,4_T,4_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,good_LE,medium_SL
 4141,3_T,5_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,good_LE,high_SL
 4142,2_T,5_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,good_LE,medium_SL
-4143,4_T,5_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,nan_LE,nan_SL
+4143,4_T,5_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,very good_LE,high_SL
 4144,3_T,4_NP,N_WA,N_P,0_D,0_S,N_L,intensive_H,very good_LE,high_SL
 4145,3_T,2_NP,Y_WA,N_P,0_D,0_S,N_L,standard_H,sufficient_LE,medium_SL
 4146,4_T,5_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,insufficient_LE,low_SL
@@ -4443,7 +4443,7 @@
 4441,4_T,4_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,sufficient_LE,medium_SL
 4442,3_T,3_NP,N_WA,N_P,0_D,0_S,N_L,intensive_H,good_LE,medium_SL
 4443,2_T,3_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,good_LE,medium_SL
-4444,6_T,3_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,nan_LE,nan_SL
+4444,6_T,3_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,very good_LE,high_SL
 4445,2_T,6_NP,Y_WA,N_P,0_D,0_S,N_L,standard_H,very good_LE,high_SL
 4446,3_T,4_NP,N_WA,N_P,0_D,0_S,N_L,intensive_H,very good_LE,high_SL
 4447,3_T,4_NP,Y_WA,N_P,0_D,0_S,N_L,intensive_H,good_LE,high_SL
@@ -4552,9 +4552,9 @@
 4550,3_T,6_NP,Y_WA,Y_P,2_D,1_S,N_L,intensive_H,good_LE,medium_SL
 4551,2_T,5_NP,N_WA,Y_P,2_D,1_S,N_L,intensive_H,sufficient_LE,medium_SL
 4552,5_T,4_NP,N_WA,Y_P,2_D,1_S,N_L,intensive_H,sufficient_LE,medium_SL
-4553,3_T,6_NP,Y_WA,Y_P,2_D,1_S,N_L,intensive_H,nan_LE,nan_SL
+4553,3_T,6_NP,Y_WA,Y_P,2_D,1_S,N_L,intensive_H,very good_LE,high_SL
 4554,3_T,4_NP,N_WA,Y_P,2_D,0_S,N_L,standard_H,very good_LE,high_SL
-4555,3_T,3_NP,N_WA,Y_P,2_D,0_S,N_L,standard_H,nan_LE,nan_SL
+4555,3_T,3_NP,N_WA,Y_P,2_D,0_S,N_L,standard_H,very good_LE,high_SL
 4556,5_T,4_NP,N_WA,Y_P,2_D,0_S,N_L,standard_H,insufficient_LE,low_SL
 4557,2_T,3_NP,N_WA,Y_P,2_D,0_S,N_L,standard_H,sufficient_LE,medium_SL
 4558,2_T,4_NP,Y_WA,Y_P,2_D,0_S,N_L,standard_H,very good_LE,high_SL
@@ -4723,7 +4723,7 @@
 4721,2_T,3_NP,N_WA,N_P,3_D,0_S,N_L,standard_H,insufficient_LE,medium_SL
 4722,2_T,3_NP,Y_WA,N_P,4_D,0_S,N_L,standard_H,sufficient_LE,medium_SL
 4723,4_T,4_NP,Y_WA,N_P,4_D,0_S,N_L,intensive_H,sufficient_LE,medium_SL
-4724,2_T,3_NP,Y_WA,N_P,4_D,0_S,N_L,intensive_H,nan_LE,nan_SL
+4724,2_T,3_NP,Y_WA,N_P,4_D,0_S,N_L,intensive_H,very good_LE,high_SL
 4725,3_T,5_NP,Y_WA,N_P,4_D,2_S,N_L,standard_H,very good_LE,high_SL
 4726,3_T,4_NP,N_WA,N_P,3_D,0_S,N_L,intensive_H,sufficient_LE,medium_SL
 4727,3_T,4_NP,Y_WA,Y_P,6_D,0_S,N_L,standard_H,good_LE,high_SL
@@ -4752,7 +4752,7 @@
 4750,3_T,4_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,insufficient_LE,low_SL
 4751,5_T,5_NP,Y_WA,N_P,0_D,1_S,N_L,standard_H,insufficient_LE,low_SL
 4752,2_T,4_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,sufficient_LE,medium_SL
-4753,3_T,3_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,nan_LE,nan_SL
+4753,3_T,3_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,very good_LE,high_SL
 4754,4_T,3_NP,N_WA,N_P,0_D,2_S,N_L,standard_H,very good_LE,high_SL
 4755,2_T,3_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,very good_LE,high_SL
 4756,3_T,3_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,very good_LE,high_SL
@@ -4774,7 +4774,7 @@
 4772,3_T,3_NP,N_WA,N_P,1_D,1_S,N_L,standard_H,good_LE,medium_SL
 4773,2_T,5_NP,Y_WA,N_P,1_D,1_S,N_L,standard_H,very good_LE,high_SL
 4774,3_T,2_NP,N_WA,N_P,1_D,1_S,N_L,standard_H,insufficient_LE,medium_SL
-4775,3_T,5_NP,Y_WA,N_P,1_D,1_S,N_L,standard_H,nan_LE,nan_SL
+4775,3_T,5_NP,Y_WA,N_P,1_D,1_S,N_L,standard_H,very good_LE,high_SL
 4776,3_T,3_NP,N_WA,N_P,1_D,1_S,N_L,intensive_H,good_LE,medium_SL
 4777,3_T,4_NP,Y_WA,N_P,1_D,1_S,N_L,standard_H,good_LE,medium_SL
 4778,3_T,3_NP,N_WA,N_P,2_D,1_S,N_L,standard_H,good_LE,medium_SL
@@ -5072,7 +5072,7 @@
 5070,2_T,3_NP,N_WA,N_P,8_D,0_S,N_L,standard_H,good_LE,high_SL
 5071,3_T,4_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,good_LE,high_SL
 5072,3_T,2_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,good_LE,medium_SL
-5073,3_T,3_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,nan_LE,nan_SL
+5073,3_T,3_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,very good_LE,high_SL
 5074,4_T,2_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,good_LE,medium_SL
 5075,3_T,5_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,very good_LE,high_SL
 5076,3_T,5_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,good_LE,medium_SL
@@ -5127,7 +5127,7 @@
 5125,4_T,3_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,very good_LE,high_SL
 5126,4_T,3_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,very good_LE,high_SL
 5127,4_T,3_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,very good_LE,high_SL
-5128,4_T,3_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,nan_LE,nan_SL
+5128,4_T,3_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,very good_LE,high_SL
 5129,4_T,4_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,good_LE,medium_SL
 5130,3_T,6_NP,N_WA,N_P,0_D,2_S,N_L,intensive_H,sufficient_LE,medium_SL
 5131,4_T,5_NP,Y_WA,N_P,0_D,0_S,N_L,intensive_H,very good_LE,high_SL
@@ -5291,7 +5291,7 @@
 5289,2_T,3_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,very good_LE,high_SL
 5290,2_T,4_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,good_LE,medium_SL
 5291,3_T,6_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,very good_LE,high_SL
-5292,5_T,2_NP,N_WA,N_P,0_D,0_S,N_L,intensive_H,nan_LE,nan_SL
+5292,5_T,2_NP,N_WA,N_P,0_D,0_S,N_L,intensive_H,very good_LE,high_SL
 5293,4_T,3_NP,N_WA,N_P,7_D,0_S,N_L,standard_H,sufficient_LE,medium_SL
 5294,3_T,5_NP,N_WA,N_P,7_D,0_S,N_L,intensive_H,insufficient_LE,medium_SL
 5295,3_T,3_NP,N_WA,N_P,7_D,0_S,N_L,intensive_H,good_LE,high_SL
@@ -5325,7 +5325,7 @@
 5323,3_T,5_NP,Y_WA,N_P,1_D,1_S,N_L,standard_H,good_LE,medium_SL
 5324,2_T,4_NP,N_WA,N_P,1_D,1_S,N_L,standard_H,good_LE,high_SL
 5325,3_T,4_NP,N_WA,N_P,9_D,2_S,N_L,intensive_H,very good_LE,high_SL
-5326,3_T,4_NP,N_WA,N_P,3_D,0_S,N_L,intensive_H,nan_LE,nan_SL
+5326,3_T,4_NP,N_WA,N_P,3_D,0_S,N_L,intensive_H,very good_LE,high_SL
 5327,3_T,4_NP,Y_WA,N_P,3_D,1_S,N_L,intensive_H,good_LE,medium_SL
 5328,4_T,3_NP,N_WA,N_P,3_D,1_S,N_L,standard_H,very good_LE,high_SL
 5329,3_T,2_NP,N_WA,N_P,3_D,1_S,N_L,intensive_H,very good_LE,high_SL
@@ -5423,7 +5423,7 @@
 5421,2_T,3_NP,N_WA,N_P,7_D,0_S,N_L,intensive_H,very good_LE,high_SL
 5422,4_T,3_NP,N_WA,N_P,2_D,0_S,N_L,intensive_H,very good_LE,high_SL
 5423,3_T,3_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,very good_LE,high_SL
-5424,2_T,3_NP,N_WA,N_P,9_D,0_S,N_L,standard_H,nan_LE,nan_SL
+5424,2_T,3_NP,N_WA,N_P,9_D,0_S,N_L,standard_H,very good_LE,high_SL
 5425,4_T,3_NP,N_WA,N_P,5_D,0_S,N_L,standard_H,sufficient_LE,medium_SL
 5426,3_T,3_NP,N_WA,N_P,5_D,0_S,N_L,standard_H,very good_LE,high_SL
 5427,4_T,5_NP,Y_WA,N_P,5_D,1_S,N_L,standard_H,good_LE,high_SL
@@ -5465,7 +5465,7 @@
 5463,3_T,5_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,good_LE,high_SL
 5464,3_T,4_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,good_LE,medium_SL
 5465,2_T,5_NP,N_WA,N_P,2_D,0_S,N_L,standard_H,very good_LE,high_SL
-5466,4_T,3_NP,N_WA,N_P,2_D,1_S,N_L,intensive_H,nan_LE,nan_SL
+5466,4_T,3_NP,N_WA,N_P,2_D,1_S,N_L,intensive_H,very good_LE,high_SL
 5467,3_T,3_NP,N_WA,N_P,2_D,1_S,N_L,intensive_H,sufficient_LE,medium_SL
 5468,3_T,4_NP,N_WA,N_P,2_D,1_S,N_L,standard_H,sufficient_LE,medium_SL
 5469,2_T,4_NP,N_WA,N_P,2_D,1_S,N_L,intensive_H,very good_LE,high_SL
@@ -5612,7 +5612,7 @@
 5610,4_T,3_NP,Y_WA,N_P,1_D,0_S,N_L,standard_H,sufficient_LE,medium_SL
 5611,4_T,3_NP,Y_WA,N_P,1_D,0_S,N_L,standard_H,very good_LE,high_SL
 5612,2_T,2_NP,Y_WA,N_P,1_D,0_S,N_L,intensive_H,good_LE,medium_SL
-5613,2_T,3_NP,Y_WA,N_P,1_D,0_S,N_L,standard_H,nan_LE,nan_SL
+5613,2_T,3_NP,Y_WA,N_P,1_D,0_S,N_L,standard_H,very good_LE,high_SL
 5614,2_T,3_NP,Y_WA,N_P,1_D,2_S,N_L,standard_H,sufficient_LE,medium_SL
 5615,4_T,3_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,very good_LE,high_SL
 5616,5_T,6_NP,N_WA,N_P,1_D,2_S,N_L,intensive_H,sufficient_LE,medium_SL
@@ -5701,7 +5701,7 @@
 5699,3_T,3_NP,N_WA,N_P,2_D,0_S,N_L,intensive_H,very good_LE,high_SL
 5700,4_T,4_NP,N_WA,N_P,2_D,1_S,N_L,standard_H,very good_LE,high_SL
 5701,2_T,6_NP,N_WA,N_P,2_D,1_S,N_L,standard_H,good_LE,high_SL
-5702,4_T,3_NP,N_WA,N_P,2_D,1_S,N_L,intensive_H,nan_LE,nan_SL
+5702,4_T,3_NP,N_WA,N_P,2_D,1_S,N_L,intensive_H,very good_LE,high_SL
 5703,4_T,3_NP,N_WA,N_P,2_D,1_S,N_L,standard_H,very good_LE,high_SL
 5704,2_T,2_NP,N_WA,N_P,2_D,1_S,N_L,standard_H,good_LE,medium_SL
 5705,2_T,5_NP,N_WA,N_P,2_D,1_S,N_L,intensive_H,very good_LE,high_SL
@@ -5805,7 +5805,7 @@
 5803,3_T,4_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,good_LE,high_SL
 5804,2_T,3_NP,N_WA,N_P,7_D,0_S,N_L,intensive_H,very good_LE,high_SL
 5805,3_T,3_NP,N_WA,N_P,2_D,0_S,N_L,standard_H,insufficient_LE,medium_SL
-5806,2_T,4_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,nan_LE,nan_SL
+5806,2_T,4_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,very good_LE,high_SL
 5807,3_T,5_NP,N_WA,N_P,9_D,0_S,N_L,intensive_H,sufficient_LE,medium_SL
 5808,2_T,3_NP,N_WA,N_P,5_D,0_S,N_L,intensive_H,very good_LE,high_SL
 5809,3_T,5_NP,N_WA,N_P,5_D,0_S,N_L,standard_H,good_LE,high_SL
@@ -5937,7 +5937,7 @@
 5935,4_T,4_NP,N_WA,N_P,1_D,1_S,N_L,intensive_H,very good_LE,high_SL
 5936,3_T,4_NP,N_WA,N_P,1_D,1_S,N_L,standard_H,sufficient_LE,medium_SL
 5937,3_T,3_NP,N_WA,N_P,1_D,1_S,N_L,standard_H,good_LE,high_SL
-5938,3_T,5_NP,Y_WA,N_P,9_D,1_S,N_L,standard_H,nan_LE,nan_SL
+5938,3_T,5_NP,Y_WA,N_P,9_D,1_S,N_L,standard_H,very good_LE,high_SL
 5939,2_T,4_NP,N_WA,N_P,3_D,1_S,N_L,intensive_H,very good_LE,high_SL
 5940,3_T,4_NP,N_WA,N_P,3_D,1_S,N_L,intensive_H,good_LE,high_SL
 5941,4_T,2_NP,N_WA,N_P,3_D,1_S,N_L,standard_H,insufficient_LE,low_SL
@@ -5995,7 +5995,7 @@
 5993,3_T,2_NP,N_WA,N_P,1_D,2_S,N_L,intensive_H,insufficient_LE,medium_SL
 5994,5_T,4_NP,Y_WA,N_P,1_D,0_S,N_L,intensive_H,very good_LE,high_SL
 5995,2_T,5_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,very good_LE,high_SL
-5996,3_T,3_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,nan_LE,nan_SL
+5996,3_T,3_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,very good_LE,high_SL
 5997,3_T,4_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,good_LE,medium_SL
 5998,6_T,6_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,good_LE,medium_SL
 5999,3_T,4_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,very good_LE,high_SL
@@ -6102,7 +6102,7 @@
 6100,2_T,5_NP,N_WA,N_P,3_D,0_S,N_L,intensive_H,very good_LE,high_SL
 6101,3_T,5_NP,N_WA,N_P,6_D,1_S,N_L,intensive_H,good_LE,high_SL
 6102,4_T,4_NP,N_WA,N_P,6_D,1_S,N_L,intensive_H,very good_LE,high_SL
-6103,3_T,3_NP,N_WA,N_P,6_D,1_S,N_L,intensive_H,nan_LE,nan_SL
+6103,3_T,3_NP,N_WA,N_P,6_D,1_S,N_L,intensive_H,very good_LE,high_SL
 6104,4_T,5_NP,N_WA,N_P,6_D,1_S,N_L,intensive_H,very good_LE,high_SL
 6105,2_T,4_NP,N_WA,N_P,6_D,0_S,N_L,standard_H,good_LE,high_SL
 6106,2_T,4_NP,N_WA,N_P,5_D,0_S,N_L,standard_H,good_LE,medium_SL
@@ -6190,7 +6190,7 @@
 6188,3_T,3_NP,N_WA,N_P,5_D,0_S,N_L,intensive_H,good_LE,high_SL
 6189,3_T,6_NP,N_WA,N_P,5_D,0_S,N_L,intensive_H,insufficient_LE,low_SL
 6190,6_T,6_NP,Y_WA,N_P,5_D,0_S,N_L,intensive_H,insufficient_LE,low_SL
-6191,4_T,3_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,nan_LE,nan_SL
+6191,4_T,3_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,very good_LE,high_SL
 6192,3_T,3_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,very good_LE,high_SL
 6193,2_T,3_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,good_LE,high_SL
 6194,3_T,3_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,good_LE,high_SL
@@ -6246,7 +6246,7 @@
 6244,5_T,3_NP,N_WA,N_P,3_D,1_S,N_L,standard_H,sufficient_LE,medium_SL
 6245,2_T,4_NP,Y_WA,N_P,3_D,1_S,N_L,standard_H,very good_LE,high_SL
 6246,2_T,4_NP,N_WA,N_P,3_D,1_S,N_L,standard_H,very good_LE,high_SL
-6247,4_T,5_NP,N_WA,N_P,3_D,1_S,N_L,standard_H,nan_LE,nan_SL
+6247,4_T,5_NP,N_WA,N_P,3_D,1_S,N_L,standard_H,very good_LE,high_SL
 6248,3_T,4_NP,N_WA,N_P,4_D,1_S,N_L,standard_H,very good_LE,high_SL
 6249,4_T,6_NP,Y_WA,N_P,4_D,1_S,N_L,intensive_H,good_LE,medium_SL
 6250,3_T,5_NP,N_WA,N_P,4_D,1_S,N_L,standard_H,sufficient_LE,medium_SL
@@ -6305,7 +6305,7 @@
 6303,3_T,4_NP,Y_WA,N_P,1_D,0_S,N_L,intensive_H,good_LE,high_SL
 6304,2_T,3_NP,Y_WA,N_P,2_D,0_S,N_L,intensive_H,good_LE,medium_SL
 6305,3_T,2_NP,N_WA,N_P,2_D,0_S,N_L,intensive_H,very good_LE,high_SL
-6306,4_T,3_NP,N_WA,N_P,2_D,0_S,N_L,standard_H,nan_LE,nan_SL
+6306,4_T,3_NP,N_WA,N_P,2_D,0_S,N_L,standard_H,very good_LE,high_SL
 6307,2_T,4_NP,Y_WA,N_P,2_D,0_S,N_L,intensive_H,good_LE,high_SL
 6308,4_T,5_NP,N_WA,N_P,2_D,0_S,N_L,standard_H,sufficient_LE,medium_SL
 6309,3_T,5_NP,N_WA,N_P,2_D,0_S,N_L,intensive_H,very good_LE,high_SL
@@ -6326,7 +6326,7 @@
 6324,3_T,4_NP,N_WA,N_P,4_D,1_S,N_L,intensive_H,sufficient_LE,medium_SL
 6325,2_T,4_NP,N_WA,N_P,4_D,1_S,N_L,standard_H,very good_LE,high_SL
 6326,4_T,4_NP,N_WA,N_P,4_D,1_S,N_L,intensive_H,good_LE,high_SL
-6327,3_T,3_NP,N_WA,N_P,4_D,1_S,N_L,standard_H,nan_LE,nan_SL
+6327,3_T,3_NP,N_WA,N_P,4_D,1_S,N_L,standard_H,very good_LE,high_SL
 6328,2_T,5_NP,N_WA,N_P,3_D,1_S,N_L,intensive_H,good_LE,medium_SL
 6329,5_T,6_NP,N_WA,N_P,6_D,1_S,N_L,intensive_H,very good_LE,high_SL
 6330,2_T,3_NP,N_WA,N_P,6_D,2_S,N_L,standard_H,sufficient_LE,medium_SL
@@ -6474,7 +6474,7 @@
 6472,5_T,6_NP,N_WA,N_P,3_D,0_S,N_L,intensive_H,insufficient_LE,low_SL
 6473,2_T,3_NP,N_WA,N_P,3_D,0_S,N_L,standard_H,very good_LE,high_SL
 6474,2_T,4_NP,N_WA,N_P,3_D,1_S,N_L,intensive_H,good_LE,medium_SL
-6475,3_T,4_NP,Y_WA,N_P,3_D,1_S,N_L,intensive_H,nan_LE,nan_SL
+6475,3_T,4_NP,Y_WA,N_P,3_D,1_S,N_L,intensive_H,very good_LE,high_SL
 6476,3_T,4_NP,N_WA,N_P,4_D,1_S,N_L,intensive_H,sufficient_LE,medium_SL
 6477,6_T,3_NP,N_WA,N_P,4_D,1_S,N_L,intensive_H,good_LE,high_SL
 6478,3_T,3_NP,Y_WA,N_P,4_D,1_S,N_L,intensive_H,good_LE,medium_SL
@@ -6508,7 +6508,7 @@
 6506,2_T,3_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,very good_LE,high_SL
 6507,2_T,3_NP,Y_WA,N_P,0_D,1_S,N_L,intensive_H,good_LE,high_SL
 6508,2_T,3_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,very good_LE,high_SL
-6509,3_T,3_NP,Y_WA,N_P,0_D,1_S,N_L,intensive_H,nan_LE,nan_SL
+6509,3_T,3_NP,Y_WA,N_P,0_D,1_S,N_L,intensive_H,very good_LE,high_SL
 6510,2_T,3_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,good_LE,medium_SL
 6511,2_T,3_NP,Y_WA,N_P,0_D,1_S,N_L,intensive_H,good_LE,high_SL
 6512,4_T,5_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,insufficient_LE,low_SL
@@ -6601,7 +6601,7 @@
 6599,3_T,5_NP,N_WA,N_P,1_D,1_S,N_L,standard_H,very good_LE,high_SL
 6600,2_T,5_NP,N_WA,N_P,1_D,1_S,N_L,intensive_H,very good_LE,high_SL
 6601,2_T,5_NP,N_WA,N_P,1_D,1_S,N_L,standard_H,very good_LE,high_SL
-6602,3_T,5_NP,N_WA,N_P,1_D,1_S,N_L,standard_H,nan_LE,nan_SL
+6602,3_T,5_NP,N_WA,N_P,1_D,1_S,N_L,standard_H,very good_LE,high_SL
 6603,3_T,6_NP,N_WA,N_P,1_D,2_S,N_L,standard_H,sufficient_LE,medium_SL
 6604,3_T,6_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,insufficient_LE,low_SL
 6605,6_T,3_NP,Y_WA,N_P,1_D,1_S,N_L,standard_H,good_LE,high_SL
@@ -6701,7 +6701,7 @@
 6699,2_T,5_NP,N_WA,N_P,9_D,0_S,N_L,intensive_H,very good_LE,high_SL
 6700,2_T,3_NP,N_WA,N_P,3_D,0_S,N_L,standard_H,insufficient_LE,medium_SL
 6701,4_T,4_NP,N_WA,N_P,3_D,0_S,N_L,intensive_H,good_LE,high_SL
-6702,3_T,4_NP,N_WA,N_P,3_D,0_S,N_L,intensive_H,nan_LE,nan_SL
+6702,3_T,4_NP,N_WA,N_P,3_D,0_S,N_L,intensive_H,very good_LE,high_SL
 6703,2_T,5_NP,N_WA,N_P,3_D,0_S,N_L,intensive_H,very good_LE,high_SL
 6704,4_T,3_NP,N_WA,N_P,3_D,0_S,N_L,intensive_H,sufficient_LE,medium_SL
 6705,5_T,2_NP,N_WA,N_P,4_D,0_S,N_L,intensive_H,good_LE,medium_SL
@@ -6900,7 +6900,7 @@
 6898,3_T,3_NP,N_WA,N_P,7_D,1_S,N_L,standard_H,insufficient_LE,medium_SL
 6899,3_T,3_NP,Y_WA,N_P,7_D,1_S,N_L,standard_H,very good_LE,high_SL
 6900,2_T,4_NP,N_WA,N_P,7_D,1_S,N_L,intensive_H,very good_LE,high_SL
-6901,4_T,4_NP,N_WA,N_P,8_D,1_S,N_L,standard_H,nan_LE,nan_SL
+6901,4_T,4_NP,N_WA,N_P,8_D,1_S,N_L,standard_H,very good_LE,high_SL
 6902,4_T,3_NP,N_WA,N_P,8_D,1_S,N_L,intensive_H,very good_LE,high_SL
 6903,3_T,4_NP,Y_WA,N_P,8_D,1_S,N_L,standard_H,sufficient_LE,medium_SL
 6904,2_T,3_NP,N_WA,N_P,8_D,1_S,N_L,standard_H,sufficient_LE,medium_SL
@@ -6938,7 +6938,7 @@
 6936,2_T,3_NP,N_WA,N_P,4_D,0_S,N_L,intensive_H,good_LE,medium_SL
 6937,2_T,4_NP,N_WA,N_P,4_D,0_S,N_L,standard_H,very good_LE,high_SL
 6938,3_T,2_NP,Y_WA,N_P,4_D,0_S,N_L,intensive_H,very good_LE,high_SL
-6939,3_T,3_NP,N_WA,N_P,4_D,1_S,N_L,intensive_H,nan_LE,nan_SL
+6939,3_T,3_NP,N_WA,N_P,4_D,1_S,N_L,intensive_H,very good_LE,high_SL
 6940,2_T,5_NP,N_WA,N_P,3_D,1_S,N_L,intensive_H,good_LE,medium_SL
 6941,2_T,4_NP,N_WA,N_P,6_D,1_S,N_L,intensive_H,good_LE,high_SL
 6942,3_T,4_NP,N_WA,N_P,6_D,1_S,N_L,intensive_H,very good_LE,high_SL
@@ -7172,7 +7172,7 @@
 7170,3_T,3_NP,N_WA,N_P,3_D,0_S,N_L,intensive_H,good_LE,high_SL
 7171,2_T,3_NP,N_WA,N_P,6_D,0_S,N_L,standard_H,good_LE,high_SL
 7172,4_T,3_NP,N_WA,N_P,6_D,0_S,N_L,standard_H,good_LE,medium_SL
-7173,3_T,5_NP,N_WA,N_P,6_D,1_S,N_L,intensive_H,nan_LE,nan_SL
+7173,3_T,5_NP,N_WA,N_P,6_D,1_S,N_L,intensive_H,very good_LE,high_SL
 7174,2_T,5_NP,N_WA,N_P,6_D,1_S,N_L,standard_H,good_LE,high_SL
 7175,2_T,4_NP,N_WA,N_P,6_D,1_S,N_L,standard_H,very good_LE,high_SL
 7176,3_T,4_NP,N_WA,N_P,5_D,1_S,N_L,standard_H,very good_LE,high_SL
@@ -7181,7 +7181,7 @@
 7179,5_T,6_NP,N_WA,N_P,2_D,1_S,N_L,intensive_H,good_LE,high_SL
 7180,3_T,4_NP,N_WA,N_P,1_D,1_S,N_L,standard_H,sufficient_LE,medium_SL
 7181,3_T,5_NP,N_WA,N_P,9_D,1_S,N_L,standard_H,sufficient_LE,medium_SL
-7182,2_T,4_NP,N_WA,N_P,5_D,1_S,N_L,intensive_H,nan_LE,nan_SL
+7182,2_T,4_NP,N_WA,N_P,5_D,1_S,N_L,intensive_H,very good_LE,high_SL
 7183,3_T,3_NP,N_WA,N_P,5_D,1_S,N_L,intensive_H,very good_LE,high_SL
 7184,5_T,4_NP,N_WA,N_P,5_D,1_S,N_L,standard_H,insufficient_LE,low_SL
 7185,2_T,5_NP,N_WA,N_P,0_D,2_S,N_L,intensive_H,good_LE,medium_SL
@@ -7431,7 +7431,7 @@
 7429,2_T,3_NP,N_WA,N_P,0_D,0_S,N_L,intensive_H,good_LE,high_SL
 7430,6_T,6_NP,N_WA,N_P,0_D,0_S,N_L,intensive_H,very good_LE,high_SL
 7431,3_T,3_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,insufficient_LE,medium_SL
-7432,2_T,5_NP,N_WA,N_P,7_D,1_S,N_L,standard_H,nan_LE,nan_SL
+7432,2_T,5_NP,N_WA,N_P,7_D,1_S,N_L,standard_H,very good_LE,high_SL
 7433,5_T,6_NP,N_WA,N_P,7_D,1_S,N_L,intensive_H,insufficient_LE,low_SL
 7434,3_T,5_NP,N_WA,N_P,7_D,1_S,N_L,standard_H,sufficient_LE,medium_SL
 7435,5_T,4_NP,Y_WA,N_P,8_D,1_S,N_L,intensive_H,insufficient_LE,low_SL
@@ -7525,7 +7525,7 @@
 7523,2_T,3_NP,N_WA,N_P,1_D,1_S,N_L,standard_H,sufficient_LE,medium_SL
 7524,3_T,3_NP,Y_WA,N_P,1_D,2_S,N_L,intensive_H,very good_LE,high_SL
 7525,4_T,5_NP,N_WA,N_P,1_D,1_S,N_L,standard_H,very good_LE,high_SL
-7526,3_T,3_NP,N_WA,N_P,2_D,1_S,N_L,standard_H,nan_LE,nan_SL
+7526,3_T,3_NP,N_WA,N_P,2_D,1_S,N_L,standard_H,very good_LE,high_SL
 7527,3_T,3_NP,N_WA,N_P,2_D,1_S,N_L,intensive_H,very good_LE,high_SL
 7528,4_T,3_NP,Y_WA,N_P,2_D,1_S,N_L,intensive_H,insufficient_LE,low_SL
 7529,3_T,5_NP,N_WA,N_P,2_D,1_S,N_L,intensive_H,good_LE,medium_SL
@@ -7596,7 +7596,7 @@
 7594,2_T,3_NP,Y_WA,N_P,1_D,0_S,N_L,standard_H,good_LE,medium_SL
 7595,3_T,4_NP,Y_WA,N_P,1_D,0_S,N_L,intensive_H,very good_LE,high_SL
 7596,2_T,4_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,very good_LE,high_SL
-7597,2_T,3_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,nan_LE,nan_SL
+7597,2_T,3_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,very good_LE,high_SL
 7598,4_T,5_NP,Y_WA,N_P,1_D,0_S,N_L,standard_H,good_LE,high_SL
 7599,2_T,3_NP,N_WA,N_P,1_D,1_S,N_L,intensive_H,sufficient_LE,medium_SL
 7600,4_T,4_NP,N_WA,N_P,1_D,1_S,N_L,standard_H,good_LE,high_SL
@@ -7611,7 +7611,7 @@
 7609,3_T,3_NP,N_WA,N_P,2_D,1_S,N_L,intensive_H,very good_LE,high_SL
 7610,6_T,2_NP,N_WA,N_P,2_D,1_S,N_L,standard_H,sufficient_LE,medium_SL
 7611,6_T,4_NP,N_WA,N_P,2_D,2_S,N_L,intensive_H,very good_LE,high_SL
-7612,4_T,4_NP,N_WA,N_P,2_D,0_S,N_L,standard_H,nan_LE,nan_SL
+7612,4_T,4_NP,N_WA,N_P,2_D,0_S,N_L,standard_H,very good_LE,high_SL
 7613,3_T,3_NP,N_WA,N_P,1_D,1_S,N_L,standard_H,very good_LE,high_SL
 7614,3_T,3_NP,N_WA,N_P,1_D,1_S,N_L,intensive_H,very good_LE,high_SL
 7615,6_T,3_NP,Y_WA,N_P,1_D,1_S,N_L,intensive_H,very good_LE,high_SL
@@ -7722,7 +7722,7 @@
 7720,3_T,4_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,good_LE,medium_SL
 7721,4_T,3_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,good_LE,medium_SL
 7722,6_T,5_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,insufficient_LE,low_SL
-7723,2_T,3_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,nan_LE,nan_SL
+7723,2_T,3_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,very good_LE,high_SL
 7724,3_T,3_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,sufficient_LE,medium_SL
 7725,6_T,4_NP,N_WA,N_P,0_D,2_S,N_L,standard_H,insufficient_LE,low_SL
 7726,4_T,5_NP,N_WA,N_P,0_D,0_S,N_L,intensive_H,very good_LE,high_SL
@@ -7862,7 +7862,7 @@
 7860,4_T,4_NP,N_WA,N_P,5_D,0_S,N_L,standard_H,very good_LE,high_SL
 7861,3_T,3_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,very good_LE,high_SL
 7862,4_T,3_NP,N_WA,N_P,7_D,0_S,N_L,intensive_H,good_LE,high_SL
-7863,3_T,3_NP,N_WA,N_P,2_D,0_S,N_L,intensive_H,nan_LE,nan_SL
+7863,3_T,3_NP,N_WA,N_P,2_D,0_S,N_L,intensive_H,very good_LE,high_SL
 7864,4_T,3_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,very good_LE,high_SL
 7865,4_T,4_NP,N_WA,N_P,9_D,0_S,N_L,intensive_H,very good_LE,high_SL
 7866,2_T,3_NP,N_WA,N_P,5_D,0_S,N_L,standard_H,good_LE,high_SL
@@ -7976,7 +7976,7 @@
 7974,2_T,3_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,good_LE,medium_SL
 7975,5_T,4_NP,N_WA,N_P,1_D,2_S,N_L,standard_H,very good_LE,high_SL
 7976,3_T,5_NP,Y_WA,N_P,1_D,0_S,N_L,standard_H,good_LE,medium_SL
-7977,4_T,4_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,nan_LE,nan_SL
+7977,4_T,4_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,very good_LE,high_SL
 7978,2_T,4_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,good_LE,high_SL
 7979,5_T,5_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,sufficient_LE,medium_SL
 7980,2_T,4_NP,N_WA,N_P,1_D,2_S,N_L,intensive_H,good_LE,medium_SL
@@ -8094,7 +8094,7 @@
 8092,3_T,5_NP,N_WA,N_P,7_D,0_S,N_L,intensive_H,very good_LE,high_SL
 8093,4_T,2_NP,N_WA,N_P,2_D,0_S,N_L,standard_H,very good_LE,high_SL
 8094,2_T,3_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,good_LE,medium_SL
-8095,2_T,4_NP,N_WA,N_P,9_D,0_S,N_L,standard_H,nan_LE,nan_SL
+8095,2_T,4_NP,N_WA,N_P,9_D,0_S,N_L,standard_H,very good_LE,high_SL
 8096,4_T,3_NP,Y_WA,N_P,5_D,0_S,N_L,standard_H,very good_LE,high_SL
 8097,3_T,5_NP,Y_WA,N_P,5_D,0_S,N_L,intensive_H,sufficient_LE,medium_SL
 8098,4_T,2_NP,N_WA,N_P,5_D,0_S,N_L,intensive_H,very good_LE,high_SL
@@ -8111,7 +8111,7 @@
 8109,3_T,4_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,sufficient_LE,medium_SL
 8110,2_T,3_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,very good_LE,high_SL
 8111,5_T,4_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,insufficient_LE,low_SL
-8112,4_T,4_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,nan_LE,nan_SL
+8112,4_T,4_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,very good_LE,high_SL
 8113,2_T,5_NP,Y_WA,N_P,0_D,1_S,N_L,intensive_H,good_LE,high_SL
 8114,2_T,3_NP,Y_WA,N_P,0_D,1_S,N_L,intensive_H,insufficient_LE,low_SL
 8115,2_T,2_NP,N_WA,N_P,0_D,2_S,N_L,standard_H,insufficient_LE,medium_SL
@@ -8163,7 +8163,7 @@
 8161,3_T,3_NP,N_WA,N_P,6_D,0_S,N_L,standard_H,sufficient_LE,medium_SL
 8162,3_T,3_NP,N_WA,N_P,6_D,0_S,N_L,standard_H,good_LE,medium_SL
 8163,2_T,3_NP,N_WA,N_P,6_D,0_S,N_L,standard_H,sufficient_LE,medium_SL
-8164,2_T,3_NP,N_WA,N_P,6_D,0_S,N_L,standard_H,nan_LE,nan_SL
+8164,2_T,3_NP,N_WA,N_P,6_D,0_S,N_L,standard_H,very good_LE,high_SL
 8165,2_T,5_NP,N_WA,N_P,6_D,0_S,N_L,intensive_H,good_LE,medium_SL
 8166,6_T,6_NP,N_WA,N_P,6_D,0_S,N_L,intensive_H,insufficient_LE,low_SL
 8167,2_T,4_NP,N_WA,N_P,5_D,0_S,N_L,standard_H,good_LE,medium_SL
@@ -8206,7 +8206,7 @@
 8204,2_T,5_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,very good_LE,high_SL
 8205,3_T,3_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,sufficient_LE,medium_SL
 8206,3_T,4_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,very good_LE,high_SL
-8207,2_T,5_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,nan_LE,nan_SL
+8207,2_T,5_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,very good_LE,high_SL
 8208,3_T,4_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,very good_LE,high_SL
 8209,3_T,4_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,sufficient_LE,medium_SL
 8210,3_T,3_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,good_LE,high_SL
@@ -8410,7 +8410,7 @@
 8408,2_T,4_NP,N_WA,N_P,0_D,0_S,N_L,intensive_H,good_LE,medium_SL
 8409,4_T,3_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,very good_LE,high_SL
 8410,2_T,4_NP,N_WA,N_P,0_D,2_S,N_L,standard_H,good_LE,high_SL
-8411,3_T,6_NP,N_WA,N_P,0_D,0_S,N_L,intensive_H,nan_LE,nan_SL
+8411,3_T,6_NP,N_WA,N_P,0_D,0_S,N_L,intensive_H,very good_LE,high_SL
 8412,2_T,4_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,very good_LE,high_SL
 8413,4_T,5_NP,N_WA,N_P,0_D,2_S,N_L,intensive_H,very good_LE,high_SL
 8414,3_T,4_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,very good_LE,high_SL
@@ -8499,7 +8499,7 @@
 8497,3_T,4_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,very good_LE,high_SL
 8498,3_T,3_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,very good_LE,high_SL
 8499,2_T,3_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,insufficient_LE,medium_SL
-8500,2_T,3_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,nan_LE,nan_SL
+8500,2_T,3_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,very good_LE,high_SL
 8501,3_T,3_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,good_LE,high_SL
 8502,2_T,3_NP,Y_WA,N_P,7_D,2_S,N_L,intensive_H,sufficient_LE,medium_SL
 8503,2_T,5_NP,N_WA,N_P,7_D,0_S,N_L,intensive_H,good_LE,high_SL
@@ -8510,7 +8510,7 @@
 8508,2_T,3_NP,N_WA,N_P,8_D,0_S,N_L,intensive_H,good_LE,high_SL
 8509,3_T,4_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,good_LE,medium_SL
 8510,3_T,4_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,good_LE,high_SL
-8511,3_T,4_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,nan_LE,nan_SL
+8511,3_T,4_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,very good_LE,high_SL
 8512,3_T,3_NP,Y_WA,N_P,1_D,0_S,N_L,standard_H,sufficient_LE,medium_SL
 8513,4_T,2_NP,Y_WA,N_P,1_D,0_S,N_L,standard_H,insufficient_LE,low_SL
 8514,4_T,3_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,very good_LE,high_SL
@@ -8788,7 +8788,7 @@
 8786,4_T,3_NP,N_WA,N_P,5_D,0_S,N_L,standard_H,very good_LE,high_SL
 8787,3_T,4_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,very good_LE,high_SL
 8788,3_T,3_NP,N_WA,N_P,0_D,0_S,N_L,intensive_H,good_LE,high_SL
-8789,3_T,4_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,nan_LE,nan_SL
+8789,3_T,4_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,very good_LE,high_SL
 8790,2_T,4_NP,Y_WA,N_P,0_D,0_S,N_L,standard_H,good_LE,high_SL
 8791,3_T,2_NP,N_WA,N_P,0_D,0_S,N_L,intensive_H,insufficient_LE,low_SL
 8792,3_T,4_NP,N_WA,N_P,0_D,0_S,N_L,intensive_H,good_LE,high_SL
@@ -8997,7 +8997,7 @@
 8995,3_T,3_NP,N_WA,N_P,3_D,1_S,N_L,intensive_H,good_LE,high_SL
 8996,3_T,4_NP,Y_WA,N_P,4_D,1_S,N_L,intensive_H,very good_LE,high_SL
 8997,2_T,3_NP,Y_WA,N_P,4_D,1_S,N_L,standard_H,sufficient_LE,medium_SL
-8998,3_T,4_NP,N_WA,N_P,4_D,1_S,N_L,standard_H,nan_LE,nan_SL
+8998,3_T,4_NP,N_WA,N_P,4_D,1_S,N_L,standard_H,very good_LE,high_SL
 8999,3_T,3_NP,N_WA,N_P,4_D,1_S,N_L,intensive_H,very good_LE,high_SL
 9000,3_T,4_NP,N_WA,N_P,3_D,1_S,N_L,intensive_H,very good_LE,high_SL
 9001,5_T,5_NP,N_WA,N_P,6_D,1_S,N_L,intensive_H,insufficient_LE,low_SL
@@ -9200,7 +9200,7 @@
 9198,3_T,3_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,very good_LE,high_SL
 9199,2_T,3_NP,Y_WA,N_P,1_D,0_S,N_L,standard_H,good_LE,high_SL
 9200,3_T,3_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,very good_LE,high_SL
-9201,3_T,4_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,nan_LE,nan_SL
+9201,3_T,4_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,very good_LE,high_SL
 9202,6_T,3_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,good_LE,medium_SL
 9203,5_T,6_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,insufficient_LE,low_SL
 9204,2_T,4_NP,N_WA,N_P,2_D,0_S,N_L,standard_H,insufficient_LE,medium_SL
@@ -9312,7 +9312,7 @@
 9310,3_T,3_NP,N_WA,N_P,5_D,1_S,N_L,standard_H,very good_LE,high_SL
 9311,3_T,4_NP,Y_WA,N_P,0_D,1_S,N_L,standard_H,very good_LE,high_SL
 9312,3_T,4_NP,N_WA,N_P,7_D,1_S,N_L,intensive_H,good_LE,medium_SL
-9313,3_T,4_NP,N_WA,N_P,2_D,1_S,N_L,standard_H,nan_LE,nan_SL
+9313,3_T,4_NP,N_WA,N_P,2_D,1_S,N_L,standard_H,very good_LE,high_SL
 9314,4_T,5_NP,N_WA,N_P,1_D,1_S,N_L,standard_H,good_LE,high_SL
 9315,4_T,4_NP,Y_WA,N_P,9_D,2_S,N_L,standard_H,very good_LE,high_SL
 9316,3_T,3_NP,N_WA,N_P,5_D,0_S,N_L,standard_H,very good_LE,high_SL
@@ -9322,7 +9322,7 @@
 9320,3_T,4_NP,N_WA,N_P,0_D,0_S,N_L,intensive_H,very good_LE,high_SL
 9321,3_T,4_NP,N_WA,N_P,0_D,0_S,N_L,intensive_H,good_LE,high_SL
 9322,3_T,3_NP,N_WA,N_P,0_D,0_S,N_L,intensive_H,good_LE,high_SL
-9323,3_T,3_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,nan_LE,nan_SL
+9323,3_T,3_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,very good_LE,high_SL
 9324,2_T,4_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,sufficient_LE,medium_SL
 9325,2_T,5_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,sufficient_LE,medium_SL
 9326,3_T,4_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,sufficient_LE,medium_SL
@@ -9332,7 +9332,7 @@
 9330,3_T,4_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,very good_LE,high_SL
 9331,2_T,4_NP,N_WA,N_P,0_D,0_S,N_L,intensive_H,very good_LE,high_SL
 9332,2_T,4_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,good_LE,high_SL
-9333,3_T,4_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,nan_LE,nan_SL
+9333,3_T,4_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,very good_LE,high_SL
 9334,3_T,4_NP,N_WA,N_P,0_D,2_S,N_L,standard_H,very good_LE,high_SL
 9335,2_T,3_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,good_LE,high_SL
 9336,3_T,4_NP,N_WA,N_P,0_D,2_S,N_L,intensive_H,very good_LE,high_SL
@@ -9610,7 +9610,7 @@
 9608,2_T,4_NP,N_WA,N_P,4_D,0_S,N_L,intensive_H,sufficient_LE,medium_SL
 9609,3_T,4_NP,Y_WA,N_P,4_D,0_S,N_L,intensive_H,very good_LE,high_SL
 9610,2_T,4_NP,N_WA,N_P,4_D,0_S,N_L,standard_H,sufficient_LE,medium_SL
-9611,3_T,3_NP,N_WA,N_P,3_D,0_S,N_L,intensive_H,nan_LE,nan_SL
+9611,3_T,3_NP,N_WA,N_P,3_D,0_S,N_L,intensive_H,very good_LE,high_SL
 9612,3_T,3_NP,Y_WA,N_P,5_D,2_S,N_L,standard_H,very good_LE,high_SL
 9613,4_T,4_NP,N_WA,N_P,7_D,2_S,N_L,standard_H,very good_LE,high_SL
 9614,3_T,5_NP,N_WA,N_P,7_D,2_S,N_L,standard_H,good_LE,high_SL
@@ -9768,7 +9768,7 @@
 9766,4_T,4_NP,N_WA,N_P,6_D,1_S,N_L,standard_H,very good_LE,high_SL
 9767,2_T,3_NP,N_WA,N_P,6_D,1_S,N_L,intensive_H,very good_LE,high_SL
 9768,3_T,3_NP,N_WA,N_P,6_D,1_S,N_L,standard_H,good_LE,high_SL
-9769,4_T,5_NP,N_WA,N_P,6_D,1_S,N_L,intensive_H,nan_LE,nan_SL
+9769,4_T,5_NP,N_WA,N_P,6_D,1_S,N_L,intensive_H,very good_LE,high_SL
 9770,3_T,2_NP,N_WA,N_P,6_D,1_S,N_L,standard_H,very good_LE,high_SL
 9771,4_T,5_NP,N_WA,N_P,5_D,1_S,N_L,intensive_H,good_LE,medium_SL
 9772,2_T,2_NP,Y_WA,N_P,0_D,1_S,N_L,intensive_H,sufficient_LE,medium_SL
@@ -9814,7 +9814,7 @@
 9812,2_T,3_NP,N_WA,N_P,1_D,1_S,N_L,intensive_H,insufficient_LE,medium_SL
 9813,2_T,3_NP,N_WA,N_P,1_D,2_S,N_L,intensive_H,good_LE,medium_SL
 9814,2_T,4_NP,N_WA,N_P,1_D,1_S,N_L,intensive_H,very good_LE,high_SL
-9815,2_T,4_NP,Y_WA,N_P,1_D,1_S,N_L,intensive_H,nan_LE,nan_SL
+9815,2_T,4_NP,Y_WA,N_P,1_D,1_S,N_L,intensive_H,very good_LE,high_SL
 9816,4_T,3_NP,N_WA,N_P,1_D,1_S,N_L,intensive_H,very good_LE,high_SL
 9817,4_T,5_NP,N_WA,N_P,2_D,2_S,N_L,intensive_H,sufficient_LE,medium_SL
 9818,4_T,6_NP,N_WA,N_P,2_D,1_S,N_L,intensive_H,good_LE,medium_SL
@@ -9837,7 +9837,7 @@
 9835,4_T,2_NP,N_WA,N_P,3_D,2_S,N_L,intensive_H,sufficient_LE,medium_SL
 9836,2_T,3_NP,N_WA,N_P,3_D,0_S,N_L,standard_H,very good_LE,high_SL
 9837,3_T,4_NP,N_WA,N_P,4_D,0_S,N_L,standard_H,very good_LE,high_SL
-9838,4_T,3_NP,N_WA,N_P,4_D,0_S,N_L,standard_H,nan_LE,nan_SL
+9838,4_T,3_NP,N_WA,N_P,4_D,0_S,N_L,standard_H,very good_LE,high_SL
 9839,3_T,6_NP,N_WA,N_P,4_D,0_S,N_L,standard_H,insufficient_LE,medium_SL
 9840,4_T,6_NP,N_WA,N_P,4_D,2_S,N_L,intensive_H,sufficient_LE,medium_SL
 9841,2_T,5_NP,N_WA,N_P,3_D,0_S,N_L,standard_H,very good_LE,high_SL
@@ -9922,7 +9922,7 @@
 9920,3_T,3_NP,N_WA,N_P,7_D,2_S,N_L,intensive_H,sufficient_LE,medium_SL
 9921,4_T,5_NP,N_WA,N_P,7_D,2_S,N_L,standard_H,insufficient_LE,low_SL
 9922,2_T,2_NP,N_WA,N_P,3_D,1_S,N_L,standard_H,very good_LE,high_SL
-9923,4_T,5_NP,N_WA,N_P,3_D,1_S,N_L,intensive_H,nan_LE,nan_SL
+9923,4_T,5_NP,N_WA,N_P,3_D,1_S,N_L,intensive_H,very good_LE,high_SL
 9924,3_T,3_NP,N_WA,N_P,9_D,2_S,N_L,intensive_H,very good_LE,high_SL
 9925,3_T,3_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,very good_LE,high_SL
 9926,4_T,4_NP,N_WA,N_P,7_D,1_S,N_L,intensive_H,very good_LE,high_SL
@@ -10124,7 +10124,7 @@
 10122,3_T,3_NP,N_WA,N_P,2_D,1_S,N_L,standard_H,insufficient_LE,medium_SL
 10123,3_T,4_NP,N_WA,N_P,2_D,1_S,N_L,intensive_H,very good_LE,high_SL
 10124,4_T,5_NP,N_WA,N_P,2_D,1_S,N_L,standard_H,sufficient_LE,medium_SL
-10125,2_T,4_NP,N_WA,N_P,2_D,1_S,N_L,standard_H,nan_LE,nan_SL
+10125,2_T,4_NP,N_WA,N_P,2_D,1_S,N_L,standard_H,very good_LE,high_SL
 10126,2_T,4_NP,N_WA,N_P,2_D,1_S,N_L,intensive_H,very good_LE,high_SL
 10127,3_T,3_NP,N_WA,N_P,2_D,1_S,N_L,standard_H,very good_LE,high_SL
 10128,2_T,4_NP,Y_WA,N_P,2_D,2_S,N_L,standard_H,good_LE,medium_SL
@@ -10134,7 +10134,7 @@
 10132,4_T,4_NP,N_WA,N_P,2_D,1_S,N_L,standard_H,insufficient_LE,low_SL
 10133,4_T,4_NP,N_WA,N_P,1_D,1_S,N_L,standard_H,sufficient_LE,medium_SL
 10134,4_T,4_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,sufficient_LE,medium_SL
-10135,3_T,5_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,nan_LE,nan_SL
+10135,3_T,5_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,very good_LE,high_SL
 10136,3_T,4_NP,N_WA,N_P,9_D,0_S,N_L,intensive_H,very good_LE,high_SL
 10137,3_T,3_NP,N_WA,N_P,3_D,0_S,N_L,intensive_H,very good_LE,high_SL
 10138,5_T,5_NP,N_WA,N_P,3_D,0_S,N_L,standard_H,very good_LE,high_SL
@@ -10173,7 +10173,7 @@
 10171,6_T,4_NP,Y_WA,N_P,0_D,2_S,N_L,intensive_H,sufficient_LE,medium_SL
 10172,4_T,5_NP,N_WA,N_P,0_D,2_S,N_L,intensive_H,sufficient_LE,medium_SL
 10173,4_T,3_NP,N_WA,N_P,0_D,2_S,N_L,intensive_H,good_LE,medium_SL
-10174,2_T,3_NP,N_WA,N_P,0_D,2_S,N_L,standard_H,nan_LE,nan_SL
+10174,2_T,3_NP,N_WA,N_P,0_D,2_S,N_L,standard_H,very good_LE,high_SL
 10175,4_T,3_NP,N_WA,N_P,0_D,2_S,N_L,standard_H,insufficient_LE,low_SL
 10176,3_T,5_NP,N_WA,N_P,0_D,2_S,N_L,standard_H,good_LE,medium_SL
 10177,3_T,5_NP,N_WA,N_P,0_D,2_S,N_L,intensive_H,good_LE,high_SL
@@ -10194,7 +10194,7 @@
 10192,3_T,5_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,very good_LE,high_SL
 10193,3_T,2_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,very good_LE,high_SL
 10194,2_T,5_NP,N_WA,N_P,1_D,1_S,N_L,standard_H,very good_LE,high_SL
-10195,3_T,5_NP,N_WA,N_P,1_D,1_S,N_L,standard_H,nan_LE,nan_SL
+10195,3_T,5_NP,N_WA,N_P,1_D,1_S,N_L,standard_H,very good_LE,high_SL
 10196,3_T,3_NP,N_WA,N_P,1_D,1_S,N_L,intensive_H,very good_LE,high_SL
 10197,2_T,2_NP,N_WA,N_P,1_D,1_S,N_L,standard_H,sufficient_LE,medium_SL
 10198,2_T,4_NP,Y_WA,N_P,2_D,1_S,N_L,standard_H,very good_LE,high_SL
@@ -10242,7 +10242,7 @@
 10240,2_T,5_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,very good_LE,high_SL
 10241,3_T,5_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,very good_LE,high_SL
 10242,3_T,2_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,sufficient_LE,medium_SL
-10243,2_T,2_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,nan_LE,nan_SL
+10243,2_T,2_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,very good_LE,high_SL
 10244,2_T,2_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,very good_LE,high_SL
 10245,3_T,4_NP,N_WA,N_P,0_D,2_S,N_L,standard_H,very good_LE,high_SL
 10246,6_T,3_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,good_LE,medium_SL
@@ -10272,7 +10272,7 @@
 10270,2_T,3_NP,N_WA,N_P,1_D,2_S,N_L,intensive_H,good_LE,high_SL
 10271,3_T,4_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,very good_LE,high_SL
 10272,6_T,5_NP,N_WA,N_P,1_D,1_S,N_L,standard_H,sufficient_LE,medium_SL
-10273,3_T,3_NP,N_WA,N_P,1_D,2_S,N_L,intensive_H,nan_LE,nan_SL
+10273,3_T,3_NP,N_WA,N_P,1_D,2_S,N_L,intensive_H,very good_LE,high_SL
 10274,3_T,5_NP,N_WA,N_P,2_D,1_S,N_L,intensive_H,good_LE,medium_SL
 10275,3_T,4_NP,N_WA,N_P,2_D,1_S,N_L,intensive_H,good_LE,high_SL
 10276,3_T,3_NP,Y_WA,N_P,2_D,1_S,N_L,standard_H,very good_LE,high_SL
@@ -10323,7 +10323,7 @@
 10321,3_T,3_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,very good_LE,high_SL
 10322,2_T,4_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,very good_LE,high_SL
 10323,3_T,4_NP,N_WA,N_P,0_D,2_S,N_L,standard_H,good_LE,high_SL
-10324,4_T,4_NP,Y_WA,N_P,0_D,0_S,N_L,intensive_H,nan_LE,nan_SL
+10324,4_T,4_NP,Y_WA,N_P,0_D,0_S,N_L,intensive_H,very good_LE,high_SL
 10325,3_T,4_NP,Y_WA,N_P,0_D,1_S,N_L,intensive_H,very good_LE,high_SL
 10326,4_T,5_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,insufficient_LE,low_SL
 10327,3_T,5_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,good_LE,medium_SL
@@ -10349,7 +10349,7 @@
 10347,3_T,3_NP,Y_WA,N_P,1_D,0_S,N_L,intensive_H,very good_LE,high_SL
 10348,3_T,2_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,very good_LE,high_SL
 10349,2_T,3_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,very good_LE,high_SL
-10350,4_T,4_NP,N_WA,N_P,2_D,1_S,N_L,standard_H,nan_LE,nan_SL
+10350,4_T,4_NP,N_WA,N_P,2_D,1_S,N_L,standard_H,very good_LE,high_SL
 10351,3_T,5_NP,N_WA,N_P,2_D,1_S,N_L,intensive_H,very good_LE,high_SL
 10352,3_T,3_NP,N_WA,N_P,2_D,1_S,N_L,standard_H,good_LE,medium_SL
 10353,4_T,4_NP,N_WA,N_P,2_D,1_S,N_L,intensive_H,sufficient_LE,medium_SL
@@ -10407,7 +10407,7 @@
 10405,3_T,3_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,insufficient_LE,low_SL
 10406,5_T,5_NP,Y_WA,N_P,0_D,1_S,N_L,intensive_H,insufficient_LE,low_SL
 10407,2_T,4_NP,N_WA,N_P,0_D,0_S,N_L,intensive_H,good_LE,high_SL
-10408,4_T,4_NP,N_WA,N_P,7_D,0_S,N_L,intensive_H,nan_LE,nan_SL
+10408,4_T,4_NP,N_WA,N_P,7_D,0_S,N_L,intensive_H,very good_LE,high_SL
 10409,3_T,3_NP,N_WA,N_P,7_D,0_S,N_L,standard_H,insufficient_LE,medium_SL
 10410,4_T,5_NP,Y_WA,N_P,7_D,0_S,N_L,standard_H,sufficient_LE,medium_SL
 10411,3_T,5_NP,N_WA,N_P,8_D,0_S,N_L,standard_H,good_LE,medium_SL
@@ -10459,7 +10459,7 @@
 10457,2_T,4_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,sufficient_LE,medium_SL
 10458,3_T,5_NP,N_WA,N_P,7_D,0_S,N_L,standard_H,sufficient_LE,medium_SL
 10459,2_T,3_NP,N_WA,N_P,2_D,0_S,N_L,intensive_H,sufficient_LE,medium_SL
-10460,3_T,3_NP,Y_WA,N_P,1_D,0_S,N_L,intensive_H,nan_LE,nan_SL
+10460,3_T,3_NP,Y_WA,N_P,1_D,0_S,N_L,intensive_H,very good_LE,high_SL
 10461,3_T,3_NP,N_WA,N_P,9_D,0_S,N_L,standard_H,very good_LE,high_SL
 10462,3_T,3_NP,N_WA,N_P,5_D,0_S,N_L,intensive_H,very good_LE,high_SL
 10463,3_T,2_NP,N_WA,N_P,5_D,0_S,N_L,intensive_H,insufficient_LE,low_SL
@@ -10690,7 +10690,7 @@
 10688,3_T,4_NP,N_WA,N_P,1_D,1_S,N_L,intensive_H,good_LE,high_SL
 10689,3_T,4_NP,N_WA,N_P,9_D,1_S,N_L,intensive_H,very good_LE,high_SL
 10690,2_T,5_NP,N_WA,N_P,5_D,1_S,N_L,intensive_H,very good_LE,high_SL
-10691,2_T,5_NP,N_WA,N_P,5_D,1_S,N_L,intensive_H,nan_LE,nan_SL
+10691,2_T,5_NP,N_WA,N_P,5_D,1_S,N_L,intensive_H,very good_LE,high_SL
 10692,3_T,3_NP,N_WA,N_P,5_D,1_S,N_L,standard_H,good_LE,high_SL
 10693,3_T,4_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,good_LE,high_SL
 10694,3_T,5_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,very good_LE,high_SL
@@ -10704,7 +10704,7 @@
 10702,3_T,5_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,good_LE,medium_SL
 10703,3_T,2_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,very good_LE,high_SL
 10704,3_T,3_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,sufficient_LE,medium_SL
-10705,4_T,4_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,nan_LE,nan_SL
+10705,4_T,4_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,very good_LE,high_SL
 10706,2_T,3_NP,Y_WA,N_P,0_D,1_S,N_L,intensive_H,very good_LE,high_SL
 10707,4_T,3_NP,Y_WA,N_P,0_D,1_S,N_L,intensive_H,very good_LE,high_SL
 10708,3_T,5_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,sufficient_LE,medium_SL
@@ -10795,7 +10795,7 @@
 10793,3_T,4_NP,N_WA,N_P,8_D,1_S,N_L,standard_H,good_LE,medium_SL
 10794,3_T,4_NP,N_WA,N_P,8_D,1_S,N_L,standard_H,good_LE,high_SL
 10795,2_T,3_NP,N_WA,N_P,8_D,1_S,N_L,standard_H,sufficient_LE,medium_SL
-10796,4_T,4_NP,Y_WA,N_P,1_D,1_S,N_L,standard_H,nan_LE,nan_SL
+10796,4_T,4_NP,Y_WA,N_P,1_D,1_S,N_L,standard_H,very good_LE,high_SL
 10797,4_T,3_NP,N_WA,N_P,1_D,1_S,N_L,intensive_H,good_LE,high_SL
 10798,4_T,4_NP,N_WA,N_P,1_D,1_S,N_L,standard_H,good_LE,medium_SL
 10799,3_T,5_NP,N_WA,N_P,1_D,2_S,N_L,intensive_H,very good_LE,high_SL
@@ -10877,7 +10877,7 @@
 10875,4_T,3_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,good_LE,high_SL
 10876,2_T,3_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,sufficient_LE,medium_SL
 10877,2_T,5_NP,Y_WA,N_P,1_D,0_S,N_L,intensive_H,sufficient_LE,medium_SL
-10878,4_T,6_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,nan_LE,nan_SL
+10878,4_T,6_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,very good_LE,high_SL
 10879,3_T,4_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,good_LE,high_SL
 10880,2_T,3_NP,Y_WA,N_P,1_D,0_S,N_L,intensive_H,good_LE,medium_SL
 10881,3_T,5_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,sufficient_LE,medium_SL
@@ -10899,13 +10899,13 @@
 10897,3_T,3_NP,N_WA,N_P,1_D,1_S,N_L,intensive_H,very good_LE,high_SL
 10898,3_T,3_NP,N_WA,N_P,9_D,1_S,N_L,intensive_H,very good_LE,high_SL
 10899,2_T,3_NP,N_WA,N_P,3_D,1_S,N_L,intensive_H,very good_LE,high_SL
-10900,5_T,5_NP,N_WA,N_P,3_D,1_S,N_L,standard_H,nan_LE,nan_SL
+10900,5_T,5_NP,N_WA,N_P,3_D,1_S,N_L,standard_H,very good_LE,high_SL
 10901,2_T,4_NP,Y_WA,N_P,3_D,1_S,N_L,intensive_H,good_LE,high_SL
 10902,2_T,3_NP,N_WA,N_P,3_D,1_S,N_L,standard_H,good_LE,high_SL
 10903,4_T,5_NP,Y_WA,N_P,3_D,1_S,N_L,standard_H,very good_LE,high_SL
 10904,2_T,4_NP,N_WA,N_P,4_D,1_S,N_L,standard_H,good_LE,medium_SL
 10905,3_T,3_NP,N_WA,N_P,4_D,2_S,N_L,intensive_H,good_LE,high_SL
-10906,3_T,5_NP,Y_WA,N_P,4_D,0_S,N_L,standard_H,nan_LE,nan_SL
+10906,3_T,5_NP,Y_WA,N_P,4_D,0_S,N_L,standard_H,very good_LE,high_SL
 10907,4_T,4_NP,N_WA,N_P,4_D,1_S,N_L,intensive_H,insufficient_LE,low_SL
 10908,2_T,2_NP,N_WA,N_P,3_D,1_S,N_L,standard_H,sufficient_LE,medium_SL
 10909,4_T,4_NP,N_WA,N_P,6_D,1_S,N_L,intensive_H,very good_LE,high_SL
@@ -11071,7 +11071,7 @@
 11069,4_T,5_NP,Y_WA,N_P,3_D,0_S,N_L,intensive_H,insufficient_LE,low_SL
 11070,3_T,4_NP,N_WA,N_P,3_D,0_S,N_L,intensive_H,very good_LE,high_SL
 11071,3_T,3_NP,N_WA,N_P,3_D,0_S,N_L,intensive_H,very good_LE,high_SL
-11072,3_T,2_NP,N_WA,N_P,3_D,1_S,N_L,intensive_H,nan_LE,nan_SL
+11072,3_T,2_NP,N_WA,N_P,3_D,1_S,N_L,intensive_H,very good_LE,high_SL
 11073,3_T,3_NP,Y_WA,N_P,4_D,1_S,N_L,standard_H,sufficient_LE,medium_SL
 11074,3_T,3_NP,N_WA,N_P,4_D,1_S,N_L,intensive_H,very good_LE,high_SL
 11075,2_T,4_NP,N_WA,N_P,4_D,1_S,N_L,intensive_H,very good_LE,high_SL
@@ -11121,7 +11121,7 @@
 11119,5_T,3_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,insufficient_LE,low_SL
 11120,5_T,5_NP,N_WA,N_P,0_D,0_S,N_L,intensive_H,good_LE,high_SL
 11121,3_T,5_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,sufficient_LE,medium_SL
-11122,3_T,5_NP,N_WA,N_P,0_D,0_S,N_L,intensive_H,nan_LE,nan_SL
+11122,3_T,5_NP,N_WA,N_P,0_D,0_S,N_L,intensive_H,very good_LE,high_SL
 11123,2_T,3_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,very good_LE,high_SL
 11124,10_T,6_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,insufficient_LE,low_SL
 11125,8_T,4_NP,Y_WA,N_P,0_D,1_S,N_L,intensive_H,sufficient_LE,medium_SL
@@ -11205,7 +11205,7 @@
 11203,3_T,2_NP,Y_WA,N_P,0_D,2_S,N_L,standard_H,sufficient_LE,medium_SL
 11204,3_T,3_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,very good_LE,high_SL
 11205,7_T,4_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,very good_LE,high_SL
-11206,7_T,5_NP,Y_WA,N_P,0_D,1_S,N_L,standard_H,nan_LE,nan_SL
+11206,7_T,5_NP,Y_WA,N_P,0_D,1_S,N_L,standard_H,very good_LE,high_SL
 11207,7_T,4_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,sufficient_LE,medium_SL
 11208,7_T,4_NP,N_WA,N_P,0_D,2_S,N_L,intensive_H,very good_LE,high_SL
 11209,7_T,3_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,insufficient_LE,medium_SL
@@ -11328,7 +11328,7 @@
 11326,3_T,3_NP,N_WA,N_P,2_D,1_S,N_L,standard_H,very good_LE,high_SL
 11327,3_T,5_NP,N_WA,N_P,2_D,1_S,N_L,intensive_H,good_LE,medium_SL
 11328,2_T,2_NP,N_WA,N_P,2_D,1_S,N_L,standard_H,sufficient_LE,medium_SL
-11329,3_T,2_NP,N_WA,N_P,2_D,1_S,N_L,standard_H,nan_LE,nan_SL
+11329,3_T,2_NP,N_WA,N_P,2_D,1_S,N_L,standard_H,very good_LE,high_SL
 11330,2_T,3_NP,N_WA,N_P,2_D,1_S,N_L,standard_H,very good_LE,high_SL
 11331,2_T,4_NP,N_WA,N_P,2_D,2_S,N_L,standard_H,very good_LE,high_SL
 11332,2_T,4_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,good_LE,high_SL
@@ -11374,7 +11374,7 @@
 11372,3_T,3_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,very good_LE,high_SL
 11373,3_T,3_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,insufficient_LE,medium_SL
 11374,2_T,4_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,very good_LE,high_SL
-11375,3_T,5_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,nan_LE,nan_SL
+11375,3_T,5_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,very good_LE,high_SL
 11376,2_T,3_NP,Y_WA,N_P,0_D,0_S,N_L,standard_H,very good_LE,high_SL
 11377,3_T,4_NP,N_WA,N_P,0_D,0_S,N_L,intensive_H,very good_LE,high_SL
 11378,2_T,3_NP,Y_WA,N_P,0_D,0_S,N_L,standard_H,good_LE,high_SL
@@ -12010,7 +12010,7 @@
 12008,5_T,5_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 12009,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 12010,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,sufficient_LE,medium_SL
-12011,4_T,6_NP,N_WA,N_P,0_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+12011,4_T,6_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12012,5_T,4_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 12013,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 12014,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -12021,7 +12021,7 @@
 12019,5_T,5_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,good_LE,high_SL
 12020,4_T,6_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12021,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-12022,4_T,6_NP,N_WA,N_P,0_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+12022,4_T,6_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12023,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,sufficient_LE,medium_SL
 12024,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 12025,5_T,5_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,very good_LE,high_SL
@@ -12037,7 +12037,7 @@
 12035,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12036,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 12037,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,sufficient_LE,medium_SL
-12038,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+12038,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12039,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 12040,5_T,5_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 12041,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,sufficient_LE,medium_SL
@@ -12053,14 +12053,14 @@
 12051,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 12052,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 12053,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-12054,4_T,7_NP,N_WA,N_P,2_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+12054,4_T,7_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12055,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 12056,4_T,7_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
-12057,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+12057,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12058,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 12059,5_T,4_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 12060,5_T,5_NP,N_WA,N_P,9_D,1_S,Y_L,intensive_H,very good_LE,high_SL
-12061,4_T,7_NP,N_WA,N_P,3_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+12061,4_T,7_NP,N_WA,N_P,3_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 12062,5_T,6_NP,N_WA,N_P,3_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 12063,3_T,2_NP,N_WA,N_P,3_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 12064,4_T,6_NP,N_WA,N_P,3_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
@@ -12074,7 +12074,7 @@
 12072,3_T,2_NP,N_WA,N_P,4_D,2_S,Y_L,standard_H,sufficient_LE,medium_SL
 12073,4_T,7_NP,N_WA,N_P,4_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12074,4_T,6_NP,N_WA,N_P,4_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
-12075,4_T,7_NP,N_WA,N_P,4_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+12075,4_T,7_NP,N_WA,N_P,4_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 12076,4_T,6_NP,N_WA,N_P,4_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 12077,3_T,2_NP,N_WA,N_P,5_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 12078,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -12084,7 +12084,7 @@
 12082,3_T,4_NP,N_WA,Y_P,9_D,0_S,Y_L,standard_H,very good_LE,high_SL
 12083,6_T,4_NP,N_WA,N_P,5_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 12084,4_T,6_NP,N_WA,N_P,5_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
-12085,4_T,6_NP,N_WA,N_P,5_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+12085,4_T,6_NP,N_WA,N_P,5_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12086,3_T,5_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12087,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 12088,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -12122,7 +12122,7 @@
 12120,4_T,4_NP,Y_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,low_SL
 12121,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 12122,6_T,4_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,good_LE,high_SL
-12123,5_T,6_NP,Y_WA,N_P,2_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+12123,5_T,6_NP,Y_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12124,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,sufficient_LE,medium_SL
 12125,4_T,6_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12126,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -12146,7 +12146,7 @@
 12144,5_T,4_NP,N_WA,N_P,4_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 12145,3_T,2_NP,N_WA,N_P,4_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 12146,5_T,4_NP,N_WA,N_P,4_D,0_S,Y_L,intensive_H,good_LE,high_SL
-12147,4_T,6_NP,N_WA,N_P,3_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+12147,4_T,6_NP,N_WA,N_P,3_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12148,5_T,4_NP,Y_WA,N_P,5_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 12149,3_T,2_NP,N_WA,N_P,5_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 12150,4_T,6_NP,N_WA,N_P,5_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
@@ -12154,12 +12154,12 @@
 12152,3_T,2_NP,N_WA,N_P,5_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 12153,3_T,2_NP,N_WA,N_P,5_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 12154,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-12155,4_T,6_NP,N_WA,N_P,7_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+12155,4_T,6_NP,N_WA,N_P,7_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12156,5_T,5_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,very good_LE,high_SL
-12157,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+12157,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12158,3_T,2_NP,N_WA,N_P,9_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 12159,3_T,2_NP,N_WA,N_P,5_D,0_S,Y_L,standard_H,sufficient_LE,medium_SL
-12160,4_T,7_NP,N_WA,N_P,5_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+12160,4_T,7_NP,N_WA,N_P,5_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12161,6_T,5_NP,N_WA,N_P,5_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 12162,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,sufficient_LE,medium_SL
 12163,5_T,5_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,very good_LE,high_SL
@@ -12178,7 +12178,7 @@
 12176,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 12177,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 12178,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
-12179,5_T,6_NP,N_WA,N_P,0_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+12179,5_T,6_NP,N_WA,N_P,0_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 12180,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 12181,4_T,6_NP,N_WA,N_P,7_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 12182,5_T,5_NP,N_WA,N_P,7_D,1_S,Y_L,intensive_H,very good_LE,high_SL
@@ -12194,7 +12194,7 @@
 12192,5_T,4_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,good_LE,high_SL
 12193,4_T,6_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 12194,5_T,4_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,very good_LE,high_SL
-12195,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+12195,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12196,3_T,7_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12197,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12198,4_T,7_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
@@ -12280,19 +12280,19 @@
 12278,4_T,6_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12279,4_T,4_NP,Y_WA,N_P,2_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 12280,4_T,6_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
-12281,3_T,3_NP,N_WA,N_P,2_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+12281,3_T,3_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12282,6_T,5_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 12283,4_T,6_NP,Y_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12284,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 12285,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-12286,4_T,6_NP,N_WA,N_P,2_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+12286,4_T,6_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12287,4_T,6_NP,N_WA,Y_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12288,5_T,5_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 12289,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 12290,3_T,2_NP,N_WA,N_P,9_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 12291,5_T,5_NP,N_WA,N_P,3_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 12292,3_T,2_NP,N_WA,N_P,3_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-12293,4_T,6_NP,Y_WA,N_P,3_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+12293,4_T,6_NP,Y_WA,N_P,3_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12294,4_T,6_NP,N_WA,N_P,3_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 12295,3_T,2_NP,N_WA,N_P,3_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 12296,3_T,2_NP,N_WA,N_P,4_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -12309,8 +12309,8 @@
 12307,4_T,5_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12308,3_T,2_NP,N_WA,N_P,7_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 12309,4_T,6_NP,N_WA,N_P,2_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
-12310,4_T,7_NP,N_WA,N_P,1_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
-12311,4_T,7_NP,N_WA,N_P,9_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+12310,4_T,7_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
+12311,4_T,7_NP,N_WA,N_P,9_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 12312,3_T,2_NP,N_WA,N_P,5_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 12313,3_T,2_NP,N_WA,N_P,5_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 12314,4_T,6_NP,N_WA,N_P,5_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
@@ -12330,7 +12330,7 @@
 12328,4_T,6_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12329,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 12330,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-12331,4_T,7_NP,N_WA,N_P,0_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+12331,4_T,7_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12332,4_T,6_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12333,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,sufficient_LE,medium_SL
 12334,4_T,6_NP,N_WA,N_P,7_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
@@ -12339,7 +12339,7 @@
 12337,3_T,2_NP,N_WA,N_P,8_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 12338,3_T,2_NP,N_WA,N_P,8_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 12339,4_T,6_NP,N_WA,N_P,8_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
-12340,5_T,7_NP,N_WA,N_P,8_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+12340,5_T,7_NP,N_WA,N_P,8_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 12341,3_T,2_NP,N_WA,N_P,1_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 12342,5_T,5_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 12343,3_T,2_NP,N_WA,N_P,1_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -12349,7 +12349,7 @@
 12347,4_T,6_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 12348,4_T,7_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 12349,3_T,2_NP,N_WA,N_P,1_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
-12350,5_T,6_NP,N_WA,N_P,1_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+12350,5_T,6_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 12351,6_T,3_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,sufficient_LE,medium_SL
 12352,6_T,4_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 12353,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -12433,7 +12433,7 @@
 12431,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 12432,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 12433,6_T,4_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,very good_LE,high_SL
-12434,4_T,6_NP,N_WA,N_P,2_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+12434,4_T,6_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12435,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 12436,4_T,6_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12437,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -12492,7 +12492,7 @@
 12490,6_T,4_NP,N_WA,N_P,8_D,1_S,Y_L,intensive_H,sufficient_LE,medium_SL
 12491,3_T,2_NP,N_WA,N_P,8_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 12492,4_T,6_NP,N_WA,N_P,8_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
-12493,4_T,6_NP,N_WA,N_P,1_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+12493,4_T,6_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 12494,5_T,5_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 12495,6_T,4_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 12496,4_T,6_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
@@ -12516,7 +12516,7 @@
 12514,5_T,5_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 12515,6_T,5_NP,Y_WA,N_P,1_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 12516,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
-12517,4_T,7_NP,N_WA,N_P,1_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+12517,4_T,7_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12518,3_T,2_NP,N_WA,N_P,9_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 12519,3_T,2_NP,N_WA,N_P,3_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 12520,5_T,4_NP,N_WA,N_P,3_D,0_S,Y_L,intensive_H,very good_LE,high_SL
@@ -12527,7 +12527,7 @@
 12525,3_T,2_NP,N_WA,N_P,4_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 12526,3_T,2_NP,Y_WA,N_P,4_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 12527,4_T,7_NP,N_WA,N_P,4_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
-12528,5_T,6_NP,N_WA,N_P,3_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+12528,5_T,6_NP,N_WA,N_P,3_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 12529,3_T,2_NP,N_WA,N_P,7_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 12530,3_T,2_NP,N_WA,N_P,7_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 12531,3_T,2_NP,Y_WA,N_P,8_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -12535,7 +12535,7 @@
 12533,3_T,2_NP,N_WA,N_P,8_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 12534,6_T,5_NP,Y_WA,N_P,5_D,1_S,Y_L,intensive_H,good_LE,high_SL
 12535,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
-12536,4_T,6_NP,N_WA,N_P,7_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+12536,4_T,6_NP,N_WA,N_P,7_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 12537,3_T,2_NP,Y_WA,N_P,2_D,1_S,Y_L,standard_H,sufficient_LE,medium_SL
 12538,5_T,5_NP,Y_WA,N_P,1_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 12539,4_T,7_NP,N_WA,N_P,9_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
@@ -12565,7 +12565,7 @@
 12563,4_T,7_NP,N_WA,N_P,7_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12564,3_T,2_NP,N_WA,N_P,7_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 12565,4_T,3_NP,N_WA,N_P,8_D,0_S,Y_L,intensive_H,very good_LE,high_SL
-12566,4_T,7_NP,N_WA,N_P,8_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+12566,4_T,7_NP,N_WA,N_P,8_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12567,4_T,6_NP,N_WA,N_P,8_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 12568,3_T,2_NP,N_WA,N_P,8_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 12569,4_T,4_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
@@ -12598,7 +12598,7 @@
 12596,5_T,5_NP,N_WA,N_P,3_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 12597,4_T,6_NP,N_WA,N_P,3_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12598,3_T,2_NP,N_WA,N_P,3_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-12599,4_T,7_NP,N_WA,N_P,3_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+12599,4_T,7_NP,N_WA,N_P,3_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12600,6_T,5_NP,N_WA,N_P,4_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 12601,6_T,5_NP,N_WA,N_P,4_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 12602,4_T,7_NP,N_WA,N_P,4_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
@@ -12653,7 +12653,7 @@
 12651,4_T,6_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 12652,4_T,6_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 12653,3_T,2_NP,N_WA,N_P,1_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
-12654,4_T,7_NP,N_WA,N_P,1_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+12654,4_T,7_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 12655,5_T,4_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 12656,5_T,5_NP,N_WA,N_P,2_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 12657,3_T,2_NP,N_WA,N_P,2_D,2_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -12696,7 +12696,7 @@
 12694,5_T,3_NP,N_WA,N_P,5_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 12695,4_T,3_NP,N_WA,N_P,0_D,1_S,Y_L,intensive_H,insufficient_LE,medium_SL
 12696,4_T,7_NP,N_WA,N_P,0_D,2_S,Y_L,intensive_H,insufficient_LE,low_SL
-12697,4_T,6_NP,N_WA,N_P,0_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+12697,4_T,6_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12698,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 12699,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 12700,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,sufficient_LE,medium_SL
@@ -12742,7 +12742,7 @@
 12740,4_T,7_NP,N_WA,N_P,2_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 12741,4_T,5_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,sufficient_LE,medium_SL
 12742,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-12743,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+12743,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12744,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 12745,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 12746,3_T,2_NP,N_WA,N_P,9_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -12769,8 +12769,8 @@
 12767,3_T,2_NP,N_WA,N_P,9_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 12768,5_T,6_NP,N_WA,N_P,5_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 12769,3_T,2_NP,N_WA,N_P,5_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
-12770,4_T,6_NP,N_WA,N_P,5_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
-12771,4_T,6_NP,N_WA,N_P,0_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+12770,4_T,6_NP,N_WA,N_P,5_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
+12771,4_T,6_NP,N_WA,N_P,0_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 12772,3_T,4_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,low_SL
 12773,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 12774,3_T,2_NP,N_WA,N_P,0_D,2_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -12901,7 +12901,7 @@
 12899,3_T,4_NP,N_WA,N_P,1_D,1_S,N_L,intensive_H,good_LE,high_SL
 12900,3_T,4_NP,N_WA,N_P,9_D,1_S,N_L,intensive_H,very good_LE,high_SL
 12901,2_T,5_NP,N_WA,N_P,5_D,1_S,N_L,intensive_H,very good_LE,high_SL
-12902,2_T,5_NP,N_WA,N_P,5_D,1_S,N_L,intensive_H,nan_LE,nan_SL
+12902,2_T,5_NP,N_WA,N_P,5_D,1_S,N_L,intensive_H,very good_LE,high_SL
 12903,3_T,3_NP,N_WA,N_P,5_D,1_S,N_L,standard_H,good_LE,high_SL
 12904,3_T,4_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,good_LE,high_SL
 12905,3_T,5_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,very good_LE,high_SL
@@ -12915,7 +12915,7 @@
 12913,3_T,5_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,good_LE,medium_SL
 12914,3_T,2_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,very good_LE,high_SL
 12915,3_T,3_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,sufficient_LE,medium_SL
-12916,4_T,4_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,nan_LE,nan_SL
+12916,4_T,4_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,very good_LE,high_SL
 12917,2_T,3_NP,Y_WA,N_P,0_D,1_S,N_L,intensive_H,very good_LE,high_SL
 12918,4_T,3_NP,Y_WA,N_P,0_D,1_S,N_L,intensive_H,very good_LE,high_SL
 12919,3_T,5_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,sufficient_LE,medium_SL
@@ -13006,7 +13006,7 @@
 13004,3_T,4_NP,N_WA,N_P,8_D,1_S,N_L,standard_H,good_LE,medium_SL
 13005,3_T,4_NP,N_WA,N_P,8_D,1_S,N_L,standard_H,good_LE,high_SL
 13006,2_T,3_NP,N_WA,N_P,8_D,1_S,N_L,standard_H,sufficient_LE,medium_SL
-13007,4_T,4_NP,Y_WA,N_P,1_D,1_S,N_L,standard_H,nan_LE,nan_SL
+13007,4_T,4_NP,Y_WA,N_P,1_D,1_S,N_L,standard_H,very good_LE,high_SL
 13008,4_T,3_NP,N_WA,N_P,1_D,1_S,N_L,intensive_H,good_LE,high_SL
 13009,4_T,4_NP,N_WA,N_P,1_D,1_S,N_L,standard_H,good_LE,medium_SL
 13010,3_T,5_NP,N_WA,N_P,1_D,2_S,N_L,intensive_H,very good_LE,high_SL
@@ -13088,7 +13088,7 @@
 13086,4_T,3_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,good_LE,high_SL
 13087,2_T,3_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,sufficient_LE,medium_SL
 13088,2_T,5_NP,Y_WA,N_P,1_D,0_S,N_L,intensive_H,sufficient_LE,medium_SL
-13089,4_T,6_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,nan_LE,nan_SL
+13089,4_T,6_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,very good_LE,high_SL
 13090,3_T,4_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,good_LE,high_SL
 13091,2_T,3_NP,Y_WA,N_P,1_D,0_S,N_L,intensive_H,good_LE,medium_SL
 13092,3_T,5_NP,N_WA,N_P,1_D,0_S,N_L,standard_H,sufficient_LE,medium_SL
@@ -13110,13 +13110,13 @@
 13108,3_T,3_NP,N_WA,N_P,1_D,1_S,N_L,intensive_H,very good_LE,high_SL
 13109,3_T,3_NP,N_WA,N_P,9_D,1_S,N_L,intensive_H,very good_LE,high_SL
 13110,2_T,3_NP,N_WA,N_P,3_D,1_S,N_L,intensive_H,very good_LE,high_SL
-13111,5_T,5_NP,N_WA,N_P,3_D,1_S,N_L,standard_H,nan_LE,nan_SL
+13111,5_T,5_NP,N_WA,N_P,3_D,1_S,N_L,standard_H,very good_LE,high_SL
 13112,2_T,4_NP,Y_WA,N_P,3_D,1_S,N_L,intensive_H,good_LE,high_SL
 13113,2_T,3_NP,N_WA,N_P,3_D,1_S,N_L,standard_H,good_LE,high_SL
 13114,4_T,5_NP,Y_WA,N_P,3_D,1_S,N_L,standard_H,very good_LE,high_SL
 13115,2_T,4_NP,N_WA,N_P,4_D,1_S,N_L,standard_H,good_LE,medium_SL
 13116,3_T,3_NP,N_WA,N_P,4_D,2_S,N_L,intensive_H,good_LE,high_SL
-13117,3_T,5_NP,Y_WA,N_P,4_D,0_S,N_L,standard_H,nan_LE,nan_SL
+13117,3_T,5_NP,Y_WA,N_P,4_D,0_S,N_L,standard_H,very good_LE,high_SL
 13118,4_T,4_NP,N_WA,N_P,4_D,1_S,N_L,intensive_H,insufficient_LE,low_SL
 13119,2_T,2_NP,N_WA,N_P,3_D,1_S,N_L,standard_H,sufficient_LE,medium_SL
 13120,4_T,4_NP,N_WA,N_P,6_D,1_S,N_L,intensive_H,very good_LE,high_SL
@@ -13282,7 +13282,7 @@
 13280,4_T,5_NP,Y_WA,N_P,3_D,0_S,N_L,intensive_H,insufficient_LE,low_SL
 13281,3_T,4_NP,N_WA,N_P,3_D,0_S,N_L,intensive_H,very good_LE,high_SL
 13282,3_T,3_NP,N_WA,N_P,3_D,0_S,N_L,intensive_H,very good_LE,high_SL
-13283,3_T,2_NP,N_WA,N_P,3_D,1_S,N_L,intensive_H,nan_LE,nan_SL
+13283,3_T,2_NP,N_WA,N_P,3_D,1_S,N_L,intensive_H,very good_LE,high_SL
 13284,3_T,3_NP,Y_WA,N_P,4_D,1_S,N_L,standard_H,sufficient_LE,medium_SL
 13285,3_T,3_NP,N_WA,N_P,4_D,1_S,N_L,intensive_H,very good_LE,high_SL
 13286,2_T,4_NP,N_WA,N_P,4_D,1_S,N_L,intensive_H,very good_LE,high_SL
@@ -13332,7 +13332,7 @@
 13330,5_T,3_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,insufficient_LE,low_SL
 13331,5_T,5_NP,N_WA,N_P,0_D,0_S,N_L,intensive_H,good_LE,high_SL
 13332,3_T,5_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,sufficient_LE,medium_SL
-13333,3_T,5_NP,N_WA,N_P,0_D,0_S,N_L,intensive_H,nan_LE,nan_SL
+13333,3_T,5_NP,N_WA,N_P,0_D,0_S,N_L,intensive_H,very good_LE,high_SL
 13334,2_T,3_NP,N_WA,N_P,0_D,0_S,N_L,standard_H,very good_LE,high_SL
 13335,10_T,6_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,insufficient_LE,low_SL
 13336,8_T,4_NP,Y_WA,N_P,0_D,1_S,N_L,intensive_H,sufficient_LE,medium_SL
@@ -13416,7 +13416,7 @@
 13414,3_T,2_NP,Y_WA,N_P,0_D,2_S,N_L,standard_H,sufficient_LE,medium_SL
 13415,3_T,3_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,very good_LE,high_SL
 13416,7_T,4_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,very good_LE,high_SL
-13417,7_T,5_NP,Y_WA,N_P,0_D,1_S,N_L,standard_H,nan_LE,nan_SL
+13417,7_T,5_NP,Y_WA,N_P,0_D,1_S,N_L,standard_H,very good_LE,high_SL
 13418,7_T,4_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,sufficient_LE,medium_SL
 13419,7_T,4_NP,N_WA,N_P,0_D,2_S,N_L,intensive_H,very good_LE,high_SL
 13420,7_T,3_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,insufficient_LE,medium_SL
@@ -13539,7 +13539,7 @@
 13537,3_T,3_NP,N_WA,N_P,2_D,1_S,N_L,standard_H,very good_LE,high_SL
 13538,3_T,5_NP,N_WA,N_P,2_D,1_S,N_L,intensive_H,good_LE,medium_SL
 13539,2_T,2_NP,N_WA,N_P,2_D,1_S,N_L,standard_H,sufficient_LE,medium_SL
-13540,3_T,2_NP,N_WA,N_P,2_D,1_S,N_L,standard_H,nan_LE,nan_SL
+13540,3_T,2_NP,N_WA,N_P,2_D,1_S,N_L,standard_H,very good_LE,high_SL
 13541,2_T,3_NP,N_WA,N_P,2_D,1_S,N_L,standard_H,very good_LE,high_SL
 13542,2_T,4_NP,N_WA,N_P,2_D,2_S,N_L,standard_H,very good_LE,high_SL
 13543,2_T,4_NP,N_WA,N_P,1_D,0_S,N_L,intensive_H,good_LE,high_SL
@@ -13585,7 +13585,7 @@
 13583,3_T,3_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,very good_LE,high_SL
 13584,3_T,3_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,insufficient_LE,medium_SL
 13585,2_T,4_NP,N_WA,N_P,0_D,1_S,N_L,intensive_H,very good_LE,high_SL
-13586,3_T,5_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,nan_LE,nan_SL
+13586,3_T,5_NP,N_WA,N_P,0_D,1_S,N_L,standard_H,very good_LE,high_SL
 13587,2_T,3_NP,Y_WA,N_P,0_D,0_S,N_L,standard_H,very good_LE,high_SL
 13588,3_T,4_NP,N_WA,N_P,0_D,0_S,N_L,intensive_H,very good_LE,high_SL
 13589,2_T,3_NP,Y_WA,N_P,0_D,0_S,N_L,standard_H,good_LE,high_SL
@@ -14221,7 +14221,7 @@
 14219,5_T,5_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 14220,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 14221,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,sufficient_LE,medium_SL
-14222,4_T,6_NP,N_WA,N_P,0_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+14222,4_T,6_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14223,5_T,4_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 14224,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 14225,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -14232,7 +14232,7 @@
 14230,5_T,5_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,good_LE,high_SL
 14231,4_T,6_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14232,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-14233,4_T,6_NP,N_WA,N_P,0_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+14233,4_T,6_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14234,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,sufficient_LE,medium_SL
 14235,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 14236,5_T,5_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,very good_LE,high_SL
@@ -14248,7 +14248,7 @@
 14246,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14247,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 14248,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,sufficient_LE,medium_SL
-14249,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+14249,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14250,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 14251,5_T,5_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 14252,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,sufficient_LE,medium_SL
@@ -14264,14 +14264,14 @@
 14262,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 14263,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 14264,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-14265,4_T,7_NP,N_WA,N_P,2_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+14265,4_T,7_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14266,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 14267,4_T,7_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
-14268,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+14268,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14269,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 14270,5_T,4_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 14271,5_T,5_NP,N_WA,N_P,9_D,1_S,Y_L,intensive_H,very good_LE,high_SL
-14272,4_T,7_NP,N_WA,N_P,3_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+14272,4_T,7_NP,N_WA,N_P,3_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 14273,5_T,6_NP,N_WA,N_P,3_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 14274,3_T,2_NP,N_WA,N_P,3_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 14275,4_T,6_NP,N_WA,N_P,3_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
@@ -14285,7 +14285,7 @@
 14283,3_T,2_NP,N_WA,N_P,4_D,2_S,Y_L,standard_H,sufficient_LE,medium_SL
 14284,4_T,7_NP,N_WA,N_P,4_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14285,4_T,6_NP,N_WA,N_P,4_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
-14286,4_T,7_NP,N_WA,N_P,4_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+14286,4_T,7_NP,N_WA,N_P,4_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 14287,4_T,6_NP,N_WA,N_P,4_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 14288,3_T,2_NP,N_WA,N_P,5_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 14289,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -14295,7 +14295,7 @@
 14293,3_T,4_NP,N_WA,Y_P,9_D,0_S,Y_L,standard_H,very good_LE,high_SL
 14294,6_T,4_NP,N_WA,N_P,5_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 14295,4_T,6_NP,N_WA,N_P,5_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
-14296,4_T,6_NP,N_WA,N_P,5_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+14296,4_T,6_NP,N_WA,N_P,5_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14297,3_T,5_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14298,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 14299,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -14333,7 +14333,7 @@
 14331,4_T,4_NP,Y_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,low_SL
 14332,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 14333,6_T,4_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,good_LE,high_SL
-14334,5_T,6_NP,Y_WA,N_P,2_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+14334,5_T,6_NP,Y_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14335,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,sufficient_LE,medium_SL
 14336,4_T,6_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14337,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -14357,7 +14357,7 @@
 14355,5_T,4_NP,N_WA,N_P,4_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 14356,3_T,2_NP,N_WA,N_P,4_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 14357,5_T,4_NP,N_WA,N_P,4_D,0_S,Y_L,intensive_H,good_LE,high_SL
-14358,4_T,6_NP,N_WA,N_P,3_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+14358,4_T,6_NP,N_WA,N_P,3_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14359,5_T,4_NP,Y_WA,N_P,5_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 14360,3_T,2_NP,N_WA,N_P,5_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 14361,4_T,6_NP,N_WA,N_P,5_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
@@ -14365,12 +14365,12 @@
 14363,3_T,2_NP,N_WA,N_P,5_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 14364,3_T,2_NP,N_WA,N_P,5_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 14365,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-14366,4_T,6_NP,N_WA,N_P,7_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+14366,4_T,6_NP,N_WA,N_P,7_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14367,5_T,5_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,very good_LE,high_SL
-14368,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+14368,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14369,3_T,2_NP,N_WA,N_P,9_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 14370,3_T,2_NP,N_WA,N_P,5_D,0_S,Y_L,standard_H,sufficient_LE,medium_SL
-14371,4_T,7_NP,N_WA,N_P,5_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+14371,4_T,7_NP,N_WA,N_P,5_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14372,6_T,5_NP,N_WA,N_P,5_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 14373,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,sufficient_LE,medium_SL
 14374,5_T,5_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,very good_LE,high_SL
@@ -14389,7 +14389,7 @@
 14387,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 14388,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 14389,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
-14390,5_T,6_NP,N_WA,N_P,0_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+14390,5_T,6_NP,N_WA,N_P,0_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 14391,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 14392,4_T,6_NP,N_WA,N_P,7_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 14393,5_T,5_NP,N_WA,N_P,7_D,1_S,Y_L,intensive_H,very good_LE,high_SL
@@ -14405,7 +14405,7 @@
 14403,5_T,4_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,good_LE,high_SL
 14404,4_T,6_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 14405,5_T,4_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,very good_LE,high_SL
-14406,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+14406,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14407,3_T,7_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14408,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14409,4_T,7_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
@@ -14491,19 +14491,19 @@
 14489,4_T,6_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14490,4_T,4_NP,Y_WA,N_P,2_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 14491,4_T,6_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
-14492,3_T,3_NP,N_WA,N_P,2_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+14492,3_T,3_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14493,6_T,5_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 14494,4_T,6_NP,Y_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14495,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 14496,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-14497,4_T,6_NP,N_WA,N_P,2_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+14497,4_T,6_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14498,4_T,6_NP,N_WA,Y_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14499,5_T,5_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 14500,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 14501,3_T,2_NP,N_WA,N_P,9_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 14502,5_T,5_NP,N_WA,N_P,3_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 14503,3_T,2_NP,N_WA,N_P,3_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-14504,4_T,6_NP,Y_WA,N_P,3_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+14504,4_T,6_NP,Y_WA,N_P,3_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14505,4_T,6_NP,N_WA,N_P,3_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 14506,3_T,2_NP,N_WA,N_P,3_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 14507,3_T,2_NP,N_WA,N_P,4_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -14520,8 +14520,8 @@
 14518,4_T,5_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14519,3_T,2_NP,N_WA,N_P,7_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 14520,4_T,6_NP,N_WA,N_P,2_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
-14521,4_T,7_NP,N_WA,N_P,1_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
-14522,4_T,7_NP,N_WA,N_P,9_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+14521,4_T,7_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
+14522,4_T,7_NP,N_WA,N_P,9_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 14523,3_T,2_NP,N_WA,N_P,5_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 14524,3_T,2_NP,N_WA,N_P,5_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 14525,4_T,6_NP,N_WA,N_P,5_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
@@ -14541,7 +14541,7 @@
 14539,4_T,6_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14540,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 14541,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-14542,4_T,7_NP,N_WA,N_P,0_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+14542,4_T,7_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14543,4_T,6_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14544,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,sufficient_LE,medium_SL
 14545,4_T,6_NP,N_WA,N_P,7_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
@@ -14550,7 +14550,7 @@
 14548,3_T,2_NP,N_WA,N_P,8_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 14549,3_T,2_NP,N_WA,N_P,8_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 14550,4_T,6_NP,N_WA,N_P,8_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
-14551,5_T,7_NP,N_WA,N_P,8_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+14551,5_T,7_NP,N_WA,N_P,8_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 14552,3_T,2_NP,N_WA,N_P,1_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 14553,5_T,5_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 14554,3_T,2_NP,N_WA,N_P,1_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -14560,7 +14560,7 @@
 14558,4_T,6_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 14559,4_T,7_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 14560,3_T,2_NP,N_WA,N_P,1_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
-14561,5_T,6_NP,N_WA,N_P,1_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+14561,5_T,6_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 14562,6_T,3_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,sufficient_LE,medium_SL
 14563,6_T,4_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 14564,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -14644,7 +14644,7 @@
 14642,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 14643,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 14644,6_T,4_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,very good_LE,high_SL
-14645,4_T,6_NP,N_WA,N_P,2_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+14645,4_T,6_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14646,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 14647,4_T,6_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14648,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -14703,7 +14703,7 @@
 14701,6_T,4_NP,N_WA,N_P,8_D,1_S,Y_L,intensive_H,sufficient_LE,medium_SL
 14702,3_T,2_NP,N_WA,N_P,8_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 14703,4_T,6_NP,N_WA,N_P,8_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
-14704,4_T,6_NP,N_WA,N_P,1_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+14704,4_T,6_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 14705,5_T,5_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 14706,6_T,4_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 14707,4_T,6_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
@@ -14727,7 +14727,7 @@
 14725,5_T,5_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 14726,6_T,5_NP,Y_WA,N_P,1_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 14727,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
-14728,4_T,7_NP,N_WA,N_P,1_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+14728,4_T,7_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14729,3_T,2_NP,N_WA,N_P,9_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 14730,3_T,2_NP,N_WA,N_P,3_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 14731,5_T,4_NP,N_WA,N_P,3_D,0_S,Y_L,intensive_H,very good_LE,high_SL
@@ -14738,7 +14738,7 @@
 14736,3_T,2_NP,N_WA,N_P,4_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 14737,3_T,2_NP,Y_WA,N_P,4_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 14738,4_T,7_NP,N_WA,N_P,4_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
-14739,5_T,6_NP,N_WA,N_P,3_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+14739,5_T,6_NP,N_WA,N_P,3_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 14740,3_T,2_NP,N_WA,N_P,7_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 14741,3_T,2_NP,N_WA,N_P,7_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 14742,3_T,2_NP,Y_WA,N_P,8_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -14746,7 +14746,7 @@
 14744,3_T,2_NP,N_WA,N_P,8_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 14745,6_T,5_NP,Y_WA,N_P,5_D,1_S,Y_L,intensive_H,good_LE,high_SL
 14746,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
-14747,4_T,6_NP,N_WA,N_P,7_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+14747,4_T,6_NP,N_WA,N_P,7_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 14748,3_T,2_NP,Y_WA,N_P,2_D,1_S,Y_L,standard_H,sufficient_LE,medium_SL
 14749,5_T,5_NP,Y_WA,N_P,1_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 14750,4_T,7_NP,N_WA,N_P,9_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
@@ -14776,7 +14776,7 @@
 14774,4_T,7_NP,N_WA,N_P,7_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14775,3_T,2_NP,N_WA,N_P,7_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 14776,4_T,3_NP,N_WA,N_P,8_D,0_S,Y_L,intensive_H,very good_LE,high_SL
-14777,4_T,7_NP,N_WA,N_P,8_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+14777,4_T,7_NP,N_WA,N_P,8_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14778,4_T,6_NP,N_WA,N_P,8_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 14779,3_T,2_NP,N_WA,N_P,8_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 14780,4_T,4_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
@@ -14809,7 +14809,7 @@
 14807,5_T,5_NP,N_WA,N_P,3_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 14808,4_T,6_NP,N_WA,N_P,3_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14809,3_T,2_NP,N_WA,N_P,3_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-14810,4_T,7_NP,N_WA,N_P,3_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+14810,4_T,7_NP,N_WA,N_P,3_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14811,6_T,5_NP,N_WA,N_P,4_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 14812,6_T,5_NP,N_WA,N_P,4_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 14813,4_T,7_NP,N_WA,N_P,4_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
@@ -14864,7 +14864,7 @@
 14862,4_T,6_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 14863,4_T,6_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 14864,3_T,2_NP,N_WA,N_P,1_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
-14865,4_T,7_NP,N_WA,N_P,1_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+14865,4_T,7_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 14866,5_T,4_NP,N_WA,N_P,1_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 14867,5_T,5_NP,N_WA,N_P,2_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 14868,3_T,2_NP,N_WA,N_P,2_D,2_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -14875,7 +14875,7 @@
 14873,4_T,6_NP,N_WA,N_P,9_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14874,4_T,6_NP,N_WA,N_P,5_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14875,3_T,2_NP,N_WA,N_P,5_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-14876,4_T,7_NP,N_WA,N_P,5_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+14876,4_T,7_NP,N_WA,N_P,5_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14877,5_T,5_NP,N_WA,N_P,0_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 14878,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 14879,3_T,2_NP,N_WA,N_P,0_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -14911,7 +14911,7 @@
 14909,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14910,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,good_LE,high_SL
 14911,5_T,4_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,good_LE,high_SL
-14912,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,nan_H,insufficient_LE,low_SL
+14912,4_T,6_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,insufficient_LE,low_SL
 14913,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 14914,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 14915,3_T,2_NP,N_WA,N_P,2_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -14928,7 +14928,7 @@
 14926,5_T,5_NP,N_WA,N_P,1_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 14927,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 14928,3_T,2_NP,N_WA,N_P,9_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
-14929,5_T,7_NP,N_WA,N_P,3_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+14929,5_T,7_NP,N_WA,N_P,3_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 14930,4_T,6_NP,N_WA,N_P,3_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 14931,5_T,5_NP,N_WA,N_P,3_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 14932,3_T,2_NP,N_WA,N_P,3_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -14945,7 +14945,7 @@
 14943,5_T,5_NP,N_WA,N_P,6_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 14944,5_T,5_NP,N_WA,N_P,5_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 14945,5_T,4_NP,Y_WA,N_P,0_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
-14946,5_T,5_NP,N_WA,N_P,7_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+14946,5_T,5_NP,N_WA,N_P,7_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 14947,6_T,4_NP,N_WA,N_P,2_D,0_S,Y_L,intensive_H,very good_LE,high_SL
 14948,3_T,2_NP,N_WA,N_P,1_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
 14949,3_T,2_NP,Y_WA,N_P,9_D,0_S,Y_L,standard_H,insufficient_LE,medium_SL
@@ -14971,10 +14971,10 @@
 14969,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 14970,5_T,4_NP,N_WA,N_P,0_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 14971,3_T,2_NP,N_WA,N_P,0_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
-14972,4_T,6_NP,N_WA,N_P,7_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+14972,4_T,6_NP,N_WA,N_P,7_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 14973,3_T,2_NP,N_WA,N_P,7_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 14974,3_T,2_NP,N_WA,N_P,7_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
-14975,4_T,7_NP,N_WA,N_P,8_D,1_S,Y_L,nan_H,insufficient_LE,low_SL
+14975,4_T,7_NP,N_WA,N_P,8_D,1_S,Y_L,intensive_H,insufficient_LE,low_SL
 14976,3_T,2_NP,N_WA,N_P,8_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
 14977,6_T,4_NP,N_WA,N_P,8_D,1_S,Y_L,intensive_H,very good_LE,high_SL
 14978,3_T,2_NP,N_WA,N_P,8_D,1_S,Y_L,standard_H,insufficient_LE,medium_SL
