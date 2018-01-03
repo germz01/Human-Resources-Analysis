@@ -44,7 +44,7 @@ Inoltre si possono fare le seguenti supposizioni: i dipendenti che se ne sono an
           \caption{}
         \label{fig:sse}
 \end{figure}
-\end{minipage}             
+\end{minipage}
 \begin{minipage}[b]{9cm}
   \begin{figure}[H]
   \centering
@@ -77,17 +77,17 @@ Inoltre si possono fare le seguenti supposizioni: i dipendenti che se ne sono an
   \end{subtable}
   \begin{subtable}{0.55\textwidth}
     \resizebox{\textwidth}{!}{
-    \begin{tabular}{| c | c | c | c | c | c | c |}
+    \begin{tabular}{| c | c | c | c | c | c | c | c |}
     \hline
     {} & \multicolumn{6}{c |}{Last\_Evaluation} \\
     \hline
-     {} & countTot & meanTot & countLeft & meanLeft & countStayed & meanStayed \\
-    Cluster & & & & & & \\
+     {} Cluster & countTot & meanTot & countLeft & meanLeft & countStayed & meanStayed \\
+
     \hline
     0 & 3103.0 & 0.55 & 1569.0 & 0.51 & 1534.0 & 0.59 \\
     1 & 4720.0 & 0.72 & 66.0 & 0.78 & 4654 & 0.72 \\
     2 & 1827.0 & 0.79 & 961.0 & 0.85 & 866 & 0.72\\
-    3 & 5349.0 & 0.76 & 975.0 & 0.89 & 4374 & 0.74 \\    			    
+    3 & 5349.0 & 0.76 & 975.0 & 0.89 & 4374 & 0.74 \\
     \hline
     \end{tabular}
   }
@@ -191,33 +191,46 @@ i $3$ clusters emersi per gli impiegati che hanno lasciato l'azienda delineano u
 score sia in Satisfaction Level che in Last Evaluation, un gruppo con un alto score in Last Evaluation e un basso
 score in Satisfaction Level e un gruppo con alto score in entrambe le variabili. Per gli impiegati ancora
 all'interno dell'azienda, possiamo notare nella Figura \ref{fig:cluster_stayed} che la situazione è decisamente
-più distribuita.
-\section{Hierarchical clustering}
+più distribuita.\\
 
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=\textwidth]{../images/hierarchical/dendrogram_average_euclidean.pdf}
-  \caption{Dendrogramma per method X e metrica Y}
+\section{DBSCAN}
+\subsection{Choice of attributes and distance function}
+\label{sub:choice_of_attributes_and_distance_function}
+Il DBSCAN è un metodo di clustering basato sulla densità. Parlando di densità si intende il numero di punti in un specifico raggio chiamato $eps$. Per seguire la stessa analisi riportata dal Kmeans utilizziamo anche in questa metodologia tutti gli attributi eccetto quelli categorici e quello ordinale $salary$.
+\subsection{Study of the clustering parameters}
+\label{sub:study_of_the_clustering_parameters}
+\begin{figure}[H]
+\centering
+   \includegraphics[width=0.8\textwidth]{images/DBSCAN/nearestneighbors.pdf}
+      \caption{Andamento numero di cluster per ciascun $eps$}
+   \label{fig:sse}
 \end{figure}
-
-\begin{figure}[htbp]
+Per la scelta dei parametri del DBSCAN ovvero : il raggio di distanza $eps$ dai punti centrali, chiamati centroidi, e il minimo numero di punti in questo raggio $minSamples$, si è definito l'andamento del rapporto tra eps e minSamples attraverso lo studio del k-nearest neighbors. Dal grafico abbiamo individuato il punto di flesso in un range di $eps$ tra $0.18$ e $0.25$. L'analisi prendeva anche in considerazione il valore della silhouette, nell'intervallo citato precedentemente si è trovato che il flesso si trovava con $eps$ = $0.22$ (il valore esatto è $0.227778$), $minSamples$ = $13$, ottenendo così $3$ cluster, e un valore di $silhouette$ di $0.310$. Per determinare la scelta dei parametri abbiamo deciso di utilizzare la distanza euclidea per rendere più immediato il confronto con le altre metodologie di clustering. La combinazione trovata è stata scelta dopo aver testato anche soluzioni che mostrassero più cluster rispetto a tre, ma sono state scartate in quanto queste indicano sempre la medesima situazione: un cluster principale in cui troviamo quasi la totalità dei dipendenti e negli altri cluster un numero sempre più esiguo di dipendenti, quindi non danno informazioni aggiuntive particolari rispetto a quella riportata di seguito.
+\subsection{Characterization and interpretation of the obtained clusters}
+\label{sub:characterization_and_interpretation_of_the_obtained_clusters}
+\begin{table}[H]
   \centering
-  \includegraphics[width=\textwidth]{../images/hierarchical/methods_comparison.pdf}
-  \caption{Confronto tra diversi metodi}
-\end{figure}
+    \begin{tabular}{| c | c | c | c | c | c | c |}
+    \hline
+    \textbf{Cluster} & \textbf{count} & \textbf{Satisfaction} &  \textbf{L.Evaluation} & \textbf{Num Projects} & \textbf{Average Montly Hours} &  \textbf{Time S. Company} \\ 	   		    \hline
+    0 & 14738.0 & 0.61 & 0.71 & 0.36 & 0.49 & 0.17\\ \hline
+    1 & 134.0 & 0.68 & 0.74 & 0.25 & 0.46 & 1\\ \hline
+    2 & 8.0 & 0.75 & 0.78 & 0.4 & 0.8 & 1\\
+    \hline
+    \end{tabular}
+    \label{tab:stat_descr_db}
+    \caption{Statistica descrittiva relativa ad ognuno dei cluster scoperti con la metodologia DBSCAN. Per ogni cluster vengono riportate le informazioni relative alla media delle variabili continue.}
+  \label{tab:stat_descr_db}
+\end{table}
 
+I cluster rilevati da questa metodologia sono 3:
+Il primo cluster, Cluster $0$ è caratterizzato da $14738$ dipendenti che descrivono la situazione generale dell'azienda, si nota subito dal TS, Time Spend Company, che i dipendenti in media rimangono per breve tempo in azienda. I restanti valori medi per gli altri attributi descrivono una situazione nella media sufficiente come soddisfazione, con un buon numero di progetti, una valutazione in media discreta, e un numero medio di ore di lavoro nella norma.
+Il secondo,il terzo mostrano caratteristiche simili: Entrambi i tipi di dipendenti rispettivamente $134$ per il secondo cluster e $8$ per il terzo, sono al decimo anno di lavoro nell'azienda e stanno ancora lavorando in questa, però si articolano in modo differente per gli altri attributi.
+Infatti nel secondo cluster, Cluster $1$ raggruppa dipendenti soddisfatti sufficientemente, con un livello di valutazione discreto, e un numero di ore medie poco meno della media totale e infine un numero di progetti sufficiente.
+Mentre nel terzo cluster , Cluster $2$ abbiamo una situazione diversa alla precedente per quanto riguarda il numero di ore di lavoro, questi sono i dipendenti che lavorano più ore in media al mese e lavorano su più progetti.
+I restanti$119$ dipendenti sono stati considerati come punti di noise.
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.9\textwidth]{../images/hierarchical/silhouette_average_euclidean_n2.pdf}
-  \caption{Confronto tra silhouette medie, per due clusters}
-\end{figure}
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.7\textwidth]{../images/hierarchical/silhouette_comparison.pdf}
-  \caption{Confronto tra silhouette medie, per due clusters}
-\end{figure}
-
-
+\section{Final evaluation of the best clustering approach and comparison of the cluster obtained} % (fold)
+\label{sec:clustering_final_evaluation}
+Dalle analisi condotte con le tre metodologie di clustering abbiamo rilevato che con la metodologia del DBSCAN non si riescono a ricavare delle informazioni rilevanti ai fini della ricerca in quanto presenta un cluster in cui vi sono la quasi totalità dei dipendenti che vogliamo andare ad analizzare. Il K-means invece offre l'opportunità di determinare tipi di dipendenti, in cui è possibile inoltre fare delle supposizioni, che potranno essere studiate nelle sezioni successive. Per lo hierarchical... .
+Quindi per questo dataset si è ritenuto più efficiente fare utilizzo della metodologia del kmeans.

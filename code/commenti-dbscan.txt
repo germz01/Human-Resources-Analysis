@@ -1,0 +1,49 @@
+###########################################################
+
+Ho guardato il DBSCAN, il numero delle variabili non è un problema, il problema principale nell'analisi che hai fatto è che hai studiato un intervallo ampio di valori ma testando "pochi" valori, non come numero ma in questo senso:
+
+Se guardi, come esempio, la heatmap (in /images/dbscan/heatmap.pdf) con il numero di cluster in funzione di eps e MinPts, si osserva che il numero di cluster (e dunque silhouette ed algoritmo in generale) è molto sensibile all'eps e ai minpts, quindi basta una minima variazione per ottenere risultati differenti. 
+
+Nell'analisi che hai fatto hai controllato gli eps saltando di 0.1 in 0.1, ma facendo così si ha una variazione troppo ampia.
+
+Per questo serve fare il grafico k-distance: per avere intanto un intervallo ristretto in cui cercare eps, e all'interno di tale intervallo variare in modo più "fino" i parametri. 
+
+Alla fine dello script dbscan-ste.py avevo messo ad esempio una configurazione dei parametri, ottenuta guardando le zone stabili della heatmap:
+eps = 0.940
+MinPts = 7
+se provi vedrai che con questi valori si ottengono 4 clusters e la silhouette viene più di 0.3!
+
+E se cambi di poco questi valori cambia sia il numero di cluster che la silhouette. Poco significa provare ad esempio anche 0.90 con MinPts=7 o cambiare a 12 MinPts (vedi anche la heatmap)
+
+Questo è un esempio, probabilmente non è ottimale, anche se ha una silhouette decente, bisogna vedere anche che cluster vengono fuori.
+
+## Questione MinPts:
+I MinPts vanno controllati a partire da valori bassi, non è detto che siccome il dataset è grande si devono avere tanti MinPts. Guidotti aveva detto ad esempio di partire da 4 che è un numero 'magico' secondo lui.
+
+Anche su Tan (pag529 spiega Selection of DBSCAN parameters) dice che per un dataset di dimensione 2 un valore MinPts=4 è ragionevole. Per il nostro dataset sarà diverso, andrà aumentato ma non in modo così netto.
+
+Il fatto è che se anche ho pochi MinPts i dati si possono comunque aggregare perchè nell'algoritmo si aggregano i core e border points .
+
+Ad esempio nella heatmap ottenuta il numero di MinPts è compreso tra 4-20 eppure si forma un numero di cluster basso!
+
+###########################################################
+
+Ti riassumo il procedimento che avevo fatto, che può essere riprovato/modificato, ma che potremmo utilizzare come base:
+
+1- grafico k-dist con algoritmo k-nearest-neighbors
+ il grafico viene fatto variando il numero di MinPts, a partire da un numero basso, >4 . Si ha dunque una curva per ciascun MinPts provato.
+ Dove di trova circa il ginocchio della curva si ottiene un range per eps, che sarà non un unico valore, non c'è uno stacco netto. 
+
+2- Ottenuto il range per eps, si esegue dbscan variando eps dentro l'intervallo, suddividendo l'intervallo in modo continuo, ad esempio 10 valori o più dentro l'intervallo e variando i MinPts.
+
+3- Heatmap con numero di cluster per vedere dove ci sono zone di stabilità, successivamente diminuire ulteriormente l'intervallo per selezionare le zone dove il numero di cluster è basso
+
+###########################################################
+
+Come vogliamo procedere?
+
+- Facciamo insieme il grafico k-distance e poi continuiamo da lì?
+- Ti devo commentare e sistemare il mio script? Dimmi dove!
+- Procedi da sola e se c'è qualcosa ci sentiamo?
+
+###########################################################
