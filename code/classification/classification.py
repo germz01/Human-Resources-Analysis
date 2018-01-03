@@ -1,13 +1,14 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import warnings
 import csv
 from sklearn import tree
 from sklearn import metrics
 from sklearn.metrics import confusion_matrix
 from sklearn.cross_validation import train_test_split
-from sklearn import cross_validation
-from sklearn.cross_validation import cross_val_score
+
+warnings.filterwarnings("ignore")
 
 sns.set()
 sns.set_style("whitegrid")
@@ -57,8 +58,7 @@ for criterion in ['gini', 'entropy']:
 
         cm = confusion_matrix(target, pred_target)
 
-        plt.matshow(cm)
-        plt.colorbar()
+        sns.heatmap(cm, cmap='Spectral', cbar=True)
         plt.ylabel('True label')
         plt.xlabel('Predicted label')
 
@@ -92,8 +92,7 @@ for criterion in ['gini', 'entropy']:
 
             cm = confusion_matrix(test_y, test_pred)
 
-            plt.matshow(cm)
-            plt.colorbar()
+            sns.heatmap(cm, cmap='Spectral', cbar=True)
             plt.ylabel('True label')
             plt.xlabel('Predicted label')
 
@@ -112,5 +111,5 @@ for criterion in ['gini', 'entropy']:
 
 csvfile.close()
 
-cfile = pd.read_csv(filepath_or_buffer='../../data/classification.csv')
-print cfile.to_latex()
+# cfile = pd.read_csv(filepath_or_buffer='../../data/classification.csv')
+# print cfile.to_latex()

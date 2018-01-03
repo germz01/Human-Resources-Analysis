@@ -1,13 +1,14 @@
 Al fine di costruire un \textit{decision tree} con i record a nostra disposizione, abbiamo eseguito alcune
 manipolazioni prima della costruzione dell'albero vero e proprio: sia la variabile \textit{Salary} che la
-variabile \textit{Department} sono state convertite in variabili numeriche, per facilitare l'applicazione
-dell'algoritmo sui records, inoltre, per fornire un \textit{target} durante la costruzione dell'albero, la
+variabile \textit{Department} sono state convertite in variabili numeriche, per facilitare l'analisi
+dei record, inoltre, per fornire un \textit{target} durante la costruzione dell'albero, la
 variabile
 \textit{Left} è stata separata dal dataset fornito. Tutte le altre variabili sono state lasciate inalterate.
 \section{Learning of different decision trees} % (fold)
 \label{sec:learning_of_different_decision_trees}
-Durante la fase di costruzione vera e propia, abbiamo deciso di implementare due alberi distinti, differenziandoli
-nel modo in cui essi avrebbero dovuto scegliere lo \textit{split} migliore. Abbiamo perciò costruito un albero
+Durante la fase di costruzione vera e propia, abbiamo deciso di implementare due alberi distinti,
+differenziandoli
+in base alla metrica con sui sarebbe stato scelto lo \textit{split} migliore. Abbiamo perciò costruito un albero
 basato sull'indice \textit{Gini} come misura di impurità di un nodo, e un albero basato invece sull'uso
 dell'\textit{Entropia}. Utilizzando questi due indici di impurità, al momento di decidere quale split
 imporre, viene selezionato quello con il \textit{gain} maggiore. Inizialmente abbiamo costruito entrambi gli
