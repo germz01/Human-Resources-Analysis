@@ -8,7 +8,7 @@ variabile
 \label{sec:learning_of_different_decision_trees}
 Durante la fase di costruzione vera e propia, abbiamo deciso di implementare due alberi distinti,
 differenziandoli
-in base alla metrica con sui sarebbe stato scelto lo \textit{split} migliore. Abbiamo perciò costruito un albero
+in base alla metrica con cui sarebbe stato scelto lo \textit{split} migliore. Abbiamo perciò costruito un albero
 basato sull'indice \textit{Gini} come misura di impurità di un nodo, e un albero basato invece sull'uso
 dell'\textit{Entropia}. Utilizzando questi due indici di impurità, al momento di decidere quale split
 imporre, viene selezionato quello con il \textit{gain} maggiore. Inizialmente abbiamo costruito entrambi gli
@@ -23,7 +23,7 @@ dividento i data objects forniti tra test set e training set in percentuali ben 
 \label{sec:decision_trees_interpretation}
 Facciamo adesso alcune considerazioni sugli alberi ottenuti applicando i parametri descritti in Sezione
 \ref{sec:learning_of_different_decision_trees}. Sia per l'albero
-basato sull'indice {} che per quello basato sull'Entropia, la radice è rappresentata dalla variabile
+basato sull'indice Gini che per quello basato sull'Entropia, la radice è rappresentata dalla variabile
 \textit{Satisfaction Level}, che divide i data objects tra coloro che hanno uno score $\le 0.465$ e coloro che
 hanno uno score $> 0.465$. Questa decisione è indicativa del fatto che l'utilizzo di tale variabile consente un
 primo split più redditizio rispetto alle altre variabili a disposizione. Come era lecito aspettarsi, gli alberi
@@ -36,14 +36,14 @@ limitato il numero di records minimo contenuto all'interno di un nodo al $20\%$ 
 dataset.
 \begin{figure}[h!]
     \centering
-    \begin{subfigure}{0.4\textwidth}
+    \begin{subfigure}{0.45\textwidth}
         \resizebox{\textwidth}{!}{
         \includegraphics{images/classification/decision_tree_gini_0_2_cutted_2.pdf}
         }
         \caption{}
         \label{fig:cutted_tree_1}
     \end{subfigure}
-    \begin{subfigure}{0.4\textwidth}
+    \begin{subfigure}{0.45\textwidth}
         \resizebox{\textwidth}{!}{
             \includegraphics{images/classification/decision_tree_entropy_0_2_cutted_2.pdf}
         }
@@ -65,7 +65,7 @@ gradi di purezza più consistenti.
 % section decision_trees_interpretation (end)
 \section{Decision trees validation with test and training set} % (fold)
 \label{sec:decision_trees_validation_with_test_and_training_set}
-Prendiamo quanto trattato nelle sezioni precedenti e passiamo adesso a descrivere l'applicazione dei
+Prendiamo quanto trattato nelle sezioni precedenti e passiamo adesso a descrivere le caratteristiche dei
 classificatori da noi costruiti. In Tabella \ref{tab:classification_performance} sono riportate le performance
 dei migliori $5$ set di impostazioni per i classificatori. Come possiamo vedere dalla tabella, la nostra analisi è
 stata condotta prima prendendo l'intero dataset sia come training set che come test set, poi prendendone l'$80\%$
@@ -76,15 +76,16 @@ condotta analizzando lo score ottenuto utilizzando le metriche \textit{Accuracy}
 \begin{table}
     \centering
     \resizebox{0.8\textwidth}{!}{
-        \begin{tabular}{| c | c | c | c | c | c | c |}
+        \begin{tabular}{| c | c | c | c | c | c | c | c | c |}
             \hline
             \textbf{Criterion} & \textbf{Min Sample Split} & \textbf{Train Records} & \textbf{Test Records} &
-            \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} \\ \hline
-            Entropy & 2 & 14999 (100\%) & 14999 (100\%) & 1.0 & 0.99 & 0.99 \\ \hline
-            Gini & 2 & 14999 (100\%) & 14999 (100\%) & 0.99 & 0.99 & 0.98 \\ \hline
-            Entropy & 2 & 8999 (60\%) & 6000 (40\%) & 0.98 & 0.96 & 0.94 \\ \hline
-            Gini & 2 & 11999 (80\%) & 3000 (20\%) & 0.98 & 0.95 & 0.95 \\ \hline
-            Gini & 2 & 10499 (70\%) & 4500 (30\%) & 0.98 & 0.95 & 0.95 \\ \hline
+            \textbf{Accuracy Training Set} & \textbf{Accuracy Test Set} & \textbf{Precision} & \textbf{Recall}
+            \\ \hline
+            Entropy & 2 & 14999 (100\%) & 14999 (100\%) & 1.0 & 1.0 & 0.99 & 0.99 \\ \hline
+            Gini & 2 & 14999 (100\%) & 14999 (100\%) & 0.99 & 0.99 & 0.99 & 0.98 \\ \hline
+            Entropy & 2 & 8999 (60\%) & 6000 (40\%) & 0.99 & 0.98 & 0.96 & 0.94 \\ \hline
+            Gini & 2 & 11999 (80\%) & 3000 (20\%) & 0.99 & 0.98 & 0.95 & 0.95 \\ \hline
+            Gini & 2 & 10499 (70\%) & 4500 (30\%) & 0.99 & 0.98 & 0.95 & 0.95 \\ \hline
 %             \textbf{Gini} & 2.0 & 14999 & 14999 & 0.99 & 0.99 & 0.98 \\ \hline
 %             {} & {} & 11999 & 3000 & 0.98 & 0.95 & 0.95 \\ \hline
 %             {} & {} & 10499 & 4500 & 0.98 & 0.95 & 0.95 \\ \hline
@@ -135,7 +136,8 @@ che coloro che hanno lasciato l'azienda sono stati correttamente previsti dal cl
 in Figura \ref{fig:confusion_matrix_2} abbiamo riportato la confusion matrix relativa alla quarta riga di Tabella
 \ref{tab:classification_performance}, che, a differenza dell'altra matrice descritta, utilizza Gini come indice
 di impurità. In quest'ultimo classificatore, applicato su $3000$ test records, possiamo osservare un incremento
-nella parte della matrice relativa ai false negatives.
+nella parte della matrice relativa ai false negatives, dovuta al calo delle performance complessive nelle
+metriche analizzate.
 \begin{figure}[t!]
     \centering
     \begin{subfigure}{0.4\textwidth}
