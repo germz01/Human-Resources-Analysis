@@ -1,0 +1,8 @@
+\begin{tabular}{lrrrrr}
+\toprule
+{} &  cluster0 &  cluster1 &  cluster2 &  cluster3 &  cluster4 \\
+\midrule
+average  &        30 &       212 &      1977 &     12261 &       519 \\
+centroid &         4 &       220 &       978 &         3 &     13794 \\
+\bottomrule
+\end{tabular}

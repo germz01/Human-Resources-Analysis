@@ -233,16 +233,28 @@ I restanti$119$ dipendenti sono stati considerati come punti di noise.
 \newpage
 \section{Hierarchical clustering}
 Sulle variabili numeriche del dataset è stato eseguito un clustering gerarchico di tipo agglomerativo, con l'utilizzo di diverse metriche e differenti metodi per il calcolo della dissimilarità tra clusters. Il confronto tra i diversi metodi è stato effettuato utilizzando come indice di validità, la \textit{cophenetic correlation} $\rho_{coph}$. Ciascuna coppia di dati del dataset è unita nel dendrogramma in un nodo ad una distanza denominata \textit{cophenetic distance}. La cophenetic correlation è calcolata come coefficiente di correlazione di Pearson tra gli $n(n-1)/2$ valori della matrice delle distanze e le corrispondenti cophenetic distances. Il valore di tale correlazione può essere interpretato come il grado di aderenza del dendrogramma alle distanze originali, ed è quindi una misura della sua validità.
-In figura \ref{fig:hierarchical-comparison} si osserva che tra i metodi utilizzati \textit{average} e \textit{centroid} risultano quelli con il valore massimo della cophenetic correlation ed equivalenti tra loro. La dissimilarità calcolata con il metodo \textit{average} consiste nella media di tutte le distanze tra coppie di dati appartenenti a due clusters diversi, mentre il metodo \textit{centroid} utilizza la distanza tra i centroidi. Per ciascun metodo sono state testate tre metriche, quella euclidea, Manhattan (o cityblock) e di Mahalanobis. Quest'ultima è una distanza non isotropa che prende in considerazione la correlazione tra le variabili. La distanza euclidea risulta essere la distanza ottimale per i due metodi migliori. Il confronto effettuato ha quindi permesso di individuare due dendrogrammi con la massima cophenetic correlation.
-
-Per confrontare i dendrogrammi tra di loro e con i risultati degli altri metodi di clustering è stata calcolata la silhouette media, tagliando i dendrogrammi ad un altezza tale da ottenere un numero di cluster compreso tra 2 e 6.
-I risultati sono mostrati in Fig \ref{fig:hierarchical-taglio} e mostrano che i due metodi anche se danno risultati simili possono presentare comunque scostamenti rilevanti, a parità di numero di cluster ottenuti con un taglio.
-
-
-In generale il clustering gerarchico risulta molto sensibile al metodo e alla metrica utilizzata.
+In figura \ref{fig:hierarchical-comparison} si osserva che tra i metodi utilizzati \textit{average} e \textit{centroid} risultano quelli con il valore massimo della cophenetic correlation ed equivalenti tra loro. La dissimilarità calcolata con il metodo \textit{average} consiste nella media di tutte le distanze tra coppie di dati appartenenti a due clusters diversi, mentre il metodo \textit{centroid} utilizza la distanza tra i centroidi. Per ciascun metodo sono state testate tre metriche, quella euclidea, Manhattan (o cityblock) e di Mahalanobis. Quest'ultima è una distanza non isotropa che prende in considerazione la correlazione tra le variabili. La distanza euclidea risulta essere la distanza ottimale per i due metodi migliori. Il confronto effettuato ha quindi permesso di individuare due dendrogrammi con la massima cophenetic correlation. In Fig. \ref{fig:dendrogram} è rappresentato il dendrogramma per il metodo 'average' e distanza euclidea con un esempio di taglio per 5 clusters. 
 
 
 \begin{comment}Osservando la figura REF si osserva che i dendrogrammi sono nettamente diversi tra loro anche a parità di $\rho_{coph}$, il clustering gerarchico risulta dunque molto sensibile al metodo e alla metrica utilizzata nell'algoritmo.
+\end{comment}
+
+\todo[inline]{Nelle linee guida dice di mostrare più dendrogrammi, magari ne aggiungo un altro.}
+  
+  \begin{figure}[h]
+  \centering
+  \includegraphics[width=1\textwidth]{../images/hierarchical/complete_dendrogram_average_euclidean.pdf}
+  \caption{Dendrogramma per metodo 'average' e distanza euclidea, con esempio di taglio con 5 clusters, rappresentati dai differenti colori.}
+  \label{fig:dendrogram}
+\end{figure}
+
+\begin{comment}
+  \begin{figure}[h]
+  \centering
+  \includegraphics[width=1\textwidth]{../images/hierarchical/complete_dendrogram_centroid_euclidean.pdf}
+  \caption{Dendrogramma per metodo 'average' e distanza euclidea, con esempio di taglio con 5 clusters, rappresentati dai differenti colori.}
+  \label{fig:dendrogram-centroid}
+\end{figure}
 \end{comment}
 
 \begin{minipage}[b]{0.6\textwidth}
@@ -262,38 +274,22 @@ In generale il clustering gerarchico risulta molto sensibile al metodo e alla me
 \end{figure}
 \end{minipage}
 
-  
-  \begin{figure}[htbp]
+
+\begin{table}[H]
   \centering
-  \includegraphics[width=1\textwidth]{../images/hierarchical/complete_dendrogram_average_euclidean.pdf}
-\end{figure}
+\input{data/hierarchical/Dcount2.txt}
+\input{data/hierarchical/Dcount3.txt}
+\input{data/hierarchical/Dcount4.txt}
+\input{data/hierarchical/Dcount5.txt}
+\caption{Numerosità nei cluster per rispettivamente 2,3,4,5 cluster, per i due metodi 'average' e 'centroid'.}
+\label{tab:Dcount}
+\end{table}
+Per confrontare i dendrogrammi tra di loro e con i risultati degli altri metodi di clustering è stata calcolata la silhouette media, tagliando i dendrogrammi ad un altezza tale da ottenere un numero di cluster compreso tra 2 e 6.
+I risultati sono mostrati in Fig \ref{fig:hierarchical-taglio} e mostrano che i due metodi anche se danno risultati simili possono presentare comunque scostamenti rilevanti, a parità di numero di cluster ottenuti con un taglio. Si può osservare ad esempio in Tab. \ref{tab:Dcount} come la numerosità dei clusters vari in modo considerevole tra i due metodi.
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.8\textwidth]{../images/hierarchical/complete_dendrogram_centroid_euclidean.pdf}
-  \caption{Dendrogramma con la migliore cophenetic correlation.}
-\end{figure}
-
-
-
-
-
-\begin{comment}
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.5\textwidth]{../images/hierarchical/silhouette_comparison.pdf}
-  \caption{Confronto tra silhouette medie, per due clusters}
-\end{figure}
+In generale il clustering gerarchico risulta molto sensibile al metodo e alla metrica utilizzata.
 
 
-
-  \begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.8\textwidth]{../images/hierarchical/silhouette_average_euclidean_n2.pdf}
-  \caption{Confronto tra silhouette medie, per due clusters}
-\end{figure}
-\end{comment}
-  
 
 \section{Confronto tra metodi di clustering}
 

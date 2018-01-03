@@ -140,24 +140,41 @@ data_link = linkage(data_dist,method=method,metric=distance)
 lista_risultati= []
 lista_nomi = []
 
-n_clusters=4
+n_clusters=2
 
-centroid_labels = fcluster(data_link,(n_clusters), criterion="maxclust")
+def cluster_count(n_clusters):
 
-method = 'average'
-data_dist = pdist(data,metric = distance)
-data_link = linkage(data_dist,method=method,metric=distance)
+    method = 'average'
+    data_dist = pdist(data,metric = distance)
+    data_link = linkage(data_dist,method=method,metric=distance)
+    average_labels = fcluster(data_link,(n_clusters), criterion="maxclust")
 
-average_labels_n4 = fcluster(data_link,(n_clusters), criterion="maxclust")
+    method = 'centroid'
+    data_dist = pdist(data,metric = distance)
+    data_link = linkage(data_dist,method=method,metric=distance)
+    centroid_labels = fcluster(data_link,(n_clusters), criterion="maxclust")
 
-Dlabels4 = pd.DataFrame([centroid_labels_n4,average_labels_n4]).transpose()
+    Dlabels2 = pd.DataFrame([average_labels,centroid_labels]).transpose()
+    Dlabels2.columns = ['average','centroid']
 
-Dlabels4.columns = selected_methods
 
-#col_centroid.columns=['average']
+    Dcount2=pd.DataFrame([Dlabels2.average.value_counts(),
+                         Dlabels2.centroid.value_counts()]
+    )
+    Dcount2.columns = ["cluster{}".format(i) for i in range(n_clusters)]
 
-Dlabels4.average.value_counts()
-Dlabels4.centroid.value_counts()
+    return(Dcount2)
+
+Dcount2 = cluster_count(2)
+Dcount3 = cluster_count(3)
+Dcount4 = cluster_count(4)
+
+Dcount5 = cluster_count(5)
+
+Dcount2.to_latex("../data/hierarchical/Dcount2.txt")
+Dcount3.to_latex("../data/hierarchical/Dcount3.txt")
+Dcount4.to_latex("../data/hierarchical/Dcount4.txt")
+Dcount5.to_latex("../data/hierarchical/Dcount5.txt")
 
 
 
