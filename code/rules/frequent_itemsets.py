@@ -10,7 +10,9 @@ DS = pd.read_csv(filepath_or_buffer='../../data/df_formatted.csv')
 
 print 'FORMATTING THE DATA SET'
 
-DS['Salary'].replace(['low', 'medium', 'high'], [0, 1, 2], inplace=True)
+# salario va già bene con 'low'....
+#DS['Salary'].replace(['low', 'medium', 'high'], [0, 1, 2], inplace=True)
+
 DS['Department'].replace(['sales', 'technical', 'support', 'IT',
                           'product_mng', 'marketing', 'RandD', 'accounting',
                           'hr', 'management'], [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
@@ -18,13 +20,17 @@ DS['Department'].replace(['sales', 'technical', 'support', 'IT',
 
 DS['SL_100'] = DS['Satisfaction_Level']*100
 DS['LE_100'] = DS['Last_Evaluation']*100
-DS['AMHGroup'] = pd.cut(DS['Average_Montly_Hours'], bins=[0, 200, 320],
+###########################################################
+#cutting delle variabili numeriche
+DS['AMHGroup'] = pd.cut(DS['Average_Montly_Hours'], bins=[0, 200, 311],
                         right=False, labels=['standard', 'intensive'])
 
-DS['LEGroup'] = pd.cut(DS['SL_100'], bins=[0, 45, 57, 77, 110], right=False,                       labels=['insufficient', 'sufficient', 'good',
+DS['LEGroup'] = pd.cut(DS['SL_100'], bins=[0, 45, 57, 77, 101], right=False,                       labels=['insufficient', 'sufficient', 'good',
                        'very good'])
-DS['SLGroup'] = pd.cut(DS['SL_100'], bins=[0, 33, 66, 110], right=False,
+DS['SLGroup'] = pd.cut(DS['SL_100'], bins=[0, 33, 66, 101], right=False,
                        labels=['low', 'medium', 'high'])
+###########################################################
+
 DS['Work_Accident'] = DS['Work_Accident'].map({1: 'Y',
                                               0: 'N'}).astype(str) + '_WA'
 DS['Left'] = DS['Left'].map({1: 'Y', 0: 'N'}).astype(str) + '_L'
@@ -43,16 +49,24 @@ DS.drop(['Satisfaction_Level', 'Last_Evaluation', 'Average_Montly_Hours',
 
 print 'APPLYING APRIORI ALGORITHM'
 
+#check visivo for Nan
+DS.LEGroup.value_counts()
+DS.SLGroup.value_counts()
+DS.AMHGroup.value_counts()
+
+
 DS.to_csv('../../data/dataset_rules.csv')
 
 records = DS.to_records(index=False)
 
+###########################################################
+# a priori for frequent_itemsets_
 #supp = int(raw_input('SUPPORT: '))
 supp=20
 
 
 for target in ['s', 'c', 'm']:
-    itemsets = apriori(records, supp=supp, zmin=2, target=target, report='s')
+    itemsets = apriori(records, supp=supp, zmin=2, target=target, report='s',mode='o')
 
     print 'EXTRACTED ' + str(len(itemsets)) + ' FREQUENT ITEMSETS'
     print 'SAVING FREQUENT ITEMSETS WITH SUPPORT ' + str(supp) + ' AND ' \
@@ -104,14 +118,9 @@ def extract_rules(supp,conf):
                     csv_dict.update({field : record[i]})
 
             csv_writer.writerow(csv_dict)
+        print 'scrivo su disco'
 
 ###########################################################    
-
-supp = 20
-conf= 60
-
-par = [20,]
-
 
 
 supp=20
