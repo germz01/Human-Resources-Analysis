@@ -50,6 +50,9 @@ for csv in ['85', '90', '95']:
         pred_target.append(classify(row, csv))
 
     cm = confusion_matrix(target, pred_target)
+    acc = metrics.accuracy_score(target, pred_target)
+
+    print 'ACCURACY: ' + str(round(acc, 2))
 
     sns.heatmap(cm, cmap='Spectral', cbar=True)
     plt.ylabel('True label')
