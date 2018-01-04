@@ -244,7 +244,7 @@ Proseguendo poi con il rapporto tra dipendenti ancora in azienda e non, e il num
 % section distribution_of_the_variables_and_statistics (end)
 \section{Data quality} % (fold)
 \label{sec:assessing_data_quality}
-Nel dataset non risultano presenti nè missing values nè errori sintattici. L'individuazione dei possibili outliers delle variabili numeriche consiste nel verificare se siano presenti dei valori estremi rispetto alle relative distribuzioni. Un metodo robusto e di immediata applicazione è quello di rappresentare i dati tramite boxplot, identificando come outliers i valori che si trovano al di fuori dei whiskers, di lunghezza massima $1.5\,IQR$. Per una distribuzione gaussiana il numero di outliers attesi al di fuori dei whiskers è circa il $7\%$. In Fig. \ref{fig:boxplots} si osserva che si hanno outliers solo per la variabile \textit{Time Spend Company}, la cui distribuzione risulta però essere asimmetrica e con una coda destra ampia come mostrato anche in Fig. REF. Gli outliers individuati non sono quindi considerati anomali, ma caratteristici della distribuzione, e non vengono eliminati dal dataset nelle successive analisi. (Altri test comunemente utilizzati, come il test di Grubb o il criterio di Chauvenet, sono basati sull'assunzione di una distribuzione di probabilità gaussiana, che non si osserva per le variabili numeriche del dataset analizzato (spiegare)).
+Nel dataset non risultano presenti nè missing values nè errori sintattici. L'individuazione dei possibili outliers delle variabili numeriche consiste nel verificare se siano presenti dei valori estremi rispetto alle relative distribuzioni. Un metodo robusto e di immediata applicazione è quello di rappresentare i dati tramite boxplot, identificando come outliers i valori che si trovano al di fuori di esso. Per una distribuzione gaussiana il numero di outliers attesi al di fuori dei boxplot è circa il $7\%$. In Fig. \ref{fig:boxplots} si osserva che si hanno outliers solo per la variabile \textit{Time Spend Company}, la cui distribuzione risulta però essere asimmetrica e con una coda destra ampia come mostrato anche in Figura \ref{fig:t_spend_comp} nella precedente sezione \ref{sec:distribution_of_the_variables_and_statistics}. Gli outliers individuati non sono quindi considerati anomali, ma caratteristici della distribuzione, e non vengono eliminati dal dataset nelle successive analisi.
 
 \begin{figure}[ht]
   \centering
@@ -252,11 +252,6 @@ Nel dataset non risultano presenti nè missing values nè errori sintattici. L'i
   \caption{Boxplots per le variabili numeriche}
   \label{fig:boxplots}
 \end{figure}
-
-
-\todo[inline]{Tramite k-nearest-neighbours mi pare che ci siano parecchi dati ripetuti, approfondire}
-
-
 
 % section assessing_data_quality (end)
 \section{Variable transformations} % (fold)
