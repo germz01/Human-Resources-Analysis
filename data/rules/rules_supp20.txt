@@ -1,23 +1,23 @@
 \begin{tabular}{llrrr}
 \toprule
-   Consequent &                              Antecedent &  Supp &  Conf &  Lift \\
+   Consequent &                              Antecedent &   Supp &   Conf &   Lift \\
 \midrule
-      high\_SL &                       ('very good\_LE',) &  0.33 &  1.00 &  2.06 \\
-      high\_SL &                 ('very good\_LE', 'N\_P') &  0.32 &  1.00 &  2.06 \\
-      high\_SL &                 ('very good\_LE', 'N\_L') &  0.28 &  1.00 &  2.06 \\
-      high\_SL &                ('very good\_LE', 'N\_WA') &  0.28 &  1.00 &  2.06 \\
-      high\_SL &          ('very good\_LE', 'N\_L', 'N\_P') &  0.27 &  1.00 &  2.06 \\
-      high\_SL &         ('very good\_LE', 'N\_WA', 'N\_P') &  0.27 &  1.00 &  2.06 \\
-      high\_SL &  ('very good\_LE', 'N\_L', 'N\_WA', 'N\_P') &  0.23 &  1.00 &  2.06 \\
-      high\_SL &         ('very good\_LE', 'N\_L', 'N\_WA') &  0.23 &  1.00 &  2.06 \\
- very good\_LE &                            ('high\_SL',) &  0.33 &  0.68 &  2.06 \\
- very good\_LE &                      ('high\_SL', 'N\_P') &  0.32 &  0.68 &  2.06 \\
- very good\_LE &                     ('high\_SL', 'N\_WA') &  0.28 &  0.68 &  2.07 \\
- very good\_LE &              ('high\_SL', 'N\_WA', 'N\_P') &  0.27 &  0.68 &  2.07 \\
- very good\_LE &                      ('high\_SL', 'N\_L') &  0.28 &  0.67 &  2.02 \\
- very good\_LE &               ('high\_SL', 'N\_L', 'N\_P') &  0.27 &  0.67 &  2.02 \\
- very good\_LE &       ('high\_SL', 'N\_L', 'N\_WA', 'N\_P') &  0.23 &  0.67 &  2.03 \\
- very good\_LE &              ('high\_SL', 'N\_L', 'N\_WA') &  0.23 &  0.67 &  2.03 \\
+      high\_SL &                       ('very good\_LE',) &  0.329 &  1.000 &  2.061 \\
+      high\_SL &                 ('very good\_LE', 'N\_P') &  0.321 &  1.000 &  2.061 \\
+      high\_SL &                 ('very good\_LE', 'N\_L') &  0.281 &  1.000 &  2.061 \\
+      high\_SL &                ('very good\_LE', 'N\_WA') &  0.278 &  1.000 &  2.061 \\
+      high\_SL &          ('very good\_LE', 'N\_L', 'N\_P') &  0.273 &  1.000 &  2.061 \\
+      high\_SL &         ('very good\_LE', 'N\_WA', 'N\_P') &  0.272 &  1.000 &  2.061 \\
+      high\_SL &         ('very good\_LE', 'N\_L', 'N\_WA') &  0.232 &  1.000 &  2.061 \\
+      high\_SL &  ('very good\_LE', 'N\_L', 'N\_WA', 'N\_P') &  0.226 &  1.000 &  2.061 \\
+ very good\_LE &                     ('high\_SL', 'N\_WA') &  0.278 &  0.681 &  2.070 \\
+ very good\_LE &              ('high\_SL', 'N\_WA', 'N\_P') &  0.272 &  0.680 &  2.068 \\
+ very good\_LE &                            ('high\_SL',) &  0.329 &  0.678 &  2.061 \\
+ very good\_LE &                      ('high\_SL', 'N\_P') &  0.321 &  0.677 &  2.059 \\
+ very good\_LE &              ('high\_SL', 'N\_L', 'N\_WA') &  0.232 &  0.668 &  2.030 \\
+ very good\_LE &       ('high\_SL', 'N\_L', 'N\_WA', 'N\_P') &  0.226 &  0.667 &  2.026 \\
+ very good\_LE &                      ('high\_SL', 'N\_L') &  0.281 &  0.666 &  2.025 \\
+ very good\_LE &               ('high\_SL', 'N\_L', 'N\_P') &  0.273 &  0.665 &  2.023 \\
 \bottomrule
 \end{tabular}
 

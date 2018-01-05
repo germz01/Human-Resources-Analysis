@@ -88,7 +88,7 @@ La percentuale di dipendenti che hanno lasciato l'azienda corrisponde al $24\%$ 
 \end{itemize}
 
 L'algoritmo a priori è stato eseguito per entrambi i valori di $MinSupp$ indicati, variando la confidenza minima \textit{MinConf} per valori compresi tra $50-100\%$. In Fig. sono riportate il numero di regole ottenute, in funzione della confidenza.
-Le regole cercate con l'algoritmo utilizzato hanno un solo item come parte conseguente, per facilitare l'analisi e perchè...
+Le regole cercate hanno un solo item come parte conseguente, per facilitare l'analisi e ridurre il numero di regole in partenza.
 Per ciascuna regola estratta sono stati calcolati gli indici di \textit{confidence} e \textit{lift} in modo da valutare l'interesse oggettivo delle associazioni trovate.
 
 \begin{figure}[htbp]
@@ -101,29 +101,12 @@ Per ciascuna regola estratta sono stati calcolati gli indici di \textit{confiden
 
 
 \subsection{Regole generali}
-Le regole generali sono state cercate fissando a priori \textit{Minsupp=20\%} e considerando un valore di confidenza minima \textit{MinConf=50\%} ,
-scelto osservando l'andamento in Fig. \ref{fig:rules_number} e sufficiente per ottenere un numero trattabile di regole. 
+Le regole generali sono state cercate fissando a priori \textit{Minsupp=20\%} e considerando un valore di confidenza minimo \textit{MinConf=50\%} ,
+scelto osservando l'andamento in Fig. \ref{fig:rules-number}, sufficiente per ottenere un numero trattabile di regole. 
 
-Per un valore di \textit{MinConf=50\%} sono state ottenute 268 regole  rappresentate in Fig. \ref{fig:rules_general}, con i rispettivi valori di Lift, Confidence e Support. Si osserva che la maggior parte delle regole ha un Lift basso, minore di 1.5.
-Le regole sono state rappresentate raffigurando il valore di $Conf$ in funzione di $Lift$. Questo permette di identificare visivamente in modo immediatole regole con la stessa parte conseguente, poichè in tal caso i due indici sono proporzionali con coefficiente pari al supporto della parte conseguente.
+Per un valore di \textit{MinConf=50\%} sono state ottenute 268 regole  rappresentate in Fig. \ref{fig:rules-general}, con i rispettivi valori di Lift, Confidence e Support. Si osserva che la maggior parte delle regole ha un Lift basso, minore di 1.5.
+Le regole sono state rappresentate raffigurando il valore di $Conf$ in funzione di $Lift$. Questo permette di identificare visivamente in modo immediato le regole con la stessa parte conseguente, poichè in tal caso i due indici sono proporzionali con coefficiente pari al supporto della parte conseguente.
 Le regole che possono essere considerate oggettivamente interessanti, con $Lift> 1.5$, ben visibili nella parte destra del grafico sono riportate in Tab \ref{tab:rules-general} e mostrano una correlazione positiva tra un alto livello di valutazione (\textit{very good, Last Evaluation}) ed un alto grado di soddisfazione degli impiegati, a cui si accompagnano nella parte antecedente la mancanza di incidenti sul lavoro (\textit{N WA}) ed il fatto di essere rimasti in azienda. Il fatto di non aver ricevuto una promozione ($N\_P$) non è semanticamente rilevante.
-La regola generale 
-
-\begin{comment}
-Una volta stabilito quali sono le regole valide, considerando una parte conseguente fissa,
-si osserva che le transazioni contenenti 
-\textit{Regole valide minime}: tra le regole valide riguardanti la stessa parte conseguente, la regola minima è la regola con la parte antecedente più corta.
-Si osserva che le regole minime implicano automaticamente le regole 
-una regola con la parte antecedente 
-E' da osservare che una volta stabilita la soglia sopra la quale una regola è interessante, se si assume
-%%Queste regole non sono particolarmente interessanti dal punto di vista dell'analisi, poichè abbastanza ovvie, e non aggiungono molto alle
-%%analisi statistiche eseguite, inoltre il valore di $Lift$ non è così ampio. (è confrontabile con qualcosa? valori di riferimento?)
-se $A \rightarrow Y$ è  una regola valida $\Rightarrow$  $AB \rightarrow Y$ è valida
-\begin{itemize}
-\item 'Last evaluation: very good' $\Rightarrow$ 'Satisfaction Level: high'
-\item 'Satisfaction Level: high'   $\Rightarrow$ 'Last evaluation: very good'
-\end{itemize}
-\end{comment}
 
 Tutti gli impiegati che hanno una \textit{'Last evaluation: very good'} hanno anche un alto tasso di soddisfazione ('high\_SL'), mentre il viceversa accade nel $68\%$ dei casi. Queste regole non sono particolarmente interessanti dal punto di vista dell'analisi, poichè abbastanza ovvie, e non aggiungono molto alle analisi statistiche eseguite.
 
@@ -151,7 +134,7 @@ Tutti gli impiegati che hanno una \textit{'Last evaluation: very good'} hanno an
 \subsection{Regole specifiche}
 
 Usando $MinSupp=5\%$ naturalmente il numero di associazioni trovate cresce notevolmente, raggiungendo in questo caso le oltre 6000 regole.
-Le regole sono state dunque filtrate ulteriormente in modo da avere un interesse oggettivo considerando $Lift>1$ e $Conf>0.9$, ed inoltre $Supp < 20\%$, poichè per supporto maggiore sono state analizzate in precedenza. Le circa $1000$ regole ottenute sono rappresentate in Fig. \ref{fig:rules_specific}, si può osservare che le regole con Lift più alto hanno come parte conseguente, partendo dalla destra del grafico, \textit{Satisfaction Level: low , Number of Project: 2, Left : Y, Last Evaluation: Insufficient}.
+Le regole sono state dunque filtrate ulteriormente in modo da avere un interesse oggettivo considerando $Lift>1$ e $Conf>0.9$, ed inoltre $Supp < 20\%$, poichè per supporto maggiore sono state analizzate in precedenza. Le circa $2000$ regole ottenute sono rappresentate in Fig. \ref{fig:rules_specific}, si può osservare che le regole con Lift più alto hanno come parte conseguente, partendo dalla destra del grafico, \textit{Satisfaction Level: low , Number of Project: 2, Left : Y, Last Evaluation: Insufficient}.
 
 \begin{figure}[H]
   \centering
@@ -161,17 +144,34 @@ Le regole sono state dunque filtrate ulteriormente in modo da avere un interesse
 \end{figure}
 
 
-%\subsection{Regole per impiegati che hanno lasciato (sistemare titolo)}
-
-
-
+\subsubsection{Regole per impiegati che hanno lasciato }
+Tra le regole specifiche sono state estratte solo quelle con parte conseguente uguale a \textit{Left:YES}.
+Per filtrarle ulteriormente è stato usato un ulteriore criterio, che riportiamo insieme a tutti gli step successivi che hanno portato alla
+selezione delle regole più interessanti per gli impiegati che hanno lasciato, riportate in Fig. \ref{fig:rules_left}
 %Criterio pruning regole: confidenza maggiore di 0.9, a parità di supporto (all'1/1000) si considera la regola più corta contenente le altre
 
+\begin{enumerate}
+\item $MinSupp = 5\%$ e $MinConf = 50\%$ nell'algoritmo \textit{apriori}, ottenendo $N_{rules}=264$ per la parte conseguente $Left: Yes$ ; 
+\item rimozione delle regole contenenti $Work Accident:No$ , poichè non è semanticamente sensata l'implicazione di $Left: Yes$, ottenendo $N_{rules}=136$; 
+\item filtro a posteriori con $Lift>1$ e  $Conf>0.9$, ottenendo $N_{rules}=38$
+
+\item Per le regole con itemsets delle parti antecedenti sottoinsiemi l'uno dell'altro e \textit{con supporto uguale} (confronto all'1/1000), sono state considerate solo le regole più corte, con parte antecedente con un numero minore di items.
+  Ad esempio per due regole del tipo $r_1:\, A \rightarrow Y$, $r2:\,AB \rightarrow Y$, con $A,B,Y$ differenti item, e $Supp_1= Supp_2$ si seleziona solo la regola $r_1$. 
+\end{enumerate}
+%L'ultimo criterio permette di non ripetere regole che hanno la stessa base di applicazione, ovvero lo stesso supporto.
+Le 14 regole ottenute con il procedimento spiegato sono riportate in Fig. \ref{fig:rules_left} insieme ai rispettivi valori di confidence e support.
+E' inoltre riportato il supporto relativo alle persone che hanno lasciato, $Supp\, Left$.
+Le regole sono rappresentate in verticale, con i valori $10$ e $0$ che indicano la presenza o meno di un item nella parte antecedente della regola.
+
+Il supporto massimo risulta pari al $10\%$, corrispondente ad una percentuale di circa il $40\%$ tra gli impiegati che hanno lasciato.
+Si osserva dunque una correlazione positiva tra gli item riportati in Fig. \ref{fig:rules_left} e il fatto di aver lasciato l'azienda.
+
+In generale le regole mostrano che le persone che lasciano l'azienda sono poco stimolate, risulta che circa il $40\%$ degli impiegati che hanno lasciato l'azienda lavora a solo due progetti, con un impegno di ore mensili basso, una soddisfazione media, ed una presenza in azienda da 3 anni. Altri aspetti rilevanti sono la mancanza di una promozione, una valutazione insufficiente ed un salario basso.
 
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.99\textwidth]{../images/rules/left_heatmap.pdf}
-  \caption{Grafico,mettere LEGENDA PER COLORE E SIZE (Support)}
+  \caption{Regole associative più interessanti con parte conseguente gli impiegati che hanno lasciato l'azienda. I valori 10-0 corrispondono alla presenza o meno di un item nella parte antecedente della regola}
   \label{fig:rules_left}
 \end{figure}
 
@@ -180,19 +180,6 @@ Le regole sono state dunque filtrate ulteriormente in modo da avere un interesse
 
 \clearpage
 \newpage
-\section{Discussion of the most interesting rules }
-Abbiamo inoltre rilevato delle rules che nonostante non siano frequenti sono comunque interessanti per l'analisi che stiamo portando avanti. Queste sono:
--
--
-Da queste possiamo ricavare che...
-
-
-
-
-
-
-\section{Use the most meaningful rules to replace missing values and evaluate the accuracy}
-Nel nostro dataset non sono presenti missing values quindi non è stata necessaria la valutazione delle più significative rules e la valutazione dell'accuratezza per rimpiazzare questi.
 
 
 \section{Use the most meaningful rules to predict if an employee will leave prematurely or not and evaluate the accuracy }

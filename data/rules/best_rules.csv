@@ -1,19 +1,15 @@
 ,Supp,Conf,Lift,Antecedent,Consequent,N_items
-1351,0.1,0.82,3.46,"set(['2_NP', '3_T'])",{'Left': 'Y'},2
-1095,0.09,0.87,3.65,"set(['2_NP', 'insufficient_LE'])",{'Left': 'Y'},2
-2817,0.09,0.83,3.49,"set(['standard_H', '3_T', 'insufficient_LE'])",{'Left': 'Y'},3
-1255,0.1,0.84,3.51,"set(['standard_H', '2_NP', 'medium_SL'])",{'Left': 'Y'},3
-1235,0.06,0.84,3.54,"set(['low_S', '2_NP', 'medium_SL'])",{'Left': 'Y'},3
-1371,0.06,0.81,3.39,"set(['low_S', '2_NP', 'standard_H'])",{'Left': 'Y'},3
-1963,0.05,0.84,3.54,"set(['insufficient_LE', '4_T', 'intensive_H'])",{'Left': 'Y'},3
-185,0.05,0.86,3.6,"set(['4_T', 'low_SL', 'intensive_H'])",{'Left': 'Y'},3
-2673,0.09,0.88,3.68,"set(['medium_SL', '3_T', 'insufficient_LE'])",{'Left': 'Y'},3
-2797,0.05,0.82,3.44,"set(['low_S', '3_T', 'insufficient_LE'])",{'Left': 'Y'},3
-2793,0.05,0.82,3.44,"set(['low_S', 'N_P', '3_T', 'insufficient_LE'])",{'Left': 'Y'},4
-2629,0.05,0.92,3.86,"set(['low_S', 'medium_SL', '3_T', 'insufficient_LE'])",{'Left': 'Y'},4
-181,0.05,0.86,3.6,"set(['N_P', '4_T', 'low_SL', 'intensive_H'])",{'Left': 'Y'},4
-145,0.05,0.86,3.6,"set(['insufficient_LE', '4_T', 'low_SL', 'intensive_H'])",{'Left': 'Y'},4
-2697,0.05,0.83,3.51,"set(['low_S', 'standard_H', 'medium_SL', 'insufficient_LE'])",{'Left': 'Y'},4
-2669,0.09,0.88,3.7,"set(['N_P', 'medium_SL', '3_T', 'insufficient_LE'])",{'Left': 'Y'},4
-2624,0.05,0.92,3.86,"set(['low_S', 'N_P', 'medium_SL', '3_T', 'insufficient_LE'])",{'Left': 'Y'},5
-2692,0.05,0.83,3.5,"set(['low_S', 'N_P', 'standard_H', 'medium_SL', 'insufficient_LE'])",{'Left': 'Y'},5
+1015,0.086,0.937,3.936,"set(['2_NP', '3_T', 'insufficient_LE'])",{'Left': 'Y'},3
+919,0.087,0.915,3.842,"set(['2_NP', 'medium_SL', 'insufficient_LE'])",{'Left': 'Y'},3
+1039,0.053,0.926,3.889,"set(['low_S', '2_NP', 'standard_H', 'insufficient_LE'])",{'Left': 'Y'},4
+2629,0.053,0.919,3.861,"set(['low_S', 'medium_SL', '3_T', 'insufficient_LE'])",{'Left': 'Y'},4
+899,0.086,0.929,3.902,"set(['standard_H', '2_NP', 'medium_SL', 'insufficient_LE'])",{'Left': 'Y'},4
+875,0.053,0.942,3.958,"set(['low_S', '2_NP', 'medium_SL', 'insufficient_LE'])",{'Left': 'Y'},4
+915,0.086,0.918,3.854,"set(['N_P', '2_NP', 'medium_SL', 'insufficient_LE'])",{'Left': 'Y'},4
+971,0.053,0.952,3.999,"set(['low_S', '2_NP', '3_T', 'insufficient_LE'])",{'Left': 'Y'},4
+1147,0.062,0.926,3.887,"set(['low_S', '2_NP', 'medium_SL', '3_T'])",{'Left': 'Y'},4
+1171,0.101,0.924,3.882,"set(['standard_H', '2_NP', 'medium_SL', '3_T'])",{'Left': 'Y'},4
+1295,0.062,0.906,3.804,"set(['low_S', '2_NP', 'standard_H', '3_T'])",{'Left': 'Y'},4
+1166,0.1,0.925,3.884,"set(['standard_H', 'N_P', '2_NP', 'medium_SL', '3_T'])",{'Left': 'Y'},5
+1290,0.061,0.905,3.8,"set(['low_S', 'N_P', '2_NP', 'standard_H', '3_T'])",{'Left': 'Y'},5
+1117,0.061,0.942,3.955,"set(['low_S', '3_T', 'medium_SL', '2_NP', 'N_P', 'standard_H'])",{'Left': 'Y'},6
