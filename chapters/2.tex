@@ -240,15 +240,15 @@ Sulle variabili numeriche del dataset è stato eseguito un clustering gerarchico
   \label{fig:hierarchical-comparison}
 \end{figure}
 In Figura \ref{fig:hierarchical-comparison} si osserva che tra i metodi utilizzati \textit{average} e \textit{centroid} risultano quelli con il valore massimo della cophenetic correlation ed equivalenti tra loro. 
-La dissimilarità calcolata con il metodo \textit{average} consiste nella media di tutte le distanze tra coppie di dati appartenenti a due clusters diversi, mentre il metodo \textit{centroid} utilizza la distanza tra i centroidi. Per ciascun metodo sono state testate tre metriche, quella euclidea, Manhattan (o cityblock) e di Mahalanobis. Quest'ultima è una distanza non isotropa che prende in considerazione la correlazione tra le variabili. La distanza euclidea risulta essere la distanza ottimale per i due metodi migliori. Il confronto effettuato ha quindi permesso di individuare due dendrogrammi con la massima cophenetic correlation.\\ Nelle successive figure verranno mostrati due dendogrammi che raffigurano i dendogrammi più esplicativi. In Fig. \ref{fig:dendrogram} è rappresentato il dendrogramma per il metodo 'average' e distanza euclidea con un esempio di taglio per 5 clusters. In Fig. \ref{fig:dendrogram-centroid} è rappresentato il dendrogramma per il metodo 'centroid' e distanza euclidea con un esempio di taglio per 3 clusters. \\
-Dendogramma con il metodo average:
+La dissimilarità calcolata con il metodo \textit{average} consiste nella media di tutte le distanze tra coppie di dati appartenenti a due clusters diversi, mentre il metodo \textit{centroid} utilizza la distanza tra i centroidi. Per ciascun metodo sono state testate tre metriche, quella euclidea, Manhattan (o cityblock) e di Mahalanobis. Quest'ultima è una distanza non isotropa che prende in considerazione la correlazione tra le variabili. La distanza euclidea risulta essere la distanza ottimale per i due metodi migliori. Il confronto effettuato ha quindi permesso di individuare due dendrogrammi con la massima cophenetic correlation, mostrati nelle figure successive. In Fig. \ref{fig:dendrogram} è rappresentato il dendrogramma per il metodo 'average' e distanza euclidea con un esempio di taglio per 5 clusters. In Fig. \ref{fig:dendrogram-centroid} è rappresentato il dendrogramma per il metodo 'centroid' e distanza euclidea con un esempio di taglio per 3 clusters. \\
+
 \begin{figure}[H]
   \centering
   \includegraphics[width=1\textwidth]{../images/hierarchical/complete_dendrogram_average_euclidean.pdf}
   \caption{Dendrogramma per metodo 'average' e distanza euclidea, con esempio di taglio con 5 clusters, rappresentati dai differenti colori.}
   \label{fig:dendrogram}
 \end{figure}
-Dendogramma con il metodo centroid:
+
 \begin{figure}[H]
   \centering
   \includegraphics[width=1\textwidth]{../images/hierarchical/complete_dendrogram_centroid_euclidean.pdf}
@@ -313,7 +313,7 @@ Dendogramma con il metodo centroid:
   \caption{Descrizione composizione dei cluster per i metodi $average$ e $centroid$ con 2,3,4 e 5 cluster.}
   \label{tab:hierarchical_cluster}
 \end{table}
- Si può osservare in Tabella \ref{tab:hierarchical_cluster} come la numerosità dei clusters vari in modo considerevole tra i due metodi.In generale il clustering gerarchico risulta molto sensibile al metodo e alla metrica utilizzata. Si può notare che si definisce per ogni tipo di raggruppamento di cluster sia con il metodo average che con il metodo centroid un cluster con la quasi totalità dei dipendenti che stiamo andando ad analizzare.
+ Si può osservare in Tabella \ref{tab:hierarchical_cluster} come la numerosità dei clusters vari in modo considerevole tra i due metodi.In generale il clustering gerarchico risulta molto sensibile al metodo e alla metrica utilizzata. Si può notare che per i tagli dei dendrogrammi effettuati si ottengono raggruppamenti in cluster, sia con il metodo average che con il metodo centroid, con la presenza di un cluster con la maggior parte dei dipendenti del dataset.
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.55\textwidth]{../images/hierarchical/confronto_silhouette.pdf}
