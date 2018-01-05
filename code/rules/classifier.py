@@ -12,9 +12,14 @@ FIG = plt.figure(figsize=(8, 5))
 ds = pd.read_csv('../../data/rules/dataset_rules.csv')
 ds.drop('Unnamed: 0', axis=1, inplace=True)
 
+TESTS = ['../../data/test_rule/rules_left_class_c85.csv',
+         '../../data/test_rule/rules_left_class_c90.csv',
+         '../../data/test_rule/rules_left_class_c95.csv',
+         '../../data/test_rule/pruned_rules_ok.csv']
+
 
 def classify(record, csv):
-    rules = pd.read_csv('~/Desktop/rules_left_class_c' + csv + '.csv')
+    rules = pd.read_csv(csv)
     ants = rules['Antecedent'].tolist()
 
     for rule in ants:
@@ -43,7 +48,7 @@ def classify(record, csv):
 target = ds['Left'].map({'Y_L': 1, 'N_L': 0}).tolist()
 pred_target = list()
 
-for csv in ['85', '90', '95']:
+for csv in TESTS:
     print 'CLASSIFICO CON CSV ' + csv
     for record in range(0, 14999):
         row = ds.iloc[record].tolist()
@@ -51,14 +56,19 @@ for csv in ['85', '90', '95']:
 
     cm = confusion_matrix(target, pred_target)
     acc = metrics.accuracy_score(target, pred_target)
+    pre = metrics.precision_score(target, pred_target)
+    rec = metrics.recall_score(target, pred_target)
 
     print 'ACCURACY: ' + str(round(acc, 2))
+    print 'PRECISION: ' + str(round(pre, 2))
+    print 'RECALL: ' + str(round(rec, 2))
 
-    sns.heatmap(cm, cmap='Spectral', cbar=True)
+    sns.heatmap(cm, cmap='Spectral', annot=True, cbar=True)
     plt.ylabel('True label')
     plt.xlabel('Predicted label')
 
-    plt.savefig(fname='../../images/rules/confusion_matrix' + csv + '.pdf',
+    plt.savefig(fname='../../images/rules/confusion_matrix' +
+                csv.split('/')[4].replace('.csv', '') + '.pdf',
                 format='pdf', bbox_inches='tight')
     plt.clf()
 
