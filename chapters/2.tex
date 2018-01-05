@@ -228,9 +228,99 @@ Il secondo,il terzo mostrano caratteristiche simili: Entrambi i tipi di dipenden
 Infatti nel secondo cluster, Cluster $1$ raggruppa dipendenti soddisfatti sufficientemente, con un livello di valutazione discreto, e un numero di ore medie poco meno della media totale e infine un numero di progetti sufficiente.
 Mentre nel terzo cluster , Cluster $2$ abbiamo una situazione diversa alla precedente per quanto riguarda il numero di ore di lavoro, questi sono i dipendenti che lavorano più ore in media al mese e lavorano su più progetti.
 I restanti$119$ dipendenti sono stati considerati come punti di noise.
- 
+
+\section{Hierarchical clustering}
+Sulle variabili numeriche del dataset è stato eseguito un clustering gerarchico di tipo agglomerativo, con l'utilizzo di diverse metriche e differenti metodi per il calcolo della dissimilarità tra clusters. Il confronto tra i diversi metodi è stato effettuato utilizzando come indice di validità, la \textit{cophenetic correlation} $\rho_{coph}$. Ciascuna coppia di dati del dataset è unita nel dendrogramma in un nodo ad una distanza denominata \textit{cophenetic distance}. La cophenetic correlation è calcolata come coefficiente di correlazione di Pearson tra gli $n(n-1)/2$ valori della matrice delle distanze e le corrispondenti cophenetic distances. Il valore di tale correlazione può essere interpretato come il grado di aderenza del dendrogramma alle distanze originali, ed è quindi una misura della sua validità.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{../images/hierarchical/methods_comparison.pdf}
+  \caption{Confronto tra diversi metodi}
+  \label{fig:hierarchical-comparison}
+\end{figure}
+In Figura \ref{fig:hierarchical-comparison} si osserva che tra i metodi utilizzati \textit{average} e \textit{centroid} risultano quelli con il valore massimo della cophenetic correlation ed equivalenti tra loro. 
+La dissimilarità calcolata con il metodo \textit{average} consiste nella media di tutte le distanze tra coppie di dati appartenenti a due clusters diversi, mentre il metodo \textit{centroid} utilizza la distanza tra i centroidi. Per ciascun metodo sono state testate tre metriche, quella euclidea, Manhattan (o cityblock) e di Mahalanobis. Quest'ultima è una distanza non isotropa che prende in considerazione la correlazione tra le variabili. La distanza euclidea risulta essere la distanza ottimale per i due metodi migliori. Il confronto effettuato ha quindi permesso di individuare due dendrogrammi con la massima cophenetic correlation.\\ Nelle successive figure verranno mostrati due dendogrammi che raffigurano i dendogrammi più esplicativi. In Fig. \ref{fig:dendrogram} è rappresentato il dendrogramma per il metodo 'average' e distanza euclidea con un esempio di taglio per 5 clusters. In Fig. \ref{fig:dendrogram-centroid} è rappresentato il dendrogramma per il metodo 'centroid' e distanza euclidea con un esempio di taglio per 3 clusters. \\
+Dendogramma con il metodo average:
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{../images/hierarchical/complete_dendrogram_average_euclidean.pdf}
+  \caption{Dendrogramma per metodo 'average' e distanza euclidea, con esempio di taglio con 5 clusters, rappresentati dai differenti colori.}
+  \label{fig:dendrogram}
+\end{figure}
+Dendogramma con il metodo centroid:
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{../images/hierarchical/complete_dendrogram_centroid_euclidean.pdf}
+  \caption{Dendrogramma per metodo 'centroid' e distanza euclidea, con esempio di taglio con 3 clusters, rappresentati dai differenti colori.}
+  \label{fig:dendrogram-centroid}
+\end{figure}
+
+\begin{table}[H]
+  \centering
+  \begin{subtable}{0.30\textwidth}
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{| c | c | c | }
+    \hline
+    \textbf{Metodo} & \textbf{Cluster0} & \textbf{Cluster1} \\ \hline
+    Average & 14757 & 242  \\ \hline
+    Centroid & 14775 & 224  \\
+    \hline
+    \end{tabular}
+  }
+  \caption{}
+  \label{tab:hierarchical_2cluster}
+  \end{subtable}
+  \begin{subtable}{0.40\textwidth}
+     \resizebox{\textwidth}{!}{
+    \begin{tabular}{| c | c | c | c | }
+    \hline
+    \textbf{Metodo} & \textbf{Cluster0} & \textbf{Cluster1} & \textbf{Cluster2} \\ \hline
+    Average & 12780 & 1977 & 242 \\ \hline
+    Centroid & 13797 & 978 & 224 \\
+    \hline
+    \end{tabular}
+  }
+  \caption{}
+  \label{tab:hierarchical_3cluster}
+  \end{subtable}
+  \begin{subtable}{0.50\textwidth}
+         \resizebox{\textwidth}{!}{
+    \begin{tabular}{| c | c | c | c | c | }
+    \hline
+    \textbf{Metodo} & \textbf{Cluster0} & \textbf{Cluster1} & \textbf{Cluster2} & \textbf{Cluster3} \\ \hline
+    Average & 30 & 212 & 1977 & 12780 \\ \hline
+    Centroid & 224 & 978 & 3 & 13794 \\
+    \hline
+    \end{tabular}
+  }
+  \caption{}
+  \label{tab:hierarchical_4cluster}
+  \end{subtable}
+  \begin{subtable}{0.55\textwidth}
+        \resizebox{\textwidth}{!}{
+    \begin{tabular}{| c | c | c | c | c | c | }
+    \hline
+    \textbf{Metodo} & \textbf{Cluster0} & \textbf{Cluster1} & \textbf{Cluster2} & \textbf{Cluster3} & \textbf{Cluster4} \\ \hline
+    Average & 30 & 212 & 1977 & 12261 & 519  \\ \hline
+    Centroid & 4 & 220 & 978 & 3 & 13794 \\
+    \hline
+    \end{tabular}
+  }
+  \caption{}
+  \label{tab:hierarchical_5cluster}
+  \end{subtable}
+  \caption{Descrizione composizione dei cluster per i metodi $average$ e $centroid$ con 2,3,4 e 5 cluster.}
+  \label{tab:hierarchical_cluster}
+\end{table}
+ Si può osservare in Tabella \ref{tab:hierarchical_cluster} come la numerosità dei clusters vari in modo considerevole tra i due metodi.In generale il clustering gerarchico risulta molto sensibile al metodo e alla metrica utilizzata. Si può notare che si definisce per ogni tipo di raggruppamento di cluster sia con il metodo average che con il metodo centroid un cluster con la quasi totalità dei dipendenti che stiamo andando ad analizzare.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.55\textwidth]{../images/hierarchical/confronto_silhouette.pdf}
+  \caption{Silhouette media per i metodi 'average' e 'centroid' (con distanza euclidea) in funzione del numero di cluster}
+  \label{fig:hierarchical-taglio}
+\end{figure}
+Per confrontare i dendrogrammi tra di loro e con i risultati degli altri metodi di clustering è stata calcolata la silhouette media, tagliando i dendrogrammi ad un altezza tale da ottenere un numero di cluster compreso tra 2 e 6. I risultati sono mostrati in Fig \ref{fig:hierarchical-taglio} e mostrano che i due metodi anche se danno risultati simili possono presentare comunque scostamenti rilevanti, a parità di numero di cluster ottenuti con un taglio.
  
 \section{Final evaluation of the best clustering approach and comparison of the cluster obtained} % (fold)
 \label{sec:clustering_final_evaluation}
-Dalle analisi condotte con le tre metodologie di clustering abbiamo rilevato che con la metodologia del DBSCAN non si riescono a ricavare delle informazioni rilevanti ai fini della ricerca in quanto presenta un cluster in cui vi sono la quasi totalità dei dipendenti che vogliamo andare ad analizzare. Il K-means invece offre l'opportunità di determinare tipi di dipendenti, in cui è possibile inoltre fare delle supposizioni, che potranno essere studiate nelle sezioni successive. Per lo hierarchical... .
+Dalle analisi condotte con le tre metodologie di clustering abbiamo rilevato che con la metodologia del DBSCAN e dello Hierarchical non si riescono a ricavare delle informazioni rilevanti ai fini della ricerca in quanto presenta un cluster in cui vi sono la quasi totalità dei dipendenti che vogliamo andare ad analizzare. Il K-means invece offre l'opportunità di determinare tipi di dipendenti, in cui è possibile inoltre fare delle supposizioni, che potranno essere studiate nelle sezioni successive.
 Quindi per questo dataset si è ritenuto più efficiente fare utilizzo della metodologia del kmeans.
