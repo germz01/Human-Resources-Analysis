@@ -126,22 +126,22 @@ Tutti gli impiegati che hanno una \textit{'Last evaluation: very good'} hanno an
         \centering
         \begin{tabular}{| c | c | c | c | c |} \hline
             \textbf{Consequent} & \textbf{Antecedent} & \textbf{Supp} & \textbf{Conf} & \textbf{Lift} \\ \hline
-            high_SL  & ('very good_LE',)  & 0.329 &  1.000 & 2.061 \\ \hline
-            high_SL  & ('very good_LE','N_P') & 0.321 &  1.000 & 2.061 \\ \hline
-            high_SL  & ('very good_LE','N_L') & 0.281 &  1.000 & 2.061 \\ \hline
-            high_SL  & ('very good_LE','N_WA') & 0.278 &  1.000 & 2.061 \\ \hline
-            high_SL  & ('very good_LE','N_L','N_P') & 0.273 &  1.000 & 2.061 \\ \hline
-            high_SL  & ('very good_LE','N_WA','N_P') & 0.272 &  1.000 & 2.061 \\ \hline
-	    high_SL  & ('very good_LE','N_L','N_WA') & 0.232 &  1.000 & 2.061 \\ \hline
-            high_SL  & ('very good_LE','N_L','N_WA','N_P') & 0.226 &  1.000 & 2.061 \\ \hline
-            very good_LE  & ('high_SL','N_WA') & 0.278 & 0.681 & 2.070 \\ \hline
-	    very good_LE & ('high_SL','N_WA','N_P') & 0.272 & 0.680 & 2.070 \\ \hline
-	    very good_LE  &('high_SL') & 0.329 & 0.678 & 2.061  \\ \hline
-	    very good_LE & ('high_SL','N_P') & 0.331 & 0.677 & 2.059 \\ \hline
-	    very good_LE  & ('high_SL','N_L','N_WA') & 0.232 & 0.668 & 2.030 \\ \hline
-	    very good_LE & ('high_SL','N_L','N_WA','N_P') & 0.226 & 0.667 & 2.026 \\ \hline
-	    very good_LE  & ('high_SL','N_L','N_WA') & 0.281 & 0.666 & 2.025 \\ \hline
-	    very good_LE & ('high_SL','N_L','N_WA','N_P') & 0.273 & 0.665 & 2.023 \\ \hline
+            high\_SL  & ('very good\_LE',)  & 0.329 &  1.000 & 2.061 \\ \hline
+            high\_SL  & ('very good\_LE','N\_P') & 0.321 &  1.000 & 2.061 \\ \hline
+            high\_SL  & ('very good\_LE','N\_L') & 0.281 &  1.000 & 2.061 \\ \hline
+            high\_SL  & ('very good\_LE','N\_WA') & 0.278 &  1.000 & 2.061 \\ \hline
+            high\_SL  & ('very good\_LE','N\_L','N\_P') & 0.273 &  1.000 & 2.061 \\ \hline
+            high\_SL  & ('very good\_LE','N\_WA','N\_P') & 0.272 &  1.000 & 2.061 \\ \hline
+	    high\_SL  & ('very good\_LE','N\_L','N\_WA') & 0.232 &  1.000 & 2.061 \\ \hline
+            high\_SL  & ('very good\_LE','N\_L','N\_WA','N\_P') & 0.226 &  1.000 & 2.061 \\ \hline
+            very good\_LE  & ('high\_SL','N\_WA') & 0.278 & 0.681 & 2.070 \\ \hline
+	    very good\_LE & ('high\_SL','N\_WA','N\_P') & 0.272 & 0.680 & 2.070 \\ \hline
+	    very good\_LE  &('high\_SL') & 0.329 & 0.678 & 2.061  \\ \hline
+	    very good\_LE & ('high\_SL','N\_P') & 0.331 & 0.677 & 2.059 \\ \hline
+	    very good\_LE  & ('high\_SL','N\_L','N\_WA') & 0.232 & 0.668 & 2.030 \\ \hline
+	    very good\_LE & ('high\_SL','N\_L','N\_WA','N\_P') & 0.226 & 0.667 & 2.026 \\ \hline
+	    very good\_LE  & ('high\_SL','N\_L','N\_WA') & 0.281 & 0.666 & 2.025 \\ \hline
+	    very good\_LE & ('high\_SL','N\_L','N\_WA','N\_P') & 0.273 & 0.665 & 2.023 \\ \hline
         \end{tabular}
         \label{tab:rules_general}
 	 \caption{Association rules per $MinSupp=20\%$ e $Lift> 1.5$}
@@ -199,9 +199,9 @@ Dalle regole specifiche estratte ne sono state ricavate alcune interessanti, per
         \centering
         \begin{tabular}{| c | c | c | c | c |} \hline
             \textbf{Consequent} & \textbf{Antecedent} & \textbf{Supp} & \textbf{Conf} & \textbf{Lift} \\ \hline
-            low_SL  & ('4_T','Y_L','insufficient_LE','intensive_H')  & 0.054 &  0.990 & 7.245 \\ \hline
-            2_NP  & ('Y_L', 'medium_SL', '3_T', 'standard_H' ,'N_P') & 0.100 &  0.996 & 6.256 \\ \hline
-            insufficient_LE  & ('low_SL','intensive_H','N_P') & 0.281 &  1.000 & 3.861 \\ \hline
+            low\_SL  & ('4\_T','Y\_L','insufficient\_LE','intensive\_H')  & 0.054 &  0.990 & 7.245 \\ \hline
+            2\_NP  & ('Y\_L', 'medium\_SL', '3\_T', 'standard\_H' ,'N\_P') & 0.100 &  0.996 & 6.256 \\ \hline
+            insufficient\_LE  & ('low\_SL','intensive\_H','N\_P') & 0.281 &  1.000 & 3.861 \\ \hline
         \end{tabular}
         \label{tab:altreregole}
 	 \caption{Altre regole interessanti}
