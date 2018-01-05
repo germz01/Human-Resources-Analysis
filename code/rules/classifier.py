@@ -16,7 +16,7 @@ TESTS = ['../../data/test_rule/rules_left_class_c85.csv',
          '../../data/test_rule/rules_left_class_c90.csv',
          '../../data/test_rule/rules_left_class_c95.csv',
          '../../data/test_rule/pruned_rules_ok.csv',
-         '../../data/test_rule/pruned_rules_superset.csv']
+         '../../data/test_rule/pruned_rules_ok_superset.csv']
 
 
 def classify(record, csv):
