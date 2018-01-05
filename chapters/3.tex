@@ -113,15 +113,14 @@ Le regole che possono essere considerate oggettivamente interessanti, con $Lift>
 
 Tutti gli impiegati che hanno una \textit{'Last evaluation: very good'} hanno anche un alto tasso di soddisfazione ('high\_SL'), mentre il viceversa accade nel $68\%$ dei casi. Queste regole non sono particolarmente interessanti dal punto di vista dell'analisi, poichè abbastanza ovvie, e non aggiungono molto alle analisi statistiche eseguite.
 
-\begin{minipage}[c]{0.55\textwidth}
+
 \begin{figure}[H]
   \centering
-  \includegraphics[width=1\textwidth]{../images/rules/rules_general.pdf}
+  \includegraphics[width=0.7\textwidth]{../images/rules/rules_general.pdf}
   \caption{Grafico,mettere LEGENDA PER COLORE E SIZE (Support)}
   \label{fig:rules_general}
 \end{figure}
-\end{minipage}
-\begin{minipage}[c]{0.45\textwidth}
+
 \begin{table}[H]
   \centering
   \scalebox{0.7}{
@@ -130,7 +129,7 @@ Tutti gli impiegati che hanno una \textit{'Last evaluation: very good'} hanno an
 \caption{Association rules per $MinSupp=20\%$ e $Lift> 1.5$}
 \label{tab:rules_general}
 \end{table}
-\end{minipage}
+
 
 
 \subsection{Regole specifiche}
@@ -140,7 +139,7 @@ Le regole sono state dunque filtrate ulteriormente in modo da avere un interesse
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.5\textwidth]{../images/rules/rules_specific.pdf}
+  \includegraphics[width=0.7\textwidth]{../images/rules/rules_specific.pdf}
   \caption{Grafico,mettere LEGENDA PER COLORE E SIZE (Support)}
   \label{fig:rules_specific}
 \end{figure}
@@ -168,7 +167,7 @@ Le regole sono rappresentate in verticale, con i valori $10$ e $0$ che indicano 
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.99\textwidth]{../images/rules/left_heatmap.pdf}
-  \caption{Regole associative più interessanti con parte conseguente gli impiegati che hanno lasciato l'azienda. I valori 10-0 corrispondono alla presenza o meno di un item nella parte antecedente della regola}
+  \caption{Ogni colonna rappresenta una regola relativa alla parte interessanti con parte conseguente gli impiegati che hanno lasciato l'azienda. I valori 10-0 corrispondono alla presenza o meno di un item nella parte antecedente della regola}
   \label{fig:rules_left}
 \end{figure}
 
@@ -190,8 +189,7 @@ Dalle regole specifiche estratte ne sono state ricavate alcune interessanti, per
 \label{tab:altreregole}
 \end{table}
 
-\clearpage
-\newpage
+
 
 \section{Use the most meaningful rules to replace missing values and evaluate the accuracy}
 Nel nostro dataset non sono presenti missing values quindi non è stata necessaria la valutazione delle più significative rules e la valutazione dell'accuratezza per rimpiazzare questi.
@@ -206,7 +204,7 @@ Date le varie association rules trovate dalle varie prove quelle descritte nella
         \caption{Confusion Matrix con $confidence$ = 85}
         \label{fig:sales}
 \end{figure}
-Si evince che il classificatore riesce a determinare ciò che seque:
+Si evince che il classificatore riesce a determinare ciò che segue:
 \begin{itemize}[noitemsep]
 \item Diagonale TP e TN: In questa diagonale vengono descritti i dipendenti per cui si è riscontrato che il valore assegnato dal classificatore e quello reale sono uguali. Risultano quindi rispettivamente $11000$ dipendenti rimasti e $2200$ dipendenti invece che hanno lasciato l'azienda.
 \item Diagonale FP e FN: A differenza della precedente diagonale in questa vengono descritti i dipendenti per cui si è riscontrato che il valore assegnato dal classificatore e quello reale sono opposti. Risultano quindi rispettivamente $1300$ dipendenti definiti dal classificatore come rimasti ma che in realtà hanno lasciato l'azienda e $810$ dipendenti classificati come dipendenti che hanno lasciato l'azienda e in realtà ancora continuano a lavorare in questa.
