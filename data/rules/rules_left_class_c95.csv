@@ -1,38 +1,31 @@
 ,Consequent,Antecedent,Supp,Conf,Lift
-720,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'low_S', 'standard_H', 'N_WA', 'N_P')",0.05,0.98,4.1
-728,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'low_S', 'standard_H', 'N_WA')",0.05,0.98,4.1
-736,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'low_S', 'standard_H', 'N_P')",0.05,0.98,4.1
-743,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'low_S', 'standard_H')",0.05,0.98,4.1
-751,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'low_S', 'N_WA', 'N_P')",0.05,0.98,4.1
-758,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'low_S', 'N_WA')",0.05,0.98,4.1
-765,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'low_S', 'N_P')",0.05,0.97,4.09
-771,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'low_S')",0.05,0.97,4.09
-779,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'standard_H', 'N_WA', 'N_P')",0.08,0.97,4.06
-786,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'standard_H', 'N_WA')",0.08,0.96,4.05
-793,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'standard_H', 'N_P')",0.09,0.96,4.05
-799,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'standard_H')",0.09,0.96,4.04
-806,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'N_WA', 'N_P')",0.08,0.96,4.05
-812,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'N_WA')",0.08,0.96,4.05
-818,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'N_P')",0.09,0.96,4.02
-823,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T')",0.09,0.96,4.02
-831,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'low_S', 'standard_H', 'N_WA', 'N_P')",0.05,0.96,4.02
-838,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'low_S', 'standard_H', 'N_WA')",0.05,0.96,4.02
-845,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'low_S', 'standard_H', 'N_P')",0.05,0.95,4.01
-851,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'low_S', 'standard_H')",0.05,0.95,4.01
-858,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'low_S', 'N_WA', 'N_P')",0.05,0.95,3.98
-864,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'low_S', 'N_WA')",0.05,0.95,3.98
-927,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'low_S', 'standard_H', 'N_WA', 'N_P')",0.05,0.96,4.05
-934,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'low_S', 'standard_H', 'N_WA')",0.05,0.96,4.05
-941,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'low_S', 'standard_H', 'N_P')",0.05,0.96,4.04
-947,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'low_S', 'standard_H')",0.05,0.96,4.04
-954,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'low_S', 'N_WA', 'N_P')",0.05,0.96,4.02
-960,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'low_S', 'N_WA')",0.05,0.96,4.02
-966,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'low_S', 'N_P')",0.05,0.95,4.0
-971,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'low_S')",0.05,0.95,4.0
-978,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'standard_H', 'N_WA', 'N_P')",0.08,0.95,4.0
-984,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'standard_H', 'N_WA')",0.08,0.95,4.0
-990,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'standard_H', 'N_P')",0.09,0.95,3.99
-995,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'standard_H')",0.09,0.95,3.98
-1001,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'N_WA', 'N_P')",0.08,0.95,3.97
-1103,Y_L,"('2_NP', 'medium_SL', '3_T', 'low_S', 'standard_H', 'N_WA', 'N_P')",0.06,0.95,3.97
-1110,Y_L,"('2_NP', 'medium_SL', '3_T', 'low_S', 'standard_H', 'N_WA')",0.06,0.95,3.98
+720,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'low_S', 'standard_H', 'N_WA', 'N_P')",0.05,0.977,4.102
+728,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'low_S', 'standard_H', 'N_WA')",0.051,0.977,4.103
+736,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'low_S', 'standard_H', 'N_P')",0.053,0.975,4.097
+743,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'low_S', 'standard_H')",0.053,0.975,4.097
+751,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'low_S', 'N_WA', 'N_P')",0.05,0.975,4.097
+758,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'low_S', 'N_WA')",0.051,0.976,4.098
+765,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'low_S', 'N_P')",0.053,0.973,4.087
+771,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'low_S')",0.053,0.973,4.087
+779,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'standard_H', 'N_WA', 'N_P')",0.082,0.966,4.058
+786,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'standard_H', 'N_WA')",0.082,0.965,4.052
+793,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'standard_H', 'N_P')",0.086,0.963,4.046
+799,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'standard_H')",0.086,0.962,4.041
+806,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'N_WA', 'N_P')",0.082,0.965,4.052
+812,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'N_WA')",0.082,0.963,4.046
+818,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'N_P')",0.086,0.958,4.025
+823,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T')",0.086,0.957,4.02
+831,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'low_S', 'standard_H', 'N_WA', 'N_P')",0.051,0.957,4.02
+838,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'low_S', 'standard_H', 'N_WA')",0.051,0.957,4.021
+845,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'low_S', 'standard_H', 'N_P')",0.053,0.954,4.008
+851,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'low_S', 'standard_H')",0.053,0.954,4.009
+927,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'low_S', 'standard_H', 'N_WA', 'N_P')",0.05,0.964,4.05
+934,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'low_S', 'standard_H', 'N_WA')",0.051,0.964,4.051
+941,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'low_S', 'standard_H', 'N_P')",0.053,0.961,4.037
+947,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'low_S', 'standard_H')",0.053,0.961,4.038
+954,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'low_S', 'N_WA', 'N_P')",0.05,0.957,4.019
+960,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'low_S', 'N_WA')",0.051,0.957,4.02
+966,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'low_S', 'N_P')",0.053,0.952,3.999
+971,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'low_S')",0.053,0.952,3.999
+978,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'standard_H', 'N_WA', 'N_P')",0.082,0.953,4.004
+984,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'standard_H', 'N_WA')",0.082,0.952,3.999

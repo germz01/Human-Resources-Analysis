@@ -1,92 +1,89 @@
 ,Consequent,Antecedent,Supp,Conf,Lift
-720,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'low_S', 'standard_H', 'N_WA', 'N_P')",0.05,0.98,4.1
-728,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'low_S', 'standard_H', 'N_WA')",0.05,0.98,4.1
-736,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'low_S', 'standard_H', 'N_P')",0.05,0.98,4.1
-743,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'low_S', 'standard_H')",0.05,0.98,4.1
-751,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'low_S', 'N_WA', 'N_P')",0.05,0.98,4.1
-758,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'low_S', 'N_WA')",0.05,0.98,4.1
-765,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'low_S', 'N_P')",0.05,0.97,4.09
-771,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'low_S')",0.05,0.97,4.09
-779,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'standard_H', 'N_WA', 'N_P')",0.08,0.97,4.06
-786,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'standard_H', 'N_WA')",0.08,0.96,4.05
-793,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'standard_H', 'N_P')",0.09,0.96,4.05
-799,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'standard_H')",0.09,0.96,4.04
-806,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'N_WA', 'N_P')",0.08,0.96,4.05
-812,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'N_WA')",0.08,0.96,4.05
-818,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'N_P')",0.09,0.96,4.02
-823,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T')",0.09,0.96,4.02
-831,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'low_S', 'standard_H', 'N_WA', 'N_P')",0.05,0.96,4.02
-838,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'low_S', 'standard_H', 'N_WA')",0.05,0.96,4.02
-845,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'low_S', 'standard_H', 'N_P')",0.05,0.95,4.01
-851,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'low_S', 'standard_H')",0.05,0.95,4.01
-858,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'low_S', 'N_WA', 'N_P')",0.05,0.95,3.98
-864,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'low_S', 'N_WA')",0.05,0.95,3.98
-870,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'low_S', 'N_P')",0.05,0.94,3.96
-875,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'low_S')",0.05,0.94,3.96
-882,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'standard_H', 'N_WA', 'N_P')",0.08,0.94,3.93
-888,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'standard_H', 'N_WA')",0.08,0.93,3.92
-894,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'standard_H', 'N_P')",0.09,0.93,3.91
-899,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'standard_H')",0.09,0.93,3.9
-905,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'N_WA', 'N_P')",0.08,0.92,3.89
-910,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'N_WA')",0.08,0.92,3.88
-915,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'N_P')",0.09,0.92,3.85
-919,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL')",0.09,0.91,3.84
-927,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'low_S', 'standard_H', 'N_WA', 'N_P')",0.05,0.96,4.05
-934,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'low_S', 'standard_H', 'N_WA')",0.05,0.96,4.05
-941,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'low_S', 'standard_H', 'N_P')",0.05,0.96,4.04
-947,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'low_S', 'standard_H')",0.05,0.96,4.04
-954,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'low_S', 'N_WA', 'N_P')",0.05,0.96,4.02
-960,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'low_S', 'N_WA')",0.05,0.96,4.02
-966,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'low_S', 'N_P')",0.05,0.95,4.0
-971,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'low_S')",0.05,0.95,4.0
-978,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'standard_H', 'N_WA', 'N_P')",0.08,0.95,4.0
-984,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'standard_H', 'N_WA')",0.08,0.95,4.0
-990,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'standard_H', 'N_P')",0.09,0.95,3.99
-995,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'standard_H')",0.09,0.95,3.98
-1001,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'N_WA', 'N_P')",0.08,0.95,3.97
-1006,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'N_WA')",0.08,0.94,3.97
-1011,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'N_P')",0.09,0.94,3.94
-1015,Y_L,"('2_NP', 'insufficient_LE', '3_T')",0.09,0.94,3.94
-1022,Y_L,"('2_NP', 'insufficient_LE', 'low_S', 'standard_H', 'N_WA', 'N_P')",0.05,0.93,3.93
-1028,Y_L,"('2_NP', 'insufficient_LE', 'low_S', 'standard_H', 'N_WA')",0.05,0.94,3.93
-1034,Y_L,"('2_NP', 'insufficient_LE', 'low_S', 'standard_H', 'N_P')",0.05,0.93,3.89
-1039,Y_L,"('2_NP', 'insufficient_LE', 'low_S', 'standard_H')",0.05,0.93,3.89
-1045,Y_L,"('2_NP', 'insufficient_LE', 'low_S', 'N_WA', 'N_P')",0.05,0.92,3.84
-1050,Y_L,"('2_NP', 'insufficient_LE', 'low_S', 'N_WA')",0.05,0.92,3.84
-1055,Y_L,"('2_NP', 'insufficient_LE', 'low_S', 'N_P')",0.05,0.9,3.78
-1059,Y_L,"('2_NP', 'insufficient_LE', 'low_S')",0.05,0.9,3.78
-1065,Y_L,"('2_NP', 'insufficient_LE', 'standard_H', 'N_WA', 'N_P')",0.08,0.91,3.81
-1070,Y_L,"('2_NP', 'insufficient_LE', 'standard_H', 'N_WA')",0.08,0.91,3.8
-1075,Y_L,"('2_NP', 'insufficient_LE', 'standard_H', 'N_P')",0.09,0.9,3.78
-1079,Y_L,"('2_NP', 'insufficient_LE', 'standard_H')",0.09,0.9,3.77
-1103,Y_L,"('2_NP', 'medium_SL', '3_T', 'low_S', 'standard_H', 'N_WA', 'N_P')",0.06,0.95,3.97
-1110,Y_L,"('2_NP', 'medium_SL', '3_T', 'low_S', 'standard_H', 'N_WA')",0.06,0.95,3.98
-1117,Y_L,"('2_NP', 'medium_SL', '3_T', 'low_S', 'standard_H', 'N_P')",0.06,0.94,3.96
-1123,Y_L,"('2_NP', 'medium_SL', '3_T', 'low_S', 'standard_H')",0.06,0.94,3.96
-1130,Y_L,"('2_NP', 'medium_SL', '3_T', 'low_S', 'N_WA', 'N_P')",0.06,0.93,3.91
-1136,Y_L,"('2_NP', 'medium_SL', '3_T', 'low_S', 'N_WA')",0.06,0.93,3.91
-1142,Y_L,"('2_NP', 'medium_SL', '3_T', 'low_S', 'N_P')",0.06,0.92,3.88
-1147,Y_L,"('2_NP', 'medium_SL', '3_T', 'low_S')",0.06,0.93,3.89
-1154,Y_L,"('2_NP', 'medium_SL', '3_T', 'standard_H', 'N_WA', 'N_P')",0.1,0.93,3.91
-1160,Y_L,"('2_NP', 'medium_SL', '3_T', 'standard_H', 'N_WA')",0.1,0.93,3.91
-1166,Y_L,"('2_NP', 'medium_SL', '3_T', 'standard_H', 'N_P')",0.1,0.92,3.88
-1171,Y_L,"('2_NP', 'medium_SL', '3_T', 'standard_H')",0.1,0.92,3.88
-1177,Y_L,"('2_NP', 'medium_SL', '3_T', 'N_WA', 'N_P')",0.1,0.91,3.83
-1182,Y_L,"('2_NP', 'medium_SL', '3_T', 'N_WA')",0.1,0.91,3.83
-1187,Y_L,"('2_NP', 'medium_SL', '3_T', 'N_P')",0.1,0.9,3.78
-1191,Y_L,"('2_NP', 'medium_SL', '3_T')",0.1,0.9,3.78
-1278,Y_L,"('2_NP', '3_T', 'low_S', 'standard_H', 'N_WA', 'N_P')",0.06,0.91,3.83
-1284,Y_L,"('2_NP', '3_T', 'low_S', 'standard_H', 'N_WA')",0.06,0.91,3.84
-1290,Y_L,"('2_NP', '3_T', 'low_S', 'standard_H', 'N_P')",0.06,0.9,3.8
-1295,Y_L,"('2_NP', '3_T', 'low_S', 'standard_H')",0.06,0.91,3.8
-2585,Y_L,"('insufficient_LE', 'medium_SL', '3_T', 'low_S', 'standard_H', 'N_WA', 'N_P')",0.05,0.94,3.96
-2592,Y_L,"('insufficient_LE', 'medium_SL', '3_T', 'low_S', 'standard_H', 'N_WA')",0.05,0.94,3.97
-2599,Y_L,"('insufficient_LE', 'medium_SL', '3_T', 'low_S', 'standard_H', 'N_P')",0.05,0.93,3.92
-2605,Y_L,"('insufficient_LE', 'medium_SL', '3_T', 'low_S', 'standard_H')",0.05,0.93,3.92
-2612,Y_L,"('insufficient_LE', 'medium_SL', '3_T', 'low_S', 'N_WA', 'N_P')",0.05,0.93,3.91
-2618,Y_L,"('insufficient_LE', 'medium_SL', '3_T', 'low_S', 'N_WA')",0.05,0.93,3.91
-2624,Y_L,"('insufficient_LE', 'medium_SL', '3_T', 'low_S', 'N_P')",0.05,0.92,3.86
-2629,Y_L,"('insufficient_LE', 'medium_SL', '3_T', 'low_S')",0.05,0.92,3.86
-2636,Y_L,"('insufficient_LE', 'medium_SL', '3_T', 'standard_H', 'N_WA', 'N_P')",0.08,0.91,3.82
-2642,Y_L,"('insufficient_LE', 'medium_SL', '3_T', 'standard_H', 'N_WA')",0.08,0.9,3.8
-2648,Y_L,"('insufficient_LE', 'medium_SL', '3_T', 'standard_H', 'N_P')",0.09,0.9,3.77
+720,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'low_S', 'standard_H', 'N_WA', 'N_P')",0.05,0.977,4.102
+728,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'low_S', 'standard_H', 'N_WA')",0.051,0.977,4.103
+736,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'low_S', 'standard_H', 'N_P')",0.053,0.975,4.097
+743,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'low_S', 'standard_H')",0.053,0.975,4.097
+751,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'low_S', 'N_WA', 'N_P')",0.05,0.975,4.097
+758,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'low_S', 'N_WA')",0.051,0.976,4.098
+765,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'low_S', 'N_P')",0.053,0.973,4.087
+771,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'low_S')",0.053,0.973,4.087
+779,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'standard_H', 'N_WA', 'N_P')",0.082,0.966,4.058
+786,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'standard_H', 'N_WA')",0.082,0.965,4.052
+793,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'standard_H', 'N_P')",0.086,0.963,4.046
+799,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'standard_H')",0.086,0.962,4.041
+806,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'N_WA', 'N_P')",0.082,0.965,4.052
+812,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'N_WA')",0.082,0.963,4.046
+818,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T', 'N_P')",0.086,0.958,4.025
+823,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', '3_T')",0.086,0.957,4.02
+831,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'low_S', 'standard_H', 'N_WA', 'N_P')",0.051,0.957,4.02
+838,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'low_S', 'standard_H', 'N_WA')",0.051,0.957,4.021
+845,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'low_S', 'standard_H', 'N_P')",0.053,0.954,4.008
+851,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'low_S', 'standard_H')",0.053,0.954,4.009
+858,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'low_S', 'N_WA', 'N_P')",0.051,0.948,3.98
+864,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'low_S', 'N_WA')",0.051,0.948,3.981
+870,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'low_S', 'N_P')",0.053,0.942,3.957
+875,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'low_S')",0.053,0.942,3.958
+882,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'standard_H', 'N_WA', 'N_P')",0.082,0.935,3.929
+888,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'standard_H', 'N_WA')",0.082,0.934,3.921
+894,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'standard_H', 'N_P')",0.086,0.932,3.915
+899,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'standard_H')",0.086,0.929,3.902
+905,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'N_WA', 'N_P')",0.082,0.925,3.885
+910,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'N_WA')",0.083,0.923,3.878
+915,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'N_P')",0.086,0.918,3.854
+919,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL')",0.087,0.915,3.842
+927,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'low_S', 'standard_H', 'N_WA', 'N_P')",0.05,0.964,4.05
+934,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'low_S', 'standard_H', 'N_WA')",0.051,0.964,4.051
+941,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'low_S', 'standard_H', 'N_P')",0.053,0.961,4.037
+947,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'low_S', 'standard_H')",0.053,0.961,4.038
+954,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'low_S', 'N_WA', 'N_P')",0.05,0.957,4.019
+960,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'low_S', 'N_WA')",0.051,0.957,4.02
+966,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'low_S', 'N_P')",0.053,0.952,3.999
+971,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'low_S')",0.053,0.952,3.999
+978,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'standard_H', 'N_WA', 'N_P')",0.082,0.953,4.004
+984,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'standard_H', 'N_WA')",0.082,0.952,3.999
+990,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'standard_H', 'N_P')",0.086,0.949,3.986
+995,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'standard_H')",0.086,0.948,3.982
+1001,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'N_WA', 'N_P')",0.082,0.946,3.974
+1006,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'N_WA')",0.082,0.945,3.969
+1011,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'N_P')",0.086,0.938,3.94
+1015,Y_L,"('2_NP', 'insufficient_LE', '3_T')",0.086,0.937,3.936
+1022,Y_L,"('2_NP', 'insufficient_LE', 'low_S', 'standard_H', 'N_WA', 'N_P')",0.051,0.935,3.927
+1028,Y_L,"('2_NP', 'insufficient_LE', 'low_S', 'standard_H', 'N_WA')",0.051,0.935,3.928
+1034,Y_L,"('2_NP', 'insufficient_LE', 'low_S', 'standard_H', 'N_P')",0.053,0.926,3.888
+1039,Y_L,"('2_NP', 'insufficient_LE', 'low_S', 'standard_H')",0.053,0.926,3.889
+1045,Y_L,"('2_NP', 'insufficient_LE', 'low_S', 'N_WA', 'N_P')",0.051,0.915,3.844
+1050,Y_L,"('2_NP', 'insufficient_LE', 'low_S', 'N_WA')",0.051,0.915,3.845
+1055,Y_L,"('2_NP', 'insufficient_LE', 'low_S', 'N_P')",0.053,0.9,3.781
+1059,Y_L,"('2_NP', 'insufficient_LE', 'low_S')",0.054,0.9,3.782
+1065,Y_L,"('2_NP', 'insufficient_LE', 'standard_H', 'N_WA', 'N_P')",0.082,0.907,3.811
+1070,Y_L,"('2_NP', 'insufficient_LE', 'standard_H', 'N_WA')",0.083,0.906,3.804
+1075,Y_L,"('2_NP', 'insufficient_LE', 'standard_H', 'N_P')",0.086,0.9,3.779
+1103,Y_L,"('2_NP', 'medium_SL', '3_T', 'low_S', 'standard_H', 'N_WA', 'N_P')",0.059,0.946,3.975
+1110,Y_L,"('2_NP', 'medium_SL', '3_T', 'low_S', 'standard_H', 'N_WA')",0.059,0.947,3.976
+1117,Y_L,"('2_NP', 'medium_SL', '3_T', 'low_S', 'standard_H', 'N_P')",0.061,0.942,3.955
+1123,Y_L,"('2_NP', 'medium_SL', '3_T', 'low_S', 'standard_H')",0.062,0.942,3.957
+1130,Y_L,"('2_NP', 'medium_SL', '3_T', 'low_S', 'N_WA', 'N_P')",0.059,0.932,3.913
+1136,Y_L,"('2_NP', 'medium_SL', '3_T', 'low_S', 'N_WA')",0.059,0.932,3.914
+1142,Y_L,"('2_NP', 'medium_SL', '3_T', 'low_S', 'N_P')",0.062,0.925,3.885
+1147,Y_L,"('2_NP', 'medium_SL', '3_T', 'low_S')",0.062,0.926,3.887
+1154,Y_L,"('2_NP', 'medium_SL', '3_T', 'standard_H', 'N_WA', 'N_P')",0.095,0.931,3.911
+1160,Y_L,"('2_NP', 'medium_SL', '3_T', 'standard_H', 'N_WA')",0.096,0.93,3.907
+1166,Y_L,"('2_NP', 'medium_SL', '3_T', 'standard_H', 'N_P')",0.1,0.925,3.884
+1171,Y_L,"('2_NP', 'medium_SL', '3_T', 'standard_H')",0.101,0.924,3.882
+1177,Y_L,"('2_NP', 'medium_SL', '3_T', 'N_WA', 'N_P')",0.096,0.912,3.829
+1182,Y_L,"('2_NP', 'medium_SL', '3_T', 'N_WA')",0.096,0.911,3.827
+1187,Y_L,"('2_NP', 'medium_SL', '3_T', 'N_P')",0.1,0.9,3.778
+1278,Y_L,"('2_NP', '3_T', 'low_S', 'standard_H', 'N_WA', 'N_P')",0.059,0.913,3.835
+1284,Y_L,"('2_NP', '3_T', 'low_S', 'standard_H', 'N_WA')",0.059,0.913,3.836
+1290,Y_L,"('2_NP', '3_T', 'low_S', 'standard_H', 'N_P')",0.061,0.905,3.8
+1295,Y_L,"('2_NP', '3_T', 'low_S', 'standard_H')",0.062,0.906,3.804
+2585,Y_L,"('insufficient_LE', 'medium_SL', '3_T', 'low_S', 'standard_H', 'N_WA', 'N_P')",0.05,0.944,3.964
+2592,Y_L,"('insufficient_LE', 'medium_SL', '3_T', 'low_S', 'standard_H', 'N_WA')",0.051,0.944,3.965
+2599,Y_L,"('insufficient_LE', 'medium_SL', '3_T', 'low_S', 'standard_H', 'N_P')",0.053,0.933,3.918
+2605,Y_L,"('insufficient_LE', 'medium_SL', '3_T', 'low_S', 'standard_H')",0.053,0.933,3.919
+2612,Y_L,"('insufficient_LE', 'medium_SL', '3_T', 'low_S', 'N_WA', 'N_P')",0.051,0.931,3.912
+2618,Y_L,"('insufficient_LE', 'medium_SL', '3_T', 'low_S', 'N_WA')",0.051,0.932,3.913
+2624,Y_L,"('insufficient_LE', 'medium_SL', '3_T', 'low_S', 'N_P')",0.053,0.919,3.86
+2629,Y_L,"('insufficient_LE', 'medium_SL', '3_T', 'low_S')",0.053,0.919,3.861
+2636,Y_L,"('insufficient_LE', 'medium_SL', '3_T', 'standard_H', 'N_WA', 'N_P')",0.082,0.91,3.82
+2642,Y_L,"('insufficient_LE', 'medium_SL', '3_T', 'standard_H', 'N_WA')",0.082,0.904,3.797

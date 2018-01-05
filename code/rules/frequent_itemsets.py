@@ -113,7 +113,7 @@ def extract_rules(supp,conf):
             csv_dict = {fieldnames[0] : record[0]}
             for i,field in enumerate(fieldnames):
                 if type(record[i]) is float:
-                    csv_dict.update({field :round(record[i],2)})
+                    csv_dict.update({field :round(record[i],3)})
                 else:
                     csv_dict.update({field : record[i]})
 

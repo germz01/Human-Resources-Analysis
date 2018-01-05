@@ -106,11 +106,26 @@ scelto osservando l'andamento in Fig. \ref{fig:rules_number} e sufficiente per o
 
 Per un valore di \textit{MinConf=50\%} sono state ottenute 268 regole  rappresentate in Fig. \ref{fig:rules_general}, con i rispettivi valori di Lift, Confidence e Support. Si osserva che la maggior parte delle regole ha un Lift basso, minore di 1.5.
 Le regole sono state rappresentate raffigurando il valore di $Conf$ in funzione di $Lift$. Questo permette di identificare visivamente in modo immediatole regole con la stessa parte conseguente, poichè in tal caso i due indici sono proporzionali con coefficiente pari al supporto della parte conseguente.
-Le regole oggettivamente interessanti, con $Lift> 2$, ben visibili nella parte destra del grafico sono riportate in Tab \ref{tab:rules-general}.
-e mostrano una correlazione positiva tra un alto livello di valutazione (\textit{very good, Last Evaluation}) ed un alto grado di soddisfazione degli impiegati, a cui si accompagnano nella parte antecedente la mancanza di incidenti sul lavoro (\textit{N WA}) ed il fatto di essere rimasti in azienda.
+Le regole che possono essere considerate oggettivamente interessanti, con $Lift> 1.5$, ben visibili nella parte destra del grafico sono riportate in Tab \ref{tab:rules-general} e mostrano una correlazione positiva tra un alto livello di valutazione (\textit{very good, Last Evaluation}) ed un alto grado di soddisfazione degli impiegati, a cui si accompagnano nella parte antecedente la mancanza di incidenti sul lavoro (\textit{N WA}) ed il fatto di essere rimasti in azienda. Il fatto di non aver ricevuto una promozione ($N\_P$) non è semanticamente rilevante.
+La regola generale 
 
+\begin{comment}
+Una volta stabilito quali sono le regole valide, considerando una parte conseguente fissa,
+si osserva che le transazioni contenenti 
+\textit{Regole valide minime}: tra le regole valide riguardanti la stessa parte conseguente, la regola minima è la regola con la parte antecedente più corta.
+Si osserva che le regole minime implicano automaticamente le regole 
+una regola con la parte antecedente 
+E' da osservare che una volta stabilita la soglia sopra la quale una regola è interessante, se si assume
 %%Queste regole non sono particolarmente interessanti dal punto di vista dell'analisi, poichè abbastanza ovvie, e non aggiungono molto alle
 %%analisi statistiche eseguite, inoltre il valore di $Lift$ non è così ampio. (è confrontabile con qualcosa? valori di riferimento?)
+se $A \rightarrow Y$ è  una regola valida $\Rightarrow$  $AB \rightarrow Y$ è valida
+\begin{itemize}
+\item 'Last evaluation: very good' $\Rightarrow$ 'Satisfaction Level: high'
+\item 'Satisfaction Level: high'   $\Rightarrow$ 'Last evaluation: very good'
+\end{itemize}
+\end{comment}
+
+Tutti gli impiegati che hanno una \textit{'Last evaluation: very good'} hanno anche un alto tasso di soddisfazione ('high\_SL'), mentre il viceversa accade nel $68\%$ dei casi. Queste regole non sono particolarmente interessanti dal punto di vista dell'analisi, poichè abbastanza ovvie, e non aggiungono molto alle analisi statistiche eseguite.
 
   
 \begin{minipage}[c]{0.55\textwidth}
@@ -127,7 +142,7 @@ e mostrano una correlazione positiva tra un alto livello di valutazione (\textit
   \scalebox{0.7}{
 \input{data/rules/rules_supp20.txt}  
 }
-\caption{Association rules per}
+\caption{Association rules per $MinSupp=20\%$ e $Lift> 1.5$}
 \label{tab:rules_general}
 \end{table}
 \end{minipage}
@@ -135,26 +150,22 @@ e mostrano una correlazione positiva tra un alto livello di valutazione (\textit
 
 \subsection{Regole specifiche}
 
-Usando $MinSupp=5\%$ naturalmente il numero di associazioni trovate è notevolmente superiore, e si possono osservare in Fig. REF regole con indice di $Lift$ che arriva a valori massimi di 6-7. Per valori del supporto superiori al $15\%$ il Lift è prossimo ad 1, tranne che per le regole discusse precedentemente.
+Usando $MinSupp=5\%$ naturalmente il numero di associazioni trovate cresce notevolmente, raggiungendo in questo caso le oltre 6000 regole.
+Le regole sono state dunque filtrate ulteriormente in modo da avere un interesse oggettivo considerando $Lift>1$ e $Conf>0.9$, ed inoltre $Supp < 20\%$, poichè per supporto maggiore sono state analizzate in precedenza. Le circa $1000$ regole ottenute sono rappresentate in Fig. \ref{fig:rules_specific}, si può osservare che le regole con Lift più alto hanno come parte conseguente, partendo dalla destra del grafico, \textit{Satisfaction Level: low , Number of Project: 2, Left : Y, Last Evaluation: Insufficient}.
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=1\textwidth]{../images/rules/rules_specific.pdf}
+  \includegraphics[width=0.5\textwidth]{../images/rules/rules_specific.pdf}
   \caption{Grafico,mettere LEGENDA PER COLORE E SIZE (Support)}
-  \label{fig:rules_general}
+  \label{fig:rules_specific}
 \end{figure}
 
 
-\subsection{Regole per impiegati che hanno lasciato (sistemare titolo)}
-
-\todo[inline]{SCRIVERE LA SPIEGAZIONE, tabelle successive sono poi da togliere}
-Tra le regole venute fuori con $MinSupp=5$ ho estratto quelle che hanno come parte conseguente
-gli impiegati che hanno lasciato, le ho poi filtrate per alta confidence, $Conf>0.90$,
-ottenendo circa 80 regole, per rappresentarle e non elencarle tutte ho fatto il seguente grafico,
-in cui è rappresentato il numero di regole in cui compare ciascun item nella parte antecedente.
-SPIEGARE MEGLIO, DA FINIRE
+%\subsection{Regole per impiegati che hanno lasciato (sistemare titolo)}
 
 
+
+%Criterio pruning regole: confidenza maggiore di 0.9, a parità di supporto (all'1/1000) si considera la regola più corta contenente le altre
 
 
 \begin{figure}[htbp]
@@ -164,27 +175,7 @@ SPIEGARE MEGLIO, DA FINIRE
   \label{fig:rules_left}
 \end{figure}
 
-
-
-
-
-
-\begin{table}[h!]
-  \centering
-  \scalebox{0.7}{
-\input{data/rules/rules_left.txt}  
-}
-\caption{Association rules per}
-\end{table}
-
-
-\begin{table}[h!]
-  \centering
-  \scalebox{0.7}{
-\input{data/rules/rules_supp5.txt}  
-}
-\caption{Association rules per}
-\end{table}
+\subsubsection{Altre regole interessanti}
 
 
 \clearpage

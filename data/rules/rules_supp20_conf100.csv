@@ -1,9 +1,9 @@
 Consequent,Antecedent,Supp,Conf,Lift
-high_SL,"('very good_LE', 'N_L', 'N_WA', 'N_P')",0.23,1.0,2.06
-high_SL,"('very good_LE', 'N_L', 'N_WA')",0.23,1.0,2.06
-high_SL,"('very good_LE', 'N_L', 'N_P')",0.27,1.0,2.06
-high_SL,"('very good_LE', 'N_L')",0.28,1.0,2.06
-high_SL,"('very good_LE', 'N_WA', 'N_P')",0.27,1.0,2.06
-high_SL,"('very good_LE', 'N_WA')",0.28,1.0,2.06
-high_SL,"('very good_LE', 'N_P')",0.32,1.0,2.06
-high_SL,"('very good_LE',)",0.33,1.0,2.06
+high_SL,"('very good_LE', 'N_L', 'N_WA', 'N_P')",0.226,1.0,2.061
+high_SL,"('very good_LE', 'N_L', 'N_WA')",0.232,1.0,2.061
+high_SL,"('very good_LE', 'N_L', 'N_P')",0.273,1.0,2.061
+high_SL,"('very good_LE', 'N_L')",0.281,1.0,2.061
+high_SL,"('very good_LE', 'N_WA', 'N_P')",0.272,1.0,2.061
+high_SL,"('very good_LE', 'N_WA')",0.278,1.0,2.061
+high_SL,"('very good_LE', 'N_P')",0.321,1.0,2.061
+high_SL,"('very good_LE',)",0.329,1.0,2.061
