@@ -87,7 +87,7 @@ Per estrarre le associazioni interessanti del dataset sono stati utilizzati due 
 La percentuale di dipendenti che hanno lasciato l'azienda corrisponde al $24\%$ del totale, assumendo come significativa una regola che riguardi almeno il $20\%$ dei dipendenti che hanno lasciato l'azienda, risulta un supporto minimo pari a circa $MinSupp=5\%$.
 \end{itemize}
 
-L'algoritmo a priori è stato eseguito per entrambi i valori di $MinSupp$ indicati, variando la confidenza minima \textit{MinConf} per valori compresi tra $50-100\%$. In Fig. sono riportate il numero di regole ottenute, in funzione della confidenza.
+L'analisi è stato eseguita per entrambi i valori di $MinSupp$ indicati, variando la confidenza minima \textit{MinConf} per valori compresi tra $50-100\%$. In Fig. sono riportate il numero di regole ottenute, in funzione della confidenza.
 Le regole cercate hanno un solo item come parte conseguente, per facilitare l'analisi e ridurre il numero di regole in partenza.
 Per ciascuna regola estratta sono stati calcolati gli indici di \textit{confidence} e \textit{lift} in modo da valutare l'interesse oggettivo delle associazioni trovate.
 
@@ -104,9 +104,9 @@ Per ciascuna regola estratta sono stati calcolati gli indici di \textit{confiden
 Le regole generali sono state cercate fissando a priori \textit{Minsupp=20\%} e considerando un valore di confidenza minimo \textit{MinConf=50\%} ,
 scelto osservando l'andamento in Fig. \ref{fig:rules-number}, sufficiente per ottenere un numero trattabile di regole. 
 
-Per un valore di \textit{MinConf=50\%} sono state ottenute 268 regole  rappresentate in Fig. \ref{fig:rules-general}, con i rispettivi valori di Lift, Confidence e Support. Si osserva che la maggior parte delle regole ha un Lift basso, minore di 1.5.
+Per un valore di \textit{MinConf=50\%} sono state ottenute 268 regole  rappresentate in Fig. \ref{fig:rules_general}, con i rispettivi valori di Lift, Confidence e Support. Si osserva che la maggior parte delle regole ha un Lift basso, minore di 1.5.
 Le regole sono state rappresentate raffigurando il valore di $Conf$ in funzione di $Lift$. Questo permette di identificare visivamente in modo immediato le regole con la stessa parte conseguente, poichè in tal caso i due indici sono proporzionali con coefficiente pari al supporto della parte conseguente.
-Le regole che possono essere considerate oggettivamente interessanti, con $Lift> 1.5$, ben visibili nella parte destra del grafico sono riportate in Tab \ref{tab:rules-general} e mostrano una correlazione positiva tra un alto livello di valutazione (\textit{very good, Last Evaluation}) ed un alto grado di soddisfazione degli impiegati, a cui si accompagnano nella parte antecedente la mancanza di incidenti sul lavoro (\textit{N WA}) ed il fatto di essere rimasti in azienda. Il fatto di non aver ricevuto una promozione ($N\_P$) non è semanticamente rilevante.
+Le regole che possono essere considerate oggettivamente interessanti, con $Lift> 1.5$, visibili nella parte destra del grafico sono riportate in Tab \ref{tab:rules_general} e mostrano un legame positivo tra un alto livello di valutazione (\textit{very good, Last Evaluation}) ed un alto grado di soddisfazione degli impiegati, a cui si accompagnano nella parte antecedente la mancanza di incidenti sul lavoro (\textit{N WA}) ed il fatto di essere rimasti in azienda.
 
 Tutti gli impiegati che hanno una \textit{'Last evaluation: very good'} hanno anche un alto tasso di soddisfazione ('high\_SL'), mentre il viceversa accade nel $68\%$ dei casi. Queste regole non sono particolarmente interessanti dal punto di vista dell'analisi, poichè abbastanza ovvie, e non aggiungono molto alle analisi statistiche eseguite.
 
@@ -147,26 +147,21 @@ Le regole sono state dunque filtrate ulteriormente in modo da avere un interesse
 \subsubsection{Regole per impiegati che hanno lasciato }
 Tra le regole specifiche sono state estratte solo quelle con parte conseguente uguale a \textit{Left:YES}.
 Per filtrarle ulteriormente è stato usato un ulteriore criterio, che riportiamo insieme a tutti gli step successivi che hanno portato alla
-selezione delle regole più interessanti per gli impiegati che hanno lasciato, riportate in Fig. \ref{fig:rules_left}
+selezione delle regole più interessanti, riguardanti gli impiegati che hanno lasciato l'azienda, riportate in Fig. \ref{fig:rules_left}:
 %Criterio pruning regole: confidenza maggiore di 0.9, a parità di supporto (all'1/1000) si considera la regola più corta contenente le altre
 
 \begin{enumerate}
 \item $MinSupp = 5\%$ e $MinConf = 50\%$ nell'algoritmo \textit{apriori}, ottenendo $N_{rules}=264$ per la parte conseguente $Left: Yes$ ; 
 \item rimozione delle regole contenenti $Work Accident:No$ , poichè non è semanticamente sensata l'implicazione di $Left: Yes$, ottenendo $N_{rules}=136$; 
-\item filtro a posteriori con $Lift>1$ e  $Conf>0.9$, ottenendo $N_{rules}=38$
+\item filtro a posteriori con $Lift>1$ e  $Conf>0.85$, ottenendo $N_{rules}=62$
 
-\item Per le regole con itemsets delle parti antecedenti sottoinsiemi l'uno dell'altro e \textit{con supporto uguale} (confronto all'1/1000), sono state considerate solo le regole più corte, con parte antecedente con un numero minore di items.
-  Ad esempio per due regole del tipo $r_1:\, A \rightarrow Y$, $r2:\,AB \rightarrow Y$, con $A,B,Y$ differenti item, e $Supp_1= Supp_2$ si seleziona solo la regola $r_1$. 
+\item Per le regole con itemsets delle parti antecedenti sottoinsiemi l'uno dell'altro e \textit{con supporto uguale} (confronto all'1/1000), sono state considerate le regole con parte antecedente più lunga,
+  Ad esempio per due regole del tipo $r_1:\, A \rightarrow Y$, $r2:\,AB \rightarrow Y$, con $A,B,Y$ differenti item, e $Supp_1= Supp_2$ si seleziona solo la regola $r_2$. 
 \end{enumerate}
 %L'ultimo criterio permette di non ripetere regole che hanno la stessa base di applicazione, ovvero lo stesso supporto.
-Le 14 regole ottenute con il procedimento spiegato sono riportate in Fig. \ref{fig:rules_left} insieme ai rispettivi valori di confidence e support.
+Le 12 regole ottenute con il procedimento spiegato sono riportate in Fig. \ref{fig:rules_left} insieme ai rispettivi valori di confidence e support.
 E' inoltre riportato il supporto relativo alle persone che hanno lasciato, $Supp\, Left$.
 Le regole sono rappresentate in verticale, con i valori $10$ e $0$ che indicano la presenza o meno di un item nella parte antecedente della regola.
-
-Il supporto massimo risulta pari al $10\%$, corrispondente ad una percentuale di circa il $40\%$ tra gli impiegati che hanno lasciato.
-Si osserva dunque una correlazione positiva tra gli item riportati in Fig. \ref{fig:rules_left} e il fatto di aver lasciato l'azienda.
-
-In generale le regole mostrano che le persone che lasciano l'azienda sono poco stimolate, risulta che circa il $40\%$ degli impiegati che hanno lasciato l'azienda lavora a solo due progetti, con un impegno di ore mensili basso, una soddisfazione media, ed una presenza in azienda da 3 anni. Altri aspetti rilevanti sono la mancanza di una promozione, una valutazione insufficiente ed un salario basso.
 
 \begin{figure}[htbp]
   \centering
@@ -175,8 +170,23 @@ In generale le regole mostrano che le persone che lasciano l'azienda sono poco s
   \label{fig:rules_left}
 \end{figure}
 
+Il supporto massimo risulta pari al $10\%$, corrispondente ad una percentuale di circa il $40\%$ tra gli impiegati che hanno lasciato.
+Si osserva dunque una correlazione positiva tra gli item riportati in Fig. \ref{fig:rules_left} e il fatto di aver lasciato l'azienda.
+
+In generale le regole mostrano che le persone che lasciano l'azienda sono poco stimolate, risulta che circa il $40\%$ degli impiegati che hanno lasciato l'azienda lavora a solo due progetti, con un impegno di ore mensili basso, una soddisfazione media, ed una presenza in azienda da 3 anni. Altri aspetti rilevanti sono la mancanza di una promozione, una valutazione insufficiente ed un salario basso.
+
+
 \subsubsection{Altre regole interessanti}
 
+Dalle regole specifiche estratte ne sono state ricavate alcune interessanti, per alto valore di $Conf$ e $Lift$, riportate in Tab.
+\ref{tab:altreregole}
+
+\begin{table}[htbp]
+  \centering
+\input{"data/rules/altreregole.txt"}
+\caption{Altre regole interessanti}
+\label{tab:altreregole}
+\end{table}
 
 \clearpage
 \newpage
