@@ -2,9 +2,9 @@ Per definire le association rules prima si sono seguite le seguenti operazioni:
 \begin{itemize}
 \item Abbiamo trasformato le variabili da stringhe a numeriche, per quanto riguarda gli attributi \textit{Salary}
 e \textit{Department}.
-\item Abbiamo raggruppato le variabili \textit{Last Evaluation}, \textit{Satisfaction Level} e
-\textit{Average Montly Hours}, usando $3$ bins sia per la prima che per la seconda variabile, usando intervalli
-specifici, e $2$ bins per la terza variabile, applicando anche in questo caso una suddivisione ad hoc.
+\item Abbiamo raggruppato le variabili \textit{Last Evaluation} e \textit{Satisfaction Level} e \textit{Average Montly Hours}. 
+Abbiamo utilizzato $4$ bins per \textit{Last Evaluation}, ovvero suddividendo l'intervallo in quattro parti uguali, identificate con $insufficient$, $sufficient$ e $good$ e $very good$.
+Con la stessa logica abbiamo usato $3$ bins per \textit{Satisfaction Level}, identificando ciascun intervallo con $low$, $medium$ e $high$. Infine utilizziamo $2$ bins per \textit{Average Montly Hours}, definendo i due intervalli come $standard$ e $intensive$.
 \item Per rendere unici i risultati numerici, è stata aggiunta una stringa subito successiva al valore numerico
 in modo da non renderlo ambiguo e sopratutto in modo da poter capire univocamente a che attributo si riferisca.
 \end{itemize}
