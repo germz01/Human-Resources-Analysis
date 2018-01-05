@@ -4,7 +4,9 @@ Per definire le association rules prima si sono seguite le seguenti operazioni:
 e \textit{Department}.
 \item Abbiamo raggruppato le variabili \textit{Last Evaluation} e \textit{Satisfaction Level} e \textit{Average Montly Hours}.
 Abbiamo utilizzato $4$ bins per \textit{Last Evaluation}, ovvero suddividendo l'intervallo in quattro parti uguali, identificate con $insufficient$, $sufficient$ e $good$ e $very good$.
-Con la stessa logica abbiamo usato $3$ bins per \textit{Satisfaction Level}, identificando ciascun intervallo con $low$, $medium$ e $high$. Infine utilizziamo $2$ bins per \textit{Average Montly Hours}, definendo i due intervalli come $standard$ e $intensive$.
+Con la stessa logica abbiamo usato $3$ bins per \textit{Satisfaction Level}, identificando ciascun intervallo con $low$, $medium$ e $high$. Infine utilizziamo $2$ bins per \textit{Average Montly Hours}, definendo i due intervalli come $standard$ e $intensive$. La scelta del numero di bins è basata sulla distribuzione osservata delle variabili.
+
+
 \item Per rendere unici i risultati numerici, è stata aggiunta una stringa subito successiva al valore numerico
 in modo da non renderlo ambiguo e sopratutto in modo da poter capire univocamente a che attributo si riferisca.
 \end{itemize}
@@ -167,7 +169,7 @@ Le regole sono rappresentate in verticale, con i valori $10$ e $0$ che indicano 
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.99\textwidth]{../images/rules/left_heatmap.pdf}
-  \caption{Ogni colonna rappresenta una regola relativa alla parte interessanti con parte conseguente gli impiegati che hanno lasciato l'azienda. I valori 10-0 corrispondono alla presenza o meno di un item nella parte antecedente della regola}
+  \caption{ Regole interessanti con parte conseguente \textit{Left:Yes}. Per ogni colonna i valori 10-0 corrispondono alla presenza o meno di un item nella parte antecedente della regola. Le ultime tre righe riportano il valore di Confidence, Support, e Support relativo ai dipendenti che lasciano l'azienda.}
   \label{fig:rules_left}
 \end{figure}
 
@@ -180,7 +182,7 @@ In generale le regole mostrano che le persone che lasciano l'azienda sono poco s
 \subsubsection{Altre regole interessanti}
 
 Dalle regole specifiche estratte ne sono state ricavate alcune interessanti, per alto valore di $Conf$ e $Lift$, riportate in Tab.
-\ref{tab:altreregole}
+\ref{tab:altreregole}. Si osserva che un basso grado di soddisfazione ('low\_SL') è associato all'aver lasciato l'azienda, ad avere una valutazione bassa e ore lavorate mensilmente alte. Un numero di progetti su cui un dipendente lavora pari a 2 è legato, tra gli altri item in tabella, ad aver lasciato l'azienda, come mostrato anche nelle regole con parte conseguente \textit{Left:Yes}. Infine una valutazione del dipendente insufficiente è legata a bassa soddisfazione, alto numero di ore lavorate e a mancata promozione. 
 
 \begin{table}[htbp]
   \centering
