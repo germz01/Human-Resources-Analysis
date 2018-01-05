@@ -1,0 +1,269 @@
+,Consequent,Antecedent,Supp,Conf,Lift,Consequent_
+74,very good_LE,"('high_SL', 'N_WA')",0.278,0.681,2.07, Last_Evaluation:very good 
+71,very good_LE,"('high_SL', 'N_WA', 'N_P')",0.272,0.68,2.068, Last_Evaluation:very good 
+55,high_SL,"('very good_LE', 'N_L', 'N_WA', 'N_P')",0.226,1.0,2.061, Satisfaction_Level:high 
+59,high_SL,"('very good_LE', 'N_L', 'N_WA')",0.232,1.0,2.061, Satisfaction_Level:high 
+63,high_SL,"('very good_LE', 'N_L', 'N_P')",0.273,1.0,2.061, Satisfaction_Level:high 
+66,high_SL,"('very good_LE', 'N_L')",0.281,1.0,2.061, Satisfaction_Level:high 
+70,high_SL,"('very good_LE', 'N_WA', 'N_P')",0.272,1.0,2.061, Satisfaction_Level:high 
+73,high_SL,"('very good_LE', 'N_WA')",0.278,1.0,2.061, Satisfaction_Level:high 
+76,high_SL,"('very good_LE', 'N_P')",0.321,1.0,2.061, Satisfaction_Level:high 
+78,high_SL,"('very good_LE',)",0.329,1.0,2.061, Satisfaction_Level:high 
+79,very good_LE,"('high_SL',)",0.329,0.678,2.061, Last_Evaluation:very good 
+77,very good_LE,"('high_SL', 'N_P')",0.321,0.677,2.059, Last_Evaluation:very good 
+60,very good_LE,"('high_SL', 'N_L', 'N_WA')",0.232,0.668,2.03, Last_Evaluation:very good 
+56,very good_LE,"('high_SL', 'N_L', 'N_WA', 'N_P')",0.226,0.667,2.026, Last_Evaluation:very good 
+67,very good_LE,"('high_SL', 'N_L')",0.281,0.666,2.025, Last_Evaluation:very good 
+64,very good_LE,"('high_SL', 'N_L', 'N_P')",0.273,0.665,2.023, Last_Evaluation:very good 
+100,medium_SL,"('standard_H', 'N_WA', 'N_P')",0.217,0.521,1.379, Satisfaction_Level:medium 
+103,medium_SL,"('standard_H', 'N_WA')",0.221,0.519,1.374, Satisfaction_Level:medium 
+99,standard_H,"('medium_SL', 'N_WA', 'N_P')",0.217,0.677,1.36, Average_Montly_Hours:standard 
+102,standard_H,"('medium_SL', 'N_WA')",0.221,0.677,1.36, Average_Montly_Hours:standard 
+93,3_T,"('medium_SL', 'N_P')",0.216,0.583,1.358, Time_Spend_Company:3 
+94,medium_SL,"('3_T', 'N_P')",0.216,0.513,1.357, Satisfaction_Level:medium 
+95,3_T,"('medium_SL',)",0.219,0.579,1.347, Time_Spend_Company:3 
+96,medium_SL,"('3_T',)",0.219,0.509,1.347, Satisfaction_Level:medium 
+105,standard_H,"('medium_SL', 'N_P')",0.246,0.664,1.334, Average_Montly_Hours:standard 
+106,medium_SL,"('standard_H', 'N_P')",0.246,0.504,1.333, Satisfaction_Level:medium 
+107,standard_H,"('medium_SL',)",0.25,0.662,1.33, Average_Montly_Hours:standard 
+108,medium_SL,"('standard_H',)",0.25,0.503,1.33, Satisfaction_Level:medium 
+166,N_L,"('high_SL', 'standard_H')",0.204,0.984,1.291, Left:N 
+1,N_L,"('2_T', 'N_P')",0.209,0.983,1.291, Left:N 
+2,N_L,"('2_T',)",0.213,0.984,1.291, Left:N 
+27,N_L,"('3_NP', 'N_P')",0.259,0.982,1.289, Left:N 
+28,N_L,"('3_NP',)",0.266,0.982,1.289, Left:N 
+126,3_T,"('standard_H', 'N_WA', 'N_P')",0.231,0.554,1.289, Time_Spend_Company:3 
+129,3_T,"('standard_H', 'N_WA')",0.235,0.552,1.286, Time_Spend_Company:3 
+25,N_L,"('3_NP', 'N_WA')",0.218,0.979,1.285, Left:N 
+23,N_L,"('3_NP', 'N_WA', 'N_P')",0.213,0.978,1.284, Left:N 
+125,standard_H,"('3_T', 'N_WA', 'N_P')",0.231,0.636,1.277, Average_Montly_Hours:standard 
+128,standard_H,"('3_T', 'N_WA')",0.235,0.635,1.276, Average_Montly_Hours:standard 
+132,3_T,"('standard_H', 'N_P')",0.264,0.541,1.259, Time_Spend_Company:3 
+131,standard_H,"('3_T', 'N_P')",0.264,0.627,1.259, Average_Montly_Hours:standard 
+134,3_T,"('standard_H',)",0.269,0.54,1.256, Time_Spend_Company:3 
+133,standard_H,"('3_T',)",0.269,0.625,1.256, Average_Montly_Hours:standard 
+16,N_L,"('good_LE',)",0.245,0.933,1.225, Left:N 
+15,N_L,"('good_LE', 'N_P')",0.239,0.932,1.223, Left:N 
+13,N_L,"('good_LE', 'N_WA')",0.201,0.923,1.212, Left:N 
+175,high_SL,"('intensive_H', 'N_L')",0.217,0.581,1.196, Satisfaction_Level:high 
+172,high_SL,"('intensive_H', 'N_L', 'N_P')",0.211,0.579,1.194, Satisfaction_Level:high 
+47,N_L,"('4_NP',)",0.264,0.906,1.189, Left:N 
+46,N_L,"('4_NP', 'N_P')",0.256,0.905,1.187, Left:N 
+44,N_L,"('4_NP', 'N_WA')",0.22,0.896,1.176, Left:N 
+42,N_L,"('4_NP', 'N_WA', 'N_P')",0.214,0.894,1.174, Left:N 
+178,intensive_H,"('high_SL', 'N_WA', 'N_P')",0.231,0.579,1.153, Average_Montly_Hours:intensive 
+181,intensive_H,"('high_SL', 'N_WA')",0.237,0.579,1.152, Average_Montly_Hours:intensive 
+194,high_SL,"('N_L', 'N_WA')",0.348,0.554,1.141, Satisfaction_Level:high 
+187,high_SL,"('intensive_H',)",0.278,0.553,1.14, Satisfaction_Level:high 
+198,N_L,"('high_SL',)",0.422,0.869,1.14, Left:N 
+199,high_SL,"('N_L',)",0.422,0.553,1.14, Satisfaction_Level:high 
+186,intensive_H,"('high_SL',)",0.278,0.572,1.14, Average_Montly_Hours:intensive 
+184,intensive_H,"('high_SL', 'N_P')",0.271,0.572,1.139, Average_Montly_Hours:intensive 
+191,high_SL,"('N_L', 'N_WA', 'N_P')",0.339,0.553,1.139, Satisfaction_Level:high 
+197,high_SL,"('N_L', 'N_P')",0.41,0.553,1.139, Satisfaction_Level:high 
+196,N_L,"('high_SL', 'N_P')",0.41,0.866,1.137, Left:N 
+185,high_SL,"('intensive_H', 'N_P')",0.271,0.552,1.137, Satisfaction_Level:high 
+182,high_SL,"('intensive_H', 'N_WA')",0.237,0.55,1.134, Satisfaction_Level:high 
+179,high_SL,"('intensive_H', 'N_WA', 'N_P')",0.231,0.548,1.129, Satisfaction_Level:high 
+65,N_L,"('very good_LE', 'high_SL')",0.281,0.853,1.12, Left:N 
+87,N_L,"('very good_LE',)",0.281,0.853,1.12, Left:N 
+193,N_L,"('high_SL', 'N_WA')",0.348,0.852,1.118, Left:N 
+86,N_L,"('very good_LE', 'N_P')",0.273,0.851,1.116, Left:N 
+62,N_L,"('very good_LE', 'high_SL', 'N_P')",0.273,0.851,1.116, Left:N 
+5,N_WA,"('Y_L', 'N_P')",0.226,0.954,1.115, Work_Accident:N 
+190,N_L,"('high_SL', 'N_WA', 'N_P')",0.339,0.849,1.114, Left:N 
+6,N_WA,"('Y_L',)",0.227,0.953,1.114, Work_Accident:N 
+58,N_L,"('very good_LE', 'high_SL', 'N_WA')",0.232,0.835,1.096, Left:N 
+84,N_L,"('very good_LE', 'N_WA')",0.232,0.835,1.096, Left:N 
+82,N_L,"('very good_LE', 'N_WA', 'N_P')",0.226,0.832,1.092, Left:N 
+54,N_L,"('very good_LE', 'high_SL', 'N_WA', 'N_P')",0.226,0.832,1.092, Left:N 
+167,high_SL,"('standard_H', 'N_L')",0.204,0.527,1.086, Satisfaction_Level:high 
+10,N_WA,"('insufficient_LE',)",0.233,0.9,1.052, Work_Accident:N 
+9,N_WA,"('insufficient_LE', 'N_P')",0.23,0.9,1.052, Work_Accident:N 
+160,N_L,"('medium_S',)",0.342,0.796,1.044, Left:N 
+159,N_L,"('medium_S', 'N_P')",0.33,0.791,1.038, Left:N 
+98,N_WA,"('medium_SL', 'standard_H', 'N_P')",0.217,0.884,1.034, Work_Accident:N 
+101,N_WA,"('medium_SL', 'standard_H')",0.221,0.883,1.032, Work_Accident:N 
+148,high_SL,"('medium_S',)",0.215,0.5,1.031, Satisfaction_Level:high 
+122,low_S,"('3_T', 'N_P')",0.212,0.503,1.031, Salary:low 
+174,intensive_H,"('high_SL', 'N_L')",0.217,0.516,1.027, Average_Montly_Hours:intensive 
+173,N_L,"('high_SL', 'intensive_H')",0.217,0.783,1.027, Left:N 
+231,standard_H,"('N_L', 'N_WA', 'N_P')",0.313,0.51,1.024, Average_Montly_Hours:standard 
+234,standard_H,"('N_L', 'N_WA')",0.32,0.51,1.024, Average_Montly_Hours:standard 
+124,N_WA,"('3_T', 'standard_H', 'N_P')",0.231,0.876,1.024, Work_Accident:N 
+237,standard_H,"('N_L', 'N_P')",0.378,0.51,1.024, Average_Montly_Hours:standard 
+171,intensive_H,"('high_SL', 'N_L', 'N_P')",0.211,0.514,1.023, Average_Montly_Hours:intensive 
+127,N_WA,"('3_T', 'standard_H')",0.235,0.875,1.023, Work_Accident:N 
+238,N_L,"('standard_H',)",0.387,0.778,1.021, Left:N 
+170,N_L,"('high_SL', 'intensive_H', 'N_P')",0.211,0.778,1.021, Left:N 
+239,standard_H,"('N_L',)",0.387,0.508,1.021, Average_Montly_Hours:standard 
+236,N_L,"('standard_H', 'N_P')",0.378,0.776,1.018, Left:N 
+4,N_P,"('Y_L', 'N_WA')",0.226,0.996,1.017, Promotion_Last_5_Years:N 
+7,N_P,"('Y_L',)",0.237,0.995,1.016, Promotion_Last_5_Years:N 
+212,N_P,"('low_S', 'intensive_H', 'N_WA')",0.207,0.995,1.016, Promotion_Last_5_Years:N 
+157,N_L,"('medium_S', 'N_WA')",0.284,0.774,1.016, Left:N 
+224,N_P,"('low_S', 'N_WA')",0.415,0.992,1.014, Promotion_Last_5_Years:N 
+118,N_WA,"('medium_SL', 'N_P')",0.321,0.867,1.014, Work_Accident:N 
+215,N_P,"('low_S', 'intensive_H')",0.241,0.993,1.014, Promotion_Last_5_Years:N 
+227,N_P,"('low_S',)",0.483,0.991,1.013, Promotion_Last_5_Years:N 
+216,N_P,"('low_S', 'N_L', 'N_WA')",0.277,0.991,1.013, Promotion_Last_5_Years:N 
+165,N_P,"('high_SL', 'low_S')",0.227,0.991,1.013, Promotion_Last_5_Years:N 
+121,N_P,"('3_T', 'low_S')",0.212,0.99,1.012, Promotion_Last_5_Years:N 
+204,N_P,"('low_S', 'standard_H', 'N_WA')",0.208,0.99,1.012, Promotion_Last_5_Years:N 
+152,intensive_H,"('medium_S',)",0.218,0.508,1.012, Average_Montly_Hours:intensive 
+209,N_P,"('low_S', 'standard_H')",0.243,0.989,1.011, Promotion_Last_5_Years:N 
+221,N_P,"('low_S', 'N_L')",0.339,0.99,1.011, Promotion_Last_5_Years:N 
+208,standard_H,"('low_S', 'N_WA')",0.21,0.503,1.011, Average_Montly_Hours:standard 
+155,N_L,"('medium_S', 'N_WA', 'N_P')",0.275,0.769,1.01, Left:N 
+8,N_P,"('insufficient_LE', 'N_WA')",0.23,0.989,1.01, Promotion_Last_5_Years:N 
+119,N_WA,"('medium_SL',)",0.326,0.864,1.01, Work_Accident:N 
+11,N_P,"('insufficient_LE',)",0.256,0.988,1.01, Promotion_Last_5_Years:N 
+211,standard_H,"('low_S',)",0.245,0.503,1.01, Average_Montly_Hours:standard 
+144,N_WA,"('3_T', 'N_P')",0.363,0.863,1.009, Work_Accident:N 
+92,N_P,"('medium_SL', '3_T')",0.216,0.987,1.008, Promotion_Last_5_Years:N 
+206,standard_H,"('low_S', 'N_WA', 'N_P')",0.208,0.502,1.008, Average_Montly_Hours:standard 
+210,standard_H,"('low_S', 'N_P')",0.243,0.502,1.008, Average_Montly_Hours:standard 
+37,N_WA,"('0_D', 'N_P')",0.232,0.862,1.008, Work_Accident:N 
+151,intensive_H,"('medium_S', 'N_P')",0.211,0.506,1.007, Average_Montly_Hours:intensive 
+145,N_WA,"('3_T',)",0.37,0.861,1.007, Work_Accident:N 
+205,N_WA,"('low_S', 'standard_H', 'N_P')",0.208,0.859,1.005, Work_Accident:N 
+3,N_P,"('2_T',)",0.213,0.983,1.005, Promotion_Last_5_Years:N 
+253,N_WA,"('intensive_H', 'N_P')",0.422,0.86,1.005, Work_Accident:N 
+97,N_P,"('medium_SL', 'standard_H', 'N_WA')",0.217,0.983,1.005, Promotion_Last_5_Years:N 
+252,N_P,"('intensive_H', 'N_WA')",0.422,0.982,1.004, Promotion_Last_5_Years:N 
+225,N_WA,"('low_S', 'N_P')",0.415,0.859,1.004, Work_Accident:N 
+213,N_WA,"('low_S', 'intensive_H', 'N_P')",0.207,0.859,1.004, Work_Accident:N 
+207,N_WA,"('low_S', 'standard_H')",0.21,0.859,1.004, Work_Accident:N 
+0,N_P,"('2_T', 'N_L')",0.209,0.983,1.004, Promotion_Last_5_Years:N 
+17,N_P,"('good_LE', 'N_WA')",0.213,0.983,1.004, Promotion_Last_5_Years:N 
+117,N_P,"('medium_SL', 'N_WA')",0.321,0.983,1.004, Promotion_Last_5_Years:N 
+123,N_P,"('3_T', 'standard_H', 'N_WA')",0.231,0.983,1.004, Promotion_Last_5_Years:N 
+143,N_P,"('3_T', 'N_WA')",0.363,0.982,1.003, Promotion_Last_5_Years:N 
+38,N_WA,"('0_D',)",0.237,0.858,1.003, Work_Accident:N 
+130,N_P,"('3_T', 'standard_H')",0.264,0.982,1.003, Promotion_Last_5_Years:N 
+104,N_P,"('medium_SL', 'standard_H')",0.246,0.982,1.003, Promotion_Last_5_Years:N 
+226,N_WA,"('low_S',)",0.418,0.858,1.003, Work_Accident:N 
+214,N_WA,"('low_S', 'intensive_H')",0.208,0.857,1.002, Work_Accident:N 
+254,intensive_H,"('N_WA', 'N_P')",0.422,0.503,1.002, Average_Montly_Hours:intensive 
+266,N_P,"('N_WA',)",0.839,0.981,1.002, Promotion_Last_5_Years:N 
+162,N_WA,"('medium_S', 'N_P')",0.358,0.857,1.002, Work_Accident:N 
+267,N_WA,"('N_P',)",0.839,0.857,1.002, Work_Accident:N 
+243,N_P,"('standard_H',)",0.488,0.98,1.001, Promotion_Last_5_Years:N 
+256,intensive_H,"('N_WA',)",0.43,0.503,1.001, Average_Montly_Hours:intensive 
+240,N_P,"('standard_H', 'N_WA')",0.417,0.98,1.001, Promotion_Last_5_Years:N 
+36,N_P,"('0_D', 'N_WA')",0.232,0.98,1.001, Promotion_Last_5_Years:N 
+255,N_WA,"('intensive_H',)",0.43,0.856,1.001, Work_Accident:N 
+241,N_WA,"('standard_H', 'N_P')",0.417,0.855,1.0, Work_Accident:N 
+176,N_P,"('high_SL', 'intensive_H', 'N_WA')",0.231,0.978,1.0, Promotion_Last_5_Years:N 
+20,N_P,"('good_LE',)",0.256,0.979,1.0, Promotion_Last_5_Years:N 
+120,N_P,"('medium_SL',)",0.37,0.979,1.0, Promotion_Last_5_Years:N 
+146,N_P,"('3_T',)",0.421,0.979,1.0, Promotion_Last_5_Years:N 
+257,N_P,"('intensive_H',)",0.491,0.978,0.999, Promotion_Last_5_Years:N 
+29,N_P,"('3_NP', 'N_WA')",0.218,0.978,0.999, Promotion_Last_5_Years:N 
+242,N_WA,"('standard_H',)",0.425,0.855,0.999, Work_Accident:N 
+135,N_P,"('3_T', 'N_L', 'N_WA')",0.263,0.978,0.999, Promotion_Last_5_Years:N 
+109,N_P,"('medium_SL', 'N_L', 'N_WA')",0.217,0.977,0.999, Promotion_Last_5_Years:N 
+14,N_P,"('good_LE', 'N_L')",0.239,0.977,0.999, Promotion_Last_5_Years:N 
+21,N_P,"('3_NP', 'N_L', 'N_WA')",0.213,0.977,0.999, Promotion_Last_5_Years:N 
+200,N_P,"('high_SL', 'N_WA')",0.4,0.977,0.999, Promotion_Last_5_Years:N 
+163,N_WA,"('medium_S',)",0.367,0.855,0.999, Work_Accident:N 
+258,intensive_H,"('N_P',)",0.491,0.502,0.999, Average_Montly_Hours:intensive 
+149,N_P,"('medium_S', 'standard_H')",0.206,0.977,0.998, Promotion_Last_5_Years:N 
+168,N_P,"('high_SL', 'standard_H')",0.203,0.977,0.998, Promotion_Last_5_Years:N 
+32,N_P,"('3_NP',)",0.264,0.977,0.998, Promotion_Last_5_Years:N 
+88,N_P,"('very good_LE', 'N_WA')",0.272,0.976,0.998, Promotion_Last_5_Years:N 
+177,N_WA,"('high_SL', 'intensive_H', 'N_P')",0.231,0.854,0.998, Work_Accident:N 
+68,N_P,"('very good_LE', 'high_SL', 'N_WA')",0.272,0.976,0.998, Promotion_Last_5_Years:N 
+183,N_P,"('high_SL', 'intensive_H')",0.271,0.976,0.997, Promotion_Last_5_Years:N 
+39,N_P,"('0_D',)",0.269,0.976,0.997, Promotion_Last_5_Years:N 
+235,N_P,"('standard_H', 'N_L')",0.378,0.976,0.997, Promotion_Last_5_Years:N 
+228,N_P,"('standard_H', 'N_L', 'N_WA')",0.313,0.976,0.997, Promotion_Last_5_Years:N 
+203,N_P,"('high_SL',)",0.474,0.976,0.997, Promotion_Last_5_Years:N 
+75,N_P,"('very good_LE', 'high_SL')",0.321,0.975,0.997, Promotion_Last_5_Years:N 
+26,N_P,"('3_NP', 'N_L')",0.259,0.976,0.997, Promotion_Last_5_Years:N 
+140,N_P,"('3_T', 'N_L')",0.316,0.975,0.997, Promotion_Last_5_Years:N 
+244,N_P,"('intensive_H', 'N_L', 'N_WA')",0.301,0.976,0.997, Promotion_Last_5_Years:N 
+259,N_P,"('N_L', 'N_WA')",0.613,0.976,0.997, Promotion_Last_5_Years:N 
+91,N_P,"('very good_LE',)",0.321,0.975,0.997, Promotion_Last_5_Years:N 
+48,N_P,"('4_NP', 'N_WA')",0.239,0.975,0.996, Promotion_Last_5_Years:N 
+161,N_P,"('medium_S', 'N_WA')",0.358,0.975,0.996, Promotion_Last_5_Years:N 
+180,N_WA,"('high_SL', 'intensive_H')",0.237,0.851,0.995, Work_Accident:N 
+265,N_L,"('N_P',)",0.742,0.758,0.995, Left:N 
+264,N_P,"('N_L',)",0.742,0.974,0.995, Promotion_Last_5_Years:N 
+188,N_P,"('high_SL', 'N_L', 'N_WA')",0.339,0.974,0.995, Promotion_Last_5_Years:N 
+195,N_P,"('high_SL', 'N_L')",0.41,0.973,0.994, Promotion_Last_5_Years:N 
+51,N_P,"('4_NP',)",0.283,0.973,0.994, Promotion_Last_5_Years:N 
+80,N_P,"('very good_LE', 'N_L', 'N_WA')",0.226,0.972,0.994, Promotion_Last_5_Years:N 
+52,N_P,"('very good_LE', 'high_SL', 'N_L', 'N_WA')",0.226,0.972,0.994, Promotion_Last_5_Years:N 
+114,N_P,"('medium_SL', 'N_L')",0.261,0.973,0.994, Promotion_Last_5_Years:N 
+40,N_P,"('4_NP', 'N_L', 'N_WA')",0.214,0.973,0.994, Promotion_Last_5_Years:N 
+164,N_P,"('medium_S',)",0.418,0.972,0.993, Promotion_Last_5_Years:N 
+45,N_P,"('4_NP', 'N_L')",0.256,0.971,0.993, Promotion_Last_5_Years:N 
+85,N_P,"('very good_LE', 'N_L')",0.273,0.972,0.993, Promotion_Last_5_Years:N 
+61,N_P,"('very good_LE', 'high_SL', 'N_L')",0.273,0.972,0.993, Promotion_Last_5_Years:N 
+249,N_P,"('intensive_H', 'N_L')",0.364,0.971,0.992, Promotion_Last_5_Years:N 
+35,N_L,"('0_D',)",0.208,0.755,0.991, Left:N 
+33,N_P,"('0_D', 'N_L')",0.202,0.97,0.991, Promotion_Last_5_Years:N 
+169,N_P,"('high_SL', 'intensive_H', 'N_L')",0.211,0.969,0.99, Promotion_Last_5_Years:N 
+89,N_WA,"('very good_LE', 'N_P')",0.272,0.847,0.99, Work_Accident:N 
+153,N_P,"('medium_S', 'N_L', 'N_WA')",0.275,0.969,0.99, Promotion_Last_5_Years:N 
+69,N_WA,"('very good_LE', 'high_SL', 'N_P')",0.272,0.847,0.99, Work_Accident:N 
+142,N_L,"('3_T',)",0.324,0.754,0.989, Left:N 
+90,N_WA,"('very good_LE',)",0.278,0.846,0.989, Work_Accident:N 
+72,N_WA,"('very good_LE', 'high_SL')",0.278,0.846,0.989, Work_Accident:N 
+49,N_WA,"('4_NP', 'N_P')",0.239,0.845,0.988, Work_Accident:N 
+233,N_L,"('standard_H', 'N_WA')",0.32,0.753,0.988, Left:N 
+150,N_P,"('medium_S', 'intensive_H')",0.211,0.967,0.988, Promotion_Last_5_Years:N 
+147,N_P,"('medium_S', 'high_SL')",0.208,0.967,0.988, Promotion_Last_5_Years:N 
+158,N_P,"('medium_S', 'N_L')",0.33,0.966,0.987, Promotion_Last_5_Years:N 
+141,N_L,"('3_T', 'N_P')",0.316,0.751,0.986, Left:N 
+50,N_WA,"('4_NP',)",0.245,0.844,0.986, Work_Accident:N 
+201,N_WA,"('high_SL', 'N_P')",0.4,0.843,0.986, Work_Accident:N 
+202,N_WA,"('high_SL',)",0.409,0.842,0.985, Work_Accident:N 
+34,N_L,"('0_D', 'N_P')",0.202,0.751,0.985, Left:N 
+230,N_L,"('standard_H', 'N_WA', 'N_P')",0.313,0.75,0.984, Left:N 
+251,N_L,"('intensive_H',)",0.375,0.746,0.979, Left:N 
+41,N_WA,"('4_NP', 'N_L', 'N_P')",0.214,0.836,0.977, Work_Accident:N 
+154,N_WA,"('medium_S', 'N_L', 'N_P')",0.275,0.834,0.975, Work_Accident:N 
+43,N_WA,"('4_NP', 'N_L')",0.22,0.834,0.975, Work_Accident:N 
+136,N_WA,"('3_T', 'N_L', 'N_P')",0.263,0.833,0.974, Work_Accident:N 
+18,N_WA,"('good_LE', 'N_P')",0.213,0.832,0.973, Work_Accident:N 
+156,N_WA,"('medium_S', 'N_L')",0.284,0.832,0.972, Work_Accident:N 
+250,N_L,"('intensive_H', 'N_P')",0.364,0.741,0.972, Left:N 
+138,N_WA,"('3_T', 'N_L')",0.269,0.831,0.971, Work_Accident:N 
+110,N_WA,"('medium_SL', 'N_L', 'N_P')",0.217,0.83,0.971, Work_Accident:N 
+19,N_WA,"('good_LE',)",0.217,0.829,0.969, Work_Accident:N 
+83,N_WA,"('very good_LE', 'N_L')",0.232,0.828,0.968, Work_Accident:N 
+57,N_WA,"('very good_LE', 'high_SL', 'N_L')",0.232,0.828,0.968, Work_Accident:N 
+53,N_WA,"('very good_LE', 'high_SL', 'N_L', 'N_P')",0.226,0.828,0.968, Work_Accident:N 
+81,N_WA,"('very good_LE', 'N_L', 'N_P')",0.226,0.828,0.968, Work_Accident:N 
+232,N_WA,"('standard_H', 'N_L')",0.32,0.827,0.967, Work_Accident:N 
+189,N_WA,"('high_SL', 'N_L', 'N_P')",0.339,0.827,0.967, Work_Accident:N 
+245,N_WA,"('intensive_H', 'N_L', 'N_P')",0.301,0.827,0.967, Work_Accident:N 
+260,N_WA,"('N_L', 'N_P')",0.613,0.827,0.967, Work_Accident:N 
+30,N_WA,"('3_NP', 'N_P')",0.218,0.826,0.966, Work_Accident:N 
+229,N_WA,"('standard_H', 'N_L', 'N_P')",0.313,0.827,0.966, Work_Accident:N 
+112,N_WA,"('medium_SL', 'N_L')",0.222,0.827,0.966, Work_Accident:N 
+192,N_WA,"('high_SL', 'N_L')",0.348,0.826,0.965, Work_Accident:N 
+263,N_L,"('N_WA',)",0.629,0.735,0.964, Left:N 
+262,N_WA,"('N_L',)",0.629,0.825,0.964, Work_Accident:N 
+31,N_WA,"('3_NP',)",0.223,0.825,0.964, Work_Accident:N 
+22,N_WA,"('3_NP', 'N_L', 'N_P')",0.213,0.823,0.962, Work_Accident:N 
+247,N_WA,"('intensive_H', 'N_L')",0.308,0.823,0.962, Work_Accident:N 
+24,N_WA,"('3_NP', 'N_L')",0.218,0.822,0.961, Work_Accident:N 
+12,N_WA,"('good_LE', 'N_L')",0.201,0.82,0.959, Work_Accident:N 
+261,N_L,"('N_WA', 'N_P')",0.613,0.731,0.959, Left:N 
+217,N_WA,"('low_S', 'N_L', 'N_P')",0.277,0.817,0.956, Work_Accident:N 
+139,N_L,"('3_T', 'N_WA')",0.269,0.727,0.955, Left:N 
+219,N_WA,"('low_S', 'N_L')",0.28,0.816,0.954, Work_Accident:N 
+137,N_L,"('3_T', 'N_WA', 'N_P')",0.263,0.725,0.951, Left:N 
+248,N_L,"('intensive_H', 'N_WA')",0.308,0.717,0.941, Left:N 
+246,N_L,"('intensive_H', 'N_WA', 'N_P')",0.301,0.712,0.935, Left:N 
+116,N_L,"('medium_SL',)",0.268,0.71,0.932, Left:N 
+115,N_L,"('medium_SL', 'N_P')",0.261,0.706,0.927, Left:N 
+223,N_L,"('low_S',)",0.343,0.703,0.923, Left:N 
+222,N_L,"('low_S', 'N_P')",0.339,0.702,0.922, Left:N 
+113,N_L,"('medium_SL', 'N_WA')",0.222,0.68,0.892, Left:N 
+111,N_L,"('medium_SL', 'N_WA', 'N_P')",0.217,0.676,0.887, Left:N 
+220,N_L,"('low_S', 'N_WA')",0.28,0.669,0.878, Left:N 
+218,N_L,"('low_S', 'N_WA', 'N_P')",0.277,0.668,0.877, Left:N 

@@ -1,0 +1,5 @@
+,Supp,Conf,Lift,Antecedent,Consequent,N_items_Ant,Supp_norm
+793,0.09,0.96,4.05,"{'Satisfaction_Level': 'medium', 'Last_Evaluation': 'insufficient', 'Number_Projects': '2', 'Promotion_Last_5_Years': 'N', 'Time_Spend_Company': '3', 'Average_Montly_Hours': 'standard'}",{'Left': 'Y'},6,0.015
+799,0.09,0.96,4.04,"{'Satisfaction_Level': 'medium', 'Last_Evaluation': 'insufficient', 'Average_Montly_Hours': 'standard', 'Time_Spend_Company': '3', 'Number_Projects': '2'}",{'Left': 'Y'},5,0.018
+818,0.09,0.96,4.02,"{'Satisfaction_Level': 'medium', 'Last_Evaluation': 'insufficient', 'Promotion_Last_5_Years': 'N', 'Time_Spend_Company': '3', 'Number_Projects': '2'}",{'Left': 'Y'},5,0.018
+823,0.09,0.96,4.02,"{'Satisfaction_Level': 'medium', 'Last_Evaluation': 'insufficient', 'Time_Spend_Company': '3', 'Number_Projects': '2'}",{'Left': 'Y'},4,0.0225

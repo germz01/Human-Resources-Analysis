@@ -1,0 +1,21 @@
+,Supp,Conf,Lift,Antecedent,Consequent,N_items_Ant,Supp_norm
+664,0.09,0.96,4.05,"{'Satisfaction_Level': 'medium', 'Last_Evaluation': 'insufficient', 'Number_Projects': '2', 'Promotion_Last_5_Years': 'N', 'Time_Spend_Company': '3', 'Average_Montly_Hours': 'standard'}",{'Left': 'Y'},6,0.015
+670,0.09,0.96,4.04,"{'Satisfaction_Level': 'medium', 'Last_Evaluation': 'insufficient', 'Average_Montly_Hours': 'standard', 'Time_Spend_Company': '3', 'Number_Projects': '2'}",{'Left': 'Y'},5,0.018
+689,0.09,0.96,4.02,"{'Satisfaction_Level': 'medium', 'Last_Evaluation': 'insufficient', 'Promotion_Last_5_Years': 'N', 'Time_Spend_Company': '3', 'Number_Projects': '2'}",{'Left': 'Y'},5,0.018
+861,0.09,0.95,3.99,"{'Promotion_Last_5_Years': 'N', 'Last_Evaluation': 'insufficient', 'Average_Montly_Hours': 'standard', 'Time_Spend_Company': '3', 'Number_Projects': '2'}",{'Left': 'Y'},5,0.018
+765,0.09,0.93,3.91,"{'Satisfaction_Level': 'medium', 'Last_Evaluation': 'insufficient', 'Average_Montly_Hours': 'standard', 'Promotion_Last_5_Years': 'N', 'Number_Projects': '2'}",{'Left': 'Y'},5,0.018
+1037,0.1,0.92,3.88,"{'Promotion_Last_5_Years': 'N', 'Satisfaction_Level': 'medium', 'Average_Montly_Hours': 'standard', 'Time_Spend_Company': '3', 'Number_Projects': '2'}",{'Left': 'Y'},5,0.02
+2472,0.09,0.9,3.77,"{'Satisfaction_Level': 'medium', 'Last_Evaluation': 'insufficient', 'Promotion_Last_5_Years': 'N', 'Time_Spend_Company': '3', 'Average_Montly_Hours': 'standard'}",{'Left': 'Y'},5,0.018
+694,0.09,0.96,4.02,"{'Satisfaction_Level': 'medium', 'Last_Evaluation': 'insufficient', 'Time_Spend_Company': '3', 'Number_Projects': '2'}",{'Left': 'Y'},4,0.0225
+866,0.09,0.95,3.98,"{'Last_Evaluation': 'insufficient', 'Average_Montly_Hours': 'standard', 'Time_Spend_Company': '3', 'Number_Projects': '2'}",{'Left': 'Y'},4,0.0225
+882,0.09,0.94,3.94,"{'Last_Evaluation': 'insufficient', 'Promotion_Last_5_Years': 'N', 'Time_Spend_Company': '3', 'Number_Projects': '2'}",{'Left': 'Y'},4,0.0225
+770,0.09,0.93,3.9,"{'Satisfaction_Level': 'medium', 'Last_Evaluation': 'insufficient', 'Average_Montly_Hours': 'standard', 'Number_Projects': '2'}",{'Left': 'Y'},4,0.0225
+1042,0.1,0.92,3.88,"{'Satisfaction_Level': 'medium', 'Average_Montly_Hours': 'standard', 'Time_Spend_Company': '3', 'Number_Projects': '2'}",{'Left': 'Y'},4,0.025
+786,0.09,0.92,3.85,"{'Satisfaction_Level': 'medium', 'Last_Evaluation': 'insufficient', 'Promotion_Last_5_Years': 'N', 'Number_Projects': '2'}",{'Left': 'Y'},4,0.0225
+1058,0.1,0.9,3.78,"{'Satisfaction_Level': 'medium', 'Promotion_Last_5_Years': 'N', 'Time_Spend_Company': '3', 'Number_Projects': '2'}",{'Left': 'Y'},4,0.025
+946,0.09,0.9,3.78,"{'Last_Evaluation': 'insufficient', 'Average_Montly_Hours': 'standard', 'Promotion_Last_5_Years': 'N', 'Number_Projects': '2'}",{'Left': 'Y'},4,0.0225
+2477,0.09,0.89,3.75,"{'Satisfaction_Level': 'medium', 'Last_Evaluation': 'insufficient', 'Time_Spend_Company': '3', 'Average_Montly_Hours': 'standard'}",{'Left': 'Y'},4,0.0225
+886,0.09,0.94,3.94,"{'Last_Evaluation': 'insufficient', 'Time_Spend_Company': '3', 'Number_Projects': '2'}",{'Left': 'Y'},3,0.03
+790,0.09,0.91,3.84,"{'Satisfaction_Level': 'medium', 'Last_Evaluation': 'insufficient', 'Number_Projects': '2'}",{'Left': 'Y'},3,0.03
+1062,0.1,0.9,3.78,"{'Satisfaction_Level': 'medium', 'Time_Spend_Company': '3', 'Number_Projects': '2'}",{'Left': 'Y'},3,0.0333333333333
+950,0.09,0.9,3.77,"{'Last_Evaluation': 'insufficient', 'Average_Montly_Hours': 'standard', 'Number_Projects': '2'}",{'Left': 'Y'},3,0.03

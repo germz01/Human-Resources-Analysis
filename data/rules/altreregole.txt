@@ -1,0 +1,10 @@
+\begin{tabular}{llrrr}
+\toprule
+      Consequent &                                        Antecedent &   Supp &   Conf &   Lift \\
+\midrule
+          low\_SL &  ('4\_T', 'Y\_L', 'insufficient\_LE', 'intensive\_H') &  0.054 &  0.990 &  7.245 \\
+            2\_NP &  ('Y\_L', 'medium\_SL', '3\_T', 'standard\_H', 'N\_P') &  0.100 &  0.996 &  6.256 \\
+ insufficient\_LE &                  ('low\_SL', 'intensive\_H', 'N\_P') &  0.096 &  1.000 &  3.861 \\
+\bottomrule
+\end{tabular}
+

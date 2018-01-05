@@ -1,0 +1,111 @@
+\begin{tabular}{llrrr}
+\toprule
+Consequent &                                         Antecedent &  Supp &  Conf &  Lift \\
+\midrule
+    low\_SL &           ('4\_T', 'Y\_L', 'insufficient\_LE', 'N\_P') &  0.05 &  0.98 &  7.17 \\
+    low\_SL &                  ('4\_T', 'Y\_L', 'insufficient\_LE') &  0.05 &  0.98 &  7.17 \\
+    low\_SL &   ('4\_T', 'Y\_L', 'insufficient\_LE', 'N\_WA', 'N\_P') &  0.05 &  0.98 &  7.16 \\
+    low\_SL &          ('4\_T', 'Y\_L', 'insufficient\_LE', 'N\_WA') &  0.05 &  0.98 &  7.16 \\
+    low\_SL &          ('4\_T', 'insufficient\_LE', 'intensive\_H') &  0.05 &  0.97 &  7.11 \\
+    low\_SL &   ('4\_T', 'insufficient\_LE', 'intensive\_H', 'N\_P') &  0.05 &  0.97 &  7.10 \\
+    low\_SL &   ('Y\_L', 'insufficient\_LE', 'intensive\_H', 'N\_P') &  0.05 &  0.97 &  7.10 \\
+    low\_SL &          ('Y\_L', 'insufficient\_LE', 'intensive\_H') &  0.05 &  0.97 &  7.10 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', 'medium\_SL', '3\_T',... &  0.09 &  1.00 &  6.28 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', 'medium\_SL', '3\_T',... &  0.09 &  1.00 &  6.28 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', 'medium\_SL', '3\_T',... &  0.08 &  1.00 &  6.28 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', 'medium\_SL', '3\_T',... &  0.08 &  1.00 &  6.28 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', 'medium\_SL', '3\_T',... &  0.05 &  1.00 &  6.27 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', 'medium\_SL', '3\_T',... &  0.05 &  1.00 &  6.27 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', 'medium\_SL', '3\_T',... &  0.05 &  1.00 &  6.27 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', 'medium\_SL', '3\_T',... &  0.05 &  1.00 &  6.27 \\
+      2\_NP &   ('Y\_L', 'medium\_SL', '3\_T', 'standard\_H', 'N\_P') &  0.10 &  1.00 &  6.26 \\
+      2\_NP &          ('Y\_L', 'medium\_SL', '3\_T', 'standard\_H') &  0.10 &  1.00 &  6.26 \\
+      2\_NP &  ('Y\_L', 'medium\_SL', '3\_T', 'standard\_H', 'N\_W... &  0.10 &  1.00 &  6.25 \\
+      2\_NP &  ('Y\_L', 'medium\_SL', '3\_T', 'standard\_H', 'N\_WA') &  0.10 &  1.00 &  6.25 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', 'medium\_SL', '3\_T',... &  0.09 &  0.99 &  6.25 \\
+      2\_NP &     ('Y\_L', 'insufficient\_LE', 'medium\_SL', '3\_T') &  0.09 &  0.99 &  6.25 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', 'medium\_SL', '3\_T',... &  0.08 &  0.99 &  6.25 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', 'medium\_SL', '3\_T',... &  0.08 &  0.99 &  6.25 \\
+      2\_NP &  ('Y\_L', 'medium\_SL', '3\_T', '0\_S', 'standard\_H... &  0.06 &  1.00 &  6.25 \\
+      2\_NP &  ('Y\_L', 'medium\_SL', '3\_T', '0\_S', 'standard\_H... &  0.06 &  1.00 &  6.25 \\
+      2\_NP &  ('Y\_L', 'medium\_SL', '3\_T', '0\_S', 'standard\_H... &  0.06 &  1.00 &  6.25 \\
+      2\_NP &   ('Y\_L', 'medium\_SL', '3\_T', '0\_S', 'standard\_H') &  0.06 &  1.00 &  6.25 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', 'medium\_SL', '3\_T',... &  0.05 &  0.99 &  6.25 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', 'medium\_SL', '3\_T',... &  0.05 &  0.99 &  6.25 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', 'medium\_SL', '3\_T',... &  0.05 &  0.99 &  6.25 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', 'medium\_SL', '3\_T',... &  0.05 &  0.99 &  6.25 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', '3\_T', 'standard\_H'... &  0.09 &  0.99 &  6.23 \\
+      2\_NP &    ('Y\_L', 'insufficient\_LE', '3\_T', 'standard\_H') &  0.09 &  0.99 &  6.23 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', '3\_T', 'standard\_H'... &  0.08 &  0.99 &  6.23 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', '3\_T', 'standard\_H'... &  0.08 &  0.99 &  6.23 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', 'medium\_SL', '0\_S',... &  0.05 &  0.99 &  6.23 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', 'medium\_SL', '0\_S',... &  0.05 &  0.99 &  6.23 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', 'medium\_SL', '0\_S',... &  0.05 &  0.99 &  6.23 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', 'medium\_SL', '0\_S',... &  0.05 &  0.99 &  6.23 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', '3\_T', '0\_S', 'stan... &  0.05 &  0.99 &  6.23 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', '3\_T', '0\_S', 'stan... &  0.05 &  0.99 &  6.23 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', 'medium\_SL', 'stand... &  0.08 &  0.99 &  6.22 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', 'medium\_SL', 'stand... &  0.08 &  0.99 &  6.22 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', '3\_T', '0\_S', 'stan... &  0.05 &  0.99 &  6.22 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', '3\_T', '0\_S', 'stan... &  0.05 &  0.99 &  6.22 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', 'medium\_SL', 'stand... &  0.09 &  0.99 &  6.21 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', 'medium\_SL', 'stand... &  0.09 &  0.99 &  6.21 \\
+      2\_NP &                ('Y\_L', '3\_T', 'standard\_H', 'N\_P') &  0.10 &  0.99 &  6.20 \\
+      2\_NP &         ('Y\_L', 'medium\_SL', '3\_T', 'N\_WA', 'N\_P') &  0.10 &  0.98 &  6.19 \\
+      2\_NP &                ('Y\_L', 'medium\_SL', '3\_T', 'N\_WA') &  0.10 &  0.98 &  6.19 \\
+      2\_NP &                 ('Y\_L', 'medium\_SL', '3\_T', 'N\_P') &  0.10 &  0.99 &  6.19 \\
+      2\_NP &                        ('Y\_L', 'medium\_SL', '3\_T') &  0.10 &  0.99 &  6.19 \\
+      2\_NP &        ('Y\_L', '3\_T', 'standard\_H', 'N\_WA', 'N\_P') &  0.10 &  0.99 &  6.19 \\
+      2\_NP &                       ('Y\_L', '3\_T', 'standard\_H') &  0.10 &  0.99 &  6.19 \\
+      2\_NP &  ('Y\_L', '3\_T', '0\_S', 'standard\_H', 'N\_WA', 'N... &  0.06 &  0.99 &  6.19 \\
+      2\_NP &         ('Y\_L', '3\_T', '0\_S', 'standard\_H', 'N\_P') &  0.06 &  0.99 &  6.19 \\
+      2\_NP &               ('Y\_L', '3\_T', 'standard\_H', 'N\_WA') &  0.10 &  0.98 &  6.18 \\
+      2\_NP &  ('Y\_L', 'medium\_SL', '3\_T', '0\_S', 'N\_WA', 'N\_P') &  0.06 &  0.98 &  6.18 \\
+      2\_NP &         ('Y\_L', 'medium\_SL', '3\_T', '0\_S', 'N\_WA') &  0.06 &  0.98 &  6.18 \\
+      2\_NP &          ('Y\_L', 'medium\_SL', '3\_T', '0\_S', 'N\_P') &  0.06 &  0.98 &  6.18 \\
+      2\_NP &                 ('Y\_L', 'medium\_SL', '3\_T', '0\_S') &  0.06 &  0.98 &  6.18 \\
+      2\_NP &        ('Y\_L', '3\_T', '0\_S', 'standard\_H', 'N\_WA') &  0.06 &  0.98 &  6.17 \\
+      2\_NP &                ('Y\_L', '3\_T', '0\_S', 'standard\_H') &  0.06 &  0.98 &  6.17 \\
+      2\_NP &  ('Y\_L', 'medium\_SL', '0\_S', 'standard\_H', 'N\_W... &  0.06 &  0.98 &  6.15 \\
+      2\_NP &  ('Y\_L', 'medium\_SL', '0\_S', 'standard\_H', 'N\_WA') &  0.06 &  0.98 &  6.15 \\
+      2\_NP &   ('Y\_L', 'medium\_SL', '0\_S', 'standard\_H', 'N\_P') &  0.06 &  0.98 &  6.15 \\
+      2\_NP &          ('Y\_L', 'medium\_SL', '0\_S', 'standard\_H') &  0.06 &  0.98 &  6.15 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', 'medium\_SL', '0\_S',... &  0.05 &  0.98 &  6.15 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', 'medium\_SL', '0\_S',... &  0.05 &  0.98 &  6.15 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', 'medium\_SL', '0\_S',... &  0.05 &  0.98 &  6.15 \\
+      2\_NP &     ('Y\_L', 'insufficient\_LE', 'medium\_SL', '0\_S') &  0.05 &  0.98 &  6.15 \\
+      2\_NP &  ('Y\_L', 'medium\_SL', 'standard\_H', 'N\_WA', 'N\_P') &  0.10 &  0.98 &  6.14 \\
+      2\_NP &         ('Y\_L', 'medium\_SL', 'standard\_H', 'N\_WA') &  0.10 &  0.98 &  6.14 \\
+      2\_NP &          ('Y\_L', 'medium\_SL', 'standard\_H', 'N\_P') &  0.10 &  0.98 &  6.14 \\
+      2\_NP &                 ('Y\_L', 'medium\_SL', 'standard\_H') &  0.10 &  0.98 &  6.14 \\
+      2\_NP &           ('Y\_L', 'insufficient\_LE', '3\_T', 'N\_P') &  0.09 &  0.98 &  6.14 \\
+      2\_NP &                  ('Y\_L', 'insufficient\_LE', '3\_T') &  0.09 &  0.98 &  6.14 \\
+      2\_NP &   ('Y\_L', 'insufficient\_LE', '3\_T', 'N\_WA', 'N\_P') &  0.08 &  0.98 &  6.13 \\
+      2\_NP &          ('Y\_L', 'insufficient\_LE', '3\_T', 'N\_WA') &  0.08 &  0.98 &  6.13 \\
+      2\_NP &     ('Y\_L', 'insufficient\_LE', 'medium\_SL', 'N\_P') &  0.09 &  0.97 &  6.12 \\
+      2\_NP &            ('Y\_L', 'insufficient\_LE', 'medium\_SL') &  0.09 &  0.97 &  6.12 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', 'medium\_SL', 'N\_WA'... &  0.08 &  0.97 &  6.11 \\
+      2\_NP &    ('Y\_L', 'insufficient\_LE', 'medium\_SL', 'N\_WA') &  0.08 &  0.97 &  6.11 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', '3\_T', '0\_S', 'N\_WA... &  0.05 &  0.97 &  6.10 \\
+      2\_NP &   ('Y\_L', 'insufficient\_LE', '3\_T', '0\_S', 'N\_WA') &  0.05 &  0.97 &  6.10 \\
+      2\_NP &    ('Y\_L', 'insufficient\_LE', '3\_T', '0\_S', 'N\_P') &  0.05 &  0.97 &  6.10 \\
+      2\_NP &           ('Y\_L', 'insufficient\_LE', '3\_T', '0\_S') &  0.05 &  0.97 &  6.10 \\
+      2\_NP &                              ('Y\_L', '3\_T', 'N\_P') &  0.10 &  0.96 &  6.06 \\
+      2\_NP &  ('insufficient\_LE', 'medium\_SL', '3\_T', '0\_S',... &  0.05 &  0.97 &  6.06 \\
+      2\_NP &  ('insufficient\_LE', 'medium\_SL', '3\_T', '0\_S',... &  0.05 &  0.97 &  6.06 \\
+      2\_NP &                      ('Y\_L', '3\_T', 'N\_WA', 'N\_P') &  0.10 &  0.96 &  6.05 \\
+      2\_NP &                                     ('Y\_L', '3\_T') &  0.10 &  0.96 &  6.05 \\
+      2\_NP &                             ('Y\_L', '3\_T', 'N\_WA') &  0.10 &  0.96 &  6.04 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', 'standard\_H', 'N\_WA... &  0.08 &  0.96 &  6.04 \\
+      2\_NP &   ('Y\_L', 'insufficient\_LE', 'standard\_H', 'N\_WA') &  0.08 &  0.96 &  6.04 \\
+      2\_NP &    ('Y\_L', 'insufficient\_LE', 'standard\_H', 'N\_P') &  0.09 &  0.96 &  6.03 \\
+      2\_NP &           ('Y\_L', 'insufficient\_LE', 'standard\_H') &  0.09 &  0.96 &  6.03 \\
+      2\_NP &                       ('Y\_L', '3\_T', '0\_S', 'N\_P') &  0.06 &  0.96 &  6.01 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', '0\_S', 'standard\_H'... &  0.05 &  0.96 &  6.01 \\
+      2\_NP &               ('Y\_L', '3\_T', '0\_S', 'N\_WA', 'N\_P') &  0.06 &  0.96 &  6.00 \\
+      2\_NP &  ('Y\_L', 'insufficient\_LE', '0\_S', 'standard\_H'... &  0.05 &  0.96 &  6.00 \\
+      2\_NP &  ('insufficient\_LE', 'medium\_SL', '3\_T', '0\_S',... &  0.05 &  0.96 &  6.00 \\
+      2\_NP &  ('insufficient\_LE', 'medium\_SL', '3\_T', '0\_S',... &  0.05 &  0.96 &  6.00 \\
+\bottomrule
+\end{tabular}
+

@@ -1,0 +1,13 @@
+,Supp,Conf,Lift,Antecedent,Consequent,N_items
+736,0.053,0.975,4.097,"set(['low_S', '3_T', 'N_P', '2_NP', 'medium_SL', 'insufficient_LE', 'standard_H'])",{'Left': 'Y'},7
+1117,0.061,0.942,3.955,"set(['low_S', '3_T', 'medium_SL', '2_NP', 'N_P', 'standard_H'])",{'Left': 'Y'},6
+793,0.086,0.963,4.046,"set(['3_T', 'medium_SL', '2_NP', 'N_P', 'insufficient_LE', 'standard_H'])",{'Left': 'Y'},6
+140,0.054,0.858,3.603,"set(['insufficient_LE', 'N_P', '4_T', 'low_SL', 'intensive_H'])",{'Left': 'Y'},5
+990,0.086,0.949,3.986,"set(['N_P', '2_NP', 'standard_H', '3_T', 'insufficient_LE'])",{'Left': 'Y'},5
+1166,0.1,0.925,3.884,"set(['standard_H', 'N_P', '2_NP', 'medium_SL', '3_T'])",{'Left': 'Y'},5
+818,0.086,0.958,4.025,"set(['N_P', '2_NP', 'medium_SL', '3_T', 'insufficient_LE'])",{'Left': 'Y'},5
+1331,0.1,0.881,3.702,"set(['N_P', '2_NP', 'standard_H', '3_T'])",{'Left': 'Y'},4
+1187,0.1,0.9,3.778,"set(['N_P', '2_NP', 'medium_SL', '3_T'])",{'Left': 'Y'},4
+1171,0.101,0.924,3.882,"set(['standard_H', '2_NP', 'medium_SL', '3_T'])",{'Left': 'Y'},4
+1335,0.101,0.881,3.701,"set(['2_NP', 'standard_H', '3_T'])",{'Left': 'Y'},3
+1191,0.101,0.899,3.777,"set(['2_NP', 'medium_SL', '3_T'])",{'Left': 'Y'},3

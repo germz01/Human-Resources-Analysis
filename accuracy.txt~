@@ -1,0 +1,13 @@
+L'accuracy serve per misurare la bontà di una classificazione, quindi si deve cominciare
+usando una regola per fare una classificazione.
+
+Ovvero data una regola AB->Y
+si controlla ciascuna riga del dataset, se contiene gli item A,B,
+allora predico che la variabile LEFT sarà YES
+
+va fatto per ogni riga del dataset
+
+una volta fatto avremo una colonna di label YES/NO, (si può ipotizzare che inizialmente siano tutti NO)
+
+questa lista di label PREDETTE andrà confrontata con quelle OSSERVATE, costruendo quindi una
+confusion matrix e a seguire l'accuracy.
