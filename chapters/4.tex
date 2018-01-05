@@ -1,0 +1,163 @@
+Al fine di costruire un \textit{decision tree} con i record a nostra disposizione, abbiamo eseguito alcune
+manipolazioni prima della costruzione dell'albero vero e proprio: sia la variabile \textit{Salary} che la
+variabile \textit{Department} sono state convertite in variabili numeriche, per facilitare l'analisi
+dei record, inoltre, per fornire un \textit{target} durante la costruzione dell'albero, la
+variabile
+\textit{Left} è stata separata dal dataset fornito. Tutte le altre variabili sono state lasciate inalterate.
+\section{Learning of different decision trees} % (fold)
+\label{sec:learning_of_different_decision_trees}
+Durante la fase di costruzione vera e propia, abbiamo deciso di implementare due alberi distinti,
+differenziandoli
+in base alla metrica con cui sarebbe stato scelto lo \textit{split} migliore. Abbiamo perciò costruito un albero
+basato sull'indice \textit{Gini} come misura di impurità di un nodo, e un albero basato invece sull'uso
+dell'\textit{Entropia}. Utilizzando questi due indici di impurità, al momento di decidere quale split
+imporre, viene selezionato quello con il \textit{gain} maggiore. Inizialmente abbiamo costruito entrambi gli
+alberi senza dare un limite sul numero di samples che un nodo avrebbe dovuto contenere per poter essere
+diviso, successivamente però, per evitare di incorrere nel noto fenomeno dell'\textit{overfitting}, abbiamo
+voluto esplorare le possibilità date dal consentire uno split a patto che almeno il $10\%$ o il $20\%$ del numero
+totale di data objects sia presente nel nodo da dividere. In questa fase iniziale abbiamo utilizzato l'intero
+dataset come base per il training dell'albero, nelle sezioni successive modificheremo questa assunzione,
+dividento i data objects forniti tra test set e training set in percentuali ben definite.
+% section learning_of_different_decision_trees (end)
+\section{Decision trees interpretation} % (fold)
+\label{sec:decision_trees_interpretation}
+Facciamo adesso alcune considerazioni sugli alberi ottenuti applicando i parametri descritti in Sezione
+\ref{sec:learning_of_different_decision_trees}. Sia per l'albero
+basato sull'indice Gini che per quello basato sull'Entropia, la radice è rappresentata dalla variabile
+\textit{Satisfaction Level}, che divide i data objects tra coloro che hanno uno score $\le 0.465$ e coloro che
+hanno uno score $> 0.465$. Questa decisione è indicativa del fatto che l'utilizzo di tale variabile consente un
+primo split più redditizio rispetto alle altre variabili a disposizione. Come era lecito aspettarsi, gli alberi
+ottenuti, non imponendo un vincolo sul numero di samples in ogni nodo prima dello split, hanno un'altezza
+considerevole, tale altezza decresce in modo significativo applicando i vincoli esposti in Sezione
+\ref{sec:learning_of_different_decision_trees}, arrivando ad ottenere un albero di altezza $13$ per l'indice Gini
+e uno di altezza $11$ per l'Entropia. In Figura \ref{fig:cutted_tree} possiamo osservare i dettagli riguardanti
+le radici degli alberi di altezza $11$, a destra, e $13$, a sinistra. Al fine di ottenere questi alberi è stato
+limitato il numero di records minimo contenuto all'interno di un nodo al $20\%$ del totale a disposizone nel
+dataset.
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \resizebox{\textwidth}{!}{
+        \includegraphics{images/classification/decision_tree_gini_0_2_cutted_2.pdf}
+        }
+        \caption{}
+        \label{fig:cutted_tree_1}
+    \end{subfigure}
+    \begin{subfigure}{0.45\textwidth}
+        \resizebox{\textwidth}{!}{
+            \includegraphics{images/classification/decision_tree_entropy_0_2_cutted_2.pdf}
+        }
+        \caption{}
+        \label{fig:cutted_tree_2}
+    \end{subfigure}
+    \caption{Dettaglio iniziale dell'albero di altezza $13$ utilizzante Gini, in Figura \ref{fig:cutted_tree_1}
+    , e quello di altezza $11$ utilizzante l'Entropia, in Figura \ref{fig:cutted_tree_2}. La classe \textit{y$0$}
+    corrisponde a una risposta negativa alla domanda: "L'impiegato lascerà l'azienda?", vale il contrario per la
+    classe y$1$. Essendo gli alberi di dimensioni proibitive, abbiamo deciso di rappresentare questi
+    dettaglii.}
+    \label{fig:cutted_tree}
+\end{figure}
+\\
+Come possiamo osservare, la colorazione dei vari nodi fornisce un indice visivo del grado di purezza dello split
+ottenuto, cominciando da uno split iniziale su tutto il dataset con un grado di purezza non molto alto, si
+raggiunge successivamene negli split secondari, su porzioni ridotte del dataset, gradi di purezza più
+consistenti.
+% section decision_trees_interpretation (end)
+\section{Decision trees validation with test and training set} % (fold)
+\label{sec:decision_trees_validation_with_test_and_training_set}
+Prendiamo quanto trattato nelle sezioni precedenti e passiamo adesso a descrivere le caratteristiche dei
+classificatori da noi costruiti. In Tabella \ref{tab:classification_performance} sono riportate le performance
+dei migliori $5$ set di impostazioni per i classificatori. Come possiamo vedere dalla tabella, la nostra analisi è
+stata condotta prima prendendo l'intero dataset sia come training set che come test set, poi prendendone l'$80\%$
+come training set e il restante $20\%$ come test set e così via, modificando le percentuali fino ad utilizzare il
+$60\%$ del dataset come training set e la restante parte come test set. La valutazione delle performance è stata
+condotta analizzando lo score ottenuto utilizzando le metriche \textit{Accuracy}, \textit{Precision} e
+\textit{Recall}, apprese durante il corso.
+\begin{table}
+    \centering
+    \resizebox{0.8\textwidth}{!}{
+        \begin{tabular}{| c | c | c | c | c | c | c | c | c |}
+            \hline
+            \textbf{Criterion} & \textbf{Min Sample Split} & \textbf{Train Records} & \textbf{Test Records} &
+            \textbf{Accuracy Training Set} & \textbf{Accuracy Test Set} & \textbf{Precision} & \textbf{Recall}
+            \\ \hline
+            Entropy & 2 & 14999 (100\%) & 14999 (100\%) & 1.0 & 1.0 & 0.99 & 0.99 \\ \hline
+            Gini & 2 & 14999 (100\%) & 14999 (100\%) & 0.99 & 0.99 & 0.99 & 0.98 \\ \hline
+            Entropy & 2 & 8999 (60\%) & 6000 (40\%) & 0.99 & 0.98 & 0.96 & 0.94 \\ \hline
+            Gini & 2 & 11999 (80\%) & 3000 (20\%) & 0.99 & 0.98 & 0.95 & 0.95 \\ \hline
+            Gini & 2 & 10499 (70\%) & 4500 (30\%) & 0.99 & 0.98 & 0.95 & 0.95 \\ \hline
+%             \textbf{Gini} & 2.0 & 14999 & 14999 & 0.99 & 0.99 & 0.98 \\ \hline
+%             {} & {} & 11999 & 3000 & 0.98 & 0.95 & 0.95 \\ \hline
+%             {} & {} & 10499 & 4500 & 0.98 & 0.95 & 0.95 \\ \hline
+%             {} & {} &  8999 & 6000 &  0.98 & 0.95 & 0.94 \\ \hline
+%             {} &  0.1 & 14999 & 14999 & 0.96 & 0.90 & 0.93 \\ \hline
+%       {} &               {} &      11999 &      3000 &      0.96 &       0.90 &    0.94 \\ \hline
+%       {} &               {} &      10499 &      4500 &      0.96 &       0.90 &    0.93 \\ \hline
+%       {} &               {} &       8999 &      6000 &      0.95 &       0.89 &    0.88 \\ \hline
+%       {} &               0.2 &      14999 &     14999 &      0.85 &       0.88 &    0.43 \\ \hline
+%       {} &               {} &      11999 &      3000 &      0.86 &       0.91 &    0.44 \\ \hline
+%       {} &               {} &      10499 &      4500 &      0.86 &       0.89 &    0.44 \\ \hline
+%       {} &               {} &       8999 &      6000 &      0.87 &       0.74 &    0.65 \\ \hline
+%    \textbf{Entropy} &               2.0 &      14999 &     14999 &      1.00 &       0.99 &    0.99 \\ \hline
+%    {} &               {} &      11999 &      3000 &      0.98 &       0.95 &    0.95 \\ \hline
+%    {} &               {} &      10499 &      4500 &      0.98 &       0.95 &    0.95 \\ \hline
+%    {} &               {} &       8999 &      6000 &      0.98 &       0.96 &    0.94 \\ \hline
+%    {} &               0.1 &      14999 &     14999 &      0.96 &       0.90 &    0.93 \\ \hline
+%    {} &               {} &      11999 &      3000 &      0.96 &       0.90 &    0.94 \\ \hline
+%    {} &               {} &      10499 &      4500 &      0.96 &       0.90 &    0.93 \\ \hline
+%    {} &               {} &       8999 &      6000 &      0.96 &       0.90 &    0.92 \\ \hline
+%    {} &               0.2 &      14999 &     14999 &      0.91 &       0.92 &    0.68 \\ \hline
+%    {} &               {} &      11999 &      3000 &      0.92 &       0.94 &    0.69 \\ \hline
+%    {} &               {} &      10499 &      4500 &      0.91 &       0.92 &    0.68 \\ \hline
+% {} &               {} &       8999 &      6000 &      0.91 &       0.92 &    0.67 \\ \hline
+        \end{tabular}
+    }
+    \caption{Tabella contentente le performance relative alle metriche di valutazione utilizzate per la
+    classificazione tramite indice Gini ed Entropia. Min Sample Split rappresenta la minima percentuale di record
+    rispetto al dataset totale che deve essere contenuta in ogni nodo (il valore $2$ rappresenta il fatto che
+    almeno $2$ nodi devono essere presenti all'interno del nodo).}
+    \label{tab:classification_performance}
+\end{table}
+% section decision_trees_validation_with_test_and_training_set (end)
+\section{Discussion of the best prediction model} % (fold)
+\label{sec:discussion_of_the_best_prediction_model}
+Descriviamo adesso i risultati dei migliori classificatori ottenuti in quest'ultimo passo del report. Come era
+lecito aspettarsi, i primi due classificatori per score ottenuto nelle metriche utilizzate sono quelli costruiti
+utilizzando tutto il dataset come training set e successivamente come test set. Successivamente, il classificatore
+utilizzante l'Entropia come misura di impurità ha rivelato delle performance migliori rispetto a quello
+utilizzante Gini. In Figura \ref{fig:confusion_matrix} possiamo trovare la \textit{confusion matrix} relativa a
+tale classificatore. Come possiamo vedere, la sezione relativa ai \textit{true negatives} contiene $4600$
+records, come evidenziato dal colore, i \textit{false negatives} sono soltanto $75$, quantità grazie alla quale
+possiamo considerare corretta la classificazione degli impiegati che rimarranno in azienda.
+I \textit{false positives} sono $450$, questa porzione della classificazione rappresenta gli impiegati che
+possiedono caratteristiche simili a quelli ancora all'interno dell'azienda, ma che presentano la possibilità di
+abbandonare il loro posto di lavoro. La parte dei \textit{true positives} è composta da $920$ record, essa
+rappresenta la frazione del campione analizzato ($6000$ record in totale) composta da impiegati che hanno
+lasciato l'azienda, e che sono stati giustamente classificati. A scopo informativo,
+in Figura \ref{fig:confusion_matrix_2} abbiamo riportato la confusion matrix relativa alla quarta riga di Tabella
+\ref{tab:classification_performance}, che, a differenza dell'altra matrice descritta, utilizza Gini come indice
+di impurità. In quest'ultimo classificatore, applicato su $3000$ test records, possiamo formulare osservazioni
+simili a quanto fatto per il classificatore precedente, tenendo tuttavia in considerazione il calo delle
+performance e il campione utilizzato.
+\begin{figure}[t!]
+    \centering
+    \begin{subfigure}{0.4\textwidth}
+        \resizebox{\textwidth}{!}{
+            \includegraphics[width=\textwidth]{images/classification/confusion_matrices/entropy_confusion_matrix_0_4_test.pdf}
+        }
+        \caption{}
+        \label{fig:confusion_matrix}
+    \end{subfigure}
+    \begin{subfigure}{0.4\textwidth}
+        \resizebox{\textwidth}{!}{
+            \includegraphics[width=\textwidth]{images/classification/confusion_matrices/gini_confusion_matrix_0_2_test.pdf}
+        }
+        \caption{}
+        \label{fig:confusion_matrix_2}
+    \end{subfigure}
+    \caption{In Figura \ref{fig:confusion_matrix} troviamo la confusion matrix relativa alla terza riga di
+    Tabella \ref{tab:classification_performance}, mentre in Figura \ref{fig:confusion_matrix_2} troviamo quella
+    relativa alla quarta riga di Tabella \ref{tab:classification_performance}.}
+    \label{fig:confusion_matrices}
+\end{figure}
+% section discussion_of_the_best_prediction_model (end)

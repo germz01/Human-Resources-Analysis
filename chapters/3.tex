@@ -2,9 +2,9 @@ Per definire le association rules prima si sono seguite le seguenti operazioni:
 \begin{itemize}
 \item Abbiamo trasformato le variabili da stringhe a numeriche, per quanto riguarda gli attributi \textit{Salary}
 e \textit{Department}.
-\item Abbiamo raggruppato le variabili \textit{Last Evaluation}, \textit{Satisfaction Level} e
-\textit{Average Montly Hours}, usando $3$ bins sia per la prima che per la seconda variabile, usando intervalli
-specifici, e $2$ bins per la terza variabile, applicando anche in questo caso una suddivisione ad hoc.
+\item Abbiamo raggruppato le variabili \textit{Last Evaluation} e \textit{Satisfaction Level} e \textit{Average Montly Hours}.
+Abbiamo utilizzato $4$ bins per \textit{Last Evaluation}, ovvero suddividendo l'intervallo in quattro parti uguali, identificate con $insufficient$, $sufficient$ e $good$ e $very good$.
+Con la stessa logica abbiamo usato $3$ bins per \textit{Satisfaction Level}, identificando ciascun intervallo con $low$, $medium$ e $high$. Infine utilizziamo $2$ bins per \textit{Average Montly Hours}, definendo i due intervalli come $standard$ e $intensive$.
 \item Per rendere unici i risultati numerici, è stata aggiunta una stringa subito successiva al valore numerico
 in modo da non renderlo ambiguo e sopratutto in modo da poter capire univocamente a che attributo si riferisca.
 \end{itemize}
@@ -83,7 +83,7 @@ soglia pari a $20$, evitiamo quindi di descriverli.
 Per estrarre le associazioni interessanti del dataset sono stati utilizzati due approcci principali per la scelta dei parametri dell'algoritmo \textit{apriori}, in modo da ottenere:
 \begin{itemize}
 \item \textit{Regole "generali''}, ovvero associazioni interessanti valide per un numero ampio di impiegati, ottenute fissando un alto supporto minimo, pari a $MinSupp = 20\%$, nella ricerca degli itemset frequenti.
-\item \textit{Regole "specifiche''}: il supporto minimo è stato fissato considerando che uno degli obiettivi principali delle analisi contenute in questo report è capire il perchè una parte consistente dei dipendenti ha lasciato l'azienda. 
+\item \textit{Regole "specifiche''}: il supporto minimo è stato fissato considerando che uno degli obiettivi principali delle analisi contenute in questo report è capire il perchè una parte consistente dei dipendenti ha lasciato l'azienda.
 La percentuale di dipendenti che hanno lasciato l'azienda corrisponde al $24\%$ del totale, assumendo come significativa una regola che riguardi almeno il $20\%$ dei dipendenti che hanno lasciato l'azienda, risulta un supporto minimo pari a circa $MinSupp=5\%$.
 \end{itemize}
 
@@ -102,7 +102,7 @@ Per ciascuna regola estratta sono stati calcolati gli indici di \textit{confiden
 
 \subsection{Regole generali}
 Le regole generali sono state cercate fissando a priori \textit{Minsupp=20\%} e considerando un valore di confidenza minimo \textit{MinConf=50\%} ,
-scelto osservando l'andamento in Fig. \ref{fig:rules-number}, sufficiente per ottenere un numero trattabile di regole. 
+scelto osservando l'andamento in Fig. \ref{fig:rules-number}, sufficiente per ottenere un numero trattabile di regole.
 
 Per un valore di \textit{MinConf=50\%} sono state ottenute 268 regole  rappresentate in Fig. \ref{fig:rules_general}, con i rispettivi valori di Lift, Confidence e Support. Si osserva che la maggior parte delle regole ha un Lift basso, minore di 1.5.
 Le regole sono state rappresentate raffigurando il valore di $Conf$ in funzione di $Lift$. Questo permette di identificare visivamente in modo immediato le regole con la stessa parte conseguente, poichè in tal caso i due indici sono proporzionali con coefficiente pari al supporto della parte conseguente.
@@ -110,7 +110,6 @@ Le regole che possono essere considerate oggettivamente interessanti, con $Lift>
 
 Tutti gli impiegati che hanno una \textit{'Last evaluation: very good'} hanno anche un alto tasso di soddisfazione ('high\_SL'), mentre il viceversa accade nel $68\%$ dei casi. Queste regole non sono particolarmente interessanti dal punto di vista dell'analisi, poichè abbastanza ovvie, e non aggiungono molto alle analisi statistiche eseguite.
 
-  
 \begin{minipage}[c]{0.55\textwidth}
 \begin{figure}[H]
   \centering
@@ -123,7 +122,7 @@ Tutti gli impiegati che hanno una \textit{'Last evaluation: very good'} hanno an
 \begin{table}[H]
   \centering
   \scalebox{0.7}{
-\input{data/rules/rules_supp20.txt}  
+\input{data/rules/rules_supp20.txt}
 }
 \caption{Association rules per $MinSupp=20\%$ e $Lift> 1.5$}
 \label{tab:rules_general}
@@ -151,12 +150,12 @@ selezione delle regole più interessanti, riguardanti gli impiegati che hanno la
 %Criterio pruning regole: confidenza maggiore di 0.9, a parità di supporto (all'1/1000) si considera la regola più corta contenente le altre
 
 \begin{enumerate}
-\item $MinSupp = 5\%$ e $MinConf = 50\%$ nell'algoritmo \textit{apriori}, ottenendo $N_{rules}=264$ per la parte conseguente $Left: Yes$ ; 
-\item rimozione delle regole contenenti $Work Accident:No$ , poichè non è semanticamente sensata l'implicazione di $Left: Yes$, ottenendo $N_{rules}=136$; 
+\item $MinSupp = 5\%$ e $MinConf = 50\%$ nell'algoritmo \textit{apriori}, ottenendo $N_{rules}=264$ per la parte conseguente $Left: Yes$ ;
+\item rimozione delle regole contenenti $Work Accident:No$ , poichè non è semanticamente sensata l'implicazione di $Left: Yes$, ottenendo $N_{rules}=136$;
 \item filtro a posteriori con $Lift>1$ e  $Conf>0.85$, ottenendo $N_{rules}=62$
 
 \item Per le regole con itemsets delle parti antecedenti sottoinsiemi l'uno dell'altro e \textit{con supporto uguale} (confronto all'1/1000), sono state considerate le regole con parte antecedente più lunga,
-  Ad esempio per due regole del tipo $r_1:\, A \rightarrow Y$, $r2:\,AB \rightarrow Y$, con $A,B,Y$ differenti item, e $Supp_1= Supp_2$ si seleziona solo la regola $r_2$. 
+  Ad esempio per due regole del tipo $r_1:\, A \rightarrow Y$, $r2:\,AB \rightarrow Y$, con $A,B,Y$ differenti item, e $Supp_1= Supp_2$ si seleziona solo la regola $r_2$.
 \end{enumerate}
 %L'ultimo criterio permette di non ripetere regole che hanno la stessa base di applicazione, ovvero lo stesso supporto.
 Le 12 regole ottenute con il procedimento spiegato sono riportate in Fig. \ref{fig:rules_left} insieme ai rispettivi valori di confidence e support.
@@ -191,7 +190,6 @@ Dalle regole specifiche estratte ne sono state ricavate alcune interessanti, per
 \clearpage
 \newpage
 
-
 \section{Use the most meaningful rules to predict if an employee will leave prematurely or not and evaluate the accuracy }
 Date le varie association rules trovate dalle varie prove quelle descritte nella sezione \ref{sec:discussion_most_interesting_rules} sono quelle più significative per predirre se un impiegato lascerà prematuramente l'azienda oppure no. I risultati sono emersi dall'applicazione delle association rules al dataset costruito con il procedimento spiegato nella sezione introduttiva di questo capitolo.
 
@@ -207,5 +205,4 @@ Si evince che il classificatore riesce a determinare ciò che seque:
 \item Diagonale FP e FN: A differenza della precedente diagonale in questa vengono descritti i dipendenti per cui si è riscontrato che il valore assegnato dal classificatore e quello reale sono opposti. Risultano quindi rispettivamente $1300$ dipendenti definiti dal classificatore come rimasti ma che in realtà hanno lasciato l'azienda e $810$ dipendenti classificati come dipendenti che hanno lasciato l'azienda e in realtà ancora continuano a lavorare in questa.
 \end{itemize}
 Da queste possiamo dedurre che $810$ dipendenti si trovano in una situazione precaria, in quanto presentano le stesse caratteristiche di un dipendente tipo che ha lasciato l'azienda. Questo probabilmente è un numero indicativo, una riduzione più o meno elevata di quello reale, in quanto il classificatore non utilizza tutte le combinazioni delle regole, che caratterizzano l'uscita prematura dell'azienda da parte del dipendente, ma quelle più significative. Questo infatti giustifica il numero elevato di dipendenti, $1300$ che il classificatore indica come ancora operativi nell'azienda ma che in realtà hanno lasciato l'azienda. Questa caratteristica è data dalla $recall$, che rappresenta una misura di completezza, come si può vedere dalla Tabella \ref{tab:confusion_matrix} ha valore $0.63$, quindi un valore sufficiente. Mentre per quanto riguarda la $precision$, che rappresenta una misura di esattezza, abbiamo un valore di $0.73$. L'accuratezza ricavata dalla confusion matrix è buona con un valore di $0.86$.
-
 
