@@ -237,7 +237,7 @@ Sulle variabili numeriche del dataset è stato eseguito un clustering gerarchico
   \caption{Confronto tra diversi metodi}
   \label{fig:hierarchical-comparison}
 \end{figure}
-In Figura \ref{fig:hierarchical-comparison} si osserva che tra i metodi utilizzati \textit{average} e \textit{centroid} risultano quelli con il valore massimo della cophenetic correlation ed equivalenti tra loro. 
+In Figura \ref{fig:hierarchical-comparison} si osserva che tra i metodi utilizzati \textit{average} e \textit{centroid} risultano quelli con il valore massimo della cophenetic correlation ed equivalenti tra loro.
 La dissimilarità calcolata con il metodo \textit{average} consiste nella media di tutte le distanze tra coppie di dati appartenenti a due clusters diversi, mentre il metodo \textit{centroid} utilizza la distanza tra i centroidi. Per ciascun metodo sono state testate tre metriche, quella euclidea, Manhattan (o cityblock) e di Mahalanobis. Quest'ultima è una distanza non isotropa che prende in considerazione la correlazione tra le variabili. La distanza euclidea risulta essere la distanza ottimale per i due metodi migliori. Il confronto effettuato ha quindi permesso di individuare due dendrogrammi con la massima cophenetic correlation, mostrati nelle figure successive. In Fig. \ref{fig:dendrogram} è rappresentato il dendrogramma per il metodo 'average' e distanza euclidea con un esempio di taglio per 5 clusters. In Fig. \ref{fig:dendrogram-centroid} è rappresentato il dendrogramma per il metodo 'centroid' e distanza euclidea con un esempio di taglio per 3 clusters. \\
 
 \begin{figure}[H]
@@ -250,7 +250,7 @@ La dissimilarità calcolata con il metodo \textit{average} consiste nella media 
 \begin{figure}[H]
   \centering
   \includegraphics[width=1\textwidth]{../images/hierarchical/complete_dendrogram_centroid_euclidean.pdf}
-  \caption{Dendrogramma per metodo 'centroid' e distanza euclidea, con esempio di taglio con 3 clusters, rappresentati dai differenti colori.}
+  \caption{Dendrogramma per metodo 'centroid' e distanza euclidea, con esempio di taglio con 4 clusters, rappresentati dai differenti colori.}
   \label{fig:dendrogram-centroid}
 \end{figure}
 
@@ -319,7 +319,7 @@ Si può osservare in Tabella \ref{tab:hierarchical_cluster} come la numerosità 
   \caption{Silhouette media per i metodi 'average' e 'centroid' (con distanza euclidea) in funzione del numero di cluster}
   \label{fig:hierarchical-taglio}
 \end{figure}
- 
+
 \section{Final evaluation of the best clustering approach and comparison of the cluster obtained} % (fold)
 \label{sec:clustering_final_evaluation}
 Dalle analisi condotte con le tre metodologie di clustering abbiamo rilevato che con la metodologia del DBSCAN e dello Hierarchical non si riescono a ricavare delle informazioni rilevanti ai fini della ricerca in quanto si ottengono raggruppamenti con la presenza di un cluster in cui vi sono la quasi totalità dei dipendenti del dataset.
