@@ -193,19 +193,19 @@ Dalle regole specifiche estratte ne sono state ricavate alcune interessanti, per
 
 
 \section{Use the most meaningful rules to predict if an employee will leave prematurely or not and evaluate the accuracy }
-Date le varie association rules trovate dalle varie prove queste sono quelle più significative per predirre se un impiegato lascerà prematuramente l'azienda oppure no:
+Date le varie association rules trovate dalle varie prove quelle descritte nella sezione \ref{sec:discussion_most_interesting_rules} sono quelle più significative per predirre se un impiegato lascerà prematuramente l'azienda oppure no. I risultati sono emersi dall'applicazione delle association rules al dataset costruito con il procedimento spiegato nella sezione introduttiva di questo capitolo.
 
-- AR ... accuratezza trovata:
-- AR1
-- AR2
-
-Da queste possiamo scaturire che un impiegato lasci il posto di lavoro prematuramente quando è nelle seguenti condizioni:
-
-Invece rimarrà quando avrà una condizione del tipo:
-
-
-
-
-
+\begin{figure}[H]
+	\centering
+        \includegraphics[width=0.5\textwidth]{images/rules/confusion_matrixrules_left_class_c85.pdf}
+        \caption{Confusion Matrix con $confidence$ = 85}
+        \label{fig:sales}
+\end{figure}
+Si evince che il classificatore riesce a determinare ciò che seque:
+\begin{itemize}[noitemsep]
+\item Diagonale TP e TN: In questa diagonale vengono descritti i dipendenti per cui si è riscontrato che il valore assegnato dal classificatore e quello reale sono uguali. Risultano quindi rispettivamente $11000$ dipendenti rimasti e $2200$ dipendenti invece che hanno lasciato l'azienda.
+\item Diagonale FP e FN: A differenza della precedente diagonale in questa vengono descritti i dipendenti per cui si è riscontrato che il valore assegnato dal classificatore e quello reale sono opposti. Risultano quindi rispettivamente $1300$ dipendenti definiti dal classificatore come rimasti ma che in realtà hanno lasciato l'azienda e $810$ dipendenti classificati come dipendenti che hanno lasciato l'azienda e in realtà ancora continuano a lavorare in questa.
+\end{itemize}
+Da queste possiamo dedurre che $810$ dipendenti si trovano in una situazione precaria, in quanto presentano le stesse caratteristiche di un dipendente tipo che ha lasciato l'azienda. Questo probabilmente è un numero indicativo, una riduzione più o meno elevata di quello reale, in quanto il classificatore non utilizza tutte le combinazioni delle regole, che caratterizzano l'uscita prematura dell'azienda da parte del dipendente, ma quelle più significative. Questo infatti giustifica il numero elevato di dipendenti, $1300$ che il classificatore indica come ancora operativi nell'azienda ma che in realtà hanno lasciato l'azienda. Questa caratteristica è data dalla $recall$, che rappresenta una misura di completezza, come si può vedere dalla Tabella \ref{tab:confusion_matrix} ha valore $0.63$, quindi un valore sufficiente. Mentre per quanto riguarda la $precision$, che rappresenta una misura di esattezza, abbiamo un valore di $0.73$. L'accuratezza ricavata dalla confusion matrix è buona con un valore di $0.86$.
 
 

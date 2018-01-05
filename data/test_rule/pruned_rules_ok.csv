@@ -1,0 +1,15 @@
+,Consequent,Antecedent,Supp,Conf,Lift
+1015,Y_L,"('2_NP', 'insufficient_LE', '3_T')",0.086,0.937,3.936
+919,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL')",0.087,0.915,3.842
+2629,Y_L,"('insufficient_LE', 'medium_SL', '3_T', 'low_S')",0.053,0.919,3.861
+915,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'N_P')",0.086,0.918,3.854
+899,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'standard_H')",0.086,0.929,3.902
+875,Y_L,"('2_NP', 'insufficient_LE', 'medium_SL', 'low_S')",0.053,0.942,3.958
+1039,Y_L,"('2_NP', 'insufficient_LE', 'low_S', 'standard_H')",0.053,0.926,3.889
+971,Y_L,"('2_NP', 'insufficient_LE', '3_T', 'low_S')",0.053,0.952,3.999
+1147,Y_L,"('2_NP', 'medium_SL', '3_T', 'low_S')",0.062,0.926,3.887
+1171,Y_L,"('2_NP', 'medium_SL', '3_T', 'standard_H')",0.101,0.924,3.882
+1295,Y_L,"('2_NP', '3_T', 'low_S', 'standard_H')",0.062,0.906,3.804
+1166,Y_L,"('2_NP', 'medium_SL', '3_T', 'standard_H', 'N_P')",0.1,0.925,3.884
+1290,Y_L,"('2_NP', '3_T', 'low_S', 'standard_H', 'N_P')",0.061,0.905,3.8
+1117,Y_L,"('2_NP', 'medium_SL', '3_T', 'low_S', 'standard_H', 'N_P')",0.061,0.942,3.955
