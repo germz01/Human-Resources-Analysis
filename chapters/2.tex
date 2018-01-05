@@ -311,16 +311,17 @@ La dissimilarità calcolata con il metodo \textit{average} consiste nella media 
   \caption{Descrizione composizione dei cluster per i metodi $average$ e $centroid$ con 2,3,4 e 5 cluster.}
   \label{tab:hierarchical_cluster}
 \end{table}
- Si può osservare in Tabella \ref{tab:hierarchical_cluster} come la numerosità dei clusters vari in modo considerevole tra i due metodi.In generale il clustering gerarchico risulta molto sensibile al metodo e alla metrica utilizzata. Si può notare che per i tagli dei dendrogrammi effettuati si ottengono raggruppamenti in cluster, sia con il metodo average che con il metodo centroid, con la presenza di un cluster con la maggior parte dei dipendenti del dataset.
+Per confrontare i dendrogrammi tra di loro e con i risultati degli altri metodi di clustering è stata calcolata la silhouette media, tagliando i dendrogrammi ad un altezza tale da ottenere un numero di cluster compreso tra 2 e 6. I risultati sono mostrati in Fig \ref{fig:hierarchical-taglio} e mostrano che i due metodi anche se danno risultati simili possono presentare comunque scostamenti rilevanti, a parità di numero di cluster ottenuti con un taglio.
+Si può osservare in Tabella \ref{tab:hierarchical_cluster} come la numerosità dei clusters vari in modo considerevole tra i due metodi. In generale il clustering gerarchico risulta molto sensibile al metodo e alla metrica utilizzata. Si può notare che per i tagli dei dendrogrammi effettuati si ottengono raggruppamenti in cluster, sia con il metodo average che con il metodo centroid, con la presenza di un cluster con la maggior parte dei dipendenti del dataset.
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.55\textwidth]{../images/hierarchical/confronto_silhouette.pdf}
   \caption{Silhouette media per i metodi 'average' e 'centroid' (con distanza euclidea) in funzione del numero di cluster}
   \label{fig:hierarchical-taglio}
 \end{figure}
-Per confrontare i dendrogrammi tra di loro e con i risultati degli altri metodi di clustering è stata calcolata la silhouette media, tagliando i dendrogrammi ad un altezza tale da ottenere un numero di cluster compreso tra 2 e 6. I risultati sono mostrati in Fig \ref{fig:hierarchical-taglio} e mostrano che i due metodi anche se danno risultati simili possono presentare comunque scostamenti rilevanti, a parità di numero di cluster ottenuti con un taglio.
  
 \section{Final evaluation of the best clustering approach and comparison of the cluster obtained} % (fold)
 \label{sec:clustering_final_evaluation}
-Dalle analisi condotte con le tre metodologie di clustering abbiamo rilevato che con la metodologia del DBSCAN e dello Hierarchical non si riescono a ricavare delle informazioni rilevanti ai fini della ricerca in quanto presenta un cluster in cui vi sono la quasi totalità dei dipendenti che vogliamo andare ad analizzare. Il K-means invece offre l'opportunità di determinare tipi di dipendenti, in cui è possibile inoltre fare delle supposizioni, che potranno essere studiate nelle sezioni successive.
-Quindi per questo dataset si è ritenuto più efficiente fare utilizzo della metodologia del kmeans.
+Dalle analisi condotte con le tre metodologie di clustering abbiamo rilevato che con la metodologia del DBSCAN e dello Hierarchical non si riescono a ricavare delle informazioni rilevanti ai fini della ricerca in quanto si ottengono raggruppamenti con la presenza di un cluster in cui vi sono la quasi totalità dei dipendenti del dataset.
+La divisione in cluster ottenuta con il K-means ha permesso una suddivisione migliore dei dipendenti, con l'analisi mostrata nel relativo paragrafo.
+La silhouette media per il K-means risulta abbastanza alta, con un valore pari 0.57, superiore ai valori ottenuti con il metodo hierachical, per il corrispondente taglio dei dendrogrammi in 4 cluster. Quindi per questo dataset la metodologia del K-means è risultata la più efficace.
