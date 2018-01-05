@@ -8,6 +8,8 @@ Con la stessa logica abbiamo usato $3$ bins per \textit{Satisfaction Level}, ide
 \item Per rendere unici i risultati numerici, è stata aggiunta una stringa subito successiva al valore numerico
 in modo da non renderlo ambiguo e sopratutto in modo da poter capire univocamente a che attributo si riferisca.
 \end{itemize}
+
+
 \section{Frequent patterns extraction with different values of support and different types} % (fold)
 \label{sec:frequent_patterns_extraction_with_different_values_of_support_and_different_types}
 Dopo aver eseguito i passi preliminari descritti precedentemente abbiamo svolto l'analisi inerente ai
@@ -98,6 +100,8 @@ Per ciascuna regola estratta sono stati calcolati gli indici di \textit{confiden
 \end{figure}
 
 
+\section{Discussion of the most interesting rules}
+\label{sec:discussion_most_interesting_rules}
 
 \subsection{Regole generali}
 Le regole generali sono state cercate fissando a priori \textit{Minsupp=20\%} e considerando un valore di confidenza minimo \textit{MinConf=50\%} ,
@@ -194,7 +198,7 @@ Nel nostro dataset non sono presenti missing values quindi non è stata necessar
 
 
 \section{Use the most meaningful rules to predict if an employee will leave prematurely or not and evaluate the accuracy }
-Date le varie association rules trovate dalle varie prove quelle descritte nella sezione \ref{sec:discussion_most_interesting_rules} sono quelle più significative per predirre se un impiegato lascerà prematuramente l'azienda oppure no. I risultati sono emersi dall'applicazione delle association rules al dataset costruito con il procedimento spiegato nella sezione introduttiva di questo capitolo.
+Date le varie association rules trovate dalle varie prove quelle descritte nella sezione \ref{sec:discussion_most_interesting_rules} sono quelle più significative per predire se un impiegato lascerà prematuramente l'azienda oppure no. I risultati sono emersi dall'applicazione delle association rules al dataset costruito con il procedimento spiegato nella sezione introduttiva di questo capitolo.
 
 \begin{figure}[H]
 	\centering
