@@ -122,20 +122,32 @@ Tutti gli impiegati che hanno una \textit{'Last evaluation: very good'} hanno an
   \caption{Grafico,mettere LEGENDA PER COLORE E SIZE (Support)}
   \label{fig:rules_general}
 \end{figure}
-
 \begin{table}[H]
-  \centering
-  \scalebox{0.7}{
-\input{data/rules/rules_supp20.txt}
-}
-\caption{Association rules per $MinSupp=20\%$ e $Lift> 1.5$}
-\label{tab:rules_general}
+        \centering
+        \begin{tabular}{| c | c | c | c | c |} \hline
+            \textbf{Consequent} & \textbf{Antecedent} & \textbf{Supp} & \textbf{Conf} & \textbf{Lift} \\ \hline
+            high_SL  & ('very good_LE',)  & 0.329 &  1.000 & 2.061 \\ \hline
+            high_SL  & ('very good_LE','N_P') & 0.321 &  1.000 & 2.061 \\ \hline
+            high_SL  & ('very good_LE','N_L') & 0.281 &  1.000 & 2.061 \\ \hline
+            high_SL  & ('very good_LE','N_WA') & 0.278 &  1.000 & 2.061 \\ \hline
+            high_SL  & ('very good_LE','N_L','N_P') & 0.273 &  1.000 & 2.061 \\ \hline
+            high_SL  & ('very good_LE','N_WA','N_P') & 0.272 &  1.000 & 2.061 \\ \hline
+	    high_SL  & ('very good_LE','N_L','N_WA') & 0.232 &  1.000 & 2.061 \\ \hline
+            high_SL  & ('very good_LE','N_L','N_WA','N_P') & 0.226 &  1.000 & 2.061 \\ \hline
+            very good_LE  & ('high_SL','N_WA') & 0.278 & 0.681 & 2.070 \\ \hline
+	    very good_LE & ('high_SL','N_WA','N_P') & 0.272 & 0.680 & 2.070 \\ \hline
+	    very good_LE  &('high_SL') & 0.329 & 0.678 & 2.061  \\ \hline
+	    very good_LE & ('high_SL','N_P') & 0.331 & 0.677 & 2.059 \\ \hline
+	    very good_LE  & ('high_SL','N_L','N_WA') & 0.232 & 0.668 & 2.030 \\ \hline
+	    very good_LE & ('high_SL','N_L','N_WA','N_P') & 0.226 & 0.667 & 2.026 \\ \hline
+	    very good_LE  & ('high_SL','N_L','N_WA') & 0.281 & 0.666 & 2.025 \\ \hline
+	    very good_LE & ('high_SL','N_L','N_WA','N_P') & 0.273 & 0.665 & 2.023 \\ \hline
+        \end{tabular}
+        \label{tab:rules_general}
+	 \caption{Association rules per $MinSupp=20\%$ e $Lift> 1.5$}
 \end{table}
 
-
-
 \subsection{Regole specifiche}
-
 Usando $MinSupp=5\%$ naturalmente il numero di associazioni trovate cresce notevolmente, raggiungendo in questo caso le oltre 6000 regole.
 Le regole sono state dunque filtrate ulteriormente in modo da avere un interesse oggettivo considerando $Lift>1$ e $Conf>0.9$, ed inoltre $Supp < 20\%$, poichè per supporto maggiore sono state analizzate in precedenza. Le circa $2000$ regole ottenute sono rappresentate in Fig. \ref{fig:rules_specific}, si può osservare che le regole con Lift più alto hanno come parte conseguente, partendo dalla destra del grafico, \textit{Satisfaction Level: low , Number of Project: 2, Left : Y, Last Evaluation: Insufficient}.
 
@@ -183,13 +195,18 @@ In generale le regole mostrano che le persone che lasciano l'azienda sono poco s
 
 Dalle regole specifiche estratte ne sono state ricavate alcune interessanti, per alto valore di $Conf$ e $Lift$, riportate in Tab.
 \ref{tab:altreregole}. Si osserva che un basso grado di soddisfazione ('low\_SL') è associato all'aver lasciato l'azienda, ad avere una valutazione bassa e ore lavorate mensilmente alte. Un numero di progetti su cui un dipendente lavora pari a 2 è legato, tra gli altri item in tabella, ad aver lasciato l'azienda, come mostrato anche nelle regole con parte conseguente \textit{Left:Yes}. Infine una valutazione del dipendente insufficiente è legata a bassa soddisfazione, alto numero di ore lavorate e a mancata promozione. 
-
-\begin{table}[htbp]
-  \centering
-\input{"data/rules/altreregole.txt"}
-\caption{Altre regole interessanti}
-\label{tab:altreregole}
+\begin{table}[H]
+        \centering
+        \begin{tabular}{| c | c | c | c | c |} \hline
+            \textbf{Consequent} & \textbf{Antecedent} & \textbf{Supp} & \textbf{Conf} & \textbf{Lift} \\ \hline
+            low_SL  & ('4_T','Y_L','insufficient_LE','intensive_H')  & 0.054 &  0.990 & 7.245 \\ \hline
+            2_NP  & ('Y_L', 'medium_SL', '3_T', 'standard_H' ,'N_P') & 0.100 &  0.996 & 6.256 \\ \hline
+            insufficient_LE  & ('low_SL','intensive_H','N_P') & 0.281 &  1.000 & 3.861 \\ \hline
+        \end{tabular}
+        \label{tab:altreregole}
+	 \caption{Altre regole interessanti}
 \end{table}
+
 \section{Use the most meaningful rules to replace missing values and evaluate the accuracy}
 Nel nostro dataset non sono presenti missing values quindi non è stata necessaria la valutazione delle più significative rules e la valutazione dell'accuratezza per rimpiazzare questi.
 \section{Use the most meaningful rules to predict if an employee will leave prematurely or not and evaluate the accuracy }
