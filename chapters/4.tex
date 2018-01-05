@@ -53,15 +53,15 @@ dataset.
     \caption{Dettaglio iniziale dell'albero di altezza $13$ utilizzante Gini, in Figura \ref{fig:cutted_tree_1}
     , e quello di altezza $11$ utilizzante l'Entropia, in Figura \ref{fig:cutted_tree_2}. La classe \textit{y$0$}
     corrisponde a una risposta negativa alla domanda: "L'impiegato lascerà l'azienda?", vale il contrario per la
-    classe y$1$. Essendo l'intero albero di dimensioni proibitive, abbiamo deciso di rappresentare questo
-    dettaglio.}
+    classe y$1$. Essendo gli alberi di dimensioni proibitive, abbiamo deciso di rappresentare questi
+    dettaglii.}
     \label{fig:cutted_tree}
 \end{figure}
 \\
 Come possiamo osservare, la colorazione dei vari nodi fornisce un indice visivo del grado di purezza dello split
-ottenuto, cominciando da uno split iniziale su tutto il dataset con un grado di purezza non molto alto
-(nel caso dell'indice Gini), si raggiunge successivamene negli split secondari, su porzioni ridotte del dataset,
-gradi di purezza più consistenti.
+ottenuto, cominciando da uno split iniziale su tutto il dataset con un grado di purezza non molto alto, si
+raggiunge successivamene negli split secondari, su porzioni ridotte del dataset, gradi di purezza più
+consistenti.
 % section decision_trees_interpretation (end)
 \section{Decision trees validation with test and training set} % (fold)
 \label{sec:decision_trees_validation_with_test_and_training_set}
@@ -126,18 +126,19 @@ lecito aspettarsi, i primi due classificatori per score ottenuto nelle metriche 
 utilizzando tutto il dataset come training set e successivamente come test set. Successivamente, il classificatore
 utilizzante l'Entropia come misura di impurità ha rivelato delle performance migliori rispetto a quello
 utilizzante Gini. In Figura \ref{fig:confusion_matrix} possiamo trovare la \textit{confusion matrix} relativa a
-tale classificatore. Come possiamo vedere, la sezione relativa ai \textit{true negatives} contiene il massimo dei
-records, come evidenziato dal colore, i \textit{false negatives} e i \textit{false positives} sono le due sezioni
-contenenti il numero minimo (tendente a $0$) di records, facilmente prevedibile viste le alte performance di
-questo classificatore. La parte interessante della figura è rappresentata da quella dei \textit{true positives}.
-Visto che il campione sulla quale è stato applicato questo classificatore è di $6000$ records, e che tra questi
-data objects sono presenti per lo più impiegati che lavorano ancora all'interno dell'azienda, possiamo concludere
-che coloro che hanno lasciato l'azienda sono stati correttamente previsti dal classificatore. A scopo informativo,
+tale classificatore. Come possiamo vedere, la sezione relativa ai \textit{true negatives} contiene $4600$
+records, come evidenziato dal colore, i \textit{false negatives} sono soltanto $75$, quantità grazie alla quale
+possiamo considerare corretta la classificazione degli impiegati che rimarranno in azienda.
+I \textit{false positives} sono $450$, questa porzione della classificazione rappresenta gli impiegati che
+possiedono caratteristiche simili a quelli ancora all'interno dell'azienda, ma che presentano la possibilità di
+abbandonare il loro posto di lavoro. La parte dei \textit{true positives} è composta da $920$ record, essa
+rappresenta la frazione del campione analizzato ($6000$ record in totale) composta da impiegati che hanno
+lasciato l'azienda, e che sono stati giustamente classificati. A scopo informativo,
 in Figura \ref{fig:confusion_matrix_2} abbiamo riportato la confusion matrix relativa alla quarta riga di Tabella
 \ref{tab:classification_performance}, che, a differenza dell'altra matrice descritta, utilizza Gini come indice
-di impurità. In quest'ultimo classificatore, applicato su $3000$ test records, possiamo osservare un incremento
-nella parte della matrice relativa ai false negatives, dovuta al calo delle performance complessive nelle
-metriche analizzate.
+di impurità. In quest'ultimo classificatore, applicato su $3000$ test records, possiamo formulare osservazioni
+simili a quanto fatto per il classificatore precedente, tenendo tuttavia in considerazione il calo delle
+performance e il campione utilizzato.
 \begin{figure}[t!]
     \centering
     \begin{subfigure}{0.4\textwidth}
