@@ -58,7 +58,7 @@ for criterion in ['gini', 'entropy']:
 
         cm = confusion_matrix(target, pred_target)
 
-        sns.heatmap(cm, cmap='Spectral', cbar=True)
+        sns.heatmap(cm, cmap='Spectral', annot=True, cbar=True)
         plt.ylabel('True label')
         plt.xlabel('Predicted label')
 
@@ -95,7 +95,7 @@ for criterion in ['gini', 'entropy']:
 
             cm = confusion_matrix(test_y, test_pred)
 
-            sns.heatmap(cm, cmap='Spectral', cbar=True)
+            sns.heatmap(cm, cmap='Spectral', annot=True, cbar=True)
             plt.ylabel('True label')
             plt.xlabel('Predicted label')
 
